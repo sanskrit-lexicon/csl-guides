@@ -17,6 +17,13 @@
   transform: translateY(-2px);
 }
 
+/* The dictionary catalog is a React component (not a Markdown table), so it does not get
+   Docusaurus's automatic table-scroll wrapper. Let its wide 8-column tables scroll
+   horizontally on narrow screens instead of overflowing the page. */
+.dictionary-catalog section {
+  overflow-x: auto;
+}
+
 [data-theme='dark'] {
   --ifm-color-primary: #e0a96d;
   --ifm-color-primary-dark: #d9974f;

@@ -11,11 +11,13 @@ const sidebars = {
       label: 'Using the Site',
       collapsed: false,
       items: [
+        'users/quick-start',
         'users/using-the-website',
         'users/search-and-display',
         'users/encoding-transliteration',
         'users/downloads-and-data',
         'users/scans-and-print',
+        'users/troubleshooting',
       ],
     },
   ],

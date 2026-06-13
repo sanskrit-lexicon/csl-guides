@@ -1,0 +1,92 @@
+// @ts-check
+// Manual sidebars — one per audience-oriented section (hybrid of the
+// dharmamitra-guides tool-catalog shape and Cologne-specific workflows).
+
+/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
+const sidebars = {
+  usersSidebar: [
+    'intro',
+    {
+      type: 'category',
+      label: 'Using the Site',
+      collapsed: false,
+      items: [
+        'users/using-the-website',
+        'users/search-and-display',
+        'users/encoding-transliteration',
+        'users/downloads-and-data',
+        'users/scans-and-print',
+      ],
+    },
+  ],
+
+  dictionariesSidebar: [
+    {
+      type: 'category',
+      label: 'Dictionaries',
+      collapsed: false,
+      items: [
+        'dictionaries/overview',
+        'dictionaries/catalog',
+        'dictionaries/abbreviations-and-citations',
+      ],
+    },
+  ],
+
+  toolsSidebar: [
+    {
+      type: 'category',
+      label: 'Tools',
+      collapsed: false,
+      items: [
+        'tools/overview',
+        'tools/simple-search',
+        'tools/advanced-search',
+        'tools/multi-dictionary',
+        'tools/offline-stardict',
+      ],
+    },
+  ],
+
+  contributingSidebar: [
+    {
+      type: 'category',
+      label: 'Contributing',
+      collapsed: false,
+      items: [
+        'contributing/overview',
+        'contributing/corrections-workflow',
+        'contributing/issue-taxonomy',
+        'contributing/change-files',
+      ],
+    },
+  ],
+
+  developersSidebar: [
+    {
+      type: 'category',
+      label: 'Developer Guide',
+      collapsed: false,
+      items: [
+        'developers/architecture',
+        'developers/repositories',
+        'developers/generation-pipeline',
+        'developers/data-formats',
+        'developers/api',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'About',
+      collapsed: true,
+      items: [
+        'about/about',
+        'about/history',
+        'about/acknowledgments',
+        'faq',
+      ],
+    },
+  ],
+};
+
+export default sidebars;

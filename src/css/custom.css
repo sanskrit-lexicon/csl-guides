@@ -1,0 +1,23 @@
+/* Infima theme overrides for the CDSL guides. */
+:root {
+  --ifm-color-primary: #8a4b08;
+  --ifm-color-primary-dark: #7c4307;
+  --ifm-color-primary-darker: #753f07;
+  --ifm-color-primary-darkest: #613406;
+  --ifm-color-primary-light: #985309;
+  --ifm-color-primary-lighter: #9f5709;
+  --ifm-color-primary-lightest: #b3620a;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #e0a96d;
+  --ifm-color-primary-dark: #d9974f;
+  --ifm-color-primary-darker: #d68e40;
+  --ifm-color-primary-darkest: #c0741f;
+  --ifm-color-primary-light: #e7bb8b;
+  --ifm-color-primary-lighter: #eac49a;
+  --ifm-color-primary-lightest: #f3dcc6;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}

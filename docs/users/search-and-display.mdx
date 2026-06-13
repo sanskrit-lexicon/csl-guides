@@ -4,10 +4,26 @@ title: Search & Display Modes
 sidebar_label: Search & Display
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+export const Shot = ({src, alt}) => (
+  <img
+    src={useBaseUrl(src)}
+    alt={alt}
+    style={{
+      border: '1px solid var(--ifm-color-emphasis-300)',
+      borderRadius: '8px',
+      maxWidth: '100%',
+      marginTop: '0.5rem',
+    }}
+  />
+);
+
 # Search & Display Modes
 
 Each dictionary offers four reading/search interfaces, shown as **B L A M** on the front
 page. They share the same underlying entries but differ in how you find and view them.
+The screenshots below are the Monier-Williams (`MW`) interfaces.
 
 ## Basic display (B)
 
@@ -20,6 +36,8 @@ Input accepts multiple transliteration schemes (see
 - live cross-references where the markup supports them (literary-source citations,
   lexical and grammatical tags).
 
+<Shot src="/img/displays/mw-basic.png" alt="MW Basic display showing the entry for agni, with citation box, input Kyoto-Harvard, output Roman Unicode" />
+
 ## List display (L)
 
 Browse headwords as a navigable list. Useful for:
@@ -27,6 +45,11 @@ Browse headwords as a navigable list. Useful for:
 - confirming the exact spelling/sandhi of a headword,
 - scanning neighbours alphabetically,
 - jumping into the Basic view for any entry.
+
+The two-pane layout shows the headword index on the left and the selected entry on the
+right; type a word in the box to populate both.
+
+<Shot src="/img/displays/mw-list.png" alt="MW List display — two-pane browse interface with headword index and entry panes" />
 
 ## Advanced search (A)
 
@@ -42,9 +65,13 @@ searchable fields: `headword_slp1`, `sense`, `re_headwords_slp1`, `xml`, `id`. S
 [API](../developers/api) page. The live Advanced URL is
 `/scans/{CODE}Scan/2020/web/webtc2/index.php`.
 
+<Shot src="/img/displays/mw-advanced.png" alt="MW Advanced search form: Sanskrit word / Text Word fields, exact/match modes, output scheme, maximum results" />
+
 ## Mobile display (M)
 
 A responsive layout of the same content for phones and tablets.
+
+<Shot src="/img/displays/mw-mobile.png" alt="MW Mobile display showing the entry for agni in a phone-width layout" />
 
 ## Result rendering and cross-links
 

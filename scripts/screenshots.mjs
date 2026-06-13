@@ -15,7 +15,7 @@ const base = `${SITE}/scans/MWScan/2020/web`;
 
 const shots = [
   {name: 'mw-basic', url: `${base}/webtc/indexcaller.php`, mobile: false, query: 'agni'},
-  {name: 'mw-list', url: `${base}/webtc1/index.php`, mobile: false, query: 'agni', noEnter: true},
+  {name: 'mw-list', url: `${base}/webtc1/index.php`, mobile: false, query: 'agni'},
   {name: 'mw-advanced', url: `${base}/webtc2/index.php`, mobile: false, query: null},
   {name: 'mw-mobile', url: `${base}/mobile1/index.php`, mobile: true, query: 'agni'},
 ];
@@ -31,29 +31,31 @@ async function settle(page) {
 
 // Best-effort: type a query into the first visible text box (top frame or any child
 // frame) and submit, so the screenshot shows a populated result rather than an empty box.
-async function tryQuery(page, query, noEnter) {
+async function tryQuery(page, query) {
   if (!query) return;
   for (const frame of page.frames()) {
     try {
-      const box = frame.locator('input[type="text"], input:not([type])').first();
+      // The List display's search box is a <textarea id="key1">; Basic/Mobile use a
+      // normal text input. Match the textarea first, then fall back to inputs.
+      const box = frame
+        .locator('#key1, textarea.keyboardInput, input[type="text"], input:not([type])')
+        .first();
       if ((await box.count()) && (await box.isVisible())) {
-        // Use real keystrokes so keyup-driven incremental search (List display) fires.
+        // Real keystrokes + Enter so the keyup/keydown_return search handlers fire.
         await box.click();
-        await box.pressSequentially(query, {delay: 180});
-        if (!noEnter) await box.press('Enter');
+        await box.pressSequentially(query, {delay: 160});
+        await box.press('Enter');
         await page.waitForTimeout(3500);
-        // List display: click the first matching headword to populate the entry pane.
-        for (const f of page.frames()) {
-          try {
-            const link = f.getByRole('link', {name: new RegExp(`^${query}`, 'i')}).first();
-            if ((await link.count()) && (await link.isVisible())) {
-              await link.click();
-              await page.waitForTimeout(2500);
-              break;
-            }
-          } catch {
-            /* ignore */
+        // List display: force-click the first headword to (re)render the entry pane.
+        // Best-effort and short — the entry pane usually populates from Enter alone.
+        try {
+          const link = page.locator('#displist a').first();
+          if (await link.count()) {
+            await link.click({force: true, timeout: 4000});
+            await page.waitForTimeout(2000);
           }
+        } catch {
+          /* entry pane already populated by Enter; ignore */
         }
         return;
       }
@@ -86,7 +88,7 @@ for (const s of shots) {
   try {
     await page.goto(s.url, {waitUntil: 'domcontentloaded', timeout: 30000});
     await settle(page);
-    await tryQuery(page, s.query, s.noEnter);
+    await tryQuery(page, s.query);
     const path = join(OUT, `${s.name}.png`);
     await page.screenshot({path, fullPage: false});
     console.log(`  saved ${path}`);

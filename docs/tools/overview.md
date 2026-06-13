@@ -16,7 +16,5 @@ and using the dictionaries offline.
 | **Multi-dictionary display** | One headword across many dictionaries at once (experimental `dalglob`) | [Multi-Dictionary](multi-dictionary) |
 | **MW Inflected forms** | Monier-Williams inflected/conjugated form resource | [Multi-Dictionary](multi-dictionary) |
 | **Offline / StarDict** | Use dictionaries offline, incl. Android | [Offline & StarDict](offline-stardict) |
-| **Related lexica** | Tamil Lexicon, Pali–English Dictionary links | [Offline & StarDict](offline-stardict) |
 
-`TODO(verify)`: confirm the current set of tools and their live URLs from the front
-page's "Additional Tools" area.
+All tool URLs are documented on their respective pages, mined from the live front page.

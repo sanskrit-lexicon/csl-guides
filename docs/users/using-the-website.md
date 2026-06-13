@@ -23,11 +23,21 @@ single-letter actions:
 | **A** | **Advanced** search | Search within entry body, wildcards, regex-style options |
 | **M** | **Mobile** | Mobile-friendly responsive interface |
 | **D** | **Downloads** | XML (SLP1), PDF, and data packages |
-| **S** | **Scans** | Original scanned pages (jpg/pdf) |
+| **S¹** | **Scans (PDF)** | Original scanned pages as PDF |
+| **S²** | **Scans (JPG)** | Original scanned pages as JPG |
 
-:::note
-The exact letter set can vary slightly per dictionary. `TODO(verify)`: confirm the
-full per-dictionary matrix and whether any dictionaries omit Advanced or Scans.
+Some dictionaries add extra links (e.g. **Markup** notes, or **Inflected forms** for
+Monier-Williams). The exact set per dictionary is reflected live in the
+[catalog](../dictionaries/catalog) — greyed letters there mean that action is not offered.
+
+:::note URL patterns
+For a dictionary with scan code `{CODE}` (e.g. `MW`), the actions resolve to:
+`base = /scans/{CODE}Scan/2020/web/`
+
+- **B** `{base}webtc/indexcaller.php` · **L** `{base}webtc1/index.php`
+- **A** `{base}webtc2/index.php` · **M** `{base}mobile1/index.php`
+- **D** `{base}webtc/download.html`
+- **S¹** `/scans/{CODE}Scan/index.php?sfx=pdf` · **S²** `…?sfx=jpg`
 :::
 
 ## A typical lookup

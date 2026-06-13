@@ -6,17 +6,19 @@ sidebar_label: History
 
 # History
 
-:::caution Draft
-This is a placeholder. Populate from the project's own history page and the version
-history of the dictionaries.
+## Known milestones
+
+- **Mid-2000s** — Malcolm Hyman and Peter Scharf envision an API over the dictionary
+  digitizations.
+- **2010–2013** — the **DFG-NEH Project** funds digitization of many of the works
+  (the `*`-marked dictionaries on the front page).
+- **~2015 onward** — Jim Funderburk implements the present `apidev` API in PHP.
+- **Current** — site version **2.9.0**; the source lives in the `v02` layout of
+  [`csl-orig`](https://github.com/sanskrit-lexicon/csl-orig); 42 fully digitized
+  dictionaries plus new ones in preparation (Amarakośa, Sanskrit–Russian).
+
+:::note Incomplete
+This timeline is assembled from the front page and repo metadata. Exact origin dates,
+the full version history, and the order dictionaries were added still need to be filled
+from the project's own records.
 :::
-
-Suggested structure (mirroring the dharmamitra-guides *History* section):
-
-- **Origins** — when and why the Cologne digitization began; the first dictionaries.
-- **Versioning** — the move to the current `v02` source layout in `csl-orig`.
-- **Milestones** — major dictionaries added, the GitHub migration, the change-file
-  correction workflow, the issue taxonomy, downloadable/offline data.
-- **Today** — 42 dictionaries, open data, active correction program.
-
-`TODO(verify)`: dates, version numbers, and the sequence of additions.

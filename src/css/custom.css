@@ -11,6 +11,12 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+/* Homepage feature cards */
+.csl-card:hover {
+  border-color: var(--ifm-color-primary) !important;
+  transform: translateY(-2px);
+}
+
 [data-theme='dark'] {
   --ifm-color-primary: #e0a96d;
   --ifm-color-primary-dark: #d9974f;

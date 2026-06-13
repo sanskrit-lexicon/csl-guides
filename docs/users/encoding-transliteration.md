@@ -10,17 +10,24 @@ CDSL stores Sanskrit text internally in **SLP1**, and lets you *input* and *disp
 words in several transliteration schemes. Knowing which scheme you are typing in is the
 single most common source of "why didn't my word match" confusion.
 
-## Schemes you will encounter
+## Schemes the displays offer
 
-| Scheme | What it is | Example (*kṛṣṇa*) |
+SLP1 is the website's *lingua franca* (storage encoding). The display **input/output**
+menus let you read or type in these schemes (the transcoder names are the values the API
+uses):
+
+| Scheme (transcoder name) | What it is | Example (*rāma*) |
 |---|---|---|
-| **SLP1** | Sanskrit Library Phonetic Basic — the internal storage encoding; one ASCII char per phoneme | `kfRZa` |
-| **IAST** | International Alphabet of Sanskrit Transliteration — the scholarly Roman standard with diacritics | `kṛṣṇa` |
-| **Harvard-Kyoto (HK)** | ASCII scheme, case-sensitive | `kRSNa` |
-| **Devanāgarī** | Native script (Unicode) | कृष्ण |
+| **`slp1`** | Sanskrit Library Phonetic Basic — the internal encoding; one ASCII char per phoneme | `rAma` |
+| **`deva`** | Devanāgarī (Unicode) | राम |
+| **`roman`** | Roman with diacritics (IAST-style) | rāma |
+| **`hk`** | Harvard-Kyoto — ASCII, case-sensitive | `rAma` |
+| **`itrans`** | ITRANS — ASCII scheme | `rAma` |
 
-`TODO(verify)`: confirm the complete list of input/output schemes the live converters
-support (e.g. ITRANS, Velthuis, WX, Roman/ISO-15919) and the exact labels used in the UI.
+Two more transcoders exist but are **not** in the display input/output menus: **`wx`**
+(used at Hyderabad University) and **`as`** (Anglicized Sanskrit, Thomas Malten's
+letter-number scheme). `slp1` and `deva` are the values seen in the
+[API](../developers/api) `input`/`output` parameters.
 
 ## Why SLP1 internally
 
@@ -30,21 +37,19 @@ XML is in SLP1 for this reason (see **[Downloads & Data](downloads-and-data)**).
 
 ## Typing a headword
 
-- If you have a **diacritic IAST** word (`kṛṣṇa`), choose the IAST input mode.
-- If you only have an **ASCII keyboard**, Harvard-Kyoto (`kRSNa`) or SLP1 (`kfRZa`)
-  avoid diacritics entirely.
-- If you have **Devanāgarī**, paste it directly and select the Devanāgarī input mode.
+- If you have a **diacritic Roman** word (`rāma`), choose the `roman` input mode.
+- If you only have an **ASCII keyboard**, Harvard-Kyoto (`hk`), ITRANS (`itrans`), or
+  SLP1 (`slp1`) avoid diacritics entirely.
+- If you have **Devanāgarī**, paste it directly and select the `deva` input mode.
 
-If a lookup fails, the most likely cause is an input-scheme mismatch (e.g. typing IAST
-while the box expects Harvard-Kyoto). Re-check the selected scheme first.
+If a lookup fails, the most likely cause is an input-scheme mismatch (e.g. typing `roman`
+while the box expects `hk`). Re-check the selected scheme first.
 
 ## Transcoding tooling
 
-Conversion between schemes in the CDSL toolchain is handled by transcoders maintained in
-the project (the same logic used when generating displays). For developers, see
-**[Data Formats](../developers/data-formats)**.
-
-:::caution Draft
-The conversion table above is illustrative. Verify each cell against the live converter
-before publishing, and add a one-row-per-scheme reference table with the full akṣara set.
-:::
+Scheme conversion uses the project's **transcoder**, developed in Java by Ralph Bunker
+and ported to PHP (`transcoder.php`) and Python
+([funderburkjim/sanskrit-transcoding](https://github.com/funderburkjim/sanskrit-transcoding)).
+It works from per-pair XML tables named `{X}_{Y}.xml` (e.g. `slp1_deva.xml`), compiled
+into a finite-state machine at runtime. For example `transcoder_processString('rAma',
+'slp1', 'deva')` returns राम. See also **[Data Formats](../developers/data-formats)**.

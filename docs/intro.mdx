@@ -5,23 +5,17 @@ slug: /
 sidebar_label: Home
 ---
 
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
+
 # Cologne Digital Sanskrit Dictionaries
 
 The **Cologne Digital Sanskrit Dictionaries (CDSL)** is a freely available collection
 of **42 Sanskrit dictionaries** published between 1832 and 1993, digitized and served
-at **[sanskrit-lexicon.uni-koeln.de](https://sanskrit-lexicon.uni-koeln.de)**. Each
-dictionary is fully searchable, cross-linked, downloadable, and available alongside the
-original scanned pages.
+at **[sanskrit-lexicon.uni-koeln.de](https://sanskrit-lexicon.uni-koeln.de)** (version
+2.9.0). Each dictionary is fully searchable, cross-linked, downloadable, and available
+alongside the original scanned pages.
 
-These guides cover three audiences. Use the top navigation to jump to yours:
-
-| If you want to… | Start here |
-|---|---|
-| Look up words, search, read scans, download data | **[Using the Site](users/using-the-website)** |
-| Know which dictionary to use and how it is cited | **[Dictionaries](dictionaries/overview)** |
-| Use Simple-Search, Advanced Search, offline apps | **[Tools](tools/overview)** |
-| Report or submit corrections | **[Contributing](contributing/overview)** |
-| Run the build pipeline, consume data/APIs | **[Developers](developers/architecture)** |
+<HomepageFeatures />
 
 ## What CDSL provides
 
@@ -30,8 +24,8 @@ These guides cover three audiences. Use the top navigation to jump to yours:
   (Mahābhārata, Vedas, Purāṇas, Buddhist texts). See the **[catalog](dictionaries/catalog)**.
 - **Four display modes per dictionary** — *Basic*, *List*, *Advanced*, *Mobile*
   (the **B L A M** links on the front page). See **[Search & Display](users/search-and-display)**.
-- **Multiple input/output transliterations** — SLP1, IAST, Harvard-Kyoto, Devanāgarī,
-  and more. See **[Encoding & Transliteration](users/encoding-transliteration)**.
+- **Multiple input/output transliterations** — `slp1`, `deva`, `roman`, `hk`, `itrans`.
+  See **[Encoding & Transliteration](users/encoding-transliteration)**.
 - **Downloads** — XML (in SLP1), PDF, and the original **scanned editions**.
   See **[Downloads & Data](users/downloads-and-data)**.
 - **Offline access** via StarDict / Android. See **[Offline & StarDict](tools/offline-stardict)**.
@@ -45,8 +39,17 @@ applied by scripts, validated as XML, and committed with an audit trail. A gener
 pipeline turns the source into the XML, search indices, and web displays you see on the
 live site. The **[Developer Guide](developers/architecture)** documents this end to end.
 
-:::caution Draft
-This site was scaffolded and drafted automatically from the live site, the CDSL source
-repositories, and project documentation. Sections marked **Draft** and any
-`TODO(verify)` notes need confirmation by a maintainer before publication.
+:::tip Related: csl-doc
+These guides **complement** [csl-doc](https://github.com/sanskrit-lexicon/csl-doc), the
+project's Sphinx site of per-dictionary **front matter, prefaces, and user notes**. The
+[catalog](dictionaries/catalog) deep-links each dictionary to its csl-doc page. Use *these
+guides* for how-to and reference; use *csl-doc* for a specific dictionary's print
+front matter.
+:::
+
+:::note Provenance
+This site was assembled from the live website, the CDSL source repositories, and project
+documentation. Most facts (catalog, URLs, API, transliteration, credits) are verified
+against those sources; the few remaining items needing maintainer input are the project's
+detailed history and the live-server deploy mechanism.
 :::

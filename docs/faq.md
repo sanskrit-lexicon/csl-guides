@@ -45,9 +45,5 @@ and round-tripping deterministic. Devanāgarī and IAST are produced for display
 
 ### Is there an API?
 
-In development — see the **[API](developers/api)** page (`TODO(verify)`).
-
-:::caution Draft
-Expand with the real questions from the live site's FAQ and the project's GitHub
-discussions.
-:::
+Yes — a RESTful API (native + a C-SALT-compatible "Salt API") with REST and GraphQL.
+See the **[API](developers/api)** page.

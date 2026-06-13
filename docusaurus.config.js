@@ -34,6 +34,21 @@ const config = {
     locales: ['en'],
   },
 
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
+        hashed: true,
+        indexBlog: true,
+        docsRouteBasePath: '/',
+        blogRouteBasePath: 'news',
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 8,
+      }),
+    ],
+  ],
+
   presets: [
     [
       'classic',

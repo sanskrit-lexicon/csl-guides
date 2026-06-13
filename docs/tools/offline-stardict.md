@@ -11,23 +11,14 @@ You can use the CDSL dictionaries **without an internet connection**.
 ## StarDict packages
 
 The dictionaries are available as **StarDict** files, usable in any StarDict-compatible
-reader on desktop or mobile.
-
-`TODO(verify)`: link the StarDict download location and list which dictionaries are
-packaged.
+reader on desktop or mobile. StarDict packaging is maintained in
+[`cologne-stardict`](https://github.com/sanskrit-lexicon/cologne-stardict).
 
 ## Android
 
-Offline access on Android is provided via a StarDict-based application.
+All dictionaries are available offline on Android via the
+**[Sanskrit Dictionary Updater](https://play.google.com/store/apps/details?id=sanskritcode.sanskritdictionaryupdater&hl=en)**
+app (it downloads the CDSL dictionaries into a StarDict viewer). It presumes a StarDict
+viewer is installed — the front page suggests searching for **EBdic**, **ColorDict**,
+**GoldenDict**, or **StarDict**.
 
-`TODO(verify)`: name the recommended Android app, link it, and give install + import
-steps.
-
-## Related external lexica
-
-The front page links to related resources beyond CDSL proper:
-
-- **Tamil Lexicon**
-- **Pali–English Dictionary**
-
-`TODO(verify)`: confirm the destinations and whether they are CDSL-hosted or external.

@@ -36,8 +36,11 @@ Search *within* entry bodies, not just headwords. Typical capabilities:
 - pattern/wildcard matching,
 - filtering by markup (e.g. entries citing a particular source).
 
-`TODO(verify)`: enumerate the exact Advanced-search operators and fields exposed per
-dictionary (wildcard syntax, regex support, field filters).
+The API exposes these match modes (`query_type`), which mirror what Advanced search can
+do: `term`, `fuzzy`, `match`, `match_phrase`, `prefix`, `wildcard`, `regexp` — and these
+searchable fields: `headword_slp1`, `sense`, `re_headwords_slp1`, `xml`, `id`. See the
+[API](../developers/api) page. The live Advanced URL is
+`/scans/{CODE}Scan/2020/web/webtc2/index.php`.
 
 ## Mobile display (M)
 

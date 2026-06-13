@@ -1,0 +1,97 @@
+---
+id: catalog
+title: Dictionary Catalog
+sidebar_label: Catalog
+---
+
+import DictionaryCatalog from '@site/src/components/DictionaryCatalog';
+
+# Dictionary Catalog
+
+The tables below are **auto-generated** from the
+[live front page](https://sanskrit-lexicon.uni-koeln.de) by
+[`scripts/build-catalog.mjs`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-catalog.mjs),
+which also cross-references the [`sanskrit-lexicon`](https://github.com/sanskrit-lexicon)
+org repo list and the per-dictionary pages in
+[csl-doc](https://github.com/sanskrit-lexicon/csl-doc) (the project's Sphinx
+"front matter / prefaces / user notes" reference). Re-run the script to refresh; nothing
+in the tables is hand-maintained, so it cannot drift. See
+[Reconciliation with csl-doc](#reconciliation-with-csl-doc) for how the sources relate.
+
+**Codes are the website display codes.** Where the GitHub repo is named differently it
+shows in the *Repo* column (e.g. **MW** → `MWS`, **AE** → `ApteES`, **PW** → `PWK`); a
+dash means no dedicated per-dictionary repo (the dictionary is still served from the
+site, with its text in [`csl-orig`](https://github.com/sanskrit-lexicon/csl-orig)).
+
+:::note Count — resolved
+The front page states "The **42** dictionaries…", yet the table has **43 rows**. The extra
+row is **`PD`**, shown as a **sample only** (marked `*`, "funded by the DFG-NEH Project
+2010-2013"): it links to a `pd-sample.php` page and has **no `…Scan` code and no B/L/A/M
+display**. The HTML confirms exactly **42 distinct `…Scan` dictionary codes** — the fully
+digitized dictionaries the headline counts — plus the PD sample = 43 rows. csl-doc
+documents 38 (no PD page, since there is no full dictionary to document).
+:::
+
+<DictionaryCatalog />
+
+## In preparation (not yet on the front page)
+
+These dictionaries have repositories in the org but are **not yet listed on the live
+front page** (so they do not appear in the generated tables above). They include a
+Sanskrit–Russian language group the current front page does not represent.
+
+| Repo | Title | Author | Year | Language | Status |
+|---|---|---|---|---|---|
+| [AMAR](https://github.com/sanskrit-lexicon/AMAR) | Amarakośa (Nāmaliṅgānuśāsana) | Amarasiṃha | — | SA → SA | Source `amar.txt` built, bound for `csl-orig/v02/amar/` |
+| [KOW](https://github.com/sanskrit-lexicon/KOW) | Sanskrito-russkiy slovar | Kossowich | 1854 | SA → RU | ~13,488 entries; corrections/scans repo |
+| [KNA](https://github.com/sanskrit-lexicon/KNA) | Sanskrit–Russian Vocabulary | Knauer | 1908 | SA → RU | 3,271 entries; corrections repo |
+
+## Reconciliation with csl-doc
+
+[csl-doc](https://github.com/sanskrit-lexicon/csl-doc) is the project's existing Sphinx
+documentation site. Each dictionary has a `source/dictionaries/{code}.rst` page holding
+its **front matter, prefaces, and user notes** (the dictionary *text* itself lives in
+[`csl-orig`](https://github.com/sanskrit-lexicon/csl-orig), conventionally at
+`csl-orig/v02/{code}/{code}.txt`). The generated catalog's *csl-doc* column links each
+dictionary to its page where one exists. csl-doc's
+[`index.rst`](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/index.rst)
+documents **38 dictionaries**, all a subset of the 43 on the front page.
+
+**On the website but *not* in csl-doc (5):**
+
+| Code | Title | Has org repo? |
+|---|---|---|
+| `PD` | Encyclopedic Dictionary of Sanskrit on Historical Principles | No (sample only) |
+| `FRI` | Friš Sanskrit Reader Vocabulary | **Yes** — [FRI](https://github.com/sanskrit-lexicon/FRI) (repo but no csl-doc page) |
+| `ARMH` | Abhidhānaratnamālā of Halāyudha | No |
+| `ACPH` | Abhidhānacintāmaṇipariśiṣṭa | No |
+| `ACSJ` | Abhidhānacintāmaṇiśiloñcha | No |
+
+Of the four Abhidhāna texts, only **`ABCH`** has a csl-doc page
+([abch.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/abch.rst));
+`ARMH`/`ACPH`/`ACSJ` have neither a repo nor a csl-doc page.
+
+## Resolved by reconciliation
+
+- **Wilson vs Yates** — *separate dictionaries.* csl-doc has distinct
+  [wil.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/wil.rst)
+  and [yat.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/yat.rst)
+  pages. `WIL` has its own repo; `YAT` has none (its corrections live in the shared
+  [Wil-YAT](https://github.com/sanskrit-lexicon/Wil-YAT) repo).
+- **`PW` display code** — confirmed by
+  [pw.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pw.rst)
+  ("Böhtlingk Sanskrit-Wörterbuch in kürzerer Fassung"); the repo is `PWK`.
+- **Source location of the "unmigrated" dictionaries** — `GST`, `LAN`, `IEG`, `SNP`,
+  `PE`, `PGN`, `MWE` all have csl-doc front-matter pages; their text lives in `csl-orig`,
+  not in a per-dictionary repo.
+- **`GST`** covers only words beginning with *a-* (noted on its csl-doc page).
+- **AMAR/KNA/KOW** — not Abhidhāna texts; separate newer dictionaries (see *In
+  preparation*). None has a csl-doc page yet.
+
+## Still open
+
+- **csl-doc coverage gaps** — `FRI` has a repo but no csl-doc page; the three uncovered
+  Abhidhāna texts (`ARMH`, `ACPH`, `ACSJ`) may also warrant pages. (`PD` does not — it is
+  a sample only, see the *Count* note above.)
+- Missing publishers/editions for several titles — fill from each dictionary's print
+  front matter (the csl-doc `prefaces/` pages are the place to mine these).

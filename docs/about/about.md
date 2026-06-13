@@ -6,10 +6,10 @@ sidebar_label: About
 
 # About CDSL
 
-The **Cologne Digital Sanskrit Dictionaries (CDSL)** is part of the **Cologne Digital
-Sanskrit Lexicon** project at the **Universität zu Köln** (University of Cologne). It
-digitizes and serves major historical Sanskrit dictionaries as open, searchable,
-cross-linked data at **[sanskrit-lexicon.uni-koeln.de](https://sanskrit-lexicon.uni-koeln.de)**.
+The **Cologne Digital Sanskrit Dictionaries (CDSL)** is a collection of major historical
+Sanskrit dictionaries digitized and served by the **Universität zu Köln** (University of
+Cologne) at **[sanskrit-lexicon.uni-koeln.de](https://sanskrit-lexicon.uni-koeln.de)**.
+The current site version is **2.9.0**.
 
 ## Mission
 
@@ -17,12 +17,22 @@ cross-linked data at **[sanskrit-lexicon.uni-koeln.de](https://sanskrit-lexicon.
 - Keep the digital text **faithful to the print**, with every correction auditable.
 - Provide the data as **open, reusable** structured XML.
 
+## Markup and digitization
+
+The markup of the various dictionaries was designed and implemented by:
+
+- **Thomas Malten** (Cologne University) and assistants in India
+- **Peter Scharf** (The Sanskrit Library)
+- **Malcolm D. Hyman** (Max-Planck-Institut für Wissenschaftsgeschichte, Berlin)
+- **Jim Funderburk**
+
+The markup of the Monier-Williams dictionary is described in detail in the project's
+"Marking Monier" notes (linked from the MW row on the front page). See
+[Acknowledgments](acknowledgments.md) for funding and full credits.
+
 ## Governance & maintenance
 
 Development happens in the open on GitHub
-([github.com/sanskrit-lexicon](https://github.com/sanskrit-lexicon)). The correction and
+([github.com/sanskrit-lexicon](https://github.com/sanskrit-lexicon)). Correction and
 generation workflows are documented under **[Contributing](../contributing/overview.md)** and
 **[Developers](../developers/architecture.md)**.
-
-`TODO(verify)`: add the official project description, the responsible institute/chair,
-funding bodies, and the canonical "about" text from the live site.

@@ -57,5 +57,7 @@ This step sits between **[Corrections Workflow](../contributing/corrections-work
 (producing corrected source) and the published site. See **[Architecture](architecture)**
 for the end-to-end diagram.
 
-`TODO(verify)`: document how generated artifacts are deployed to the live server
-(deploy mechanism, cadence, who triggers it).
+:::note Needs maintainer input
+How generated artifacts reach the live server (deploy mechanism, cadence, who triggers
+it) is not documented publicly — fill from the project's own operations notes.
+:::

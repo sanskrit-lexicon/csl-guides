@@ -31,5 +31,12 @@ typesetter's error in the original), the deviation is recorded in a `printchange
 file rather than silently changed. This keeps the digital text faithful to the print
 while documenting every editorial decision.
 
-`TODO(verify)`: link the live scan viewer URL pattern and confirm the per-dictionary
-availability of scans.
+## Scan URL pattern
+
+For a dictionary with scan code `{CODE}`, the scanned edition is at:
+
+- **PDF:** `/scans/{CODE}Scan/index.php?sfx=pdf`
+- **JPG:** `/scans/{CODE}Scan/index.php?sfx=jpg`
+
+(These are the **S¹** / **S²** links on the front page.) Per-dictionary availability is
+reflected live in the [catalog](../dictionaries/catalog).

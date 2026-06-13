@@ -20,19 +20,32 @@ sources) linked to scans:
 | `<ab>` | General abbreviation | `cf.`, `q.v.`, grammatical shorthand |
 | `<lex>` | Lexical/grammatical category | gender, part of speech |
 
-Each dictionary has its own abbreviation key (taken from its print front-matter).
-`TODO(verify)`: collect the per-dictionary abbreviation legends and link them here.
+Each dictionary has its own abbreviation key, taken from its print front matter. Those
+legends are transcribed on the dictionary's [csl-doc](https://github.com/sanskrit-lexicon/csl-doc)
+page (`source/dictionaries/{code}.rst` and its `prefaces/`) — the *csl-doc* column in the
+[catalog](catalog) links each one.
 
 ## Citing the Cologne Digital Sanskrit Dictionaries
 
-When you quote or reuse data, cite **both** the original print dictionary **and** the
-digitization. Recommended form (`TODO(verify)` against the project's official citation
-guidance):
+The project's **official citation form** (from the front page):
 
-> [Author], *[Dictionary title]* ([year]). Cologne Digital Sanskrit Dictionaries,
-> Universität zu Köln. https://sanskrit-lexicon.uni-koeln.de — accessed [date].
+> **In-text:** (Cologne Digital Sanskrit Dictionaries)
+>
+> **Bibliographic reference:** Cologne Digital Sanskrit Dictionaries, version 2.9.0,
+> Cologne University, accessed on [date], https://www.sanskrit-lexicon.uni-koeln.de
+
+When quoting a specific dictionary, also name the **original print work** (author, title,
+year — see the [catalog](catalog)).
+
+## Acknowledging data in a website or application
+
+If you reuse the data in a site or app, the project asks for:
+
+> This website / application uses data from Cologne Digital Sanskrit Dictionaries,
+> Cologne University, accessed on [date].
 
 ## Licensing
 
-CDSL content is generally **CC BY-SA 4.0**; reuse must preserve attribution and
-share-alike. `TODO(verify)`: note any dictionaries with different terms.
+The per-dictionary GitHub repositories carry a **CC BY-SA 4.0** `LICENSE` — reuse must
+preserve attribution and share-alike. (Confirm terms for any individual dictionary
+against its own repo if in doubt.)

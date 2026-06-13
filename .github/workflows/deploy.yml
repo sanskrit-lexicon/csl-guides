@@ -29,6 +29,9 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      - name: Refresh dictionary catalog from live site (non-fatal)
+        run: npm run build:catalog
+        continue-on-error: true
       - name: Build site
         run: npm run build
       - name: Upload Pages artifact

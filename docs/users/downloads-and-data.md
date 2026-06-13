@@ -6,8 +6,10 @@ sidebar_label: Downloads & Data
 
 # Downloads & Data
 
-Every dictionary is downloadable. CDSL is open data — content is generally licensed
-**CC BY-SA 4.0** (`TODO(verify)` per-dictionary licensing exceptions).
+Every dictionary is downloadable. CDSL is open data — the per-dictionary GitHub repos
+carry a **CC BY-SA 4.0** license. See
+[Abbreviations & Citations](../dictionaries/abbreviations-and-citations) for the official
+citation and acknowledgment wording.
 
 ## What you can download
 
@@ -34,9 +36,10 @@ in **[Data Formats](../developers/data-formats)**.
   under the [`sanskrit-lexicon`](https://github.com/sanskrit-lexicon) GitHub org — e.g.
   Monier-Williams is [`MWS`](https://github.com/sanskrit-lexicon/MWS), Apte 1890 is
   [`AP90`](https://github.com/sanskrit-lexicon/AP90).
-- A web API exists for lookups (`TODO(verify)`: document the endpoint, parameters, and
-  response format — see [`csl-apidev`](https://github.com/sanskrit-lexicon/csl-apidev)).
-  Draft developer reference: **[API](../developers/api)**.
+- A RESTful **web API** (native + a C-SALT-compatible "Salt API") serves lookups and
+  search — see **[API](../developers/api)**.
+- The per-dictionary **download page** is `/scans/{CODE}Scan/2020/web/webtc/download.html`
+  (the **D** link on the front page).
 
 ## Licensing & citation
 

@@ -23,5 +23,8 @@ designed for the common case: type a word, get its entries.
 - Simple-Search targets **headwords**; to search *inside* entries use
   **[Advanced Search](advanced-search)**.
 
-`TODO(verify)`: document Simple-Search's exact scope (which dictionaries, headword vs
-full text), the URL, and any options (exact/prefix/fuzzy matching).
+## Under the hood
+
+Simple-Search is powered by the API's `listview` action, with `getsuggest` providing
+prefix autocomplete (see the [API](../developers/api) page). The same display is reachable
+per dictionary via the **L** (List) link, `/scans/{CODE}Scan/2020/web/webtc1/index.php`.

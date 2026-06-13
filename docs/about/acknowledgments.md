@@ -6,20 +6,30 @@ sidebar_label: Acknowledgments
 
 # Acknowledgments
 
-:::caution Draft
-Populate with the official credits from the live site.
-:::
-
 CDSL exists thanks to the lexicographers whose print dictionaries it digitizes, the
 project team at the University of Cologne, and the contributors who report and submit
 corrections.
 
-To complete this page, list:
+## Markup & implementation credits
 
-- The **institute / chair** and principal investigators at the Universität zu Köln.
-- **Funding** bodies and grant numbers.
-- **Key contributors** to the digitization and tooling (e.g. the correction-workflow
-  authors referenced in the developer docs).
-- **Community contributors** who submit corrections and link targets.
+The markup of the various dictionaries was designed and implemented by:
 
-`TODO(verify)`: copy the authoritative acknowledgments text and credit list.
+- **Thomas Malten** (Cologne University) and assistants in India
+- **Peter Scharf** (The Sanskrit Library)
+- **Malcolm D. Hyman** (Max-Planck-Institut für Wissenschaftsgeschichte, Berlin)
+- **Jim Funderburk**
+
+The API was envisioned by Malcolm Hyman and Peter Scharf (mid-2000s) and implemented by
+Jim Funderburk (see the [API](../developers/api) page).
+
+## Funding
+
+The digitizations of works marked with an asterisk (`*`) on the front page were funded by
+the **DFG-NEH Project (2010–2013)** — a joint Deutsche Forschungsgemeinschaft / National
+Endowment for the Humanities programme.
+
+## Community contributors
+
+Everyone who files issues, submits corrections, and builds link targets via the
+[GitHub organization](https://github.com/sanskrit-lexicon) — see
+[Contributing](../contributing/overview).

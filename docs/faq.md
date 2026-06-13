@@ -45,5 +45,6 @@ and round-tripping deterministic. Devanāgarī and IAST are produced for display
 
 ### Is there an API?
 
-Yes — a RESTful API (native + a C-SALT-compatible "Salt API") with REST and GraphQL.
-See the **[API](developers/api)** page.
+Yes. CDSL exposes a **native** REST API plus a **Salt API** that is wire-compatible with
+Cologne's [C-SALT](https://api.c-salt.uni-koeln.de) services; GraphQL is available through
+the Salt `salt_graphql` endpoint. See the **[API](developers/api)** page.

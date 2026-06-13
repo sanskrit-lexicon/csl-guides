@@ -16,13 +16,23 @@ SLP1 is the website's *lingua franca* (storage encoding). The display **input/ou
 menus let you read or type in these schemes (the transcoder names are the values the API
 uses):
 
-| Scheme (transcoder name) | What it is | Example (*rāma*) |
-|---|---|---|
-| **`slp1`** | Sanskrit Library Phonetic Basic — the internal encoding; one ASCII char per phoneme | `rAma` |
-| **`deva`** | Devanāgarī (Unicode) | राम |
-| **`roman`** | Roman with diacritics (IAST-style) | rāma |
-| **`hk`** | Harvard-Kyoto — ASCII, case-sensitive | `rAma` |
-| **`itrans`** | ITRANS — ASCII scheme | `rAma` |
+| Scheme (transcoder name) | What it is | *rāma* | *śiva* |
+|---|---|---|---|
+| **`slp1`** | Sanskrit Library Phonetic Basic — the internal encoding; one ASCII char per phoneme | `rAma` | `Siva` |
+| **`deva`** | Devanāgarī (Unicode) | राम | शिव |
+| **`roman`** | Roman with diacritics (IAST-style) | rāma | śiva |
+| **`hk`** | Harvard-Kyoto — ASCII, case-sensitive | `rAma` | `ziva` |
+| **`itrans`** | ITRANS — ASCII scheme | `rAma` | `shiva` |
+
+:::tip Why two example words
+*rāma* looks **identical** in SLP1, Harvard-Kyoto, and ITRANS (all `rAma`) — none of its
+sounds are written differently across those ASCII schemes, so for this word the input
+scheme barely matters. *śiva* is the opposite: the **ś** sound is `S` in SLP1, `z` in
+Harvard-Kyoto, and `sh` in ITRANS — three different ASCII spellings of the same letter.
+The sounds where the schemes actually diverge are the sibilants (`ś`, `ṣ`), vocalic `ṛ`/`ḷ`,
+and the retroflex consonants. When your word contains one of those, choosing the right
+input scheme is exactly what makes the lookup match.
+:::
 
 Two more transcoders exist but are **not** in the display input/output menus: **`wx`**
 (used at Hyderabad University) and **`as`** (Anglicized Sanskrit, Thomas Malten's

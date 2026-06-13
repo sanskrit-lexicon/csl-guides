@@ -93,7 +93,10 @@ function actionUrls(scanCode) {
 
 async function main() {
   console.log('Fetching front page…');
-  const groups = parseFrontPage(await getText(FRONT));
+  const html = await getText(FRONT);
+  const groups = parseFrontPage(html);
+  // Single source of truth for the displayed site version (e.g. "version 2.9.0").
+  const siteVersion = (html.match(/version\s+(\d+\.\d+(?:\.\d+)?)/i) || [])[1] || null;
 
   console.log('Fetching org repo list…');
   const repos = new Set();
@@ -137,6 +140,7 @@ async function main() {
   const out = {
     generatedAt: new Date().toISOString().slice(0, 10),
     source: FRONT,
+    siteVersion,
     totalRows: total,
     fullyDigitized: groups.reduce((n, g) => n + g.items.filter((d) => !d.sampleOnly).length, 0),
     documentedInCslDoc: groups.reduce((n, g) => n + g.items.filter((d) => d.cslDocPage).length, 0),

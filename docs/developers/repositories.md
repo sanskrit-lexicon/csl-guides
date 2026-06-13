@@ -31,7 +31,7 @@ Each dictionary has its own repo, **named by its code**. Examples (see the full
 | [`csl-corrections`](https://github.com/sanskrit-lexicon/csl-corrections) | **Audit trail**: change files grouped in `batch_YYYYMMDD/` |
 | [`csl-websanlexicon`](https://github.com/sanskrit-lexicon/csl-websanlexicon) | Web/display assets consumed by generation |
 | [`csl-apidev`](https://github.com/sanskrit-lexicon/csl-apidev) | **Web backend** — the RESTful + Salt API (PHP) |
-| [`csl-app`](https://github.com/sanskrit-lexicon/csl-app) | **Web frontend** — cross-platform app (Dart/Flutter; Android/iOS/desktop) |
+| [`csl-app`](https://github.com/sanskrit-lexicon/csl-app) | **Cross-platform app** (Android/iOS/macOS/Linux/Windows; Dart/Flutter) |
 | [`csl-standards`](https://github.com/sanskrit-lexicon/csl-standards) | Shared standards (incl. the normative Salt API contract) |
 | [`csl-inflect`](https://github.com/sanskrit-lexicon/csl-inflect) | Inflected-forms generation (e.g. MW inflected forms) |
 | [`cologne-stardict`](https://github.com/sanskrit-lexicon/cologne-stardict) | StarDict / offline packaging |

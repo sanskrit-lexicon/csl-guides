@@ -23,9 +23,10 @@ and links to the full **[catalog](catalog)** and **[citation conventions](abbrev
 | Specialized | indices/glossaries | 12 | Mahābhārata (INM/MCI), Vedic (VEI), Purāṇic (PUI/PE), Buddhist (BHS) |
 
 :::note
-Counts are verified against the [front page](https://sanskrit-lexicon.uni-koeln.de) and
-sum to **43**; the front page headlines **42**. The one-entry discrepancy is noted in the
-**[catalog](catalog)** under *Open verification items*.
+Counts are verified against the [front page](https://sanskrit-lexicon.uni-koeln.de). The
+front page headlines **42** fully digitized dictionaries; the table has **43** rows
+because `PD` appears as a sample only. See the **[catalog](catalog)** *Count* note for the
+full resolution.
 :::
 
 ## Choosing a dictionary

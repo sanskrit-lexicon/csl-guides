@@ -21,12 +21,13 @@ differently, that is noted in the *Repo* column (e.g. display **MW** → repo
 per-dictionary repository was found in the org — the dictionary is served on the site but
 has not been migrated to its own GitHub repo.
 
-:::note Count
-The front page headlines **42 dictionaries**; the enumerated list below totals **43**
-(14 + 3 + 2 + 5 + 1 + 6 + 12). csl-doc independently documents **38** (the 5 it omits —
-`PD`, `FRI`, `ARMH`, `ACPH`, `ACSJ` — are listed under *Reconciliation* below). The
-42-vs-43 front-page discrepancy is still unresolved (it is **not** the Wilson/Yates pair —
-csl-doc confirms those are two separate dictionaries).
+:::note Count — resolved
+The front page states "The **42** dictionaries…", yet the table has **43 rows**. The extra
+row is **`PD`**, which is shown as a **sample only** (marked `*`, "funded by the DFG-NEH
+Project 2010-2013"): it links to a `pd-sample.php` page and has **no `…Scan` code and no
+B/L/A/M display**. The HTML confirms exactly **42 distinct `…Scan` dictionary codes** — the
+fully digitized dictionaries the headline counts — plus the PD sample = 43 rows. csl-doc
+documents 38 (no PD page, since there is no full dictionary to document).
 :::
 
 ## Sanskrit–English (14)
@@ -46,7 +47,7 @@ csl-doc confirms those are two separate dictionaries).
 | `MW` | Sanskrit–English Dictionary | Monier-Williams | 1899 | [MWS](https://github.com/sanskrit-lexicon/MWS) |
 | `SHS` | Shabda-Sagara Sanskrit–English Dictionary | — | 1900 | [SHS](https://github.com/sanskrit-lexicon/SHS) |
 | `AP` | Practical Sanskrit–English Dictionary (revised) | Apte | 1957 | [AP](https://github.com/sanskrit-lexicon/AP) |
-| `PD` | Encyclopedic Dictionary of Sanskrit on Historical Principles | — | 1976 | — |
+| `PD` | An Encyclopedic Dictionary of Sanskrit on Historical Principles (**sample only**, 4328 pp.) | Ghatage & Bhatta (eds.) | 1976 | — (sample page, not a full digitization) |
 
 ## English–Sanskrit (3)
 
@@ -172,10 +173,8 @@ Note: of the four Abhidhāna texts, only **`ABCH`** has a csl-doc page
 
 ## Still open
 
-- **42 vs 43** — the front page says 42; enumeration gives 43; csl-doc documents 38.
-  None of the three sources reconciles the headline count. `TODO(verify)` against the
-  front page itself.
-- **csl-doc coverage gaps** — `FRI` (has a repo) and `PD` warrant csl-doc pages; the
-  three uncovered Abhidhāna texts may too.
+- **csl-doc coverage gaps** — `FRI` has a repo but no csl-doc page; the three uncovered
+  Abhidhāna texts (`ARMH`, `ACPH`, `ACSJ`) may also warrant pages. (`PD` does not — it is
+  a sample only, see the *Count* note above.)
 - Missing publishers/editions for several titles — fill from each dictionary's print
   front matter (the csl-doc `prefaces/` pages are the place to mine these).

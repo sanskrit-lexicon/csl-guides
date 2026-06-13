@@ -40,3 +40,11 @@ Two items still await maintainer input and are flagged inline with `:::note` adm
 
 - the project's detailed **history / version timeline** — [docs/about/history.mdx](docs/about/history.mdx);
 - how generated artifacts **reach the live server** (deploy mechanism/cadence) — [docs/developers/generation-pipeline.md](docs/developers/generation-pipeline.md).
+
+## License
+
+The entire repository — guide content (`docs/`, `blog/`), images (`static/`), and the site
+code (`src/`, `scripts/`, configuration) — is licensed under
+[CC BY-SA 4.0](LICENSE), matching the Cologne Digital Sanskrit Dictionaries data license.
+Screenshots of the live site and any quoted dictionary text remain subject to the CDSL data
+terms (also CC BY-SA 4.0); reuse must preserve attribution and share-alike.

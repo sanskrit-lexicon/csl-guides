@@ -7,9 +7,13 @@ sidebar_label: Catalog
 # Dictionary Catalog
 
 This catalog is verified against the **[live front page](https://sanskrit-lexicon.uni-koeln.de)**
-(the authoritative source for display codes, titles, and years) and cross-checked against
-the actual repository names in the
-[`sanskrit-lexicon`](https://github.com/sanskrit-lexicon) GitHub org.
+(the authoritative source for display codes, titles, and years), cross-checked against the
+actual repository names in the [`sanskrit-lexicon`](https://github.com/sanskrit-lexicon)
+GitHub org, and reconciled with the per-dictionary pages in
+**[csl-doc](https://github.com/sanskrit-lexicon/csl-doc)** — the project's existing Sphinx
+"front matter / user notes / prefaces" documentation. See
+[Reconciliation with csl-doc](#reconciliation-with-csl-doc) below for what each source
+contributed.
 
 **Codes are the website display codes.** Where the GitHub repository is named
 differently, that is noted in the *Repo* column (e.g. display **MW** → repo
@@ -19,22 +23,23 @@ has not been migrated to its own GitHub repo.
 
 :::note Count
 The front page headlines **42 dictionaries**; the enumerated list below totals **43**
-(14 + 3 + 2 + 5 + 1 + 6 + 12). The one-entry discrepancy is unresolved —
-`TODO(verify)`: confirm whether one row (e.g. the combined Wilson/Yates working set) is
-counted differently on the front page.
+(14 + 3 + 2 + 5 + 1 + 6 + 12). csl-doc independently documents **38** (the 5 it omits —
+`PD`, `FRI`, `ARMH`, `ACPH`, `ACSJ` — are listed under *Reconciliation* below). The
+42-vs-43 front-page discrepancy is still unresolved (it is **not** the Wilson/Yates pair —
+csl-doc confirms those are two separate dictionaries).
 :::
 
 ## Sanskrit–English (14)
 
 | Code | Title | Author | Year | Repo |
 |---|---|---|---|---|
-| `WIL` | Sanskrit–English Dictionary | Wilson | 1832 | [WIL](https://github.com/sanskrit-lexicon/WIL) (also [Wil-YAT](https://github.com/sanskrit-lexicon/Wil-YAT)) |
-| `YAT` | Sanskrit–English Dictionary | Yates | 1846 | [Wil-YAT](https://github.com/sanskrit-lexicon/Wil-YAT) `TODO(verify)` standalone repo |
-| `GST` | Sanskrit–English Dictionary | Goldstücker | 1856 | — |
+| `WIL` | Sanskrit–English Dictionary | Wilson | 1832 | [WIL](https://github.com/sanskrit-lexicon/WIL); shares [Wil-YAT](https://github.com/sanskrit-lexicon/Wil-YAT) corrections repo |
+| `YAT` | Sanskrit–English Dictionary | Yates | 1846 | no own repo; corrections in [Wil-YAT](https://github.com/sanskrit-lexicon/Wil-YAT) |
+| `GST` | Goldstücker Sanskrit–English Dictionary (only words beginning *a-*) | Goldstücker | 1856 | — |
 | `BEN` | Sanskrit–English Dictionary | Benfey | 1866 | [BEN](https://github.com/sanskrit-lexicon/BEN) |
 | `MW72` | Sanskrit–English Dictionary (1st ed.) | Monier-Williams | 1872 | [MW72](https://github.com/sanskrit-lexicon/MW72) |
-| `LAN` | Sanskrit Reader Vocabulary | Lanman | 1884 | — |
-| `LRV` | Sanskrit–English Dictionary | Vaidya | 1889 | [LRV](https://github.com/sanskrit-lexicon/LRV) |
+| `LAN` | Lanman's Sanskrit Reader (vocabulary) | Lanman | 1884 | — |
+| `LRV` | Standard Sanskrit–English Dictionary | L.R. Vaidya | 1889 | [LRV](https://github.com/sanskrit-lexicon/LRV) |
 | `AP90` | Practical Sanskrit–English Dictionary | Apte | 1890 | [AP90](https://github.com/sanskrit-lexicon/AP90) |
 | `CAE` | Sanskrit–English Dictionary | Cappeller | 1891 | [CAE](https://github.com/sanskrit-lexicon/CAE) |
 | `MD` | Sanskrit–English Dictionary | Macdonell | 1893 | [MD](https://github.com/sanskrit-lexicon/MD) |
@@ -118,20 +123,59 @@ does not represent.
 | [KOW](https://github.com/sanskrit-lexicon/KOW) | Sanskrito-russkiy slovar | Kossowich | 1854 | SA → RU | ~13,488 entries; corrections/scans repo |
 | [KNA](https://github.com/sanskrit-lexicon/KNA) | Sanskrit–Russian Vocabulary | Knauer | 1908 | SA → RU | 3,271 entries; corrections repo |
 
-## Open verification items
+## Reconciliation with csl-doc
 
-- **Wilson/Yates repos**: confirm whether `WIL` and `YAT` have standalone repos or share
-  the combined [Wil-YAT](https://github.com/sanskrit-lexicon/Wil-YAT) working repo.
-- **8 unmigrated dictionaries** (`GST`, `LAN`, `PD`, `MWE`, `IEG`, `SNP`, `PE`, `PGN`)
-  plus the **4 Abhidhāna texts** (`ARMH`, `ABCH`, `ACPH`, `ACSJ`): served on the website
-  but with no dedicated org repo — confirm where their source lives.
-- **42 vs 43 count**: reconcile against the front-page total.
-- Several titles list author/year only; fill in missing publishers/editions from each
-  dictionary's print front-matter.
+[csl-doc](https://github.com/sanskrit-lexicon/csl-doc) is the project's existing Sphinx
+documentation site. Each dictionary has a `source/dictionaries/{code}.rst` page holding
+its **front matter, prefaces, and user notes** (the dictionary *text* itself lives in
+[`csl-orig`](https://github.com/sanskrit-lexicon/csl-orig), conventionally at
+`csl-orig/v02/{code}/{code}.txt`). The page URL pattern is:
 
-:::note Resolved
-The earlier open question — mapping `ARMH`/`ABCH`/`ACPH`/`ACSJ` to the unidentified repos
-`AMAR`/`KNA`/`KOW` — was a false lead. Those three repos are **separate, newer
-dictionaries** (Amarakośa and two Sanskrit–Russian lexica), documented in *In preparation*
-above. The Abhidhāna texts have no repo.
-:::
+```
+https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/{code}.rst
+```
+
+csl-doc's [`index.rst`](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/index.rst)
+documents **38 dictionaries**, all of which are a subset of the 43 on the front page.
+
+**On the website but *not* in csl-doc (5):**
+
+| Code | Title | Has org repo? |
+|---|---|---|
+| `PD` | Encyclopedic Dictionary of Sanskrit on Historical Principles | No |
+| `FRI` | Friš Sanskrit Reader Vocabulary | **Yes** — [FRI](https://github.com/sanskrit-lexicon/FRI) (repo but no csl-doc page) |
+| `ARMH` | Abhidhānaratnamālā of Halāyudha | No |
+| `ACPH` | Abhidhānacintāmaṇipariśiṣṭa | No |
+| `ACSJ` | Abhidhānacintāmaṇiśiloñcha | No |
+
+Note: of the four Abhidhāna texts, only **`ABCH`** has a csl-doc page
+([abch.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/abch.rst));
+`ARMH`/`ACPH`/`ACSJ` have neither a repo nor a csl-doc page.
+
+## Resolved by reconciliation
+
+- **Wilson vs Yates** — *separate dictionaries.* csl-doc has distinct
+  [wil.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/wil.rst)
+  and [yat.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/yat.rst)
+  pages. `WIL` has its own repo; `YAT` has none (its corrections live in the shared
+  [Wil-YAT](https://github.com/sanskrit-lexicon/Wil-YAT) repo).
+- **`PW` display code** — confirmed by
+  [pw.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pw.rst)
+  ("Böhtlingk Sanskrit-Wörterbuch in kürzerer Fassung"); the repo is `PWK`.
+- **Source location of the "unmigrated" dictionaries** — `GST`, `LAN`, `IEG`, `SNP`,
+  `PE`, `PGN`, `MWE` all have csl-doc front-matter pages; their text lives in `csl-orig`,
+  not in a per-dictionary repo.
+- **Titles** — adopted csl-doc's fuller forms (e.g. `LRV` = *Standard Sanskrit–English
+  Dictionary*, L.R. Vaidya; `GST` covers only words beginning with *a-*).
+- **AMAR/KNA/KOW** — not Abhidhāna texts; separate newer dictionaries (see *In
+  preparation*). None has a csl-doc page yet.
+
+## Still open
+
+- **42 vs 43** — the front page says 42; enumeration gives 43; csl-doc documents 38.
+  None of the three sources reconciles the headline count. `TODO(verify)` against the
+  front page itself.
+- **csl-doc coverage gaps** — `FRI` (has a repo) and `PD` warrant csl-doc pages; the
+  three uncovered Abhidhāna texts may too.
+- Missing publishers/editions for several titles — fill from each dictionary's print
+  front matter (the csl-doc `prefaces/` pages are the place to mine these).

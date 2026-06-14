@@ -14,6 +14,7 @@ export default function Screenshot({src, alt, width, height}) {
       width={width}
       height={height}
       loading="lazy"
+      className="csl-shot"
       style={{
         border: '1px solid var(--ifm-color-emphasis-300)',
         borderRadius: '8px',

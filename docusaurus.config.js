@@ -78,6 +78,8 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Default social-card image (og:image / twitter:image) for link unfurls.
+      image: 'img/social-card.png',
       navbar: {
         title: 'Cologne Sanskrit Lexicon',
         logo: {

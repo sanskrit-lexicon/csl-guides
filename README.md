@@ -32,6 +32,19 @@ for `url` / `baseUrl` / `organizationName` / `projectName`.
 
 ## Status
 
-Scaffold + first draft generated from the live site, the sibling CDSL repositories,
-and the org `CLAUDE.md`. Pages marked with `:::caution Draft` need maintainer review —
-search the repo for `TODO(verify)` to find every claim that needs confirmation.
+Content is drafted and verified against the live site, the sibling CDSL repositories, and
+the org `CLAUDE.md`. The dictionary catalog is auto-generated from the live front page
+(`npm run build:catalog`), so it cannot drift by hand.
+
+Two items still await maintainer input and are flagged inline with `:::note` admonitions:
+
+- the project's detailed **history / version timeline** — [docs/about/history.mdx](docs/about/history.mdx);
+- how generated artifacts **reach the live server** (deploy mechanism/cadence) — [docs/developers/generation-pipeline.md](docs/developers/generation-pipeline.md).
+
+## License
+
+The entire repository — guide content (`docs/`, `blog/`), images (`static/`), and the site
+code (`src/`, `scripts/`, configuration) — is licensed under
+[CC BY-SA 4.0](LICENSE), matching the Cologne Digital Sanskrit Dictionaries data license.
+Screenshots of the live site and any quoted dictionary text remain subject to the CDSL data
+terms (also CC BY-SA 4.0); reuse must preserve attribution and share-alike.

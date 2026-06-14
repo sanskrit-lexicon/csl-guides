@@ -15,6 +15,24 @@ implemented in
 [`dalglob.php`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/dalglob.php)
 in `csl-apidev`.
 
+### A worked example
+
+Suppose you look up **agni** ("fire") and want every major dictionary's treatment on one
+page rather than opening each one's Basic view in turn. A multi-dictionary display stacks
+them together — for instance:
+
+- **Monier-Williams** (`MW`) — the broad Sanskrit→English standard;
+- **Apte** (`AP90`) — classical usage and compounds;
+- **Böhtlingk-Roth** (`PWG`) — the large, detailed Sanskrit→German treatment.
+
+For a side-by-side sense of how the *same* entry differs in language and depth across
+dictionaries, see
+**[Search & Display → The same word across dictionaries](../users/search-and-display#the-same-word-across-dictionaries)**.
+
+Because `dalglob` is experimental, treat its URL and output as subject to change; the
+stable path for comparison is to open each dictionary's **B** (Basic) display from the
+front page.
+
 ## MW Inflected forms
 
 A **Monier-Williams inflected-forms** resource provides inflected forms tied to MW

@@ -37,9 +37,9 @@ All files must be **UTF-8** (no BOM — see the BOM rule in
 To fix a typo on line 1234 of a dictionary:
 
 ```
-; fix headword typo: krsna -> kfRZa (SLP1)
+; fix headword typo: krsna -> kfzRa (SLP1)
 1234 old <H1><h><key1>krsna</key1>...
-1234 new <H1><h><key1>kfRZa</key1>...
+1234 new <H1><h><key1>kfzRa</key1>...
 ```
 
 Then run the **[full workflow](corrections-workflow)**: snapshot → apply → validate XML

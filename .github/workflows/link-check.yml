@@ -1,0 +1,40 @@
+name: Link check
+
+# Internal/relative links are already validated by the Docusaurus build
+# (onBrokenLinks: 'throw'). This job checks the *external* http(s) links in the docs
+# so they don't rot silently. Runs weekly and on demand — not on every PR, to avoid
+# third-party flakiness blocking merges.
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    name: Check external links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # --scheme http(s) limits checks to external URLs (skips relative doc links).
+          # The CDSL live server and Google Play reject non-browser agents, so they are
+          # excluded to avoid false 403s; a browser UA is sent for the rest.
+          args: >-
+            --no-progress
+            --scheme https
+            --scheme http
+            --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            --exclude "sanskrit-lexicon\.uni-koeln\.de"
+            --exclude "c-salt\.uni-koeln\.de"
+            --exclude "play\.google\.com"
+            "./**/*.md"
+            "./**/*.mdx"
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

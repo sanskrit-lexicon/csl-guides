@@ -10,10 +10,12 @@ export const Shot = ({src, alt}) => (
   <img
     src={useBaseUrl(src)}
     alt={alt}
+    loading="lazy"
     style={{
       border: '1px solid var(--ifm-color-emphasis-300)',
       borderRadius: '8px',
       maxWidth: '100%',
+      height: 'auto',
       marginTop: '0.5rem',
     }}
   />
@@ -87,3 +89,24 @@ Entries are generated from XML markup. Tags that drive linking and display inclu
 When a `<ls>` reference has been linked (a "Dictionary to Book" task), clicking it opens
 the cited scanned page. See **[Contributing → Issue Taxonomy](../contributing/issue-taxonomy)**
 for how those links are built.
+
+## The same word across dictionaries
+
+Every dictionary shares the same lookup interface, so you can read one headword through
+several lenses. Here is **agni** ("fire") in the Basic display of three dictionaries —
+notice how the language, depth, and citation style differ:
+
+### Apte (AP90) — Sanskrit→English
+
+<Shot src="/img/displays/ap90-basic.png" alt="Apte (AP90) Basic display of agni — a concise Sanskrit-to-English entry" />
+
+### Böhtlingk-Roth (PWG) — Sanskrit→German
+
+<Shot src="/img/displays/pwg-basic.png" alt="Böhtlingk-Roth (PWG) Basic display of agni — a detailed Sanskrit-to-German entry" />
+
+### Grassmann (GRA) — Rig-Veda, Sanskrit→German
+
+<Shot src="/img/displays/gra-basic.png" alt="Grassmann (GRA) Basic display of agni — the Rig-Veda vocabulary, Sanskrit to German" />
+
+To pull a single word from many dictionaries at once instead of opening each separately,
+see the experimental **[Multi-Dictionary display](../tools/multi-dictionary)**.

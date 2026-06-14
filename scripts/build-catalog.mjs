@@ -20,13 +20,21 @@ const FRONT = 'https://www.sanskrit-lexicon.uni-koeln.de/';
 const ORG = 'sanskrit-lexicon';
 const SITE = 'https://www.sanskrit-lexicon.uni-koeln.de';
 
+// The CDSL front-page server rejects non-browser user agents (the same 403 the screenshot
+// script hits), so the front-page fetch identifies as a desktop browser. Without this the
+// catalog refresh silently no-ops in CI and the committed dataset is used as-is.
+const BROWSER_UA =
+  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
+
 // Display-code -> repo name, where the GitHub repo is NOT just the upper-cased code.
 const REPO_OVERRIDES = {MW: 'MWS', AE: 'ApteES', PW: 'PWK'};
 // Codes that intentionally have no own repo (corrections live elsewhere / unmigrated).
 const NO_REPO = new Set(['YAT', 'GST', 'LAN', 'PD', 'MWE', 'IEG', 'SNP', 'PE', 'PGN', 'ARMH', 'ACPH', 'ACSJ']);
 
 async function getText(url) {
-  const r = await fetch(url, {headers: {'User-Agent': 'csl-guides-catalog-builder'}});
+  const r = await fetch(url, {
+    headers: {'User-Agent': BROWSER_UA, 'Accept-Language': 'en-US,en;q=0.9', Referer: `${SITE}/`},
+  });
   if (!r.ok) throw new Error(`${r.status} ${r.statusText} for ${url}`);
   return r.text();
 }
@@ -93,7 +101,10 @@ function actionUrls(scanCode) {
 
 async function main() {
   console.log('Fetching front page…');
-  const groups = parseFrontPage(await getText(FRONT));
+  const html = await getText(FRONT);
+  const groups = parseFrontPage(html);
+  // Single source of truth for the displayed site version (e.g. "version 2.9.0").
+  const siteVersion = (html.match(/version\s+(\d+\.\d+(?:\.\d+)?)/i) || [])[1] || null;
 
   console.log('Fetching org repo list…');
   const repos = new Set();
@@ -137,6 +148,7 @@ async function main() {
   const out = {
     generatedAt: new Date().toISOString().slice(0, 10),
     source: FRONT,
+    siteVersion,
     totalRows: total,
     fullyDigitized: groups.reduce((n, g) => n + g.items.filter((d) => !d.sampleOnly).length, 0),
     documentedInCslDoc: groups.reduce((n, g) => n + g.items.filter((d) => d.cslDocPage).length, 0),

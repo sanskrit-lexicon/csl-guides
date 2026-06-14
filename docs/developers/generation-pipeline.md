@@ -57,7 +57,28 @@ This step sits between **[Corrections Workflow](../contributing/corrections-work
 (producing corrected source) and the published site. See **[Architecture](architecture)**
 for the end-to-end diagram.
 
-:::note Needs maintainer input
-How generated artifacts reach the live server (deploy mechanism, cadence, who triggers
-it) is not documented publicly — fill from the project's own operations notes.
+## Deploying to the live server
+
+CDSL is **not deployed by CI** — the site is generated and served directly on the
+University of Cologne web server. Per
+[`csl-websanlexicon/readme_cologne.org`](https://github.com/sanskrit-lexicon/csl-websanlexicon/blob/master/readme_cologne.org):
+
+- Each dictionary's **web application** (the B/L/A/M displays, in PHP) is produced by a
+  `generate.py` step using **mako** templates, run in the `v00` working directory on the
+  Cologne host.
+- Output is written into the server's scan tree at `…/{CODE}Scan/{year}/web/` — the very
+  paths the live URLs use (e.g. `/scans/MWScan/2020/web/…`). The `{year}` segment marks
+  the generation vintage (2013–2014 originally; **2020** for the current build).
+- The Cologne host then serves those generated PHP/JS/CSS files directly (Apache + PHP;
+  XAMPP is referenced for the equivalent local validation in `xmlchk_xampp.sh`).
+
+So **regeneration is the deploy**: running the generator on the server refreshes what
+visitors see. The cadence is **manual** — maintainers regenerate after a batch of
+corrections — not triggered automatically.
+
+:::note
+`readme_cologne.org` is dated 2018 and references the Python 2 toolchain; the current
+generation (`csl-pywork`, Python 3 + mako) is newer, but the **publish model is
+unchanged** — generated files live in the server's `…/{CODE}Scan/{year}/web/` tree and are
+served from there.
 :::

@@ -85,6 +85,7 @@ const sidebars = {
         'about/about',
         'about/history',
         'about/events',
+        'about/publications',
         'about/acknowledgments',
         'faq',
       ],

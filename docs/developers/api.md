@@ -13,7 +13,12 @@ Malcolm Hyman and Peter Scharf in the mid-2000s and implemented by Jim Funderbur
 
 :::caution Development API
 Endpoints and URLs below are from the development repo and may change. Treat this as a
-working reference and verify against the live server before depending on it.
+working reference and verify against the live server before depending on it. As of this
+writing the **native** actions (`getword`, `listview`, `getsuggest`, `servepdf`,
+`getword_xml`, `listhier`) are live under the base URL below, but the **Salt API**
+actions (`salt_entries`, `salt_ids`, `salt_graphql`) are not yet deployed there and
+currently return `404` — the example below is illustrative of the contract, not a
+live call.
 :::
 
 ## Two API surfaces

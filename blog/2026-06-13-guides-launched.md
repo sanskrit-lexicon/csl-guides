@@ -11,7 +11,7 @@ plus an FAQ.
 
 <!-- truncate -->
 
-This first draft was generated from the live site, the `sanskrit-lexicon` source
-repositories, and project documentation. Pages and claims marked **Draft** or
-`TODO(verify)` still need maintainer review before publication. Contributions welcome via
-the [GitHub repo](https://github.com/sanskrit-lexicon/csl-guides).
+The content was generated and verified against the live site, the `sanskrit-lexicon`
+source repositories, and project documentation, and the dictionary catalog is
+auto-generated from the live front page. Corrections and contributions are welcome via the
+[GitHub repo](https://github.com/sanskrit-lexicon/csl-guides).

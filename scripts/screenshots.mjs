@@ -19,7 +19,7 @@ const SITE = 'https://www.sanskrit-lexicon.uni-koeln.de';
 // can see how entries differ across dictionaries and languages.
 const DICTS = [
   {code: 'MW', query: 'agni', modes: ['basic', 'list', 'advanced', 'mobile']},
-  {code: 'AP90', query: 'agni', modes: ['basic']}, // Apte, Sanskrit–English
+  {code: 'AP90', query: 'agniH', modes: ['basic']}, // Apte lists the nominative अग्निः, not the stem
   {code: 'PWG', query: 'agni', modes: ['basic']}, // Böhtlingk-Roth, Sanskrit–German
   {code: 'GRA', query: 'agni', modes: ['basic']}, // Grassmann, Rig-Veda, Sanskrit–German
 ];

@@ -84,6 +84,7 @@ const sidebars = {
       items: [
         'about/about',
         'about/history',
+        'about/events',
         'about/acknowledgments',
         'faq',
       ],

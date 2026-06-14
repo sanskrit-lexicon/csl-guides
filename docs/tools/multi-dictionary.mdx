@@ -1,0 +1,55 @@
+---
+id: multi-dictionary
+title: Multi-Dictionary Display & MW Inflected Forms
+sidebar_label: Multi-Dictionary
+---
+
+import Screenshot from '@site/src/components/Screenshot';
+
+# Multi-Dictionary Display & MW Inflected Forms
+
+## Multi-dictionary lookup (`dalglob`)
+
+CDSL has an **experimental multi-dictionary lookup**: enter one headword and it lists
+**every dictionary that contains it**, then opens an entry — handy for seeing at a glance
+which dictionaries cover a word and for comparing how each treats it. The sample display,
+[`sample/dalglob1.php`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/sample/dalglob1.php),
+is served live at
+[`/scans/csl-apidev/sample/dalglob1.php`](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-apidev/sample/dalglob1.php?key=agni&input=slp1&output=deva).
+It is powered by
+[`dalglob.php`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/dalglob.php) — a
+small JSON endpoint that queries a global *key → dictionaries* index (`keydoc_glob`) and
+returns which dictionaries hold a given key.
+
+<Screenshot
+  src="/img/displays/dalglob-agni.png"
+  alt="The dalglob1 sample: the headword agni looked up across dictionaries, listing acc, ap, ap90, armh, ben, bhs, bop, bur, cae, ccs … each with its matched headword"
+  width={1650}
+  height={480}
+/>
+
+### A worked example
+
+Look up **agni** ("fire") and the lookup lists every dictionary that has it — Monier-Williams,
+Apte (`AP90`), Böhtlingk-Roth (`PWG`), Cappeller (`CAE`), the Buddhist Hybrid Sanskrit index
+(`BHS`), and many more — each a button that opens that dictionary's entry.
+
+For a side-by-side sense of how the *same* entry differs in language and depth across
+dictionaries, see
+**[Search & Display → The same word across dictionaries](../users/search-and-display#the-same-word-across-dictionaries)**.
+
+:::caution Experimental
+`dalglob1` is a development sample ("dalgob1-dev") — treat its URL and output as subject to
+change. The stable path for comparison is to open each dictionary's **B** (Basic) display
+from the front page.
+:::
+
+## MW Inflected forms
+
+A **Monier-Williams inflected-forms** resource provides inflected forms tied to MW
+headwords — useful when you encounter an inflected word and need to find its stem. It is
+linked from the MW row on the front page ("Inflected forms") and lives at
+`/scans/csl-inflect/web/index.php`, generated from
+[`csl-inflect`](https://github.com/sanskrit-lexicon/csl-inflect) (see also
+[`MWinflect`](https://github.com/sanskrit-lexicon/MWinflect)).
+

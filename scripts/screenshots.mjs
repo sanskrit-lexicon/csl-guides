@@ -96,6 +96,19 @@ for (const d of DICTS) {
 // dictionary group visible below the header.
 shots.push({name: 'frontpage', url: `${SITE}/`, mobile: false, query: null, viewport: {width: 1280, height: 1500}});
 
+// The experimental multi-dictionary sample display (dalglob1): type a key and it lists
+// every dictionary that has it, then shows the first one's entry. tryQuery types into its
+// #key text box and presses Enter, which fires the lookup.
+shots.push({
+  name: 'dalglob-agni',
+  url: `${SITE}/scans/csl-apidev/sample/dalglob1.php`,
+  mobile: false,
+  query: 'agni',
+  // Short viewport frames the populated dictionary list (the point of the feature) and
+  // keeps the slower-to-load entry pane below the fold.
+  viewport: {width: 1100, height: 320},
+});
+
 // Optional name filter so a single shot can be refreshed without re-hitting every page:
 //   node scripts/screenshots.mjs frontpage
 const filter = process.argv[2];

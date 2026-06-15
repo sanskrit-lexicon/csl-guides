@@ -31,6 +31,12 @@ const sidebars = {
         'dictionaries/overview',
         'dictionaries/catalog',
         'dictionaries/abbreviations-and-citations',
+        {
+          type: 'category',
+          label: 'Featured dictionaries',
+          collapsed: false,
+          items: ['dictionaries/mw'],
+        },
       ],
     },
   ],

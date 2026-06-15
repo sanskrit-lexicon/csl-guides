@@ -1,0 +1,124 @@
+---
+id: mw
+title: Monier-Williams (MW)
+sidebar_label: Monier-Williams (MW)
+---
+
+import Screenshot from '@site/src/components/Screenshot';
+
+# Monier-Williams Sanskrit–English Dictionary (`MW`)
+
+Monier Monier-Williams' *Sanskrit–English Dictionary* (1899) is the **standard general
+reference** for classical Sanskrit and the most-used dictionary on the site. This is a
+flagship guide page — for most other dictionaries the [catalog](catalog) links straight to
+their [csl-doc](https://github.com/sanskrit-lexicon/csl-doc) front-matter page.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `MW` (GitHub repo [`MWS`](https://github.com/sanskrit-lexicon/MWS)) |
+| **Full title** | *A Sanskrit–English Dictionary* (new ed., greatly enlarged) |
+| **Author** | Monier Monier-Williams; digital edition with **Ernst Leumann** and **Carl Cappeller** |
+| **Year / size** | 1899 · ~**1333** pages |
+| **Direction** | Sanskrit → English |
+| **Accents** | Yes (Vedic accents are marked) |
+| **Source** | [`csl-orig/v02/mw/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/mw) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/webtc/download.html) · [Scans (PDF)](https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/index.php?sfx=pdf) |
+| **csl-doc** | [mw.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/mw.rst) (front matter / preface) |
+
+## When to use it
+
+Reach for MW when you want the **broadest classical coverage** in English: it is
+encyclopaedic, rich in **compounds**, **etymologies**, and **literary-source citations**,
+and it marks **Vedic accents**. Complements within CDSL:
+
+- Use **[Apte (AP90)](catalog)** for a cleaner, sense-numbered classical reading and idioms.
+- Use **[Böhtlingk-Roth (PWG)](catalog)** (German) for the deepest scholarly treatment and
+  the fullest citations.
+- Use **[Grassmann (GRA)](catalog)** for the Ṛg-Veda specifically.
+- For the **1872 first edition**, see **`MW72`** (a separate dictionary, not the same text).
+
+## Looking up a word
+
+1. Open the **Basic** display and pick your **input** transliteration (see
+   [Encoding & Transliteration](../users/encoding-transliteration) — MW defaults to
+   *Kyoto-Harvard*).
+2. Type the headword and choose an **output** script (e.g. *Roman Unicode* or
+   *Devanāgarī*). Type `agni` (fire):
+
+<Screenshot
+  src="/img/displays/mw-basic.png"
+  alt="MW Basic display showing the entry for agni: citation box, input Kyoto-Harvard, output Roman Unicode, and the rendered entry"
+  width={1800}
+  height={1350}
+/>
+
+For browsing neighbours, the **List** display shows a Devanāgarī headword index beside the
+entry; the **Advanced** display searches *inside* entries. See
+[Search & Display](../users/search-and-display) for all four modes.
+
+## Reading an entry
+
+The `agni` entry above illustrates the structure every MW entry shares:
+
+| In the display | Meaning | Source markup |
+|---|---|---|
+| **(H1)** | record / homonym group | `<L>…<LEND>` record, `<h>` homonym |
+| **[Printed book page 5,1]** | page,column in the 1899 print | `<pc>1,1` |
+| **agni** (headword) | the lemma, keyed in SLP1 | `<k1>agni</k1>`, `<k2>` for hyphenation |
+| *m.* | gender / lexical category | `<lex>m.</lex>`, `<info lex="m"/>` |
+| (√ag, Uṇ.) | etymology / grammatical authority | `<s>` Sanskrit spans, `<ab>` abbreviations |
+| Gārhapatya, … | Sanskrit terms rendered to your output script | `<s>`, `<s1>` |
+| **[ID=890]** | stable per-sense id (used by permalinks/API) | record `lnum` |
+| *coloured source abbreviations* | literary-source citations, click-through to scans where linked | `<ls>` |
+
+See [Data Formats](../developers/data-formats) for the full markup reference.
+
+## What makes MW distinctive
+
+- **Vedic accents.** MW marks accents; they can be shown or hidden via the *accent* option
+  (and the API `accent` parameter).
+- **Digital additions.** The XML edition incorporates material from **Ernst Leumann** and
+  **Carl Cappeller**.
+- **Pāṇinian links.** References to Pāṇini's grammar in MW were linked (October 2021), so
+  grammatical citations click through to their targets — part of the "Dictionary to Book"
+  effort ([Issue Taxonomy](../contributing/issue-taxonomy)).
+- **Inflected forms.** A companion **MW inflected-forms** resource maps inflected words back
+  to MW headwords — handy when you meet a declined/conjugated form. See
+  [Tools → Multi-Dictionary](../tools/multi-dictionary) (`/scans/csl-inflect/web/index.php`).
+
+## Worked examples
+
+**Find a compound** — in **Advanced**, set field *Sanskrit word* → *Text Word* won't help
+for a stem; use `query_type=wildcard` on `headword_slp1` (e.g. `agni*`) to list compounds
+beginning *agni-*. See [Advanced Search](../tools/advanced-search).
+
+**Search by cited source** — to find entries citing a given text, search the entry body
+(`field=xml` or `sense`) for the source's abbreviation in **Advanced**.
+
+**Fetch an entry programmatically** — the native API serves MW entries; e.g. `getword`
+returns the entry-display for a headword. See the [API](../developers/api) page for the
+base URL, parameters, and the (C-SALT-compatible) Salt API.
+
+**Link straight to an entry** — the clean-URL permalink form is `/MW/{ref}` where `ref` is
+a headword in any input transliteration or an `lnum` — e.g. `/MW/bAQa` or `/MW/144239`
+(roadmap; see [API → Clean-URL permalinks](../developers/api)).
+
+## How MW was digitized
+
+The digitization is documented in **"Marking Monier"** (Jim Funderburk & Thomas Malten,
+*Second International Sanskrit Computational Linguistics Symposium*, 2008). It describes
+four phases — initial digitization, refinement into `MONIER.ALL`, conversion to XML, and
+the current `mwtab` markup — and the choices made to preserve the print structure without
+losing information. See [Publications](../about/publications) and the live
+["Marking Monier" notes](https://www.sanskrit-lexicon.uni-koeln.de/talkMay2008/markingMonier.html).
+
+## See also
+
+- The full **[catalog](catalog)** of all 42 dictionaries
+- **[Abbreviations & Citations](abbreviations-and-citations)** — how to cite MW
+- **[Downloads & Data](../users/downloads-and-data)** — XML (SLP1), PDF, scans
+- **csl-doc** [mw.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/mw.rst)
+  and its [preface](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/prefaces/mwpref.rst)

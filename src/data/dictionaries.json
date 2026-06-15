@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-06-13",
+  "generatedAt": "2026-06-15",
   "source": "https://www.sanskrit-lexicon.uni-koeln.de/",
   "siteVersion": "2.9.0",
   "totalRows": 43,
   "fullyDigitized": 42,
   "documentedInCslDoc": 38,
+  "withCslOrigSource": 42,
   "groups": [
     {
       "name": "Sanskrit-English",
@@ -31,6 +32,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/WIL",
           "cslDocPage": "wil",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/wil.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/wil",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/WILScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/WILScan/2020/web/webtc/indexcaller.php",
@@ -64,6 +66,7 @@
           "repoUrl": null,
           "cslDocPage": "yat",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/yat.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/yat",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/YATScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/YATScan/2020/web/webtc/indexcaller.php",
@@ -97,6 +100,7 @@
           "repoUrl": null,
           "cslDocPage": "gst",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/gst.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/gst",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/GSTScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/GSTScan/2020/web/webtc/indexcaller.php",
@@ -130,6 +134,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/BEN",
           "cslDocPage": "ben",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ben.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/ben",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BENScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BENScan/2020/web/webtc/indexcaller.php",
@@ -163,6 +168,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/MW72",
           "cslDocPage": "mw72",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/mw72.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/mw72",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MW72Scan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MW72Scan/2020/web/webtc/indexcaller.php",
@@ -196,6 +202,7 @@
           "repoUrl": null,
           "cslDocPage": "lan",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/lan.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/lan",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LANScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LANScan/2020/web/webtc/indexcaller.php",
@@ -229,6 +236,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/LRV",
           "cslDocPage": "lrv",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/lrv.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/lrv",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2020/web/webtc/indexcaller.php",
@@ -262,6 +270,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/AP90",
           "cslDocPage": "ap90",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ap90.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/ap90",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/AP90Scan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/AP90Scan/2020/web/webtc/indexcaller.php",
@@ -295,6 +304,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/CAE",
           "cslDocPage": "cae",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/cae.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/cae",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/CAEScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/CAEScan/2020/web/webtc/indexcaller.php",
@@ -328,6 +338,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/MD",
           "cslDocPage": "md",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/md.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/md",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MDScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MDScan/2020/web/webtc/indexcaller.php",
@@ -361,6 +372,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/MWS",
           "cslDocPage": "mw",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/mw.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/mw",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/webtc/indexcaller.php",
@@ -394,6 +406,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/SHS",
           "cslDocPage": "shs",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/shs.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/shs",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/SHSScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/SHSScan/2020/web/webtc/indexcaller.php",
@@ -427,6 +440,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/AP",
           "cslDocPage": "ap",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ap.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/ap",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/APScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/APScan/2020/web/webtc/indexcaller.php",
@@ -460,6 +474,7 @@
           "repoUrl": null,
           "cslDocPage": null,
           "cslDocUrl": null,
+          "cslOrigUrl": null,
           "urls": null
         }
       ]
@@ -489,6 +504,7 @@
           "repoUrl": null,
           "cslDocPage": "mwe",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/mwe.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/mwe",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MWEScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MWEScan/2020/web/webtc/indexcaller.php",
@@ -522,6 +538,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/BOR",
           "cslDocPage": "bor",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/bor.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/bor",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BORScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BORScan/2020/web/webtc/indexcaller.php",
@@ -555,6 +572,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/ApteES",
           "cslDocPage": "ae",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ae.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/ae",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/AEScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/AEScan/2020/web/webtc/indexcaller.php",
@@ -593,6 +611,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/BUR",
           "cslDocPage": "bur",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/bur.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/bur",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BURScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BURScan/2020/web/webtc/indexcaller.php",
@@ -626,6 +645,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/STC",
           "cslDocPage": "stc",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/stc.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/stc",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/STCScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/STCScan/2020/web/webtc/indexcaller.php",
@@ -664,6 +684,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/PWG",
           "cslDocPage": "pwg",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pwg.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/pwg",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/web/webtc/indexcaller.php",
@@ -697,6 +718,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/GRA",
           "cslDocPage": "gra",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/gra.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/gra",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/GRAScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/GRAScan/2020/web/webtc/indexcaller.php",
@@ -730,6 +752,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/PWK",
           "cslDocPage": "pw",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pw.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/pw",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PWScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PWScan/2020/web/webtc/indexcaller.php",
@@ -763,6 +786,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/CCS",
           "cslDocPage": "ccs",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ccs.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/ccs",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/CCSScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/CCSScan/2020/web/webtc/indexcaller.php",
@@ -796,6 +820,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/SCH",
           "cslDocPage": "sch",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/sch.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/sch",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/SCHScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/SCHScan/2020/web/webtc/indexcaller.php",
@@ -834,6 +859,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/BOP",
           "cslDocPage": "bop",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/bop.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/bop",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BOPScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BOPScan/2020/web/webtc/indexcaller.php",
@@ -872,6 +898,7 @@
           "repoUrl": null,
           "cslDocPage": null,
           "cslDocUrl": null,
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/armh",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ARMHScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ARMHScan/2020/web/webtc/indexcaller.php",
@@ -905,6 +932,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/VCP",
           "cslDocPage": "vcp",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/vcp.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/vcp",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/VCPScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/VCPScan/2020/web/webtc/indexcaller.php",
@@ -938,6 +966,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/SKD",
           "cslDocPage": "skd",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/skd.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/skd",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/SKDScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/SKDScan/2020/web/webtc/indexcaller.php",
@@ -971,6 +1000,7 @@
           "repoUrl": null,
           "cslDocPage": "abch",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/abch.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/abch",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2020/web/webtc/indexcaller.php",
@@ -1004,6 +1034,7 @@
           "repoUrl": null,
           "cslDocPage": null,
           "cslDocUrl": null,
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/acph",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2020/web/webtc/indexcaller.php",
@@ -1037,6 +1068,7 @@
           "repoUrl": null,
           "cslDocPage": null,
           "cslDocUrl": null,
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/acsj",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2020/web/webtc/indexcaller.php",
@@ -1075,6 +1107,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/INM",
           "cslDocPage": "inm",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/inm.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/inm",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/INMScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/INMScan/2020/web/webtc/indexcaller.php",
@@ -1108,6 +1141,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/VEI",
           "cslDocPage": "vei",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/vei.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/vei",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/VEIScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/VEIScan/2020/web/webtc/indexcaller.php",
@@ -1141,6 +1175,7 @@
           "repoUrl": null,
           "cslDocPage": "pui",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pui.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/pui",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PUIScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PUIScan/2020/web/webtc/indexcaller.php",
@@ -1174,6 +1209,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/BHS",
           "cslDocPage": "bhs",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/bhs.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/bhs",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BHSScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/BHSScan/2020/web/webtc/indexcaller.php",
@@ -1207,6 +1243,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/FRI",
           "cslDocPage": null,
           "cslDocUrl": null,
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/fri",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2020/web/webtc/indexcaller.php",
@@ -1240,6 +1277,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/ACC",
           "cslDocPage": "acc",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/acc.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/acc",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACCScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACCScan/2020/web/webtc/indexcaller.php",
@@ -1273,6 +1311,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/KRM",
           "cslDocPage": "krm",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/krm.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/krm",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/KRMScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/KRMScan/2020/web/webtc/indexcaller.php",
@@ -1306,6 +1345,7 @@
           "repoUrl": null,
           "cslDocPage": "ieg",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ieg.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/ieg",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/IEGScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/IEGScan/2020/web/webtc/indexcaller.php",
@@ -1339,6 +1379,7 @@
           "repoUrl": null,
           "cslDocPage": "snp",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/snp.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/snp",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/SNPScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/SNPScan/2020/web/webtc/indexcaller.php",
@@ -1372,6 +1413,7 @@
           "repoUrl": null,
           "cslDocPage": "pe",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pe.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/pe",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PEScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PEScan/2020/web/webtc/indexcaller.php",
@@ -1405,6 +1447,7 @@
           "repoUrl": null,
           "cslDocPage": "pgn",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pgn.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/pgn",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PGNScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/PGNScan/2020/web/webtc/indexcaller.php",
@@ -1438,6 +1481,7 @@
           "repoUrl": "https://github.com/sanskrit-lexicon/MCI",
           "cslDocPage": "mci",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/mci.rst",
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/mci",
           "urls": {
             "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MCIScan/2020/web/index.php",
             "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/MCIScan/2020/web/webtc/indexcaller.php",

@@ -122,6 +122,14 @@ async function main() {
       .filter(Boolean),
   );
 
+  console.log('Fetching csl-orig source directories…');
+  // Each dictionary's plain-text source lives at csl-orig/v02/{code}/. Map the lower-cased
+  // code to the directory's own html_url so the branch is always correct.
+  const v02 = await getJson(`https://api.github.com/repos/${ORG}/csl-orig/contents/v02`);
+  const cslOrigDir = new Map(
+    v02.filter((e) => e.type === 'dir').map((e) => [e.name.toLowerCase(), e.html_url]),
+  );
+
   let total = 0;
   for (const g of groups) {
     for (const d of g.items) {
@@ -141,6 +149,8 @@ async function main() {
       d.cslDocUrl = d.cslDocPage
         ? `https://github.com/${ORG}/csl-doc/blob/master/source/dictionaries/${lc}.rst`
         : null;
+      // csl-orig source directory (the canonical plain-text source for the dictionary)
+      d.cslOrigUrl = cslOrigDir.get(lc) || null;
       d.urls = actionUrls(d.scanCode);
     }
   }
@@ -152,6 +162,7 @@ async function main() {
     totalRows: total,
     fullyDigitized: groups.reduce((n, g) => n + g.items.filter((d) => !d.sampleOnly).length, 0),
     documentedInCslDoc: groups.reduce((n, g) => n + g.items.filter((d) => d.cslDocPage).length, 0),
+    withCslOrigSource: groups.reduce((n, g) => n + g.items.filter((d) => d.cslOrigUrl).length, 0),
     groups,
   };
 
@@ -159,7 +170,7 @@ async function main() {
   const dest = join(ROOT, 'src', 'data', 'dictionaries.json');
   await writeFile(dest, JSON.stringify(out, null, 2) + '\n', 'utf8');
   console.log(`Wrote ${dest}`);
-  console.log(`  rows=${out.totalRows}  fullyDigitized=${out.fullyDigitized}  inCslDoc=${out.documentedInCslDoc}  groups=${groups.length}`);
+  console.log(`  rows=${out.totalRows}  fullyDigitized=${out.fullyDigitized}  inCslDoc=${out.documentedInCslDoc}  withSource=${out.withCslOrigSource}  groups=${groups.length}`);
 }
 
 main().catch((e) => {

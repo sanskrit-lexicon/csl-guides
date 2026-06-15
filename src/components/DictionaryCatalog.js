@@ -94,12 +94,18 @@ export default function DictionaryCatalog() {
             <tbody>
               {g.items.map((d) => (
                 <tr key={d.code}>
-                  <td><code>{d.code}</code></td>
+                  <td>
+                    {d.cslOrigUrl ? (
+                      <a href={d.cslOrigUrl} {...ext} title="csl-orig source"><code>{d.code}</code></a>
+                    ) : (
+                      <code>{d.code}</code>
+                    )}
+                  </td>
                   <td>
                     {d.urls ? (
-                      <a href={d.urls.overview} {...ext}>{d.title}</a>
+                      <a href={d.urls.overview} {...ext} title={d.titleAttr}>{d.title}</a>
                     ) : (
-                      d.title
+                      <span title={d.titleAttr}>{d.title}</span>
                     )}
                     {d.sampleOnly && <em> (sample only)</em>}
                   </td>

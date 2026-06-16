@@ -1,10 +1,15 @@
 import React from 'react';
+import Link from '@docusaurus/Link';
 import data from '@site/src/data/dictionaries.json';
 
 // Renders the dictionary catalog from src/data/dictionaries.json, which is
 // regenerated from the live front page by scripts/build-catalog.mjs.
 
 const ext = {target: '_blank', rel: 'noreferrer'};
+
+// Display code -> slug of its in-guide "featured dictionary" page (docs/dictionaries/).
+// Keep in sync with sidebars.js "Featured dictionaries".
+const GUIDE_PAGES = {MW: 'mw', AP90: 'ap90', PWG: 'pwg', PW: 'pw', GRA: 'gra', MWE: 'mwe'};
 
 function Letter({href, on, children, title}) {
   if (href && on) {
@@ -70,7 +75,8 @@ export default function DictionaryCatalog() {
       <p style={{fontSize: '0.9em'}}>
         <strong>Open</strong>: B=Basic · L=List · A=Advanced · M=Mobile.{' '}
         <strong>Data</strong>: D=Downloads · S¹=PDF scan · S²=JPG scan. Greyed letters are
-        not offered for that dictionary.
+        not offered for that dictionary. A <strong>📖 guide</strong> link marks dictionaries
+        with a dedicated guide page in this site.
       </p>
 
       {data.groups.map((g) => (
@@ -108,6 +114,18 @@ export default function DictionaryCatalog() {
                       <span title={d.titleAttr}>{d.title}</span>
                     )}
                     {d.sampleOnly && <em> (sample only)</em>}
+                    {GUIDE_PAGES[d.code] && (
+                      <>
+                        {' '}
+                        <Link
+                          to={`/dictionaries/${GUIDE_PAGES[d.code]}`}
+                          title={`Guide page for ${d.code}`}
+                          style={{fontSize: '0.85em', whiteSpace: 'nowrap'}}
+                        >
+                          📖 guide
+                        </Link>
+                      </>
+                    )}
                   </td>
                   <td>{d.year}</td>
                   <td>{d.pages || ''}</td>

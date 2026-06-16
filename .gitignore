@@ -8,6 +8,9 @@
 .docusaurus
 .cache-loader
 
+# Session state (local-only journal, not a build artifact)
+.ai_state.md
+
 # Misc
 .DS_Store
 .env.local

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use these guides, please cite them as below."
+title: "csl-guides — Cologne Digital Sanskrit Lexicon documentation"
+authors:
+  - family-names: Gasūns
+    given-names: Mārcis
+license: CC-BY-SA-4.0
+repository-code: "https://github.com/sanskrit-lexicon/csl-guides"
+url: "https://sanskrit-lexicon.github.io/csl-guides/"

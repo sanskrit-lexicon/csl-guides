@@ -1,0 +1,98 @@
+---
+id: pwg
+title: Böhtlingk-Roth (PWG)
+sidebar_label: Böhtlingk-Roth (PWG)
+---
+
+import Screenshot from '@site/src/components/Screenshot';
+
+# Böhtlingk & Roth, *Sanskrit-Wörterbuch* (`PWG`)
+
+Otto Böhtlingk and Rudolph Roth's *Sanskrit-Wörterbuch*, published by the Imperial Academy
+of Sciences in St Petersburg in **seven volumes (1855–1875)**, is the **foundational
+scholarly Sanskrit lexicon** — the "**Großes Petersburger Wörterbuch**" (the "great"
+Petersburg dictionary, hence the code `PWG`). Monier-Williams and Apte both built on it; for
+depth of attestation and citation it is still unmatched. Glosses are in **German**.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `PWG` (GitHub repo [`PWG`](https://github.com/sanskrit-lexicon/PWG)) |
+| **Full title** | *Sanskrit-Wörterbuch* (Großes Petersburger Wörterbuch) |
+| **Authors** | Otto Böhtlingk & Rudolph Roth |
+| **Year / size** | 1855–1875 · **7 volumes** |
+| **Direction** | Sanskrit → German |
+| **Accents** | Yes (accents are marked, e.g. `{#a/kzata#}`) |
+| **Source** | [`csl-orig/v02/pwg/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/pwg) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/2020/web/webtc/download.html) · [Scans](https://www.sanskrit-lexicon.uni-koeln.de/scans/PWGScan/index.php?sfx=pdf) |
+| **csl-doc** | [pwg.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pwg.rst) (front matter / preface) |
+
+## When to use it
+
+Reach for PWG when you want the **deepest scholarly treatment and the fullest citations** —
+it records senses and attestations in detail no later dictionary repeats. Complements within
+CDSL:
+
+- **[Böhtlingk shorter (PW)](pw)** — the same lexicographer's later one-volume-per-letter
+  *abridgement*; start there if PWG's apparatus is more than you need.
+- **[Monier-Williams (MW)](mw)** — for English glosses with comparable classical breadth.
+- **[Grassmann (GRA)](gra)** — for the Ṛg-Veda specifically.
+- Reading German is essentially required to use PWG fully.
+
+## Looking up a word
+
+1. Open the **Basic** display, choose your **input** transliteration (see
+   [Encoding & Transliteration](../users/encoding-transliteration)) and an **output** script.
+2. Type the headword — e.g. `agni` (fire):
+
+<Screenshot
+  src="/img/displays/pwg-basic.png"
+  alt="PWG Basic display: the German entry for agni with its citations"
+  width={1800}
+  height={1350}
+/>
+
+The **List** display browses neighbouring headwords; **Advanced** searches inside entry
+text. See [Search & Display](../users/search-and-display).
+
+## Reading an entry
+
+PWG entries pack senses into nested **`<div>`** subdivisions, with Sanskrit set in `{#…#}`,
+German glosses in `{%…%}`, and literary sources in `<ls>`. A fragment of the pronoun *a*
+(`csl-orig/v02/pwg/pwg.txt`):
+
+```
+<L>2<pc>1-0001<k1>a<k2>a<h>2
+2. {#a#}¦ Pronominalstamm:
+<div n="2"> a) der 1sten Person, enthalten in {#aha/m, AvA/m, …#} …
+<div n="2">— b) der 3ten Person; <lex>f.</lex> {#A#} … <ls>ṚV.</ls> <ls>P. 6,1,116.</ls> …
+<LEND>
+```
+
+| In the source | Meaning |
+|---|---|
+| `<pc>1-0001` | volume-page reference in the print (vol. 1, p. 1) |
+| `{#…#}` | Sanskrit, stored in SLP1 |
+| `{%…%}` | German gloss |
+| `<div n="…">` | a numbered/lettered sense subdivision |
+| `<ls>ṚV.</ls>`, `<ls>P. 6,1,116.</ls> ` | literary-source citations (Ṛg-Veda, Pāṇini), the link targets |
+
+See [Data Formats](../developers/data-formats) for the full markup reference.
+
+## What makes it distinctive
+
+- **The reference of record.** Its citations and sense distinctions are the substrate later
+  Sanskrit–English dictionaries condensed.
+- **Citation density.** The heavy use of `<ls>` source references is exactly what the
+  project's "Dictionary to Book" link-target work makes clickable — see
+  [Issue Taxonomy](../contributing/issue-taxonomy).
+- **German scholarship.** Definitions, grammatical notes, and discussion are in German.
+
+## See also
+
+- **[Böhtlingk shorter (PW)](pw)** — the abridged recension
+- The full **[catalog](catalog)** of all 42 dictionaries
+- **[Abbreviations & Citations](abbreviations-and-citations)** — how to cite PWG
+- **csl-doc** [pwg.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pwg.rst)

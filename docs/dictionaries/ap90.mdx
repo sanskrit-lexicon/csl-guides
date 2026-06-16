@@ -1,0 +1,98 @@
+---
+id: ap90
+title: Apte (AP90)
+sidebar_label: Apte (AP90)
+---
+
+import Screenshot from '@site/src/components/Screenshot';
+
+# Apte, *The Practical Sanskrit-English Dictionary* (`AP90`)
+
+Vaman Shivram Apte's *Practical Sanskrit-English Dictionary* is the classical reader's
+companion to Monier-Williams: cleaner sense-numbering, generous **idioms and compounds**,
+and **literary quotations with translations**. `AP90` is the **revised and enlarged 1890
+edition** (1196 pp). Glosses are in **English**.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `AP90` (GitHub repo [`AP90`](https://github.com/sanskrit-lexicon/AP90)) |
+| **Full title** | *The Practical Sanskrit-English Dictionary* (revised & enlarged) |
+| **Author** | Vaman Shivram Apte |
+| **Year / size** | 1890 · ~**1196** pages |
+| **Direction** | Sanskrit → English |
+| **Accents** | No |
+| **Source** | [`csl-orig/v02/ap90/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/ap90) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/AP90Scan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/AP90Scan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/AP90Scan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/AP90Scan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/AP90Scan/2020/web/webtc/download.html) · [Scans](https://www.sanskrit-lexicon.uni-koeln.de/scans/AP90Scan/index.php?sfx=pdf) |
+| **csl-doc** | [ap90.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ap90.rst) (front matter / preface) |
+
+:::tip Which Apte?
+The catalog lists more than one Apte. **`AP90`** is the **1890 Sanskrit→English** edition
+used here. **`AE`** (repo [`ApteES`](https://github.com/sanskrit-lexicon/ApteES)) is Apte's
+**English→Sanskrit** dictionary — the reverse direction. Pick `AP90` to read Sanskrit,
+`AE` to compose it.
+:::
+
+## When to use it
+
+Reach for Apte for **classical (non-Vedic) reading**: sense divisions are clearly numbered,
+idiomatic phrases are spelled out, and quotations from kāvya and the epics are given with
+translations. Complements:
+
+- **[Monier-Williams (MW)](mw)** — broader, more encyclopaedic, marks Vedic accents.
+- **[Böhtlingk-Roth (PWG)](pwg)** — the deepest scholarly treatment (in German).
+- Apte also carries **appendices** (significant proper names, geography, and a collection of
+  verses/quotations) beyond the main A–Z text.
+
+## Looking up a word
+
+Open the **Basic** display, pick input/output transliteration (see
+[Encoding & Transliteration](../users/encoding-transliteration)), and type the headword:
+
+<Screenshot
+  src="/img/displays/ap90-basic.png"
+  alt="AP90 Basic display: an Apte entry with numbered senses and a quotation"
+  width={1800}
+  height={1350}
+/>
+
+The **List** and **Advanced** displays browse and search inside entries — see
+[Search & Display](../users/search-and-display).
+
+## Reading an entry
+
+Apte sets Sanskrit in `{#…#}`, **bold** in `{@…@}`, *italic* in `{%…%}`, and tags literary
+sources with `<ls>`. The entry *aṛṇin* "free from debt" (`csl-orig/v02/ap90/ap90.txt`):
+
+```
+<L>2<pc>0001-c<k1>afRin<k2>afRin
+{#afRin#}¦ {%<ab>a.</ab>%} ({#f#} being regarded as a consonant) Not a debtor, free from
+debt; {#divasasyAzwame BAge SAkaM pacati yo naraH . afRI cApravAsI ca sa vAricara modate ..#}
+<ls>Mb.</ls> The form {#anfRin#} also occurs in this sense.
+<LEND>
+```
+
+| In the source | Meaning |
+|---|---|
+| `<pc>0001-c` | page-column reference (p. 1, col. c) |
+| `{#afRin#}` | headword / Sanskrit, in SLP1 |
+| `{%<ab>a.</ab>%}` | the grammatical label (*adjective*), italicised |
+| `<ls>Mb.</ls>` | a literary-source citation (Mahābhārata), the link target |
+
+See [Data Formats](../developers/data-formats) for the full markup reference.
+
+## What makes it distinctive
+
+- **Built for reading classical texts.** Numbered senses, idioms, and translated quotations.
+- **Appendices.** Proper names, geographical names, and a verse/quotation collection.
+- **Pairs with `AE`.** Apte's [English→Sanskrit](catalog) dictionary covers the other
+  direction for composition.
+
+## See also
+
+- **[Monier-Williams (MW)](mw)** and **[Böhtlingk-Roth (PWG)](pwg)**
+- The full **[catalog](catalog)** of all 42 dictionaries
+- **[Abbreviations & Citations](abbreviations-and-citations)** — how to cite Apte
+- **csl-doc** [ap90.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ap90.rst)

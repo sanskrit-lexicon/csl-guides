@@ -45,6 +45,38 @@ SLP1 is **lossless and unambiguous**: every Sanskrit phoneme maps to exactly one
 character, so sorting, searching, and round-tripping are deterministic. The downloadable
 XML is in SLP1 for this reason (see **[Downloads & Data](downloads-and-data)**).
 
+## Vedic accents
+
+Several dictionaries record **Vedic pitch accents**, and the data carries them — for
+Monier-Williams alone the accent mark sits on tens of thousands of headwords.
+
+**Which dictionaries mark accents:**
+
+| Dictionary | Accents? |
+|---|---|
+| [Monier-Williams (MW)](../dictionaries/mw) | Yes |
+| [Böhtlingk-Roth (PWG)](../dictionaries/pwg) and [shorter (PW)](../dictionaries/pw) | Yes |
+| [Grassmann (GRA)](../dictionaries/gra) | Yes — central; it is a Ṛg-Veda dictionary |
+| [Apte (AP90)](../dictionaries/ap90) | No |
+
+**How they are encoded.** In the SLP1 source the **udātta** (high pitch) is written `/`
+attached to its vowel — e.g. MW keys *agni* as `agni/` (accent on the final *-i*, agní). The
+other Vedic accents (anudātta, svarita) appear as `\` and `^` in the entry body of the
+German and Grassmann sources. When rendered, accents show in **Roman** as a combining acute
+(`á`, `ā́`) and in **Devanāgarī** as the usual udātta/anudātta strokes. The precise marking
+scheme is described per dictionary on its [csl-doc](https://github.com/sanskrit-lexicon/csl-doc)
+page.
+
+:::tip You never have to type an accent
+Each entry stores a **plain** search key and a separate **accented** display key
+(`<k1>agni` vs `<k2>agni/`). Lookup uses the plain key, so typing `agni` finds the word
+whether or not you know its accent. The accent is for *display*, not for matching.
+:::
+
+**Showing or hiding accents.** The displays offer an **accent** toggle, and the
+[API](../developers/api) exposes it as `accent=yes|no` (it governs whether accents appear in
+**Devanāgarī** output). Turn it off for a cleaner reading text; on to study the pitch.
+
 ## Typing a headword
 
 - If you have a **diacritic Roman** word (`rāma`), choose the `roman` input mode.

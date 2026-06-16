@@ -22,18 +22,21 @@ jobs:
       - name: lychee
         uses: lycheeverse/lychee-action@v2
         with:
-          # --scheme http(s) limits checks to external URLs. Root-relative links such as
-          # /news or /developers/api are Docusaurus *routes*, not files on disk, so lychee
-          # cannot resolve them and errors out ("provide a root dir"). They are already
-          # validated by the Docusaurus build (onBrokenLinks: 'throw'), so we drop them with
-          # `--exclude '^/'`. The CDSL live server and Google Play reject non-browser agents,
-          # so they are excluded to avoid false 403s; a browser UA is sent for the rest.
+          # We only want to check *external* link rot; internal links are already validated
+          # by the Docusaurus build (onBrokenLinks: 'throw'). Root-relative links such as
+          # /news, /developers/api, or /img/...png are Docusaurus routes/static assets, not
+          # files at those paths, so without --root-dir lychee fails to even build a URL for
+          # them ("provide a root dir") *before* any filter runs. Passing `--root-dir .` lets
+          # extraction succeed (they become file: URLs); `--scheme https --scheme http` then
+          # drops them, leaving only the external links to check. The CDSL live server and
+          # Google Play reject non-browser agents, so they are excluded to avoid false 403s;
+          # a browser UA is sent for the rest.
           args: >-
             --no-progress
+            --root-dir "${{ github.workspace }}"
             --scheme https
             --scheme http
             --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-            --exclude "^/"
             --exclude "sanskrit-lexicon\.uni-koeln\.de"
             --exclude "c-salt\.uni-koeln\.de"
             --exclude "play\.google\.com"

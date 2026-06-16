@@ -31,9 +31,13 @@ jobs:
           # drops them, leaving only the external links to check. The CDSL live server and
           # Google Play reject non-browser agents, so they are excluded to avoid false 403s;
           # a browser UA is sent for the rest.
+          # --accept tolerates HTTP 429 (rate-limited but alive — common from github.com
+          # when many blob links are checked at once); a genuinely removed page returns 404,
+          # which still fails the job.
           args: >-
             --no-progress
             --root-dir "${{ github.workspace }}"
+            --accept "200..=299, 429"
             --scheme https
             --scheme http
             --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"

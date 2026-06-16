@@ -32,8 +32,8 @@ for acknowledging CDSL data reuse in a website or application.
 
 ## Related resources
 
-- **[Cologne Sanskrit Lexicon](https://dch.phil-fak.uni-koeln.de/en/ressources/managed-resources/cologne-sanskrit-lexicon)**
-  — the resource's page at the Cologne Center for eHumanities (CCeH).
+- **[Cologne Sanskrit Lexicon](https://dch.phil-fak.uni-koeln.de/en/ressources/managed-resources)**
+  — listed among the managed resources of Cologne's Data Center for the Humanities (DCH).
 - **[The Sanskrit Library — Cologne](https://sanskritlibrary.org/cologne.html)** — Peter
   Scharf's integration and presentation of the Cologne dictionaries.
 

@@ -1,0 +1,80 @@
+---
+id: vcp
+title: Vācaspatyam (VCP)
+sidebar_label: Vācaspatyam (VCP)
+---
+
+# Tārānātha Tarkavācaspati, *Vācaspatyam* (`VCP`)
+
+The *Vācaspatyam* is the second of CDSL's great **encyclopedic Sanskrit→Sanskrit lexicons**,
+compiled by **Tārānātha Tarkavācaspati** and published in Calcutta over seven volumes
+(1873–1884). By raw record count it is the **largest dictionary in CDSL**. Like the
+[Śabdakalpadruma (SKD)](skd) it is monolingual and encyclopedic, but it has a distinct
+editorial voice: where SKD is **quotation-rich** (the prior tradition speaks through the
+entries), VCP is **synthesis-rich** — Tārānātha explains in his own words, quoting only where
+a direct citation matters.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `VCP` (GitHub repo [`VCP`](https://github.com/sanskrit-lexicon/VCP)) |
+| **Full title** | *Vācaspatyam* ("the work of Vācaspati") |
+| **Editor** | Tārānātha Tarkavācaspati |
+| **Year / size** | Calcutta 1873–1884 · **7 volumes** (the largest CDSL dictionary by record count) |
+| **Direction** | **Sanskrit → Sanskrit** (monolingual, encyclopedic) |
+| **Source** | [`csl-orig/v02/vcp/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/vcp) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/VCPScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/VCPScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/VCPScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/VCPScan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/VCPScan/2020/web/webtc/download.html) · [Scans](https://www.sanskrit-lexicon.uni-koeln.de/scans/VCPScan/index.php?sfx=pdf) |
+| **Front matter** | [vcppref.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/prefaces/vcppref.rst) |
+| **csl-doc** | [vcp.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/vcp.rst) |
+
+## When to use it
+
+Reach for VCP when you want **extended encyclopedic treatment** of a term in Sanskrit —
+especially philosophical, grammatical, and śāstric vocabulary, which Tārānātha discusses at
+length. Use it **alongside [SKD](skd)**: SKD will show you what the prior *kośa* tradition
+said (with quotations); VCP will give you a synthesised exposition. For an English gloss,
+cross-read **[Monier-Williams (MW)](mw)**. As with SKD, the entire entry is in Sanskrit.
+
+## Reading an entry
+
+VCP shares SKD's prose form — **no `<lex>` grammar tags, no `<ls>` citation tags** — but
+quotes more sparingly: its inline `iti <source>` citations run about **0.26 per record**, a
+sixth of SKD's rate. Many VCP entries are encyclopedic prose *without* quotation, with named
+sources reserved for direct citation. The opening of the entry for *a*
+(`csl-orig/v02/vcp/vcp.txt`, trimmed):
+
+```
+<L>2<pc>0035,a<k1>a<k2>a
+a¦ avya0 ava--prIRanAdO qa svarAdipAWAdavyayatvam . aBAve, pratizeDe svalpe'rTe
+anukampAyAM, samboDane, a ananta! . aDikzepe, a pacasi tvaM jAlma! …
+“upasargasvaraviBaktipratirUpakASceti” … iti sidDAntakOmudyAm udAhftaM …
+<LEND>
+```
+
+| In the source | Meaning |
+|---|---|
+| `a¦ avya0` | headword *a*, then `avya0` = *avyaya* (indeclinable), abbreviated in the prose |
+| `aBAve, pratizeDe, svalpe'rTe, …` | the senses, in the locative (absence, prohibition, "in a slight sense", …) |
+| `a ananta!`, `a pacasi tvaM jAlma!` | usage examples worked into the prose |
+| **`iti sidDAntakOmudyAm`** | a source named in prose — the *[Siddhānta-kaumudī](https://en.wikipedia.org/wiki/Siddhanta_Kaumudi)* |
+
+## What makes it distinctive
+
+- **The largest CDSL dictionary** by record count (~50,000 entries).
+- **Synthesis over quotation.** The same *iti* apparatus as SKD, but used sparingly — the
+  editor's exposition carries the entry. This is a different editorial philosophy *within*
+  the same Sanskrit→Sanskrit genre.
+- **Strong on śāstra.** Philosophical, grammatical, and technical vocabulary is treated at
+  encyclopedic length.
+- **Genre boundary.** Like SKD, its prose apparatus means tag-based tooling does not
+  transfer — see the
+  [csl-atlas VCP profile](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/src/dicts/vcp.md).
+
+## See also
+
+- **[Śabdakalpadruma (SKD)](skd)** — the quotation-rich sibling *kośa*
+- The full **[catalog](catalog)** of all 42 dictionaries
+- **Front matter / preface** — [vcppref.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/prefaces/vcppref.rst)
+- **csl-doc** [vcp.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/vcp.rst)

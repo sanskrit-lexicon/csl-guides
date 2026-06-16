@@ -1,0 +1,90 @@
+---
+id: skd
+title: Śabdakalpadruma (SKD)
+sidebar_label: Śabdakalpadruma (SKD)
+---
+
+# Rādhākānta Deva, *Śabdakalpadruma* (`SKD`)
+
+The *Śabdakalpadruma* ("the wishing-tree of words") is an **encyclopedic Sanskrit→Sanskrit
+lexicon** — a Sanskrit headword defined in Sanskrit — compiled by **Rājā Rādhākānta Deva**
+and his circle and published in Calcutta over seven volumes (1822–1858). It is the **first
+indigenous-Indian large-scale lexicon** of the modern Sanskrit-philological tradition, and
+within CDSL it marks a **genre boundary**: where Monier-Williams, Apte, and the Petersburg
+dictionaries are *structured bilingual* works, SKD and [Vācaspatyam (VCP)](vcp) are
+*encyclopedic kośa* works whose source-discipline lives in **prose, not in tags**.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `SKD` (GitHub repo [`SKD`](https://github.com/sanskrit-lexicon/SKD)) |
+| **Full title** | *Śabdakalpadruma* (the "wishing-tree of words") |
+| **Editor** | Rājā Rādhākānta Deva and circle |
+| **Year / size** | Calcutta 1822–1858 · **7 volumes** (CDSL follows a later, 1880s edition) |
+| **Direction** | **Sanskrit → Sanskrit** (monolingual, encyclopedic) |
+| **Source** | [`csl-orig/v02/skd/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/skd) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/SKDScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/SKDScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/SKDScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/SKDScan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/SKDScan/2020/web/webtc/download.html) · [Scans](https://www.sanskrit-lexicon.uni-koeln.de/scans/SKDScan/index.php?sfx=pdf) |
+| **Front matter** | [skdpref.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/prefaces/skdpref.rst) — the transcribed title pages, Publisher's Note, and Sanskrit preface |
+| **csl-doc** | [skd.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/skd.rst) |
+
+## When to use it
+
+Reach for SKD when you want **Sanskrit's own lexical tradition** rather than a European
+gloss: encyclopedic definitions, with senses, grammar, and authorities woven through
+Sanskrit prose, and quotations from the literary and prior-*kośa* canon. It is also the work
+the European dictionaries lean on — **PWG cites SKD (as `ŚKDR.`) more than 20,000 times.**
+
+- Pair it with **[Vācaspatyam (VCP)](vcp)**, the other great Sanskrit→Sanskrit *kośa*.
+- For an English gloss of the same headword, cross-read **[Monier-Williams (MW)](mw)**.
+- Reading SKD requires comfortable Sanskrit — the entire entry is in Sanskrit.
+
+## Reading an entry
+
+SKD entries carry **almost none of the angle-bracket markup** the bilingual dictionaries
+use: there is no `<lex>` for grammar and no `<ls>` for citations. Instead:
+
+- **Grammar** is stated inline in Sanskrit (e.g. *…iti puṁsi* "thus, in the masculine").
+- **Sources** are named with the formula **`… iti <source>`** — literally "*thus [says]
+  &lt;source&gt;*", which marks the preceding sense or quotation as drawn from the named work.
+  This inline *iti* is the **operative citation apparatus** (about **1.7 per record**, ~72,000
+  across the dictionary); it is what `<ls>` is in MW, but in prose.
+
+The opening of the entry for the negative particle *a* (`csl-orig/v02/skd/skd.txt`, trimmed):
+
+```
+<L>2<pc>1-001-a<k1>a<k2>a
+a¦, vya, aBAvaH . alpaH . nizeDaH . anukampA . iti medinI .
+(naYo'yamakAraH zaqviDAn naYarTAn boDayati . yaTA, --
+ “tatsAdfSyamaBAvaSca tadanyatvaM tadalpatA …” iti …)
+<LEND>
+```
+
+| In the source | Meaning |
+|---|---|
+| `a¦` | the headword *a*, then the `¦` bar into the body |
+| `aBAvaH . alpaH . nizeDaH . anukampA` | senses, in Sanskrit (absence, smallness, negation, compassion) |
+| **`iti medinI`** | the citation formula — "*thus [says] the Medinī*", i.e. the *Medinīkośa*, a prior lexicon |
+| `“…” iti` | a quoted verse, closed by `iti` |
+
+The reader who knows the *iti*-formula reads the source attribution straight off the page;
+a tag-based search for `<ls>` finds nothing, because the citation is *part of the prose*.
+
+## What makes it distinctive
+
+- **Monolingual and encyclopedic.** ~42,500 records, with a mean entry roughly seven times
+  the length of an MW entry — paragraphs of prose, not slot-and-block definitions.
+- **The indigenous *kośa* tradition.** SKD synthesises the earlier lexicons — *Amarakośa*,
+  *Medinīkośa*, Hemacandra, Halāyudha, and others — and the literary canon.
+- **A source for the Europeans.** It is the chief indigenous lexicon PWG draws on.
+- **A genre boundary for digital analysis.** Because its apparatus is prose, tools built for
+  tagged bilingual dictionaries do not transfer — see the
+  [csl-atlas SKD profile](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/src/dicts/skd.md).
+
+## See also
+
+- **[Vācaspatyam (VCP)](vcp)** — the other great Sanskrit→Sanskrit *kośa*
+- The full **[catalog](catalog)** of all 42 dictionaries
+- **Front matter / preface** — [skdpref.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/prefaces/skdpref.rst)
+- **csl-doc** [skd.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/skd.rst)

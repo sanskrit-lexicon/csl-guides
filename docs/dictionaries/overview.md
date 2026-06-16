@@ -38,7 +38,7 @@ full resolution.
   German alternative.
 - **English→Sanskrit (composition)** — **[Monier-Williams E→S](mwe)** (`MWE`).
 - **Sanskrit-internal definitions** — the Sanskrit→Sanskrit lexica
-  (Śabdakalpadruma, Vācaspatya).
+  **[Śabdakalpadruma](skd)** (`SKD`) and **[Vācaspatyam](vcp)** (`VCP`).
 - **Domain terms** — the specialized indices (epics, Vedas, Purāṇas, Buddhist texts).
 
 See the **[full catalog](catalog)** for every code, full name, language, date, and repo.

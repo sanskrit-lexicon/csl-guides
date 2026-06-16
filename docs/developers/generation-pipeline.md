@@ -17,8 +17,37 @@ cd csl-pywork/v02
 sh generate_dict.sh {dict} tempparent/{dict}
 ```
 
-This reads `csl-orig/v02/{dict}/{dict}.txt` and produces the generated artifacts under
-the target directory.
+This reads `csl-orig/v02/{dict}/{dict}.txt` and produces a complete, self-contained
+dictionary installation under the target directory:
+
+```
+outdir/
+  orig/       ← source text copied from csl-orig
+  pywork/     ← scripts for headwords, XML, SQLite
+  web/        ← display scripts (from csl-websanlexicon)
+  downloads/  ← zip-archive generation scripts
+```
+
+### What the four stages do
+
+| Stage | Script | Role |
+|---|---|---|
+| 1 | `generate_orig.sh` | Copy `{dict}.txt`, `_hwextra`, `header.xml`, `-meta2` from `csl-orig` |
+| 2 | `generate_pywork.sh` | Assemble `pywork/` by rendering **Mako** templates with the dict's parameters |
+| 3 | `generate_web.sh` | Assemble `web/` (the four displays) from `csl-websanlexicon`; emit the SQLite build scripts |
+| 4 | execute | Run the assembled scripts in `pywork/` (below) |
+
+The stage-4 scripts produce the actual artifacts:
+
+| Script | Output |
+|---|---|
+| `redo_hw.sh` | `{dict}hw.txt` — the headword list |
+| `redo_xml.sh` | `{dict}.xml` — full XML, validated against `{dict}.dtd` |
+| `redo_postxml.sh` | `web/sqlite/{dict}.sqlite` + abbreviation / tooltip / bibliography databases |
+| `downloads/redo_all.sh` | the `txt` / `xml` / `web` zip archives |
+
+See [Data Formats](data-formats) for the shape of the generated XML and the derived
+SQLite/JSON/StarDict formats.
 
 ## Validate the XML
 

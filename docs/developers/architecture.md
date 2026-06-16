@@ -37,6 +37,23 @@ the mental model; the following pages drill into each part.
    from source. See **[Generation Pipeline](generation-pipeline)**.
 4. **XML validity is gating.** Nothing is committed to `csl-orig` until it parses.
 
+## The four web displays
+
+Every dictionary is published in four display variants, generated from
+[`csl-websanlexicon`](https://github.com/sanskrit-lexicon/csl-websanlexicon) and served from
+parallel directories under `…/{CODE}Scan/{year}/web/`:
+
+| Variant | Path | What it is |
+|---|---|---|
+| **Basic** (B) | `webtc/` | Single-entry lookup — headword in, rendered entry out |
+| **List** (L) | `webtc1/` | The hierarchical headword index beside the entry pane |
+| **Advanced** (A) | `webtc2/` | Multi-field query — search headwords *or* inside entry text |
+| **Mobile** (M) | `mobile1/` | A responsive layout for small screens |
+
+All four query a per-dictionary **SQLite** database (built by the generator) and share the
+transcoder for input/output transliteration. See [Search & Display](../users/search-and-display)
+for the user-facing tour and [API](api) for the endpoints these displays call.
+
 ## Repositories at a glance
 
 | Repo | Role |

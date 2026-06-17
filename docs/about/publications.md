@@ -1,6 +1,7 @@
 ---
 id: publications
 title: Publications & Bibliography
+description: "How to cite CDSL, plus a bibliography of publications about the Cologne Digital Sanskrit Dictionaries."
 sidebar_label: Publications
 ---
 

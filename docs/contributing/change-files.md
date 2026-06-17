@@ -1,6 +1,7 @@
 ---
 id: change-files
 title: Change Files
+description: "How CDSL corrections are expressed as change files applied by updateByLine.py — the replace/insert/delete format and its rules."
 sidebar_label: Change Files
 ---
 

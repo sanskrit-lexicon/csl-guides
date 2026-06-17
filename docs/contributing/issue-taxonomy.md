@@ -1,6 +1,7 @@
 ---
 id: issue-taxonomy
 title: GitHub Issue Taxonomy
+description: "The shared GitHub issue taxonomy for every Sanskrit Lexicon repository: type labels, severity, milestones, and projects."
 sidebar_label: Issue Taxonomy
 ---
 

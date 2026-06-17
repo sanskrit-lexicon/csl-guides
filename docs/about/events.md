@@ -1,6 +1,7 @@
 ---
 id: events
 title: Events & Activity
+description: "Activity and milestones of the Cologne Digital Sanskrit Dictionaries, a long-running lexicon and open-data project."
 sidebar_label: Events
 ---
 

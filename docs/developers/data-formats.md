@@ -1,6 +1,7 @@
 ---
 id: data-formats
 title: Data Formats
+description: "The three representations a CDSL dictionary moves through — csl-orig source text, generated XML, and display HTML."
 sidebar_label: Data Formats
 ---
 

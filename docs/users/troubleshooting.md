@@ -1,6 +1,7 @@
 ---
 id: troubleshooting
 title: Troubleshooting
+description: "Fixes for the most common CDSL lookup problems, starting with input transliteration-scheme mismatches — the usual cause of no results."
 sidebar_label: Troubleshooting
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: downloads-and-data
 title: Downloads & Data
+description: "How to download CDSL dictionaries as open data (CC BY-SA 4.0) from their GitHub repositories, and how to cite them."
 sidebar_label: Downloads & Data
 ---
 

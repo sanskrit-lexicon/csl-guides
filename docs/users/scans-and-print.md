@@ -1,6 +1,7 @@
 ---
 id: scans-and-print
 title: Scans & Print
+description: "Every CDSL entry is backed by the original printed page. How to open a dictionary's scanned edition via the S link, and why scans matter."
 sidebar_label: Scans & Print
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: api
 title: API
+description: "The CDSL REST API (csl-apidev) — how to query the Sanskrit dictionaries programmatically, with current status and history."
 sidebar_label: API
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: overview
 title: Tools Overview
+description: "Cross-cutting CDSL tools beyond per-dictionary lookup: searching, comparing across dictionaries, and offline use."
 sidebar_label: Overview
 ---
 

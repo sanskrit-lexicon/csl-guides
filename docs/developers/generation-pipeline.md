@@ -1,6 +1,7 @@
 ---
 id: generation-pipeline
 title: Generation Pipeline
+description: "How the CDSL generation pipeline turns csl-orig source text into the XML, search indexes, and web displays."
 sidebar_label: Generation Pipeline
 ---
 

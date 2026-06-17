@@ -1,6 +1,7 @@
 ---
 id: repositories
 title: Repository Map
+description: "Map of the sanskrit-lexicon GitHub organization — which repository holds the source, generation code, displays, and corrections."
 sidebar_label: Repositories
 ---
 

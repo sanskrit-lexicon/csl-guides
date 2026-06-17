@@ -1,6 +1,7 @@
 ---
 id: overview
 title: Contributing Overview
+description: "How to contribute to CDSL on GitHub — where the repositories live and how corrections flow into the dictionaries."
 sidebar_label: Overview
 ---
 

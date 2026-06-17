@@ -1,6 +1,7 @@
 ---
 id: faq
 title: Frequently Asked Questions
+description: "Frequently asked questions about using the Cologne Digital Sanskrit Dictionaries, from input transliteration schemes to downloads."
 sidebar_label: FAQ
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: corrections-workflow
 title: Corrections Workflow
+description: "The canonical step-by-step workflow for correcting a csl-orig source dictionary, from snapshot through XML validation to commit."
 sidebar_label: Corrections Workflow
 ---
 

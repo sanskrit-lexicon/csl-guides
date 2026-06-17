@@ -57,6 +57,11 @@ const config = {
         docs: {
           routeBasePath: '/', // serve docs at the site root
           sidebarPath: './sidebars.js',
+          // Surface each page's git "last updated" date. Needs full git history at build
+          // time (fetch-depth: 0 in deploy.yml) or every page shows the same commit date.
+          // The date is moved to the top-right of the page by src/theme/DocItem/Content;
+          // the default footer copy is hidden in custom.css.
+          showLastUpdateTime: true,
           editUrl:
             'https://github.com/sanskrit-lexicon/csl-guides/tree/main/',
         },

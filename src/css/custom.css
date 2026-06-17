@@ -24,6 +24,13 @@
   overflow-x: auto;
 }
 
+/* "Not available" markers in the catalog (greyed action letters, — placeholders). Use a
+   muted theme grey that still meets WCAG AA contrast, rather than opacity dimming (which
+   dropped these below the AA threshold). The theme var keeps contrast correct in dark mode. */
+.dictionary-catalog .catalog-na {
+  color: var(--ifm-color-emphasis-600);
+}
+
 /* Screenshots are captured from the light-themed live site, so they glare against a dark
    page. In dark mode, sit them on a soft light matte with a little padding so they read as
    framed cards rather than bright rectangles. */

@@ -31,12 +31,14 @@ full resolution.
 
 ## Choosing a dictionary
 
-- **General Sanskrit→English** — start with **Monier-Williams** (`MW`/`MWS`); use
-  **Apte** (`AP`/`AP90`) for classical usage and compounds.
-- **Etymology / Vedic** — **Grassmann** (`GRA`, Rig-Veda) and the large
-  **Böhtlingk-Roth** (`PWG`).
+- **General Sanskrit→English** — start with **[Monier-Williams](mw)** (`MW`/`MWS`); use
+  **[Apte](ap90)** (`AP90`) for classical usage and compounds.
+- **Etymology / Vedic** — **[Grassmann](gra)** (`GRA`, Ṛg-Veda) and the large
+  **[Böhtlingk-Roth](pwg)** (`PWG`); the **[shorter Böhtlingk](pw)** (`PW`) is the compact
+  German alternative.
+- **English→Sanskrit (composition)** — **[Monier-Williams E→S](mwe)** (`MWE`).
 - **Sanskrit-internal definitions** — the Sanskrit→Sanskrit lexica
-  (Śabdakalpadruma, Vācaspatya).
+  **[Śabdakalpadruma](skd)** (`SKD`) and **[Vācaspatyam](vcp)** (`VCP`).
 - **Domain terms** — the specialized indices (epics, Vedas, Purāṇas, Buddhist texts).
 
 See the **[full catalog](catalog)** for every code, full name, language, date, and repo.

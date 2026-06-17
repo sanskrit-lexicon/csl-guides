@@ -1,0 +1,91 @@
+---
+id: gra
+title: Grassmann (GRA)
+sidebar_label: Grassmann (GRA)
+---
+
+import Screenshot from '@site/src/components/Screenshot';
+
+# Grassmann, *Wörterbuch zum Rig-Veda* (`GRA`)
+
+Hermann Grassmann's *Wörterbuch zum Rig-Veda* (1873) is a **complete dictionary-concordance
+to the Ṛg-Veda**: it aims to account for **every word occurrence** in the saṃhitā, arranges
+derivatives under their **roots**, and is explicitly **etymological**. It is the reference
+for Vedic vocabulary as used in the RV. Glosses are in **German**.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `GRA` (GitHub repo [`GRA`](https://github.com/sanskrit-lexicon/GRA)) |
+| **Full title** | *Wörterbuch zum Rig-Veda* |
+| **Author** | Hermann Grassmann |
+| **Year / size** | 1873 · ~**1775** columns |
+| **Direction** | Sanskrit (Ṛg-Vedic) → German |
+| **Accents** | Yes — Vedic accents are central |
+| **Source** | [`csl-orig/v02/gra/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/gra) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/GRAScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/GRAScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/GRAScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/GRAScan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/GRAScan/2020/web/webtc/download.html) · [Scans](https://www.sanskrit-lexicon.uni-koeln.de/scans/GRAScan/index.php?sfx=pdf) |
+| **csl-doc** | [gra.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/gra.rst) (front matter / preface) |
+
+## When to use it
+
+Reach for Grassmann when you are reading the **Ṛg-Veda** and want every attested form
+located and explained, with the etymological grouping under roots that a general dictionary
+flattens. Complements:
+
+- **[Monier-Williams (MW)](mw)** marks Vedic accents too, but is general; GRA is RV-specific
+  and exhaustive for it.
+- **[Böhtlingk-Roth (PWG)](pwg)** for the broader classical-and-Vedic record (German).
+
+## Looking up a word
+
+Open the **Basic** display, choose input/output transliteration, and type the headword:
+
+<Screenshot
+  src="/img/displays/gra-basic.png"
+  alt="GRA Basic display: a Grassmann Rig-Veda entry"
+  width={1800}
+  height={1350}
+/>
+
+See [Search & Display](../users/search-and-display) for the List and Advanced modes.
+
+## Reading an entry
+
+Grassmann marks homonyms with `<hom>`, bold headwords with `{@…@}`, grammatical person with
+`<per>`, and Ṛg-Veda passages with `<ls>`. Two short cross-reference entries for the pronoun
+*a* (`csl-orig/v02/gra/gra.txt`):
+
+```
+<L>2<pc>0001<k1>a<k2>a<h>2
+<hom>2.</hom> {@(a).@}¦ Deutestamm der <per n="1sten/ersten">1.</per> Person, siehe unter ahám.
+<LEND>
+<L>3<pc>0001<k1>a<k2>a<h>3
+<hom>3.</hom> {@(a-)@}¦ siehe unter an-.
+<LEND>
+```
+
+| In the source | Meaning |
+|---|---|
+| `<hom>2.</hom>` | homonym label (Grassmann distinguishes many) |
+| `{@(a).@}` | the headword, set bold |
+| `<per n="1sten/ersten">1.</per>` | grammatical person |
+| `siehe unter ahám` | a cross-reference (entries are grouped etymologically) |
+
+See [Data Formats](../developers/data-formats) for the full markup reference.
+
+## What makes it distinctive
+
+- **A concordance, not just a dictionary.** It locates every RV occurrence of a word.
+- **Root-based, etymological arrangement.** Derivatives sit under their roots.
+- **Recently re-digitized.** A 2023 revision incorporated a corrected digitization (Thomas
+  Malten) and an alternate display — see the news post
+  [Grassmann revision](/news/grassmann-revision).
+
+## See also
+
+- **[Monier-Williams (MW)](mw)** and **[Böhtlingk-Roth (PWG)](pwg)**
+- The full **[catalog](catalog)** of all 42 dictionaries
+- **[Abbreviations & Citations](abbreviations-and-citations)** — how to cite Grassmann
+- **csl-doc** [gra.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/gra.rst)

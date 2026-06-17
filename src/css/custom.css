@@ -32,6 +32,22 @@
   padding: 8px;
 }
 
+/* "Last updated" date in the top-right corner of each doc page (rendered by
+   src/theme/DocItem/Content). Subtle, right-aligned, above the page title. */
+.docPageLastUpdated {
+  text-align: right;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 0.5rem;
+}
+
+/* Suppress the default footer "Last updated on …" copy — we surface the same date in
+   the top-right corner instead (see .docPageLastUpdated). showLastUpdateTime stays on so
+   the date metadata is still generated. */
+.theme-last-updated {
+  display: none;
+}
+
 [data-theme='dark'] {
   --ifm-color-primary: #e0a96d;
   --ifm-color-primary-dark: #d9974f;

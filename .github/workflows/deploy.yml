@@ -23,6 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          # Full history so Docusaurus' showLastUpdateTime reads each page's real last-commit
+          # date. A shallow clone (the default) would stamp every page with the same date.
+          fetch-depth: 0
       - uses: actions/setup-node@v6
         with:
           node-version: 20

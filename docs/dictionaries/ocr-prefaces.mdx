@@ -1,0 +1,55 @@
+---
+id: ocr-prefaces
+title: OCR'd Prefaces & Front Matter
+sidebar_label: OCR'd prefaces
+---
+
+# OCR'd Prefaces & Front Matter
+
+Most CDSL dictionaries are scholarly works whose **front matter** — title pages, forewords
+(*Vorwort* / *Vorrede* / preface), lists of cited works and abbreviations, and
+addenda/corrigenda — contains the editor's own account of sources, method, and conventions.
+These pages are **scanned** in [csl-doc](https://github.com/sanskrit-lexicon/csl-doc) but,
+until now, not available as searchable text or in translation.
+
+This page indexes a growing effort to **transcribe that front matter faithfully** from the
+scans and provide **English and Russian translations** alongside the original. Each
+dictionary's output lives in a `prefaces/` directory in its own repository:
+
+- **Per-page files** — `…prefNN.md` (faithful transcription in the source language),
+  plus `…prefNN.en.md` and `…prefNN.ru.md` (translations).
+- **Consolidated editions** — one file per language with all pages in order and a table of
+  contents (`…pref_all.de.md`, `…pref_all.en.md`, `…pref_all.ru.md`).
+- **Original scans** under `prefaces/scans/`, and a `README.md` index per dictionary.
+
+Sanskrit (Devanāgarī and transliteration), work titles, bibliographic abbreviation keys,
+reference numbers, and Latin quotations are kept **verbatim** across all three languages;
+the digitizer's running-header/footer stamps are omitted; printed page numbers are
+preserved inline.
+
+## Available now
+
+| Dictionary | Source language | Pages | Index | German | English | Russian |
+|---|---|---|---|---|---|---|
+| **[Böhtlingk & Roth, *Sanskrit-Wörterbuch* (PWG)](pwg)** | German | 27 | [README](https://github.com/sanskrit-lexicon/PWG/blob/master/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/PWG/blob/master/prefaces/pwgpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/PWG/blob/master/prefaces/pwgpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/PWG/blob/master/prefaces/pwgpref_all.ru.md) |
+| **[Böhtlingk, *Sanskrit-Wörterbuch in kürzerer Fassung* (PW)](pw)** | German | 5 | [README](https://github.com/sanskrit-lexicon/PWK/blob/master/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/PWK/blob/master/prefaces/pwpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/PWK/blob/master/prefaces/pwpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/PWK/blob/master/prefaces/pwpref_all.ru.md) |
+| **Schmidt, *Nachträge zum Sanskrit-Wörterbuch* (SCH)** | German | 5 | [README](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.ru.md) |
+
+:::note Codes vs. repos
+**PW** is the website display code; its repository is named
+[`PWK`](https://github.com/sanskrit-lexicon/PWK). See the
+[catalog](catalog) for the full code↔repo mapping.
+:::
+
+## What's covered
+
+- **PWG** — the foundational seven-volume St Petersburg dictionary (1855–1875): title pages
+  and forewords for each volume, the lists of cited works, and the addenda.
+- **PW** — the abridged edition, *Erster Theil (Die Vocale)*, St Petersburg 1879: title
+  page, *Vorwort*, and the *Verzeichniss der citirten Werke* (abbreviation list).
+- **SCH** — Richard Schmidt's *Nachträge* (supplement) to the abridged dictionary, Leipzig
+  1928: title page and the four-page *Vorwort*.
+
+More dictionaries will be added here as their front matter is transcribed. The scanned
+originals for every dictionary remain available through each entry's **csl-doc front-matter
+page** (linked from the [catalog](catalog)).

@@ -31,6 +31,7 @@ const sidebars = {
         'dictionaries/overview',
         'dictionaries/catalog',
         'dictionaries/abbreviations-and-citations',
+        'dictionaries/ocr-prefaces',
         {
           type: 'category',
           label: 'Featured dictionaries',

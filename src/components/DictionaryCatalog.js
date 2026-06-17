@@ -14,10 +14,13 @@ const GUIDE_PAGES = {
   SKD: 'skd', VCP: 'vcp',
 };
 
-function Letter({href, on, children, title}) {
+function Letter({href, on, children, title, name}) {
   if (href && on) {
+    // The visible label is a single glyph (B/L/A/M/D/S¹/S²); give assistive tech a real
+    // accessible name (WCAG 2.4.4 Link Purpose) — `title` alone is only an advisory tooltip.
+    const label = name ? `${title} — ${name}` : title;
     return (
-      <a href={href} title={title} {...ext} style={{marginRight: '0.3em'}}>
+      <a href={href} title={title} aria-label={label} {...ext} style={{marginRight: '0.3em'}}>
         {children}
       </a>
     );
@@ -32,7 +35,10 @@ function Letter({href, on, children, title}) {
 function OpenCell({d}) {
   if (d.sampleOnly) {
     return (
-      <a href={d.href.startsWith('http') ? d.href : `${data.source.replace(/\/$/, '')}${d.href}`} {...ext}>
+      <a
+        href={d.href.startsWith('http') ? d.href : `${data.source.replace(/\/$/, '')}${d.href}`}
+        aria-label={`Sample page — ${d.title}`}
+        {...ext}>
         sample
       </a>
     );
@@ -41,10 +47,10 @@ function OpenCell({d}) {
   const a = d.actions || {};
   return (
     <>
-      <Letter href={u.basic} on={a.basic} title="Basic display">B</Letter>
-      <Letter href={u.list} on={a.list} title="List display">L</Letter>
-      <Letter href={u.advanced} on={a.advanced} title="Advanced search">A</Letter>
-      <Letter href={u.mobile} on={a.mobile} title="Mobile display">M</Letter>
+      <Letter href={u.basic} on={a.basic} name={d.title} title="Basic display">B</Letter>
+      <Letter href={u.list} on={a.list} name={d.title} title="List display">L</Letter>
+      <Letter href={u.advanced} on={a.advanced} name={d.title} title="Advanced search">A</Letter>
+      <Letter href={u.mobile} on={a.mobile} name={d.title} title="Mobile display">M</Letter>
     </>
   );
 }
@@ -55,9 +61,9 @@ function DataCell({d}) {
   const a = d.actions || {};
   return (
     <>
-      <Letter href={u.download} on={a.download} title="Downloads (XML/PDF)">D</Letter>
-      <Letter href={u.scanPdf} on={a.scanPdf} title="Scanned edition (PDF)">S¹</Letter>
-      <Letter href={u.scanJpg} on={a.scanJpg} title="Scanned edition (JPG)">S²</Letter>
+      <Letter href={u.download} on={a.download} name={d.title} title="Downloads (XML/PDF)">D</Letter>
+      <Letter href={u.scanPdf} on={a.scanPdf} name={d.title} title="Scanned edition (PDF)">S¹</Letter>
+      <Letter href={u.scanJpg} on={a.scanJpg} name={d.title} title="Scanned edition (JPG)">S²</Letter>
     </>
   );
 }

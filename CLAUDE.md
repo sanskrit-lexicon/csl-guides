@@ -40,6 +40,26 @@ sound. To verify the way CI does: `npm ci && npm run build`.
   A new doc page is invisible until added to a sidebar.
 - **Custom React components** live in [src/components/](src/components/) and are imported into
   `.mdx` pages: `DictionaryCatalog`, `Screenshot`, `SiteVersion`, `HomepageFeatures`.
+- **Swizzled theme components** live in [src/theme/](src/theme/) (these override Docusaurus
+  theme internals, not page-level imports). Currently
+  [DocItem/Content](src/theme/DocItem/Content/index.js) is a `--wrap` swizzle that renders the
+  page's git last-updated date top-right (see below).
+
+## Per-page "last updated" date
+
+Each doc page shows its git last-commit date in the top-right corner. Three pieces, all
+required together:
+- `showLastUpdateTime: true` in [docusaurus.config.js](docusaurus.config.js) — this is what
+  populates `metadata.lastUpdatedAt` (a **millisecond** timestamp; `new Date(ms)`, no `*1000`).
+- [src/theme/DocItem/Content/index.js](src/theme/DocItem/Content/index.js) reads it via
+  `useDoc()` and renders `.docPageLastUpdated` above the H1, formatted with a **fixed
+  `en-US`/UTC locale** (don't make it locale/timezone-dependent — that causes a hydration
+  mismatch). The default footer copy is hidden via `.theme-last-updated` in
+  [src/css/custom.css](src/css/custom.css).
+- **`fetch-depth: 0` in [.github/workflows/deploy.yml](.github/workflows/deploy.yml)** — the
+  build needs full git history. A shallow clone (the Actions default) stamps *every* page with
+  the same date. Verify a change by confirming pages show *different* dates, not just that one
+  renders.
 
 ## The dictionary catalog (don't hand-edit the data)
 

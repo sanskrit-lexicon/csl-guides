@@ -3,6 +3,8 @@
 Documentation site for the **Cologne Digital Sanskrit Dictionaries** (CDSL),
 [sanskrit-lexicon.uni-koeln.de](https://sanskrit-lexicon.uni-koeln.de).
 
+🌐 **Live site:** [sanskrit-lexicon.github.io/csl-guides](https://sanskrit-lexicon.github.io/csl-guides/)
+
 Built with [Docusaurus](https://docusaurus.io/). Modeled on the level of detail
 of the [dharmamitra-guides](https://dharmamitra.github.io/dharmamitra-guides),
 adapted to the CDSL ecosystem with a hybrid navigation covering three audiences:
@@ -27,8 +29,11 @@ npm run build      # static output in build/
 npm run serve      # preview the production build locally
 ```
 
-Deploys to GitHub Pages (`gh-pages` branch). See [docusaurus.config.js](docusaurus.config.js)
-for `url` / `baseUrl` / `organizationName` / `projectName`.
+Every push to `main` auto-builds and deploys to GitHub Pages at
+[sanskrit-lexicon.github.io/csl-guides](https://sanskrit-lexicon.github.io/csl-guides/) via
+[.github/workflows/deploy.yml](.github/workflows/deploy.yml) — no manual `npm run deploy` step.
+See [docusaurus.config.js](docusaurus.config.js) for `url` / `baseUrl` / `organizationName` /
+`projectName`.
 
 ## Status
 

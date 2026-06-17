@@ -18,7 +18,7 @@ function Letter({href, on, children, title, name}) {
   if (href && on) {
     // The visible label is a single glyph (B/L/A/M/D/S¹/S²); give assistive tech a real
     // accessible name (WCAG 2.4.4 Link Purpose) — `title` alone is only an advisory tooltip.
-    const label = name ? `${title} — ${name}` : title;
+    const label = `${name ? `${title} — ${name}` : title} (opens in new tab)`;
     return (
       <a href={href} title={title} aria-label={label} {...ext} style={{marginRight: '0.3em'}}>
         {children}
@@ -26,7 +26,10 @@ function Letter({href, on, children, title, name}) {
     );
   }
   return (
-    <span title={`${title} — not available`} style={{marginRight: '0.3em', opacity: 0.3}}>
+    <span
+      title={`${title} — not available`}
+      className="catalog-na"
+      style={{marginRight: '0.3em'}}>
       {children}
     </span>
   );
@@ -37,7 +40,7 @@ function OpenCell({d}) {
     return (
       <a
         href={d.href.startsWith('http') ? d.href : `${data.source.replace(/\/$/, '')}${d.href}`}
-        aria-label={`Sample page — ${d.title}`}
+        aria-label={`Sample page — ${d.title} (opens in new tab)`}
         {...ext}>
         sample
       </a>
@@ -56,7 +59,7 @@ function OpenCell({d}) {
 }
 
 function DataCell({d}) {
-  if (d.sampleOnly) return <span style={{opacity: 0.3}}>—</span>;
+  if (d.sampleOnly) return <span className="catalog-na">—</span>;
   const u = d.urls || {};
   const a = d.actions || {};
   return (
@@ -85,7 +88,8 @@ export default function DictionaryCatalog() {
         <strong>Open</strong>: B=Basic · L=List · A=Advanced · M=Mobile.{' '}
         <strong>Data</strong>: D=Downloads · S¹=PDF scan · S²=JPG scan. Greyed letters are
         not offered for that dictionary. A <strong>📖 guide</strong> link marks dictionaries
-        with a dedicated guide page in this site.
+        with a dedicated guide page in this site. Links to the live CDSL site, scans, and
+        GitHub open in a new browser tab.
       </p>
 
       {data.groups.map((g) => (
@@ -141,10 +145,10 @@ export default function DictionaryCatalog() {
                   <td style={{whiteSpace: 'nowrap'}}><OpenCell d={d} /></td>
                   <td style={{whiteSpace: 'nowrap'}}><DataCell d={d} /></td>
                   <td>
-                    {d.repoUrl ? <a href={d.repoUrl} {...ext}>{d.repo}</a> : <span style={{opacity: 0.4}}>—</span>}
+                    {d.repoUrl ? <a href={d.repoUrl} {...ext}>{d.repo}</a> : <span className="catalog-na">—</span>}
                   </td>
                   <td>
-                    {d.cslDocUrl ? <a href={d.cslDocUrl} {...ext}>{d.cslDocPage}</a> : <span style={{opacity: 0.4}}>—</span>}
+                    {d.cslDocUrl ? <a href={d.cslDocUrl} {...ext}>{d.cslDocPage}</a> : <span className="catalog-na">—</span>}
                   </td>
                 </tr>
               ))}

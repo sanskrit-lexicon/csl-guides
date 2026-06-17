@@ -1,6 +1,7 @@
 ---
 id: architecture
 title: Architecture
+description: "A high-level view of CDSL as a GitHub-driven source-to-display pipeline, from csl-orig text to the searchable web displays."
 sidebar_label: Architecture
 ---
 

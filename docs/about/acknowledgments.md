@@ -1,6 +1,7 @@
 ---
 id: acknowledgments
 title: Acknowledgments
+description: "Credits for the Cologne Digital Sanskrit Dictionaries — the lexicographers, digitizers, and contributors behind the project."
 sidebar_label: Acknowledgments
 ---
 

@@ -1,6 +1,7 @@
 ---
 id: offline-stardict
 title: Offline Access & StarDict
+description: "Use the CDSL dictionaries offline as StarDict packages in any StarDict-compatible application."
 sidebar_label: Offline & StarDict
 ---
 

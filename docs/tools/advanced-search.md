@@ -1,6 +1,7 @@
 ---
 id: advanced-search
 title: Advanced Search
+description: "The Advanced display searches within CDSL entry bodies, not just headwords — for questions like which entries cite a given text."
 sidebar_label: Advanced Search
 ---
 

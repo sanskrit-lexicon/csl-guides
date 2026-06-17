@@ -1,6 +1,7 @@
 ---
 id: encoding-transliteration
 title: Encoding & Transliteration
+description: "How CDSL stores Sanskrit in SLP1 and the input/display schemes (IAST, Harvard-Kyoto, Devanāgarī) — the key to making your word match."
 sidebar_label: Encoding & Transliteration
 ---
 

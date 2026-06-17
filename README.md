@@ -1,5 +1,7 @@
 # csl-guides
 
+[![Deploy to GitHub Pages](https://github.com/sanskrit-lexicon/csl-guides/actions/workflows/deploy.yml/badge.svg)](https://github.com/sanskrit-lexicon/csl-guides/actions/workflows/deploy.yml)
+
 Documentation site for the **Cologne Digital Sanskrit Dictionaries** (CDSL),
 [sanskrit-lexicon.uni-koeln.de](https://sanskrit-lexicon.uni-koeln.de).
 

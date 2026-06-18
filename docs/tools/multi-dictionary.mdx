@@ -6,8 +6,24 @@ sidebar_label: Multi-Dictionary
 ---
 
 import Screenshot from '@site/src/components/Screenshot';
+import DictionaryComparison from '@site/src/components/DictionaryComparison';
 
 # Multi-Dictionary Display & MW Inflected Forms
+
+## Try it: side-by-side comparison
+
+Enter a headword to see how four dictionaries treat the *same* word, fetched live from the
+Cologne API. Each column resolves your input to that dictionary's own headword form, so the
+matched key can differ (Monier-Williams stems `agni`; Apte keys the nominative `agniH`).
+
+<DictionaryComparison />
+
+:::note Live data
+This widget queries the live `sanskrit-lexicon.uni-koeln.de` API in your browser. The server
+is occasionally slow or unavailable; a column that times out can be retried by searching
+again. Interactive links inside an entry are inert here — open a dictionary's full **Basic**
+display from the [catalog](../dictionaries/catalog) for the live, clickable entry.
+:::
 
 ## Multi-dictionary lookup (`dalglob`)
 

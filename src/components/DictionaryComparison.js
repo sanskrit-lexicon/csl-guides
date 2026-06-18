@@ -69,10 +69,13 @@ function extractEntry(html) {
   const root = doc.querySelector('#CologneBasic') || doc.body;
   root.querySelectorAll('script,style,link,meta,iframe,object,embed').forEach((n) => n.remove());
   root.querySelectorAll('*').forEach((el) => {
-    [...el.attributes].forEach((a) => {
-      const n = a.name.toLowerCase();
-      if (n.startsWith('on')) el.removeAttribute(a.name);
-      if ((n === 'href' || n === 'src') && /^\s*javascript:/i.test(a.value)) el.removeAttribute(a.name);
+    // getAttributeNames() returns a plain string[] — unlike spreading the live NamedNodeMap
+    // `el.attributes`, which transpiles unreliably under minification.
+    el.getAttributeNames().forEach((name) => {
+      const n = name.toLowerCase();
+      const val = el.getAttribute(name) || '';
+      if (n.startsWith('on')) el.removeAttribute(name);
+      else if ((n === 'href' || n === 'src') && /^\s*javascript:/i.test(val)) el.removeAttribute(name);
     });
   });
   // The display's in-entry links are JS-driven; with handlers stripped they are inert, so

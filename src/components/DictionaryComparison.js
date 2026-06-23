@@ -17,13 +17,19 @@ import styles from './DictionaryComparison.module.css';
 
 const API = 'https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev';
 
-// The starter set: the four dictionaries with verified entries + in-guide deep pages.
+// Dictionaries offered as comparison columns — those with verified entries + in-guide deep
+// pages. Each resolves a headword via the live getsuggest API (confirmed: ap → agniH, like ap90).
 const DICTS = [
   {code: 'mw', label: 'Monier-Williams (MW)'},
   {code: 'ap90', label: 'Apte (AP90)'},
+  {code: 'ap', label: 'Apte revised (AP)'},
   {code: 'pwg', label: 'Böhtlingk-Roth (PWG)'},
   {code: 'gra', label: 'Grassmann (GRA)'},
 ];
+
+// Shown by default (the original starter four); AP is opt-in via the selector to keep the
+// default layout at four columns.
+const DEFAULT_CODES = ['mw', 'ap90', 'pwg', 'gra'];
 
 // `input`/`output` values accepted by the API (see docs/developers/api.md).
 const INPUT_SCHEMES = [
@@ -101,20 +107,31 @@ export default function DictionaryComparison() {
   const [input, setInput] = useState('hk');
   const [output, setOutput] = useState('deva');
   const [results, setResults] = useState({}); // code -> {state, key?, html?, error?}
+  const [selected, setSelected] = useState(DEFAULT_CODES);
   const [busy, setBusy] = useState(false);
   const runId = useRef(0);
+
+  // Preserve catalog order; only the chosen dictionaries become columns.
+  const activeDicts = DICTS.filter((d) => selected.includes(d.code));
+
+  const toggle = useCallback((code) => {
+    setSelected((prev) =>
+      prev.includes(code) ? prev.filter((c) => c !== code) : [...prev, code],
+    );
+  }, []);
 
   const compare = useCallback(
     (e) => {
       e.preventDefault();
       const word = term.trim();
-      if (!word) return;
+      if (!word || selected.length === 0) return;
+      const dicts = DICTS.filter((d) => selected.includes(d.code));
       const id = ++runId.current; // newer searches supersede in-flight ones
       setBusy(true);
-      setResults(Object.fromEntries(DICTS.map((d) => [d.code, {state: 'loading'}])));
+      setResults(Object.fromEntries(dicts.map((d) => [d.code, {state: 'loading'}])));
       // Each column is fetched independently and renders as soon as it settles — the server
       // is flaky under load, so one slow/failed dictionary never blocks the others.
-      const jobs = DICTS.map((d) =>
+      const jobs = dicts.map((d) =>
         lookupOne(d.code, word, input, output)
           .then((res) => {
             if (id === runId.current) setResults((prev) => ({...prev, [d.code]: res}));
@@ -129,7 +146,7 @@ export default function DictionaryComparison() {
         if (id === runId.current) setBusy(false);
       });
     },
-    [term, input, output],
+    [term, input, output, selected],
   );
 
   return (
@@ -161,20 +178,41 @@ export default function DictionaryComparison() {
             ))}
           </select>
         </label>
-        <button type="submit" disabled={busy}>{busy ? 'Comparing…' : 'Compare'}</button>
+        <button type="submit" disabled={busy || selected.length === 0}>
+          {busy ? 'Comparing…' : 'Compare'}
+        </button>
       </form>
+
+      <fieldset className={styles.dictPicker}>
+        <legend>Dictionaries</legend>
+        {DICTS.map((d) => (
+          <label key={d.code} className={styles.dictOption}>
+            <input
+              type="checkbox"
+              checked={selected.includes(d.code)}
+              onChange={() => toggle(d.code)}
+            />
+            <span>{d.label}</span>
+          </label>
+        ))}
+      </fieldset>
 
       <p className={styles.note}>
         Queries the live Cologne dictionary API. Each column resolves the word to that
         dictionary&rsquo;s own headword form, so the matched key may differ (MW{' '}
-        <code>agni</code> vs Apte <code>agniH</code>).
+        <code>agni</code> vs Apte <code>agniH</code>). Tick a dictionary to add or remove its
+        column, then <strong>Compare</strong> to fill it.
       </p>
 
-      <div className={styles.columns} aria-live="polite">
-        {DICTS.map((d) => (
-          <Column key={d.code} dict={d} result={results[d.code]} />
-        ))}
-      </div>
+      {selected.length === 0 ? (
+        <p className={styles.muted}>Select at least one dictionary above.</p>
+      ) : (
+        <div className={styles.columns} aria-live="polite">
+          {activeDicts.map((d) => (
+            <Column key={d.code} dict={d} result={results[d.code]} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

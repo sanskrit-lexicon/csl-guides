@@ -11,6 +11,11 @@ CDSL stores Sanskrit text internally in **SLP1**, and lets you *input* and *disp
 words in several transliteration schemes. Knowing which scheme you are typing in is the
 single most common source of "why didn't my word match" confusion.
 
+:::tip Test yourself
+Once you've read this page, try the **[Transliteration practice quiz](transliteration-quiz)** —
+28 self-check questions on the schemes, SLP1, Vedic accents, and the transcoder.
+:::
+
 ## Schemes the displays offer
 
 SLP1 is the website's *lingua franca* (storage encoding). The display **input/output**

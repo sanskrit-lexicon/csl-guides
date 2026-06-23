@@ -94,3 +94,8 @@
   color: var(--ifm-color-emphasis-600);
   font-size: 0.85em;
 }
+
+.answerCode {
+  font-size: 1em;
+  padding: 0.1rem 0.4rem;
+}

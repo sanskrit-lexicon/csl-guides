@@ -1,0 +1,57 @@
+---
+id: transliteration-quiz
+title: Transliteration practice (quiz)
+description: "Test your grip on the CDSL transliteration schemes — SLP1, Devanāgarī, IAST, Harvard-Kyoto, ITRANS — Vedic-accent marking, and the transcoder, with 28 self-check questions that apply across every dictionary."
+sidebar_label: Transliteration quiz
+---
+
+import Quiz from '@site/src/components/Quiz';
+import translit from '@site/src/data/translit-quiz.json';
+
+# Transliteration practice (quiz)
+
+Knowing **which scheme you are typing in** is the single most common fix for "why didn't my
+word match." This is a **cross-dictionary skill** — it applies to every dictionary on the
+site, not one dictionary's structure. The 28 questions below check the material on the
+[Encoding & Transliteration](encoding-transliteration) page: the schemes and where they
+diverge, why CDSL stores everything in SLP1, Vedic-accent marking, and the transcoder.
+
+Each answer is hidden until you reveal it. To practice for real, set an input scheme in any
+[display](../dictionaries/mw) and try the conversions there.
+
+## Schemes — and where they diverge
+
+`rāma` looks the same (`rAma`) in SLP1, Harvard-Kyoto, and ITRANS; `śiva` is where they split
+(`Siva` / `ziva` / `shiva`). The sounds that actually diverge are the sibilants, vocalic
+`ṛ`/`ḷ`, and the retroflexes.
+
+<Quiz data={translit} group="schemes" title="Quiz · schemes" />
+
+## Why SLP1 internally
+
+<Quiz data={translit} group="SLP1" title="Quiz · why SLP1" />
+
+## Convert between schemes
+
+Give the exact characters you would type or see. Mind the case — in SLP1 capital `S` is `ś`
+but lowercase `s` is the dental `s`.
+
+<Quiz data={translit} group="convert" title="Quiz · conversions" />
+
+## Vedic accents
+
+Several dictionaries mark Vedic pitch accents — but you never have to type one, because the
+search key is stored unaccented.
+
+<Quiz data={translit} group="accents" title="Quiz · accents" />
+
+## Typing & the transcoder
+
+<Quiz data={translit} group="tooling" title="Quiz · typing & transcoder" />
+
+## See also
+
+- **[Encoding & Transliteration](encoding-transliteration)** — the reference these questions test
+- **[Reading Monier-Williams (with quizzes)](reading-monier-williams)** — the MW-specific quiz set
+- **[Search & Display](search-and-display)** — choosing input/output schemes in the four display modes
+- **[API](../developers/api)** — the `input`/`output`/`accent` parameters

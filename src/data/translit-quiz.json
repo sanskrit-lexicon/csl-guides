@@ -1,0 +1,270 @@
+{
+  "title": "Transliteration & Encoding Quiz",
+  "description": "A cross-dictionary skill quiz on the CDSL transliteration schemes (SLP1, Devanāgarī, IAST/roman, Harvard-Kyoto, ITRANS), why SLP1 is the internal encoding, Vedic-accent marking, and the transcoder. Applies to every dictionary on the site, not one dictionary's structure.",
+  "source": {
+    "page": "docs/users/encoding-transliteration.md",
+    "note": "Every answer is grounded in the Encoding & Transliteration page (itself verified against the live displays, the API, and the sanskrit-transcoding tables). Conversions use the rāma / śiva worked examples from that page's scheme table."
+  },
+  "schemeKey": "Display/API scheme values: slp1 (internal storage), deva (Devanāgarī), roman (IAST diacritics), hk (Harvard-Kyoto), itrans (ITRANS).",
+  "questions": [
+    {
+      "id": "TR-SCH-01",
+      "group": "schemes",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "Which transliteration scheme does CDSL use internally to store all of its Sanskrit text?",
+      "answer": "SLP1 (Sanskrit Library Phonetic Basic) — one ASCII character per phoneme.",
+      "tags": ["slp1", "schemes"]
+    },
+    {
+      "id": "TR-SCH-02",
+      "group": "schemes",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "The word rāma is written identically in which three ASCII schemes (and what is that spelling)?",
+      "answer": "SLP1, Harvard-Kyoto, and ITRANS — all write it rAma. None of rāma's sounds diverge across those ASCII schemes, so for this word the input scheme barely matters.",
+      "tags": ["schemes", "rama"]
+    },
+    {
+      "id": "TR-SCH-03",
+      "group": "schemes",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "Which classes of sound actually diverge across the ASCII schemes (so that choosing the right input scheme matters)?",
+      "answer": "The sibilants (ś, ṣ), the vocalic ṛ / ḷ, and the retroflex consonants.",
+      "tags": ["schemes"]
+    },
+    {
+      "id": "TR-SCH-04",
+      "group": "schemes",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": "In Harvard-Kyoto, the sound ś (as in śiva) is written:",
+      "options": ["S", "z", "sh", "ś"],
+      "answer": "z",
+      "explanation": "SLP1 writes it S, ITRANS writes it sh, Harvard-Kyoto writes it z — three ASCII spellings of one letter.",
+      "tags": ["schemes", "sibilants", "siva"]
+    },
+    {
+      "id": "TR-SCH-05",
+      "group": "schemes",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": "In ITRANS, the sound ś (as in śiva) is written:",
+      "options": ["sh", "z", "S", "c"],
+      "answer": "sh",
+      "tags": ["schemes", "sibilants", "siva"]
+    },
+    {
+      "id": "TR-SCH-06",
+      "group": "schemes",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": "Which scheme is described as “Roman with diacritics (IAST-style)”?",
+      "options": ["roman", "hk", "itrans", "slp1"],
+      "answer": "roman",
+      "tags": ["schemes"]
+    },
+    {
+      "id": "TR-SCH-07",
+      "group": "schemes",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "Two transcoders exist but are NOT offered in the display input/output menus. Name them and what each is.",
+      "answer": "wx (used at Hyderabad University) and as (Anglicized Sanskrit, Thomas Malten's letter-number scheme).",
+      "tags": ["schemes"]
+    },
+    {
+      "id": "TR-SLP-01",
+      "group": "SLP1",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "Why does CDSL store everything in SLP1 internally?",
+      "answer": "SLP1 is lossless and unambiguous — every Sanskrit phoneme maps to exactly one ASCII character, so sorting, searching, and round-tripping are deterministic.",
+      "tags": ["slp1"]
+    },
+    {
+      "id": "TR-SLP-02",
+      "group": "SLP1",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "In what encoding is the downloadable XML for each dictionary?",
+      "answer": "SLP1.",
+      "tags": ["slp1", "downloads"]
+    },
+    {
+      "id": "TR-CNV-01",
+      "group": "convert",
+      "type": "convert",
+      "difficulty": "easy",
+      "question": "Write śiva (IAST) in SLP1.",
+      "answer": "Siva",
+      "tags": ["convert", "siva", "slp1"]
+    },
+    {
+      "id": "TR-CNV-02",
+      "group": "convert",
+      "type": "convert",
+      "difficulty": "medium",
+      "question": "Write śiva (IAST) in Harvard-Kyoto.",
+      "answer": "ziva",
+      "tags": ["convert", "siva", "hk"]
+    },
+    {
+      "id": "TR-CNV-03",
+      "group": "convert",
+      "type": "convert",
+      "difficulty": "medium",
+      "question": "Write śiva (IAST) in ITRANS.",
+      "answer": "shiva",
+      "tags": ["convert", "siva", "itrans"]
+    },
+    {
+      "id": "TR-CNV-04",
+      "group": "convert",
+      "type": "convert",
+      "difficulty": "easy",
+      "question": "Write śiva in Devanāgarī.",
+      "answer": "शिव",
+      "tags": ["convert", "siva", "deva"]
+    },
+    {
+      "id": "TR-CNV-05",
+      "group": "convert",
+      "type": "convert",
+      "difficulty": "easy",
+      "question": "Write rāma (IAST) in SLP1.",
+      "answer": "rAma",
+      "tags": ["convert", "rama", "slp1"]
+    },
+    {
+      "id": "TR-CNV-06",
+      "group": "convert",
+      "type": "convert",
+      "difficulty": "easy",
+      "question": "Write rāma in Devanāgarī.",
+      "answer": "राम",
+      "tags": ["convert", "rama", "deva"]
+    },
+    {
+      "id": "TR-CNV-07",
+      "group": "convert",
+      "type": "convert",
+      "difficulty": "medium",
+      "question": "The input box is set to slp1. You want to look up śiva — what exactly do you type?",
+      "answer": "Siva",
+      "note": "the capital S is SLP1's ś; lowercase s would be the dental s.",
+      "tags": ["convert", "siva", "slp1"]
+    },
+    {
+      "id": "TR-CNV-08",
+      "group": "convert",
+      "type": "convert",
+      "difficulty": "medium",
+      "question": "The input box is set to hk (Harvard-Kyoto). You want śiva — what do you type?",
+      "answer": "ziva",
+      "tags": ["convert", "siva", "hk"]
+    },
+    {
+      "id": "TR-ACC-01",
+      "group": "accents",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "How is the udātta (high pitch) accent written in the SLP1 source?",
+      "answer": "As / attached to its vowel — e.g. Monier-Williams keys agni as agni/ (accent on the final -i, agní).",
+      "tags": ["accents", "slp1"]
+    },
+    {
+      "id": "TR-ACC-02",
+      "group": "accents",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "Do you have to type the Vedic accent to make a word match?",
+      "answer": "No. Lookup uses the plain search key <k1> (e.g. agni); the accent lives on a separate display key <k2> (agni/). The accent is for display, not matching — typing agni finds the word either way.",
+      "tags": ["accents"]
+    },
+    {
+      "id": "TR-ACC-03",
+      "group": "accents",
+      "type": "multiple-choice",
+      "difficulty": "medium",
+      "question": "Which of these dictionaries marks NO Vedic accents?",
+      "options": ["Apte (AP90)", "Monier-Williams (MW)", "Böhtlingk-Roth (PWG)", "Grassmann (GRA)"],
+      "answer": "Apte (AP90)",
+      "explanation": "MW, PWG/PW, and Grassmann all mark accents; Grassmann centrally, as a Ṛg-Veda dictionary. Apte does not.",
+      "tags": ["accents"]
+    },
+    {
+      "id": "TR-ACC-04",
+      "group": "accents",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "What does the accent=yes|no toggle (and API parameter) govern?",
+      "answer": "Whether accents appear in the Devanāgarī output.",
+      "tags": ["accents"]
+    },
+    {
+      "id": "TR-ACC-05",
+      "group": "accents",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "How do anudātta and svarita appear in the entry body of the German and Grassmann sources, and how does an accent render in Roman?",
+      "answer": "anudātta and svarita are written \\ and ^ in the source body; in Roman an accent renders as a combining acute (á, ā́).",
+      "tags": ["accents"]
+    },
+    {
+      "id": "TR-TOOL-01",
+      "group": "tooling",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "You have a diacritic Roman word (rāma). Which input mode should you select?",
+      "answer": "roman.",
+      "tags": ["tooling", "typing"]
+    },
+    {
+      "id": "TR-TOOL-02",
+      "group": "tooling",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "You only have an ASCII keyboard (no diacritics). Which input schemes let you avoid diacritics entirely?",
+      "answer": "Harvard-Kyoto (hk), ITRANS (itrans), or SLP1 (slp1).",
+      "tags": ["tooling", "typing"]
+    },
+    {
+      "id": "TR-TOOL-03",
+      "group": "tooling",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "Your lookup failed. What is the single most likely cause?",
+      "answer": "An input-scheme mismatch (e.g. typing roman while the box expects hk). Re-check the selected input scheme first.",
+      "tags": ["tooling", "troubleshooting"]
+    },
+    {
+      "id": "TR-TOOL-04",
+      "group": "tooling",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "Who originally developed the project's transcoder, and in what language (with later ports)?",
+      "answer": "Ralph Bunker, in Java — later ported to PHP (transcoder.php) and Python (funderburkjim/sanskrit-transcoding).",
+      "tags": ["tooling", "transcoder"]
+    },
+    {
+      "id": "TR-TOOL-05",
+      "group": "tooling",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "How does the transcoder define each scheme-to-scheme conversion?",
+      "answer": "From per-pair XML tables named {X}_{Y}.xml (e.g. slp1_deva.xml), compiled into a finite-state machine at runtime.",
+      "tags": ["tooling", "transcoder"]
+    },
+    {
+      "id": "TR-TOOL-06",
+      "group": "tooling",
+      "type": "convert",
+      "difficulty": "medium",
+      "question": "What does transcoder_processString('rAma', 'slp1', 'deva') return?",
+      "answer": "राम",
+      "tags": ["tooling", "transcoder", "convert"]
+    }
+  ]
+}

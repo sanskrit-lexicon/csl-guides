@@ -1,20 +1,23 @@
 import React from 'react';
-import quiz from '@site/src/data/mw-quiz.json';
+import mwQuiz from '@site/src/data/mw-quiz.json';
 import styles from './Quiz.module.css';
 
-// Renders the Monier-Williams quiz (src/data/mw-quiz.json) as self-contained,
-// no-JS-required practice cards: each question's answer lives in a native
-// <details>/<summary> so it works server-side-rendered and is keyboard accessible
-// (matches the site's a11y posture — see .ai_state.md). Usage in any .mdx page:
+// Renders a quiz dataset as self-contained, no-JS-required practice cards: each
+// question's answer lives in a native <details>/<summary> so it works server-side-
+// rendered and is keyboard accessible (matches the site's a11y posture — see .ai_state.md).
+// Usage in any .mdx page:
 //   import Quiz from '@site/src/components/Quiz';
-//   <Quiz lesson={12} />                 // one lesson
-//   <Quiz lesson={12} types={['lookup']} title="…" />
-//   <Quiz />                             // everything
+//   <Quiz lesson={12} />                          // MW quiz, one Wikner lesson
+//   <Quiz lesson={12} types={['lookup']} />       // filter by type
+//   import translit from '@site/src/data/translit-quiz.json';
+//   <Quiz data={translit} group="convert" />      // a different dataset, filtered by group
 //
 // Props:
-//   lesson  — number | number[]; filter to one/several Wikner lessons (12,13,14).
+//   data    — a quiz dataset object ({questions:[…]}); defaults to the MW quiz.
+//   lesson  — number | number[]; filter to Wikner lesson(s) (MW quiz only).
+//   group   — string | string[]; filter to question group(s) (datasets that use `group`).
 //   types   — string[]; filter to question types
-//             ('concept' | 'multiple-choice' | 'lookup' | 'trace-to-dhatu').
+//             ('concept' | 'multiple-choice' | 'lookup' | 'trace-to-dhatu' | 'convert').
 //   title   — optional heading rendered above the cards.
 
 const TYPE_LABELS = {
@@ -22,6 +25,7 @@ const TYPE_LABELS = {
   'multiple-choice': 'Multiple choice',
   lookup: 'Lookup',
   'trace-to-dhatu': 'Trace to dhātu',
+  convert: 'Convert',
 };
 
 function AnswerBody({q}) {
@@ -66,6 +70,14 @@ function AnswerBody({q}) {
       </>
     );
   }
+  if (q.type === 'convert') {
+    return (
+      <>
+        <code className={styles.answerCode}>{q.answer}</code>
+        {q.note ? ` — ${q.note}` : ''}
+      </>
+    );
+  }
   if (q.type === 'multiple-choice') {
     return <>{q.explanation ? `${q.answer}.  ${q.explanation}` : q.answer}</>;
   }
@@ -78,12 +90,13 @@ function QuestionCard({q}) {
     (q.type === 'lookup'
       ? `${q.prompt}  →  ${q.iast || q.word}`
       : `${q.prompt}  →  ${q.iast || q.word}${q.gloss ? ` (“${q.gloss}”)` : ''}`);
+  const chip = q.section ? `§${q.section}` : q.group;
 
   return (
     <li className={styles.card}>
       <div className={styles.meta}>
         <span className={styles.badge}>{TYPE_LABELS[q.type] || q.type}</span>
-        <span className={styles.section}>§{q.section}</span>
+        {chip && <span className={styles.section}>{chip}</span>}
         {q.difficulty && <span className={styles.difficulty}>{q.difficulty}</span>}
       </div>
       <p className={styles.prompt}>{prompt}</p>
@@ -104,11 +117,14 @@ function QuestionCard({q}) {
   );
 }
 
-export default function Quiz({lesson, types, title}) {
+export default function Quiz({data, lesson, group, types, title}) {
+  const quiz = data || mwQuiz;
   const lessons = lesson == null ? null : Array.isArray(lesson) ? lesson : [lesson];
+  const groups = group == null ? null : Array.isArray(group) ? group : [group];
   const items = quiz.questions.filter(
     (q) =>
       (lessons == null || lessons.includes(q.lesson)) &&
+      (groups == null || groups.includes(q.group)) &&
       (types == null || types.includes(q.type)),
   );
 

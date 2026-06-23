@@ -39,7 +39,13 @@ sound. To verify the way CI does: `npm ci && npm run build`.
   `developersSidebar`) wired to navbar items in [docusaurus.config.js](docusaurus.config.js).
   A new doc page is invisible until added to a sidebar.
 - **Custom React components** live in [src/components/](src/components/) and are imported into
-  `.mdx` pages: `DictionaryCatalog`, `Screenshot`, `SiteVersion`, `HomepageFeatures`.
+  `.mdx` pages: `DictionaryCatalog`, `DictionaryComparison` (live side-by-side CDSL lookup),
+  `Quiz` (renders the MW quiz dataset), `Screenshot`, `SiteVersion`, `HomepageFeatures`.
+- **The MW quiz dataset** ([src/data/mw-quiz.json](src/data/mw-quiz.json)) is rendered by
+  `Quiz` on [docs/users/reading-monier-williams.mdx](docs/users/reading-monier-williams.mdx)
+  and is **generated/verified, not hand-authored**: each lookup's `cdsl.entryId` + page is
+  taken from the digital MW source (`csl-orig/v02/mw/mw.txt` `<L>`/`<pc>` records), so don't
+  hand-edit the ids — re-derive them from the source.
 - **Swizzled theme components** live in [src/theme/](src/theme/) (these override Docusaurus
   theme internals, not page-level imports). Currently
   [DocItem/Content](src/theme/DocItem/Content/index.js) is a `--wrap` swizzle that renders the

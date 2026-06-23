@@ -15,6 +15,7 @@ const sidebars = {
         'users/using-the-website',
         'users/search-and-display',
         'users/encoding-transliteration',
+        'users/reading-monier-williams',
         'users/downloads-and-data',
         'users/scans-and-print',
         'users/troubleshooting',

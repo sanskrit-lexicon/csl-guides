@@ -1,0 +1,96 @@
+.quiz {
+  margin: 1.5rem 0;
+}
+
+.title {
+  margin-bottom: 0.25rem;
+}
+
+.count {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-card-border-radius, 8px);
+  padding: 0.9rem 1rem;
+  background: var(--ifm-card-background-color, var(--ifm-background-surface-color));
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.72rem;
+}
+
+.badge {
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-foreground, #fff);
+  border-radius: 999px;
+  padding: 0.05rem 0.55rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.section {
+  color: var(--ifm-color-emphasis-700);
+  font-variant-numeric: tabular-nums;
+}
+
+.difficulty {
+  color: var(--ifm-color-emphasis-600);
+  text-transform: capitalize;
+}
+
+.prompt {
+  margin: 0;
+  font-weight: 500;
+}
+
+.options {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.options li {
+  margin: 0.15rem 0;
+}
+
+.answer {
+  margin-top: 0.6rem;
+}
+
+.answer > summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  width: fit-content;
+}
+
+.answerBody {
+  margin-top: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  border-left: 3px solid var(--ifm-color-primary);
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.92rem;
+}
+
+.slp1 {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.85em;
+}

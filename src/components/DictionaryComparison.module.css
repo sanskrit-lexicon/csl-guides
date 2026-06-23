@@ -43,6 +43,36 @@
   cursor: progress;
 }
 
+.dictPicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1rem;
+  margin: 0.9rem 0 0;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+}
+
+.dictPicker legend {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0 0.4rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.dictOption {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.dictOption input {
+  cursor: pointer;
+}
+
 .note {
   margin: 0.6rem 0 1rem;
   font-size: 0.85rem;

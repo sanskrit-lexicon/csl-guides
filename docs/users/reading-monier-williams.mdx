@@ -1,0 +1,109 @@
+---
+id: reading-monier-williams
+title: Reading Monier-Williams (with quizzes)
+description: "Learn to navigate the print Monier-Williams dictionary — its four levels of alphabetical order, its symbols, and how to trace a word to its dhātu — then test yourself with 69 practice questions."
+sidebar_label: Reading Monier-Williams
+---
+
+import Quiz from '@site/src/components/Quiz';
+
+# Reading Monier-Williams (with quizzes)
+
+The Monier-Williams dictionary (`MW`) is **arranged etymologically**, not as a flat
+alphabetical list. That makes it a powerful tool — cognate words gather under their shared
+root — but it surprises first-time users. This page teaches the navigation skills and then
+lets you **test yourself**: 69 practice questions drawn from Lessons 12–14 of Charles
+Wikner's *A Practical Sanskrit Introductory*.
+
+For how to look a word up in the **online** displays (input scheme, output script, the four
+search modes), see the [Monier-Williams guide](../dictionaries/mw) and
+[Search & Display](search-and-display). This page is about the **structure of the dictionary
+itself** — equally true of the [scanned print pages](scans-and-print) and the digital text.
+
+:::note Source
+The questions and worked answers come from **Charles Wikner, *A Practical Sanskrit
+Introductory* (1996)**, a freely distributable course (Lessons 12–14 are a hands-on MW
+manual). Each lookup answer shows the **print page + column** (e.g. `135a` = page 135,
+column *a*) and links to the matching **CDSL entry** — its digital record id (`lnum`) and
+live display; the trace exercises link each cited **dhātu** the same way. The page numbers
+were verified against the digital MW source
+([`csl-orig/v02/mw`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/mw)): all
+40 print citations match the digital `<pc>` page,column exactly.
+:::
+
+## The four levels of alphabetical order
+
+MW reconciles its etymological grouping with alphabetical lookup using **four nested levels**
+of ordering. Internalising these is the single most important navigation skill:
+
+1. **Devanāgarī entry words** — the outermost level, alphabetised in Sanskrit order.
+2. **Transliterated (Roman) derived words** listed under each Devanāgarī entry — alphabetised
+   *independently* of the outer order.
+3. **Hyphen-led samāsa (compounds)** within an entry's paragraph — e.g. `-kalpa` under
+   `Buddha` means `Buddhakalpa`. Mentally replace the leading hyphen with the entry word.
+4. **Sub-sub-entries** listed under a third-level compound — the innermost level.
+
+Because there can be **several pages between two Devanāgarī entry words**, the **page-heading
+words** (top of each page, in both scripts) only tell you the *first and last* entry words —
+**not which level** they sit at. They get you within ~10 pages; they can also mislead. When
+in doubt, turn back toward **अ** and follow the Devanāgarī entries.
+
+<Quiz lesson={12} types={['concept', 'multiple-choice']} title="Quiz · Lesson 12 — structure & navigation" />
+
+## Symbols, hyphens, and abbreviations
+
+A handful of MW conventions unlock the entry body:
+
+- **The little circle `°`** — abbreviates the part of a word supplied from context, and also
+  abbreviates repeated **English** words to save space (`con°` = *conscious*, `°ly` =
+  *consciously*, `°ness` = *consciousness*).
+- **Caret/breve vowel accents** — over a transliterated compound, they record the length of
+  the two vowels that merged at the junction (short+short, short+long, long+short,
+  long+long), so you can split the compound and look up each part.
+- **A leading hyphen** doesn't only append the word to the entry — it signals the element is
+  itself **separately findable** in the dictionary.
+- **Source abbreviations** (`Bhag.` = *Bhagavad-gītā*, `MBh.` = *Mahābhārata*) are keyed in
+  the **List of Works and Authors on page xxxiii**. Make a habit of looking them up.
+- **Not in the main body?** Check the **Supplement** ("Additions and Corrections", from
+  page 1308).
+
+<Quiz lesson={13} types={['concept', 'multiple-choice']} title="Quiz · Lesson 13 — symbols & references" />
+
+## Tracing a word to its dhātu
+
+Because the arrangement is etymological, you trace a Roman entry to its root by **following
+the entry words backwards** until you reach a Devanāgarī (outermost-level) entry, then
+looking up its components. Two hard cases:
+
+- **Short words (1–2 syllables)** may not be listed at all — irregular pronoun declensions,
+  for instance. Fall back on **paradigm tables**.
+- **Long words (3+ syllables)** — treat as a samāsa and **split at every syllable** with the
+  sandhi rules, testing each candidate (this is how `Yatātman` resolves to root `yam`, and
+  `Svādhyāya` to its two entries).
+
+<Quiz lesson={14} types={['concept', 'multiple-choice']} title="Quiz · Lesson 14 — finding & tracing words" />
+
+## Practice: find the headword
+
+Now use a copy of MW (the [scans](scans-and-print) or the
+[online displays](../dictionaries/mw)). For each word, find it and note the **page and
+column** — reveal the answer to check, then click through to the **live CDSL entry** to
+confirm. Watch the diacritics: `a` and `ā` are *different letters*.
+
+<Quiz lesson={12} types={['lookup']} title="Lesson 12 lookups — simple headwords" />
+
+<Quiz lesson={13} types={['lookup']} title="Lesson 13 lookups — across all four levels" />
+
+## Practice: trace to the dhātu
+
+Find each word, then trace it back to its root as above.
+
+<Quiz lesson={14} types={['trace-to-dhatu']} title="Lesson 14 — trace to dhātu" />
+
+## See also
+
+- **[Monier-Williams (MW)](../dictionaries/mw)** — the dictionary guide (online lookup,
+  reading a digital entry, what makes MW distinctive)
+- **[Encoding & Transliteration](encoding-transliteration)** — input schemes and IAST
+- **[Scans & Print](scans-and-print)** — working from the page images
+- **[Abbreviations & Citations](../dictionaries/abbreviations-and-citations)** — how to cite

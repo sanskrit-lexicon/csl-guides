@@ -1,0 +1,1336 @@
+{
+  "title": "Monier-Williams Dictionary Quiz",
+  "description": "Quiz dataset for learning to read and navigate the Monier-Williams Sanskrit-English Dictionary (MW). Concept questions, multiple-choice, headword-lookup, and trace-to-dhatu exercises drawn from Lessons 12-14 of Charles Wikner's 'A Practical Sanskrit Introductory'.",
+  "source": {
+    "work": "A Practical Sanskrit Introductory",
+    "author": "Charles Wikner",
+    "year": 1996,
+    "license": "freely distributable",
+    "file": "src/wikner.pdf",
+    "lessons": [
+      12,
+      13,
+      14
+    ]
+  },
+  "caveats": [
+    "Each lookup answer carries a CDSL entry id (the digital record's lnum, shown as [ID=…] in the entry) and a live listview URL, fetched from the Cologne getword_xml API; the digital page,column is preserved from the print via <pc> and is shown as e.g. '135a'.",
+    "Transliteration is IAST; the API is queried in SLP1 (the cdsl.slp1 key). Entry ids are line-derived and can shift if MW is regenerated, so the headword/slp1 key is the more stable reference (cf. developers/api 'Clean-URL permalinks')."
+  ],
+  "answerKeyKeycols": "Page-column codes: a = first column, b = second column, c = third column.",
+  "questions": [
+    {
+      "id": "L12-C01",
+      "lesson": 12,
+      "section": "12.3",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "On what two organizing principles is the Monier-Williams dictionary built?",
+      "answer": "Etymological (cognate words are gathered under the dhatu they share) AND alphabetical.",
+      "tags": [
+        "structure"
+      ]
+    },
+    {
+      "id": "L12-C02",
+      "lesson": 12,
+      "section": "12.3",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "How many distinct levels of alphabetical ordering does MW use?",
+      "answer": "Four.",
+      "tags": [
+        "structure",
+        "alphabetical-order"
+      ]
+    },
+    {
+      "id": "L12-C03",
+      "lesson": 12,
+      "section": "12.3",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "What is the FIRST (outermost) level of alphabetical order in MW?",
+      "answer": "The main entry words printed in Devanagari script, alphabetized in Sanskrit order.",
+      "tags": [
+        "alphabetical-order"
+      ]
+    },
+    {
+      "id": "L12-C04",
+      "lesson": 12,
+      "section": "12.3",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "What is the SECOND level of alphabetical order?",
+      "answer": "Derived words listed under each Devanagari entry, printed in transliterated Roman and alphabetized independently of the outer Devanagari sequence.",
+      "tags": [
+        "alphabetical-order"
+      ]
+    },
+    {
+      "id": "L12-C05",
+      "lesson": 12,
+      "section": "12.3",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "What is the THIRD level of alphabetical order?",
+      "answer": "Samasa (compounds) beginning with a hyphen, listed alphabetically within an entry's paragraph; mentally replace the leading hyphen with the entry word.",
+      "tags": [
+        "alphabetical-order",
+        "compounds"
+      ]
+    },
+    {
+      "id": "L12-C06",
+      "lesson": 12,
+      "section": "12.3",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "What is the FOURTH (innermost) level of alphabetical order?",
+      "answer": "Sub-sub-entries listed in alphabetical order under a third-level hyphenated sub-entry (e.g. -parisodhaka and -varalocana under -kshetra under Buddhi).",
+      "tags": [
+        "alphabetical-order",
+        "compounds"
+      ]
+    },
+    {
+      "id": "L12-C07",
+      "lesson": 12,
+      "section": "12.3",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "What are the two main advantages of MW's etymological arrangement?",
+      "answer": "(1) Cognate words from one dhatu are gathered together, giving breadth of understanding; (2) it is trivial to trace a word back to its dhatu, giving depth/insight.",
+      "tags": [
+        "structure"
+      ]
+    },
+    {
+      "id": "L12-C08",
+      "lesson": 12,
+      "section": "12.3",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": "Under the entry 'Buddha', a bold sub-entry printed as '-kalpa' represents:",
+      "options": [
+        "A cross-reference to another dictionary",
+        "A samasa formed by appending it to the entry word, i.e. Buddhakalpa",
+        "An alternate spelling of Buddha",
+        "A grammatical note about the entry"
+      ],
+      "answer": "A samasa formed by appending it to the entry word, i.e. Buddhakalpa",
+      "tags": [
+        "compounds"
+      ]
+    },
+    {
+      "id": "L12-C09",
+      "lesson": 12,
+      "section": "12.4",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "What do the page-heading (running-head) words at the top of each MW page indicate?",
+      "answer": "The first and last entry words found on that page, given in both Devanagari and Roman transliteration.",
+      "tags": [
+        "navigation"
+      ]
+    },
+    {
+      "id": "L12-C10",
+      "lesson": 12,
+      "section": "12.4",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "Why can the page-heading words mislead you?",
+      "answer": "They do not indicate which of the four alphabetical levels each word belongs to; the two may sit at different levels, or even appear in reverse alphabetical order because they derive from different Devanagari entries.",
+      "tags": [
+        "navigation",
+        "pitfalls"
+      ]
+    },
+    {
+      "id": "L12-C11",
+      "lesson": 12,
+      "section": "12.3",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "As you scan the derived words of a dhatu like budh, the first vowel strengthens Bu- to Bo- to Bau-. What are these two strengthened grades called?",
+      "answer": "guna and vrddhi.",
+      "tags": [
+        "grammar"
+      ]
+    },
+    {
+      "id": "L13-C01",
+      "lesson": 13,
+      "section": "13.5",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "What does the small raised circle ('the little circle') mean in MW?",
+      "answer": "It is the standard Devanagari abbreviation symbol marking the first or last part of a word to be supplied from context; MW also uses it to abbreviate English words to save space (e.g. con° = conscious, °ly = consciously, °ness = consciousness).",
+      "tags": [
+        "symbols",
+        "abbreviations"
+      ]
+    },
+    {
+      "id": "L13-C02",
+      "lesson": 13,
+      "section": "13.5",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "What do the four caret/breve accent marks placed over transliterated vowels indicate?",
+      "answer": "The length of the two vowels that merged at a compound's junction — short+short, short+long, long+short, or long+long — so that each component word can be split apart and looked up separately.",
+      "tags": [
+        "symbols",
+        "sandhi",
+        "compounds"
+      ]
+    },
+    {
+      "id": "L13-C03",
+      "lesson": 13,
+      "section": "13.6",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "Besides showing that a word is appended to the entry word, what else does a leading hyphen on a sub-entry tell you?",
+      "answer": "That the hyphenated element is itself a word you can look up separately in the dictionary.",
+      "tags": [
+        "symbols",
+        "compounds"
+      ]
+    },
+    {
+      "id": "L13-C04",
+      "lesson": 13,
+      "section": "13.4",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "Where in MW is the List of Works and Authors (the key to source abbreviations such as Bhag. and MBh.)?",
+      "answer": "Page xxxiii of the Introduction.",
+      "tags": [
+        "references",
+        "abbreviations"
+      ]
+    },
+    {
+      "id": "L13-C05",
+      "lesson": 13,
+      "section": "13.4",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": "In MW, the abbreviation 'MBh.' stands for which text?",
+      "options": [
+        "Bhagavad-gita",
+        "Mahabharata",
+        "Manu-bhashya",
+        "Mundaka"
+      ],
+      "answer": "Mahabharata",
+      "explanation": "Bhag. abbreviates Bhagavad-gita; MBh. abbreviates Mahabharata.",
+      "tags": [
+        "references",
+        "abbreviations"
+      ]
+    },
+    {
+      "id": "L13-C06",
+      "lesson": 13,
+      "section": "13.7",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "If a word is not in the main body of MW, where should you look next?",
+      "answer": "The Supplement — 'Additions and Corrections' — beginning on page 1308.",
+      "tags": [
+        "navigation"
+      ]
+    },
+    {
+      "id": "L13-C07",
+      "lesson": 13,
+      "section": "13.2",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "MW uniquely distinguishes two kinds of anusvara. What are they, and what should the student do about it?",
+      "answer": "A 'true' anusvara (n-dot, inherent in the word from its dhatu, e.g. amsa, himsa) versus a 'substitute' anusvara (m-dot, produced by the rules of grammar, e.g. sam + sara = samsara). This distinction is peculiar to MW; the student may treat the two as synonymous — both simply the anusvara.",
+      "tags": [
+        "encoding",
+        "pitfalls"
+      ]
+    },
+    {
+      "id": "L14-C01",
+      "lesson": 14,
+      "section": "14.1",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "Because MW is etymologically arranged, how do you trace a transliterated (Roman) entry back to its dhatu?",
+      "answer": "Follow the entry words backwards (toward the start of the alphabet) until you reach a Devanagari entry — the outermost level — then look up the component verb/prefix and continue back to the root.",
+      "tags": [
+        "etymology",
+        "navigation"
+      ]
+    },
+    {
+      "id": "L14-C02",
+      "lesson": 14,
+      "section": "14.5",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "You cannot find a short word of one or two syllables in MW. What is the likely reason and the recourse?",
+      "answer": "It may not be listed at all (e.g. the irregular declensions of pronouns); the only recourse is to lists of paradigms.",
+      "tags": [
+        "pitfalls"
+      ]
+    },
+    {
+      "id": "L14-C03",
+      "lesson": 14,
+      "section": "14.5",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "What is the strategy for finding a difficult word of three or more syllables?",
+      "answer": "Treat it as a samasa and use the sandhi rules to split it into parts at every syllable, looking up each candidate split until one is found.",
+      "tags": [
+        "sandhi",
+        "compounds"
+      ]
+    },
+    {
+      "id": "L14-C04",
+      "lesson": 14,
+      "section": "14.4",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": "Why is 'Astanga' hard to find on the page its heading words suggest?",
+      "options": [
+        "It is spelled differently in the dictionary",
+        "MW gives a separate entry word for a samasa whose adjoining word begins with 'a', so it sits on the next page (117)",
+        "It is only in the Supplement",
+        "The heading words are printed in reverse order"
+      ],
+      "answer": "MW gives a separate entry word for a samasa whose adjoining word begins with 'a', so it sits on the next page (117)",
+      "tags": [
+        "pitfalls",
+        "navigation"
+      ]
+    },
+    {
+      "id": "L14-C05",
+      "lesson": 14,
+      "section": "14.4",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "Looking up 'Vicara' or 'Sattva', the heading words do not lead you straight to the word. What general technique resolves this?",
+      "answer": "Escape out of the current alphabetical level up to the next higher level (ultimately the outermost Devanagari entry) and search from there, following any cross-references.",
+      "tags": [
+        "navigation",
+        "pitfalls"
+      ]
+    },
+    {
+      "id": "L12-L01",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword in MW; give its page and column (e.g. 733b).",
+      "word": "atman",
+      "iast": "ātman",
+      "answer": "135a",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "135a",
+      "cdsl": {
+        "entryId": "23455",
+        "page": "135a",
+        "slp1": "Atman",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=Atman&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L02",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "hetu",
+      "iast": "hetu",
+      "answer": "1303c",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "1303c",
+      "cdsl": {
+        "entryId": "264003",
+        "page": "1303c",
+        "slp1": "hetu",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=hetu&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L03",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "yoga",
+      "iast": "yoga",
+      "answer": "856b",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "856b",
+      "cdsl": {
+        "entryId": "172324",
+        "page": "856b",
+        "slp1": "yoga",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=yoga&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L04",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "prakrti",
+      "iast": "prakṛti",
+      "answer": "654a",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "654a",
+      "cdsl": {
+        "entryId": "130024",
+        "page": "654a",
+        "slp1": "prakfti",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=prakfti&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L05",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "jnana",
+      "iast": "jñāna",
+      "answer": "426a",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "426a",
+      "cdsl": {
+        "entryId": "80379",
+        "page": "426a",
+        "slp1": "jYAna",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=jYAna&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L06",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "ananda",
+      "iast": "ānanda",
+      "answer": "139c",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "139c",
+      "cdsl": {
+        "entryId": "24352",
+        "page": "139c",
+        "slp1": "Ananda",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=Ananda&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L07",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "vyakarana",
+      "iast": "vyākaraṇa",
+      "answer": "1035c",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "1035c",
+      "cdsl": {
+        "entryId": "209444",
+        "page": "1035c",
+        "slp1": "vyAkaraRa",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=vyAkaraRa&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L08",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "brahman",
+      "iast": "brahman",
+      "answer": "737c",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "737c",
+      "cdsl": {
+        "entryId": "146546",
+        "page": "737c",
+        "slp1": "brahman",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=brahman&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L09",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "guru",
+      "iast": "guru",
+      "answer": "359b",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "359b",
+      "cdsl": {
+        "entryId": "65987",
+        "page": "359b",
+        "slp1": "guru",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=guru&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L10",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "rajas",
+      "iast": "rajas",
+      "answer": "863b",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "863b",
+      "cdsl": {
+        "entryId": "173961",
+        "page": "863b",
+        "slp1": "rajas",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=rajas&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L11",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "citta",
+      "iast": "citta",
+      "answer": "395c",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "395c",
+      "cdsl": {
+        "entryId": "73536",
+        "page": "395c",
+        "slp1": "citta",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=citta&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L12",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "rsi",
+      "iast": "ṛṣi",
+      "answer": "226c",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "226c",
+      "cdsl": {
+        "entryId": "39047",
+        "page": "226c",
+        "slp1": "fzi",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=fzi&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L13",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "visnu",
+      "iast": "viṣṇu",
+      "answer": "999a",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "999a",
+      "cdsl": {
+        "entryId": "202398",
+        "page": "999a",
+        "slp1": "vizRu",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=vizRu&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L14",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "hrdaya",
+      "iast": "hṛdaya",
+      "answer": "1302c",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "1302c",
+      "cdsl": {
+        "entryId": "263742",
+        "page": "1302c",
+        "slp1": "hfdaya",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=hfdaya&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L15",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "purusa",
+      "iast": "puruṣa",
+      "answer": "637a",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "637a",
+      "cdsl": {
+        "entryId": "126438",
+        "page": "637a",
+        "slp1": "puruza",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=puruza&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L16",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "manas",
+      "iast": "manas",
+      "answer": "783c",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "783c",
+      "cdsl": {
+        "entryId": "156776",
+        "page": "783c",
+        "slp1": "manas",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=manas&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L17",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "sarira",
+      "iast": "śarīra",
+      "answer": "1057c",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "1057c",
+      "cdsl": {
+        "entryId": "213830",
+        "page": "1057c",
+        "slp1": "SarIra",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=SarIra&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L18",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "bhakti",
+      "iast": "bhakti",
+      "answer": "743a",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "743a",
+      "cdsl": {
+        "entryId": "147660",
+        "page": "743a",
+        "slp1": "Bakti",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=Bakti&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L19",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "ananta",
+      "iast": "ananta",
+      "answer": "25a",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "25a",
+      "cdsl": {
+        "entryId": "4918",
+        "page": "25a",
+        "slp1": "ananta",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=ananta&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L12-L20",
+      "lesson": 12,
+      "section": "12.5",
+      "type": "lookup",
+      "prompt": "Find the headword; give page and column.",
+      "word": "krsna",
+      "iast": "kṛṣṇa",
+      "answer": "306b",
+      "acceptableAnswers": [
+        "306b",
+        "308a"
+      ],
+      "note": "Listed at 306b as krishna; also as Krishna at 308a.",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "306b",
+      "cdsl": {
+        "entryId": "55142",
+        "page": "306b",
+        "slp1": "kfzRa",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=kfzRa&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L01",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word (it may be at any of the four levels, Devanagari or Roman, hyphenated); give page and column.",
+      "word": "anvaya-vyatireka",
+      "iast": "anvaya-vyatireka",
+      "answer": "46b",
+      "tags": [
+        "lookup",
+        "compounds"
+      ],
+      "printRef": "46b",
+      "cdsl": {
+        "entryId": "8752",
+        "page": "46b",
+        "slp1": "anvayavyatireka",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=anvayavyatireka&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L02",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "laghu-sattva-ta",
+      "iast": "laghu-sattva-tā",
+      "answer": "894b",
+      "tags": [
+        "lookup",
+        "compounds"
+      ],
+      "printRef": "894b",
+      "cdsl": {
+        "entryId": "180990",
+        "page": "894b",
+        "slp1": "laGusattvatA",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=laGusattvatA&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L03",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "vivaha-kala",
+      "iast": "vivāha-kāla",
+      "answer": "987b",
+      "tags": [
+        "lookup",
+        "compounds"
+      ],
+      "printRef": "987b",
+      "cdsl": {
+        "entryId": "200058",
+        "page": "987b",
+        "slp1": "vivAhakAla",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=vivAhakAla&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L04",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "samskrta",
+      "iast": "saṃskṛta",
+      "answer": "1120c",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "1120c",
+      "cdsl": {
+        "entryId": "227087",
+        "page": "1120c",
+        "slp1": "saMskfta",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=saMskfta&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L05",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "kali-yuga",
+      "iast": "kali-yuga",
+      "answer": "262a",
+      "tags": [
+        "lookup",
+        "compounds"
+      ],
+      "printRef": "262a",
+      "cdsl": {
+        "entryId": "45962",
+        "page": "262a",
+        "slp1": "kaliyuga",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=kaliyuga&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L06",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "mudha",
+      "iast": "mūḍha",
+      "answer": "825b",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "825b",
+      "cdsl": {
+        "entryId": "166125",
+        "page": "825b",
+        "slp1": "mUQa",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=mUQa&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L07",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "samgama-mani",
+      "iast": "saṃgama-maṇi",
+      "answer": "1128c",
+      "tags": [
+        "lookup",
+        "compounds"
+      ],
+      "printRef": "1128c",
+      "cdsl": {
+        "entryId": "228510",
+        "page": "1128c",
+        "slp1": "saMgamamaRi",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=saMgamamaRi&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L08",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "ksatriya-dharma",
+      "iast": "kṣatriya-dharma",
+      "answer": "325b",
+      "tags": [
+        "lookup",
+        "compounds"
+      ],
+      "printRef": "325b",
+      "cdsl": {
+        "entryId": "58875",
+        "page": "325b",
+        "slp1": "kzatriyaDarma",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=kzatriyaDarma&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L09",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "bala-rupa-dhrk",
+      "iast": "bāla-rūpa-dhṛk",
+      "answer": "729b",
+      "tags": [
+        "lookup",
+        "compounds"
+      ],
+      "printRef": "729b",
+      "cdsl": {
+        "entryId": "144627",
+        "page": "729b",
+        "slp1": "bAlarUpaDfk",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=bAlarUpaDfk&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L10",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "bhagavad-gita",
+      "iast": "bhagavad-gītā",
+      "answer": "744a",
+      "tags": [
+        "lookup",
+        "compounds"
+      ],
+      "printRef": "744a",
+      "cdsl": {
+        "entryId": "147853",
+        "page": "744a",
+        "slp1": "BagavadgItA",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=BagavadgItA&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L11",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "mano-bhava-sasana",
+      "iast": "mano-bhava-śāsana",
+      "answer": "785b",
+      "tags": [
+        "lookup",
+        "compounds"
+      ],
+      "printRef": "785b",
+      "cdsl": {
+        "entryId": "157080",
+        "page": "785b",
+        "slp1": "manoBavaSAsana",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=manoBavaSAsana&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L12",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "viveka",
+      "iast": "viveka",
+      "answer": "987c",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "987c",
+      "cdsl": {
+        "entryId": "200139",
+        "page": "987c",
+        "slp1": "viveka",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=viveka&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L13",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "samyoga",
+      "iast": "saṃyoga",
+      "answer": "1112b",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "1112b",
+      "cdsl": {
+        "entryId": "225750",
+        "page": "1112b",
+        "slp1": "saMyoga",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=saMyoga&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L14",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "dhyana-yoga",
+      "iast": "dhyāna-yoga",
+      "answer": "521a",
+      "tags": [
+        "lookup",
+        "compounds"
+      ],
+      "printRef": "521a",
+      "cdsl": {
+        "entryId": "102223",
+        "page": "521a",
+        "slp1": "DyAnayoga",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=DyAnayoga&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L15",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "adhyaropa",
+      "iast": "adhyāropa",
+      "answer": "23b",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "23b",
+      "cdsl": {
+        "entryId": "4657",
+        "page": "23b",
+        "slp1": "aDyAropa",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=aDyAropa&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L16",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "sraddhatr",
+      "iast": "śraddhātṛ",
+      "answer": "1095c",
+      "tags": [
+        "lookup"
+      ],
+      "printRef": "1095c",
+      "cdsl": {
+        "entryId": "222368",
+        "page": "1095c",
+        "slp1": "SradDAtf",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=SradDAtf&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L17",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "hiranya-garbha",
+      "iast": "hiraṇya-garbha",
+      "answer": "1299c",
+      "tags": [
+        "lookup",
+        "compounds"
+      ],
+      "printRef": "1299c",
+      "cdsl": {
+        "entryId": "263207",
+        "page": "1299c",
+        "slp1": "hiraRyagarBa",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=hiraRyagarBa&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L18",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "purva-paksa-pada",
+      "iast": "pūrva-pakṣa-pāda",
+      "answer": "643c",
+      "tags": [
+        "lookup",
+        "compounds"
+      ],
+      "printRef": "643c",
+      "cdsl": {
+        "entryId": "127970",
+        "page": "643c",
+        "slp1": "pUrvapakzapAda",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=pUrvapakzapAda&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L19",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "mleccha-jati",
+      "iast": "mleccha-jāti",
+      "answer": "837c",
+      "tags": [
+        "lookup",
+        "compounds"
+      ],
+      "printRef": "837c",
+      "cdsl": {
+        "entryId": "168917",
+        "page": "837c",
+        "slp1": "mlecCajAti",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=mlecCajAti&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L13-L20",
+      "lesson": 13,
+      "section": "13.8",
+      "type": "lookup",
+      "prompt": "Find the word; give page and column.",
+      "word": "agrhita",
+      "iast": "agṛhīta",
+      "answer": "1309a",
+      "note": "Found in the Supplement (Additions and Corrections, from p. 1308), not the main body — see L13-C06.",
+      "tags": [
+        "lookup",
+        "supplement"
+      ],
+      "printRef": "1309a",
+      "cdsl": {
+        "entryId": "873.1",
+        "page": "1309a",
+        "slp1": "agfhIta",
+        "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=agfhIta&input=slp1&output=iast"
+      }
+    },
+    {
+      "id": "L14-T01",
+      "lesson": 14,
+      "section": "14.6",
+      "type": "trace-to-dhatu",
+      "prompt": "Look up the word and trace it to its dhatu (root).",
+      "word": "abhaya",
+      "iast": "abhaya",
+      "gloss": "fearlessness",
+      "answer": {
+        "dhatu": "bhi",
+        "dhatuIast": "bhī",
+        "mw": "758a",
+        "rootMeaning": "to fear, be afraid of",
+        "analysis": "a- (privative, mw1a) + bhaya (fear, mw747a) ← bhi",
+        "dhatuRefs": [
+          {
+            "dhatuIast": "bhī",
+            "slp1": "BI",
+            "page": "758a",
+            "entryId": "150969",
+            "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=BI&input=slp1&output=iast"
+          }
+        ]
+      },
+      "tags": [
+        "etymology"
+      ]
+    },
+    {
+      "id": "L14-T02",
+      "lesson": 14,
+      "section": "14.6",
+      "type": "trace-to-dhatu",
+      "prompt": "Look up the word and trace it to its dhatu (root).",
+      "word": "purna",
+      "iast": "pūrṇa",
+      "gloss": "abundance",
+      "answer": {
+        "dhatu": "pr",
+        "dhatuIast": "pṝ",
+        "mw": "648a",
+        "rootMeaning": "to fill; to sate, cherish, nourish",
+        "analysis": "purna (fulness, plenty, abundance, mw642a) ← pr",
+        "dhatuRefs": [
+          {
+            "dhatuIast": "pṝ",
+            "slp1": "pF",
+            "page": "648a",
+            "entryId": "128909",
+            "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=pF&input=slp1&output=iast"
+          }
+        ]
+      },
+      "tags": [
+        "etymology"
+      ]
+    },
+    {
+      "id": "L14-T03",
+      "lesson": 14,
+      "section": "14.6",
+      "type": "trace-to-dhatu",
+      "prompt": "Look up the word and trace it to its dhatu (root).",
+      "word": "pratyahara",
+      "iast": "pratyāhāra",
+      "gloss": "withdrawal",
+      "answer": {
+        "dhatu": "hr",
+        "dhatuIast": "hṛ",
+        "mw": "1302a",
+        "rootMeaning": "to take, bear, carry (1.hr, harati)",
+        "analysis": "prati- (mw661b) + a- (mw126a) + hr; confirmed by the conjugational form harati given at 677b",
+        "dhatuRefs": [
+          {
+            "dhatuIast": "hṛ",
+            "slp1": "hf",
+            "page": "1302a",
+            "entryId": "263626",
+            "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=hf&input=slp1&output=iast"
+          }
+        ]
+      },
+      "tags": [
+        "etymology",
+        "prefixes"
+      ]
+    },
+    {
+      "id": "L14-T04",
+      "lesson": 14,
+      "section": "14.6",
+      "type": "trace-to-dhatu",
+      "prompt": "Look up the word and trace it to its dhatu (root).",
+      "word": "acapalya",
+      "iast": "acāpalya",
+      "gloss": "steadiness",
+      "answer": {
+        "dhatu": "kamp",
+        "dhatuIast": "kamp",
+        "mw": "252b",
+        "rootMeaning": "to tremble, shake",
+        "analysis": "a- (privative, mw1a) + capalya (unsteadiness, mw393a) ← capala ← kamp",
+        "dhatuRefs": [
+          {
+            "dhatuIast": "kamp",
+            "slp1": "kamp",
+            "page": "252b",
+            "entryId": "43913",
+            "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=kamp&input=slp1&output=iast"
+          }
+        ]
+      },
+      "tags": [
+        "etymology"
+      ]
+    },
+    {
+      "id": "L14-T05",
+      "lesson": 14,
+      "section": "14.6",
+      "type": "trace-to-dhatu",
+      "prompt": "Look up the word and trace it to its dhatu(s).",
+      "word": "citrakarmavid",
+      "iast": "citrakarmavid",
+      "gloss": "skilled in painting",
+      "answer": {
+        "dhatu": "kr + vid",
+        "dhatuIast": "kṛ + vid",
+        "mw": "300c (kr), 963b (vid)",
+        "rootMeaning": "kr: to do, make, perform; vid: to know, understand",
+        "analysis": "citra (mw396a) + karman (mw396b) ← kr, + vid (knower, mw963c) ← vid; karman derives from 1.kr at 300c, not 2.kr at 304a",
+        "dhatuRefs": [
+          {
+            "dhatuIast": "kṛ",
+            "slp1": "kf",
+            "page": "300c",
+            "entryId": "54148",
+            "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=kf&input=slp1&output=iast"
+          },
+          {
+            "dhatuIast": "vid",
+            "slp1": "vid",
+            "page": "963b",
+            "entryId": "195626",
+            "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=vid&input=slp1&output=iast"
+          }
+        ]
+      },
+      "tags": [
+        "etymology"
+      ]
+    },
+    {
+      "id": "L14-T06",
+      "lesson": 14,
+      "section": "14.6",
+      "type": "trace-to-dhatu",
+      "prompt": "Look up the word and trace it to its dhatu (root).",
+      "word": "natimanita",
+      "iast": "nātimānitā",
+      "gloss": "not too much pride",
+      "answer": {
+        "dhatu": "man",
+        "dhatuIast": "man",
+        "mw": "783a",
+        "rootMeaning": "to think, believe, imagine (cl. 8/4 Ā, manute/manyate)",
+        "analysis": "na (mw523a) + ati (mw12b) + manita (mw809b) ← man",
+        "dhatuRefs": [
+          {
+            "dhatuIast": "man",
+            "slp1": "man",
+            "page": "783a",
+            "entryId": "156626",
+            "url": "https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/listview.php?dict=mw&key=man&input=slp1&output=iast"
+          }
+        ]
+      },
+      "tags": [
+        "etymology",
+        "prefixes"
+      ]
+    }
+  ]
+}

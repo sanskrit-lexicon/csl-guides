@@ -46,6 +46,7 @@ const sidebars = {
             'dictionaries/pwg',
             'dictionaries/pw',
             'dictionaries/sch',
+            'dictionaries/ccs',
             'dictionaries/gra',
             'dictionaries/bhs',
             'dictionaries/mwe',

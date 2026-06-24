@@ -1,0 +1,88 @@
+---
+id: ccs
+title: Cappeller German (CCS)
+description: "Guide to Carl Cappeller's Sanskrit-Wörterbuch (CCS, 1887) on CDSL — the concise German one-volume Sanskrit dictionary distilled from the Petersburg lexicons."
+sidebar_label: Cappeller German (CCS)
+---
+
+# Cappeller, *Sanskrit-Wörterbuch* (`CCS`)
+
+`CCS` is Carl Cappeller's *Sanskrit-Wörterbuch* (1887), **"nach den Petersburger Wörterbüchern
+bearbeitet"** — a **concise one-volume German Sanskrit dictionary distilled from the great
+Petersburg lexica** ([PWG](pwg) / [PW](pw)). It packs the essentials of Böhtlingk-Roth into
+~541 pages of terse German glosses, and is the German twin of Cappeller's better-known
+**English** *Sanskrit-English Dictionary* (`CAE`, 1891).
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `CCS` (GitHub repo [`CCS`](https://github.com/sanskrit-lexicon/CCS)) |
+| **Full title** | *Sanskrit-Wörterbuch, nach den Petersburger Wörterbüchern bearbeitet* |
+| **Author** | Carl Cappeller |
+| **Year / size** | 1887 · ~**541** pages |
+| **Direction** | Sanskrit → German |
+| **Accents** | Yes (marked on headwords) |
+| **Source** | [`csl-orig/v02/ccs/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/ccs) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/CCSScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/CCSScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/CCSScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/CCSScan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/CCSScan/2020/web/webtc/download.html) |
+| **csl-doc** | [ccs.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ccs.rst) (front matter) |
+
+:::tip Two Cappellers
+**`CCS`** (this page) is Cappeller's **German** dictionary (1887). **`CAE`** is his
+**Sanskrit→English** *Dictionary* (1891) — the same compact scheme, also "based upon the St.
+Petersburg lexicons," but glossed in English. Both are in the [catalog](catalog); pick by the
+gloss language you want.
+:::
+
+## When to use it
+
+Reach for `CCS` when you want a **quick German gloss** without wading through the multi-volume
+Petersburg dictionaries it summarizes. It complements:
+
+- **[Böhtlingk-Roth (PWG)](pwg)** and **[Böhtlingk shorter (PW)](pw)** — the full German works
+  `CCS` distills (and [Schmidt's Nachträge (SCH)](sch) supplements).
+- **[Monier-Williams (MW)](mw)** — the broad English reference.
+
+## Looking up a word
+
+Open the **Basic** display, choose your input/output transliteration (see
+[Encoding & Transliteration](../users/encoding-transliteration)), and type the headword. The
+**List** and **Advanced** displays browse the index and search *inside* entries — see
+[Search & Display](../users/search-and-display).
+
+## Reading an entry
+
+Cappeller sets the Sanskrit in `{#…#}` and the grammatical labels / German cues in `{%…%}`
+(italic); the running glosses are plain German. The entry *aṃśa* (`csl-orig/v02/ccs/ccs.txt`):
+
+```
+<L>3<pc>001-1<k1>aMSa<k2>a/MSa
+{#a/MSa#}¦ {%m.%} Teil, Erbteil, Partei; {%N. eines Gottes.%}
+{#aMSena#} teilweise.
+```
+
+| In the source | Meaning |
+|---|---|
+| `<pc>001-1` | page-column reference (p. 1, col. 1) |
+| `{#a/MSa#}` | the headword (`a/` = the accented *á*; search key `<k1>` is SLP1) |
+| `{%m.%}` | grammatical label — *masculine* |
+| `Teil, Erbteil, Partei` | the German glosses ("part, inheritance-share, faction") |
+| `{%N. eines Gottes.%}` | "*Name of a god*" (`N.` = *Name*) |
+| `{#aMSena#} teilweise.` | a key form given with its gloss — instrumental *aṃśena* "partially" |
+
+See [Data Formats](../developers/data-formats) for the markup reference.
+
+## What makes it distinctive
+
+- **A compact distillation of the Petersburg lexica.** One German volume standing in for the
+  multi-volume Böhtlingk-Roth — fast to consult, terse by design.
+- **German, and accented.** Glosses are in German; headwords carry the Vedic accent.
+- **Has an English twin.** Cappeller's `CAE` (1891) applies the same scheme in English.
+
+## See also
+
+- **[Böhtlingk-Roth (PWG)](pwg)** · **[Böhtlingk shorter (PW)](pw)** · **[Schmidt Nachträge (SCH)](sch)** — the Petersburg family
+- **[Monier-Williams (MW)](mw)** — the broad English reference
+- The full **[catalog](catalog)** of all 42 dictionaries (incl. Cappeller's English `CAE`)
+- **csl-doc** [ccs.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ccs.rst)

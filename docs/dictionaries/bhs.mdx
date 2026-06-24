@@ -1,0 +1,98 @@
+---
+id: bhs
+title: Edgerton BHS (BHS)
+description: "Guide to Franklin Edgerton's Buddhist Hybrid Sanskrit Dictionary (BHS, 1953) on CDSL — the specialist dictionary for the Sanskrit of Buddhist texts, triangulated against Pali and classical Sanskrit."
+sidebar_label: Edgerton BHS (BHS)
+---
+
+# Edgerton, *Buddhist Hybrid Sanskrit Dictionary* (`BHS`)
+
+`BHS` is **Volume II (the Dictionary)** of Franklin Edgerton's *Buddhist Hybrid Sanskrit
+Grammar and Dictionary* (1953). It is the specialist reference for **Buddhist Hybrid Sanskrit**
+— the non-classical Sanskrit of the Buddhist texts (the *Mahāvastu*, *Saddharmapuṇḍarīka*,
+*Divyāvadāna*, *Lalitavistara*, and others), full of forms a classical dictionary won't list.
+Its hallmark is that almost every entry **triangulates the word against Pali and classical
+Sanskrit**. Glosses are in **English**.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `BHS` (GitHub repo [`BHS`](https://github.com/sanskrit-lexicon/BHS)) |
+| **Full title** | *Buddhist Hybrid Sanskrit Grammar and Dictionary*, Vol. II: Dictionary |
+| **Author** | Franklin Edgerton |
+| **Year / size** | 1953 · ~**634** pages |
+| **Direction** | Buddhist Hybrid Sanskrit → English |
+| **Accents** | No |
+| **Source** | [`csl-orig/v02/bhs/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/bhs) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/BHSScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/BHSScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/BHSScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/BHSScan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/BHSScan/2020/web/webtc/download.html) |
+| **csl-doc** | [bhs.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/bhs.rst) (front matter / abbreviations) |
+
+:::note A companion to the Grammar
+`BHS` is the **dictionary half** of a two-volume work; **Volume I is Edgerton's Grammar**.
+Many entries cross-reference it with a section sign — e.g. `〔§ 23.17〕` points to a paragraph
+of the Grammar, not to a text passage. CDSL digitizes the Dictionary (Vol. II).
+:::
+
+## When to use it
+
+Reach for `BHS` when you are reading **Buddhist Sanskrit** and a word, form, or meaning isn't
+in Monier-Williams — or looks like a Sanskritized Pali/Prakrit form. It is **not** a
+general classical dictionary; for that use:
+
+- **[Monier-Williams (MW)](mw)** — the broad classical reference.
+- **[Apte (AP90/AP)](ap90)** — classical reading with numbered senses.
+
+Use `BHS` alongside them: it tells you whether a form is shared with **Pali**, how it relates
+to a **classical Sanskrit** counterpart, and where it occurs in the Buddhist canon.
+
+## Looking up a word
+
+Open the **Basic** display, choose your input/output transliteration (see
+[Encoding & Transliteration](../users/encoding-transliteration)), and type the headword. The
+**List** and **Advanced** displays browse the index and search *inside* entries — see
+[Search & Display](../users/search-and-display).
+
+## Reading an entry
+
+BHS sets headwords and Sanskrit in `{@…@}` (bold), English glosses in `{%…%}` (italic), tags
+languages with `<lang>` and literary sources with `<ls>`, and puts the **citation locus in
+`〔 〕` brackets**. The entry *akampiya* "unshakable" (`csl-orig/v02/bhs/bhs.txt`):
+
+```
+<L>14<pc>001,2<k1>akampiya<k2>akampiya
+{@akampiya@}¦, <lex>adj.</lex> (= <lang>Pali</lang> <ab>id.</ab>, <lang>Skt.</lang> ˚pya), {%unshakable%}: <ls>Gv</ls> 〔25.21〕 (<ab>vs</ab>).
+```
+
+| In the source | Meaning |
+|---|---|
+| `<pc>001,2` | page-column reference (p. 1, col. 2) |
+| `{@akampiya@}` | the headword — the Buddhist Hybrid Sanskrit form (search key `<k1>` is SLP1) |
+| `<lex>adj.</lex>` | grammatical category (adjective) |
+| `(= <lang>Pali</lang> id., <lang>Skt.</lang> ˚pya)` | the **cognate triangulation**: identical in Pali; the classical Sanskrit form would be *akampya* (`˚pya` abbreviates the differing ending) |
+| `{%unshakable%}` | the English gloss |
+| `<ls>Gv</ls> 〔25.21〕` | a Buddhist-text citation — here the *Gaṇḍavyūha* — with the locus (page.line) in `〔 〕` |
+| `(<ab>vs</ab>)` | the passage is in **verse** (`vs`), as opposed to prose |
+
+See [Data Formats](../developers/data-formats) for the full markup reference, and the
+[csl-doc page](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/bhs.rst)
+for Edgerton's text abbreviations (e.g. `Mv` = *Mahāvastu*, `SP` = *Saddharmapuṇḍarīka*).
+
+## What makes it distinctive
+
+- **Pali / Sanskrit triangulation.** Nearly every entry marks whether the form is shared with
+  **Pali** (`= Pali …`) and how it maps to **classical Sanskrit** — the core scholarly value.
+- **Indexes the Buddhist canon.** Citations point into the *Mahāvastu*, *Saddharmapuṇḍarīka*,
+  *Divyāvadāna*, *Mahāvyutpatti*, and many more, by abbreviation + locus.
+- **Records non-classical forms.** Headwords, meanings, and morphology that MW and Apte omit
+  because they fall outside classical usage.
+- **Bound to a Grammar.** The `〔§ …〕` references send you to Vol. I (the Grammar) for the
+  phonological/morphological explanation.
+
+## See also
+
+- **[Monier-Williams (MW)](mw)** · **[Apte (AP90)](ap90)** — the classical references
+- The full **[catalog](catalog)** of all 42 dictionaries
+- **[Abbreviations & Citations](abbreviations-and-citations)** — how to cite a dictionary
+- **csl-doc** [bhs.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/bhs.rst)

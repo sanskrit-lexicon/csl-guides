@@ -10,8 +10,8 @@ const ext = {target: '_blank', rel: 'noreferrer'};
 // Display code -> slug of its in-guide "featured dictionary" page (docs/dictionaries/).
 // Keep in sync with sidebars.js "Featured dictionaries".
 const GUIDE_PAGES = {
-  MW: 'mw', AP90: 'ap90', AP: 'ap', WIL: 'wil', PWG: 'pwg', PW: 'pw', SCH: 'sch',
-  CCS: 'ccs', GRA: 'gra', BHS: 'bhs', STC: 'stc', MWE: 'mwe', SKD: 'skd', VCP: 'vcp',
+  MW: 'mw', AP90: 'ap90', AP: 'ap', WIL: 'wil', CAE: 'cae', PWG: 'pwg', PW: 'pw',
+  SCH: 'sch', CCS: 'ccs', GRA: 'gra', BHS: 'bhs', STC: 'stc', MWE: 'mwe', SKD: 'skd', VCP: 'vcp',
 };
 
 function Letter({href, on, children, title, name}) {

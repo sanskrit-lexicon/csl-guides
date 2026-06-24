@@ -1,0 +1,296 @@
+{
+  "title": "Sandhi Practice Quiz",
+  "description": "A cross-dictionary skill quiz on Sanskrit sandhi (euphonic combination): the six vowel-sandhi principles, guṇa/vṛddhi grades, visarga and consonant sandhi, internal sandhi, and — the dictionary tie-in — reversing sandhi (sandhi-vigraha) to look a word up.",
+  "source": {
+    "work": "A Practical Sanskrit Introductory",
+    "author": "Charles Wikner",
+    "year": 1996,
+    "license": "freely distributable",
+    "file": "src/wikner.pdf",
+    "lessons": [10, 11],
+    "note": "Every answer is grounded in Wikner's sandhi lessons (10–11). The dictionary-lookup angle follows the same course's Lesson 14 (split a word with the sandhi rules to find it)."
+  },
+  "questions": [
+    {
+      "id": "SA-V01",
+      "group": "vowel",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "What is sandhi, literally and in principle?",
+      "answer": "Sandhi = 'placing together' — the principle of sounds combining naturally and harmoniously (without awkwardness), for ease of pronunciation. Sanskrit's script is phonetic, so the written notation changes when the sound changes.",
+      "tags": ["concept"]
+    },
+    {
+      "id": "SA-V02",
+      "group": "vowel",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "When does vowel sandhi apply (and when not)?",
+      "answer": "When a word ending in a vowel is followed by a word beginning with a vowel (in the same sentence or line). A final vowel is NOT changed before a consonant, or in pausa (e.g. at the end of a sentence).",
+      "tags": ["concept"]
+    },
+    {
+      "id": "SA-V03",
+      "group": "vowel",
+      "type": "convert",
+      "difficulty": "easy",
+      "question": "Apply vowel sandhi:  a + i  →  ?",
+      "answer": "e",
+      "note": "principle 2 — a/ā before a simple vowel other than a takes the guṇa form.",
+      "tags": ["vowel-sandhi", "guna"]
+    },
+    {
+      "id": "SA-V04",
+      "group": "vowel",
+      "type": "convert",
+      "difficulty": "easy",
+      "question": "Apply vowel sandhi:  a + u  →  ?",
+      "answer": "o",
+      "tags": ["vowel-sandhi", "guna"]
+    },
+    {
+      "id": "SA-V05",
+      "group": "vowel",
+      "type": "convert",
+      "difficulty": "easy",
+      "question": "Apply vowel sandhi:  a + a  →  ?",
+      "answer": "ā",
+      "note": "principle 1 — the same simple vowel (short or long) doubles to its long (dīrgha) measure.",
+      "tags": ["vowel-sandhi"]
+    },
+    {
+      "id": "SA-V06",
+      "group": "vowel",
+      "type": "convert",
+      "difficulty": "easy",
+      "question": "Apply vowel sandhi:  i + i  →  ?",
+      "answer": "ī",
+      "tags": ["vowel-sandhi"]
+    },
+    {
+      "id": "SA-V07",
+      "group": "vowel",
+      "type": "convert",
+      "difficulty": "medium",
+      "question": "Apply vowel sandhi:  ā + i  →  ?",
+      "answer": "e",
+      "note": "principle 2 applies whether the leading a is short or long.",
+      "tags": ["vowel-sandhi", "guna"]
+    },
+    {
+      "id": "SA-V08",
+      "group": "vowel",
+      "type": "convert",
+      "difficulty": "medium",
+      "question": "Apply vowel sandhi:  a + e  →  ?",
+      "answer": "ai",
+      "note": "principle 3 — a/ā before a guṇa or vṛddhi sound takes the vṛddhi form.",
+      "tags": ["vowel-sandhi", "vrddhi"]
+    },
+    {
+      "id": "SA-V09",
+      "group": "vowel",
+      "type": "convert",
+      "difficulty": "medium",
+      "question": "Apply vowel sandhi:  a + o  →  ?",
+      "answer": "au",
+      "tags": ["vowel-sandhi", "vrddhi"]
+    },
+    {
+      "id": "SA-V10",
+      "group": "vowel",
+      "type": "convert",
+      "difficulty": "medium",
+      "question": "Apply vowel sandhi:  i + a  →  ?",
+      "answer": "ya",
+      "note": "principle 4 — a simple vowel other than a, before a different vowel, becomes the semivowel (antaḥstha) of the same mouth position (i→y, u→v, ṛ→r, ḷ→l).",
+      "tags": ["vowel-sandhi", "semivowel"]
+    },
+    {
+      "id": "SA-V11",
+      "group": "vowel",
+      "type": "convert",
+      "difficulty": "medium",
+      "question": "Apply vowel sandhi:  u + a  →  ?",
+      "answer": "va",
+      "tags": ["vowel-sandhi", "semivowel"]
+    },
+    {
+      "id": "SA-V12",
+      "group": "vowel",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": "Apply vowel sandhi:  e + a  →  ?",
+      "options": ["e (a elided, written with an avagraha: e ’)", "ai", "aya", "ā"],
+      "answer": "e (a elided, written with an avagraha: e ’)",
+      "explanation": "principle 6 — when e or o is followed by a short a, the a is elided and replaced by an avagraha (e ’, o ’).",
+      "tags": ["vowel-sandhi", "avagraha"]
+    },
+    {
+      "id": "SA-V13",
+      "group": "vowel",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "Principle 4: a simple vowel other than a, before a different vowel, is replaced by what?",
+      "answer": "The antaḥstha (semivowel) of the same mouth position: i/ī → y, u/ū → v, ṛ → r, ḷ → l. (e.g. i + V → yV.)",
+      "tags": ["vowel-sandhi", "semivowel"]
+    },
+    {
+      "id": "SA-G01",
+      "group": "grades",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "What is the guṇa grade of i / ī (and of u / ū, and ṛ)?",
+      "answer": "guṇa of i/ī = e; of u/ū = o; of ṛ = ar. (guṇa 'strengthens' a simple vowel by adding a measure of a.)",
+      "tags": ["guna"]
+    },
+    {
+      "id": "SA-G02",
+      "group": "grades",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "What is the vṛddhi grade of i / ī (and of u / ū, and a)?",
+      "answer": "vṛddhi of i/ī = ai; of u/ū = au; of a = ā. (vṛddhi adds a further measure of a on top of guṇa.)",
+      "tags": ["vrddhi"]
+    },
+    {
+      "id": "SA-G03",
+      "group": "grades",
+      "type": "multiple-choice",
+      "difficulty": "easy",
+      "question": "What is the guṇa of u?",
+      "options": ["o", "au", "va", "ū"],
+      "answer": "o",
+      "tags": ["guna"]
+    },
+    {
+      "id": "SA-G04",
+      "group": "grades",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "How does Pāṇini define the guṇa and vṛddhi vowels?",
+      "answer": "guṇa = a, e, o;  vṛddhi = ā, ai, au.",
+      "tags": ["guna", "vrddhi"]
+    },
+    {
+      "id": "SA-X01",
+      "group": "visarga",
+      "type": "convert",
+      "difficulty": "medium",
+      "question": "Visarga sandhi — apply:  rāmaḥ + gacchati  →  ?",
+      "answer": "rāmo gacchati",
+      "note": "final -aḥ before a voiced (ghoṣa) consonant becomes -o.",
+      "tags": ["visarga"]
+    },
+    {
+      "id": "SA-X02",
+      "group": "visarga",
+      "type": "multiple-choice",
+      "difficulty": "hard",
+      "question": "Visarga sandhi — apply:  rāmaḥ + āgataḥ  →  ?",
+      "options": ["rāma āgataḥ", "rāmo āgataḥ", "rāmā āgataḥ", "rāmāgataḥ"],
+      "answer": "rāma āgataḥ",
+      "explanation": "before a vowel other than a short a, the -s of -aḥ is simply dropped, leaving -a (the two words stay separate: rāma āgataḥ).",
+      "tags": ["visarga"]
+    },
+    {
+      "id": "SA-X03",
+      "group": "visarga",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "What happens to final -aḥ before a short a?",
+      "answer": "It becomes -o, and the following short a is elided and replaced by an avagraha — so -aḥ + a → -o ’ (e.g. rāmaḥ + atra → rāmo ’tra).",
+      "tags": ["visarga", "avagraha"]
+    },
+    {
+      "id": "SA-X04",
+      "group": "visarga",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "What does a final s or r become before an unvoiced (aghoṣa) sound or a pause?",
+      "answer": "A visarga (ḥ). Exception: before c/ch, ṭ/ṭh, or t/th it is replaced by the sibilant (ś, ṣ, or s) of that consonant's mouth position.",
+      "tags": ["visarga"]
+    },
+    {
+      "id": "SA-C01",
+      "group": "consonant",
+      "type": "concept",
+      "difficulty": "easy",
+      "question": "What does a final -m become before any consonant?",
+      "answer": "An anusvāra (ṃ).",
+      "tags": ["consonant-sandhi"]
+    },
+    {
+      "id": "SA-C02",
+      "group": "consonant",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "What happens to a final unvoiced -k, -ṭ, -t, -p before a voiced (ghoṣa) sound?",
+      "answer": "Each is replaced by the voiced (ghoṣa) consonant of the same mouth position: -k→-g, -ṭ→-ḍ, -t→-d, -p→-b. (Before an aghoṣa sound they stay unchanged.)",
+      "tags": ["consonant-sandhi"]
+    },
+    {
+      "id": "SA-C03",
+      "group": "consonant",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "A word ends in a short vowel and the next word begins with ch-. What is inserted?",
+      "answer": "A c — so -V + ch- → -V cch- (the ch is doubled to cch).",
+      "tags": ["consonant-sandhi"]
+    },
+    {
+      "id": "SA-C04",
+      "group": "consonant",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "Before a pause (avasana), a word may end in only one of eight consonants. Which?",
+      "answer": "k, ṭ, t, p, ṅ, n, m, or ḥ (visarga) — or any vowel except ṛ and ḷ.",
+      "tags": ["consonant-sandhi"]
+    },
+    {
+      "id": "SA-I01",
+      "group": "internal",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "Internal sandhi: after which sounds is a following s replaced by ṣ?",
+      "answer": "After k, r, i, ī, u, ū, ṛ, ṝ, e, ai, o, au — even with an intervening anusvāra or visarga — unless the s is final or followed by r. (This is why endings like -su appear as -ṣu after such stems.)",
+      "tags": ["internal-sandhi", "retroflex"]
+    },
+    {
+      "id": "SA-I02",
+      "group": "internal",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "Internal sandhi: after which sounds is a following n replaced by ṇ?",
+      "answer": "After ṣ, r, ṛ, ṝ (even across intervening ka-/pa-varga, y, v, h, or a vowel) — when the n is followed by a vowel, m, v, y, or n.",
+      "tags": ["internal-sandhi", "retroflex"]
+    },
+    {
+      "id": "SA-L01",
+      "group": "lookup",
+      "type": "concept",
+      "difficulty": "medium",
+      "question": "Why does sandhi matter for using a dictionary?",
+      "answer": "Words join by sandhi in real text, but dictionaries list the unjoined stems. To find a word inside a compound or sentence you must REVERSE the sandhi (sandhi-vigraha) to recover the separate padas, then look each up — exactly the 'split it with the sandhi rules' technique for hard words.",
+      "tags": ["lookup", "concept"]
+    },
+    {
+      "id": "SA-L02",
+      "group": "lookup",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "A dictionary/​paradigm cites a noun with a final visarga (e.g. rāmaḥ). What must you remember before applying external sandhi in a sentence?",
+      "answer": "Citation forms already have the to-a-pause (avasana) sandhi applied, so a final visarga usually stands for a final -s. Replace the visarga with s, then apply the visarga-sandhi rule for the actual following sound.",
+      "tags": ["lookup", "visarga"]
+    },
+    {
+      "id": "SA-L03",
+      "group": "lookup",
+      "type": "concept",
+      "difficulty": "hard",
+      "question": "Samprasāraṇa: a semivowel is replaced by the simple vowel of its mouth position (and the following vowel elided). How does this trip up a dictionary lookup — e.g. for the dhātu yaj?",
+      "answer": "Derived forms can hide the root: yaj appears as ij- (ij-ya), svap as sup- (sup-ta), vac as uc- (uc-atha), prach as pṛcch- (pṛcch-ati). You may have to undo samprasāraṇa to recognise the dhātu the dictionary lists.",
+      "tags": ["lookup", "samprasarana"]
+    }
+  ]
+}

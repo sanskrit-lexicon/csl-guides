@@ -1,0 +1,63 @@
+---
+id: sandhi-quiz
+title: Sandhi practice (quiz)
+description: "Test your sandhi: the six vowel-sandhi principles, guṇa/vṛddhi grades, visarga and consonant sandhi, and reversing sandhi to look a word up — 30 self-check questions that apply across every dictionary."
+sidebar_label: Sandhi quiz
+---
+
+import Quiz from '@site/src/components/Quiz';
+import sandhi from '@site/src/data/sandhi-quiz.json';
+
+# Sandhi practice (quiz)
+
+Words join by **sandhi** (euphonic combination) in real Sanskrit, but dictionaries list the
+*unjoined* stems. So sandhi is a **cross-dictionary skill**: to find a word inside a compound
+or a sentence you must **reverse the sandhi** to recover the separate words, then look each
+up. These 30 questions drill the rules — and the lookup move — from Lessons 10–11 of Charles
+Wikner's *A Practical Sanskrit Introductory*.
+
+Answers are hidden until you reveal them. The rules only really make sense **in sound** —
+say each combination aloud and hear why it joins the way it does.
+
+## Vowel sandhi
+
+Six principles cover every case of a vowel meeting a vowel. Work the *Apply* questions, then
+check the rule in the answer.
+
+<Quiz data={sandhi} group="vowel" title="Quiz · vowel sandhi" />
+
+## Guṇa & vṛddhi grades
+
+The strengthened grades underlie much of vowel sandhi (and the way roots build their forms).
+
+<Quiz data={sandhi} group="grades" title="Quiz · guṇa & vṛddhi" />
+
+## Visarga sandhi
+
+What a final visarga (← `s`/`r`) becomes before the next sound.
+
+<Quiz data={sandhi} group="visarga" title="Quiz · visarga sandhi" />
+
+## Consonant sandhi
+
+<Quiz data={sandhi} group="consonant" title="Quiz · consonant sandhi" />
+
+## Internal sandhi
+
+The retroflex changes (`s → ṣ`, `n → ṇ`) that reshape stems and endings — useful for
+recognising a citation form.
+
+<Quiz data={sandhi} group="internal" title="Quiz · internal sandhi" />
+
+## Reversing sandhi for a lookup
+
+The payoff: undoing sandhi to find a word in any dictionary.
+
+<Quiz data={sandhi} group="lookup" title="Quiz · sandhi & dictionary lookup" />
+
+## See also
+
+- **[Reading Monier-Williams (with quizzes)](reading-monier-williams)** — Lesson 14's "split a
+  hard word with the sandhi rules" applied to MW
+- **[Transliteration practice quiz](transliteration-quiz)** — the other cross-dictionary skill quiz
+- **[Encoding & Transliteration](encoding-transliteration)** — schemes and the SLP1 encoding

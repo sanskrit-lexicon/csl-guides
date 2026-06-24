@@ -16,6 +16,7 @@ const sidebars = {
         'users/search-and-display',
         'users/encoding-transliteration',
         'users/transliteration-quiz',
+        'users/sandhi-quiz',
         'users/reading-monier-williams',
         'users/downloads-and-data',
         'users/scans-and-print',

@@ -1,0 +1,92 @@
+---
+id: wil
+title: Wilson (WIL)
+description: "Guide to H.H. Wilson's A Dictionary in Sanscrit and English (WIL, 1832) on CDSL — the first major Sanskrit-English dictionary, the foundation Monier-Williams later built upon."
+sidebar_label: Wilson (WIL)
+---
+
+# Wilson, *A Dictionary in Sanscrit and English* (`WIL`)
+
+`WIL` is Horace Hayman Wilson's *A Dictionary in Sanscrit and English* (2nd edition, 1832) —
+the **first major Sanskrit→English dictionary**, and the historical foundation on which
+[Monier-Williams](mw) was later built (Wilson held the Boden chair at Oxford before
+Monier-Williams). It is concise, gives **etymologies**, and reads in plain (19th-century)
+**English**.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `WIL` (GitHub repo [`WIL`](https://github.com/sanskrit-lexicon/WIL)) |
+| **Full title** | *A Dictionary in Sanscrit and English* (2nd ed.) |
+| **Author** | Horace Hayman Wilson |
+| **Year / size** | 1832 · ~**982** pages |
+| **Direction** | Sanskrit → English |
+| **Accents** | No |
+| **Source** | [`csl-orig/v02/wil/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/wil) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/WILScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/WILScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/WILScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/WILScan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/WILScan/2020/web/webtc/download.html) · [Scans](https://www.sanskrit-lexicon.uni-koeln.de/scans/WILScan/index.php?sfx=jpg) |
+| **csl-doc** | [wil.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/wil.rst) (front matter) |
+
+## When to use it
+
+Reach for `WIL` for the **historical Sanskrit lexicon** — the meanings and etymologies as the
+earliest English-language tradition recorded them. For modern coverage prefer:
+
+- **[Monier-Williams (MW)](mw)** — the broad standard that superseded and absorbed Wilson.
+- **[Apte (AP90/AP)](ap90)** — classical reading with numbered senses.
+
+It is valuable for tracing how a sense or derivation was understood in the 1830s, and as the
+common ancestor behind much later English lexicography.
+
+## Looking up a word
+
+Open the **Basic** display, choose your input/output transliteration (see
+[Encoding & Transliteration](../users/encoding-transliteration)), and type the headword. The
+**List** and **Advanced** displays browse the index and search *inside* entries — see
+[Search & Display](../users/search-and-display).
+
+## Reading an entry
+
+Wilson sets the Sanskrit in `{#…#}` (bold), tags the grammar with `<lex>` and abbreviations
+with `<ab>`, numbers the senses, and closes many entries with an **`E.` etymology** (root +
+affix). The entry *aṃśa* (`csl-orig/v02/wil/wil.txt`):
+
+```
+<L>6<pc>001<k1>aMSa<k2>aMSa
+{#aMSa#}¦
+<lex>m.</lex> ({#-SaH#})
+.²1 A share or portion.
+.²2 A part.
+.²3 A shoulder, the shoulder blade.
+.²4 (In arithmetic) a fraction.
+.²5 The numerator of a fraction.
+.²6 A degree of latitude or longitude, <ab>&c.</ab> See {#aMsa#}.
+<ab>E.</ab>
+{#aMSa#} to divide, {#ac#} affix.
+```
+
+| In the source | Meaning |
+|---|---|
+| `<pc>001` | page reference (p. 1 — `WIL` cites the page only, no column) |
+| `{#aMSa#}` | the headword (bold Sanskrit; search key `<k1>` is SLP1) |
+| `<lex>m.</lex>` | grammatical category — *masculine* |
+| `({#-SaH#})` | the nominative form (*aṃśaḥ*) |
+| `.²1 … .²6` | the numbered senses (English glosses) |
+| `<ab>E.</ab>` | the **etymology** note that follows — here from *aṃśa* "to divide" + the affix *ac* |
+
+See [Data Formats](../developers/data-formats) for the markup reference.
+
+## What makes it distinctive
+
+- **The first major Sanskrit-English dictionary.** Wilson's (1819 / 1832) is where the English
+  lexical tradition begins — the ground Monier-Williams later built on.
+- **Etymologies.** Many entries end with an `E.` note giving the root and affix.
+- **Historical lens.** Senses and derivations as understood in the early 19th century.
+
+## See also
+
+- **[Monier-Williams (MW)](mw)** — the standard that succeeded it · **[Apte (AP90)](ap90)** — classical reading
+- The full **[catalog](catalog)** of all 42 dictionaries
+- **[Abbreviations & Citations](abbreviations-and-citations)** — how to cite a dictionary
+- **csl-doc** [wil.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/wil.rst)

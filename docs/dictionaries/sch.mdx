@@ -1,0 +1,90 @@
+---
+id: sch
+title: Schmidt Nachträge (SCH)
+description: "Guide to Richard Schmidt's Nachträge zum Sanskrit-Wörterbuch (SCH, 1928) on CDSL — the German supplement to Böhtlingk's shorter Petersburg dictionary (PW), keyed to its numbered senses."
+sidebar_label: Schmidt Nachträge (SCH)
+---
+
+# Schmidt, *Nachträge zum Sanskrit-Wörterbuch* (`SCH`)
+
+`SCH` is Richard Schmidt's ***Nachträge zum Sanskrit-Wörterbuch in kürzerer Fassung von Otto
+Böhtlingk*** (1928) — a volume of **supplements** ("Nachträge") to **Böhtlingk's shorter
+Petersburg dictionary**, the [`PW`](pw). It gathers the words, meanings, and citations that
+Böhtlingk omitted, and **keys each addition to the numbered senses of the original entry** —
+so it is meant to be read *with* Böhtlingk open beside it. Glosses are in **German**.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `SCH` (GitHub repo [`SCH`](https://github.com/sanskrit-lexicon/SCH)) |
+| **Full title** | *Nachträge zum Sanskrit-Wörterbuch in kürzerer Fassung von Otto Böhtlingk* |
+| **Author** | Richard Schmidt |
+| **Year / size** | 1928 · ~**398** pages · ~29,000 supplementary entries |
+| **Direction** | Sanskrit → German |
+| **Accents** | Yes (marked on headwords, like the base `PW`) |
+| **Source** | [`csl-orig/v02/sch/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/sch) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/SCHScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/SCHScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/SCHScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/SCHScan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/SCHScan/2020/web/webtc/download.html) |
+| **csl-doc** | [sch.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/sch.rst) (front matter / abbreviations) |
+
+:::note A supplement, not a standalone dictionary
+`SCH` gives only the *new* material for a word — a single added sense or citation — assuming
+you already have the base entry. Pair it with **[Böhtlingk shorter (`PW`)](pw)** (the
+dictionary it supplements) and the larger **[Böhtlingk-Roth (`PWG`)](pwg)**.
+:::
+
+## When to use it
+
+Reach for `SCH` when a word, sense, or textual reference is **missing from Böhtlingk's
+dictionary**: Schmidt combed later editions and texts for additions. It is a scholar's
+companion to the Petersburg lexica, not a first-stop dictionary — and it is in **German**.
+
+## Looking up a word
+
+Open the **Basic** display, choose your input/output transliteration (see
+[Encoding & Transliteration](../users/encoding-transliteration)), and type the headword. The
+**List** and **Advanced** displays browse the index and search *inside* entries — see
+[Search & Display](../users/search-and-display).
+
+## Reading an entry
+
+Schmidt sets the Sanskrit in `{%…%}` (italic), tags sources with `<ls>`, and writes the
+glosses in German. The leading **numbers** are the key to its design — they point at the
+numbered senses of the *base* entry in Böhtlingk. The entry *aṃśa* (`csl-orig/v02/sch/sch.txt`):
+
+```
+<L>2<pc>001-1<k1>aMSa<k2>aMSa
+{%aṃśa%}¦ 1. {%kenāṃśena%} so v.a. in welchem Stücke? <ls>Daśak. 51,7.</ls> — 8. Nenner eines Bruches.
+```
+
+| In the source | Meaning |
+|---|---|
+| `<pc>001-1` | page-column reference (p. 1, col. 1) |
+| `{%aṃśa%}` | the headword (italic; search key `<k1>` is SLP1) |
+| `1.` … `8.` | the **numbered senses of Böhtlingk's original entry** that this supplement adds to |
+| `{%kenāṃśena%}` | a cited Sanskrit phrase (here added under sense 1) |
+| `so v.a.` | the German abbreviation *so viel als* — "equivalent to / as much as" |
+| `in welchem Stücke?` · `Nenner eines Bruches` | the added German glosses ("in which part?"; "denominator of a fraction") |
+| `<ls>Daśak. 51,7.</ls>` | a source citation — *Daśakumāracarita*, locus 51,7 |
+
+So the entry says: *to sense 1 of* aṃśa, add the phrase *kenāṃśena* ("in which part?",
+*Daśakumāracarita* 51,7); and add *sense 8*, "denominator of a fraction." See
+[Data Formats](../developers/data-formats) for the markup reference and the
+[csl-doc page](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/sch.rst)
+for Schmidt's abbreviations.
+
+## What makes it distinctive
+
+- **A sense-keyed supplement.** Additions are numbered to the base entry in Böhtlingk — the
+  whole book is designed to be read alongside the [`PW`](pw).
+- **Fills gaps in the Petersburg lexica.** Words, meanings, and citations Böhtlingk left out.
+- **German, and accented.** Glosses are in German; headwords carry the Vedic accent, as in the
+  base dictionary.
+
+## See also
+
+- **[Böhtlingk shorter (PW)](pw)** — the dictionary `SCH` supplements · **[Böhtlingk-Roth (PWG)](pwg)** — the large Petersburg dictionary
+- **[Monier-Williams (MW)](mw)** — the broad English reference
+- The full **[catalog](catalog)** of all 42 dictionaries
+- **csl-doc** [sch.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/sch.rst)

@@ -1,0 +1,75 @@
+---
+id: ben
+title: Benfey (BEN)
+description: "Guide to Theodor Benfey's A Sanskrit-English Dictionary (BEN, 1866) on CDSL — a 19th-century dictionary with numbered senses and textual citations."
+sidebar_label: Benfey (BEN)
+---
+
+# Benfey, *A Sanskrit-English Dictionary* (`BEN`)
+
+`BEN` is Theodor Benfey's *A Sanskrit-English Dictionary* (1866) — a 19th-century reference by
+the noted German comparative philologist, with clearly **numbered senses**, **textual
+citations** (e.g. to Manu), and explicit **compound** sections. Glosses are in **English**.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `BEN` (GitHub repo [`BEN`](https://github.com/sanskrit-lexicon/BEN)) |
+| **Full title** | *A Sanskrit-English Dictionary* |
+| **Author** | Theodor Benfey |
+| **Year / size** | 1866 · ~**1145** pages |
+| **Direction** | Sanskrit → English |
+| **Accents** | No |
+| **Source** | [`csl-orig/v02/ben/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/ben) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/BENScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/BENScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/BENScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/BENScan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/BENScan/2020/web/webtc/download.html) |
+| **csl-doc** | [ben.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ben.rst) |
+
+## When to use it
+
+Reach for `BEN` for a **19th-century scholarly reading** with numbered senses and source
+references — Benfey was a major comparativist, and the dictionary reflects that lens. For
+modern coverage prefer **[Monier-Williams (MW)](mw)** or **[Apte (AP90)](ap90)**.
+
+## Looking up a word
+
+Open the **Basic** display, pick your input/output transliteration (see
+[Encoding & Transliteration](../users/encoding-transliteration)), and type the headword. The
+**List** and **Advanced** displays browse and search inside entries — see
+[Search & Display](../users/search-and-display).
+
+## Reading an entry
+
+Benfey gives the SLP1 headword in `{#…#}`, the IAST in `{%…%}`, **bold sense numbers** in
+`{@…@}`, abbreviations in `<ab>`, and citations in `<ls>`. The entry *aṃśa*
+(`csl-orig/v02/ben/ben.txt`):
+
+```
+<L>3<pc>0001-a<k1>aMSa<k2>aMSa
+{#aMSa#}¦ {%aṃśa,%} rarely {%aṃsa,%} <ab>m.</ab> {@1.@}
+A part, a share. {@2.@} Booty. {@3.@} In-
+heritance, <ls>Man.</ls> 9, 47. {@4.@} See {%aṃsa.%}
+{@ -- <ab>Comp.</ab>@} {%An-,%} <ab>adj.</ab> excluded from a share of the heritage, <ls>Man.</ls> 9, 201.
+```
+
+| In the source | Meaning |
+|---|---|
+| `{#aMSa#}` · `{%aṃśa,%}` | the headword (SLP1 `<k1>`) then its IAST form |
+| `<ab>m.</ab>` | grammatical category (masculine) |
+| `{@1.@} … {@4.@}` | the **numbered senses** |
+| `<ls>Man.</ls> 9, 47` | a textual citation (Manu 9.47) |
+| `{@-- <ab>Comp.</ab>@}` | the start of the **compounds** section |
+
+See [Data Formats](../developers/data-formats) for the markup reference.
+
+## What makes it distinctive
+
+- **Numbered senses + citations.** Meanings are enumerated and anchored to texts like Manu.
+- **A comparativist's dictionary.** By Theodor Benfey, with explicit compound sections.
+
+## See also
+
+- **[Monier-Williams (MW)](mw)** · **[Apte (AP90)](ap90)** · **[Wilson (WIL)](wil)**
+- The full **[catalog](catalog)** of all 42 dictionaries
+- **csl-doc** [ben.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ben.rst)

@@ -49,6 +49,7 @@ const sidebars = {
             'dictionaries/ccs',
             'dictionaries/gra',
             'dictionaries/bhs',
+            'dictionaries/stc',
             'dictionaries/mwe',
             'dictionaries/skd',
             'dictionaries/vcp',

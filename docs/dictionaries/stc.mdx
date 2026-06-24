@@ -1,0 +1,87 @@
+---
+id: stc
+title: Stchoupak–Renou (STC)
+description: "Guide to the Dictionnaire Sanskrit-Français of Stchoupak, Nitti & Renou (STC, 1932) on CDSL — the standard French Sanskrit dictionary. Note: accessed via List/Advanced + scans, not a Basic display."
+sidebar_label: Stchoupak–Renou (STC)
+---
+
+# Stchoupak, Nitti & Renou, *Dictionnaire Sanskrit-Français* (`STC`)
+
+`STC` is the ***Dictionnaire Sanskrit-Français*** (1932) of **Nadine Stchoupak, Luigia Nitti,
+and Louis Renou** — the **standard French Sanskrit dictionary**, published by the Institut de
+Civilisation Indienne in Paris. Its preface notes it filled a real gap: until then
+French students had only Burnouf & Leupol's slim 1866 *Dictionnaire classique*, while the
+strong dictionaries were all in English and German. Glosses are in **French**.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `STC` (GitHub repo [`STC`](https://github.com/sanskrit-lexicon/STC)) |
+| **Full title** | *Dictionnaire Sanskrit-Français* |
+| **Authors** | N. Stchoupak, L. Nitti, L. Renou |
+| **Year / size** | 1932 · ~**904** pages |
+| **Direction** | Sanskrit → French |
+| **Accents** | No |
+| **Source** | [`csl-orig/v02/stc/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/stc) |
+| **Open** | [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/STCScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/STCScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/STCScan/2020/web/mobile1/index.php) |
+| **Data** | [Page scans](https://www.sanskrit-lexicon.uni-koeln.de/scans/STCScan/index.php?sfx=jpg) |
+| **csl-doc** | [stc.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/stc.rst) (front matter) |
+
+:::note No Basic display or bulk download
+Unlike most CDSL dictionaries, `STC` is **not** offered in the *Basic* display and has **no
+downloadable data file**. Use the **List** or **Advanced** display, or read the **page scans**.
+Its French abbreviations have their own key (`csl-orig/v02/stc/abbrev/`).
+:::
+
+## When to use it
+
+Reach for `STC` for **precise French glosses** from first-rate scholars — Louis Renou is among
+the foremost 20th-century indologists. It complements:
+
+- **[Monier-Williams (MW)](mw)** — the broad English reference.
+- **[Böhtlingk-Roth (PWG)](pwg)** — the deepest German treatment.
+
+## Looking up a word
+
+Open the **List** or **Advanced** display (there is no *Basic* display for `STC`), pick your
+input/output transliteration (see [Encoding & Transliteration](../users/encoding-transliteration)),
+and type the headword; **Advanced** also searches *inside* entries. See
+[Search & Display](../users/search-and-display).
+
+## Reading an entry
+
+`STC` sets headwords and Sanskrit in `{@…@}` (bold, in IAST, with hyphens marking the stem and
+affixes), italic cues in `{%…%}`, and tags abbreviations with `<ab>`; the glosses are plain
+French. The entry *a-ṛṇin-* "free from debts" (`csl-orig/v02/stc/stc.txt`) — the same word the
+[Apte (AP90)](ap90) page reads in English:
+
+```
+<L>3<pc>1,1<k1>afRin<k2>a-fRin
+{@a-ṛṇin-@}¦ ({%a%} pour {%an%}) <ab>a.</ab> libre de dettes.
+```
+
+| In the source | Meaning |
+|---|---|
+| `<pc>1,1` | page-column reference (p. 1, col. 1) |
+| `{@a-ṛṇin-@}` | the headword, IAST — the trailing hyphen marks it as a stem (search key `<k1>` is SLP1) |
+| `({%a%} pour {%an%})` | a note: the prefix is *a-* (here) but *an-* before a vowel |
+| `<ab>a.</ab>` | the grammatical label — *adjectif* |
+| `libre de dettes` | the French gloss ("free from debts") |
+
+See [Data Formats](../developers/data-formats) for the markup reference.
+
+## What makes it distinctive
+
+- **The standard French Sanskrit dictionary.** By Stchoupak, Nitti, and Renou (1932) — the
+  reference for French-speaking readers, and valued for Renou's precision.
+- **French glosses**, terse and scholarly.
+- **Accessed differently.** No *Basic* display and no bulk download — List/Advanced displays
+  and page scans only.
+
+## See also
+
+- **[Monier-Williams (MW)](mw)** · **[Böhtlingk-Roth (PWG)](pwg)** · **[Apte (AP90)](ap90)**
+- The full **[catalog](catalog)** of all 42 dictionaries
+- **[Abbreviations & Citations](abbreviations-and-citations)** — how to cite a dictionary
+- **csl-doc** [stc.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/stc.rst)

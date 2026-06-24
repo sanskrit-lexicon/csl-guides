@@ -11,7 +11,7 @@ const ext = {target: '_blank', rel: 'noreferrer'};
 // Keep in sync with sidebars.js "Featured dictionaries".
 const GUIDE_PAGES = {
   MW: 'mw', AP90: 'ap90', AP: 'ap', PWG: 'pwg', PW: 'pw', SCH: 'sch', CCS: 'ccs',
-  GRA: 'gra', BHS: 'bhs', MWE: 'mwe', SKD: 'skd', VCP: 'vcp',
+  GRA: 'gra', BHS: 'bhs', STC: 'stc', MWE: 'mwe', SKD: 'skd', VCP: 'vcp',
 };
 
 function Letter({href, on, children, title, name}) {

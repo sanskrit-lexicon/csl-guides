@@ -511,7 +511,7 @@
           "LRV": "R.V.",
           "AP90": "Rv.",
           "MD": "RV., RV.¹, RV.²",
-          "PWG": "ṚV., ṚV. PRĀT. oder PRĀTIŚ.",
+          "PWG": "ṚV. ANUKR., ṚV. ANUKRAMAṆIKĀ., ṚV., ṚV. PRĀT.",
           "PW": "ṚV., ṚV. PRĀT.",
           "BOP": "RIGV., RIGV. V.",
           "BHS": "RV"
@@ -524,7 +524,7 @@
           "MW72": "Adi-p., Ep. or ep., Mahā-bh., Pp.",
           "AP90": "Mb.",
           "STC": "MhBh.",
-          "PWG": "HIḌ., CATURBH., MBH., NĪL. oder NĪLAK.",
+          "PWG": "HIḌ., CATURBH., MBH., MBH. ed. Calc., NĪL., ed. Bomb.",
           "PW": "MBH.",
           "BOP": "MAH.",
           "INM": "Mhbhr.",
@@ -539,7 +539,7 @@
           "LRV": "B.R., Ram.",
           "AP90": "B. R., Rām.",
           "STC": "Rām.",
-          "PWG": "YAJÑAD. (LOIS.), R.",
+          "PWG": "GORR., GORRESIO, YAJÑAD. (LOIS.), R., R. ed. Bomb., R. SCHL., R. ed. Ser., R. ed. SCHL., SCHL., RĀM. ed. Bomb., R. GORR., R. (ed. ŚRĪR.), ed. Bomb.",
           "PW": "BĀLAR., R.",
           "BOP": "RAM., R. Schl.",
           "BHS": "Rām."
@@ -564,7 +564,7 @@
           "MW72": "Bhāgavata-P.",
           "LRV": "Bhag.",
           "AP90": "Bhāg., D. Bhāg.",
-          "PWG": "BHĀG. P., DEVĪBHĀG. P.",
+          "PWG": "BHĀG. P., BHĀG. P. ed. Bomb., BHĀG. P. ed. BURN., DEVĪBHĀG. P.",
           "PW": "BHĀG.P.",
           "BHS": "BhāgP."
         }
@@ -588,7 +588,7 @@
           "LRV": "K.S.S.",
           "AP90": "Ks.",
           "STC": "KSS.",
-          "PWG": "KATHĀS.",
+          "PWG": "KATHĀS., KATHĀSARITSĀGARA",
           "PW": "KATHĀS.",
           "BHS": "KSS"
         }
@@ -623,7 +623,7 @@
           "AP90": "Sv.",
           "MD": "SV.",
           "MW": "SV.",
-          "PWG": "SV., BENFEY, SV.",
+          "PWG": "SV., BENFEY, SV., SV. Padap.",
           "PW": "SV., TAL. BR."
         }
       },
@@ -655,7 +655,7 @@
           "BEN": "Śāk.",
           "LRV": "Sak.",
           "AP90": "Ś.",
-          "PWG": "ŚĀK., ŚĀK. CH., ŚAṂK. oder ŚAṂKAR., KĀṬ.",
+          "PWG": "ŚĀK., ŚĀK. CH., ŚĀK. ed. CH., ŚAṂK., ŚAṂKAR., ŚAṂKARA, KĀṬ., ŚĀK. (ed. WILL.), ŚĀK. (ed. MON. WILL.)",
           "PW": "ŚĀK.",
           "BOP": "SAK."
         }
@@ -676,7 +676,7 @@
         "cells": {
           "BEN": "Man.",
           "AP90": "Ms.",
-          "PWG": "KULL., M.",
+          "PWG": "KULL., KULLŪKA, KULLŪKABHAṬṬA, M., M. ed. Calc.",
           "PW": "KULL., M., MEDHĀT.",
           "BOP": "MAN."
         }
@@ -686,7 +686,7 @@
         "cells": {
           "LRV": "Am.",
           "AP90": "Ak.",
-          "PWG": "AK., BHĀNUD., RĀYAM., RAMĀN., SĀRAS.",
+          "PWG": "AK., AK. ed. COLEBR., COL., BHĀNUD., RĀYAM., RAMĀN., SĀRAS.",
           "PW": "AK.",
           "BHS": "Amarak."
         }
@@ -697,7 +697,7 @@
           "BEN": "Ragh.",
           "MW72": "Raghu-v.",
           "AP90": "R.",
-          "PWG": "RAGH., RAGH. (ed. Calc.)",
+          "PWG": "RAGH., RAGH. (ed. Calc), RAGH. ed. Calc., RAGH. (Calc.), RAGH. ed. ST.",
           "PW": "RAGH."
         }
       },
@@ -743,7 +743,7 @@
         "cells": {
           "BEN": "Suśr.",
           "AP90": "Suśr.",
-          "PWG": "SUŚR.",
+          "PWG": "SUŚR., SUŚRUTA",
           "PW": "K4AKR., SUŚR."
         }
       },
@@ -752,7 +752,7 @@
         "cells": {
           "BEN": "Pañc.",
           "AP90": "Pt.",
-          "PWG": "PAÑCAT."
+          "PWG": "PAÑCAT., PAÑCATANTRA"
         }
       }
     ]
@@ -8565,7 +8565,7 @@
       "lang": "de",
       "langLabel": "German",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/PWG/blob/master/pwg_ls1/pwgauth/pwgbib.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/PWG/blob/master/pwgissues/issue74/pwgbib_input.txt",
       "works": [
         {
           "abbr": "ĀŚV. ŚR.",
@@ -8574,6 +8574,10 @@
         {
           "abbr": "ĀŚV. GṚHY.",
           "expansion": "ĀŚVALĀYANA'S GṚHYASŪTRĀṆI in 4 Adhyāya. Hdschr."
+        },
+        {
+          "abbr": "ĀŚV. GṚHY. PARIŚ.",
+          "expansion": "? [Cologne addition]"
         },
         {
           "abbr": "ADBH. BR.",
@@ -8590,6 +8594,10 @@
         {
           "abbr": "ADBHUTASĀRA",
           "expansion": "ADBHUTASĀRA. ? [Cologne Addition]"
+        },
+        {
+          "abbr": "HAUGHTON",
+          "expansion": "A Dictionary Bengali and Sanskrit, explained in English."
         },
         {
           "abbr": "AGNISV.",
@@ -8610,6 +8618,14 @@
         {
           "abbr": "AK.",
           "expansion": "AMARAKOṢA nach der Ausgabe von COLEBROOKE und LOISELEUR DESLONGCHAMPS (GILD. Bibl. 251. 253)."
+        },
+        {
+          "abbr": "AK. ed. COLEBR.",
+          "expansion": "? AMARAKOṢA nach der Ausgabe von COLEBROOKE [Cologne Addition]"
+        },
+        {
+          "abbr": "COL.",
+          "expansion": "AMARAKOṢA nach der Ausgabe von COLEBROOKE [Cologne Addition]"
         },
         {
           "abbr": "AMAR.",
@@ -8640,16 +8656,16 @@
           "expansion": "ANEKĀRTHADHVANIMAÑJARĪ, ein Wörterbuch; nach dem ŚKDR."
         },
         {
-          "abbr": "Anh.",
-          "expansion": "Anhang."
-        },
-        {
-          "abbr": "ANNAM̃BH.",
+          "abbr": "ANNAṂBH.",
           "expansion": "ANNAM̃BHAṬṬA."
         },
         {
           "abbr": "ANUKR.",
           "expansion": "ANUKRAMAṆIKĀ."
+        },
+        {
+          "abbr": "ANUKRAM.",
+          "expansion": "ANUKRAMAṆIKĀ. [Cologne addition]"
         },
         {
           "abbr": "ANUP. S.",
@@ -8688,6 +8704,30 @@
           "expansion": "ANUKRAMAṆIKĀ des ATHARVAVEDA, 10 Paṭala. Hdschr."
         },
         {
+          "abbr": "ṚV. ANUKR.",
+          "expansion": "ANUKRAMAṆIKĀ des ṚGVEDA ? [Cologne addition]"
+        },
+        {
+          "abbr": "ṚV. ANUKRAMAṆIKĀ.",
+          "expansion": "ANUKRAMAṆIKĀ des ṚGVEDA ? [Cologne addition]"
+        },
+        {
+          "abbr": "VS. ANUKR.",
+          "expansion": "ANUKRAMAṆIKĀ des ? [Cologne addition]"
+        },
+        {
+          "abbr": "KĀṬH. ANUKR.",
+          "expansion": "ANUKRAMAṆIKĀ des ? [Cologne addition]"
+        },
+        {
+          "abbr": "SV. ANUKR.",
+          "expansion": "ANUKRAMAṆIKĀ des ? [Cologne addition]"
+        },
+        {
+          "abbr": "KĀTY. ANUKR.",
+          "expansion": "ANUKRAMAṆIKĀ des ? [Cologne addition]"
+        },
+        {
           "abbr": "avy.",
           "expansion": "avyaya (s. MED.)."
         },
@@ -8708,8 +8748,16 @@
           "expansion": "BENFEY' Chrestomathie aus Sanskritwerken. Leipzig. 1853."
         },
         {
+          "abbr": "BENFEY, Chr.",
+          "expansion": "BENFEY Chrestomathie aus Sanskritwerken. Leipzig. 1853."
+        },
+        {
           "abbr": "BENF. Gr.",
-          "expansion": "BENFEY, Vollständige Grammatik der Sanskritsprache. Leip- zig 1852."
+          "expansion": "BENFEY, Vollständige Grammatik der Sanskritsprache. Leipzig 1852."
+        },
+        {
+          "abbr": "BENF. Vollst. Gr.",
+          "expansion": "BENFEY, Vollständige Grammatik der Sanskritsprache. Leipzig 1852. [Cologne addition]"
         },
         {
           "abbr": "BHAG.",
@@ -8717,7 +8765,15 @@
         },
         {
           "abbr": "BHĀG. P.",
-          "expansion": "BHĀGAVATAPURĀṆA, nach Anführungen im VP. und ŚKDR. Von U an sind die 9 von BURNOUF edirten Skandha (Gild. Bibl. 125) ausgebeutet worden."
+          "expansion": "BHĀGAVATAPURĀṆA, nach Anführungen im VP. und ŚKDR. Von ऊ an sind die 9 von BURNOUF edirten Skandha (Gild. Bibl. 125) ausgebeutet worden."
+        },
+        {
+          "abbr": "BHĀG. P. ed. Bomb.",
+          "expansion": "BHĀG. P. ed. Bomb.= BHĀGAVATAPURĀṆA, Bombay edition ? [Cologne Addition]"
+        },
+        {
+          "abbr": "BHĀG. P. ed. BURN.",
+          "expansion": "BHĀG. P. ed. Bomb.= BHĀGAVATAPURĀṆA, Burnouf edition ? [Cologne Addition]"
         },
         {
           "abbr": "BHĀNUD.",
@@ -8730,6 +8786,10 @@
         {
           "abbr": "BHARTṚ.",
           "expansion": "BHARTṚHARI, Ausg. von BOHLEN (GILD. Bibl. 156), mit Berück- sichtigung des Werkchens; Variae lectiones ad Bohlenii editionem Bhartriharis sententiarum pertinentes, e codicibus extractae per A. SCHIEFNER et A. WEBER. Berolini 1850."
+        },
+        {
+          "abbr": "BHARTṚ Suppl..",
+          "expansion": "? [Cologne Addition]"
         },
         {
           "abbr": "BHĀṢĀP.",
@@ -8764,6 +8824,10 @@
           "expansion": "BRAHMAPURĀṆA in LASSEN'S Anthologie (GILD. Bibl. 48)."
         },
         {
+          "abbr": "BRAHMA-P. in LA.",
+          "expansion": "BRAHMAPURĀṆA in LASSEN'S Anthologie (GILD. Bibl. 48). [dCologne Addition]"
+        },
+        {
           "abbr": "BRAHMAV. P.",
           "expansion": "BRAHMAVAIVARTAPURĀṆA."
         },
@@ -8784,7 +8848,11 @@
           "expansion": "? BṚHADĀRAṆYAKOPANIṢAD, nach der Ausgabe von RÖER in der Bibliotheca indica. [Cologne Addition]"
         },
         {
-          "abbr": "BṚH, ĀR. UP. (POL.)",
+          "abbr": "BṚH. ĀR. UP. S.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "BṚH. ĀR. UP. (POL.)",
           "expansion": "id., in der Ausgabe von POLEY (GILD. Bibl. 78)."
         },
         {
@@ -8800,16 +8868,20 @@
           "expansion": "Bulletin historico-philologique de l'Académie Im- périale des sciences de St.-Pétersbourg."
         },
         {
+          "abbr": "Bullet. hist.-phil.",
+          "expansion": "Bulletin historico-philologique de l'Académie Im- périale des sciences de St.-Pétersbourg. [Cologne addition]"
+        },
+        {
           "abbr": "BURN. Intr.",
           "expansion": "BURNOUF, Introduction à l'histoire du Buddhisme indien. Tome premier. Paris 1844."
         },
         {
-          "abbr": "BURN. Lot. de la b. l.",
-          "expansion": "Le Lotus de la bonne loi, traduit du Sanscrit etc. par M. E. BURNOUF. Paris 1852."
+          "abbr": "BURNOUF Intr.",
+          "expansion": "BURNOUF, Introduction à l'histoire du Buddhisme indien. Tome premier. Paris 1844. [Cologne addition]"
         },
         {
-          "abbr": "ś.",
-          "expansion": "śeṣa (s. H.)."
+          "abbr": "BURN. Lot. de la b. l.",
+          "expansion": "Le Lotus de la bonne loi, traduit du Sanscrit etc. par M. E. BURNOUF. Paris 1852."
         },
         {
           "abbr": "ŚABDAC.",
@@ -8836,12 +8908,20 @@
           "expansion": "CHEZY'S Ausgabe des ŚĀKUNTALA (GILD. Bibl. 187)."
         },
         {
-          "abbr": "ŚAṂK. oder ŚAṂKAR.",
+          "abbr": "ŚĀK. ed. CH.",
+          "expansion": "CHEZY'S Ausgabe des ŚĀKUNTALA (GILD. Bibl. 187)."
+        },
+        {
+          "abbr": "ŚAṂK.",
           "expansion": "ŚAṂKARA (ein Scholiast des ŚĀKUNTALA) und ŚAM̃- KARĀCĀRYA."
         },
         {
-          "abbr": "ŚAṂK. oder ŚAṂKAR.",
+          "abbr": "ŚAṂKAR.",
           "expansion": "ŚAṂKARA (ein Scholiast des ŚĀKUNTALA) und ŚAM̃- KARĀCĀRYA."
+        },
+        {
+          "abbr": "ŚAṂKARA",
+          "expansion": "ŚAṂKARA o= ŚAṂKARA (ein Scholiast des ŚĀKUNTALA) und ŚAM̃- KARĀCĀRYA."
         },
         {
           "abbr": "ŚĀṄKH. BR.",
@@ -8944,11 +9024,15 @@
           "expansion": "ŚRUTABODHA in der Zeitschrift für die Kunde des Morgenlan- des, IV, S. 60 fgg. Ein dabeistehendes BR. verweist auf die von BROCK- HAUS besorgte Ausgabe in seinem Werke: Ueber den Druck Sanskri- tischer Werke mit Lateinischen Buchstaben. Leipzig 1841."
         },
         {
-          "abbr": "ŚUK. oder ŚUKAS.",
+          "abbr": "ŚUK.",
           "expansion": "ŚUKASAPTATI in LASSEN'S Anthologie (GILD. Bibl. 48)."
         },
         {
-          "abbr": "ŚUK. oder ŚUKAS.",
+          "abbr": "ŚUKAS.",
+          "expansion": "ŚUKASAPTATI in LASSEN'S Anthologie (GILD. Bibl. 48)."
+        },
+        {
+          "abbr": "ŚUK. in LA.",
           "expansion": "ŚUKASAPTATI in LASSEN'S Anthologie (GILD. Bibl. 48)."
         },
         {
@@ -8968,11 +9052,11 @@
           "expansion": "DAŚAKUMĀRACARITA, ed. WILSON (GILD. Bibl. 236). [Cologne Addition]"
         },
         {
-          "abbr": "DĀY. oder DĀYABH.",
+          "abbr": "DĀY.",
           "expansion": "DĀYABHĀGA, ed. Calc. 1829 (GILD. Bibl. 344)."
         },
         {
-          "abbr": "DĀY. oder DĀYABH.",
+          "abbr": "DĀYABH.",
           "expansion": "DĀYABHĀGA, ed. Calc. 1829 (GILD. Bibl. 344)."
         },
         {
@@ -9000,6 +9084,10 @@
           "expansion": "DHŪRTASAMĀGAMA in LASSEN'S Anthologie (GILD. Bibl. 48)."
         },
         {
+          "abbr": "DHŪRTAS. in LA.",
+          "expansion": "DHŪRTASAMĀGAMA in LASSEN'S Anthologie (GILD. Bibl. 48). [Cologne Addition]"
+        },
+        {
           "abbr": "DIVYA-AV.",
           "expansion": "DIVYĀVADĀNA, eine buddhistische Legendensammlung."
         },
@@ -9009,7 +9097,11 @@
         },
         {
           "abbr": "DURGAD.",
-          "expansion": "DURGADĀSA."
+          "expansion": "DURGĀDĀSA."
+        },
+        {
+          "abbr": "DURGĀDĀSA",
+          "expansion": "DURGĀDĀSA ? [Cologne Addition]"
         },
         {
           "abbr": "DVIRŪPAK.",
@@ -9048,11 +9140,11 @@
           "expansion": "Bibliothecae sanskritae sive recensus librorum sanskri- torum hucusque typis vel lapide exscriptorum critici specimen. Con- cinnavit YOANNES GILDEMEISTER. Bonnae ad Rhenum 1847."
         },
         {
-          "abbr": "GĪT. oder GĪTAG.",
+          "abbr": "GĪT.",
           "expansion": "GĪTAGOVINDA, ed. LASSEN (GILD. Bibl. 168)."
         },
         {
-          "abbr": "GĪT. oder GĪTAG.",
+          "abbr": "GĪTAG.",
           "expansion": "GĪTAGOVINDA, ed. LASSEN (GILD. Bibl. 168)."
         },
         {
@@ -9061,11 +9153,11 @@
         },
         {
           "abbr": "GORR.",
-          "expansion": "GORRESIO."
+          "expansion": "Rāmāyaṇa, Gorresio edition, 1843--1867 [Cologne addition]"
         },
         {
           "abbr": "GORRESIO",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Gaspare Gorresio, translator of RĀMĀYAṆA [Cologne Addition]"
         },
         {
           "abbr": "GOT. S.",
@@ -9076,7 +9168,7 @@
           "expansion": "GOVINDABHAṬṬA."
         },
         {
-          "abbr": "GṚHYASAM̃GR.",
+          "abbr": "GṚHYASAṂGR.",
           "expansion": "GṚHYASAM̃GRAHAPARIŚIṢTA, 2 Prapāṭhaka von 106 und 103 Versen; vgl. ROTH, Zur L. u. G. d. W. S. 120. Hdschr."
         },
         {
@@ -9105,10 +9197,10 @@
         },
         {
           "abbr": "HARIV.",
-          "expansion": "HARIVAṂŚA im 4ten Bande des MBH. Aus diesem Werke haben wir die Nomina propria mit Benutzung des Index in der LANGLOIS'- schen Uebersetzung (GILD. Bibl. 122) aufgenommen."
+          "expansion": "HARIVAṂŚA im 4ten Bande des MBH. Aus diesem Werke habenwir die Nomina propria mit Benutzung des Index in der LANGLOIS'- schen Uebersetzung (GILD. Bibl. 122) aufgenommen."
         },
         {
-          "abbr": "H. Ś.",
+          "abbr": "H. ś.",
           "expansion": "die Śeṣa's zu HEMACANDRA'S ABHIDHĀNACINTĀMAṆI (s. unter H.), S. 421--443."
         },
         {
@@ -9144,7 +9236,7 @@
           "expansion": "Hortus bengalensis. Serampore 1814. 8vo, citirt nach HAUGHTON'S Wörterbuch."
         },
         {
-          "abbr": "Hort. Calc.",
+          "abbr": "Hort. Calc",
           "expansion": "Hortus suburbanus Calcuttensis. A Catalogue of the plants etc. By the late Y. O. VOIGT. Calcutta 1845. 8º."
         },
         {
@@ -9156,8 +9248,16 @@
           "expansion": "Index des KANDYUR. Herausgegeben von der Kai- serlichen Akademie der Wissenschaften und bevorwortet von I. Y. SCHMIDT. St. Petersburg 1845."
         },
         {
-          "abbr": "Index des KANDJUR",
+          "abbr": "Ind. des KANDYUR",
           "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "KANDYUR",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "Index des KANDYUR",
+          "expansion": "Index des KANDYUR. Herausgegeben von der Kai- serlichen Akademie der Wissenschaften und bevorwortet von I. Y. SCHMIDT. St. Petersburg 1845."
         },
         {
           "abbr": "INDR.",
@@ -9170,6 +9270,10 @@
         {
           "abbr": "WEBER, Ind. St.",
           "expansion": "WEBER'S Indische Studien. [Cologne Addition]"
+        },
+        {
+          "abbr": "WEBER, Ind. Lit.",
+          "expansion": "? [Cologne Addition]"
         },
         {
           "abbr": "Institutt. (LASSEN)",
@@ -9264,6 +9368,10 @@
           "expansion": "KATHĀSARITSĀGARA, ed. BROCKHAUS (GILD. Bibl. 237)."
         },
         {
+          "abbr": "KATHĀSARITSĀGARA",
+          "expansion": "KATHĀSARITSĀGARA [Cologne Addition]"
+        },
+        {
           "abbr": "KAṬHOP.",
           "expansion": "KAṬHOPANIṢAD in der Bibliotheca indica."
         },
@@ -9320,6 +9428,10 @@
           "expansion": "CHĀNDOGYOPANIṢAD, nach der Ausgabe von RÖER in der Bibliotheca indica."
         },
         {
+          "abbr": "CHĀND. UP. S.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "KIR.",
           "expansion": "KIRĀTĀRJUNĪYA, ed. Calc. (GILD. Bibl. 139)."
         },
@@ -9332,8 +9444,20 @@
           "expansion": "KOṢṬHĪPRADĪPA, nach Anführungen im ŚKDR."
         },
         {
+          "abbr": "KOṢṬHĪPRADĪPA",
+          "expansion": "KOṢṬHĪPRADĪPA, nach Anführungen im ŚKDR. [Cologne Addition]"
+        },
+        {
           "abbr": "KULL.",
           "expansion": "KULLŪKA, ein Scholiast des MANU, vollständig abgedruckt unter andern in der Calc. Ausg. von 1830 (GILD. Bibl. 288)."
+        },
+        {
+          "abbr": "KULLŪKA",
+          "expansion": "KULLŪKA, ein Scholiast des MANU, vollständig abgedruckt unter andern in der Calc. Ausg. von 1830 (GILD. Bibl. 288). [Cologne Addition]"
+        },
+        {
+          "abbr": "KULLŪKABHAṬṬA",
+          "expansion": "KULLŪKABHAṬṬA, ein Scholiast des MANU, vollständig abgedruckt unter andern in der Calc. Ausg. von 1830 (GILD. Bibl. 288). [Cologne Addition]"
         },
         {
           "abbr": "KUMĀRAS.",
@@ -9356,11 +9480,15 @@
           "expansion": "LASSEN'S Anthologie (GILD. Bibl. 48)."
         },
         {
+          "abbr": "LA. (II.)",
+          "expansion": "? LASSEN'S Anthologie (GILD. Bibl. 48)."
+        },
+        {
           "abbr": "LAGHUJ.",
           "expansion": "VARĀHAMIHIRA'S LAGHUJĀTAKA."
         },
         {
-          "abbr": "LAGHUJAT.",
+          "abbr": "LAGHUJĀT.",
           "expansion": "VARĀHAMIHIRA'S LAGHUJĀTAKA. [Cologne Addition]"
         },
         {
@@ -9369,35 +9497,47 @@
         },
         {
           "abbr": "LALIT.",
-          "expansion": "RGYA TCH'ER ROL PA (LALITAVISTĀRA) ou Développement des yeux, traduit etc. par PH. ÉD. FOUCAUX. Deuxième partie--Traduc- tion franśaise. Paris 1848."
+          "expansion": "RGYA TCH'ER ROL PA (LALITAVISTĀRA) ou Développement des yeux, traduit etc. par PH. ÉD. FOUCAUX. Deuxième partie--Traduc- tion franśaise. Paris 1848. ?"
         },
         {
-          "abbr": "LALIT. Calc.",
+          "abbr": "LALIT. Fouc.",
+          "expansion": "RGYA TCH'ER ROL PA (LALITAVISTĀRA) ou Développement des yeux, traduit etc. par PH. ÉD. FOUCAUX. Deuxième partie--Traduc- tion franśaise. Paris 1848. [Cologne addition]"
+        },
+        {
+          "abbr": "LALIT. Calc",
           "expansion": "LALITAVISTARA in der Bibliotheca indica."
+        },
+        {
+          "abbr": "LALIT. ed. Calc.",
+          "expansion": "LALITAVISTARA in der Bibliotheca indica."
+        },
+        {
+          "abbr": "LALIT. ed. FOUC.",
+          "expansion": "LALITAVISTARA ?[Cologne Addition]"
         },
         {
           "abbr": "LĀṬY.",
           "expansion": "LĀṬYĀYANA'S SŪTRA zum SV. Hdschr."
         },
         {
-          "abbr": "Lebensb. (SCHIEFNER)",
-          "expansion": "Eine tibetische Lebensbeschreibung Śākyamu- ni's, des Begründers des Buddhathums, im Auszuge mitgetheilt von [Page09-b+ 66] A. SCHIEFNER, in Mémoires présentés à l'Académie Impériale des sciences de St.-Pétersbourg par divers savants. T. VI. Die in Klam- mern beigefügte Seitenzahl bezieht sich auf die Separatabdrücke."
-        },
-        {
           "abbr": "Lebensb.",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Eine tibetische Lebensbeschreibung Śākyamu- ni's, des Begründers des Buddhathums, im Auszuge mitgetheilt von A. SCHIEFNER, in Mémoires présentés à l'Académie Impériale des sciences de St.-Pétersbourg par divers savants. T. VI. Die in Klam- mern beigefügte Seitenzahl bezieht sich auf die Separatabdrücke."
         },
         {
           "abbr": "Leb.",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Eine tibetische Lebensbeschreibung Śākyamu- ni's, des Begründers des Buddhathums, im Auszuge mitgetheilt von A. SCHIEFNER, in Mémoires présentés à l'Académie Impériale des sciences de St.-Pétersbourg par divers savants. T. VI. Die in Klam- mern beigefügte Seitenzahl bezieht sich auf die Separatabdrücke. ? [Cologne Addition]"
         },
         {
-          "abbr": "\"SCHIEFNER, Lebensb.",
+          "abbr": "SCHIEFNER, Lebensb.",
           "expansion": "? [Cologne Addition]"
         },
         {
           "abbr": "Lex. sanscr. tib.",
           "expansion": "VYUTP. (s. d.)"
+        },
+        {
+          "abbr": "LIA.",
+          "expansion": "LASSEN'S Indische Alterthumskunde."
         },
         {
           "abbr": "LIA.",
@@ -9428,11 +9568,15 @@
           "expansion": "MANU'S Gesetzbuch in der Ausg. von LOISELEUR DESLONGCHAMPS (GILD. Bibl. 289)."
         },
         {
-          "abbr": "MAŚ. oder MAŚ. S.",
+          "abbr": "M. ed. Calc.",
+          "expansion": "MANU'S Gesetzbuch, Calcutta edition [Cologne Addition]"
+        },
+        {
+          "abbr": "MAŚ.",
           "expansion": "MAŚAKA'S KALPASŪTRĀṆI."
         },
         {
-          "abbr": "MAŚ. oder MAŚ. S.",
+          "abbr": "MAŚ. S.",
           "expansion": "MAŚAKA'S KALPASŪTRĀṆI."
         },
         {
@@ -9480,11 +9624,15 @@
           "expansion": "MĀLAVIKĀGNIMITRA, ed. TULLBERG (GILD. Bibl. 209)."
         },
         {
+          "abbr": "MĀLAV. ed. Bomb.",
+          "expansion": "MĀLAVIKĀGNIMITRA, Bombay edition [Cologne Addition]"
+        },
+        {
           "abbr": "MALLIN.",
           "expansion": "MALLINĀTHA."
         },
         {
-          "abbr": "MĀṆḌ. UP.",
+          "abbr": "MĀṆD. UP.",
           "expansion": "MĀṆḌŪKYOPANIṢAD in der Bibliotheca indica."
         },
         {
@@ -9512,7 +9660,7 @@
           "expansion": "MATSYAPURĀṆA."
         },
         {
-          "abbr": "MĀTSYA-P.",
+          "abbr": "MĀTSYA-P. iast=",
           "expansion": "MĀTSYAPURĀṆA MATSYAPURĀṆA."
         },
         {
@@ -9521,11 +9669,15 @@
         },
         {
           "abbr": "MBH.",
-          "expansion": "MAHĀBHĀRATA, ed. Calc. (GILD. Bibl. 93). Von S. 521 des Wörter- buchs sind die drei ersten Bücher, von S. 601 auch die fünf letzten, von U an auch das 13te Buch ausgebeutet worden."
+          "expansion": "MAHĀBHĀRATA, ed. Calc. (GILD. Bibl. 93). Von S. 521 des Wörter- buchs sind die drei ersten Bücher, von S. 601 auch die fünf letzten, von ऊ an auch das 13te Buch ausgebeutet worden."
+        },
+        {
+          "abbr": "MBH. ed. Calc.",
+          "expansion": "MAHĀBHĀRATA, Calcutta edition [Cologne Addition]"
         },
         {
           "abbr": "MED.",
-          "expansion": "MEDINĪKOṢA, ed. Calc. (GILD. Bibl. 258). Die Wörter sind zu- nächst nach dem letzten Consonanten im Worte angeordnet: also kAnta (k), khAnta (kh), gAnta (g) u. s. w. Die Partikeln (avyaya) bilden einen besondern Abschnitt am Ende, den wir durch avy. bezeichnet haben."
+          "expansion": "MEDINĪKOṢA, ed. Calc. (GILD. Bibl. 258). Die Wörter sind zu- nächst nach dem letzten Consonanten im Worte angeordnet: also कान्त (k), खान्त (kh), गान्त (g) u. s. w. Die Partikeln (avyaya) bilden einen besondern Abschnitt am Ende, den wir durch avy. bezeichnet haben."
         },
         {
           "abbr": "MEGH.",
@@ -9540,7 +9692,7 @@
           "expansion": "Mél. asiat. ?"
         },
         {
-          "abbr": "\"Mém. sur l'Inde\"",
+          "abbr": "Mém. sur l'Inde",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -9554,6 +9706,10 @@
         {
           "abbr": "MṚCCH.",
           "expansion": "MṚCCHAKAṬIKĀ, ed. STENZLER (GILD. Bibl. 186)."
+        },
+        {
+          "abbr": "MṚCCH. ed. Calc.",
+          "expansion": "MṚCCHAKAṬIKĀ, Calcutta edition [Cologne addition]"
         },
         {
           "abbr": "MUDRĀR.",
@@ -9592,7 +9748,7 @@
           "expansion": "NIDĀNASŪTRA."
         },
         {
-          "abbr": "NĪL. oder NĪLAK.",
+          "abbr": "NĪL.",
           "expansion": "NĪLAKAṆṬHA, ein Scholiast des MAHĀBHĀRATA (an- geführt in BOPP'S Ausgabe des NALA) und auch des AK. (angeführt im ŚKDR.)."
         },
         {
@@ -9620,12 +9776,28 @@
           "expansion": "PAÑCATANTRA. Pantschatantrum sive quinquepartitum de moribus exponens, ex codicibus manuscriptis edidit, commentariis criticis auxit IO. GODOFR. LUDOV. KOSEGARTEN. Pars prima, textum sanscritum simpliciorem tenens. Bonnae ad Rhenum 1848. 8º. Eine darauf folgende römische Zahl bezeichnet das Buch, eine arabische -- die Seite; die zweite Zahl bezeichnet hier die Zeile, dort den Śloka."
         },
         {
+          "abbr": "PAÑCATANTRA",
+          "expansion": "PAÑCATANTRA"
+        },
+        {
           "abbr": "PAÑCAV. BR.",
           "expansion": "PAÑCAVIṂŚABRĀHMAṆA."
         },
         {
           "abbr": "PAÑCAV.",
           "expansion": "PAÑCAVIṂŚABRĀHMAṆA ? [Cologne addition]"
+        },
+        {
+          "abbr": "PAÑCAT. BR.",
+          "expansion": "? [Cologne addition]"
+        },
+        {
+          "abbr": "PAÑCAT. ed. Bomb.",
+          "expansion": "? [Cologne addition]"
+        },
+        {
+          "abbr": "PAÑCAT. ed. orn.",
+          "expansion": "? [Cologne addition]"
         },
         {
           "abbr": "PARĀŚ.",
@@ -9648,12 +9820,16 @@
           "expansion": "CHRISTIANI LASSENII commentatio geographica atque historica de Pentapotamia indica. Bonnae ad Rhenum 1827."
         },
         {
-          "abbr": "PRAB. oder PRABODH.",
+          "abbr": "PRAB.",
           "expansion": "PRABODHACANDRODAYA, ed. BROCKHAUS (GILD. Bibl. 216)."
         },
         {
-          "abbr": "PRAB. oder PRABODH.",
+          "abbr": "PRABODH.",
           "expansion": "PRABODHACANDRODAYA, ed. BROCKHAUS (GILD. Bibl. 216)."
+        },
+        {
+          "abbr": "PRABODHACANDRODAYA",
+          "expansion": "PRABODHACANDRODAYA ? {Cologne Addition]"
         },
         {
           "abbr": "PRAŚNOP.",
@@ -9664,15 +9840,15 @@
           "expansion": "PRĀYAŚCITTAVIVEKA, nach Anführungen im ŚKDR."
         },
         {
-          "abbr": "PRĀT. oder PRĀTIŚ.",
+          "abbr": "PRĀT.",
           "expansion": "PRĀTIŚĀKHYA."
         },
         {
-          "abbr": "PRĀT. oder PRĀTIŚ.",
+          "abbr": "PRĀTIŚ.",
           "expansion": "PRĀTIŚĀKHYA."
         },
         {
-          "abbr": "PRAVAR. oder PRAVARĀDHY.",
+          "abbr": "PRAVARĀDHY.",
           "expansion": "PRAVARĀDHYĀYA."
         },
         {
@@ -9692,6 +9868,22 @@
           "expansion": "RĀMĀYAṆA. Ohne eine nähere Angabe ist bei den zwei ersten Büchern die Ausgabe von SCHLEGEL (GILD. Bibl. 84), bei den vier letzten die von GORRESIO (GILD. Bibl. 85) gemeint."
         },
         {
+          "abbr": "R. ed. Bomb.",
+          "expansion": "Bombay ed. of Rāmāyaṇa, 1859-1864 [Cologne addition]"
+        },
+        {
+          "abbr": "R. SCHL.",
+          "expansion": "Rāmāyaṇa, Schlegel edition, 1829--1838 [Cologne addition]"
+        },
+        {
+          "abbr": "R. ed. Ser.",
+          "expansion": "Serampore ed. of Rāmāyaṇa [Cologne addition]"
+        },
+        {
+          "abbr": "R. ed. SCHL.",
+          "expansion": "Rāmāyaṇa, Schlegel edition, 1829--1838 [Cologne addition]"
+        },
+        {
           "abbr": "RĀJAN.",
           "expansion": "RĀJANIRGHAṆṬA, ein medicinisches Wörterbuch; nach An- führungen im ŚKDR."
         },
@@ -9704,6 +9896,10 @@
           "expansion": "RĀJATARAṄGIṆĪ ? [Cologne Addition]"
         },
         {
+          "abbr": "RĀJA-TAR. ed. Calc.",
+          "expansion": "RĀJATARAṄGIṆĪ, Calc. Ausg. (GILD. Bibl. 147). [Cologne Addition]"
+        },
+        {
           "abbr": "RĀJAV.",
           "expansion": "RĀJAVALLABHA, nach Anführungen im ŚKDR."
         },
@@ -9712,8 +9908,20 @@
           "expansion": "RAGHUVAṂŚA, ed. STENZLER (GILD. Bibl. 134)."
         },
         {
-          "abbr": "RAGH. (ed. Calc.)",
+          "abbr": "RAGH. (ed. Calc)",
           "expansion": "RAGHUVAṂŚA, ed. Calc. (GILD. Bibl. 135)."
+        },
+        {
+          "abbr": "RAGH. ed. Calc.",
+          "expansion": "RAGHUVAṂŚA, ed. Calc. (GILD. Bibl. 135)."
+        },
+        {
+          "abbr": "RAGH. (Calc.)",
+          "expansion": "RAGHUVAṂŚA, ed. Calc. (GILD. Bibl. 135)."
+        },
+        {
+          "abbr": "RAGH. ed. ST.",
+          "expansion": "RAGHUVAṂŚA, ed. ST. ? [Cologne Addition]"
         },
         {
           "abbr": "RĀYAM.",
@@ -9768,7 +9976,7 @@
           "expansion": "ṚGVEDA. Es wird nach Maṇḍala, Sūkta und Ṛc citirt. ROSEN zu ṚV. verweist auf die Anmerkungen in: Rigveda-Sanhita, liber primus, sanskritè et latinè; edidit FRIDERICUS ROSEN. London 1838."
         },
         {
-          "abbr": "ṚV. PRĀT. oder PRĀTIŚ.",
+          "abbr": "ṚV. PRĀT.",
           "expansion": "PRĀTIŚĀKHYA zun ṚGVEDA, citirt nach Paṭala und Versen. Hdschr. S. ROTH in der Einl z. NIR. S. XLVII."
         },
         {
@@ -9788,7 +9996,7 @@
           "expansion": "SĀHITYADARPAṆA, auf den 10 ersten Bogen nach der Ausgabe von 1828 (GILD. Bibl. 264), auf den folgenden Bogen, wenn nicht die Yahreszahl 1828 ausdrücklich bemerkt wird, nach der Ausgabe von RÖER in der Bibliotheca indica. Eine einfache Zahl verweist auf die Kārikā, eine doppelte auf Seite und Zeile."
         },
         {
-          "abbr": "SĀH. D.",
+          "abbr": "D.",
           "expansion": "SĀHITYADARPAṆA, ? [Cologne Addition]"
         },
         {
@@ -9796,8 +10004,12 @@
           "expansion": "SĀYAṆA."
         },
         {
-          "abbr": "SAM̃GĪTAD.",
+          "abbr": "SAṂGĪTAD.",
           "expansion": "SAM̃GĪTADĀMODARA (über Musik), nach Anführungen im ŚKDR."
+        },
+        {
+          "abbr": "SAṂGĪTADĀM.",
+          "expansion": "SAM̃GĪTADĀMODARA (über Musik), nach Anführungen im ŚKDR. [Cologne addition]"
         },
         {
           "abbr": "SĀṂKHYAK.",
@@ -9832,11 +10044,11 @@
           "expansion": "SĀVITRYUPĀKHYĀNA, ed. BOPP (GILD. Bibl. 106)."
         },
         {
-          "abbr": "Sch. oder Schol.",
+          "abbr": "Sch.",
           "expansion": "Scholiast."
         },
         {
-          "abbr": "Sch. oder Schol.",
+          "abbr": "Schol.",
           "expansion": "Scholiast."
         },
         {
@@ -9850,6 +10062,10 @@
         {
           "abbr": "SIDDH. ŚIR.",
           "expansion": "SIDDHĀNTAŚIROMAṆI, nach Anführungen im ŚKDR. ? [Cologne Addition]"
+        },
+        {
+          "abbr": "SIDDHĀNTAŚIR. (GOLĀDHY)",
+          "expansion": "Golādhyāya part of Siddhānta Śiromaṇi, by Bhāskara (1150 A.D.) [Cologne Addition]"
         },
         {
           "abbr": "SIDDHĀNTAM.",
@@ -9870,6 +10086,10 @@
         {
           "abbr": "SUŚR.",
           "expansion": "SUŚRUTA, ed. Calc. (GILD. Bibl. 367); citirt nach Band, Seite und Zeile. Den Titel der HESSLER'schen Uebersetzung s. bei GILD. Bibl. 368."
+        },
+        {
+          "abbr": "SUŚRUTA",
+          "expansion": "SUŚRUTA [Cologne Addition]"
         },
         {
           "abbr": "SUND.",
@@ -10021,14 +10241,18 @@
         },
         {
           "abbr": "Verz. B. H.",
-          "expansion": "WEBER'S Verzeichniss der Berliner Sanskrit-Hand- schriften. = {1.314} ? [Cologne Addition]"
+          "expansion": "WEBER'S Verzeichniss der Berliner Sanskrit-Handschriften. = {1.314} ? [Cologne Addition]"
         },
         {
           "abbr": "B. H.",
-          "expansion": "WEBER'S Verzeichniss der Berliner Sanskrit-Hand- schriften. = {1.314} ? [Cologne Addition]"
+          "expansion": "WEBER'S Verzeichniss der Berliner Sanskrit-Hand- schriften. ? [Cologne Addition]"
         },
         {
           "abbr": "Verz. d. Kopenh. H.",
+          "expansion": "WESTERGAARD'S Verzeichniss der Kopenhagener Sanskrit-Handschriften in: Codices orientales bibliothecae regiae Havniensis yussu et auspiciis regis Daniae augustissimi Christiani octavi enumerati et descripti. Pars prior, codices indicos continens. Havniae 1846. 4º."
+        },
+        {
+          "abbr": "Verz. d. KOP. H.",
           "expansion": "WESTERGAARD'S Verzeichniss der Kopenhagener Sanskrit-Handschriften in: Codices orientales bibliothecae regiae Havniensis yussu et auspiciis regis Daniae augustissimi Christiani octavi enumerati et descripti. Pars prior, codices indicos continens. Havniae 1846. 4º."
         },
         {
@@ -10052,6 +10276,10 @@
           "expansion": "VETĀLAPAÑCAVIṂŚATI in LASSEN'S Anthologie (LA)."
         },
         {
+          "abbr": "VET. in LA.",
+          "expansion": "VETĀLAPAÑCAVIṂŚATI in LASSEN'S Anthologie (LA). [Cologne Addition]"
+        },
+        {
           "abbr": "VIŚV.",
           "expansion": "VIŚVĀMITRA'S Kampf in BÖHTLINGK'S Chrestomathie."
         },
@@ -10060,11 +10288,11 @@
           "expansion": "Geschichte des VIDŪṢAKA in BÖHTLINGK'S Chrestomathie."
         },
         {
-          "abbr": "VIKR. oder VIKRAM.",
+          "abbr": "VIKR.",
           "expansion": "VIKRAMORVAŚĪ, ed. BOLLENSEN (GILD. Bibl. 206). Eine einfache Zahl verweist auf einen Śloka, eine doppelte--auf Seite und Zeile."
         },
         {
-          "abbr": "VIKR. oder VIKRAM.",
+          "abbr": "VIKRAM.",
           "expansion": "VIKRAMORVAŚĪ, ed. BOLLENSEN (GILD. Bibl. 206). Eine einfache Zahl verweist auf einen Śloka, eine doppelte--auf Seite und Zeile."
         },
         {
@@ -10081,23 +10309,31 @@
         },
         {
           "abbr": "VYUTP.",
-          "expansion": "VYUTPATTI oder MAHĀVYUTPATTI (s. Mél. asiat. II, 382), ein sanskrit-tibetisches Wörterbuch aus dem TAÑJUR (Bd. 123 der Sūtra, S. 223--377). Die Mittheilungen aus diesem Werke nebst andern auf den Budhismus bezüglichen Notizen verdanken wir A. SCHIEFNER. [Pagè-b+ 32]"
+          "expansion": "VYUTPATTI oder MAHĀVYUTPATTI (s. Mél. asiat. II, 382), ein sanskrit-tibetisches Wörterbuch aus dem TAÑJUR (Bd. 123 der Sūtra, S. 223--377). Die Mittheilungen aus diesem Werke nebst andern auf den Budhismus bezüglichen Notizen verdanken wir A. SCHIEFNER."
         },
         {
           "abbr": "v. l.",
           "expansion": "varia lectio."
         },
         {
-          "abbr": "VOP. oder VOPAD.",
+          "abbr": "VOP.",
           "expansion": "VOPADEVA'S Grammatik, nach BÖHTLINGK'S Ausgabe (GILD. Bibl. 249, a. S. 170)."
         },
         {
-          "abbr": "VOP. oder VOPAD.",
+          "abbr": "VOPAD.",
           "expansion": "VOPADEVA'S Grammatik, nach BÖHTLINGK'S Ausgabe (GILD. Bibl. 249, a. S. 170)."
+        },
+        {
+          "abbr": "VOP. (ed. Calc.)",
+          "expansion": "VOPADEVA'S Grammatik, Calcutta edition [Cologne Addition]"
         },
         {
           "abbr": "VP.",
-          "expansion": "VIṢṆUPURĀṆA. Es wird die WILSON'sche Uebersetzung (GILD. Bibl. 133) citirt."
+          "expansion": "VIṢṆUPURĀṆA. Es wird die WILSON'sche Uebersetzung"
+        },
+        {
+          "abbr": "VP. (2te Aufl.)",
+          "expansion": "? [Cologne Addition]"
         },
         {
           "abbr": "VS.",
@@ -10124,11 +10360,11 @@
           "expansion": "FRID. H. H. WINDISCHMANNI Sancara sive de theo- logumenis Vedanticorum. Bonnae 1833. [Cologne Addition]"
         },
         {
-          "abbr": "WINDISCHMANN Sancara",
+          "abbr": "WINDISCHMANN, Sancara",
           "expansion": "FRID. H. H. WINDISCHMANNI Sancara sive de theo- logumenis Vedanticorum. Bonnae 1833. [Cologne Addition]"
         },
         {
-          "abbr": "WINDISCHMANN Sanc.",
+          "abbr": "WINDISCHMANN, Sanc.",
           "expansion": "FRID. H. H. WINDISCHMANNI Sancara sive de theo- logumenis Vedanticorum. Bonnae 1833. [Cologne Addition]"
         },
         {
@@ -10204,6 +10440,10 @@
           "expansion": "BṚHADDHARMAPURĀṆA; nach Anführungen im ŚKDR."
         },
         {
+          "abbr": "BṚHADDHARMAPURĀṆA",
+          "expansion": "BṚHADDHARMAPURĀṆA [Cologne addition]"
+        },
+        {
           "abbr": "ŚĀKAṬ.",
           "expansion": "ŚĀKAṬĀYANA, ein Schol. des ŚĀK."
         },
@@ -10234,6 +10474,10 @@
         {
           "abbr": "JAIM.",
           "expansion": "JAIMINI (The Aphorisms of the Mímánsá Philosophy by Yai- mini. With extracts from the commentaries. Allahabad. 1851. In unserm Besitz nur ein Fragment von 36 Seiten.)."
+        },
+        {
+          "abbr": "GILD.",
+          "expansion": "Scriptorum Arabum de Rebus Indi- cis loci et opuscula inedita. Ad codicum Pariss. etc. fidem recensuit et illustravit Y. Gildemeister. Bonnae MDCCCXXXVIII."
         },
         {
           "abbr": "JYOTIṢAT.",
@@ -10376,6 +10620,10 @@
           "expansion": "A Lecture on the Vedánta, embracing the text of the Vedánta-Sára. Allahabad 1850."
         },
         {
+          "abbr": "VEDĀNTAS. [Allah.]",
+          "expansion": "A Lecture on the Vedánta, embracing the text of the Vedánta-Sára. Allahabad 1850."
+        },
+        {
           "abbr": "VEṆĪS.",
           "expansion": "VEṆĪSAM̃HĀRA; nach Anführungen im ŚKDR."
         },
@@ -10413,7 +10661,11 @@
         },
         {
           "abbr": "Journ. of the Am. S.",
-          "expansion": "Journal of the American Oriental Society."
+          "expansion": "Journal of the American Oriental Society. x a. a. O. S."
+        },
+        {
+          "abbr": "a. a. O. S.",
+          "expansion": "Journal of the American Oriental Society. ?"
         },
         {
           "abbr": "KALPADRUMĀV.",
@@ -10433,7 +10685,7 @@
         },
         {
           "abbr": "MUIR, Sanskr. Texts",
-          "expansion": "Original Sanskrit Texts on the origin and pro- [Page003-b+ 17] gress of the Religion and Institutions of India; collected, translat- ed into English, and illustrated by Notes. Chiefly for the use of students and others in India. By Y. MUIR."
+          "expansion": "Original Sanskrit Texts on the origin and progress of the Religion and Institutions of India; collected, translat- ed into English, and illustrated by Notes. Chiefly for the use of students and others in India. By Y. MUIR."
         },
         {
           "abbr": "MUIR, ST.",
@@ -10460,6 +10712,10 @@
           "expansion": "Die Sage von NALA und DAMAYANTI nach der Bearbeitung des SOMADEVA herausgegeben von HERMANN BROCKHAUS. Leipzig 1859."
         },
         {
+          "abbr": "SOM. NALA",
+          "expansion": "SOM. NALA"
+        },
+        {
           "abbr": "UPAG. AV.",
           "expansion": "UPAGUPTĀVADĀNA, handschriftlich in der Bibliothek der Asiatischen Gesellschaftzu Paris, nach Mittheilungen von A. SCHIEFNER."
         },
@@ -10468,7 +10724,15 @@
           "expansion": "VAJRĀSANASĀDHANAMĀLĀ, handschriftlich in der Pariser Bibliothek, nach Mittheilungen von A. SCHIEFNER."
         },
         {
-          "abbr": "ŚĀRṄG. SAM̃H.",
+          "abbr": "BANERJEA",
+          "expansion": "Dialogues on the Hindu Philosophy, comprising the Nyaya, the Sankhya, the Vedant; to which is added a discussion of the authority of the Vedas. By Rev. K. M. BANERJEA. London, 1861."
+        },
+        {
+          "abbr": "BANERJEA, Dial.",
+          "expansion": "Dialogues on the Hindu Philosophy, comprising the Nyaya, the Sankhya, the Vedant; to which is added a discussion of the authority of the Vedas. By Rev. K. M. BANERJEA. London, 1861."
+        },
+        {
+          "abbr": "ŚĀRṄG. SAṂH.",
           "expansion": "SAM̃HITĀ des ŚĀRṄGADHARA. Bombai 1853. Citirt nach Kāṇḍa, Adhyāya und der Reihenfolge der in der Ausgabe angenom menen Paragraphen."
         },
         {
@@ -10497,7 +10761,11 @@
         },
         {
           "abbr": "NYĀYAMĀLĀV.",
-          "expansion": "NYĀYAMĀLĀVISTARA, nach Anführungen bei MUIR, Sans- [Page1219-1b+ 21] krit Texts."
+          "expansion": "NYĀYAMĀLĀVISTARA, nach Anführungen bei MUIR, Sanskrit Texts."
+        },
+        {
+          "abbr": "NYĀYAM.",
+          "expansion": "NYĀYAMĀLĀVISTARA, nach Anführungen bei MUIR, Sanskrit Texts. [Cologne Addition]"
         },
         {
           "abbr": "PK.",
@@ -10520,7 +10788,15 @@
           "expansion": "SAṂSKĀRAKAUSTUBHA von ANANTADEVA. Lith. Ausg. in folio ohne Angabe des Ortes und des Yahres."
         },
         {
+          "abbr": "Spr. (II)",
+          "expansion": "Indische Sprüche. Sanskrit und Deutsch. Herausgegeben von Otto Böhtlingk. Zweite vermehrte und verbesserte Auflage. 1870-1873"
+        },
+        {
           "abbr": "Spr.",
+          "expansion": "Indische Sprüche. Sanskrit und deutsch herausgegeben von Otto BÖHTLINGK. St. Petersburg, 1863. 1864."
+        },
+        {
+          "abbr": "Spr. (I)",
           "expansion": "Indische Sprüche. Sanskrit und deutsch herausgegeben von Otto BÖHTLINGK. St. Petersburg, 1863. 1864."
         },
         {
@@ -10536,7 +10812,7 @@
           "expansion": "WEBER, Die vedischen Nachrichten von den Nakṣatra (Mondstationen). Berlin, 1860. 1862. ? [Cologne Addition]"
         },
         {
-          "abbr": "WEBER, NAKṢ",
+          "abbr": "WEBER, NAKṢ.",
           "expansion": "WEBER, Die vedischen Nachrichten von den Nakṣatra (Mondstationen). Berlin, 1860. 1862. [Cologne Addition]"
         },
         {
@@ -10553,7 +10829,7 @@
         },
         {
           "abbr": "UTTARAR.",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Uttararāmacarita, a play by Bhavabhuti [Cologne Addition]"
         },
         {
           "abbr": "UTTARAR. ed. Cow.",
@@ -10564,12 +10840,24 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "Verz. d. Oxf. H.",
+          "abbr": "UTTARARĀMAC. ed. Cow.",
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "d. Oxf. H.",
+          "abbr": "UTTARARĀMAC.",
           "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "Verz. d. Oxf. H.",
+          "expansion": "AUFRECHT, Verzeichniss der Oxforder Handschriften, 1864 [Cologne Addition]"
+        },
+        {
+          "abbr": "Verz. der. Oxf. H.",
+          "expansion": "Verz. der. Oxf. H.= AUFRECHT, Verzeichniss der Oxforder Handschriften, 1864 [Cologne Addition]"
+        },
+        {
+          "abbr": "d. Oxf. H.",
+          "expansion": "AUFRECHT, Verzeichniss der Oxforder Handschriften, 1864 [Cologne Addition]"
         },
         {
           "abbr": "WEBER, RĀMAT. UP.",
@@ -10593,7 +10881,7 @@
         },
         {
           "abbr": "SIDDH.K.",
-          "expansion": "(same as 1.279 \"SIDDH. K.\") [Cologne Addition]"
+          "expansion": "(same as 1.279 SIDDH. K.) [Cologne Addition]"
         },
         {
           "abbr": "SARVADARŚANAS.",
@@ -10608,11 +10896,19 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "PAÑCAR",
+          "abbr": "SĀMAV. BR.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "PAÑCAR.",
           "expansion": "PAÑCARATNA ? [Cologne Addition]"
         },
         {
           "abbr": "NĀNĀRTHADHVANIM.",
+          "expansion": "NĀNĀRTHADHVANIMAÑJARĪ [Cologne Addition]"
+        },
+        {
+          "abbr": "NĀNĀRTHADHVANIMAÑJARĪ",
           "expansion": "NĀNĀRTHADHVANIMAÑJARĪ [Cologne Addition]"
         },
         {
@@ -10680,10 +10976,6 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "BANERJEA",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
           "abbr": "BAṬUKABHAIRAVASTOTRA",
           "expansion": "? [Cologne Addition]"
         },
@@ -10713,6 +11005,10 @@
         },
         {
           "abbr": "BHĀM.",
+          "expansion": "BHĀMINĪVILĀSA ? [Cologne Addition]"
+        },
+        {
+          "abbr": "BHĀMINĪV.",
           "expansion": "BHĀMINĪVILĀSA ? [Cologne Addition]"
         },
         {
@@ -10748,6 +11044,10 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "KĀVYĀD. (ed. 1866)",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "BṚH.",
           "expansion": "? [Cologne Addition]"
         },
@@ -10757,7 +11057,7 @@
         },
         {
           "abbr": "KUSUM.",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "? Kusumanagara [Cologne Addition]"
         },
         {
           "abbr": "VĀGBH.",
@@ -10788,11 +11088,19 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "KṢITĪS.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "GOLĀDHY.",
           "expansion": "? [Cologne Addition]"
         },
         {
           "abbr": "VĀSAVAD.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "VASĀVAD.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -10889,7 +11197,7 @@
         },
         {
           "abbr": "SCHL.",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Rāmāyaṇa, Schlegel edition, 1829--1838 [Cologne Addition]"
         },
         {
           "abbr": "MAD.",
@@ -10952,6 +11260,10 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "BHĀSKARĀCĀRYA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "ĀPASTAMBA",
           "expansion": "? [Cologne Addition]"
         },
@@ -10969,7 +11281,11 @@
         },
         {
           "abbr": "WASSILJEW",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "В. Васильевъ. Буддизмъ, его догматы, исторія и литература. Часть 1. Общее обозрѣніе. Санктпетербургъ, 1857. ((V. Vasilyev. Buddhism, its dogmata, history and literature. Part 1. General overview. Sankt-Peterburg, 1857.) [Cologne Addition]"
+        },
+        {
+          "abbr": "WASSILYEW",
+          "expansion": "В. Васильевъ. Буддизмъ, его догматы, исторія и литература. Часть 1. Общее обозрѣніе. Санктпетербургъ, 1857. ((V. Vasilyev. Buddhism, its dogmata, history and literature. Part 1. General overview. Sankt-Peterburg, 1857.) [Cologne Addition]"
         },
         {
           "abbr": "VĀMANA",
@@ -11004,7 +11320,7 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "AINSL.",
+          "abbr": "AINSL",
           "expansion": "AINSLIE ? [Cologne Addition]"
         },
         {
@@ -11029,6 +11345,10 @@
         },
         {
           "abbr": "VIŚVA.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "VIŚVAN.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -11068,10 +11388,6 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "LANGL.",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
           "abbr": "COLEBR.",
           "expansion": "? [Cologne Addition]"
         },
@@ -11089,7 +11405,11 @@
         },
         {
           "abbr": "LANGLOIS",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Alexandre Langlois (1788-1854), French indologist and translater[Cologne Addition]"
+        },
+        {
+          "abbr": "LANGL.",
+          "expansion": "Alexandre Langlois (1788-1854), French indologist and translater[Cologne Addition]"
         },
         {
           "abbr": "BURNOUF.",
@@ -11221,7 +11541,11 @@
         },
         {
           "abbr": "MIKLOSICH",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Franz Miklosich (1813-1891) a Slovene philologist[Cologne Addition]"
+        },
+        {
+          "abbr": "MIKLOS.",
+          "expansion": "Franz Miklosich (1813-1891) a Slovene philologist[Cologne Addition]"
         },
         {
           "abbr": "MAHĀBH.",
@@ -11234,6 +11558,10 @@
         {
           "abbr": "HAEB.",
           "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "HAEB. Anth.",
+          "expansion": "HAEB. Anth.= ? [Cologne Addition]"
         },
         {
           "abbr": "SCHLEGEL",
@@ -11292,8 +11620,12 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "WINDISCHMANN",
+          "abbr": "POL.",
           "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "WINDISCHMANN",
+          "expansion": "Friedrich Heinrich Hugo Windischmann (1811-1861), philologist ?[Cologne Addition]"
         },
         {
           "abbr": "JOHNS.",
@@ -11301,6 +11633,14 @@
         },
         {
           "abbr": "JOHNS. Sel.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "HIT. ed. JOHNS.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "HIT. ed. SCHL.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -11362,6 +11702,10 @@
         {
           "abbr": "KĀD.",
           "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "KĀD. (ed. Calc. 1862)",
+          "expansion": "KĀD.(?), Calcutta edition [Cologne Addition]"
         },
         {
           "abbr": "AJAYA",
@@ -11744,6 +12088,14 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "RUDRAYĀMALOTTARAKH.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "RUDRAYĀMALAT.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "RATNĀKARA",
           "expansion": "? [Cologne Addition]"
         },
@@ -11786,10 +12138,6 @@
         {
           "abbr": "SUBHŪTICANDRA",
           "expansion": "? [Cologne Addition]"
-        },
-        {
-          "abbr": "JAṬĀDH.",
-          "expansion": "JAṬĀDHARA? [Cologne Addition]"
         },
         {
           "abbr": "JYOTIṢA",
@@ -11989,6 +12337,10 @@
         },
         {
           "abbr": "BHOJA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "BHOJAPRAB.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -12200,6 +12552,10 @@
           "expansion": "VAHNIPURĀṆA ? [Cologne Addition]"
         },
         {
+          "abbr": "VĀRĀHA-P.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "TAITT. UP.",
           "expansion": "TAITTIRĪYOPANIṢAD ? [Cologne Addition]"
         },
@@ -12333,7 +12689,7 @@
         },
         {
           "abbr": "J. GRIMM",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Jacob Grimm (1785-1863), German author, linguist, philologist, jurist, and folklorist [Cologne Addition]"
         },
         {
           "abbr": "GRIMM, Wört.",
@@ -12372,8 +12728,12 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "Orient und Occident",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "PĀDMA-P.",
-          "expansion": "? (misspell of PADMA-P.?) [Cologne Addition]"
+          "expansion": "PADMAPURĀṆA (misspell of PADMA-P.?) [Cologne Addition]"
         },
         {
           "abbr": "PTOLEMAEUS",
@@ -12412,7 +12772,7 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "RÖER",
+          "abbr": "ROER",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -12516,6 +12876,10 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "SUPADMAVYĀKARAṆA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "Sp.",
           "expansion": "? [Cologne Addition]"
         },
@@ -12568,6 +12932,10 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "VṚDDHA-KĀṆ.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "VṚDDHA-M.",
           "expansion": "? [Cologne Addition]"
         },
@@ -12577,6 +12945,10 @@
         },
         {
           "abbr": "Vie de HIOUEN-THSANG",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "Vie de Hiouen-thsang",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -12610,6 +12982,14 @@
         {
           "abbr": "WILKINS",
           "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "WILKINS Ms.",
+          "expansion": "WILKINS Ms.= ? [Cologne Addition]"
+        },
+        {
+          "abbr": "WILKINS, Gramm.",
+          "expansion": "WILKINS , Gramm.= ? [Cologne Addition]"
         },
         {
           "abbr": "WINDISCH",
@@ -12716,7 +13096,7 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "YAJÑAD.",
+          "abbr": "YAJÑAD.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -12789,10 +13169,6 @@
         },
         {
           "abbr": "DHĀT.",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
-          "abbr": "SĀṂKHYAK.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -12876,7 +13252,7 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "YAJÑ.",
+          "abbr": "YAJÑ.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -12972,10 +13348,6 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "MAHĀVĪRAC.",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
           "abbr": "NAIG.",
           "expansion": "? [Cologne Addition]"
         },
@@ -13024,7 +13396,7 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "YAJÑADATTAV.",
+          "abbr": "YAJÑADATTAV.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -13076,10 +13448,6 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "KUVALAY.",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
           "abbr": "NĪDĀNAS.",
           "expansion": "? [Cologne Addition]"
         },
@@ -13092,23 +13460,11 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "SAṂKHYAK2.",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
           "abbr": "UTTARARĀM.",
           "expansion": "? [Cologne Addition]"
         },
         {
           "abbr": "RAGG.",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
-          "abbr": "PAÑCKAR.",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
-          "abbr": "HVRIV.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -13520,11 +13876,11 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "YĀJAÑ.",
+          "abbr": "YĀJAÑ.",
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "YAJÑADATT.",
+          "abbr": "YAJÑADATT.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -13617,10 +13973,6 @@
         },
         {
           "abbr": "VIVĀDĀC.",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
-          "abbr": "KUAVLAY.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -13728,10 +14080,6 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "LĀṬY.",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
           "abbr": "PŪRVACĀTAKĀṢṬ.",
           "expansion": "? [Cologne Addition]"
         },
@@ -13816,15 +14164,15 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "Bibl. Ind. new ser.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "ŚĀŚVATA.",
           "expansion": "? [Cologne Addition]"
         },
         {
           "abbr": "ŚĀŚVATA",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
-          "abbr": "ŚĀRṄG. SAṂH.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -13892,12 +14240,16 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "NĀRAS. P.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "NĀRASIṂHA-P.",
           "expansion": "? [Cologne Addition]"
         },
         {
           "abbr": "RĀM. ed. Bomb.",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Bombay ed. of Rāmāyaṇa, 1859-1864 [Cologne addition]"
         },
         {
           "abbr": "ŚĀNTIKALPA",
@@ -13965,7 +14317,7 @@
         },
         {
           "abbr": "COWELL",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Edward Byles Cowell (1826-1903), first professor of Sanskrit at Cambridge University. [Cologne Addition]"
         },
         {
           "abbr": "HARIBHAKTIVILĀSA",
@@ -14276,10 +14628,6 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "SĀMAVIGH. BR.",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
           "abbr": "Verz. d. Cambr. K.",
           "expansion": "? [Cologne Addition]"
         },
@@ -14520,10 +14868,6 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "JYOT.",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
           "abbr": "MAITR.",
           "expansion": "? [Cologne Addition]"
         },
@@ -14581,6 +14925,10 @@
         },
         {
           "abbr": "VARṆAVIVEKA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "VARṆAV.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -15756,6 +16104,10 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "BHŪTAŚUDDHIPRAKARAṆA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "SVĀMAN",
           "expansion": "? [Cologne Addition]"
         },
@@ -15778,6 +16130,10 @@
         {
           "abbr": "GADĀDHARABHAṬṬĀCĀRYA",
           "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "GADĀDHARA",
+          "expansion": "GADĀDHARA= ? [Cologne Addition]"
         },
         {
           "abbr": "JALĀŚAYATATTVA",
@@ -15857,10 +16213,6 @@
         },
         {
           "abbr": "ANEKĀRTHADHVANIMAÑJARĪ",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
-          "abbr": "JYOTIST.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -16012,10 +16364,6 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "RAKṢITA",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
           "abbr": "ATHARVAŚ.",
           "expansion": "? [Cologne Addition]"
         },
@@ -16077,10 +16425,6 @@
         },
         {
           "abbr": "NAKULA",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
-          "abbr": "JYOTISTATTVA",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -16216,6 +16560,10 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "PAT. a. a. O.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "ĀP. PRAJ.",
           "expansion": "? [Cologne Addition]"
         },
@@ -16301,10 +16649,6 @@
         },
         {
           "abbr": "ŚAṂKARAJAYA",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
-          "abbr": "SAṂGĪTADĀM.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -16433,6 +16777,10 @@
         },
         {
           "abbr": "RĀDHĀKĀNTA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "RĀDHĀKĀNTADEVA",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -16688,10 +17036,6 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "VOP",
-          "expansion": "? [Cologne Addition]"
-        },
-        {
           "abbr": "YOGIYĀJÑAVALKYA",
           "expansion": "? [Cologne Addition]"
         },
@@ -16761,6 +17105,10 @@
         },
         {
           "abbr": "NĀDAPURĀṆA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "VAṂŚABR.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -17012,6 +17360,10 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "ĀRYĀS.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "BHAGAṆĀDHY.",
           "expansion": "? [Cologne Addition]"
         },
@@ -17025,7 +17377,7 @@
         },
         {
           "abbr": "Cow.",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Edward Byles Cowell (1826-1903), first professor of Sanskrit at Cambridge University. [Cologne Addition]"
         },
         {
           "abbr": "JĀBĀLI",
@@ -17196,6 +17548,10 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "BHĀṢYA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "HANUMATSTOTRA",
           "expansion": "? [Cologne Addition]"
         },
@@ -17269,6 +17625,10 @@
         },
         {
           "abbr": "GOL. BHUVANAK.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "GOLĀDHY. BHUVANAK.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -17392,6 +17752,10 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "JĪVANMUKTIVIV",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "CAṆḌI",
           "expansion": "? [Cologne Addition]"
         },
@@ -17426,6 +17790,14 @@
         {
           "abbr": "VARĀH. LAGH.",
           "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "LAGH.",
+          "expansion": "= ? VARĀH. LAGH. [Cologne Addition]"
+        },
+        {
+          "abbr": "VIŚVALOCANA",
+          "expansion": "VIŚVALOCANA= ? [Cologne Addition]"
         },
         {
           "abbr": "Hindu Th.",
@@ -17484,6 +17856,14 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "VEDĀNTADARŚANA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "NARASIṂHA-P.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "RĀMAT.",
           "expansion": "? [Cologne Addition]"
         },
@@ -17500,6 +17880,10 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "CANDRAGRAHAṆĀDHY.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "KĀṬH. AŚV.",
           "expansion": "? [Cologne Addition]"
         },
@@ -17512,16 +17896,12 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "PRB. (print unclear)",
+          "abbr": "PRB.",
           "expansion": "? [Cologne Addition]"
         },
         {
           "abbr": "TS. PRĀT.",
           "expansion": "? [Cologne Addition]"
-        },
-        {
-          "abbr": "PRATIJÑĀS.",
-          "expansion": "PRATIJÑĀSŪTRA ? [Cologne Addition]"
         },
         {
           "abbr": "PRATIJÑĀS.",
@@ -17860,7 +18240,7 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "JAIMINIBHĀRATA",
+          "abbr": "JAIM. BHĀR.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -17953,7 +18333,11 @@
         },
         {
           "abbr": "WEST. Dhātup.",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Radices Linguae Sanscrite by N. L. Westergaard, 1841 [Cologne Addition]"
+        },
+        {
+          "abbr": "WEST. DHĀTUP.",
+          "expansion": "Radices Linguae Sanscrite by N. L. Westergaard, 1841 [Cologne Addition]"
         },
         {
           "abbr": "RĀMAŚARMAN",
@@ -18064,6 +18448,10 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "UTPALINĪKOŚA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "KACCĀYANAPPAKARAṆAB",
           "expansion": "? [Cologne Addition]"
         },
@@ -18156,6 +18544,10 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "VIŚVAPR.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "NAKṢATRAKALPA",
           "expansion": "? [Cologne Addition]"
         },
@@ -18200,6 +18592,10 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "KÖPPEN. Rel. des. Buddha",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
           "abbr": "VIŚVASĀRATANTRA",
           "expansion": "? [Cologne Addition]"
         },
@@ -18209,7 +18605,7 @@
         },
         {
           "abbr": "WEST. Rad.",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Radices Linguae Sanscrite by N. L. Westergaard, 1841 [Cologne Addition]"
         },
         {
           "abbr": "SAṂKṢIPTAS. ŚKDR.",
@@ -18229,11 +18625,11 @@
         },
         {
           "abbr": "WESTERGAARD, Radices",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Radices Linguae Sanscrite by N. L. Westergaard, 1841 [Cologne Addition]"
         },
         {
           "abbr": "WEST. Radices",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Radices Linguae Sanscrite by N. L. Westergaard, 1841 [Cologne Addition]"
         },
         {
           "abbr": "RĀJ.",
@@ -18309,6 +18705,10 @@
         },
         {
           "abbr": "SMṚTITATTVA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "SMṚTITANTRA",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -18465,6 +18865,10 @@
         },
         {
           "abbr": "MÜLLER'S",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "M. MÜLLER'S",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -18660,7 +19064,7 @@
           "expansion": "? [Cologne Addition]"
         },
         {
-          "abbr": "Monatsber. der Berl. AK.",
+          "abbr": "Monatsber. der Berl. Ak.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -18713,6 +19117,14 @@
         },
         {
           "abbr": "CANDRAGOMIN",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "CANDRAKĪRTI",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "CANDRĀLOKA",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -18809,7 +19221,7 @@
         },
         {
           "abbr": "R. GORR.",
-          "expansion": "? [Cologne Addition]"
+          "expansion": "Rāmāyaṇa, Gorresio edition, 1843--1867 [Cologne Addition]"
         },
         {
           "abbr": "PRAKĪRṆĀKHY",
@@ -18821,6 +19233,10 @@
         },
         {
           "abbr": "ŚRUT. (BR.)",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "ŚRUT. BR.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -18869,6 +19285,10 @@
         },
         {
           "abbr": "MĀNAV.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "WILSON, Hindu Th.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -18928,11 +19348,19 @@
           "expansion": "? [Cologne Addition]"
         },
         {
+          "abbr": "R. (ed. ŚRĪR.)",
+          "expansion": "RĀMĀYAṆA Śrīr. (?) edition[Cologne Addition]"
+        },
+        {
           "abbr": "VĀTSY. K.",
           "expansion": "? [Cologne Addition]"
         },
         {
           "abbr": "HEMĀDRĪYAVRATAKHAṆḌA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "WEBER, PRATIJÑĀS.",
           "expansion": "? [Cologne Addition]"
         },
         {
@@ -18945,16 +19373,224 @@
         },
         {
           "abbr": "Буслаева",
-          "expansion": "Буслаева, Опытъ истор. гр. русскаго языка [Cologne Addition]"
+          "expansion": "Ѳ. Буслаевъ. Опытъ исторической грамматики русскаго языка. Москва, 1858. (F. Buslaev. An experimental historical grammar of Russian language. Moscow, 1858.) [Cologne Addition]"
+        },
+        {
+          "abbr": "Минаевъ",
+          "expansion": "И. Минаевъ. Пратимокша-сутра, буддійскій служебникъ. Санктпетербургъ, 1869. (I. Minaev (also Minayev, Minayeff). Prātimokṣa-sūtra, a buddhist ritual book. Sankt-Peterburg, 1869.) [Cologne Addition]"
+        },
+        {
+          "abbr": "Антарабида",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "Jahresb. d. d. m. G.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "ed. Bomb.",
+          "expansion": "Bombay ed. of Rāmāyaṇa, 1859-1864 OR of Mahābhārata, 1863-1877 [Cologne addition]"
+        },
+        {
+          "abbr": "ed. Calc.",
+          "expansion": "Calcutta edition of various works [Cologne addition]"
+        },
+        {
+          "abbr": "VIJÑĀNEŚVARA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "CHAMB.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "KĀṆVa-Rec.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "VIKR. (LENZ)",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "SV. Padap.",
+          "expansion": "SĀMAVEDA padapĀṭha ? [Cologne Addition]"
+        },
+        {
+          "abbr": "IL.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "Bibl. ind.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "LACEPÉDE",
+          "expansion": "? Bernard Germain de Lacépède, contributor to Histoire Naturelle, générale et particulière [Cologne Addition]"
+        },
+        {
+          "abbr": "SCHLEICHER, Lit. Gr.",
+          "expansion": "? Lithuanian Grammar, byAugust Schleicher (1821-1868) [Cologne Addition]"
+        },
+        {
+          "abbr": "LANGLOIS t. I.",
+          "expansion": "Chefs-d'oeuvre du théatre indien, 1828 French translation by Alexandre Langlois[Cologne Addition]"
+        },
+        {
+          "abbr": "ŚĀK. (ed. WILL.)",
+          "expansion": "Śākuntala, translated by Monier-Williams, 1853 [Cologne Addition]"
+        },
+        {
+          "abbr": "ŚĀK. (ed. MON. WILL.)",
+          "expansion": "Śākuntala, translated by Monier-Williams, 1853 [Cologne Addition]"
+        },
+        {
+          "abbr": "KĀŚĪN.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "z. B. MED. j.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "MĀLATĪM. (ed. LASS.)",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "MĀLATĪM. ed. LASS.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "ARIEL",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "KAVIRAU.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "ĀYODA MBH.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "CURTIUS, Griech. Etym.",
+          "expansion": "Grundzüge der griechischen etymologie (1879) by Georg Curtius (1820-1885) [Cologne Addition]"
+        },
+        {
+          "abbr": "?",
+          "expansion": "Unknown to us. Can you help? [Cologne Addition]"
+        },
+        {
+          "abbr": "DURGĀSTAVA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "BRAHMASIDDH.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "ALAṂK. K.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "DURGĀCĀRYA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "TS. Comm.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "lith. Ausg.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "ŚĀKALYASAṂHITĀPARIŚIṢṬA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "YOGATATTVOP.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "Journ. of the R. A. S.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "KOPPEN",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "PACCAR.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "AUṢ.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "VIKRAMĀṄKADEVACARITA",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "RÖER",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "R. ed. ŚRĪR.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "SARVOPAN.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "VṚNDĀVANAŚ.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "CARR, Sanskrit Proverbs",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "WEBER, Indische Skizzen",
+          "expansion": "? WEBER, Indische Skizzen [Cologne Addition]"
+        },
+        {
+          "abbr": "ŚUK. (Pet. Hdschr.)",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "WEBER, Ind. Streifen",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "GOLĀDHY. SPHUṬAGATIV.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "GOLĀDHY. GRAHMAṆAV.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "WEBER, Indische Streifen",
+          "expansion": "Indische streifen. Eine sammlung von bisher in zeitschriften zerstreuten kleineren abhandlungen, 1868 by Albrecht Weber [Cologne Addition]"
+        },
+        {
+          "abbr": "KĀṬAV.",
+          "expansion": "? [Cologne Addition]"
+        },
+        {
+          "abbr": "X",
+          "expansion": "? [Cologne Addition]"
         }
       ],
       "grammatical": [],
       "mixed": [],
       "counts": {
-        "works": 2595,
+        "works": 2754,
         "grammatical": 0,
         "mixed": 0,
-        "total": 2595
+        "total": 2754
       }
     },
     {
@@ -18968,9 +19604,21 @@
       "lang": "de",
       "langLabel": "German",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/GRA/blob/master/graab/abbrevs/extract_abbrev.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/GRA/blob/master/graab/abbrevs/graab_input.txt",
       "works": [],
       "grammatical": [
+        {
+          "abbr": "1.",
+          "expansion": "1sten/ersten"
+        },
+        {
+          "abbr": "2.",
+          "expansion": "2ten/zweiten"
+        },
+        {
+          "abbr": "3.",
+          "expansion": "3ten/dritten"
+        },
         {
           "abbr": "a.",
           "expansion": "adjektiv"
@@ -19056,12 +19704,76 @@
           "expansion": "adverb"
         },
         {
+          "abbr": "ags.",
+          "expansion": "Anglo-Saxon"
+        },
+        {
+          "abbr": "ahd.",
+          "expansion": "Old High German"
+        },
+        {
           "abbr": "Ait.",
           "expansion": "Aiton"
         },
         {
+          "abbr": "altfries.",
+          "expansion": "Old Frisian"
+        },
+        {
+          "abbr": "althd.",
+          "expansion": "Old High German"
+        },
+        {
+          "abbr": "althochd.",
+          "expansion": "Old High German"
+        },
+        {
+          "abbr": "altlat.",
+          "expansion": "Old Latin"
+        },
+        {
+          "abbr": "altn.",
+          "expansion": "Old Icelandic"
+        },
+        {
+          "abbr": "altnord.",
+          "expansion": "Old Icelandic"
+        },
+        {
+          "abbr": "altpreuss.",
+          "expansion": "Old Prussian"
+        },
+        {
+          "abbr": "alts.",
+          "expansion": "Old Slavonic"
+        },
+        {
+          "abbr": "altsl.",
+          "expansion": "Old Slavonic"
+        },
+        {
+          "abbr": "altslav.",
+          "expansion": "Old Slavonic"
+        },
+        {
+          "abbr": "altslaw.",
+          "expansion": "Old Slavonic"
+        },
+        {
+          "abbr": "altslov.",
+          "expansion": "Old Slovene"
+        },
+        {
+          "abbr": "altsächs.",
+          "expansion": "Old Saxon"
+        },
+        {
           "abbr": "and.",
           "expansion": "anders"
+        },
+        {
+          "abbr": "angels.",
+          "expansion": "Anglo-Saxon"
         },
         {
           "abbr": "Anm.",
@@ -19074,6 +19786,10 @@
         {
           "abbr": "Aor.",
           "expansion": "Aorist"
+        },
+        {
+          "abbr": "armen.",
+          "expansion": "Armenian"
         },
         {
           "abbr": "Augm.",
@@ -19102,6 +19818,10 @@
         {
           "abbr": "Brahmanasp.",
           "expansion": "Brahmanaspati"
+        },
+        {
+          "abbr": "böhm.",
+          "expansion": "Bohemian"
         },
         {
           "abbr": "bṛ́hasp.",
@@ -19138,6 +19858,10 @@
         {
           "abbr": "Causat.",
           "expansion": "Causativ"
+        },
+        {
+          "abbr": "celt.",
+          "expansion": "Celtic"
         },
         {
           "abbr": "Citr.",
@@ -19272,6 +19996,10 @@
           "expansion": "Endung"
         },
         {
+          "abbr": "engl.",
+          "expansion": "English"
+        },
+        {
           "abbr": "erg.",
           "expansion": "ergänze"
         },
@@ -19304,6 +20032,10 @@
           "expansion": "folgende"
         },
         {
+          "abbr": "französ.",
+          "expansion": "French"
+        },
+        {
           "abbr": "fut.",
           "expansion": "futurum"
         },
@@ -19328,6 +20060,10 @@
           "expansion": "Genetiv"
         },
         {
+          "abbr": "germ.",
+          "expansion": "German"
+        },
+        {
           "abbr": "Ggs.",
           "expansion": "Gegensatz"
         },
@@ -19336,8 +20072,28 @@
           "expansion": "Gmelin"
         },
         {
+          "abbr": "go.",
+          "expansion": "Gothic"
+        },
+        {
+          "abbr": "got.",
+          "expansion": "Gothic"
+        },
+        {
+          "abbr": "goth.",
+          "expansion": "Gothic"
+        },
+        {
+          "abbr": "gr.",
+          "expansion": "Greek"
+        },
+        {
           "abbr": "Gramm.",
           "expansion": "Grammatikern"
+        },
+        {
+          "abbr": "griech.",
+          "expansion": "Greek"
         },
         {
           "abbr": "Gärtn.",
@@ -19352,8 +20108,20 @@
           "expansion": "Handschrift"
         },
         {
+          "abbr": "hebr.",
+          "expansion": "Hebrew"
+        },
+        {
+          "abbr": "hochd.",
+          "expansion": "High German"
+        },
+        {
           "abbr": "Hymn.",
           "expansion": "Hymne"
+        },
+        {
+          "abbr": "hzv.",
+          "expansion": "Middle Persian/Pahlavi (‘Huzvaresh’ script)"
         },
         {
           "abbr": "I.",
@@ -19464,6 +20232,10 @@
           "expansion": "Karañja"
         },
         {
+          "abbr": "kambr.",
+          "expansion": "Kambrian"
+        },
+        {
           "abbr": "Kons.",
           "expansion": "Konsonanten"
         },
@@ -19476,16 +20248,40 @@
           "expansion": "lesen"
         },
         {
+          "abbr": "la.",
+          "expansion": "Latin"
+        },
+        {
           "abbr": "Lam.",
           "expansion": "Lamarck"
+        },
+        {
+          "abbr": "lat.",
+          "expansion": "Latin"
+        },
+        {
+          "abbr": "latein.",
+          "expansion": "Latin"
         },
         {
           "abbr": "les.",
           "expansion": "lesen"
         },
         {
+          "abbr": "lett.",
+          "expansion": "Lettish"
+        },
+        {
           "abbr": "Lin.",
           "expansion": "Linnaeus"
+        },
+        {
+          "abbr": "lit.",
+          "expansion": "Lithuanian"
+        },
+        {
+          "abbr": "litth.",
+          "expansion": "Lithuanian"
         },
         {
           "abbr": "Lo.",
@@ -19540,6 +20336,14 @@
           "expansion": "Mitra"
         },
         {
+          "abbr": "mittelh.",
+          "expansion": "Middle High German"
+        },
+        {
+          "abbr": "mittelhochd.",
+          "expansion": "Middle High German"
+        },
+        {
           "abbr": "ms.",
           "expansion": "manuscriptum"
         },
@@ -19556,8 +20360,20 @@
           "expansion": "Nota Bene"
         },
         {
+          "abbr": "ndd.",
+          "expansion": "Low German"
+        },
+        {
           "abbr": "neb.",
           "expansion": "neben"
+        },
+        {
+          "abbr": "neuhd.",
+          "expansion": "New High German"
+        },
+        {
+          "abbr": "neuhochd.",
+          "expansion": "New High German"
         },
         {
           "abbr": "neutr.",
@@ -19610,6 +20426,14 @@
         {
           "abbr": "Ortsadv.",
           "expansion": "Ortsadverb"
+        },
+        {
+          "abbr": "osc.",
+          "expansion": "Oscan"
+        },
+        {
+          "abbr": "osk.",
+          "expansion": "Oscan"
         },
         {
           "abbr": "p.",
@@ -19710,6 +20534,10 @@
         {
           "abbr": "Plusquampf.",
           "expansion": "Plusquamperfekt"
+        },
+        {
+          "abbr": "poln.",
+          "expansion": "Polish"
         },
         {
           "abbr": "pp.",
@@ -19832,6 +20660,10 @@
           "expansion": "Roxburghii"
         },
         {
+          "abbr": "russ.",
+          "expansion": "Russian"
+        },
+        {
           "abbr": "s.",
           "expansion": "singular"
         },
@@ -19850,6 +20682,22 @@
         {
           "abbr": "s. u.",
           "expansion": "siehe unter"
+        },
+        {
+          "abbr": "sankr.",
+          "expansion": "Sanskrit"
+        },
+        {
+          "abbr": "sanskr.",
+          "expansion": "Sanskrit"
+        },
+        {
+          "abbr": "Sanskrit",
+          "expansion": "Sanskrit"
+        },
+        {
+          "abbr": "sanskrit",
+          "expansion": "Sanskrit"
         },
         {
           "abbr": "sc.",
@@ -19874,6 +20722,14 @@
         {
           "abbr": "sing.",
           "expansion": "singular"
+        },
+        {
+          "abbr": "skt.",
+          "expansion": "Sanskrit"
+        },
+        {
+          "abbr": "slav.",
+          "expansion": "Slavonic"
         },
         {
           "abbr": "spr.",
@@ -19960,6 +20816,10 @@
           "expansion": "und so weiter"
         },
         {
+          "abbr": "umbr.",
+          "expansion": "Umbrian"
+        },
+        {
           "abbr": "unpers.",
           "expansion": "unpersönlich"
         },
@@ -19994,6 +20854,10 @@
         {
           "abbr": "Var.",
           "expansion": "Variante"
+        },
+        {
+          "abbr": "ved.",
+          "expansion": "Vedic"
         },
         {
           "abbr": "Verg. Aen.",
@@ -20064,8 +20928,24 @@
           "expansion": "zum Beispiel"
         },
         {
+          "abbr": "zd.",
+          "expansion": "Zend"
+        },
+        {
           "abbr": "zeitl.",
           "expansion": "zeitlich"
+        },
+        {
+          "abbr": "Zend",
+          "expansion": "Zend"
+        },
+        {
+          "abbr": "Zend.",
+          "expansion": "Zend"
+        },
+        {
+          "abbr": "zend.",
+          "expansion": "Zend"
         },
         {
           "abbr": "zu.",
@@ -20084,6 +20964,10 @@
           "expansion": "ähnliche"
         },
         {
+          "abbr": "äol.",
+          "expansion": "Aeolic"
+        },
+        {
           "abbr": "üb.",
           "expansion": "über"
         }
@@ -20091,9 +20975,9 @@
       "mixed": [],
       "counts": {
         "works": 0,
-        "grammatical": 279,
+        "grammatical": 341,
         "mixed": 0,
-        "total": 279
+        "total": 341
       }
     },
     {

@@ -45,8 +45,8 @@ const SOURCES = {
   SHS:  {repo: 'SHS',      branch: 'main',   file: 'issues/issue1/shs_listed_abbrs.txt',        parser: 'tabsp',    lang: 'en', type: 'grammatical'},
   AP:   {repo: 'AP',       branch: 'main',   file: 'issues/issue2/AP57.printed.abbrs.txt',      parser: 'tabsp',    lang: 'en', type: 'grammatical'},
   STC:  {repo: 'csl-orig', branch: 'master', file: 'v02/stc/abbrev/abbreviationsStchoupak.txt', parser: 'tab',      lang: 'fr'},
-  GRA:  {repo: 'GRA',      branch: 'master', file: 'graab/abbrevs/extract_abbrev.txt',          parser: 'gracolon', lang: 'de', type: 'grammatical'},
-  PWG:  {repo: 'PWG',      branch: 'master', file: 'pwg_ls1/pwgauth/pwgbib.txt',                parser: 'pwghi',    lang: 'de', type: 'works'},
+  GRA:  {repo: 'GRA',      branch: 'master', file: 'graab/abbrevs/graab_input.txt',             parser: 'disp',     lang: 'de', type: 'grammatical'},
+  PWG:  {repo: 'PWG',      branch: 'master', file: 'pwgissues/issue74/pwgbib_input.txt',        parser: 'pwgtab',   lang: 'de', type: 'works'},
   PW:   {repo: 'PWK',      branch: 'master', file: 'pw_ls/pwbib/pwbib_utf8.txt',                parser: 'pwbib',    lang: 'de', type: 'works'},
   INM:  {repo: 'csl-orig', branch: 'master', file: 'v02/inm/inm_abbr.txt',                      parser: 'inmhi',    lang: 'en'},
   BOP:  {repo: 'BOP',      branch: 'main',   file: {works: 'issues/issue6/cdsl/abbrevs/bopauth.txt', grammatical: 'issues/issue6/cdsl/abbrevs/bopab.txt'}, parser: 'tab', lang: 'la'},
@@ -210,23 +210,14 @@ const PARSERS = {
       pushUnique(bucket, line.slice(0, tab), line.slice(tab + 1));
     }
   },
-  // abbr:expansion:freq   (GRA)
-  gracolon(text, bucket) {
+  // seq <TAB> ABBR <TAB> Abbr <TAB> "ABBR = title"   (PWG bibliography input)
+  pwgtab(text, bucket) {
     for (const line of text.split(/\r?\n/)) {
-      const p = line.split(':');
-      if (p.length < 2) continue;
-      pushUnique(bucket, p[0], p[1]);
-    }
-  },
-  // seq <HI code=".." iast="..">ABBR. = TITLE   (PWG bibliography)
-  pwghi(text, bucket) {
-    for (const line of text.split(/\r?\n/)) {
-      const gt = line.indexOf('>');
-      if (gt < 0 || !/<HI/i.test(line)) continue;
-      const body = clean(line.slice(gt + 1).replace(/^\*/, ''));
-      const eq = body.indexOf(' = ');
-      if (eq < 0) continue;
-      pushUnique(bucket, body.slice(0, eq), body.slice(eq + 3));
+      const p = line.split('\t');
+      if (p.length < 4) continue;
+      const abbr = p[1];
+      const eq = p[3].indexOf(' = ');
+      pushUnique(bucket, abbr, eq >= 0 ? p[3].slice(eq + 3) : p[3]);
     }
   },
   // [+.|<...>|[...]] AS-abbr == AS-title (vol. N)   (PW bibliography, AS-encoded)

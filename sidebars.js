@@ -114,9 +114,12 @@ const sidebars = {
       collapsed: false,
       items: [
         'contributing/overview',
+        'contributing/report-a-typo',
+        'contributing/process-one-correction',
+        'contributing/process-scott-batch',
         'contributing/corrections-workflow',
-        'contributing/issue-taxonomy',
         'contributing/change-files',
+        'contributing/issue-taxonomy',
       ],
     },
   ],

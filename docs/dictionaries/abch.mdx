@@ -1,0 +1,75 @@
+---
+id: abch
+title: Abhidhānacintāmaṇi (ABCH)
+description: "Guide to Hemacandra's Abhidhānacintāmaṇi (ABCH) on CDSL — the classic Jain synonym kośa, grouping synonyms by concept in verse."
+sidebar_label: Abhidhānacintāmaṇi (ABCH)
+---
+
+# Hemacandra, *Abhidhānacintāmaṇi* (`ABCH`)
+
+`ABCH` is Hemacandrācārya's *Abhidhānacintāmaṇi* — one of the most celebrated **synonym
+dictionaries (kośa)** in the Sanskrit tradition. Unlike a bilingual dictionary, it is a
+**versified thesaurus**: it groups the **synonyms of a concept** together, arranged by subject
+sections (*kāṇḍa*). It is a Jain work (the first section treats the *Arhat* / Jina).
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `ABCH` (source in [`csl-orig/v02/abch`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/abch); no separate repo) |
+| **Full title** | *Abhidhānacintāmaṇi* |
+| **Author** | Hemacandrācārya |
+| **Size** | ~**58** pages (xiv+58) |
+| **Type** | Synonym kośa (Sanskrit, in verse) |
+| **Accents** | No |
+| **Source** | [`csl-orig/v02/abch/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/abch) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2020/web/webtc/download.html) |
+| **csl-doc** | [abch.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/abch.rst) |
+
+## When to use it
+
+Reach for `ABCH` to find the **classical synonyms** of a word, or to read the *kośa* tradition
+directly. It answers "what are the Sanskrit words for X?" rather than "what does X mean in
+English." For meanings in English use **[Monier-Williams (MW)](mw)**. See also the
+**[supplement (ACPH)](acph)** and **[gleanings (ACSJ)](acsj)** to this kośa, and the larger
+modern kośas **[SKD](skd)** / **[VCP](vcp)**.
+
+## Looking up a word
+
+Open the **Basic** display, pick your input/output transliteration (see
+[Encoding & Transliteration](../users/encoding-transliteration)), and type a word — you land in
+the synonym group that contains it. See [Search & Display](../users/search-and-display).
+
+## Reading an entry
+
+Each entry is a **synonym group** (`<syns>`) for one concept, followed by the **verse** that
+states them; the section is named in `<info kvvv>`. The first entry — synonyms of the *Arhat*
+(`csl-orig/v02/abch/abch.txt`):
+
+```
+<L>1<pc>5
+<info kvvv="<s>devADidevakARqaH</s>"/>
+<eid>1<syns><s>arhan-puM,jina-puM,pAragata-puM,trikAlavit-puM,…</s>
+<s>arhaYjinaH pAragatastrikAlavitkzIRAzwakarmA paramezWyaDISvaraH .</s>
+```
+
+| In the source | Meaning |
+|---|---|
+| `<info kvvv="…devADidevakARqaH">` | the subject section (*kāṇḍa*) — here "of gods" |
+| `<eid>1` | the entry id |
+| `<syns><s>arhan-puM, jina-puM, …</s>` | the **synonyms** (each tagged with gender, e.g. `-puM` = masculine) |
+| the line of `<s>…</s>` verse | the original **verse** stating those synonyms |
+
+See [Data Formats](../developers/data-formats) for the markup reference.
+
+## What makes it distinctive
+
+- **A synonym thesaurus, in verse.** Groups the Sanskrit words for a concept, by section.
+- **The classic Jain kośa** by Hemacandra — with its own [supplement](acph) and [gleanings](acsj).
+
+## See also
+
+- **[Abhidhānacintāmaṇi-pariśiṣṭa (ACPH)](acph)** · **[Abhidhānacintāmaṇi-śiloñcha (ACSJ)](acsj)** — its supplement and gleanings
+- **[Abhidhānaratnamālā (ARMH)](armh)** — another synonym kośa · **[SKD](skd)** / **[VCP](vcp)** — the large modern kośas
+- The full **[catalog](catalog)** · **csl-doc** [abch.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/abch.rst)

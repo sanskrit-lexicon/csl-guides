@@ -23,6 +23,22 @@ integrated, and the same people (Malten, Scharf, Jim Funderburk) recur across bo
 began as distinct projects with their own funding and goals. The single timeline below braids
 them together up to the present site.
 
+```mermaid
+flowchart LR
+    subgraph C["Cologne / CDSL lineage"]
+        direction LR
+        C1["1994<br/>IITS Cologne<br/>digitization begins"] --> C2["c.2003<br/>'Sanskrit & Tamil<br/>Dictionaries' search<br/>(Malten · Stöwe)"]
+    end
+    subgraph S["Sanskrit Library lineage"]
+        direction LR
+        S1["2002<br/>Sanskrit Library founded<br/>(Scharf · Hyman)"] --> S2["2003–04<br/>Whitney's Roots<br/>digital edition"]
+    end
+    C2 --> M["2006–09<br/>NSF Digital Sanskrit<br/>Library Integration @ Brown<br/>Scharf · Gippert · Malten"]
+    S2 --> M
+    M --> P["2010–14<br/>DFG–NEH funding +<br/>per-dictionary web apps"]
+    P --> N["Today<br/>42 dictionaries · apidev API<br/>this site"]
+```
+
 This page is the long-form origin story. For the project's own dated version log of *recent*
 releases, see the [History](history) timeline; for the publications it rests on, see
 [Publications & Bibliography](publications).

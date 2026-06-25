@@ -115,31 +115,115 @@
   color: var(--ifm-color-emphasis-700);
 }
 
-/* The injected CDSL entry markup (the relative basic.css is dropped on purpose). A few
-   rules keep the semantic tags readable; full fidelity is a polish follow-up. */
+/* The injected CDSL entry markup. The site's own `css/basic.css` is dropped on purpose (its
+   href is relative and off-site, and it ships local @font-face files we can't load). The
+   rules below replicate enough of basic.css — scaled down for a narrow comparison column — so
+   an injected entry reads like the native CDSL display: teal Devanāgarī, gray source
+   citations, the indent/line-height of the `display` table, and the small print/record refs.
+   Values mirror basic.css proportionally (its 14pt base → our 0.95rem); colors are taken
+   verbatim (teal `.sdata`, gray `.ls`, red `.hom`, blue `.asdata`). Source-supplied inline
+   styles (e.g. MW's `color:#8080ff` abbreviations, PWG's `color:blue` links, botanical
+   `color:brown`) intentionally win over these class rules, exactly as they do natively. */
 .entry {
-  font-size: 0.92rem;
-  line-height: 1.5;
+  font-family: 'Old Standard TT', Charis SIL, Gentium, Palatino, 'Palatino Linotype', Georgia, serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
   max-height: 30rem;
   overflow: auto;
   word-break: break-word;
 }
 
-.entry :global(h1) {
-  font-size: 1.1rem;
-  margin: 0 0 0.5rem;
+/* Devanāgarī Sanskrit — basic.css `.sdata`/`.sdata_siddhanta` (teal). The siddhanta_deva
+   font is a local file on the Cologne host we can't load, so we keep the signature color
+   and fall back to the system Devanāgarī serif. */
+.entry :global(.sdata),
+.entry :global(.sdata_siddhanta),
+.entry :global(.displist) {
+  color: teal;
+  font-family: 'Noto Serif Devanagari', 'Sanskrit 2003', 'Siddhanta', serif;
 }
 
+/* Headword line — basic.css h1 is 24pt over a 14pt base (≈1.7×); not bold natively. */
+.entry :global(h1) {
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 0 0 0.4rem;
+  line-height: 1.2;
+}
+
+/* The `display` table is the entry body; native td uses line-height 130% with left padding. */
+.entry :global(table.display),
 .entry :global(table) {
   border-collapse: collapse;
   width: 100%;
+  font-size: 0.92em;
 }
 
+.entry :global(td.display),
+.entry :global(td) {
+  vertical-align: top;
+  line-height: 1.3;
+  padding: 0.15rem 0.25rem 0.15rem 0.5rem;
+  text-align: left;
+}
+
+/* Source citations (`<ls>`) — basic.css `.ls`: gray, smaller (11pt over 14pt base). */
+.entry :global(.ls) {
+  color: #6a6a6a;
+  font-size: 0.85em;
+}
+
+/* Dotted underline on abbreviation/citation tooltips — basic.css `.dotunder`. */
+.entry :global(.dotunder) {
+  border-bottom: 1px dotted currentColor;
+}
+
+/* Grammar/markers — basic.css `.gram`/`.divm` are bold. */
+.entry :global(.gram),
+.entry :global(.divm) {
+  font-weight: bold;
+}
+
+/* Small print: record id, page-ref, page-break, gloss/lang tags, footnotes. */
+.entry :global(.lnum),
+.entry :global(.hrefdata),
+.entry :global(.pb),
+.entry :global(.g),
+.entry :global(.lang),
+.entry :global(.footnote) {
+  font-size: 0.85em;
+}
+
+/* Homonym number (red), alt-script data (blue, larger), capital-source caption (gray) —
+   basic.css `.hom`/`.asdata`/`.botcap`. */
+.entry :global(.hom) {
+  color: #c0392b;
+}
+
+.entry :global(.asdata) {
+  color: #2a5db0;
+  font-size: 1.05em;
+}
+
+.entry :global(.botcap) {
+  color: #6a6a6a;
+}
+
+/* Lexical category (`<lex>`) — italic, muted (kept from the prior minimal styling). */
 .entry :global(.lex) {
   font-style: italic;
   color: var(--ifm-color-emphasis-700);
 }
 
-.entry :global(.sdata) {
-  font-weight: 600;
+/* In-entry links are inert after sanitizing (handlers stripped). Keep them sober — basic.css
+   makes a:link near-black — rather than the bright theme link color. */
+.entry :global(a) {
+  color: var(--ifm-color-emphasis-800);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--ifm-color-emphasis-400);
+}
+
+.entry :global(p) {
+  padding-left: 0.6rem;
+  margin: 0.3rem 0;
 }

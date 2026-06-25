@@ -1,0 +1,122 @@
+{
+  "title": "Compounds (Samāsa) Quiz",
+  "description": "A quiz on Sanskrit compounds — the dvandva, tatpuruṣa, karmadhāraya, dvigu, bahuvrīhi, and avyayībhāva types — and how a dictionary lists compounds. A cross-dictionary reading skill: most long Sanskrit words you look up are compounds.",
+  "source": {
+    "work": "A Practical Sanskrit Introductory",
+    "author": "Charles Wikner",
+    "year": 1996,
+    "file": "src/wikner.pdf",
+    "lessons": [8, 10, 11],
+    "note": "Compound types and examples are grounded in Wikner Lesson 11.B; the dictionary-lookup angle follows the MW reading guide (compounds are nested as hyphen sub-entries)."
+  },
+  "questions": [
+    {
+      "id": "SM-01", "group": "basics", "type": "concept", "difficulty": "easy",
+      "question": "What is a samāsa, and why does it matter for dictionary lookup?",
+      "answer": "A samāsa is a compound — two or more words joined into a single word. It matters because most long words you meet are compounds; to look one up you usually split it (and dictionaries list compounds under their first member).",
+      "tags": ["basics"]
+    },
+    {
+      "id": "SM-02", "group": "types", "type": "multiple-choice", "difficulty": "medium",
+      "question": "rāmaḥ ca kṛṣṇaḥ ca → rāmakṛṣṇau (\"Rāma and Kṛṣṇa\"). What type of compound?",
+      "options": ["dvandva (copulative)", "tatpuruṣa (determinative)", "bahuvrīhi (possessive)", "avyayībhāva (adverbial)"],
+      "answer": "dvandva (copulative)",
+      "explanation": "A dvandva joins members that would otherwise be linked by 'and' (ca). Here the members are taken separately (itaretara), so the compound is dual.",
+      "tags": ["dvandva"]
+    },
+    {
+      "id": "SM-03", "group": "types", "type": "multiple-choice", "difficulty": "hard",
+      "question": "sukham ca duḥkham ca → sukhaduḥkham, neuter singular (\"pleasure and pain\"). Which dvandva subtype?",
+      "options": ["samāhāra (collective)", "itaretara (separate)", "dvigu", "nañ"],
+      "answer": "samāhāra (collective)",
+      "explanation": "A samāhāra dvandva takes the members collectively as a unit — always neuter singular; pairs of opposites often take this form. (An itaretara dvandva, by contrast, is dual/plural.)",
+      "tags": ["dvandva"]
+    },
+    {
+      "id": "SM-04", "group": "types", "type": "multiple-choice", "difficulty": "medium",
+      "question": "vṛkṣa-mūlam = vṛkṣasya mūlam (\"root of a tree, tree-root\"). What type?",
+      "options": ["tatpuruṣa (determinative)", "dvandva (copulative)", "bahuvrīhi (possessive)", "avyayībhāva (adverbial)"],
+      "answer": "tatpuruṣa (determinative)",
+      "explanation": "In a tatpuruṣa the first member has a case relationship to the second. Here it's a genitive relation (vṛkṣasya), so a ṣaṣṭhī-tatpuruṣa.",
+      "tags": ["tatpurusa"]
+    },
+    {
+      "id": "SM-05", "group": "subtypes", "type": "concept", "difficulty": "hard",
+      "question": "A tatpuruṣa can be classified by the case relation of its first member. What is vṛkṣamūlam (\"tree-root\") called, and why?",
+      "answer": "A ṣaṣṭhī-tatpuruṣa — because dissolved it is vṛkṣasya mūlam, a genitive (ṣaṣṭhī, 6th-case) relation of the first member to the second.",
+      "tags": ["tatpurusa"]
+    },
+    {
+      "id": "SM-06", "group": "subtypes", "type": "multiple-choice", "difficulty": "medium",
+      "question": "pūrṇa-candraḥ = pūrṇaḥ candraḥ (\"full moon\") — the members refer to the same object. What subtype?",
+      "options": ["karmadhāraya", "dvigu", "bahuvrīhi", "dvandva"],
+      "answer": "karmadhāraya",
+      "explanation": "A karmadhāraya (samānādhikaraṇa-tatpuruṣa) is descriptive: dissolved, both members have the SAME case (refer to one object) — adjective + noun.",
+      "tags": ["tatpurusa", "karmadharaya"]
+    },
+    {
+      "id": "SM-07", "group": "subtypes", "type": "multiple-choice", "difficulty": "hard",
+      "question": "A descriptive compound (like a karmadhāraya) but whose first member is a numeral or a direction word — e.g. eka-vacana. What is it called?",
+      "options": ["dvigu", "upapada", "nañ-tatpuruṣa", "avyayībhāva"],
+      "answer": "dvigu",
+      "explanation": "A dvigu has the karmadhāraya sense but a numeral/direction first member (eka- 'one', dvi- 'two', bahu- 'many').",
+      "tags": ["tatpurusa", "dvigu"]
+    },
+    {
+      "id": "SM-08", "group": "subtypes", "type": "multiple-choice", "difficulty": "hard",
+      "question": "a-jñānam = a- + jñānam (\"ignorance\") — a negative particle as first member. What subtype?",
+      "options": ["nañ-tatpuruṣa", "dvigu", "avyayībhāva", "bahuvrīhi"],
+      "answer": "nañ-tatpuruṣa",
+      "explanation": "A nañ-tatpuruṣa has a negative/privative particle (na-, an-, a-) as its first member, giving a negative sense.",
+      "tags": ["tatpurusa", "nan"]
+    },
+    {
+      "id": "SM-09", "group": "subtypes", "type": "multiple-choice", "difficulty": "hard",
+      "question": "kumbha-kāra (\"potter\") = kumbha (\"pot\") + √kṛ (\"to make\") — the second member is a root-derivative. What subtype?",
+      "options": ["upapada", "dvigu", "karmadhāraya", "nañ"],
+      "answer": "upapada",
+      "explanation": "An upapada compound has a dhātu (root) derivative as its second member (here -kāra from √kṛ).",
+      "tags": ["tatpurusa", "upapada"]
+    },
+    {
+      "id": "SM-10", "group": "types", "type": "multiple-choice", "difficulty": "medium",
+      "question": "padmākṣa describes a person, meaning \"whose eyes are like lotuses, lotus-eyed\" (padma + akṣa). What type?",
+      "options": ["bahuvrīhi (possessive)", "tatpuruṣa (determinative)", "dvandva (copulative)", "dvigu"],
+      "answer": "bahuvrīhi (possessive)",
+      "explanation": "A bahuvrīhi is exocentric: it forms an adjective describing something OUTSIDE the compound (the lotus-eyed person), not the eyes themselves.",
+      "tags": ["bahuvrihi"]
+    },
+    {
+      "id": "SM-11", "group": "types", "type": "concept", "difficulty": "hard",
+      "question": "What is the key difference between a tatpuruṣa and a bahuvrīhi with the same members (e.g. 'lotus-eye')?",
+      "answer": "A tatpuruṣa names the thing itself (padma-akṣa = 'a lotus-eye'); a bahuvrīhi describes a third thing that POSSESSES it (padmākṣa = 'the one whose eyes are lotuses, lotus-eyed') — it agrees with a noun expressed or understood.",
+      "tags": ["bahuvrihi", "tatpurusa"]
+    },
+    {
+      "id": "SM-12", "group": "types", "type": "multiple-choice", "difficulty": "medium",
+      "question": "sa-krodham (\"with anger, angrily\") is indeclinable and works as an adverb (sa- + krodha). What type?",
+      "options": ["avyayībhāva (adverbial)", "bahuvrīhi (possessive)", "dvandva (copulative)", "karmadhāraya"],
+      "answer": "avyayībhāva (adverbial)",
+      "explanation": "An avyayībhāva is indeclinable (avyaya) and functions as an adverb; first member an indeclinable/prefix, whole in neuter-singular form (cf. yathā-śraddham 'according to one's faith').",
+      "tags": ["avyayibhava"]
+    },
+    {
+      "id": "SM-13", "group": "types", "type": "concept", "difficulty": "medium",
+      "question": "Name the four main classes of Sanskrit compound.",
+      "answer": "dvandva (copulative), tatpuruṣa (determinative — with karmadhāraya/dvigu/etc. as subtypes), bahuvrīhi (possessive/exocentric), and avyayībhāva (indeclinable/adverbial).",
+      "tags": ["basics"]
+    },
+    {
+      "id": "SM-14", "group": "lookup", "type": "concept", "difficulty": "medium",
+      "question": "Where does a dictionary like Monier-Williams list a compound such as buddha-kalpa?",
+      "answer": "As a hyphen-led sub-entry inside the paragraph of its first member (here under Buddha) — the third level of MW's alphabetical order. So to find a compound, look under its first word; the leading hyphen also means that element is separately findable.",
+      "tags": ["lookup"]
+    },
+    {
+      "id": "SM-15", "group": "lookup", "type": "concept", "difficulty": "hard",
+      "question": "Why is recognising the compound type useful when you can't find a long word in the dictionary?",
+      "answer": "It tells you where to split. A tatpuruṣa/karmadhāraya splits between a modifier and head (look up both); a dvandva splits into coordinate members; a bahuvrīhi splits like a tatpuruṣa but is read 'possessing X'. Splitting correctly (undoing sandhi at the seam) lets you look up each member.",
+      "tags": ["lookup"]
+    }
+  ]
+}

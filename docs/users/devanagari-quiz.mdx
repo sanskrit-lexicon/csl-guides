@@ -1,0 +1,44 @@
+---
+id: devanagari-quiz
+title: Devanāgarī & alphabet (quiz)
+description: "A beginner-friendly quiz on the Sanskrit alphabet — vowels and consonants, the five mouth positions, the vargas, conjuncts, and the alphabetical order every dictionary follows. 16 questions."
+sidebar_label: Devanāgarī quiz
+---
+
+import Quiz from '@site/src/components/Quiz';
+import data from '@site/src/data/devanagari-quiz.json';
+
+# Devanāgarī & the alphabet (quiz)
+
+The Sanskrit alphabet is **arranged by the mouth** — and that same order is the order every
+dictionary sorts by. Get the alphabet's structure and you get the lookup order for free. These
+16 questions (beginner-friendly) cover the vowels and consonants, the five mouth positions and
+*vargas*, conjuncts, and the alphabetical order, grounded in Lessons 1–3 & 7 of Charles Wikner's
+*A Practical Sanskrit Introductory*.
+
+## The basics
+
+<Quiz data={data} group="basics" title="Quiz · vowels & consonants" />
+
+## Vowels & the mouth positions
+
+<Quiz data={data} group="vowels" title="Quiz · vowels and positions" />
+
+## Consonants — the vargas, semivowels, sibilants
+
+<Quiz data={data} group="consonants" title="Quiz · the consonants" />
+
+## Conjuncts
+
+<Quiz data={data} group="conjuncts" title="Quiz · conjunct consonants" />
+
+## Alphabetical order (and why it matters)
+
+<Quiz data={data} group="order" title="Quiz · the order" />
+
+<Quiz data={data} group="lookup" title="Quiz · order & dictionary lookup" />
+
+## See also
+
+- **[Transliteration practice quiz](transliteration-quiz)** — the schemes that write this alphabet in Roman
+- **[Encoding & Transliteration](encoding-transliteration)** — SLP1 and the input/output schemes

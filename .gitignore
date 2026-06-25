@@ -8,6 +8,13 @@
 .docusaurus
 .cache-loader
 
+# Local agent / tooling config
+.claude/
+
+# Scratch (throwaway screenshot fixtures + harness)
+.tmp_css/
+scripts/_*.mjs
+
 # Misc
 .DS_Store
 .env.local

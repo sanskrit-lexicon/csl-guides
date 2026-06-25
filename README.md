@@ -9,11 +9,15 @@ Documentation site for the **Cologne Digital Sanskrit Dictionaries** (CDSL),
 
 Built with [Docusaurus](https://docusaurus.io/). Modeled on the level of detail
 of the [dharmamitra-guides](https://dharmamitra.github.io/dharmamitra-guides),
-adapted to the CDSL ecosystem with a hybrid navigation covering three audiences:
+adapted to the CDSL ecosystem with a hybrid navigation covering five audiences:
 
-- **Using the Site** — end users (search, display modes, transliteration, downloads, scans)
-- **Dictionaries** — the 42-dictionary catalog, abbreviations, citation conventions
-- **Tools** — Simple-Search, Advanced Search, multi-dictionary display, offline StarDict
+- **Using the Site** — end users (search, display modes, transliteration, downloads, scans),
+  plus a six-quiz learning track (transliteration · devanāgarī · sandhi · samāsa · reading MW ·
+  which-dictionary)
+- **Dictionaries** — the 43-dictionary catalog, a featured **deep page for every catalogued
+  dictionary** (verified source-record samples), abbreviations, and citation conventions
+- **Tools** — Simple-Search, Advanced Search, a live multi-dictionary **comparison widget**,
+  offline StarDict
 - **Contributing** — the change-file correction workflow and GitHub issue taxonomy
 - **Developers** — repository map, generation pipeline, data formats, API
 
@@ -21,7 +25,8 @@ adapted to the CDSL ecosystem with a hybrid navigation covering three audiences:
 
 ```sh
 npm install
-npm start          # dev server with hot reload at http://localhost:3000/csl-guides/
+npm start              # dev server with hot reload at http://localhost:3000/csl-guides/
+npm run build:catalog  # regenerate src/data/dictionaries.json from live CDSL sources
 ```
 
 ## Build & deploy
@@ -41,11 +46,13 @@ See [docusaurus.config.js](docusaurus.config.js) for `url` / `baseUrl` / `organi
 
 Content is drafted and verified against the live site, the sibling CDSL repositories, and
 the org `CLAUDE.md`. The dictionary catalog is auto-generated from the live front page
-(`npm run build:catalog`), so it cannot drift by hand.
+(`npm run build:catalog`), so it cannot drift by hand. Every catalogued dictionary now has a
+featured deep page, each quoting a real, verified source record. Only the still-gated
+**KOW** and **KNA** (Russian) lack one — they will be added once they appear on the live
+CDSL front page.
 
-Two items still await maintainer input and are flagged inline with `:::note` admonitions:
+One item still awaits maintainer input and is flagged inline with a `:::note` admonition:
 
-- the project's detailed **history / version timeline** — [docs/about/history.mdx](docs/about/history.mdx);
 - how generated artifacts **reach the live server** (deploy mechanism/cadence) — [docs/developers/generation-pipeline.md](docs/developers/generation-pipeline.md).
 
 ## License

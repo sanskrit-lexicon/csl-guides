@@ -1,0 +1,172 @@
+/* Cross-dictionary comparison matrix — wide, so it scrolls horizontally with a
+   sticky first column (the concept) pinned while the dictionary columns scroll. */
+.scroll {
+  overflow-x: auto;
+  margin: 1rem 0 2rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+}
+
+.matrix {
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 0;
+  width: max-content;
+  min-width: 100%;
+}
+
+.matrix th,
+.matrix td {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  padding: 0.3rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.matrix thead th {
+  position: sticky;
+  top: 0;
+  background: var(--ifm-color-emphasis-100);
+  font-weight: 700;
+  text-align: center;
+}
+
+.matrix thead th a {
+  text-decoration: none;
+}
+
+.cornerCell,
+.rowHead {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--ifm-background-surface-color, var(--ifm-color-emphasis-100));
+  font-weight: 700;
+  white-space: normal;
+  min-width: 9rem;
+}
+
+.cornerCell {
+  z-index: 2;
+}
+
+.dot {
+  color: var(--ifm-color-emphasis-400);
+}
+
+/* Per-dictionary section */
+.dict {
+  margin: 0 0 1.5rem;
+}
+
+.code {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.7em;
+  padding: 0.1em 0.45em;
+  border-radius: var(--ifm-global-radius);
+  background: var(--ifm-color-emphasis-200);
+  vertical-align: middle;
+}
+
+.year {
+  font-weight: 400;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.8em;
+}
+
+.badge {
+  font-size: 0.62em;
+  font-weight: 600;
+  padding: 0.15em 0.55em;
+  border-radius: 1em;
+  vertical-align: middle;
+  margin-left: 0.4rem;
+  white-space: nowrap;
+}
+
+.badgeData {
+  background: var(--ifm-color-success-contrast-background);
+  color: var(--ifm-color-success-contrast-foreground);
+}
+
+.badgeTokens {
+  background: var(--ifm-color-warning-contrast-background);
+  color: var(--ifm-color-warning-contrast-foreground);
+}
+
+.badgeNone {
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-700);
+}
+
+.meta {
+  margin: -0.3rem 0 0.6rem;
+}
+
+.source {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.listBlock {
+  margin: 0.5rem 0;
+}
+
+.listLabel {
+  margin: 0.4rem 0 0.3rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.count {
+  font-weight: 400;
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-600);
+  background: var(--ifm-color-emphasis-200);
+  border-radius: 1em;
+  padding: 0.05em 0.5em;
+  margin-left: 0.25rem;
+}
+
+.list {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  display: block;
+  max-height: 24rem;
+  overflow: auto;
+  width: 100%;
+}
+
+.list td {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  padding: 0.2rem 0.6rem 0.2rem 0;
+  vertical-align: top;
+}
+
+.abbr {
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--ifm-color-primary);
+  width: 1%;
+}
+
+.more {
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-600);
+  margin: 0.3rem 0 0;
+}
+
+.noteText {
+  font-size: 0.92rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.summary {
+  font-size: 1rem;
+  padding: 0.6rem 0.9rem;
+  border-left: 4px solid var(--ifm-color-primary);
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
+}

@@ -37,6 +37,7 @@ const sidebars = {
         'dictionaries/overview',
         'dictionaries/catalog',
         'dictionaries/abbreviations-and-citations',
+        'dictionaries/abbreviations-comparison',
         'dictionaries/ocr-prefaces',
         {
           type: 'category',

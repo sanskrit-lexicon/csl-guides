@@ -82,6 +82,7 @@ const sidebars = {
             'dictionaries/pui',
             'dictionaries/snp',
             'dictionaries/vei',
+            'dictionaries/pd',
           ],
         },
       ],

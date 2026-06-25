@@ -140,6 +140,7 @@ const sidebars = {
       collapsed: true,
       items: [
         'about/about',
+        'about/origins',
         'about/history',
         'about/events',
         'about/publications',

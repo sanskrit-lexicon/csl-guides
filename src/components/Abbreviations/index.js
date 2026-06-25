@@ -111,8 +111,12 @@ function SourceLink({sourceUrl}) {
   );
 }
 
-/** One dictionary's abbreviation section. Embeddable on a deep page or used by the directory. */
-export function DictAbbreviations({code, level = 'h3'}) {
+/**
+ * One dictionary's abbreviation section. Used by the directory (with its title heading)
+ * and embedded on each dictionary's deep page (`headless` — the page already has the title,
+ * so only the source link + lists / front-matter note render).
+ */
+export function DictAbbreviations({code, level = 'h3', headless = false}) {
   const d = dictByCode(code);
   if (!d) return null;
   const Heading = level;
@@ -125,11 +129,13 @@ export function DictAbbreviations({code, level = 'h3'}) {
         : {cls: styles.badgeNone, txt: 'front matter only'};
   return (
     <div className={styles.dict}>
-      <Heading id={`dict-${code.toLowerCase()}`}>
-        {d.fullTitle} {d.year && <span className={styles.year}>{d.year}</span>}{' '}
-        <span className={styles.code}>{code}</span>
-        <span className={`${styles.badge} ${badge.cls}`}>{badge.txt}</span>
-      </Heading>
+      {!headless && (
+        <Heading id={`dict-${code.toLowerCase()}`}>
+          {d.fullTitle} {d.year && <span className={styles.year}>{d.year}</span>}{' '}
+          <span className={styles.code}>{code}</span>
+          <span className={`${styles.badge} ${badge.cls}`}>{badge.txt}</span>
+        </Heading>
+      )}
       {d.status === 'data' && (
         <>
           <div className={styles.meta}>

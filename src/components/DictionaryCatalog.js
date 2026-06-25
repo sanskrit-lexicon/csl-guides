@@ -11,7 +11,8 @@ const ext = {target: '_blank', rel: 'noreferrer'};
 // Keep in sync with sidebars.js "Featured dictionaries".
 const GUIDE_PAGES = {
   MW: 'mw', MW72: 'mw72', AP90: 'ap90', AP: 'ap', WIL: 'wil', CAE: 'cae', MD: 'md',
-  BEN: 'ben', YAT: 'yat', SHS: 'shs', GST: 'gst', PWG: 'pwg', PW: 'pw', SCH: 'sch',
+  BEN: 'ben', YAT: 'yat', SHS: 'shs', GST: 'gst', LRV: 'lrv', AE: 'ae', BOR: 'bor',
+  BOP: 'bop', BUR: 'bur', FRI: 'fri', LAN: 'lan', PWG: 'pwg', PW: 'pw', SCH: 'sch',
   CCS: 'ccs', GRA: 'gra', BHS: 'bhs', STC: 'stc', MWE: 'mwe', SKD: 'skd', VCP: 'vcp',
 };
 

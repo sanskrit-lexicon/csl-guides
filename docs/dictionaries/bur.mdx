@@ -1,0 +1,78 @@
+---
+id: bur
+title: Burnouf (BUR)
+description: "Guide to Burnouf & Leupol's Dictionnaire Classique Sanscrit-Français (BUR, 1866) on CDSL — the older French Sanskrit dictionary that Stchoupak–Renou later superseded."
+sidebar_label: Burnouf (BUR)
+---
+
+# Burnouf & Leupol, *Dictionnaire Classique Sanscrit-Français* (`BUR`)
+
+`BUR` is the *Dictionnaire Classique Sanscrit-Français* of Émile Burnouf & L. Leupol (1866) —
+for decades the **only French Sanskrit dictionary**, until [Stchoupak–Renou (STC)](stc)
+superseded it in 1932. It gives French glosses and frequently notes **Indo-European cognates**.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `BUR` (GitHub repo [`BUR`](https://github.com/sanskrit-lexicon/BUR)) |
+| **Full title** | *Dictionnaire Classique Sanscrit-Français* |
+| **Authors** | Émile Burnouf, L. Leupol |
+| **Year / size** | 1866 · ~**781** pages |
+| **Direction** | Sanskrit → French |
+| **Accents** | No |
+| **Source** | [`csl-orig/v02/bur/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/bur) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/BURScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/BURScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/BURScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/BURScan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/BURScan/2020/web/webtc/download.html) |
+| **csl-doc** | [bur.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/bur.rst) |
+
+:::note Superseded by STC
+[Stchoupak–Renou's *Dictionnaire Sanskrit-Français* (STC)](stc), 1932, is the fuller modern
+French dictionary; its preface explicitly set out to replace this one. Use `BUR` for the older
+French tradition (and its etymological notes); `STC` for everyday French lookup.
+:::
+
+## When to use it
+
+Reach for `BUR` for the **19th-century French treatment** and its comparative-etymology notes.
+For modern French glosses prefer **[STC](stc)**; for the broad reference, **[MW](mw)**.
+
+## Looking up a word
+
+Open the **Basic** display, pick your input/output transliteration (see
+[Encoding & Transliteration](../users/encoding-transliteration)), and type the headword. The
+**List** and **Advanced** displays browse and search inside entries — see
+[Search & Display](../users/search-and-display).
+
+## Reading an entry
+
+Burnouf gives the SLP1 headword in `{#…#}`, the IAST and French in `{%…%}`, separates senses
+with `||`, and notes cognates. The entry *aṃśa* (`csl-orig/v02/bur/bur.txt`):
+
+```
+<L>1989<pc>066,1<k1>aMSa<k2>aMSa
+{#aMSa#}¦ {%aṃśa%} <ab>m.</ab> {%(aṃś)%} partie; portion. || <ab>Vd.</ab> une des 21
+{%virāt%} de la <s1 slp1="gAyatrI">gāyatrī</s1>. || Epaule. <ab>Cf.</ab> {%aṃsa.%} <ab>Lat.</ab> axilla;
+<ab>ancien germ.</ab> ahsala.
+```
+
+| In the source | Meaning |
+|---|---|
+| `{#aMSa#}` · `{%aṃśa%}` | the headword (SLP1 `<k1>`) then its IAST form |
+| `<ab>m.</ab> {%(aṃś)%}` | masculine, from the root *aṃś* |
+| `partie; portion` · `Epaule` | the **French** glosses ("part; portion"; "shoulder") |
+| `\|\|` | separates senses |
+| `<ab>Lat.</ab> axilla; <ab>ancien germ.</ab> ahsala` | the **cognates** — Latin *axilla*, Old German *ahsala* |
+
+See [Data Formats](../developers/data-formats) for the markup reference.
+
+## What makes it distinctive
+
+- **The older French dictionary.** The standard before [STC](stc) (1932) replaced it.
+- **Comparative-etymology notes** — Latin and Germanic cognates.
+
+## See also
+
+- **[Stchoupak–Renou (STC)](stc)** — the modern French dictionary that superseded it
+- **[Monier-Williams (MW)](mw)** · **[Böhtlingk-Roth (PWG)](pwg)**
+- The full **[catalog](catalog)** of all 42 dictionaries · **csl-doc** [bur.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/bur.rst)

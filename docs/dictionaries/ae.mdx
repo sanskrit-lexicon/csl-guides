@@ -1,0 +1,78 @@
+---
+id: ae
+title: Apte English-Sanskrit (AE)
+description: "Guide to Apte's Student's English-Sanskrit Dictionary (AE, 1920) on CDSL — the reverse-direction Apte for composing Sanskrit from English."
+sidebar_label: Apte English-Sanskrit (AE)
+---
+
+# Apte, *The Student's English-Sanskrit Dictionary* (`AE`)
+
+`AE` is Vaman Shivram Apte's *Student's English-Sanskrit Dictionary* (1920) — the
+**English→Sanskrit** Apte, the reverse of his Sanskrit→English dictionaries. Look up an
+**English** word and get its **Sanskrit** equivalents — the tool for **composing** Sanskrit.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `AE` (GitHub repo [`ApteES`](https://github.com/sanskrit-lexicon/ApteES)) |
+| **Full title** | *The Student's English-Sanskrit Dictionary* |
+| **Author** | Vaman Shivram Apte |
+| **Year / size** | 1920 · ~**501** pages |
+| **Direction** | English → Sanskrit |
+| **Accents** | No |
+| **Source** | [`csl-orig/v02/ae/`](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/ae) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/AEScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/AEScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/AEScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/AEScan/2020/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/AEScan/2020/web/webtc/download.html) · [Scans](https://www.sanskrit-lexicon.uni-koeln.de/scans/AEScan/index.php?sfx=pdf) |
+| **csl-doc** | [ae.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ae.rst) |
+
+:::tip Three Aptes
+**`AE`** (this page) is the **English→Sanskrit** dictionary — for *writing* Sanskrit.
+**[`AP90`](ap90)** (1890) and **[`AP`](ap)** (1957–59) are his **Sanskrit→English** dictionaries
+— for *reading* it.
+:::
+
+## When to use it
+
+Reach for `AE` when you have an **English** word and need the **Sanskrit** — composition,
+translation into Sanskrit, or finding the right term. For reading Sanskrit, use the
+Sanskrit→English dictionaries (**[AP90](ap90)**, **[MW](mw)**).
+
+## Looking up a word
+
+Open the **Basic** display, type an **English** headword, and choose your output script for the
+Sanskrit equivalents (see [Encoding & Transliteration](../users/encoding-transliteration)). See
+[Search & Display](../users/search-and-display).
+
+## Reading an entry
+
+`AE` sets the English headword in `{@…@}` and tags the Sanskrit equivalents with `<s>`; sense
+groups are marked with circled letters/numbers. The entry *A, An*
+(`csl-orig/v02/ae/ae.txt`):
+
+```
+<L>1<pc>001<k1>a<k2>a, an
+{@A@}, {@An@}¦,Ⓐ(As an article) not <ab>ex.</ab>; ‘a man’ <s>naraH</s>.
+Ⓑ{@2@} (One) <s>eka</s>.
+Ⓑ{@3@} (Indefinite) <s>kiM</s> with <s>cit, cana</s> or <s>api</s>. …
+```
+
+| In the source | Meaning |
+|---|---|
+| `{@A@}, {@An@}` | the **English** headword(s) |
+| `Ⓐ … Ⓑ` | sense groups |
+| `<s>naraH</s>`, `<s>eka</s>` | the **Sanskrit** equivalents (rendered to your output script) |
+| `<ab>ex.</ab>` | "expressed (by)" — a usage cue |
+
+See [Data Formats](../developers/data-formats) for the markup reference.
+
+## What makes it distinctive
+
+- **English → Sanskrit.** The composition tool — the reverse of the reading dictionaries.
+- **Part of the Apte set.** Completes the trio with [AP90](ap90) and [AP](ap).
+
+## See also
+
+- **[Apte (AP90)](ap90)** · **[Apte revised (AP)](ap)** — the Sanskrit→English Aptes
+- **[Borooah English-Sanskrit (BOR)](bor)** — another English→Sanskrit dictionary
+- The full **[catalog](catalog)** of all 42 dictionaries · **csl-doc** [ae.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ae.rst)

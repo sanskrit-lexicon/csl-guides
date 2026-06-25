@@ -9,6 +9,7 @@ import {
   AbbreviationComparison,
   AbbreviationDirectory,
   AbbreviationSummary,
+  ScanOnlyList,
 } from '@site/src/components/Abbreviations';
 
 # Abbreviations compared
@@ -43,10 +44,18 @@ meaning of the term, so e.g. *accusative* lines up across `acc.`, `Acc.` and `ac
 
 <AbbreviationComparison kind="grammatical" />
 
-## Every dictionary's legend
+## Transcribed legends
 
-A section for **every catalogued dictionary**. Dictionaries with a transcribed legend come
-first (with their full abbreviation list, long lists collapsed); those whose legend is still
-only in scanned front matter follow, linking out to the scan.
+The dictionaries whose abbreviation legend has been transcribed into a machine-readable file
+— their full list, long ones collapsed, each with a link to the source file. Lists are capped
+at 60 entries inline; the rest are one click away in the source.
 
 <AbbreviationDirectory />
+
+## Not yet transcribed (scanned front matter only)
+
+These dictionaries have no machine-readable abbreviation list yet — their legend lives only in
+the scanned print front matter. Each links to that front matter; transcribing any of them
+would add it to the comparison above.
+
+<ScanOnlyList />

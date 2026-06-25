@@ -168,18 +168,43 @@ export function DictAbbreviations({code, level = 'h3', headless = false}) {
   );
 }
 
-/** Per-dictionary directory: a section for every catalogued dictionary, with-data first. */
+/** Per-dictionary directory: a full section for each dictionary that has a transcribed
+ *  legend (and the tokens-only dictionary). Scan-only ones are listed by ScanOnlyList. */
 export function AbbreviationDirectory() {
-  const order = {data: 0, tokens: 1, none: 2};
-  const dicts = [...data.dicts].sort(
-    (a, b) => order[a.status] - order[b.status] || a.code.localeCompare(b.code),
-  );
+  const order = {data: 0, tokens: 1};
+  const dicts = data.dicts
+    .filter((d) => d.status !== 'none')
+    .sort((a, b) => order[a.status] - order[b.status] || a.code.localeCompare(b.code));
   return (
     <div>
       {dicts.map((d) => (
         <DictAbbreviations key={d.code} code={d.code} />
       ))}
     </div>
+  );
+}
+
+/** The dictionaries whose legend is not transcribed anywhere yet — only scanned front matter. */
+export function ScanOnlyList() {
+  const dicts = data.dicts
+    .filter((d) => d.status === 'none')
+    .sort((a, b) => a.code.localeCompare(b.code));
+  return (
+    <ul className={styles.scanList}>
+      {dicts.map((d) => (
+        <li key={d.code}>
+          <span className={styles.code}>{d.code}</span> {d.fullTitle}
+          {d.year ? ` (${d.year})` : ''} —{' '}
+          {d.frontMatterUrl ? (
+            <a href={d.frontMatterUrl} target="_blank" rel="noopener noreferrer">
+              front matter
+            </a>
+          ) : (
+            <span className={styles.muted}>no front matter linked</span>
+          )}
+        </li>
+      ))}
+    </ul>
   );
 }
 

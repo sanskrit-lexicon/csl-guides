@@ -163,6 +163,28 @@
   color: var(--ifm-color-emphasis-700);
 }
 
+.scanList {
+  columns: 2;
+  column-gap: 2rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.scanList li {
+  break-inside: avoid;
+}
+
+.muted {
+  color: var(--ifm-color-emphasis-600);
+}
+
+@media (max-width: 600px) {
+  .scanList {
+    columns: 1;
+  }
+}
+
 .summary {
   font-size: 1rem;
   padding: 0.6rem 0.9rem;

@@ -11,6 +11,11 @@ This is the canonical sequence for correcting a `csl-orig` source dictionary (th
 "Jim Funderburk / Dhaval Patel pattern"). Do not deviate from it — the steps exist to
 guarantee XML validity and a complete audit trail.
 
+If you are new to the workflow, read [Process One Correction](process-one-correction)
+first. If you are handling a named backlog such as Scott Rhodes' AP corrections, read
+[Process a Scott Batch](process-scott-batch) first and use this page as the reference
+checklist.
+
 ## The sequence
 
 ```sh
@@ -59,6 +64,14 @@ python diff_to_changes_dict.py temp_{dict}_0.txt \
 
 - `printchange.txt` records **deviations from the scanned print** — not digital/markup
   fixes.
+
+## Which tutorial applies?
+
+| Situation | Page |
+|---|---|
+| You found a problem but do not have a local setup | [Report a Typo](report-a-typo) |
+| You are installing one accepted correction | [Process One Correction](process-one-correction) |
+| You are processing many correction-form records | [Process a Scott Batch](process-scott-batch) |
 
 ## Local prerequisites (Windows)
 

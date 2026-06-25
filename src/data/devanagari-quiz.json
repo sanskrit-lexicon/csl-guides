@@ -1,0 +1,122 @@
+{
+  "title": "Devanāgarī & the Alphabet Quiz",
+  "description": "A beginner-friendly quiz on the structure of the Sanskrit alphabet — vowels and consonants, the five mouth positions, the five vargas of stops, semivowels and sibilants, conjuncts, and the alphabetical order that every dictionary follows.",
+  "source": {
+    "work": "A Practical Sanskrit Introductory",
+    "author": "Charles Wikner",
+    "year": 1996,
+    "file": "src/wikner.pdf",
+    "lessons": [1, 2, 3, 7],
+    "note": "Grounded in Wikner Lessons 1–3 (alphabet structure, mouth positions) and 7 (conjuncts); the alphabetical-order angle ties to the MW reading guide."
+  },
+  "questions": [
+    {
+      "id": "DV-01", "group": "basics", "type": "concept", "difficulty": "easy",
+      "question": "What are the two fundamental divisions of the Sanskrit alphabet?",
+      "answer": "The vowels (svara) and the consonants (vyañjana). svara = 'sound/tone'; vyañjana = an 'adornment' to the sound (a stop or restriction).",
+      "tags": ["basics"]
+    },
+    {
+      "id": "DV-02", "group": "basics", "type": "concept", "difficulty": "easy",
+      "question": "On what principle is the Sanskrit alphabet arranged?",
+      "answer": "According to the structure of the mouth — the sounds are ordered by where in the mouth they are produced (the mouth positions), from the back of the throat to the lips.",
+      "tags": ["basics"]
+    },
+    {
+      "id": "DV-03", "group": "vowels", "type": "concept", "difficulty": "medium",
+      "question": "Name the five mouth positions, from the back of the mouth to the front, with their basic vowel.",
+      "answer": "Guttural (kaṇṭhya, a) → palatal (tālavya, i) → cerebral/retroflex (mūrdhanya, ṛ) → dental (dantya, ḷ) → labial (oṣṭhya, u).",
+      "tags": ["vowels", "positions"]
+    },
+    {
+      "id": "DV-04", "group": "vowels", "type": "multiple-choice", "difficulty": "easy",
+      "question": "At which mouth position is the vowel 'a' produced?",
+      "options": ["guttural (kaṇṭhya)", "palatal (tālavya)", "labial (oṣṭhya)", "dental (dantya)"],
+      "answer": "guttural (kaṇṭhya)",
+      "explanation": "'a' is the central, guttural vowel — the whole alphabet is an embellishment of this sound.",
+      "tags": ["vowels", "positions"]
+    },
+    {
+      "id": "DV-05", "group": "vowels", "type": "concept", "difficulty": "medium",
+      "question": "Vowels can be hrasva, dīrgha, or pluta. What do these mean?",
+      "answer": "hrasva = short (held one measure, mātrā); dīrgha = long (two measures); pluta = prolonged (three or more measures, mainly Vedic).",
+      "tags": ["vowels"]
+    },
+    {
+      "id": "DV-06", "group": "vowels", "type": "multiple-choice", "difficulty": "hard",
+      "question": "The compound vowel 'e' is formed using which two mouth positions?",
+      "options": ["guttural + palatal", "guttural + labial", "palatal + labial", "dental + labial"],
+      "answer": "guttural + palatal",
+      "explanation": "'e' arises when 'a' (guttural) is sounded through the 'i' (palatal) position — kaṇṭha-tālavya. 'o' is guttural + labial (kaṇṭhoṣṭhya).",
+      "tags": ["vowels", "positions"]
+    },
+    {
+      "id": "DV-07", "group": "consonants", "type": "concept", "difficulty": "medium",
+      "question": "The first 25 consonants are 'stops' (sparśa). How are they arranged?",
+      "answer": "In five sets (varga) of five, by mouth position, each named after its first letter: ka-varga (guttural), ca-varga (palatal), ṭa-varga (cerebral), ta-varga (dental), pa-varga (labial).",
+      "tags": ["consonants", "varga"]
+    },
+    {
+      "id": "DV-08", "group": "consonants", "type": "multiple-choice", "difficulty": "medium",
+      "question": "The pa-varga consonants (pa pha ba bha ma) are stops made at the …?",
+      "options": ["lips (labial)", "teeth (dental)", "throat (guttural)", "palate (palatal)"],
+      "answer": "lips (labial)",
+      "explanation": "Each varga is a set of stops at one position; the pa-varga (labials) close at the lips.",
+      "tags": ["consonants", "varga"]
+    },
+    {
+      "id": "DV-09", "group": "consonants", "type": "concept", "difficulty": "medium",
+      "question": "After the 25 stops come the four semivowels (antaḥstha). Name them.",
+      "answer": "ya, ra, la, va.",
+      "tags": ["consonants"]
+    },
+    {
+      "id": "DV-10", "group": "consonants", "type": "concept", "difficulty": "medium",
+      "question": "Name the three sibilants of Sanskrit (and note why they trip up beginners).",
+      "answer": "śa (palatal), ṣa (cerebral), sa (dental). They are three distinct letters — a common lookup error is treating them as one 's'.",
+      "tags": ["consonants", "sibilants"]
+    },
+    {
+      "id": "DV-11", "group": "consonants", "type": "multiple-choice", "difficulty": "easy",
+      "question": "Which single consonant comes last, after the sibilants?",
+      "options": ["ha", "kṣa", "ḷa", "ṅa"],
+      "answer": "ha",
+      "explanation": "ha is the final (aspirate) consonant of the alphabet.",
+      "tags": ["consonants"]
+    },
+    {
+      "id": "DV-12", "group": "order", "type": "multiple-choice", "difficulty": "hard",
+      "question": "In Sanskrit alphabetical order, do vowel-initial or consonant-initial words come first?",
+      "options": ["all vowels first, then consonants", "consonants first", "interleaved a, ka, ā, kha…", "by length, short before long"],
+      "answer": "all vowels first, then consonants",
+      "explanation": "The order is: all the vowels (a ā i ī u ū ṛ ṝ ḷ e ai o au), then anusvāra/visarga, then the consonants by varga, semivowels, sibilants, ha.",
+      "tags": ["order"]
+    },
+    {
+      "id": "DV-13", "group": "order", "type": "concept", "difficulty": "hard",
+      "question": "Where do the anusvāra (ṃ) and visarga (ḥ) fall in alphabetical order?",
+      "answer": "After the vowels and before the consonants — they are listed with the 'sixteen sakti' (the vowels plus aṃ/aḥ), so a word with ṃ/ḥ sorts ahead of consonant-initial material at that point.",
+      "tags": ["order"]
+    },
+    {
+      "id": "DV-14", "group": "conjuncts", "type": "concept", "difficulty": "medium",
+      "question": "What is a conjunct consonant (saṃyoga)?",
+      "answer": "Two or more consonants written together with no intervening vowel — the sign for the first loses its inherent 'a' and the letters are joined into one ligature (e.g. kṣa, jña).",
+      "tags": ["conjuncts"]
+    },
+    {
+      "id": "DV-15", "group": "conjuncts", "type": "multiple-choice", "difficulty": "hard",
+      "question": "The special conjunct क्ष (kṣa) is composed of which two consonants?",
+      "options": ["ka + ṣa", "ka + śa", "kha + sa", "ca + ṣa"],
+      "answer": "ka + ṣa",
+      "explanation": "kṣa = ka + ṣa; the other famous special conjunct, jña (ज्ञ), is ja + ña.",
+      "tags": ["conjuncts"]
+    },
+    {
+      "id": "DV-16", "group": "lookup", "type": "concept", "difficulty": "medium",
+      "question": "Why does the mouth-position ordering of the alphabet matter when you use a dictionary?",
+      "answer": "Because the dictionary's alphabetical order IS this order. a and ā, and ś/ṣ/s, are different letters in different positions — so you must respect the Sanskrit order (and the diacritics) to find a word; this is the single most common first-time lookup mistake.",
+      "tags": ["lookup", "order"]
+    }
+  ]
+}

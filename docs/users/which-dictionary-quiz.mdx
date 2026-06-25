@@ -1,0 +1,43 @@
+---
+id: which-dictionary-quiz
+title: Which dictionary? (quiz)
+description: "Pick the right CDSL dictionary for the task — 18 scenario questions across reading, composing, and specialist look-ups, grounded in the per-dictionary guide pages."
+sidebar_label: Which dictionary? (quiz)
+---
+
+import Quiz from '@site/src/components/Quiz';
+import data from '@site/src/data/which-dictionary-quiz.json';
+
+# Which dictionary? (quiz)
+
+CDSL has **42 dictionaries** — the skill is reaching for the right one. These 18 scenarios test
+exactly that: reading classical vs Buddhist vs Vedic Sanskrit, composing Sanskrit from English,
+finding synonyms, identifying plants and proper names, and more. Every answer is grounded in
+this guide's [featured dictionary pages](../dictionaries/catalog) (and the full
+[catalog](../dictionaries/catalog)).
+
+## Reading Sanskrit
+
+<Quiz data={data} group="reading" title="Quiz · which dictionary to read with" />
+
+## Composing Sanskrit / other languages
+
+<Quiz data={data} group="composing" title="Quiz · composing (English→Sanskrit)" />
+
+<Quiz data={data} group="language" title="Quiz · French, Latin, German glosses" />
+
+## Specialist look-ups
+
+Names, terms, plants, synonyms — the indexes, glossaries, koshas, and encyclopedias.
+
+<Quiz data={data} group="specialist" title="Quiz · specialist references" />
+
+## Historical & editions
+
+<Quiz data={data} group="historical" title="Quiz · historical editions" />
+
+## See also
+
+- The full **[catalog](../dictionaries/catalog)** of all 42 dictionaries, and the
+  **[dictionaries overview](../dictionaries/overview)**
+- **[Reading Monier-Williams (with quizzes)](reading-monier-williams)** — how to read the entries once you've chosen

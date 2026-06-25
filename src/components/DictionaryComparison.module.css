@@ -133,14 +133,19 @@
   word-break: break-word;
 }
 
-/* Devanāgarī Sanskrit — basic.css `.sdata`/`.sdata_siddhanta` (teal). The siddhanta_deva
-   font is a local file on the Cologne host we can't load, so we keep the signature color
-   and fall back to the system Devanāgarī serif. */
+/* Devanāgarī Sanskrit — basic.css `.sdata`/`.sdata_siddhanta`/`.displist` all use the
+   siddhanta_deva font (a Cologne-host-local file we can't load), so we fall back to the
+   system Devanāgarī serif. Of these, only `.sdata`/`.sdata_siddhanta` are tinted teal in
+   basic.css; `.displist` takes the font alone and inherits the body color. */
 .entry :global(.sdata),
 .entry :global(.sdata_siddhanta),
 .entry :global(.displist) {
-  color: teal;
   font-family: 'Noto Serif Devanagari', 'Sanskrit 2003', 'Siddhanta', serif;
+}
+
+.entry :global(.sdata),
+.entry :global(.sdata_siddhanta) {
+  color: teal;
 }
 
 /* Headword line — basic.css h1 is 24pt over a 14pt base (≈1.7×); not bold natively. */
@@ -169,7 +174,7 @@
 
 /* Source citations (`<ls>`) — basic.css `.ls`: gray, smaller (11pt over 14pt base). */
 .entry :global(.ls) {
-  color: #6a6a6a;
+  color: gray;
   font-size: 0.85em;
 }
 
@@ -197,16 +202,16 @@
 /* Homonym number (red), alt-script data (blue, larger), capital-source caption (gray) —
    basic.css `.hom`/`.asdata`/`.botcap`. */
 .entry :global(.hom) {
-  color: #c0392b;
+  color: red;
 }
 
 .entry :global(.asdata) {
-  color: #2a5db0;
+  color: blue;
   font-size: 1.05em;
 }
 
 .entry :global(.botcap) {
-  color: #6a6a6a;
+  color: gray;
 }
 
 /* Lexical category (`<lex>`) — italic, muted (kept from the prior minimal styling). */

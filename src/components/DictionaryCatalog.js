@@ -15,6 +15,8 @@ const GUIDE_PAGES = {
   BOP: 'bop', BUR: 'bur', FRI: 'fri', LAN: 'lan', PWG: 'pwg', PW: 'pw', SCH: 'sch',
   CCS: 'ccs', GRA: 'gra', BHS: 'bhs', STC: 'stc', MWE: 'mwe', SKD: 'skd', VCP: 'vcp',
   ABCH: 'abch', ACPH: 'acph', ACSJ: 'acsj', ARMH: 'armh', KRM: 'krm',
+  ACC: 'acc', IEG: 'ieg', INM: 'inm', MCI: 'mci', PE: 'pe', PGN: 'pgn', PUI: 'pui',
+  SNP: 'snp', VEI: 'vei',
 };
 
 function Letter({href, on, children, title, name}) {

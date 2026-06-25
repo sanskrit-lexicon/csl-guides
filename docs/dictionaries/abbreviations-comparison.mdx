@@ -1,0 +1,52 @@
+---
+id: abbreviations-comparison
+title: Abbreviations compared
+description: "The abbreviation legend of every Cologne dictionary, side by side — how each abbreviates the same cited works and grammatical terms, plus the full per-dictionary list where it has been transcribed."
+sidebar_label: Abbreviations compared
+---
+
+import {
+  AbbreviationComparison,
+  AbbreviationDirectory,
+  AbbreviationSummary,
+} from '@site/src/components/Abbreviations';
+
+# Abbreviations compared
+
+Every Cologne dictionary cites the same body of Sanskrit literature and uses the same
+grammatical categories — but each prints its **own** abbreviations for them. Monier-Williams
+writes the Ṛgveda `RV.`, Benfey `Rigv.`, Vaidya `R.V.`, the Petersburg dictionaries `ṚV.`
+This page lines those legends up against each other, and then lists each dictionary's full
+legend where it has been transcribed.
+
+<AbbreviationSummary />
+
+The data is generated from the canonical abbreviation files in each dictionary's repository
+(see the `source:` link in every section below); it is **not** hand-authored. Where a
+dictionary's legend exists only as a scanned page, the section links to that front matter
+instead. See [Abbreviations & Citations](abbreviations-and-citations) for how the `<ls>`,
+`<ab>` and `<lex>` markup tags carry these abbreviations inside an entry.
+
+## Literary sources, side by side
+
+How each dictionary abbreviates the major cited **works**. Rows are ordered by how many
+dictionaries cite the work; click a column heading to jump to that dictionary's full list.
+A `·` means the work was not found in that dictionary's transcribed legend.
+
+<AbbreviationComparison kind="works" />
+
+## Grammatical &amp; general terms, side by side
+
+The same comparison for **grammatical** abbreviations (gender, case, pada, verb classes).
+French (BUR, STC), German (GRA, PWG, PW) and Latin (BOP) dictionaries are matched by the
+meaning of the term, so e.g. *accusative* lines up across `acc.`, `Acc.` and `accusatif`.
+
+<AbbreviationComparison kind="grammatical" />
+
+## Every dictionary's legend
+
+A section for **every catalogued dictionary**. Dictionaries with a transcribed legend come
+first (with their full abbreviation list, long lists collapsed); those whose legend is still
+only in scanned front matter follow, linking out to the scan.
+
+<AbbreviationDirectory />

@@ -8,6 +8,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "build:catalog": "node scripts/build-catalog.mjs",
+    "build:abbreviations": "node scripts/build-abbreviations.mjs",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

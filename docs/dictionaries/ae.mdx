@@ -74,6 +74,17 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 - **Part of the Apte set.** Completes the trio with [AP90](ap90) and [AP](ap).
 
 
+## Headword key conventions
+
+`<k1>` is the **English** word (the search key); `<k2>` may list alternate English forms of the same headword (e.g. `a, an`). Sanskrit equivalents appear inside the entry tagged with `<s>…</s>`.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | English word (lowercase) | `a` | Type English to find the entry; not SLP1 |
+| Alternate forms in display key | `<k2>` lists variants | `a, an` | Captures all forms of the English headword |
+| Sense groups | Circled letters `Ⓐ`, `Ⓑ` and `{@N@}` | `Ⓐ … Ⓑ{@2@}` | Groups usages within an English entry |
+| Sanskrit equivalents | `<s>word</s>` | `<s>naraH</s>` | Rendered to the chosen output script |
+
 ## Abbreviations
 
 <DictAbbreviations code="AE" headless />

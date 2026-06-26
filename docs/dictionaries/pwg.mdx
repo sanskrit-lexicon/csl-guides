@@ -94,6 +94,18 @@ See [Data Formats](../developers/data-formats) for the full markup reference.
 - **German scholarship.** Definitions, grammatical notes, and discussion are in German.
 
 
+## Headword key conventions
+
+`<k1>` is the SLP1 stem (search key); `<k2>` is commonly identical but may carry a udātta `/`. Page references encode **volume-page** — the seven-volume structure of the print.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1, accent-stripped stem | `aMSa` | What you type to search |
+| Udātta (some entries) | `/` on the vowel in `<k2>` | `a/MSa` | Not all entries mark the accent in `<k2>` |
+| Homonyms | `<h>` integer | `<k1>a<k2>a<h>2` | Multiple records share the same `<k1>` |
+| Sense structure | `<div n="…">` labelled subdivisions | `<div n="2"> a) …` | Numbered and lettered sense divisions in the body |
+| Page reference | `<pc>vol-page` | `<pc>1-0001` = vol. 1, p. 1 | Volume number prefixes the page |
+
 ## Abbreviations
 
 <DictAbbreviations code="PWG" headless />

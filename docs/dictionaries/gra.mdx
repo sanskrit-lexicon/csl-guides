@@ -87,6 +87,18 @@ See [Data Formats](../developers/data-formats) for the full markup reference.
   [Grassmann revision](/news/grassmann-revision).
 
 
+## Headword key conventions
+
+`<k1>` = `<k2>` = SLP1 accent-stripped stem; Vedic accents appear in the **entry body** (in `{@…@}` or running text), not in the key. Entries are organized **etymologically under roots**, so derivatives may appear under a root entry rather than at their own alphabetical slot.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1, accent-stripped | `a` | k1 = k2; never type an accent to search |
+| Homonyms | `<hom>N.</hom>` tag | `<hom>2.</hom>` | Grassmann distinguishes many homonyms with a numbered label |
+| Root-based arrangement | Derivatives under their root entry | *ā-dhā, ni-dhā* under `DA` | Look up the simple root, then browse derivatives |
+| Bold headword | `{@(word).@}` in entry body | `{@(a).@}` | The actual headword, bold in print; accent shown here, not in `<k1>` |
+| Page reference | `<pc>col` (4-digit column) | `<pc>0001` = col. 1 of the 1873 print | GRA cites columns, not pages |
+
 ## Abbreviations
 
 <DictAbbreviations code="GRA" headless />

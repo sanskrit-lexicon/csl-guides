@@ -82,6 +82,17 @@ See [Data Formats](../developers/data-formats) for the markup reference.
   and page scans only.
 
 
+## Headword key conventions
+
+`<k1>` = SLP1 (search key, no hyphen); `<k2>` = SLP1 with **hyphens** marking the morphological segmentation (e.g. `a-fRin` for the prefix *a-* + stem). In the printed display the headword is bold IAST with a trailing stem hyphen.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1, no hyphen | `afRin` | Always search without hyphens |
+| Display key | `<k2>` adds hyphen segmentation | `a-fRin` | Shows morphological analysis (prefix-stem) |
+| Bold headword | `{@IAST-form-@}` with trailing `-` | `{@a-ṛṇin-@}` | IAST, trailing hyphen marks the stem form |
+| No Basic display | — | — | Use **List** or **Advanced**; STC has no Basic display |
+
 ## Abbreviations
 
 <DictAbbreviations code="STC" headless />

@@ -119,6 +119,19 @@ losing information. See [Publications](../about/publications) and the live
 ["Marking Monier" notes](https://www.sanskrit-lexicon.uni-koeln.de/talkMay2008/markingMonier.html).
 
 
+## Headword key conventions
+
+`<k1>` is the **search key** (SLP1, accent-stripped stem); `<k2>` is the display form and may carry the Vedic udātta. You always search on `<k1>`, never `<k2>`.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1, accent-stripped stem | `agni`, `aMSa` | What you type in the search box |
+| Udātta in display key only | `/` on the accented vowel in `<k2>` | `agni/` for *agnī́* | Toggle display with the *accent* option; never type `/` to search |
+| Homonyms | `<h>` integer on the record | `<k1>a<k2>a<h>2` | Multiple records can share the same `<k1>`; all appear in results |
+| Compounds | Own flat `<k1>` entry (no hyphen) | `agnigrha` as a separate record | Compounds are not stored under a parent headword |
+| Stem form | Uninflected stem, not nominative | `agni` not `agniH` | Consistent across CDSL — search the bare stem |
+| Page reference | `<pc>page,col` | `<pc>1,1` = 1899 print p. 1, col. 1 | Enables click-through to the scanned page |
+
 ## Abbreviations
 
 <DictAbbreviations code="MW" headless />

@@ -71,6 +71,18 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 - **A comparativist's dictionary.** By Theodor Benfey, with explicit compound sections.
 
 
+## Headword key conventions
+
+`<k1>` = `<k2>` = SLP1 stem. The entry body immediately gives the IAST form in `{%…%}`. Numbered senses use `{@N.@}` bold markers; compounds are collected under `{@-- <ab>Comp.</ab>@}`.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1 stem | `aMSa` | k1 = k2 |
+| IAST display form | `{%aṃśa%}` immediately after `{#…#}` | `{#aMSa#}¦ {%aṃśa,%}` | The printed (IAST) form follows the SLP1 key |
+| Numbered senses | `{@N.@}` in bold | `{@1.@} A part, a share` | Clear enumeration of meanings |
+| Compound section | `{@-- <ab>Comp.</ab>@}` | explicit marker | BEN explicitly marks where compound sub-entries begin |
+| Citation | `<ls>Man.</ls> 9, 47` | Manu 9.47 | Standard source tags with locus |
+
 ## Abbreviations
 
 <DictAbbreviations code="BEN" headless />

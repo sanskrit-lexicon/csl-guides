@@ -67,6 +67,17 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 - **For study with Lanman's Reader** — scoped to that text, not a general dictionary.
 
 
+## Headword key conventions
+
+`<k1>` = `<k2>` = SLP1 stem. Homonym numbers appear as leading digits in the display headword (`{@1a,@}`). The signature feature is cross-references to **Whitney's Grammar** via `<ls n="wg,N">`.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1 stem | `a` | k1 = k2 |
+| Homonym | `<h>N` on the record; leading digit in `{@N…@}` | `{@1a,@}` — the `1` is the homonym | Both the machine field and the display carry it |
+| Whitney Grammar link | `<ls n="wg,N">N.</ls>` | `<ls n="wg,502">502.</ls>` | Cross-reference to Whitney's Grammar §N |
+| Page reference | `<pc>page-col` | `<pc>111-a` = p. 111, col. a | Standard two-column format |
+
 ## Abbreviations
 
 <DictAbbreviations code="LAN" headless />

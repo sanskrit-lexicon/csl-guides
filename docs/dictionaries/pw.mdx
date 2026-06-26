@@ -73,6 +73,18 @@ See [Data Formats](../developers/data-formats) for the full markup reference.
 - **Etymological notes.** Greek and other comparanda appear inline via `<gk>`/`<lang>`.
 
 
+## Headword key conventions
+
+`<k1>` is the SLP1 stem (search key); `<k2>` may add `˚` to mark a **combining / bound form** (a prefix or affix never used alone) or carry the udātta `/`. Page references encode **volume-page-column**.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1 stem | `a` | Always search the bare SLP1 form |
+| Combining-form mark | `˚` in `<k2>` and `{#…#}` | `{#a˚#}`, `{#an˚#}` | Signals the entry is always prefixed, never standalone |
+| Udātta (some entries) | `/` on the vowel in `<k2>` | — | Present in some entries; not typed to search |
+| Homonyms | `<hom>N.</hom>` tag | `<hom>2.</hom>` | Labelled as in the original print |
+| Page reference | `<pc>vol-page-col` | `<pc>1-001-a` = vol. 1, p. 1, col. a | Three-part locator for the seven-volume set |
+
 ## Abbreviations
 
 <DictAbbreviations code="PW" headless />

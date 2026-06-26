@@ -54,6 +54,17 @@ section. The first entry (`csl-orig/v02/acph/acph.txt`):
 See [Data Formats](../developers/data-formats) for the markup reference.
 
 
+## Headword key conventions
+
+ACPH follows the same synonym-group structure as the main [ABCH](abch) — no single alphabetical headword key; search matches synonyms in `<syns>`. Entry ids (`<eid>`) continue the numbering from the main kośa.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Subject section | `<info kvvv="…">` | `<info kvvv="…devakARqaH">` | The *kāṇḍa* (thematic section) name |
+| Entry id | `<eid>N` (continuing from ABCH) | `<eid>341` | Sequential from the main kośa |
+| Synonym list | `<syns><s>word-gender, …</s>` | `<s>Palodaya-puM,…</s>` | Gender: `-puM` masc., `-klI` neut. |
+| Search | Search on any **synonym** to find its group | — | No alphabetical headword key |
+
 ## Abbreviations
 
 <DictAbbreviations code="ACPH" headless />

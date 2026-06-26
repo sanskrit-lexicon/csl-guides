@@ -95,6 +95,18 @@ See [Data Formats](../developers/data-formats) for the full markup reference.
   you can compare how a word was treated in 1890 and in the revised edition.
 
 
+## Headword key conventions
+
+`<k1>` = `<k2>` = SLP1 stem (no accents — AP carries none). AP's hallmark markup is the `∙²N` **sense marker**, which enumerates meanings finely. Page-column references use **numeric** column labels (1/2/3), unlike AP90's letter labels.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1 stem, no accent | `aMSumat` | k1 = k2 |
+| Sense marker | `∙²N` | `∙²1`, `∙²2`, `∙²3` | The defining feature of the revised edition |
+| Page reference | `<pc>page-col` (col = digit) | `<pc>0002-1` = p. 2, col. 1 | Numeric column vs AP90's letter |
+| Grammar label | `{%<lex>a.</lex>%}` | label inside `{%…%}` and `<lex>` | Adjective, italicised |
+| Etymology | `[{#derivation#}]` in square brackets | `[{#aMSu-astyarTe matup#}]` | Sanskrit derivation, bracketed |
+
 ## Abbreviations
 
 <DictAbbreviations code="AP" headless />

@@ -87,6 +87,18 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 - **Historical lens.** Senses and derivations as understood in the early 19th century.
 
 
+## Headword key conventions
+
+`<k1>` = `<k2>` = SLP1 stem; no accents. Page references give **page number only** (no column letter). Wilson typically follows entries with an etymology note (`<ab>E.</ab>`).
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1 stem | `aMSa` | k1 = k2; no column in `<pc>` |
+| Page reference | `<pc>page` (3-digit, no column) | `<pc>001` = p. 1 | Single locator |
+| Nominative form | `({#-form#})` after `<lex>` | `<lex>m.</lex> ({#-SaH#})` | The nominative ending in `{#…#}` |
+| Etymology note | `<ab>E.</ab>` + root + affix | `<ab>E.</ab> {#aMSa#} to divide, {#ac#} affix` | Wilson's derivational note |
+| Numbered senses | `.²N` sense markers | `.²1 A share, portion` | Superscript-style sense numbers |
+
 ## Abbreviations
 
 <DictAbbreviations code="WIL" headless />

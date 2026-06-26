@@ -68,6 +68,17 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 - **A landmark Indian-authored dictionary (1877).** By Anundoram Borooah.
 
 
+## Headword key conventions
+
+`<k1>` = `<k2>` = **English** word (the search key). Sanskrit equivalents and illustrative phrases appear in the entry body. A major English→Sanskrit dictionary by an Indian scholar.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | English word | `a` | Type English to find the entry; not SLP1 |
+| Sense divisions | `<div n="I">`, `<div n="II">` | `<div n="I">I …` | Roman-numeral sense groups |
+| Example phrase | `<div n="xe">` | marks an illustrative sentence | Followed by the English phrase in `{%…%}` |
+| English phrase | `{%…%}` | `{%there is a silk-cotton tree%}` | Italic; the English phrase to be rendered in Sanskrit |
+
 ## Abbreviations
 
 <DictAbbreviations code="BOR" headless />

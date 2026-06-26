@@ -82,6 +82,17 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 - **Has an English twin.** Cappeller's `CAE` (1891) applies the same scheme in English.
 
 
+## Headword key conventions
+
+`<k1>` is SLP1 (accent-free); `<k2>` carries the **udātta** `/` on the accented vowel — the only difference between the two keys. CCS consistently marks headword accents.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1, no accent | `aMSa` | Type without `/` to search |
+| Accent in display key | `/` on the accented vowel in `<k2>` | `a/MSa` → *áṃśa* | Visible in headword lists; never type it |
+| Grammar label | `{%m.%}` in italic | `{%m.%}` | Grammatical label inside `{%…%}` |
+| Page reference | `<pc>page-col` | `<pc>001-1` = p. 1, col. 1 | Two-column layout |
+
 ## Abbreviations
 
 <DictAbbreviations code="CCS" headless />

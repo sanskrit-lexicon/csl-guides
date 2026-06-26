@@ -69,6 +69,17 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 - **Roots + numbered senses**, in concise English; entries closely parallel [Wilson (WIL)](wil).
 
 
+## Headword key conventions
+
+`<k1>` = `<k2>` = SLP1 stem. The same stem may appear in **two consecutive `<L>` records** — one verbal (root + class) and one nominal (noun + senses). They are distinguished by their sequential `<L>` lnum, not by the key.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1 stem | `aMSa` | k1 = k2; verb and noun share the same key |
+| Two records per stem | Separate `<L>` lnums | `<L>4` (verb) + `<L>5` (noun) for `aMSa` | Both appear in search results |
+| Verbal entry | `r. Nth cl. ({#present#})` | `r. 10th cl. ({#aMSayati#})` | Root label + class + present form |
+| Nominal entry | `m. ({#-SaH#}) 1. … 2. …` | masculine nominative + numbered senses | |
+
 ## Abbreviations
 
 <DictAbbreviations code="SHS" headless />

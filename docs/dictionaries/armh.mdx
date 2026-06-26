@@ -58,6 +58,16 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 - **Headword + verse** structure — find a word, get its synonym set.
 
 
+## Headword key conventions
+
+`<k1>` = `<k2>` = SLP1 (the **leading synonym** of the verse set). Each record corresponds to a **verse** (`<vn>` gives the verse number locus); the full synonym set is encoded in the verse lines.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1 (leading synonym of the set) | `svar` | k1 = k2; the first word of the synonym verse |
+| Verse number | `<vn>kāṇḍa.section.chapter.verse` | `<vn>1.1.1.3` | Locates the verse in the text |
+| Synonyms | Subsequent words in the verse | `svaH svargaH surasadma …` | All are synonyms for the same concept |
+
 ## Abbreviations
 
 <DictAbbreviations code="ARMH" headless />

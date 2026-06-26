@@ -95,6 +95,17 @@ See [Data Formats](../developers/data-formats) for the full markup reference.
   direction for composition.
 
 
+## Headword key conventions
+
+`<k1>` = `<k2>` = SLP1 stem; AP90 marks **no Vedic accents** anywhere. Page references use a letter for the column.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1, no accent | `afRin` (*ṛṇin*) | k1 = k2; no accent marks exist in AP90 |
+| Page reference | `<pc>page-col` (col = letter a/b/c) | `<pc>0001-c` = p. 1, col. c | Three-column layout |
+| Grammar label | `{%<ab>a.</ab>%}` inside italic | `{%<ab>a.</ab>%}` = adjective | Nested inside `{%…%}` italic span |
+| Citation | `<ls>Mb.</ls>` | standard source + locus | Same pattern as MW and other CDSL dicts |
+
 ## Abbreviations
 
 <DictAbbreviations code="AP90" headless />

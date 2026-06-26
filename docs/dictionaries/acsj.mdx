@@ -53,6 +53,17 @@ Brief synonym entries keyed to the kośa's sections. The opening entries
 See [Data Formats](../developers/data-formats) for the markup reference.
 
 
+## Headword key conventions
+
+ACSJ ("gleanings") follows the same synonym-group structure as [ABCH](abch) — no alphabetical headword key; search matches synonyms in `<syns>`. This is a very short text (~5 pages) with `<eid>` ids referencing the main kośa.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Subject section | `<info kvvv="…">` | `<info kvvv="…devADidevakARqaH">` | The thematic section |
+| Entry id | `<eid>N` | `<eid>1` | References the main kośa entry |
+| Synonym | `<syns><s>word-gender</s>` | `<s>sarvIya-puM</s>` | Gender: `-puM` masc. |
+| Search | Search on a **synonym** to find its group | — | No alphabetical headword key |
+
 ## Abbreviations
 
 <DictAbbreviations code="ACSJ" headless />

@@ -67,6 +67,17 @@ See [Data Formats](../developers/data-formats) for the full markup reference.
   them.
 
 
+## Headword key conventions
+
+`<k1>` = `<k2>` = **English** word (the search key is English, not SLP1). Sanskrit equivalents appear inside the entry body tagged with `{#…#}` (SLP1). This is the reverse direction of [Monier-Williams (MW)](mw).
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | English word (ASCII) | `abandon` | Type English to find the entry; not SLP1 |
+| Sanskrit equivalents | `{#…#}` SLP1 in body | `{#tyaj#}` | Rendered to your chosen output script |
+| Conjugation label | `(c. N. {#form#})` | `(c. 1. {#tyajati, tyaktuM#})` | Class number and principal parts inline |
+| Grammar label | `{%v. a.%}`, `{%s.%}` etc. | `{%v. a.%}` = transitive verb | English grammatical abbreviations in italic |
+
 ## Abbreviations
 
 <DictAbbreviations code="MWE" headless />

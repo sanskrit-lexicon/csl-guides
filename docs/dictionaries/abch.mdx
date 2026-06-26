@@ -71,6 +71,17 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 - **The classic Jain kośa** by Hemacandra — with its own [supplement](acph) and [gleanings](acsj).
 
 
+## Headword key conventions
+
+ABCH is a **synonym thesaurus**, not an alphabetical headword dictionary. There is no single `<k1>` key per entry — search matches synonyms listed inside `<syns>`. Entries are grouped by subject section (`<info kvvv>` gives the *kāṇḍa* name); each group is identified by a sequential `<eid>` number.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Subject section | `<info kvvv="…">` | `<info kvvv="…devADidevakARqaH">` | The thematic *kāṇḍa* (here "of gods") |
+| Entry id | `<eid>N` | `<eid>1` | Identifies the synonym group, not an alphabetical key |
+| Synonym list | `<syns><s>word-gender, …</s>` | `<s>arhan-puM,jina-puM,…</s>` | Gender codes: `-puM` masc., `-klI` neut., `-strI` fem. |
+| Search | Search on any **synonym** to find its group | type `jina` to reach the Arhat entry | There is no single alphabetical headword to look up |
+
 ## Abbreviations
 
 <DictAbbreviations code="ABCH" headless />

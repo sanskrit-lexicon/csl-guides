@@ -149,6 +149,17 @@ the best reading guide (from the *mukhabandhana*):
   [csl-atlas SKD profile](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/src/dicts/skd.md).
 
 
+## Headword key conventions
+
+`<k1>` = `<k2>` = SLP1 stem. The headword as displayed is the **nominative singular** (Sanskrit convention); gender follows immediately as an inline Sanskrit code. There are no `<lex>` or `<ls>` tags — grammar and citations are embedded in Sanskrit prose using the *iti* formula.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1 stem | `agni` | k1 = k2 |
+| Gender code | Inline after headword bar `¦` | `puM` masc. · `strI` fem. · `klI` neut. · `tri` adj. · `vya` indecl. | Immediately follows the headword separator |
+| Citation formula | `… iti <source>` in prose | `iti medinI` | The Sanskrit equivalent of `<ls>` — not a machine-parseable tag |
+| No bilingual tags | No `<lex>`, no `<ls>` | — | Tag-based searches yield nothing; use full-text prose search |
+
 ## Abbreviations
 
 <DictAbbreviations code="SKD" headless />

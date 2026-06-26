@@ -69,6 +69,17 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 - **Reading companion.** Pairs naturally with Macdonell's grammars; terse, fast to consult.
 
 
+## Headword key conventions
+
+`<k1>` = `<k2>` = SLP1 stem (accent-stripped). However, the entry body immediately follows with the **accented IAST** form as free text — visible in the rendered entry but not in the searchable key.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1, no accent | `aMSa` | k1 = k2 |
+| Accented body form | Free IAST text with udātta | `áṃśa,` immediately after `{#aMSa#}¦` | The printed form with accent; not in `<k1>` |
+| Grammar | `<lex>m.</lex>` | standard tag | Grammatical category |
+| Page reference | `<pc>page-col` | `<pc>001-1` = p. 1, col. 1 | Two-column layout |
+
 ## Abbreviations
 
 <DictAbbreviations code="MD" headless />

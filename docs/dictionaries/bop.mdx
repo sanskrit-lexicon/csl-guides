@@ -68,6 +68,17 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 - **Latin glosses + cognates.** Each entry can cite Latin, Germanic, etc. parallels.
 
 
+## Headword key conventions
+
+`<k1>` = `<k2>` = SLP1 stem. Glosses are in **Latin**; the dictionary identifies the derivational root explicitly with `(r. {#…#})` inline.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | SLP1 stem | `aMSa` | k1 = k2 |
+| Root citation | `(r. {#root#} s. {#suffix#})` | `(r. {#aMS#} s. {#a#})` | Root (*r.*) + suffix (*s.*) in parentheses |
+| Latin gloss | Plain Latin text | `pars, portio` | No Latin wrapper tag — glosses run in the body |
+| Cognate notes | `cf. germ. vet. …, lat. …` | `cf. germ. vet. ahsala` | Inline comparative grammar |
+
 ## Abbreviations
 
 <DictAbbreviations code="BOP" headless />

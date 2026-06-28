@@ -24,6 +24,7 @@ const sidebars = {
         'users/downloads-and-data',
         'users/scans-and-print',
         'users/troubleshooting',
+        'users/newsletter',
       ],
     },
   ],

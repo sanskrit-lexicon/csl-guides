@@ -55,6 +55,44 @@
   display: none;
 }
 
+/* Newsletter subscribe form on /users/newsletter */
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 380px;
+  margin: 1.5rem 0 0.5rem;
+}
+.newsletter-form label {
+  font-weight: 600;
+}
+.newsletter-form input[type='email'] {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-button-border-radius);
+  font-size: 1rem;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+.newsletter-form button[type='submit'] {
+  align-self: flex-start;
+  padding: 0.5rem 1.25rem;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--ifm-button-border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.newsletter-form button[type='submit']:hover {
+  background: var(--ifm-color-primary-dark);
+}
+.newsletter-meta {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.25rem;
+}
+
 [data-theme='dark'] {
   --ifm-color-primary: #e0a96d;
   --ifm-color-primary-dark: #d9974f;

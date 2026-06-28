@@ -1,0 +1,48 @@
+---
+title: Newsletter
+description: Subscribe to the monthly Cologne Digital Sanskrit Dictionaries newsletter
+---
+
+# Newsletter
+
+Monthly updates from the Cologne Digital Sanskrit Dictionaries project — corrections,
+new features, documentation, and work in progress.
+
+Past editions are published on [News](/news) and archived at
+[github.com/sanskrit-lexicon/csl-newsletter](https://github.com/sanskrit-lexicon/csl-newsletter).
+
+## Subscribe by email
+
+{/* Replace every occurrence of `cdsl` below with your Buttondown username after account setup. */}
+
+<form
+  action="https://buttondown.com/api/emails/embed-subscribe/cdsl"
+  method="post"
+  target="popupwindow"
+  onSubmit={() => window.open('https://buttondown.com/cdsl', 'popupwindow')}
+  className="newsletter-form"
+>
+  <label htmlFor="bd-email">Email address</label>
+  <input
+    type="email"
+    name="email"
+    id="bd-email"
+    placeholder="you@example.com"
+    required
+  />
+  <button type="submit">Subscribe</button>
+</form>
+
+<p className="newsletter-meta">
+  <a href="https://buttondown.com/cdsl" target="_blank" rel="noreferrer noopener">
+    Powered by Buttondown
+  </a>{' '}
+  · Unsubscribe at any time via the link at the bottom of any edition.
+</p>
+
+## What to expect
+
+- **Monthly cadence** — one edition per month, sent near the end of the month
+- **Coverage** — corrections to the 42+ dictionaries, documentation updates, tool changes,
+  and occasional notes on ongoing scholarly work
+- **Format** — plain text, always archived here on [/news](/news) and on GitHub

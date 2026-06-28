@@ -135,6 +135,7 @@ const config = {
           {
             title: 'More',
             items: [
+              {label: 'Newsletter', to: '/users/newsletter'},
               {label: 'Live Site', href: 'https://sanskrit-lexicon.uni-koeln.de'},
               {label: 'GitHub Org', href: 'https://github.com/sanskrit-lexicon'},
               {label: 'CDSL Project', href: 'https://www.sanskrit-lexicon.uni-koeln.de'},

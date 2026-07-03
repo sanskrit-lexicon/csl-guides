@@ -7,7 +7,7 @@ sidebar_label: Overview
 
 # Dictionaries Overview
 
-CDSL hosts **42 dictionaries** (published 1832–1993), grouped on the front page by
+CDSL hosts **43 dictionaries** (published 1832–1993), grouped on the front page by
 language pair. This section explains the grouping, helps you pick the right dictionary,
 and links to the full **[catalog](catalog)** and **[citation conventions](abbreviations-and-citations)**.
 

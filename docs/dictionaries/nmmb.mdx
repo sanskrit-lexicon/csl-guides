@@ -1,0 +1,118 @@
+---
+id: nmmb
+title: Nāmamālikā of Bhoja (NMMB)
+description: "Guide to the Nāmamālikā of Bhoja (NMMB) on CDSL — a compact synonym kośa in verse attributed to King Bhoja, newly added to the Cologne collection in 2026."
+sidebar_label: Nāmamālikā (NMMB)
+---
+
+import {DictAbbreviations} from '@site/src/components/Abbreviations';
+
+# Bhoja, *Nāmamālikā* (`NMMB`)
+
+`NMMB` is the *Nāmamālikā* ("garland of names") attributed to **King Bhoja** — a compact
+**synonym dictionary (kośa)** in verse, in the same genre as
+[Abhidhānacintāmaṇi (ABCH)](abch) and [Abhidhānaratnamālā (ARMH)](armh). It groups the
+**synonyms of a concept** together, arranged in three subject sections (*prakaraṇa*).
+It is the **newest addition to the CDSL collection** (June 2026), digitized by the
+[sanskrit-kosha project](https://github.com/sanskrit-kosha/kosha).
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `NMMB` (source in [`csl-orig/v02/nmmb`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/nmmb); no separate repo) |
+| **Full title** | *Nāmamālikā* (title page: *Bhoja-saṃgṛhītā Nāmamālikā*, "the Nāmamālikā compiled by Bhoja") |
+| **Author** | Attributed to Bhoja |
+| **Edition** | Ed. E. D. Kulkarni & V. D. Gokhale, Deccan College, Poona **1955** (*Sources of Indo-Aryan Lexicography* 18) |
+| **Size** | ~**40** pages · **506** synonym groups |
+| **Type** | Synonym kośa (Sanskrit, in verse) |
+| **Accents** | No |
+| **Source** | [`csl-orig/v02/nmmb/`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/nmmb) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2026/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2026/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2026/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2026/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2026/web/webtc/download.html) |
+
+:::note
+
+Unlike most CDSL dictionaries, NMMB's web application lives under a **2026** path
+(`/scans/NMMBScan/2026/web/…`), not the usual `2020`. There is no `csl-doc` page for it yet.
+
+:::
+
+## When to use it
+
+Reach for `NMMB` to see how the **medieval kośa tradition** lists the names of a concept —
+it answers "what are the Sanskrit words for X?" in three thematic sweeps (heaven, sky, earth).
+For meanings in English use **[Monier-Williams (MW)](mw)**; for the larger classical synonym
+kośas see **[ABCH](abch)** and **[ARMH](armh)**, and the encyclopedic **[SKD](skd)** /
+**[VCP](vcp)**.
+
+## Looking up a word
+
+Open the **Basic** display, pick your input/output transliteration (see
+[Encoding & Transliteration](../users/encoding-transliteration)), and type a word — you land in
+the synonym group that contains it. See [Search & Display](../users/search-and-display).
+
+## Reading an entry
+
+Each entry is a **synonym group** (`<syns>`) for one concept, followed by the **verse lines**
+that state them. The very first entry — the names of *svarga* (heaven), from
+`csl-orig/v02/nmmb/nmmb.txt`:
+
+```
+<L>1<pc>0001
+<eid>1<syns>svarga-puM,nAka-puM,trilokAgrya-puM,suDAvAsa-puM,buDAlaya-puM,mandAkinIDara-puM,divya-puM,Kapura-klI,meruSfNgAgranagara-klI,DArADarapaTasTita-klI
+svarge nAkatrilokAgryasuDAvAsabuDAlayAH .
+mandAkinIDaro divyaH KapuraM taM napuMsakam .. 2 ..
+;l{0005}
+meruSfNgAgranagaraM DArADarapaTasTitam .
+<LEND>
+```
+
+| In the source | Meaning |
+|---|---|
+| `<L>1<pc>0001` | Cologne record id 1, on printed page 1 |
+| `<eid>1` | the entry (synonym-group) id |
+| `<syns>svarga-puM,nAka-puM,…` | the **synonyms** extracted from the verse, each tagged with gender (`-puM` masculine, `-klI` neuter) |
+| `svarge nAka…napuMsakam .. 2 ..` | the original **verse** (numbered) stating those synonyms — note it even says *taṃ napuṃsakam*, "that one is neuter" |
+| `;l{0005}` | a print **line-number** marker (page markers are `;p{…}`, section titles `;k{…}`) |
+
+See [Data Formats](../developers/data-formats) for the markup reference.
+
+## What makes it distinctive
+
+- **A pocket kośa.** Three *prakaraṇa*s — *svargādi-* (heaven &c.), *gaganādi-* (sky &c.),
+  *bhūmyādi-nāmadheya-prakaraṇa* (earth &c.) — 506 groups in ~40 pages, against ABCH's six
+  *kāṇḍa*s.
+- **Headwords are an editorial layer.** The `<syns>` headword lists were first drafted with AI
+  tools ([dharmamitra.org](https://dharmamitra.org)) and then **manually corrected by
+  Dr. Dhaval Patel against the word-index appendix of the printed book** (per the source
+  metadata) — the verse text itself is the Sansknet digitization, proofread by
+  Navya Sahiti Kasturi.
+- **A kosha-project import.** Digitized under the
+  [sanskrit-kosha/kosha](https://github.com/sanskrit-kosha/kosha) project (GNU GPL v3.0,
+  funded by the Shree Ramkrishna Knowledge Foundation) and added to CDSL in June 2026.
+
+## Headword key conventions
+
+NMMB is a **synonym thesaurus**, not an alphabetical headword dictionary. There is no single
+`<k1>` key per entry — search matches the synonyms listed inside `<syns>`. Entries are grouped
+by subject section (`;k{…}` gives the *prakaraṇa* name); each group is identified by a
+sequential `<eid>` number.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Subject section | `;k{…}` | `;k{svargAdinAmaDeyaprakaraRam}` | The thematic *prakaraṇa* (here "names of heaven &c.") |
+| Entry id | `<eid>N` | `<eid>1` | Identifies the synonym group, not an alphabetical key |
+| Synonym list | `<syns>word-gender, …` | `svarga-puM,nAka-puM,…,Kapura-klI` | Gender codes: `-puM` masc., `-strI` fem., `-klI` neut. |
+| Page / line markers | `;p{…}` / `;l{…}` | `;l{0005}` | Print page and line numbers of the 1955 edition |
+| Search | Search on any **synonym** to find its group | type `nAka` to reach the *svarga* entry | There is no single alphabetical headword to look up |
+
+## Abbreviations
+
+<DictAbbreviations code="NMMB" headless />
+
+## See also
+
+- **[Abhidhānacintāmaṇi (ABCH)](abch)** (with its [supplement](acph) and [gleanings](acsj)) · **[Abhidhānaratnamālā (ARMH)](armh)** — the classic synonym kośas
+- **[SKD](skd)** / **[VCP](vcp)** — the large modern kośas
+- The full **[catalog](catalog)**

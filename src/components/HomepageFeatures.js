@@ -14,7 +14,7 @@ const FEATURES = [
     title: 'Dictionaries',
     emoji: '📚',
     to: '/dictionaries/overview',
-    body: 'The auto-generated catalog of 42 dictionaries, abbreviations, and citation conventions.',
+    body: 'The auto-generated catalog of 43 dictionaries, abbreviations, and citation conventions.',
   },
   {
     title: 'Tools',

@@ -31,12 +31,34 @@ The goal is to make the scholarly apparatus of each dictionary — the editor's 
 scope note, abbreviation conventions, and acknowledgements — accessible online for the
 first time. A summary page will be added to the guides site as the sweep completes.
 
-## New dictionary: NMMB (Nāmamālā)
+## New dictionary live: NMMB (Nāmamālikā of Bhoja)
 
-The Nāmamālā dictionary (NMMB) has been integrated into the online search infrastructure:
-the XML generation pipeline, the web display, the offline app, and the headword
-normalisation layers. It will appear in the search interface once the data preparation
-passes validation. This is the first dictionary addition since the original batch.
+The *Nāmamālikā* attributed to King Bhoja (NMMB) is now **live on the CDSL front page** —
+the first addition to the online collection since the current catalog took shape. It is a
+compact synonym kośa in
+verse (506 synonym groups in three *prakaraṇa*s, from the 1955 Deccan College edition),
+digitized by the [sanskrit-kosha project](https://github.com/sanskrit-kosha/kosha) with all
+the usual displays (Basic, List, Advanced, Mobile) and downloads. The guides site has a
+[new deep page for NMMB](/dictionaries/nmmb) with a verified sample record and its headword
+key conventions, and the [catalog](/dictionaries/catalog) now counts 43 digitized
+dictionaries.
+
+## Böhtlingk's own Nachträge digitized (PWKVN)
+
+A second new digitization landed in `csl-orig`: **PWKVN**, the "Nachträge und
+Verbesserungen" (addenda and corrections) appendixes that Böhtlingk printed at the end of
+each of the seven volumes of his shorter *Sanskrit-Wörterbuch* (PW) — nearly 25,000 short
+records of the author's own corrections and additions. It is not yet a front-page catalog
+entry, but it is browsable through an
+[experimental display](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-apidev/pwkvn/)
+and documented on a [new guides page](/dictionaries/pwkvn).
+
+## Repository housekeeping: default branches renamed to `main`
+
+The organisation's repositories — including `csl-orig`, the canonical source of every
+dictionary's digitization — renamed their default branch from `master` to `main`. GitHub
+redirects old links, but anything that pins raw file URLs to a branch should switch to
+`main`. All links on this site have been updated.
 
 ## Security hardening across all server-side endpoints
 
@@ -68,6 +90,9 @@ were closed in June across MW, SHS, SKD, INM, SCH, LRV, WIL, and AE — sourced 
 proofreading against the original print editions. The cologne-stardict offline dictionaries
 were regenerated automatically after each batch (82 commits, tracking every correction
 commit in csl-orig).
+
+One highlight: a systematic fix of the commentator Sāyaṇa's name in the Śabdakalpadruma
+(`sAyanaH` → `sAyaNaH`, 165 occurrences), caught by proofreading the retroflex ṇ.
 
 To report an error or suggest a correction, open an issue at
 [github.com/sanskrit-lexicon/CORRECTIONS](https://github.com/sanskrit-lexicon/CORRECTIONS/issues/new).

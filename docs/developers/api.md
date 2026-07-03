@@ -64,7 +64,7 @@ Parameters may be passed in the URL (GET) or via POST. `{action}` is one of:
 ### Request parameters
 
 These are the parameters used across the native endpoints (the complete list is in
-[`doc/restfulparm.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/doc/restfulparm.md)):
+[`doc/restfulparm.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/doc/restfulparm.md)):
 
 | Param | Meaning | Values | Default |
 |---|---|---|---|
@@ -167,9 +167,9 @@ not change the meaning of `field`/`query`/`query_type`. The response is a Salt e
 with CDSL specifics (`lnum`, `page`, `column`, `scanUrl`, `headwordDeva`, …). `salt_ids`
 batch-fetches the same entry shape by `ids=lemma-…` (repeatable), and `salt_graphql` exposes
 `entries`/`ids` over GraphQL with camelCase field names. Full specs:
-[`doc/salt_entries.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/doc/salt_entries.md),
-[`salt_ids.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/doc/salt_ids.md),
-and [`salt_graphql.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/doc/salt_graphql.md).
+[`doc/salt_entries.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/doc/salt_entries.md),
+[`salt_ids.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/doc/salt_ids.md),
+and [`salt_graphql.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/doc/salt_graphql.md).
 The normative contract (OpenAPI + GraphQL schema + CSL↔C-SALT field mapping) lives in
 [`csl-standards`](https://github.com/sanskrit-lexicon/csl-standards).
 
@@ -184,7 +184,7 @@ progress in [csl-apidev#46](https://github.com/sanskrit-lexicon/csl-apidev/pull/
 
 A permalink layer (see
 [COLOGNE#249](https://github.com/sanskrit-lexicon/COLOGNE/issues/249) and
-[`doc/cleanurl.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/master/doc/cleanurl.md))
+[`doc/cleanurl.md`](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/doc/cleanurl.md))
 links directly to an entry:
 
 ```

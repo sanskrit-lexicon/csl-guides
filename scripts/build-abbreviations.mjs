@@ -32,23 +32,23 @@ const RAW = 'https://raw.githubusercontent.com/sanskrit-lexicon';
 // left unclassified for per-dict display and matched by concept in the comparison.
 // ---------------------------------------------------------------------------
 const SOURCES = {
-  MW:   {repo: 'MWS',      branch: 'master', file: 'mwabbreviations/mwab_input.txt',            parser: 'disp',     lang: 'en'},
-  AE:   {repo: 'ApteES',   branch: 'master', file: 'issues/issue11/lexab/aeab_input.txt',       parser: 'disp',     lang: 'en', type: 'grammatical'},
-  BUR:  {repo: 'BUR',      branch: 'master', file: 'burissues/issue5/burab_input_6.txt',        parser: 'disp',     lang: 'fr', type: 'grammatical'},
-  AP90: {repo: 'AP90',     branch: 'master', file: 'markup/abls/abbrauth_1.txt',                parser: 'ap90colon',lang: 'en'},
-  BHS:  {repo: 'BHS',      branch: 'master', file: 'issues/issue4/bhsfm_abbr.txt',              parser: 'bhstab',   lang: 'en'},
-  BEN:  {repo: 'BEN',      branch: 'master', files: {grammatical: 'abbrev/ben_ab.txt', works: 'abbrev/ben_ls.txt'}, parser: 'eq', lang: 'en'},
-  MW72: {repo: 'MW72',     branch: 'master', file: 'prefaces/mw72pref24.md',                    parser: 'mdbullet', lang: 'en'},
+  MW:   {repo: 'MWS',      branch: 'main', file: 'mwabbreviations/mwab_input.txt',            parser: 'disp',     lang: 'en'},
+  AE:   {repo: 'ApteES',   branch: 'main', file: 'issues/issue11/lexab/aeab_input.txt',       parser: 'disp',     lang: 'en', type: 'grammatical'},
+  BUR:  {repo: 'BUR',      branch: 'main', file: 'burissues/issue5/burab_input_6.txt',        parser: 'disp',     lang: 'fr', type: 'grammatical'},
+  AP90: {repo: 'AP90',     branch: 'main', file: 'markup/abls/abbrauth_1.txt',                parser: 'ap90colon',lang: 'en'},
+  BHS:  {repo: 'BHS',      branch: 'main', file: 'issues/issue4/bhsfm_abbr.txt',              parser: 'bhstab',   lang: 'en'},
+  BEN:  {repo: 'BEN',      branch: 'main', files: {grammatical: 'abbrev/ben_ab.txt', works: 'abbrev/ben_ls.txt'}, parser: 'eq', lang: 'en'},
+  MW72: {repo: 'MW72',     branch: 'main', file: 'prefaces/mw72pref24.md',                    parser: 'mdbullet', lang: 'en'},
   LRV:  {repo: 'LRV',      branch: 'main',   file: 'glacier/LR_Vaidya_Front_proofed.txt',       parser: 'lrvtab',   lang: 'en'},
-  MD:   {repo: 'MD',       branch: 'master', file: 'mdissues/issue11/abbrev1/abbrev1.txt',      parser: 'mdtab',    lang: 'en'},
-  CAE:  {repo: 'CAE',      branch: 'master', file: 'prefaces/caepref06.md',                     parser: 'caeparen', lang: 'en', type: 'grammatical'},
+  MD:   {repo: 'MD',       branch: 'main', file: 'mdissues/issue11/abbrev1/abbrev1.txt',      parser: 'mdtab',    lang: 'en'},
+  CAE:  {repo: 'CAE',      branch: 'main', file: 'prefaces/caepref06.md',                     parser: 'caeparen', lang: 'en', type: 'grammatical'},
   SHS:  {repo: 'SHS',      branch: 'main',   file: 'issues/issue1/shs_listed_abbrs.txt',        parser: 'tabsp',    lang: 'en', type: 'grammatical'},
   AP:   {repo: 'AP',       branch: 'main',   file: 'issues/issue2/AP57.printed.abbrs.txt',      parser: 'tabsp',    lang: 'en', type: 'grammatical'},
-  STC:  {repo: 'csl-orig', branch: 'master', file: 'v02/stc/abbrev/abbreviationsStchoupak.txt', parser: 'tab',      lang: 'fr'},
-  GRA:  {repo: 'GRA',      branch: 'master', file: 'graab/abbrevs/graab_input.txt',             parser: 'disp',     lang: 'de', type: 'grammatical'},
-  PWG:  {repo: 'PWG',      branch: 'master', file: 'pwgissues/issue74/pwgbib_input.txt',        parser: 'pwgtab',   lang: 'de', type: 'works'},
-  PW:   {repo: 'PWK',      branch: 'master', file: 'pw_ls/pwbib/pwbib_utf8.txt',                parser: 'pwbib',    lang: 'de', type: 'works'},
-  INM:  {repo: 'csl-orig', branch: 'master', file: 'v02/inm/inm_abbr.txt',                      parser: 'inmhi',    lang: 'en'},
+  STC:  {repo: 'csl-orig', branch: 'main', file: 'v02/stc/abbrev/abbreviationsStchoupak.txt', parser: 'tab',      lang: 'fr'},
+  GRA:  {repo: 'GRA',      branch: 'main', file: 'graab/abbrevs/graab_input.txt',             parser: 'disp',     lang: 'de', type: 'grammatical'},
+  PWG:  {repo: 'PWG',      branch: 'main', file: 'pwgissues/issue74/pwgbib_input.txt',        parser: 'pwgtab',   lang: 'de', type: 'works'},
+  PW:   {repo: 'PWK',      branch: 'main', file: 'pw_ls/pwbib/pwbib_utf8.txt',                parser: 'pwbib',    lang: 'de', type: 'works'},
+  INM:  {repo: 'csl-orig', branch: 'main', file: 'v02/inm/inm_abbr.txt',                      parser: 'inmhi',    lang: 'en'},
   BOP:  {repo: 'BOP',      branch: 'main',   file: {works: 'issues/issue6/cdsl/abbrevs/bopauth.txt', grammatical: 'issues/issue6/cdsl/abbrevs/bopab.txt'}, parser: 'tab', lang: 'la'},
 };
 
@@ -408,7 +408,7 @@ async function main() {
         dicts.push({...base, status: 'none', note: `source parse failed: ${e.message}`});
       }
     } else if (TOKENS_ONLY[code]) {
-      dicts.push({...base, status: 'tokens', sourceUrl: `https://github.com/sanskrit-lexicon/${code}/blob/master/${TOKENS_ONLY[code]}`,
+      dicts.push({...base, status: 'tokens', sourceUrl: `https://github.com/sanskrit-lexicon/${code}/blob/main/${TOKENS_ONLY[code]}`,
         note: 'Abbreviation tokens are inventoried with frequencies, but the print front matter (which gives their expansions) is not yet transcribed.'});
       console.log(`  ${code}: tokens-only`);
     } else {

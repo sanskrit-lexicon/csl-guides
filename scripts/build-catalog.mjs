@@ -147,7 +147,7 @@ async function main() {
       const lc = d.code.toLowerCase();
       d.cslDocPage = cslDocPages.has(lc) ? lc : null;
       d.cslDocUrl = d.cslDocPage
-        ? `https://github.com/${ORG}/csl-doc/blob/master/source/dictionaries/${lc}.rst`
+        ? `https://github.com/${ORG}/csl-doc/blob/main/source/dictionaries/${lc}.rst`
         : null;
       // csl-orig source directory (the canonical plain-text source for the dictionary)
       d.cslOrigUrl = cslOrigDir.get(lc) || null;

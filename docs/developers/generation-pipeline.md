@@ -91,7 +91,7 @@ for the end-to-end diagram.
 
 CDSL is **not deployed by CI** — the site is generated and served directly on the
 University of Cologne web server. Per
-[`csl-websanlexicon/readme_cologne.org`](https://github.com/sanskrit-lexicon/csl-websanlexicon/blob/master/readme_cologne.org):
+[`csl-websanlexicon/readme_cologne.org`](https://github.com/sanskrit-lexicon/csl-websanlexicon/blob/main/readme_cologne.org):
 
 - Each dictionary's **web application** (the B/L/A/M displays, in PHP) is produced by a
   `generate.py` step using **mako** templates, run in the `v00` working directory on the

@@ -238,12 +238,12 @@
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/lrv.rst",
           "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/lrv",
           "urls": {
-            "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2020/web/index.php",
-            "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2020/web/webtc/indexcaller.php",
-            "list": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2020/web/webtc1/index.php",
-            "advanced": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2020/web/webtc2/index.php",
-            "mobile": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2020/web/mobile1/index.php",
-            "download": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2020/web/webtc/download.html",
+            "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2022/web/index.php",
+            "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2022/web/webtc/indexcaller.php",
+            "list": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2022/web/webtc1/index.php",
+            "advanced": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2022/web/webtc2/index.php",
+            "mobile": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2022/web/mobile1/index.php",
+            "download": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/2022/web/webtc/download.html",
             "scanPdf": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/index.php?sfx=pdf",
             "scanJpg": "https://www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/index.php?sfx=jpg"
           }
@@ -1002,12 +1002,12 @@
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/abch.rst",
           "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/abch",
           "urls": {
-            "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2020/web/index.php",
-            "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2020/web/webtc/indexcaller.php",
-            "list": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2020/web/webtc1/index.php",
-            "advanced": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2020/web/webtc2/index.php",
-            "mobile": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2020/web/mobile1/index.php",
-            "download": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2020/web/webtc/download.html",
+            "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2023/web/index.php",
+            "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2023/web/webtc/indexcaller.php",
+            "list": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2023/web/webtc1/index.php",
+            "advanced": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2023/web/webtc2/index.php",
+            "mobile": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2023/web/mobile1/index.php",
+            "download": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/2023/web/webtc/download.html",
             "scanPdf": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/index.php?sfx=pdf",
             "scanJpg": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/index.php?sfx=jpg"
           }
@@ -1036,12 +1036,12 @@
           "cslDocUrl": null,
           "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/acph",
           "urls": {
-            "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2020/web/index.php",
-            "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2020/web/webtc/indexcaller.php",
-            "list": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2020/web/webtc1/index.php",
-            "advanced": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2020/web/webtc2/index.php",
-            "mobile": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2020/web/mobile1/index.php",
-            "download": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2020/web/webtc/download.html",
+            "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2023/web/index.php",
+            "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2023/web/webtc/indexcaller.php",
+            "list": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2023/web/webtc1/index.php",
+            "advanced": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2023/web/webtc2/index.php",
+            "mobile": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2023/web/mobile1/index.php",
+            "download": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/2023/web/webtc/download.html",
             "scanPdf": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/index.php?sfx=pdf",
             "scanJpg": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACPHScan/index.php?sfx=jpg"
           }
@@ -1070,12 +1070,12 @@
           "cslDocUrl": null,
           "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/acsj",
           "urls": {
-            "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2020/web/index.php",
-            "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2020/web/webtc/indexcaller.php",
-            "list": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2020/web/webtc1/index.php",
-            "advanced": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2020/web/webtc2/index.php",
-            "mobile": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2020/web/mobile1/index.php",
-            "download": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2020/web/webtc/download.html",
+            "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2023/web/index.php",
+            "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2023/web/webtc/indexcaller.php",
+            "list": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2023/web/webtc1/index.php",
+            "advanced": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2023/web/webtc2/index.php",
+            "mobile": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2023/web/mobile1/index.php",
+            "download": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/2023/web/webtc/download.html",
             "scanPdf": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/index.php?sfx=pdf",
             "scanJpg": "https://www.sanskrit-lexicon.uni-koeln.de/scans/ACSJScan/index.php?sfx=jpg"
           }
@@ -1104,12 +1104,12 @@
           "cslDocUrl": null,
           "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/nmmb",
           "urls": {
-            "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2020/web/index.php",
-            "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2020/web/webtc/indexcaller.php",
-            "list": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2020/web/webtc1/index.php",
-            "advanced": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2020/web/webtc2/index.php",
-            "mobile": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2020/web/mobile1/index.php",
-            "download": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2020/web/webtc/download.html",
+            "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2026/web/index.php",
+            "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2026/web/webtc/indexcaller.php",
+            "list": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2026/web/webtc1/index.php",
+            "advanced": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2026/web/webtc2/index.php",
+            "mobile": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2026/web/mobile1/index.php",
+            "download": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/2026/web/webtc/download.html",
             "scanPdf": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/index.php?sfx=pdf",
             "scanJpg": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NMMBScan/index.php?sfx=jpg"
           }
@@ -1279,12 +1279,12 @@
           "cslDocUrl": null,
           "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/fri",
           "urls": {
-            "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2020/web/index.php",
-            "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2020/web/webtc/indexcaller.php",
-            "list": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2020/web/webtc1/index.php",
-            "advanced": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2020/web/webtc2/index.php",
-            "mobile": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2020/web/mobile1/index.php",
-            "download": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2020/web/webtc/download.html",
+            "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2025/web/index.php",
+            "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2025/web/webtc/indexcaller.php",
+            "list": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2025/web/webtc1/index.php",
+            "advanced": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2025/web/webtc2/index.php",
+            "mobile": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2025/web/mobile1/index.php",
+            "download": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/2025/web/webtc/download.html",
             "scanPdf": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/index.php?sfx=pdf",
             "scanJpg": "https://www.sanskrit-lexicon.uni-koeln.de/scans/FRIScan/index.php?sfx=jpg"
           }

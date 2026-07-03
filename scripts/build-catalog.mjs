@@ -84,9 +84,12 @@ function parseFrontPage(html) {
   return groups.filter((g) => g.items.length);
 }
 
-function actionUrls(scanCode) {
+function actionUrls(scanCode, href) {
   if (!scanCode) return null;
-  const base = `${SITE}/scans/${scanCode}Scan/2020/web`;
+  // The web-app year varies per dictionary (most are 2020; NMMB is 2026) —
+  // take it from the row's own href rather than assuming.
+  const year = ((href || '').match(/Scan\/(\d{4})\/web\//) || [])[1] || '2020';
+  const base = `${SITE}/scans/${scanCode}Scan/${year}/web`;
   return {
     overview: `${base}/index.php`,
     basic: `${base}/webtc/indexcaller.php`,
@@ -151,7 +154,7 @@ async function main() {
         : null;
       // csl-orig source directory (the canonical plain-text source for the dictionary)
       d.cslOrigUrl = cslOrigDir.get(lc) || null;
-      d.urls = actionUrls(d.scanCode);
+      d.urls = actionUrls(d.scanCode, d.href);
     }
   }
 

@@ -22,7 +22,7 @@ with one record per entry wrapped in markup.
 - **Encoding**: UTF-8, **no BOM**. Sanskrit is stored in **SLP1**.
 
 Each record runs from an `<L>` line to a `<LEND>` line. Example (Monier-Williams,
-[`csl-orig/v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt)):
+[`csl-orig/v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw.txt)):
 
 ```
 <L>2<pc>1,1<k1>akAra<k2>a—kAra<e>3
@@ -67,7 +67,7 @@ notes for MW).
 
 The build (see **[Generation Pipeline](generation-pipeline)**) wraps these records into a
 per-dictionary XML document and validates it against a generated DTD
-([`one.dtd`](https://github.com/sanskrit-lexicon/csl-pywork/blob/master/v02/makotemplates/pywork/one.dtd)).
+([`one.dtd`](https://github.com/sanskrit-lexicon/csl-pywork/blob/main/v02/makotemplates/pywork/one.dtd)).
 The structure:
 
 ```xml
@@ -107,7 +107,7 @@ view and the scheme table.
 :::tip Interoperability model
 For cross-dictionary tooling, [`csl-standards`](https://github.com/sanskrit-lexicon/csl-standards)
 defines a neutral JSON exchange layer
-([`docs/INTEROPERABILITY_MODEL.md`](https://github.com/sanskrit-lexicon/csl-standards/blob/master/docs/INTEROPERABILITY_MODEL.md))
+([`docs/INTEROPERABILITY_MODEL.md`](https://github.com/sanskrit-lexicon/csl-standards/blob/main/docs/INTEROPERABILITY_MODEL.md))
 that keys an entry across dictionaries and carries `forms`, `senses`, `citations`, and
 `relations` — the basis for the CDSL-to-TEI and CDSL-to-OntoLex conversions.
 :::

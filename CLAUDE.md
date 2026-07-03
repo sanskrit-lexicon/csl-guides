@@ -69,7 +69,7 @@ required together:
 
 ## The dictionary catalog (don't hand-edit the data)
 
-The 42-dictionary catalog table is **generated, not authored**.
+The 43-dictionary catalog table is **generated, not authored**.
 [scripts/build-catalog.mjs](scripts/build-catalog.mjs) fetches the live CDSL front page +
 the GitHub org repo list + `csl-doc` + `csl-orig/v02` and writes
 [src/data/dictionaries.json](src/data/dictionaries.json), which

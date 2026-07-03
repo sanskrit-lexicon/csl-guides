@@ -1,10 +1,10 @@
 {
   "source": "per-dictionary abbreviation files in the sanskrit-lexicon org (see each dict sourceUrl)",
   "counts": {
-    "total": 43,
+    "total": 44,
     "withData": 18,
     "tokensOnly": 1,
-    "none": 24
+    "none": 25
   },
   "comparison": {
     "grammatical": [
@@ -764,7 +764,7 @@
       "fullTitle": "Wilson Sanskrit-English Dictionary",
       "year": "1832",
       "repoUrl": "https://github.com/sanskrit-lexicon/WIL",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/wil.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/wil.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -774,7 +774,7 @@
       "fullTitle": "Yates Sanskrit-English Dictionary",
       "year": "1846",
       "repoUrl": "",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/yat.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/yat.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -784,7 +784,7 @@
       "fullTitle": "Goldstücker Sanskrit-English Dictionary",
       "year": "1856",
       "repoUrl": "",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/gst.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/gst.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -794,14 +794,14 @@
       "fullTitle": "Benfey Sanskrit-English Dictionary",
       "year": "1866",
       "repoUrl": "https://github.com/sanskrit-lexicon/BEN",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ben.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/ben.rst",
       "status": "data",
       "lang": "en",
       "langLabel": "English",
       "kind": "standard",
       "sourceUrl": [
-        "https://github.com/sanskrit-lexicon/BEN/blob/master/abbrev/ben_ab.txt",
-        "https://github.com/sanskrit-lexicon/BEN/blob/master/abbrev/ben_ls.txt"
+        "https://github.com/sanskrit-lexicon/BEN/blob/main/abbrev/ben_ab.txt",
+        "https://github.com/sanskrit-lexicon/BEN/blob/main/abbrev/ben_ls.txt"
       ],
       "works": [
         {
@@ -1397,12 +1397,12 @@
       "fullTitle": "Monier-Williams Sanskrit-English Dictionary",
       "year": "1872",
       "repoUrl": "https://github.com/sanskrit-lexicon/MW72",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/mw72.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/mw72.rst",
       "status": "data",
       "lang": "en",
       "langLabel": "English",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/MW72/blob/master/prefaces/mw72pref24.md",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/MW72/blob/main/prefaces/mw72pref24.md",
       "works": [],
       "grammatical": [],
       "mixed": [
@@ -2036,7 +2036,7 @@
       "fullTitle": "Lanman's Sanskrit Reader Vocabulary",
       "year": "1884",
       "repoUrl": "",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/lan.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/lan.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -2046,7 +2046,7 @@
       "fullTitle": "Vaidya Sanskrit-English Dictionary",
       "year": "1889",
       "repoUrl": "https://github.com/sanskrit-lexicon/LRV",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/lrv.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/lrv.rst",
       "status": "data",
       "lang": "en",
       "langLabel": "English",
@@ -2734,12 +2734,12 @@
       "fullTitle": "Apte Practical Sanskrit-English Dictionary",
       "year": "1890",
       "repoUrl": "https://github.com/sanskrit-lexicon/AP90",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ap90.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/ap90.rst",
       "status": "data",
       "lang": "en",
       "langLabel": "English",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/AP90/blob/master/markup/abls/abbrauth_1.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/AP90/blob/main/markup/abls/abbrauth_1.txt",
       "works": [
         {
           "abbr": "Ait Br.",
@@ -3854,12 +3854,12 @@
       "fullTitle": "Cappeller Sanskrit-English Dictionary",
       "year": "1891",
       "repoUrl": "https://github.com/sanskrit-lexicon/CAE",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/cae.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/cae.rst",
       "status": "data",
       "lang": "en",
       "langLabel": "English",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/CAE/blob/master/prefaces/caepref06.md",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/CAE/blob/main/prefaces/caepref06.md",
       "works": [],
       "grammatical": [
         {
@@ -4217,12 +4217,12 @@
       "fullTitle": "Macdonell Sanskrit-English Dictionary",
       "year": "1893",
       "repoUrl": "https://github.com/sanskrit-lexicon/MD",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/md.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/md.rst",
       "status": "data",
       "lang": "en",
       "langLabel": "English",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/MD/blob/master/mdissues/issue11/abbrev1/abbrev1.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/MD/blob/main/mdissues/issue11/abbrev1/abbrev1.txt",
       "works": [],
       "grammatical": [],
       "mixed": [
@@ -4980,12 +4980,12 @@
       "fullTitle": "Monier-Williams Sanskrit-English Dictionary",
       "year": "1899",
       "repoUrl": "https://github.com/sanskrit-lexicon/MWS",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/mw.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/mw.rst",
       "status": "data",
       "lang": "en",
       "langLabel": "English",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/MWS/blob/master/mwabbreviations/mwab_input.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/MWS/blob/main/mwabbreviations/mwab_input.txt",
       "works": [],
       "grammatical": [],
       "mixed": [
@@ -6071,7 +6071,7 @@
       "fullTitle": "Shabda-Sagara Sanskrit-English Dictionary",
       "year": "1900",
       "repoUrl": "https://github.com/sanskrit-lexicon/SHS",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/shs.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/shs.rst",
       "status": "data",
       "lang": "en",
       "langLabel": "English",
@@ -6278,7 +6278,7 @@
       "fullTitle": "Practical Sanskrit-English Dictionary, revised edition",
       "year": "1957",
       "repoUrl": "https://github.com/sanskrit-lexicon/AP",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ap.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/ap.rst",
       "status": "data",
       "lang": "en",
       "langLabel": "English",
@@ -6651,7 +6651,7 @@
       "fullTitle": "Monier-Williams English-Sanskrit Dictionary",
       "year": "1851",
       "repoUrl": "",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/mwe.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/mwe.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -6661,7 +6661,7 @@
       "fullTitle": "Borooah English-Sanskrit Dictionary",
       "year": "1877",
       "repoUrl": "https://github.com/sanskrit-lexicon/BOR",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/bor.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/bor.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -6671,12 +6671,12 @@
       "fullTitle": "Apte Student's English-Sanskrit Dictionary",
       "year": "1920",
       "repoUrl": "https://github.com/sanskrit-lexicon/ApteES",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ae.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/ae.rst",
       "status": "data",
       "lang": "en",
       "langLabel": "English",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/ApteES/blob/master/issues/issue11/lexab/aeab_input.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/ApteES/blob/main/issues/issue11/lexab/aeab_input.txt",
       "works": [],
       "grammatical": [
         {
@@ -7078,12 +7078,12 @@
       "fullTitle": "Burnouf Dictionnaire Sanscrit-Français",
       "year": "1866",
       "repoUrl": "https://github.com/sanskrit-lexicon/BUR",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/bur.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/bur.rst",
       "status": "data",
       "lang": "fr",
       "langLabel": "French",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/BUR/blob/master/burissues/issue5/burab_input_6.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/BUR/blob/main/burissues/issue5/burab_input_6.txt",
       "works": [],
       "grammatical": [
         {
@@ -8237,12 +8237,12 @@
       "fullTitle": "Stchoupak Dictionnaire Sanscrit-Français",
       "year": "1932",
       "repoUrl": "https://github.com/sanskrit-lexicon/STC",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/stc.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/stc.rst",
       "status": "data",
       "lang": "fr",
       "langLabel": "French",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/stc/abbrev/abbreviationsStchoupak.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/stc/abbrev/abbreviationsStchoupak.txt",
       "works": [],
       "grammatical": [],
       "mixed": [
@@ -8560,12 +8560,12 @@
       "fullTitle": "Böhtlingk and Roth Grosses Petersburger Wörterbuch",
       "year": "1855",
       "repoUrl": "https://github.com/sanskrit-lexicon/PWG",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pwg.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/pwg.rst",
       "status": "data",
       "lang": "de",
       "langLabel": "German",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/PWG/blob/master/pwgissues/issue74/pwgbib_input.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/PWG/blob/main/pwgissues/issue74/pwgbib_input.txt",
       "works": [
         {
           "abbr": "ĀŚV. ŚR.",
@@ -19599,12 +19599,12 @@
       "fullTitle": "Grassmann Wörterbuch zum Rig Veda",
       "year": "1873",
       "repoUrl": "https://github.com/sanskrit-lexicon/GRA",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/gra.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/gra.rst",
       "status": "data",
       "lang": "de",
       "langLabel": "German",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/GRA/blob/master/graab/abbrevs/graab_input.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/GRA/blob/main/graab/abbrevs/graab_input.txt",
       "works": [],
       "grammatical": [
         {
@@ -20986,12 +20986,12 @@
       "fullTitle": "Böhtlingk Sanskrit-Wörterbuch in kürzerer Fassung",
       "year": "1879",
       "repoUrl": "https://github.com/sanskrit-lexicon/PWK",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pw.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/pw.rst",
       "status": "data",
       "lang": "de",
       "langLabel": "German",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/PWK/blob/master/pw_ls/pwbib/pwbib_utf8.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/PWK/blob/main/pw_ls/pwbib/pwbib_utf8.txt",
       "works": [
         {
           "abbr": "ĀŚV.ŚR.",
@@ -22673,7 +22673,7 @@
       "fullTitle": "Cappeller Sanskrit Wörterbuch",
       "year": "1887",
       "repoUrl": "https://github.com/sanskrit-lexicon/CCS",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ccs.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/ccs.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -22683,7 +22683,7 @@
       "fullTitle": "Schmidt Nachträge zum Sanskrit-Wörterbuch",
       "year": "1928",
       "repoUrl": "https://github.com/sanskrit-lexicon/SCH",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/sch.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/sch.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -22693,7 +22693,7 @@
       "fullTitle": "Bopp Glossarium Sanscritum",
       "year": "1847",
       "repoUrl": "https://github.com/sanskrit-lexicon/BOP",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/bop.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/bop.rst",
       "status": "data",
       "lang": "la",
       "langLabel": "Latin",
@@ -22902,9 +22902,9 @@
       "fullTitle": "Vacaspatyam",
       "year": "1873",
       "repoUrl": "https://github.com/sanskrit-lexicon/VCP",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/vcp.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/vcp.rst",
       "status": "tokens",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/VCP/blob/master/abbrevprep/abbrev0_deva_all.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/VCP/blob/main/abbrevprep/abbrev0_deva_all.txt",
       "note": "Abbreviation tokens are inventoried with frequencies, but the print front matter (which gives their expansions) is not yet transcribed."
     },
     {
@@ -22913,7 +22913,7 @@
       "fullTitle": "Sabda-kalpadruma",
       "year": "1886",
       "repoUrl": "https://github.com/sanskrit-lexicon/SKD",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/skd.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/skd.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -22923,7 +22923,7 @@
       "fullTitle": "Abhidhānacintāmaṇi of Hemacandrācārya",
       "year": "1896",
       "repoUrl": "",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/abch.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/abch.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -22948,17 +22948,27 @@
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
     {
+      "code": "NMMB",
+      "title": "Nāmamālikā of Bhoja",
+      "fullTitle": "Nāmamālikā of Bhoja",
+      "year": "1955",
+      "repoUrl": "",
+      "frontMatterUrl": "",
+      "status": "none",
+      "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
+    },
+    {
       "code": "INM",
       "title": "Index to the Names in the Mahabharata",
       "fullTitle": "Index to the Names in the Mahabharata",
       "year": "1904",
       "repoUrl": "https://github.com/sanskrit-lexicon/INM",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/inm.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/inm.rst",
       "status": "data",
       "lang": "en",
       "langLabel": "English",
       "kind": "names",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/inm/inm_abbr.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/inm/inm_abbr.txt",
       "works": [],
       "grammatical": [],
       "mixed": [
@@ -23296,7 +23306,7 @@
       "fullTitle": "The Vedic Index of Names and Subjects",
       "year": "1912",
       "repoUrl": "https://github.com/sanskrit-lexicon/VEI",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/vei.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/vei.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -23306,7 +23316,7 @@
       "fullTitle": "The Purana Index",
       "year": "1951",
       "repoUrl": "",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pui.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/pui.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -23316,12 +23326,12 @@
       "fullTitle": "Edgerton Buddhist Hybrid Sanskrit Dictionary",
       "year": "1953",
       "repoUrl": "https://github.com/sanskrit-lexicon/BHS",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/bhs.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/bhs.rst",
       "status": "data",
       "lang": "en",
       "langLabel": "English",
       "kind": "standard",
-      "sourceUrl": "https://github.com/sanskrit-lexicon/BHS/blob/master/issues/issue4/bhsfm_abbr.txt",
+      "sourceUrl": "https://github.com/sanskrit-lexicon/BHS/blob/main/issues/issue4/bhsfm_abbr.txt",
       "works": [
         {
           "abbr": "AbhidhK.",
@@ -24758,7 +24768,7 @@
       "fullTitle": "Aufrecht's Catalogus Catalogorum",
       "year": "1962",
       "repoUrl": "https://github.com/sanskrit-lexicon/ACC",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/acc.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/acc.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -24768,7 +24778,7 @@
       "fullTitle": "Kṛdantarūpamālā",
       "year": "1965",
       "repoUrl": "https://github.com/sanskrit-lexicon/KRM",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/krm.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/krm.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -24778,7 +24788,7 @@
       "fullTitle": "Indian Epigraphical Glossary",
       "year": "1966",
       "repoUrl": "",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/ieg.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/ieg.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -24788,7 +24798,7 @@
       "fullTitle": "Meulenbeld's Sanskrit Names of Plants",
       "year": "1974",
       "repoUrl": "",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/snp.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/snp.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -24798,7 +24808,7 @@
       "fullTitle": "Puranic Encyclopedia",
       "year": "1975",
       "repoUrl": "",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pe.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/pe.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -24808,7 +24818,7 @@
       "fullTitle": "Personal and Geographical Names in the Gupta Inscriptions",
       "year": "1978",
       "repoUrl": "",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/pgn.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/pgn.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
@@ -24818,7 +24828,7 @@
       "fullTitle": "Mahabharata Cultural Index",
       "year": "1993",
       "repoUrl": "https://github.com/sanskrit-lexicon/MCI",
-      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/mci.rst",
+      "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/mci.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     }

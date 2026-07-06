@@ -41,6 +41,29 @@ sound. To verify the way CI does: `npm ci && npm run build`.
 - **Custom React components** live in [src/components/](src/components/) and are imported into
   `.mdx` pages: `DictionaryCatalog`, `DictionaryComparison` (live side-by-side CDSL lookup),
   `Quiz` (renders the MW quiz dataset), `Screenshot`, `SiteVersion`, `HomepageFeatures`.
+- **The `:::table` directive** ([src/remark/rst-table-directive.mjs](src/remark/rst-table-directive.mjs),
+  registered as a `remarkPlugins` entry on `docs`/`blog` in
+  [docusaurus.config.js](docusaurus.config.js)) renders an RST grid/simple table — merged cells
+  that GFM pipe tables can't express — into a real `<table>`:
+
+  ````
+  :::table
+  ```rst-table
+  +-------+-------+
+  | A     | B     |
+  +=======+=======+
+  | 1     | 2     |
+  +-------+-------+
+  ```
+  :::
+  ````
+
+  It shells out to **Pandoc** (`pandoc --from rst --to html5`) at build time, so **Pandoc must be
+  on PATH** wherever `npm run build`/`npm start` runs (already true for GitHub-hosted CI runners).
+  This is the escape hatch for merged cells, not a replacement for ordinary pipe tables — the
+  ~30 existing hand-authored tables in `docs/` are plain pipe tables and were deliberately left
+  as-is (none of them have merged cells). The `/docx-to-md` skill emits `:::table` blocks
+  automatically when its target is under `csl-guides`.
 - **The MW quiz dataset** ([src/data/mw-quiz.json](src/data/mw-quiz.json)) is rendered by
   `Quiz` on [docs/users/reading-monier-williams.mdx](docs/users/reading-monier-williams.mdx)
   and is **generated/verified, not hand-authored**: each lookup's `cdsl.entryId` + page is

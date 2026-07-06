@@ -3,7 +3,7 @@
 // Docs: https://docusaurus.io/docs/configuration
 
 import {themes as prismThemes} from 'prism-react-renderer';
-import remarkRstTableDirective from './src/remark/rst-table-directive.mjs';
+import remarkRstTable from './src/remark/rstTable.mjs';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -67,11 +67,11 @@ const config = {
           showLastUpdateTime: true,
           editUrl:
             'https://github.com/sanskrit-lexicon/csl-guides/tree/main/',
-          // Docusaurus already parses `:::name` directive syntax internally (for its own
-          // admonitions) before applying these plugins. Ours renders the `:::table`
-          // directive — an RST grid/simple table, for merged cells GFM pipe tables can't
-          // express — into a real <table> via Pandoc. See src/remark/rst-table-directive.mjs.
-          remarkPlugins: [remarkRstTableDirective],
+          // Renders a plain ```rst-table fenced code block (no ':::' directive wrapper)
+          // into a real <table> with true rowSpan/colSpan — merged cells GFM pipe tables
+          // can't express. Pure-JS parser, no Pandoc dependency at build time. Ported from
+          // buhler-sanskrit-book/src/remark/rstTable.ts — see src/remark/rstTable.mjs.
+          remarkPlugins: [remarkRstTable],
         },
         blog: {
           routeBasePath: 'news',
@@ -80,7 +80,7 @@ const config = {
           showReadingTime: false,
           editUrl:
             'https://github.com/sanskrit-lexicon/csl-guides/tree/main/',
-          remarkPlugins: [remarkRstTableDirective],
+          remarkPlugins: [remarkRstTable],
         },
         theme: {
           customCss: './src/css/custom.css',

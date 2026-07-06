@@ -41,13 +41,14 @@ sound. To verify the way CI does: `npm ci && npm run build`.
 - **Custom React components** live in [src/components/](src/components/) and are imported into
   `.mdx` pages: `DictionaryCatalog`, `DictionaryComparison` (live side-by-side CDSL lookup),
   `Quiz` (renders the MW quiz dataset), `Screenshot`, `SiteVersion`, `HomepageFeatures`.
-- **The `:::table` directive** ([src/remark/rst-table-directive.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/remark/rst-table-directive.mjs),
+- **The `rst-table` fenced block** ([src/remark/rstTable.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/remark/rstTable.mjs)
+  + [rstTableParser.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/remark/rstTableParser.mjs)
+  + [rstTableAst.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/remark/rstTableAst.mjs),
   registered as a `remarkPlugins` entry on `docs`/`blog` in
-  [docusaurus.config.js](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docusaurus.config.js)) renders an RST grid/simple table — merged cells
-  that GFM pipe tables can't express — into a real `<table>`:
+  [docusaurus.config.js](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docusaurus.config.js)) renders an RST/Pandoc grid table — merged cells
+  that GFM pipe tables can't express — into a real `<table>` with true `rowSpan`/`colSpan`:
 
   ````
-  :::table
   ```rst-table
   +-------+-------+
   | A     | B     |
@@ -55,15 +56,21 @@ sound. To verify the way CI does: `npm ci && npm run build`.
   | 1     | 2     |
   +-------+-------+
   ```
-  :::
   ````
 
-  It shells out to **Pandoc** (`pandoc --from rst --to html5`) at build time, so **Pandoc must be
-  on PATH** wherever `npm run build`/`npm start` runs (already true for GitHub-hosted CI runners).
-  This is the escape hatch for merged cells, not a replacement for ordinary pipe tables — the
-  ~30 existing hand-authored tables in `docs/` are plain pipe tables and were deliberately left
-  as-is (none of them have merged cells). The `/docx-to-md` skill emits `:::table` blocks
-  automatically when its target is under `csl-guides`.
+  **No `:::` directive wrapper — a plain fenced code block is the whole convention.** Pure JS
+  (`unist-util-visit` walks the tree for a `code` node with `lang: 'rst-table'`, parses the
+  grid-table text directly, and emits real `mdxJsxFlowElement` `<table>`/`<td rowSpan=N>` nodes) —
+  **no Pandoc dependency at Docusaurus build time**. This design (ported verbatim, logic unchanged,
+  from [buhler-sanskrit-book](https://github.com/gasyoun/buhler-sanskrit-book/blob/main/src/remark/rstTable.ts),
+  the canonical original) replaced an earlier Pandoc-shell-out `:::table` directive design the same
+  day (06-07-2026) once the superior prior art was found — the mdast table-cell type has no
+  rowSpan/colSpan fields, so an HTML-via-mdast route silently drops merges; this plugin bypasses
+  mdast tables entirely. This is the escape hatch for merged cells, not a replacement for ordinary
+  pipe tables — the ~30 existing hand-authored tables in `docs/` are plain pipe tables and were
+  deliberately left as-is (none of them have merged cells). The `/docx-to-md` skill emits
+  `rst-table` blocks automatically for every target now (not just csl-guides) — see the skill's own
+  docs for why a plain `.md`/GFM fallback for other targets turned out to silently corrupt data.
 - **The MW quiz dataset** ([src/data/mw-quiz.json](src/data/mw-quiz.json)) is rendered by
   `Quiz` on [docs/users/reading-monier-williams.mdx](docs/users/reading-monier-williams.mdx)
   and is **generated/verified, not hand-authored**: each lookup's `cdsl.entryId` + page is

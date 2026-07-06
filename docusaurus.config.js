@@ -3,6 +3,7 @@
 // Docs: https://docusaurus.io/docs/configuration
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import remarkRstTableDirective from './src/remark/rst-table-directive.mjs';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -66,6 +67,11 @@ const config = {
           showLastUpdateTime: true,
           editUrl:
             'https://github.com/sanskrit-lexicon/csl-guides/tree/main/',
+          // Docusaurus already parses `:::name` directive syntax internally (for its own
+          // admonitions) before applying these plugins. Ours renders the `:::table`
+          // directive — an RST grid/simple table, for merged cells GFM pipe tables can't
+          // express — into a real <table> via Pandoc. See src/remark/rst-table-directive.mjs.
+          remarkPlugins: [remarkRstTableDirective],
         },
         blog: {
           routeBasePath: 'news',
@@ -74,6 +80,7 @@ const config = {
           showReadingTime: false,
           editUrl:
             'https://github.com/sanskrit-lexicon/csl-guides/tree/main/',
+          remarkPlugins: [remarkRstTableDirective],
         },
         theme: {
           customCss: './src/css/custom.css',

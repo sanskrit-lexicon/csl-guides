@@ -41,9 +41,9 @@ sound. To verify the way CI does: `npm ci && npm run build`.
 - **Custom React components** live in [src/components/](src/components/) and are imported into
   `.mdx` pages: `DictionaryCatalog`, `DictionaryComparison` (live side-by-side CDSL lookup),
   `Quiz` (renders the MW quiz dataset), `Screenshot`, `SiteVersion`, `HomepageFeatures`.
-- **The `:::table` directive** ([src/remark/rst-table-directive.mjs](src/remark/rst-table-directive.mjs),
+- **The `:::table` directive** ([src/remark/rst-table-directive.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/remark/rst-table-directive.mjs),
   registered as a `remarkPlugins` entry on `docs`/`blog` in
-  [docusaurus.config.js](docusaurus.config.js)) renders an RST grid/simple table — merged cells
+  [docusaurus.config.js](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docusaurus.config.js)) renders an RST grid/simple table — merged cells
   that GFM pipe tables can't express — into a real `<table>`:
 
   ````

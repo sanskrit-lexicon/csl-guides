@@ -12,6 +12,7 @@ and using the dictionaries offline.
 
 | Tool | What it does | Page |
 |---|---|---|
+| **Your Name in Devanagari** | Type any word and see it live in Devanagari, IAST, and SLP1 — free, no login | [Your Name in Devanagari](name-in-devanagari) |
 | **Simple-Search** | Fast headword lookup across the dictionaries | [Simple-Search](simple-search) |
 | **Advanced search** | Search within entry bodies, patterns, filters | [Advanced Search](advanced-search) |
 | **Multi-dictionary display** | One headword across many dictionaries at once (experimental `dalglob`) | [Multi-Dictionary](multi-dictionary) |

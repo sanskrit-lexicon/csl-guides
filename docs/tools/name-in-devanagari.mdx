@@ -1,0 +1,33 @@
+---
+id: name-in-devanagari
+title: Your Name in Devanagari
+description: "Type your name or any word and see it live in Devanagari, IAST, and SLP1 — a free, shareable beginner tool powered by the canonical CDSL transcoder."
+sidebar_label: Your Name in Devanagari
+---
+
+import Transliterator from '@site/src/components/Transliterator';
+
+# Your Name in Devanagari
+
+Type a name or word below in Latin letters and watch it appear in **Devanagari** —
+the script the Cologne dictionaries are built on — along with its **IAST** and
+**SLP1** transliterations. No Sanskrit knowledge required.
+
+<Transliterator />
+
+Use the small diacritic buttons to add precision (e.g. `ā` for a long vowel, `ṣ`
+for a retroflex sibilant) — most Western names convert reasonably well with
+plain letters alone, since short vowels and unaspirated consonants need no
+diacritics at all.
+
+The conversion uses the same [`sanskrit-util`](https://github.com/sanskrit-lexicon/sanskrit-util)
+transcoder that powers the dictionary pages on this site and the wider CDSL
+toolchain — not a one-off approximation, so what you see here is the real
+encoding used throughout the project.
+
+:::tip Want to go further?
+Seeing your name is the first step. The
+[Quick Start](../users/quick-start) and
+[Encoding & Transliteration](../users/encoding-transliteration) guides pick up
+from here if you'd like to learn to read and write more Sanskrit yourself.
+:::

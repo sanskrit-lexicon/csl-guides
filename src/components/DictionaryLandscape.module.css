@@ -1,0 +1,168 @@
+/* Palette: validated categorical slots (light + dark selected separately, not
+   auto-flipped) — see docs/dictionaries/landscape.mdx trust block. */
+.root {
+  --dl-c1: #2a78d6; /* Sanskrit-English  (blue)    */
+  --dl-c2: #1baf7a; /* Specialized       (aqua)    */
+  --dl-c3: #eda100; /* Sanskrit-Sanskrit (yellow)  */
+  --dl-c4: #008300; /* Sanskrit-German   (green)   */
+  --dl-c5: #4a3aa7; /* English-Sanskrit  (violet)  */
+  --dl-c6: #e34948; /* Sanskrit-French   (red)     */
+  --dl-c7: #e87ba4; /* Sanskrit-Latin    (magenta) */
+  --dl-grid: #e1e0d9;
+  --dl-axis: #c3c2b7;
+  --dl-muted: #898781;
+  --dl-ring: #ffffff;
+  margin: 1rem 0 2rem;
+}
+
+:global([data-theme='dark']) .root {
+  --dl-c1: #3987e5;
+  --dl-c2: #199e70;
+  --dl-c3: #c98500;
+  --dl-c4: #008300;
+  --dl-c5: #9085e9;
+  --dl-c6: #e66767;
+  --dl-c7: #d55181;
+  --dl-grid: #2c2c2a;
+  --dl-axis: #383835;
+  --dl-muted: #898781;
+  --dl-ring: #1b1b1d;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.legendItem[data-off] {
+  opacity: 0.45;
+}
+
+.chip {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.count {
+  color: var(--dl-muted);
+}
+
+.chip[data-group='1'] { background: var(--dl-c1); }
+.chip[data-group='2'] { background: var(--dl-c2); }
+.chip[data-group='3'] { background: var(--dl-c3); }
+.chip[data-group='4'] { background: var(--dl-c4); }
+.chip[data-group='5'] { background: var(--dl-c5); }
+.chip[data-group='6'] { background: var(--dl-c6); }
+.chip[data-group='7'] { background: var(--dl-c7); }
+
+.chartWrap {
+  position: relative;
+  overflow-x: auto;
+}
+
+.svg {
+  min-width: 640px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid {
+  stroke: var(--dl-grid);
+  stroke-width: 1;
+}
+
+.axis {
+  stroke: var(--dl-axis);
+  stroke-width: 1;
+}
+
+.tick,
+.axisLabel {
+  fill: var(--dl-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.axisLabel {
+  font-size: 12.5px;
+}
+
+.dot {
+  fill-opacity: 0.78;
+  stroke: var(--dl-ring);
+  stroke-width: 2; /* 2px surface ring separates overlapping marks */
+  cursor: default;
+}
+
+.dot[data-group='1'] { fill: var(--dl-c1); }
+.dot[data-group='2'] { fill: var(--dl-c2); }
+.dot[data-group='3'] { fill: var(--dl-c3); }
+.dot[data-group='4'] { fill: var(--dl-c4); }
+.dot[data-group='5'] { fill: var(--dl-c5); }
+.dot[data-group='6'] { fill: var(--dl-c6); }
+.dot[data-group='7'] { fill: var(--dl-c7); }
+
+.dot:hover {
+  fill-opacity: 1;
+}
+
+.dotLabel {
+  fill: var(--ifm-font-color-base);
+  font-size: 11px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.tooltip {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  box-shadow: var(--ifm-global-shadow-md);
+  padding: 0.45rem 0.6rem;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  max-width: 260px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.tooltipTitle {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.note {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+  margin: 0.5rem 0 0;
+}
+
+.tableView {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.tableView summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}

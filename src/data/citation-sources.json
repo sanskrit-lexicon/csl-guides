@@ -1,0 +1,611 @@
+{
+ "generatedAt": "2026-07-07",
+ "generatedBy": "scripts/build-atlas-viz.mjs",
+ "source": {
+  "edges": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_edges.tsv",
+  "nodes": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_nodes.tsv",
+  "method": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/README.md"
+ },
+ "license": "CC-BY-SA-4.0",
+ "stats": {
+  "edgeCount": 1701,
+  "nodeCount": 912,
+  "dictCount": 11,
+  "totalResolvedCites": 828505
+ },
+ "overall": [
+  {
+   "text": "Mahābhārata",
+   "totalCites": 56818,
+   "nDicts": 8
+  },
+  {
+   "text": "Ṛgveda",
+   "totalCites": 38187,
+   "nDicts": 7
+  },
+  {
+   "text": "Rāmāyaṇa",
+   "totalCites": 38155,
+   "nDicts": 9
+  },
+  {
+   "text": "Manusmṛti",
+   "totalCites": 26365,
+   "nDicts": 7
+  },
+  {
+   "text": "Aṣṭādhyāyī (Pāṇini)",
+   "totalCites": 21791,
+   "nDicts": 3
+  },
+  {
+   "text": "Bhāgavata-Purāṇa",
+   "totalCites": 21330,
+   "nDicts": 5
+  },
+  {
+   "text": "Śabdakalpadruma",
+   "totalCites": 20232,
+   "nDicts": 7
+  },
+  {
+   "text": "Raghuvaṃśa",
+   "totalCites": 19922,
+   "nDicts": 7
+  },
+  {
+   "text": "Abhidhānacintāmaṇi",
+   "totalCites": 18073,
+   "nDicts": 3
+  },
+  {
+   "text": "Indische Sprüche",
+   "totalCites": 18030,
+   "nDicts": 4
+  },
+  {
+   "text": "Kathāsaritsāgara",
+   "totalCites": 17015,
+   "nDicts": 9
+  },
+  {
+   "text": "Amarakoṣa",
+   "totalCites": 14918,
+   "nDicts": 8
+  },
+  {
+   "text": "Pañcatantra",
+   "totalCites": 14743,
+   "nDicts": 6
+  },
+  {
+   "text": "Harivaṃśa",
+   "totalCites": 13685,
+   "nDicts": 7
+  },
+  {
+   "text": "Medinīkośa",
+   "totalCites": 13246,
+   "nDicts": 6
+  }
+ ],
+ "dictTotals": {
+  "ap": 57113,
+  "ap90": 37993,
+  "ben": 49003,
+  "bhs": 40875,
+  "lrv": 16469,
+  "md": 47,
+  "mw": 20250,
+  "pw": 50701,
+  "pwg": 536172,
+  "pwkvn": 8386,
+  "sch": 11496
+ },
+ "dictTextCounts": {
+  "ap": 155,
+  "ap90": 149,
+  "ben": 96,
+  "bhs": 136,
+  "lrv": 106,
+  "md": 4,
+  "mw": 5,
+  "pw": 243,
+  "pwg": 475,
+  "pwkvn": 172,
+  "sch": 160
+ },
+ "perDict": {
+  "ap": [
+   {
+    "text": "Raghuvaṃśa",
+    "count": 5536
+   },
+   {
+    "text": "Manusmṛti",
+    "count": 4473
+   },
+   {
+    "text": "Mahābhārata",
+    "count": 4042
+   },
+   {
+    "text": "Bhāgavata",
+    "count": 2914
+   },
+   {
+    "text": "Śiśupālavadha",
+    "count": 2572
+   },
+   {
+    "text": "Śakuntalā",
+    "count": 2505
+   },
+   {
+    "text": "Rāmāyaṇa",
+    "count": 2407
+   },
+   {
+    "text": "Kumārasambhava",
+    "count": 2361
+   },
+   {
+    "text": "Kirātārjunīya",
+    "count": 1703
+   },
+   {
+    "text": "Pañcatantra",
+    "count": 1591
+   },
+   {
+    "text": "Uttararāmacarita",
+    "count": 1508
+   },
+   {
+    "text": "Ṛgveda",
+    "count": 1455
+   }
+  ],
+  "ap90": [
+   {
+    "text": "Raghuvaṃśa",
+    "count": 5306
+   },
+   {
+    "text": "Manusmṛti",
+    "count": 2685
+   },
+   {
+    "text": "Śakuntalā",
+    "count": 2445
+   },
+   {
+    "text": "Kumārasambhava",
+    "count": 2299
+   },
+   {
+    "text": "Śiśupālavadha",
+    "count": 2081
+   },
+   {
+    "text": "Pañcatantra",
+    "count": 1508
+   },
+   {
+    "text": "Uttararāmacarita",
+    "count": 1464
+   },
+   {
+    "text": "Mālatīmādhava",
+    "count": 1285
+   },
+   {
+    "text": "Kirātārjunīya",
+    "count": 1226
+   },
+   {
+    "text": "Meghadūta",
+    "count": 1047
+   },
+   {
+    "text": "Kādambarī",
+    "count": 1032
+   },
+   {
+    "text": "Bhaṭṭikāvya",
+    "count": 1011
+   }
+  ],
+  "ben": [
+   {
+    "text": "Mahābhārata",
+    "count": 7384
+   },
+   {
+    "text": "Manusmṛti",
+    "count": 6058
+   },
+   {
+    "text": "Rāmāyaṇa",
+    "count": 5162
+   },
+   {
+    "text": "Pañcatantra",
+    "count": 4825
+   },
+   {
+    "text": "my Sanskrit Chrestomathy",
+    "count": 3017
+   },
+   {
+    "text": "Bhāgavata-Purāṇa",
+    "count": 1896
+   },
+   {
+    "text": "Hitopadeśa",
+    "count": 1831
+   },
+   {
+    "text": "Rājataraṅgiṇī",
+    "count": 1326
+   },
+   {
+    "text": "Vikramorvaśī",
+    "count": 1162
+   },
+   {
+    "text": "Śakuntalā",
+    "count": 1106
+   },
+   {
+    "text": "Daśakumāracarita",
+    "count": 1098
+   },
+   {
+    "text": "Raghuvaṃśa",
+    "count": 936
+   }
+  ],
+  "bhs": [
+   {
+    "text": "Mahāvastu",
+    "count": 7174
+   },
+   {
+    "text": "Mahāvyutpatti",
+    "count": 4110
+   },
+   {
+    "text": "Lalitavistara",
+    "count": 4054
+   },
+   {
+    "text": "Divyāvadāna",
+    "count": 3181
+   },
+   {
+    "text": "Gaṇḍavyūha",
+    "count": 3174
+   },
+   {
+    "text": "Saddharmapuṇḍarīka",
+    "count": 2206
+   },
+   {
+    "text": "Śikṣāsamuccaya",
+    "count": 1584
+   },
+   {
+    "text": "Mūla-Sarvāstivāda-Vinaya; Gilgit Manuscripts",
+    "count": 1378
+   },
+   {
+    "text": "Bodhisattvabhūmi",
+    "count": 1217
+   },
+   {
+    "text": "Avadāna-śataka",
+    "count": 1103
+   },
+   {
+    "text": "Mahā-Māyūrī",
+    "count": 741
+   },
+   {
+    "text": "Laṅkāvatāra-sūtra",
+    "count": 638
+   }
+  ],
+  "lrv": [
+   {
+    "text": "Raghuvanśa",
+    "count": 4101
+   },
+   {
+    "text": "Manusmṛiti",
+    "count": 1762
+   },
+   {
+    "text": "Kumārasambhava",
+    "count": 1366
+   },
+   {
+    "text": "Meghadūta",
+    "count": 904
+   },
+   {
+    "text": "Śiśupālavadha",
+    "count": 750
+   },
+   {
+    "text": "Śakuntalā",
+    "count": 694
+   },
+   {
+    "text": "Bhaṭṭikāvya",
+    "count": 689
+   },
+   {
+    "text": "Bhagavadgītā",
+    "count": 688
+   },
+   {
+    "text": "Yājnyavalkyasmṛiti",
+    "count": 407
+   },
+   {
+    "text": "Kirātārjunīya",
+    "count": 386
+   },
+   {
+    "text": "Bhartṛihaṛiśataka [",
+    "count": 381
+   },
+   {
+    "text": "Gītagovinda",
+    "count": 340
+   }
+  ],
+  "md": [
+   {
+    "text": "Rigveda",
+    "count": 42
+   },
+   {
+    "text": "Atharvaveda",
+    "count": 2
+   },
+   {
+    "text": "Vājasaneyi Saṃhitā",
+    "count": 2
+   },
+   {
+    "text": "Taittirīya Saṃhitā",
+    "count": 1
+   }
+  ],
+  "mw": [
+   {
+    "text": "Ṛgveda",
+    "count": 15918
+   },
+   {
+    "text": "Buddhist",
+    "count": 1866
+   },
+   {
+    "text": "Brāhmaṇa",
+    "count": 1621
+   },
+   {
+    "text": "Inscriptions",
+    "count": 687
+   },
+   {
+    "text": "Sāmaveda",
+    "count": 158
+   }
+  ],
+  "pw": [
+   {
+    "text": "Mahābhārata",
+    "count": 4139
+   },
+   {
+    "text": "Indische Sprüche",
+    "count": 3071
+   },
+   {
+    "text": "Āpastamba-Dharmasūtra",
+    "count": 2459
+   },
+   {
+    "text": "HEĀDRI'S K4ATURVARGAK4INTĀMAṆI",
+    "count": 1845
+   },
+   {
+    "text": "GALANO's Wörterbuch",
+    "count": 1736
+   },
+   {
+    "text": "Rāmāyaṇa",
+    "count": 1729
+   },
+   {
+    "text": "Bhāvaprakāśa",
+    "count": 1689
+   },
+   {
+    "text": "Kādambarī",
+    "count": 1613
+   },
+   {
+    "text": "Śiśupālavadha",
+    "count": 1580
+   },
+   {
+    "text": "Ṛgveda",
+    "count": 1499
+   },
+   {
+    "text": "Maitrāyaṇī Saṃhitā",
+    "count": 1443
+   },
+   {
+    "text": "Bālarāmāyaṇa",
+    "count": 1207
+   }
+  ],
+  "pwg": [
+   {
+    "text": "Mahābhārata",
+    "count": 39130
+   },
+   {
+    "text": "Rāmāyaṇa",
+    "count": 27977
+   },
+   {
+    "text": "Aṣṭādhyāyī (Pāṇini)",
+    "count": 21509
+   },
+   {
+    "text": "Śabdakalpadruma",
+    "count": 20130
+   },
+   {
+    "text": "Bhāgavata-Purāṇa",
+    "count": 19044
+   },
+   {
+    "text": "Ṛgveda",
+    "count": 18837
+   },
+   {
+    "text": "Abhidhānacintāmaṇi",
+    "count": 16060
+   },
+   {
+    "text": "Kathāsaritsāgara",
+    "count": 14935
+   },
+   {
+    "text": "Indische Sprüche",
+    "count": 14675
+   },
+   {
+    "text": "Amarakoṣa",
+    "count": 14510
+   },
+   {
+    "text": "Medinīkośa",
+    "count": 13083
+   },
+   {
+    "text": "AUFRECHT",
+    "count": 12506
+   }
+  ],
+  "pwkvn": [
+   {
+    "text": "Mahābhārata",
+    "count": 820
+   },
+   {
+    "text": "Āpastamba",
+    "count": 716
+   },
+   {
+    "text": "Divyāvadāna",
+    "count": 688
+   },
+   {
+    "text": "Śiśupālavadha",
+    "count": 464
+   },
+   {
+    "text": "Bombay",
+    "count": 346
+   },
+   {
+    "text": "Naiṣadhacarita",
+    "count": 236
+   },
+   {
+    "text": "Kirātārjunīya",
+    "count": 230
+   },
+   {
+    "text": "Rāmāyaṇa",
+    "count": 225
+   },
+   {
+    "text": "Hemacandra",
+    "count": 223
+   },
+   {
+    "text": "Daśakumāracarita",
+    "count": 202
+   },
+   {
+    "text": "Kauśikasūtra",
+    "count": 199
+   },
+   {
+    "text": "Bhāgavata-Purāṇa",
+    "count": 191
+   }
+  ],
+  "sch": [
+   {
+    "text": "Abhidhānacintāmaṇi",
+    "count": 2000
+   },
+   {
+    "text": "Āpastamba",
+    "count": 853
+   },
+   {
+    "text": "Mahābhārata",
+    "count": 816
+   },
+   {
+    "text": "Divyāvadāna",
+    "count": 700
+   },
+   {
+    "text": "Kirātārjunīya",
+    "count": 501
+   },
+   {
+    "text": "Śiśupālavadha",
+    "count": 488
+   },
+   {
+    "text": "Bombay",
+    "count": 335
+   },
+   {
+    "text": "Hemacandra",
+    "count": 282
+   },
+   {
+    "text": "Naiṣadhacarita",
+    "count": 246
+   },
+   {
+    "text": "ŚUKASAPTATI in LASSEN'S Anthologie",
+    "count": 239
+   },
+   {
+    "text": "Kauśikasūtra",
+    "count": 236
+   },
+   {
+    "text": "Rāmāyaṇa",
+    "count": 229
+   }
+  ]
+ }
+}

@@ -11,6 +11,7 @@
     "build:abbreviations": "node scripts/build-abbreviations.mjs",
     "build:corpus-frequency": "node scripts/build-corpus-frequency.mjs",
     "build:heritage-coverage": "node scripts/build-heritage-coverage.mjs",
+    "build:atlas-viz": "node scripts/build-atlas-viz.mjs",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

@@ -1,0 +1,95 @@
+/* Same validated group palette as DictionaryLandscape (chips carry identity;
+   labels stay in ink tokens). Branches are recessive chrome; hover highlight
+   uses the blue series slot. */
+.root {
+  --cl-c1: #2a78d6;
+  --cl-c2: #1baf7a;
+  --cl-c3: #eda100;
+  --cl-c4: #008300;
+  --cl-c5: #4a3aa7;
+  --cl-c6: #e34948;
+  --cl-c7: #e87ba4;
+  --cl-branch: #c3c2b7;
+  --cl-grid: #e1e0d9;
+  --cl-muted: #898781;
+  --cl-hot: #2a78d6;
+  margin: 1rem 0 2rem;
+}
+
+:global([data-theme='dark']) .root {
+  --cl-c1: #3987e5;
+  --cl-c2: #199e70;
+  --cl-c3: #c98500;
+  --cl-c4: #008300;
+  --cl-c5: #9085e9;
+  --cl-c6: #e66767;
+  --cl-c7: #d55181;
+  --cl-branch: #383835;
+  --cl-grid: #2c2c2a;
+  --cl-muted: #898781;
+  --cl-hot: #3987e5;
+}
+
+.chartWrap {
+  overflow-x: auto;
+}
+
+.svg {
+  min-width: 560px;
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  display: block;
+}
+
+.gridline {
+  stroke: var(--cl-grid);
+  stroke-width: 1;
+}
+
+.branch {
+  stroke: var(--cl-branch);
+  stroke-width: 1.5;
+}
+
+.branchHot {
+  stroke: var(--cl-hot);
+  stroke-width: 2.5;
+}
+
+.tick,
+.axisLabel {
+  fill: var(--cl-muted);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.leafHit {
+  fill: transparent;
+  cursor: default;
+}
+
+.leafChip[data-group='1'] { fill: var(--cl-c1); }
+.leafChip[data-group='2'] { fill: var(--cl-c2); }
+.leafChip[data-group='3'] { fill: var(--cl-c3); }
+.leafChip[data-group='4'] { fill: var(--cl-c4); }
+.leafChip[data-group='5'] { fill: var(--cl-c5); }
+.leafChip[data-group='6'] { fill: var(--cl-c6); }
+.leafChip[data-group='7'] { fill: var(--cl-c7); }
+.leafChip[data-group='0'] { fill: var(--cl-muted); }
+
+.leafLabel,
+.leafLabelHot {
+  fill: var(--ifm-font-color-base);
+  font-size: 11.5px;
+}
+
+.leafLabelHot {
+  font-weight: 700;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+  margin: 0.5rem 0 0;
+}

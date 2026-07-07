@@ -1,0 +1,113 @@
+---
+id: machine-morphology
+title: How Machines Read Sanskrit
+description: "The morphology & segmentation layer: the Sanskrit Heritage Platform's independent machine reading as a cross-check — MW↔Heritage coverage (13.5% of 185,803 entries), plus the wider vidyut / DharmaMitra / Saṃsādhanī ecosystem."
+sidebar_label: Machine morphology (data layer)
+---
+
+import HeritageCoverage, {HeritageSample} from '@site/src/components/HeritageCoverage';
+
+# How Machines Read Sanskrit
+
+Before you can look a Sanskrit word up, you have to find its boundaries: continuous
+sandhi and productive compounding mean a printed line rarely shows you the dictionary
+headword directly. Human readers learn to undo this (the guides'
+[sandhi](/users/sandhi-quiz) and [compound](/users/samasa-quiz) quizzes train exactly
+that); **machines have to do it algorithmically**, and their independent readings are a
+useful cross-check when you doubt your own segmentation of a compound.
+
+## The Sanskrit Heritage Platform
+
+The oldest and most rigorous of these machines is Gérard Huet's
+[Sanskrit Heritage Platform](https://sanskrit.inria.fr/) (INRIA, Paris): a
+finite-state **segmenter** (it enumerates the possible sandhi-consistent splits of a
+phrase), a **morphology generator** (every inflected form of its lexicon,
+derivationally justified), and a hypertext **Sanskrit–French dictionary** (`DICO`)
+knitting them together. Where a Cologne dictionary *records* words, Heritage
+*constructs* them — which is precisely why it is an independent check: if Heritage can
+segment and inflect your compound, the analysis is grammatically derivable, not just
+attested.
+
+## How much of MW does the machine know?
+
+The entry-level crosswalk between Monier-Williams and the Heritage lexicon gives a
+measured answer: **25,140 of 185,803 MW entries (13.5%) have a Heritage article.**
+That is not a defect — Heritage is a curated, generative lexicon built to segment real
+text, not an exhaustive record of the tradition; frequent vocabulary is far better
+covered than the long tail. Coverage by headword initial:
+
+<HeritageCoverage />
+
+The initials that lead — *ā-* (20.7%), *u-* (18.6%), *a-* (16.1%) — are where
+preverb-derived and high-frequency vocabulary concentrates; rare-initial and
+tail-heavy stretches sit near 10%.
+
+## From a frequent word to its machine reading
+
+Joining the [corpus attestation layer](/dictionaries/corpus-attestation) to the
+crosswalk shows the intended use: for the words you actually meet, Heritage usually
+has an article with full morphology behind it.
+
+<HeritageSample n={15} />
+
+## The wider machine ecosystem
+
+Heritage is one of several independent machine readers of Sanskrit — each with a
+different theory of the language, which is what makes cross-checking informative:
+
+- **[vidyut](https://github.com/ambuda-org/vidyut) / [Ambuda](https://ambuda.org/)**
+  (MIT-licensed) — a Pāṇinian generator: it derives forms by grammar rule (prakriyā),
+  so it can *show its work* step by step. Already reused in this project's
+  [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) for verb-paradigm display.
+- **[DharmaMitra](https://dharmamitra.org/)** (Berkeley) — neural translation +
+  GPU-scale morphology and lemmatization. Its services expose no bulk-download
+  license, so this project consumes DharmaMitra-derived data only through committed
+  [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) artifacts, and links
+  rather than mines the site.
+- **[Saṃsādhanī](https://sanskrit.uohyd.ac.in/scl/)** (Amba Kulkarni, University of
+  Hyderabad) — a full computational-linguistics stack with gold-standard treebanks;
+  its [datasets](https://github.com/samsaadhanii/datasets) currently ship without a
+  LICENSE file, so they are validation-only for us until upstream clarifies.
+- **The [Digital Corpus of Sanskrit](http://www.sanskrit-linguistics.org/dcs/)**
+  itself is the fourth reader: every corpus count on the
+  [attestation page](/dictionaries/corpus-attestation) rests on a human-validated
+  machine analysis of running text.
+
+When two of these systems agree on a segmentation, trust it; when they disagree, you
+have found either a genuinely ambiguous compound or the edge of one system's lexicon —
+both worth knowing before you cite a dictionary entry.
+
+:::note Trust block
+- **Evidence:** [`src/data/heritage-coverage.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/heritage-coverage.json)
+  (overall + per-initial coverage + a 200-lemma frequency-joined sample), regenerated
+  by [`scripts/build-heritage-coverage.mjs`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-heritage-coverage.mjs)
+  from the entry-level MW↔Heritage crosswalk
+  [`mw_heritage_crosswalk.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv)
+  (H099, 03-07-2026). All numbers on this page are computed from the committed feed at
+  build time.
+- **Limitations:** coverage is measured at the **entry level against MW key1** —
+  a Heritage article may exist under a variant stem the crosswalk did not match, so
+  13.5% is a lower bound. The sample links resolve inside the
+  [Heritage_Resources GitHub mirror](https://github.com/darkone23/Heritage_Resources)
+  (03-2025 snapshot), not the live site — the live INRIA services block automated
+  access, and GitHub's blob view does not honor in-page anchors, so links open the
+  file, not the exact entry.
+- **Rights:** the feed carries **aggregate statistics over our own derived crosswalk
+  only**; redistribution of the LGPLLR mirror's raw data is a separate, still-open
+  question deliberately not exercised here (evidence record §2 in
+  [`NON_COLOGNE_SOURCES.md`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/NON_COLOGNE_SOURCES.md)).
+- **Owner repos:** Heritage Platform (upstream) →
+  [SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) (crosswalk;
+  deeper reuse staged in its
+  [HERITAGE_INRIA_ROADMAP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HERITAGE_INRIA_ROADMAP.md)) →
+  this repo (rendering).
+- **Built by:** Fable 5 (`claude-fable-5`), 07-07-2026, handoff
+  [H280](https://github.com/gasyoun/Uprava/blob/main/handoffs/H280-Fable_csl-guides_guides_stream3_data_layer_sections_07.07.26.md).
+:::
+
+## See also
+
+- [Corpus attestation](/dictionaries/corpus-attestation) — how often each word is actually used
+- [Encoding & transliteration](/users/encoding-transliteration) — SLP1, IAST, and friends
+- [Compound (samāsa) quiz](/users/samasa-quiz) — train your own segmenter
+- [The dictionary landscape](/dictionaries/landscape) — the 43 dictionaries these layers join against

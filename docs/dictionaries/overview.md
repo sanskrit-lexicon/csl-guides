@@ -45,7 +45,10 @@ full resolution.
 See the **[full catalog](catalog)** for every code, full name, language, date, and repo —
 or explore the same corpus visually: the **[dictionary landscape](landscape)** (which
 dictionaries cover ground no other has) and **[citation sources](citation-sources)** (which
-classical texts each one quotes).
+classical texts each one quotes). Two further data layers put the dictionaries in
+context: **[corpus attestation](corpus-attestation)** (how often each word is actually
+used) and **[machine morphology](machine-morphology)** (how segmenters and generators
+read Sanskrit).
 
 ## Where each dictionary lives
 

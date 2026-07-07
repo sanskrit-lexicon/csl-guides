@@ -12,8 +12,8 @@ _Created: 07-07-2026 · Last updated: 07-07-2026_
 This page holds **guides-specific, falsifiable hypotheses** — claims about this
 documentation site and the learner using it, *not* about the dictionary evidence itself
 (dictionary-evidence hypotheses belong to
-[csl-atlas](https://github.com/gasyoun/csl-atlas), whose
-[HYPOTHESIS_INDEX.md](https://github.com/gasyoun/csl-atlas/blob/main/docs/HYPOTHESIS_INDEX.md)
+[csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas), whose
+[HYPOTHESIS_INDEX.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/HYPOTHESIS_INDEX.md)
 is the rigor model this page follows). Each hypothesis states **claim → data → metric →
 baseline → the committed artifact that tests it**. Refuted or weakened hypotheses stay
 visible: a negative result is still evidence.
@@ -26,8 +26,8 @@ node scripts/build-hypothesis-metrics.mjs   # writes src/data/hypothesis-metrics
 
 csl-atlas evidence is **consumed, never recomputed**: the per-dictionary novelty and
 citation figures are vendored verbatim from the committed atlas artifacts
-([headword_multiplicity.csv](https://github.com/gasyoun/csl-atlas/blob/main/data/obs/headword_multiplicity.csv),
-[citation_registers.json](https://github.com/gasyoun/csl-atlas/blob/main/data/obs/citation_registers.json))
+([headword_multiplicity.csv](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/obs/headword_multiplicity.csv),
+[citation_registers.json](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/obs/citation_registers.json))
 into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/atlas-extract.json).
 
 ## Status index
@@ -132,7 +132,7 @@ into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/ma
   frequency join (which abbreviation tokens are most seen vs which are in the legend) needs a
   per-abbreviation-frequency artifact that csl-atlas has not committed — **stub**: tracked as
   a csl-atlas request rather than recomputed here (see the atlas
-  [CITATION_REGISTERS.md](https://github.com/gasyoun/csl-atlas/blob/main/docs/CITATION_REGISTERS.md)
+  [CITATION_REGISTERS.md](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/docs/CITATION_REGISTERS.md)
   abbreviation-family-merge next-test, which is the same artifact).
 - **Next test.** When csl-atlas commits a per-abbreviation frequency table, replace the
   exposure bound with true token-level legend coverage.

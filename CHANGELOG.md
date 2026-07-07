@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **"Your Name in Devanagari" transliterator tool** (`/tools/name-in-devanagari`, [H312](https://github.com/gasyoun/Uprava/blob/main/handoffs/H312-Sonnet_csl-guides_beginner-lm-transliterator-tool_07.07.26.md)): the first beginner lead-magnet — type a name or word in Latin letters and see it live in Devanagari, IAST, and SLP1, with quick-insert diacritic buttons, copy-to-clipboard, shareable PNG export, and a stubbed soft-email capture (real ESP/list wiring gated on the @DECIDE items in H312). Uses the vendored `sanskrit-util` transcoder via the abugida-correct `slp1_to_devanagari(to_slp1(text))` path — the package's own `iast_to_devanagari` was found to corrupt consonant+vowel sequences (`rāma` → `रआमअ`) and is filed upstream as [sanskrit-util#14](https://github.com/sanskrit-lexicon/sanskrit-util/issues/14).
+
 ## [0.5.0] - 2026-07-07
 
 ### Added

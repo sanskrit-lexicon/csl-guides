@@ -1,0 +1,175 @@
+.widget {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-card-border-radius, 8px);
+  padding: 1.25rem 1.5rem;
+  background: var(--ifm-card-background-color, var(--ifm-background-surface-color));
+  margin: 1.5rem 0;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.input {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  box-sizing: border-box;
+}
+
+.diacritics {
+  margin-top: 0.6rem;
+}
+
+.diacriticsHint {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 0.3rem;
+}
+
+.diacriticButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.diacriticButton {
+  font-size: 1rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 5px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  cursor: pointer;
+}
+
+.diacriticButton:hover {
+  background: var(--ifm-color-primary-lightest);
+}
+
+.result {
+  margin-top: 1.1rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.devaBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.devaText {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-family: 'Noto Sans Devanagari', 'Segoe UI', sans-serif;
+  min-height: 3.6rem;
+  word-break: break-word;
+}
+
+.placeholder {
+  font-size: 1.2rem;
+  color: var(--ifm-color-emphasis-500);
+  font-family: var(--ifm-font-family-base);
+}
+
+.rows {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.resultLabel {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--ifm-color-emphasis-600);
+  min-width: 3.2rem;
+}
+
+.code {
+  font-size: 1rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+.actionButton {
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-primary);
+  background: transparent;
+  color: var(--ifm-color-primary);
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.actionButton:hover {
+  background: var(--ifm-color-primary);
+  color: var(--ifm-button-color, #fff);
+}
+
+.tip {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+  font-style: italic;
+}
+
+.capture {
+  margin-top: 1.3rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--ifm-color-emphasis-300);
+}
+
+.captureLabel {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.captureRow {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.captureInput {
+  flex: 1 1 200px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.captureButton {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-button-color, #fff);
+  cursor: pointer;
+}
+
+.thanks {
+  font-size: 0.9rem;
+  color: var(--ifm-color-success, #2e8b57);
+  margin: 0;
+}

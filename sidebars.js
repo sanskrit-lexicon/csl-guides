@@ -107,6 +107,7 @@ const sidebars = {
       collapsed: false,
       items: [
         'tools/overview',
+        'tools/name-in-devanagari',
         'tools/simple-search',
         'tools/advanced-search',
         'tools/multi-dictionary',

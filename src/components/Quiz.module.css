@@ -99,3 +99,76 @@
   font-size: 1em;
   padding: 0.1rem 0.4rem;
 }
+
+.telemetry {
+  margin: 0 0 0.9rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  font-size: 0.82rem;
+}
+
+.telemetryToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.telemetryNote {
+  margin: 0.35rem 0 0;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.78rem;
+}
+
+.exportButton {
+  margin-top: 0.5rem;
+  border: 1px solid var(--ifm-color-primary);
+  background: transparent;
+  color: var(--ifm-color-primary);
+  border-radius: 6px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.exportButton:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.optionButton {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.optionButton:hover:not(:disabled) {
+  border-color: var(--ifm-color-primary);
+}
+
+.optionButton:disabled {
+  cursor: default;
+}
+
+.optionCorrect {
+  border-color: var(--ifm-color-success, #2e8555);
+  background: var(--ifm-color-success-contrast-background, rgba(46, 133, 85, 0.1));
+}
+
+.optionIncorrect {
+  border-color: var(--ifm-color-danger, #e13238);
+  background: var(--ifm-color-danger-contrast-background, rgba(225, 50, 56, 0.1));
+}
+
+.answerResult {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+}

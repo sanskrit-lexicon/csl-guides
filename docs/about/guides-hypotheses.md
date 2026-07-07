@@ -38,7 +38,7 @@ into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/ma
 | GH-2 | Tested | Deep-page depth follows dictionary fame/size, not lexical novelty. | **Supported** — depth tracks entry count (ρ = 0.56), not unique-headword share (ρ = −0.17). | IEG: 57.5 % unique, 440 words; PWG: 1.9 % unique, 822 words |
 | GH-3 | Tested | The six-quiz track under-covers the entry-*reading* failure modes relative to the word-*finding* ones. | **Supported** — finding modes get 21–34 items each; reading modes get 1–3. | F8 citation-resolution: 2 items vs F4 compounds: 34 |
 | GH-4 | Tested (upper bound) | Most citations a reader meets are in dictionaries whose abbreviation legend this site documents. | **Supported as an exposure bound** — 95.3 % of corpus `<ls>` citations occur in legend-documented dictionaries. | 1,187,169 / 1,245,644 |
-| GH-5 | Gap-flagged | Quiz difficulty labels predict real learner error rates. | **Untestable today** — the site has no interaction telemetry; instrumentation stub below. | — |
+| GH-5 | Instrumented — awaiting data | Quiz difficulty labels predict real learner error rates. | **Instrumentation shipped** — opt-in `localStorage` telemetry on multiple-choice questions; no error-rate data collected yet. | — |
 
 ## GH-1 — Which-dictionary routing accuracy
 
@@ -137,22 +137,33 @@ into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/ma
 - **Next test.** When csl-atlas commits a per-abbreviation frequency table, replace the
   exposure bound with true token-level legend coverage.
 
-## GH-5 — Difficulty labels predict learner error rates (gap-flagged)
+## GH-5 — Difficulty labels predict learner error rates (instrumented — awaiting data)
 
 - **Claim.** Quiz items labelled `hard` produce higher real error rates than `medium`, and
   `medium` higher than `easy` — i.e. the hand-assigned difficulty labels are calibrated.
-- **Data (missing).** Per-item answer events (item id, chosen option, correct?, timestamp —
-  no user identity needed). The site currently ships **no interaction telemetry**, so this
-  hypothesis is untestable today.
+- **Data (collection now live).** Per-item answer events (item id, chosen option, correct?,
+  timestamp — no user identity needed), aggregated to per-item `{attempts, correct}`
+  counters. No events have been collected yet — this section reports the mechanism, not a
+  result.
 - **Metric.** Monotonicity of mean error rate across the three labels
   (Jonckheere–Terpstra or simple ordered comparison), per quiz.
 - **Baseline.** Uncalibrated labels: no ordering, error rates statistically
   indistinguishable across labels.
-- **Artifact stub.** The event schema above is the whole requirement; a minimal
-  implementation is a `localStorage`-buffered counter in
+- **Mechanism shipped (H288, MG ruled 07-07-2026 telemetry belongs on the site).**
   [Quiz.js](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/components/Quiz.js)
-  with an explicit opt-in export — no server, no personal data. Whether any telemetry
-  belongs on this site at all is a human decision (privacy posture); flagged, not assumed.
+  now has a visible, **off-by-default** opt-in toggle. When a reader turns it on,
+  `multiple-choice`-typed items switch from the no-JS `<details>` reveal to a click-an-option
+  interactive mode: choosing an option records `{itemId, difficulty, quizTitle, attempts,
+  correct}` in the browser's `localStorage` (key `csl-guides-quiz-stats-v1`), then reveals the
+  answer. All other item types, and multiple-choice items when telemetry is off, keep the
+  original `<details>` reveal unchanged. A "Download my quiz stats" button exports the
+  counters as JSON — the only way data leaves the browser, and only when the reader clicks
+  it. No server, no network calls, no third-party scripts, no personal data, no user
+  identity — client-side only, matching the privacy envelope this hypothesis originally
+  stubbed.
+- **Next test.** Once readers opt in and export stats, aggregate the exported JSON files by
+  hand (no automatic collection channel exists, by design) and re-run the monotonicity
+  check.
 
 ---
 

@@ -19,10 +19,22 @@ const quiz = data('which-dictionary-quiz.json');
 const abbr = data('abbreviations.json');
 const catalog = data('dictionaries.json');
 
+// Wilson score interval for a binomial proportion (z = 1.96 → 95%).
+// The ACL-standard way to put an uncertainty band on an accuracy from small n.
+const wilson = (k, n, z = 1.96) => {
+  const p = k / n;
+  const denom = 1 + z * z / n;
+  const center = (p + (z * z) / (2 * n)) / denom;
+  const half = (z * Math.sqrt((p * (1 - p)) / n + (z * z) / (4 * n * n))) / denom;
+  return [Math.max(0, center - half), Math.min(1, center + half)].map((v) => +v.toFixed(3));
+};
+
 // ---------- GH-1: which-dictionary routing accuracy ----------
 const judged = gold.scenarios.filter((s) => s.quizId);
 const probes = gold.scenarios.filter((s) => !s.quizId);
 const quizTargets = new Set(judged.map((s) => s.quizAnswer));
+const goldCounts = {};
+for (const s of judged) goldCounts[s.gold] = (goldCounts[s.gold] || 0) + 1;
 const gh1 = {
   quizItems: quiz.questions.length,
   judgedItems: judged.length,
@@ -37,6 +49,14 @@ const gh1 = {
   neverTargetedGolds: [...new Set(probes.flatMap((s) => [s.gold, ...s.alternates]))].filter(
     (c) => !quizTargets.has(c)
   ),
+  // ACL-standard presentation (H281): accuracy + 95% Wilson CI + chance baselines.
+  accuracy: +(judged.filter((s) => s.agree).length / judged.length).toFixed(3),
+  accuracyWilson95: wilson(judged.filter((s) => s.agree).length, judged.length),
+  baselineRandom4: 0.25, // each quiz item offers 4 options
+  baselineMajorityClass: +(Math.max(...Object.values(goldCounts)) / judged.length).toFixed(3),
+  // Cohen's κ needs a second independent annotation of the same items; the gold panel is
+  // a single pass (see which-dictionary-gold.json "annotator"), so κ is not yet computable.
+  cohensKappa: null,
 };
 
 // ---------- GH-2: page depth vs lexical novelty ----------
@@ -74,11 +94,60 @@ const pearson = (x, y) => {
   return sxy / Math.sqrt(sxx * syy);
 };
 const spearman = (x, y) => pearson(rank(x), rank(y));
+// Two-tailed p for a correlation via the t approximation (t = r·sqrt((n−2)/(1−r²)), df = n−2).
+// Student-t CDF from the regularized incomplete beta (Lentz continued fraction) — deterministic.
+const betacf = (a, b, x) => {
+  const EPS = 3e-12, FPMIN = 1e-300;
+  let qab = a + b, qap = a + 1, qam = a - 1;
+  let c = 1, d = 1 - (qab * x) / qap;
+  if (Math.abs(d) < FPMIN) d = FPMIN;
+  d = 1 / d;
+  let h = d;
+  for (let m = 1; m <= 200; m++) {
+    const m2 = 2 * m;
+    let aa = (m * (b - m) * x) / ((qam + m2) * (a + m2));
+    d = 1 + aa * d; if (Math.abs(d) < FPMIN) d = FPMIN;
+    c = 1 + aa / c; if (Math.abs(c) < FPMIN) c = FPMIN;
+    d = 1 / d; h *= d * c;
+    aa = (-(a + m) * (qab + m) * x) / ((a + m2) * (qap + m2));
+    d = 1 + aa * d; if (Math.abs(d) < FPMIN) d = FPMIN;
+    c = 1 + aa / c; if (Math.abs(c) < FPMIN) c = FPMIN;
+    d = 1 / d;
+    const del = d * c;
+    h *= del;
+    if (Math.abs(del - 1) < EPS) break;
+  }
+  return h;
+};
+const gammaln = (x) => {
+  const g = [76.18009172947146, -86.50532032941677, 24.01409824083091,
+    -1.231739572450155, 0.1208650973866179e-2, -0.5395239384953e-5];
+  let y = x, tmp = x + 5.5;
+  tmp -= (x + 0.5) * Math.log(tmp);
+  let ser = 1.000000000190015;
+  for (const gi of g) ser += gi / ++y;
+  return -tmp + Math.log((2.5066282746310005 * ser) / x);
+};
+const ibeta = (a, b, x) => {
+  if (x <= 0) return 0;
+  if (x >= 1) return 1;
+  const bt = Math.exp(gammaln(a + b) - gammaln(a) - gammaln(b) + a * Math.log(x) + b * Math.log(1 - x));
+  return x < (a + 1) / (a + b + 2) ? (bt * betacf(a, b, x)) / a : 1 - (bt * betacf(b, a, 1 - x)) / b;
+};
+const corrPTwoTailed = (r, n) => {
+  const df = n - 2;
+  const t = Math.abs(r) * Math.sqrt(df / (1 - r * r));
+  return +ibeta(df / 2, 0.5, df / (df + t * t)).toPrecision(2);
+};
+const rhoUnique = spearman(rows.map((r) => r.pageWords), rows.map((r) => r.uniquePct));
+const rhoEntries = spearman(rows.map((r) => r.pageWords), rows.map((r) => r.entries));
 const gh2 = {
   dictionariesCompared: rows.length,
-  spearmanDepthVsUnique: +spearman(rows.map((r) => r.pageWords), rows.map((r) => r.uniquePct)).toFixed(3),
+  spearmanDepthVsUnique: +rhoUnique.toFixed(3),
+  spearmanDepthVsUniqueP: corrPTwoTailed(rhoUnique, rows.length),
   pearsonDepthVsUnique: +pearson(rows.map((r) => r.pageWords), rows.map((r) => r.uniquePct)).toFixed(3),
-  spearmanDepthVsEntries: +spearman(rows.map((r) => r.pageWords), rows.map((r) => r.entries)).toFixed(3),
+  spearmanDepthVsEntries: +rhoEntries.toFixed(3),
+  spearmanDepthVsEntriesP: corrPTwoTailed(rhoEntries, rows.length),
   rows: rows.sort((a, b) => b.uniquePct - a.uniquePct),
 };
 
@@ -140,7 +209,7 @@ const gh4 = {
 
 const out = {
   generatedAt: new Date().toISOString().slice(0, 10),
-  generatedBy: 'scripts/build-hypothesis-metrics.mjs (H278)',
+  generatedBy: 'scripts/build-hypothesis-metrics.mjs (H278; ACL-standard CI/baseline/significance fields added in H281)',
   documentedIn: 'docs/about/guides-hypotheses.md',
   gh1_routing: gh1,
   gh2_depth_vs_novelty: gh2,

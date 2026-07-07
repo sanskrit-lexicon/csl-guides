@@ -1,0 +1,272 @@
+{
+ "task": "which-dictionary-routing",
+ "version": "1.0",
+ "createdAt": "2026-07-07",
+ "license": "CC-BY-SA-4.0",
+ "derivedFrom": "src/data/which-dictionary-gold.json",
+ "documentedIn": "docs/about/shared-tasks.md",
+ "annotation": "Fable 5 (claude-fable-5), single pass, 2026-07-07; no second annotator yet (known limitation, recorded in the hypothesis note).",
+ "answerSpace": [
+  "ABCH",
+  "ACC",
+  "ACPH",
+  "ACSJ",
+  "AE",
+  "AP",
+  "AP90",
+  "ARMH",
+  "BEN",
+  "BHS",
+  "BOP",
+  "BOR",
+  "BUR",
+  "CAE",
+  "CCS",
+  "FRI",
+  "GRA",
+  "GST",
+  "IEG",
+  "INM",
+  "KRM",
+  "LAN",
+  "LRV",
+  "MCI",
+  "MD",
+  "MW",
+  "MW72",
+  "MWE",
+  "NMMB",
+  "PD",
+  "PE",
+  "PGN",
+  "PUI",
+  "PW",
+  "PWG",
+  "SCH",
+  "SHS",
+  "SKD",
+  "SNP",
+  "STC",
+  "VCP",
+  "VEI",
+  "WIL",
+  "YAT"
+ ],
+ "metrics": {
+  "strict": "prediction === gold",
+  "lenient": "accepted.includes(prediction)"
+ },
+ "splits": {
+  "dev": [
+   {
+    "id": "G-01",
+    "scenario": "Broadest classical Sanskrit→English reference that also marks Vedic accents.",
+    "gold": "MW",
+    "accepted": [
+     "MW"
+    ]
+   },
+   {
+    "id": "G-02",
+    "scenario": "A Sanskritized Pali-looking form in the Mahāvastu, absent from MW.",
+    "gold": "BHS",
+    "accepted": [
+     "BHS"
+    ]
+   },
+   {
+    "id": "G-03",
+    "scenario": "Deepest scholarly treatment with fullest citations; German acceptable.",
+    "gold": "PWG",
+    "accepted": [
+     "PWG"
+    ]
+   },
+   {
+    "id": "G-04",
+    "scenario": "Clean numbered senses and translated literary quotations for classical (non-Vedic) reading.",
+    "gold": "AP90",
+    "accepted": [
+     "AP90",
+     "AP"
+    ]
+   },
+   {
+    "id": "G-05",
+    "scenario": "English word → Sanskrit equivalents (composition).",
+    "gold": "AE",
+    "accepted": [
+     "AE",
+     "MWE",
+     "BOR"
+    ]
+   },
+   {
+    "id": "G-06",
+    "scenario": "A modern French gloss.",
+    "gold": "STC",
+    "accepted": [
+     "STC"
+    ]
+   },
+   {
+    "id": "G-07",
+    "scenario": "Latin glosses and Indo-European cognates by the founder of comparative grammar.",
+    "gold": "BOP",
+    "accepted": [
+     "BOP"
+    ]
+   },
+   {
+    "id": "G-08",
+    "scenario": "Identify a Sanskrit plant name botanically.",
+    "gold": "SNP",
+    "accepted": [
+     "SNP"
+    ]
+   },
+   {
+    "id": "G-09",
+    "scenario": "Administrative/fiscal term in an inscription, technical sense needed.",
+    "gold": "IEG",
+    "accepted": [
+     "IEG"
+    ]
+   },
+   {
+    "id": "G-10",
+    "scenario": "Identify and locate a proper name in the Mahābhārata.",
+    "gold": "INM",
+    "accepted": [
+     "INM",
+     "MCI"
+    ]
+   },
+   {
+    "id": "G-11",
+    "scenario": "The story and identity behind a Purāṇic name, in clear English.",
+    "gold": "PE",
+    "accepted": [
+     "PE",
+     "PUI"
+    ]
+   },
+   {
+    "id": "G-12",
+    "scenario": "Classical synonyms of a word, in the traditional kośa form.",
+    "gold": "ABCH",
+    "accepted": [
+     "ABCH",
+     "ARMH",
+     "NMMB"
+    ]
+   },
+   {
+    "id": "G-13",
+    "scenario": "A name or subject in Vedic literature, with scholarly references.",
+    "gold": "VEI",
+    "accepted": [
+     "VEI"
+    ]
+   },
+   {
+    "id": "G-14",
+    "scenario": "A root's grammatical profile — class, seṭ/aniṭ, pada, kṛt derivatives.",
+    "gold": "KRM",
+    "accepted": [
+     "KRM"
+    ]
+   },
+   {
+    "id": "G-15",
+    "scenario": "The earliest major Sanskrit–English dictionary, MW's foundation.",
+    "gold": "WIL",
+    "accepted": [
+     "WIL"
+    ]
+   },
+   {
+    "id": "G-16",
+    "scenario": "Compare Monier-Williams 1872 vs 1899 treatment of a word.",
+    "gold": "MW72",
+    "accepted": [
+     "MW72",
+     "MW"
+    ]
+   },
+   {
+    "id": "G-17",
+    "scenario": "A compact, accented student's dictionary for reading.",
+    "gold": "MD",
+    "accepted": [
+     "MD",
+     "CAE"
+    ]
+   },
+   {
+    "id": "G-18",
+    "scenario": "A word/sense missing from PW; where are the scholarly additions?",
+    "gold": "SCH",
+    "accepted": [
+     "SCH"
+    ]
+   }
+  ],
+  "test": [
+   {
+    "id": "P-01",
+    "scenario": "You want the definition IN Sanskrit, with śāstric quotations — a Sanskrit–Sanskrit encyclopedic lexicon.",
+    "gold": "SKD",
+    "accepted": [
+     "SKD",
+     "VCP"
+    ]
+   },
+   {
+    "id": "P-02",
+    "scenario": "You met a Sanskrit work title or author name and want to know where the work is attested and catalogued.",
+    "gold": "ACC",
+    "accepted": [
+     "ACC"
+    ]
+   },
+   {
+    "id": "P-03",
+    "scenario": "MW marks a word 'L.' (lexicographers only) and you want to verify it in the indigenous lexica it came from.",
+    "gold": "SKD",
+    "accepted": [
+     "SKD",
+     "VCP",
+     "ABCH",
+     "ARMH"
+    ]
+   },
+   {
+    "id": "P-04",
+    "scenario": "A Ṝgvedic word: you want its accent and every verse location, grouped by construction/meaning.",
+    "gold": "GRA",
+    "accepted": [
+     "GRA"
+    ]
+   },
+   {
+    "id": "P-05",
+    "scenario": "A beginner reading a graded reader wants the reader's own vocabulary, not a full dictionary.",
+    "gold": "LAN",
+    "accepted": [
+     "LAN",
+     "FRI"
+    ]
+   },
+   {
+    "id": "P-06",
+    "scenario": "You read German and want a concise one-volume dictionary rather than the seven-volume PWG.",
+    "gold": "PW",
+    "accepted": [
+     "PW",
+     "CCS"
+    ]
+   }
+  ]
+ }
+}

@@ -50,10 +50,21 @@ into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/ma
   [which-dictionary-gold.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/which-dictionary-gold.json):
   the 18 quiz scenarios re-judged from the dictionaries' own identities and front matter,
   plus 6 probe scenarios the quiz does not ask.
-- **Metric.** Primary agreement on judged items; count of items with defensible alternate
-  answers; share of probe scenarios whose gold dictionary lies outside the quiz's answer set.
-- **Baseline.** A random router over the 4 options per item would score 25 %.
-- **Result.** Agreement is **18/18**, with 7/18 items admitting a defensible alternate the
+- **Metric.** Accuracy against the gold panel on judged items; count of items with
+  defensible alternate answers; share of probe scenarios whose gold dictionary lies outside
+  the quiz's answer set.
+- **Baseline.** A random router over the 4 options per item scores 25 %; a
+  majority-class router scores 5.6 % (all 18 golds are distinct).
+- **Result (ACL-standard presentation).**
+
+  | Metric | Value | 95 % CI (Wilson) | Baselines | n |
+  |---|---|---|---|---|
+  | Routing accuracy (judged items, strict) | **100 % (18/18)** | [82.4 %, 100 %] | random-4: 25 % · majority: 5.6 % | 18 |
+  | Probes routed outside the quiz's answer set | 5/6 | — | — | 6 |
+
+  Cohen's κ is **not yet computable** — the gold panel is a single annotation pass, so
+  there is no second annotator to agree with; the planned human second pass (below) turns
+  the caveat into a κ figure. Agreement is **18/18**, with 7/18 items admitting a defensible alternate the
   quiz treats as wrong (e.g. WD-05 accepts only AE though MWE and BOR are also
   English→Sanskrit dictionaries). But **5 of 6 probes route outside the quiz's answer set**:
   the quiz never recommends **SKD/VCP** (Sanskrit-definition lookups, MW's own "L." trail),
@@ -65,8 +76,11 @@ into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/ma
   quiz (single pass, Fable 5 `claude-fable-5`, against the same documentation corpus), so the
   18/18 figure is an internal-consistency check, not independent validation. The probe-gap
   finding does not share this circularity — it is a set-coverage fact.
-- **Next test.** A second, human gold pass over the same panel (inter-annotator agreement);
-  then extend the quiz toward the never-targeted golds.
+- **Next test.** A second, human gold pass over the same panel (inter-annotator agreement,
+  reported as Cohen's κ); then extend the quiz toward the never-targeted golds. The panel
+  now also grounds the public [which-dictionary routing shared task](/about/shared-tasks),
+  whose test split is exactly the probe set — external submissions there are independent
+  evidence this internal check cannot provide.
 
 ## GH-2 — Deep-page depth follows size, not novelty
 
@@ -80,8 +94,10 @@ into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/ma
   words × entry count.
 - **Baseline.** If depth tracked novelty, ρ(depth, unique %) would be positive and exceed
   ρ(depth, entries).
-- **Result.** **ρ(depth, unique %) = −0.17** (none to slightly inverse) while
-  **ρ(depth, entries) = 0.56** — depth follows size. Sharpest mismatches: **IEG** (57.5 %
+- **Result.** **ρ(depth, unique %) = −0.17** (n = 44, two-tailed p = 0.26 — not
+  significant) while **ρ(depth, entries) = 0.56** (n = 44, p = 7.7 × 10⁻⁵) — depth
+  follows size, and only the size correlation survives a significance check. Sharpest
+  mismatches: **IEG** (57.5 %
   unique — second-highest in the corpus — 440 words), **PGN** (54.9 %, 443), **ACC** (43.3 %,
   455), **PUI** (38.6 %, 434), against **PWG** (1.9 % unique, 822 words). Counterexample
   worth keeping honest: **SKD** is both high-novelty (37.1 %) *and* the deepest page
@@ -169,7 +185,10 @@ into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/ma
 
 **Provenance.** Authored and measured 07-07-2026 by Fable 5 (`claude-fable-5`) under
 handoff [H278](https://github.com/gasyoun/Uprava/blob/main/handoffs/H278-Fable_csl-guides_guides_stream1_hypotheses_07.07.26.md)
-(Stream 1 of the csl-guides research programme). Metrics artifact:
+(Stream 1 of the csl-guides research programme); ACL-standard metric presentation
+(Wilson CIs, chance/majority baselines, correlation significance) added same day under
+[H281](https://github.com/gasyoun/Uprava/blob/main/handoffs/H281-Fable_csl-guides_guides_stream4_acl_uplift_07.07.26.md)
+(Stream 4) per the convention on the [Publications page](/about/publications). Metrics artifact:
 [hypothesis-metrics.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/hypothesis-metrics.json).
 
 _Dr. Mārcis Gasūns_

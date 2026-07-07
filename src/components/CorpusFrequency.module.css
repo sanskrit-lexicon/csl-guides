@@ -1,0 +1,30 @@
+.tableWrap {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.caption {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  margin: 0.25rem 0 0;
+}
+
+.periodHead {
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.hot {
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 600;
+}
+
+.warm {
+  background: var(--ifm-hover-overlay);
+}
+
+[data-theme='dark'] .hot {
+  background: var(--ifm-color-primary-darkest);
+  color: var(--ifm-color-emphasis-900);
+}

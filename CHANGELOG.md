@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Corpus attestation data-layer page** (`/dictionaries/corpus-attestation`): Digital Corpus of Sanskrit frequency joined to dictionary headwords — cumulative-coverage table (top 2,000 lemmas = 77.0% of 4.55M counted tokens), top-25 lemma table, and per-period profiles showing Vedic-heavy (*ūti*, *rayi*, *vṛṣan*), epic, and late-alchemical (*pārada*, *gandhaka*) vocabulary; all figures computed from the committed `corpus-frequency.json` feed at build time
+- **Machine morphology data-layer page** (`/dictionaries/machine-morphology`): the Sanskrit Heritage Platform as an independent machine reading — MW↔Heritage coverage table (25,140 of 185,803 MW entries, 13.5%, per-initial breakdown), a frequency-joined sample linking top DCS lemmas to their Heritage `DICO` articles, and the wider vidyut / DharmaMitra / Saṃsādhanī ecosystem with per-source rights notes
+- Components `CorpusFrequency` (+ `CorpusCoverage`, `PeriodProfiles`) and `HeritageCoverage` (+ `HeritageSample`) — SSR-safe pure-markup tables computed from the H282 Stream-5 feeds at render time
+- Vendored `sanskrit-util` v0.4.0 JS (`src/vendor/sanskrit-util.js`, byte-identical copy of `sanskrit-util/js/index.mjs`) for SLP1 → IAST display — never edit in place, re-copy on upstream version bumps
+
 ## [0.3.0] - 2026-07-07
 
 ### Added

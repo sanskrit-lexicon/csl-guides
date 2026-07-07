@@ -1,6 +1,6 @@
 {
  "generatedAt": "2026-07-07",
- "generatedBy": "scripts/build-hypothesis-metrics.mjs (H278)",
+ "generatedBy": "scripts/build-hypothesis-metrics.mjs (H278; ACL-standard CI/baseline/significance fields added in H281)",
  "documentedIn": "docs/about/guides-hypotheses.md",
  "gh1_routing": {
   "quizItems": 18,
@@ -21,13 +21,23 @@
    "FRI",
    "PW",
    "CCS"
-  ]
+  ],
+  "accuracy": 1,
+  "accuracyWilson95": [
+   0.824,
+   1
+  ],
+  "baselineRandom4": 0.25,
+  "baselineMajorityClass": 0.056,
+  "cohensKappa": null
  },
  "gh2_depth_vs_novelty": {
   "dictionariesCompared": 44,
   "spearmanDepthVsUnique": -0.174,
+  "spearmanDepthVsUniqueP": 0.26,
   "pearsonDepthVsUnique": 0.097,
   "spearmanDepthVsEntries": 0.56,
+  "spearmanDepthVsEntriesP": 0.000077,
   "rows": [
    {
     "code": "bhs",

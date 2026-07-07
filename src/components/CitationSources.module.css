@@ -1,0 +1,102 @@
+/* Single-series bars: one sequential-hue slot (blue, validated), counts
+   direct-labeled in ink tokens. */
+.root {
+  --cs-bar: #2a78d6;
+  margin: 1rem 0 2rem;
+}
+
+:global([data-theme='dark']) .root {
+  --cs-bar: #3987e5;
+}
+
+.controls {
+  margin-bottom: 0.75rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  max-width: 480px;
+}
+
+.field select {
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+}
+
+.caption {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0.75rem;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: 2px; /* 2px surface gap between adjacent bars */
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: minmax(120px, 220px) 1fr;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 24px;
+}
+
+.barLabel {
+  font-size: 0.82rem;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.barTrack {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.bar {
+  display: inline-block;
+  height: 16px;
+  background: var(--cs-bar);
+  border-radius: 0 4px 4px 0; /* rounded data end only; flat at the baseline */
+  flex: none;
+}
+
+.barValue {
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--ifm-font-color-base);
+  white-space: nowrap;
+}
+
+.barSecondary {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.tableView {
+  margin-top: 0.9rem;
+  font-size: 0.85rem;
+}
+
+.tableView summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}

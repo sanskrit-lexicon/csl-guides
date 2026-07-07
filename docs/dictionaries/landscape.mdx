@@ -1,0 +1,89 @@
+---
+id: landscape
+title: The Dictionary Landscape
+description: "Interactive map of the Cologne dictionaries: publication era × headword novelty × size × language group, plus the headword-overlap family tree."
+sidebar_label: Landscape (visual)
+---
+
+import DictionaryLandscape from '@site/src/components/DictionaryLandscape';
+import Cladogram from '@site/src/components/Cladogram';
+
+# The Dictionary Landscape
+
+The [catalog](/dictionaries/catalog) lists every dictionary as a table row. This page shows
+the same corpus as a **landscape**: when each dictionary appeared, how much of its headword
+list exists nowhere else, how big it is, and which dictionaries are effectively members of
+one family.
+
+## Era × novelty × size
+
+Each bubble is one dictionary. Right = later publication; **higher = more of its headwords
+are unique to it** (found in no other CDSL dictionary); bigger = more distinct lemmas.
+Uncheck a language group to declutter; hover any bubble for details.
+
+<DictionaryLandscape />
+
+**How to read it.** The 19th-century Sanskrit–English/German core (MW, PW, PWG, AP90) sits
+low: these dictionaries share most of their headword lists — a genealogy, not plagiarism, since
+later lexicographers built on earlier ones. The high outliers earn their place in the corpus
+by *coverage no one else has*: BHS (Buddhist Hybrid Sanskrit, 57.6% unique), the specialized
+indexes (ACC proper names, 43.3%), and the Sanskrit–Sanskrit kośas (SKD 37.1%). A dictionary
+low on this chart is best reached *through* MW; a dictionary high on it answers questions MW
+cannot.
+
+:::note Trust block
+- **Evidence:** [`src/data/atlas-extract.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/atlas-extract.json)
+  (vendored per-dictionary rows from the csl-atlas OBS-R headword-collapse artifacts,
+  [`headword_multiplicity.csv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/obs/headword_multiplicity.csv) /
+  [`headword_collapse.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/obs/headword_collapse.json),
+  2026-07 regeneration: 1,496,157 entries → 410,259 distinct lemmas corpus-wide) joined with the
+  generated [catalog](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/dictionaries.json)
+  for year and language group. **n = 43** dictionaries (PD has no digital source → no atlas row;
+  PWKVN has no catalog row).
+- **Limitations:** "unique %" is a **floor** for novelty — a shared headword is independent
+  attestation in each dictionary, not proof of copying; entry counts include homonym-split
+  records, so per-dictionary splitting policy leaks into the lemma counts.
+- **Validation:** totals cross-checked against the csl-atlas
+  [`headword_collapse.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/obs/headword_collapse.json)
+  summary; the join is render-time only (nothing recomputed here).
+- **Owner repo:** `csl-atlas` (data) / this repo (rendering).
+- **Next use:** pick a high-novelty dictionary you have never opened and read its
+  [featured guide](/dictionaries/overview).
+:::
+
+## The headword family tree
+
+The same headword lists, clustered: dictionaries that join **near the right share most of
+their headwords**; late joiners on the left carry vocabularies nothing else has. This is the
+csl-atlas L0 lemma-overlap cladogram, rendered read-only.
+
+<Cladogram />
+
+The clusters recover the known genealogy from the data alone: **PW–PWG** (Böhtlingk's two
+Petersburg lexica) and **MW** hanging just above them; the **SHS–WIL–YAT** chain (Wilson's
+list recycled by his successors); **CAE–CCS** (the two Cappellers); **AP–AP90** (the two
+Aptes); **PWKVN–SCH** (the two supplements *to PW*). The specialized indexes (PGN, SNP, KRM,
+ACC) join last — their headword lists are mostly proper names no general dictionary carries.
+
+:::note Trust block
+- **Evidence:** [`src/data/cladogram.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/cladogram.json)
+  — the vendored csl-atlas [`sanhw1_cladogram.newick`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/sanhw1_cladogram.newick)
+  (UPGMA over pairwise Jaccard distances between per-dictionary headword sets, built by
+  [`lex_l2_cladogram.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/lex_l2_cladogram.py)).
+  **n = 41** dictionaries (the kośa-format and gated dictionaries are outside the sanhw1
+  snapshot).
+- **Limitations:** headword *overlap* only — it measures shared word lists, not shared
+  definitions, and UPGMA assumes clock-like divergence the corpus does not literally have.
+  It is **one signal** of the csl-atlas genealogy work, not the canonical family tree.
+- **Validation:** rendering parses the committed Newick verbatim; known pairs (PW–PWG,
+  AP–AP90, CAE–CCS) join at the lowest heights, as expected.
+- **Owner repo:** `csl-atlas` (data) / this repo (rendering).
+- **Next use:** compare with the human-curated [origins timeline](/about/origins) — the
+  cladogram is computed from headwords alone, the timeline from documented history.
+:::
+
+## See also
+
+- [Dictionary Catalog](/dictionaries/catalog) — the full table this page visualizes
+- [Citation sources](/dictionaries/citation-sources) — which classical texts each dictionary quotes
+- [Guides hypotheses](/about/guides-hypotheses) — the falsifiable claims behind these numbers

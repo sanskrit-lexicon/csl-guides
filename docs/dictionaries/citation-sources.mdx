@@ -1,0 +1,58 @@
+---
+id: citation-sources
+title: What Each Dictionary Quotes
+description: "Which classical Sanskrit texts each Cologne dictionary cites most, from the csl-atlas <ls> citation-frequency graph — 828,505 resolved citations across 912 texts."
+sidebar_label: Citation sources (visual)
+---
+
+import CitationSources from '@site/src/components/CitationSources';
+
+# What Each Dictionary Quotes
+
+A dictionary's authority comes from its **citations**: the classical texts it quotes to
+attest each sense. The Cologne sources mark these with `<ls>` tags (see
+[abbreviations & citations](/dictionaries/abbreviations-and-citations)); the sibling
+[csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) project resolved each
+dictionary's own abbreviations (`MBh.`, `MBH`, `Mahābhārata`) to shared canonical text
+nodes, making citation habits comparable across dictionaries.
+
+Pick a dictionary to see its most-quoted texts, or keep **All dictionaries** for the
+corpus-wide view.
+
+<CitationSources />
+
+**How to read it.** PWG dominates the graph (536,172 resolved citations — Böhtlingk & Roth
+cited on an industrial scale); its profile is epic-heavy (Mahābhārata, Rāmāyaṇa) with
+Pāṇini's *Aṣṭādhyāyī* third — a grammarians' dictionary. AP's top text is the *Raghuvaṃśa*:
+Apte built for readers of kāvya. BHS's citations are almost entirely Buddhist texts no other
+dictionary touches. The Vedic concordances (VEI, PUI) don't appear here at all — they carry
+zero `<ls>` tags (their citation systems are structural hymn/verse references), and
+Grassmann's Rigveda references are verse numbers rather than resolvable text abbreviations.
+
+:::note Trust block
+- **Evidence:** [`src/data/citation-sources.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/citation-sources.json),
+  vendored by [`scripts/build-atlas-viz.mjs`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-atlas-viz.mjs)
+  from the csl-atlas citation graph
+  ([`ls_citation_edges.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_edges.tsv) +
+  [`ls_citation_nodes.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_nodes.tsv),
+  method in its [README](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/README.md)):
+  **828,505 resolved `<ls>` citations → 912 canonical texts across 11 dictionaries**
+  (1,701 edges).
+- **Limitations:** coverage is the 11 dictionaries whose abbreviation keys resolve —
+  **not** all 43. Resolution quality varies: MW's 312k `<ls>` tags currently resolve to
+  only 5 coarse nodes (its grammatical markers are filtered, most literary abbreviations
+  are still unresolved), and MD to 4 — read those two as placeholders, not profiles.
+  Canonicalization is imperfect across dictionaries (MD's "Rigveda" is not yet folded into
+  "Ṛgveda"). Counts are citation *frequency*, not importance.
+- **Validation:** vendored totals match the csl-atlas edge list exactly (828,505); the
+  per-dictionary top texts were spot-checked against the TSV.
+- **Owner repo:** `csl-atlas` (data) / this repo (rendering).
+- **Next use:** if a dictionary you use is missing here, its abbreviation key is the gap —
+  see the csl-atlas [unresolved-keys worklist](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_unresolved_top.tsv).
+:::
+
+## See also
+
+- [Abbreviations & citations](/dictionaries/abbreviations-and-citations) — how `<ls>` tags work
+- [The dictionary landscape](/dictionaries/landscape) — era × novelty × size for all 43
+- [Abbreviations comparison](/dictionaries/abbreviations-comparison) — the per-dictionary legends the resolver uses

@@ -42,7 +42,10 @@ full resolution.
   **[Śabdakalpadruma](skd)** (`SKD`) and **[Vācaspatyam](vcp)** (`VCP`).
 - **Domain terms** — the specialized indices (epics, Vedas, Purāṇas, Buddhist texts).
 
-See the **[full catalog](catalog)** for every code, full name, language, date, and repo.
+See the **[full catalog](catalog)** for every code, full name, language, date, and repo —
+or explore the same corpus visually: the **[dictionary landscape](landscape)** (which
+dictionaries cover ground no other has) and **[citation sources](citation-sources)** (which
+classical texts each one quotes).
 
 ## Where each dictionary lives
 

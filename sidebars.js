@@ -158,6 +158,7 @@ const sidebars = {
         'about/publications',
         'about/guides-hypotheses',
         'about/shared-tasks',
+        'about/dh-programme',
         'about/acknowledgments',
         'faq',
       ],

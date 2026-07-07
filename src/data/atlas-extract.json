@@ -1,0 +1,408 @@
+{
+ "generatedAt": "2026-07-07",
+ "generatedBy": "vendored extract for scripts/build-hypothesis-metrics.mjs (H278)",
+ "source": {
+  "headwords": "https://github.com/gasyoun/csl-atlas/blob/main/data/obs/headword_multiplicity.csv",
+  "citations": "https://github.com/gasyoun/csl-atlas/blob/main/data/obs/citation_registers.json",
+  "note": "Per-dictionary rows copied verbatim from the committed csl-atlas OBS artifacts (OBS-R headword collapse + OBS-C citation registers, 2026-07 regeneration). Consumed, not recomputed — see docs/contributing/guides-hypotheses.md."
+ },
+ "license": "CC-BY-SA-4.0",
+ "dicts": {
+  "ap": {
+   "entries": 90843,
+   "distinctLemmas": 88869,
+   "uniqueToDict": 30843,
+   "uniquePct": 34.7,
+   "ls": 62672,
+   "lsWithLocator": 55762,
+   "iti": 682
+  },
+  "mw": {
+   "entries": 286525,
+   "distinctLemmas": 194084,
+   "uniqueToDict": 25025,
+   "uniquePct": 12.9,
+   "ls": 312160,
+   "lsWithLocator": 47289,
+   "iti": 172
+  },
+  "skd": {
+   "entries": 42531,
+   "distinctLemmas": 40817,
+   "uniqueToDict": 15163,
+   "uniquePct": 37.1,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 80164
+  },
+  "acc": {
+   "entries": 49833,
+   "distinctLemmas": 32585,
+   "uniqueToDict": 14116,
+   "uniquePct": 43.3,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 4
+  },
+  "bhs": {
+   "entries": 17839,
+   "distinctLemmas": 17777,
+   "uniqueToDict": 10233,
+   "uniquePct": 57.6,
+   "ls": 48419,
+   "lsWithLocator": 199,
+   "iti": 241
+  },
+  "mwe": {
+   "entries": 32378,
+   "distinctLemmas": 28238,
+   "uniqueToDict": 8798,
+   "uniquePct": 31.2,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 102
+  },
+  "lrv": {
+   "entries": 53441,
+   "distinctLemmas": 48259,
+   "uniqueToDict": 8499,
+   "uniquePct": 17.6,
+   "ls": 16650,
+   "lsWithLocator": 0,
+   "iti": 99
+  },
+  "sch": {
+   "entries": 29125,
+   "distinctLemmas": 28455,
+   "uniqueToDict": 8413,
+   "uniquePct": 29.6,
+   "ls": 30792,
+   "lsWithLocator": 28091,
+   "iti": 88
+  },
+  "pw": {
+   "entries": 170556,
+   "distinctLemmas": 151349,
+   "uniqueToDict": 6652,
+   "uniquePct": 4.4,
+   "ls": 87810,
+   "lsWithLocator": 77172,
+   "iti": 113
+  },
+  "ap90": {
+   "entries": 34882,
+   "distinctLemmas": 34277,
+   "uniqueToDict": 5419,
+   "uniquePct": 15.8,
+   "ls": 38671,
+   "lsWithLocator": 34905,
+   "iti": 322
+  },
+  "pui": {
+   "entries": 17512,
+   "distinctLemmas": 11730,
+   "uniqueToDict": 4525,
+   "uniquePct": 38.6,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 5
+  },
+  "vcp": {
+   "entries": 50135,
+   "distinctLemmas": 48636,
+   "uniqueToDict": 4521,
+   "uniquePct": 9.3,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 15619
+  },
+  "ieg": {
+   "entries": 7932,
+   "distinctLemmas": 7568,
+   "uniqueToDict": 4355,
+   "uniquePct": 57.5,
+   "ls": 11390,
+   "lsWithLocator": 1,
+   "iti": 7
+  },
+  "bur": {
+   "entries": 19776,
+   "distinctLemmas": 19146,
+   "uniqueToDict": 4351,
+   "uniquePct": 22.7,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 33
+  },
+  "bor": {
+   "entries": 24609,
+   "distinctLemmas": 22013,
+   "uniqueToDict": 3492,
+   "uniquePct": 15.9,
+   "ls": 526,
+   "lsWithLocator": 0,
+   "iti": 51
+  },
+  "mw72": {
+   "entries": 55390,
+   "distinctLemmas": 51159,
+   "uniqueToDict": 2380,
+   "uniquePct": 4.7,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 195
+  },
+  "inm": {
+   "entries": 12647,
+   "distinctLemmas": 9454,
+   "uniqueToDict": 2144,
+   "uniquePct": 22.7,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 91
+  },
+  "pwg": {
+   "entries": 123366,
+   "distinctLemmas": 106082,
+   "uniqueToDict": 2027,
+   "uniquePct": 1.9,
+   "ls": 568730,
+   "lsWithLocator": 478185,
+   "iti": 1145
+  },
+  "pe": {
+   "entries": 8799,
+   "distinctLemmas": 6623,
+   "uniqueToDict": 1308,
+   "uniquePct": 19.7,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 10
+  },
+  "yat": {
+   "entries": 45206,
+   "distinctLemmas": 44720,
+   "uniqueToDict": 1263,
+   "uniquePct": 2.8,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 5
+  },
+  "stc": {
+   "entries": 24574,
+   "distinctLemmas": 23986,
+   "uniqueToDict": 1064,
+   "uniquePct": 4.4,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 39
+  },
+  "fri": {
+   "entries": 8155,
+   "distinctLemmas": 7775,
+   "uniqueToDict": 935,
+   "uniquePct": 12.0,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 376
+  },
+  "shs": {
+   "entries": 47326,
+   "distinctLemmas": 46733,
+   "uniqueToDict": 894,
+   "uniquePct": 1.9,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 60
+  },
+  "ae": {
+   "entries": 11359,
+   "distinctLemmas": 11343,
+   "uniqueToDict": 885,
+   "uniquePct": 7.8,
+   "ls": 1141,
+   "lsWithLocator": 1120,
+   "iti": 276
+  },
+  "krm": {
+   "entries": 2061,
+   "distinctLemmas": 1698,
+   "uniqueToDict": 621,
+   "uniquePct": 36.6,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 12359
+  },
+  "cae": {
+   "entries": 40069,
+   "distinctLemmas": 38484,
+   "uniqueToDict": 608,
+   "uniquePct": 1.6,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 33
+  },
+  "gst": {
+   "entries": 6780,
+   "distinctLemmas": 6761,
+   "uniqueToDict": 531,
+   "uniquePct": 7.9,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 166
+  },
+  "nmmb": {
+   "entries": 506,
+   "distinctLemmas": 2265,
+   "uniqueToDict": 521,
+   "uniquePct": 23.0,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 6
+  },
+  "gra": {
+   "entries": 12785,
+   "distinctLemmas": 11108,
+   "uniqueToDict": 453,
+   "uniquePct": 4.1,
+   "ls": 2255,
+   "lsWithLocator": 1086,
+   "iti": 20
+  },
+  "vei": {
+   "entries": 3834,
+   "distinctLemmas": 3704,
+   "uniqueToDict": 435,
+   "uniquePct": 11.7,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 10
+  },
+  "mci": {
+   "entries": 2643,
+   "distinctLemmas": 2325,
+   "uniqueToDict": 422,
+   "uniquePct": 18.2,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 282
+  },
+  "abch": {
+   "entries": 1965,
+   "distinctLemmas": 11584,
+   "uniqueToDict": 381,
+   "uniquePct": 3.3,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 4
+  },
+  "md": {
+   "entries": 20749,
+   "distinctLemmas": 20103,
+   "uniqueToDict": 338,
+   "uniquePct": 1.7,
+   "ls": 58,
+   "lsWithLocator": 52,
+   "iti": 104
+  },
+  "pgn": {
+   "entries": 485,
+   "distinctLemmas": 470,
+   "uniqueToDict": 258,
+   "uniquePct": 54.9,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 0
+  },
+  "wil": {
+   "entries": 44577,
+   "distinctLemmas": 43938,
+   "uniqueToDict": 243,
+   "uniquePct": 0.6,
+   "ls": 6,
+   "lsWithLocator": 1,
+   "iti": 13
+  },
+  "acph": {
+   "entries": 163,
+   "distinctLemmas": 1453,
+   "uniqueToDict": 205,
+   "uniquePct": 14.1,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 1
+  },
+  "armh": {
+   "entries": 7907,
+   "distinctLemmas": 6673,
+   "uniqueToDict": 200,
+   "uniquePct": 3.0,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 69
+  },
+  "ccs": {
+   "entries": 30010,
+   "distinctLemmas": 28751,
+   "uniqueToDict": 151,
+   "uniquePct": 0.5,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 8
+  },
+  "lan": {
+   "entries": 4944,
+   "distinctLemmas": 4726,
+   "uniqueToDict": 140,
+   "uniquePct": 3.0,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 29
+  },
+  "ben": {
+   "entries": 17310,
+   "distinctLemmas": 17035,
+   "uniqueToDict": 127,
+   "uniquePct": 0.7,
+   "ls": 48603,
+   "lsWithLocator": 0,
+   "iti": 39
+  },
+  "bop": {
+   "entries": 8961,
+   "distinctLemmas": 8505,
+   "uniqueToDict": 117,
+   "uniquePct": 1.4,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 52
+  },
+  "acsj": {
+   "entries": 240,
+   "distinctLemmas": 634,
+   "uniqueToDict": 48,
+   "uniquePct": 7.6,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 4
+  },
+  "pwkvn": {
+   "entries": 24976,
+   "distinctLemmas": 14995,
+   "uniqueToDict": 20,
+   "uniquePct": 0.1,
+   "ls": 15761,
+   "lsWithLocator": 14310,
+   "iti": 13
+  },
+  "snp": {
+   "entries": 453,
+   "distinctLemmas": 448,
+   "uniqueToDict": 15,
+   "uniquePct": 3.3,
+   "ls": 0,
+   "lsWithLocator": 0,
+   "iti": 5
+  }
+ }
+}

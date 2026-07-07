@@ -1,0 +1,335 @@
+{
+ "generatedAt": "2026-07-07",
+ "generatedBy": "scripts/build-hypothesis-metrics.mjs (H278)",
+ "documentedIn": "docs/about/guides-hypotheses.md",
+ "gh1_routing": {
+  "quizItems": 18,
+  "judgedItems": 18,
+  "primaryAgreement": 18,
+  "itemsWithDefensibleAlternates": 7,
+  "distinctRoutingTargets": 18,
+  "catalogDictionaries": 44,
+  "probeScenarios": 6,
+  "probesRoutingOutsideQuizTargets": 5,
+  "neverTargetedGolds": [
+   "SKD",
+   "VCP",
+   "ACC",
+   "ARMH",
+   "GRA",
+   "LAN",
+   "FRI",
+   "PW",
+   "CCS"
+  ]
+ },
+ "gh2_depth_vs_novelty": {
+  "dictionariesCompared": 44,
+  "spearmanDepthVsUnique": -0.174,
+  "pearsonDepthVsUnique": 0.097,
+  "spearmanDepthVsEntries": 0.56,
+  "rows": [
+   {
+    "code": "bhs",
+    "pageWords": 869,
+    "uniquePct": 57.6,
+    "entries": 17839
+   },
+   {
+    "code": "ieg",
+    "pageWords": 440,
+    "uniquePct": 57.5,
+    "entries": 7932
+   },
+   {
+    "code": "pgn",
+    "pageWords": 443,
+    "uniquePct": 54.9,
+    "entries": 485
+   },
+   {
+    "code": "acc",
+    "pageWords": 455,
+    "uniquePct": 43.3,
+    "entries": 49833
+   },
+   {
+    "code": "pui",
+    "pageWords": 434,
+    "uniquePct": 38.6,
+    "entries": 17512
+   },
+   {
+    "code": "skd",
+    "pageWords": 1500,
+    "uniquePct": 37.1,
+    "entries": 42531
+   },
+   {
+    "code": "krm",
+    "pageWords": 487,
+    "uniquePct": 36.6,
+    "entries": 2061
+   },
+   {
+    "code": "ap",
+    "pageWords": 848,
+    "uniquePct": 34.7,
+    "entries": 90843
+   },
+   {
+    "code": "mwe",
+    "pageWords": 571,
+    "uniquePct": 31.2,
+    "entries": 32378
+   },
+   {
+    "code": "sch",
+    "pageWords": 812,
+    "uniquePct": 29.6,
+    "entries": 29125
+   },
+   {
+    "code": "nmmb",
+    "pageWords": 798,
+    "uniquePct": 23,
+    "entries": 506
+   },
+   {
+    "code": "bur",
+    "pageWords": 569,
+    "uniquePct": 22.7,
+    "entries": 19776
+   },
+   {
+    "code": "inm",
+    "pageWords": 467,
+    "uniquePct": 22.7,
+    "entries": 12647
+   },
+   {
+    "code": "pe",
+    "pageWords": 416,
+    "uniquePct": 19.7,
+    "entries": 8799
+   },
+   {
+    "code": "mci",
+    "pageWords": 457,
+    "uniquePct": 18.2,
+    "entries": 2643
+   },
+   {
+    "code": "lrv",
+    "pageWords": 471,
+    "uniquePct": 17.6,
+    "entries": 53441
+   },
+   {
+    "code": "bor",
+    "pageWords": 508,
+    "uniquePct": 15.9,
+    "entries": 24609
+   },
+   {
+    "code": "ap90",
+    "pageWords": 663,
+    "uniquePct": 15.8,
+    "entries": 34882
+   },
+   {
+    "code": "acph",
+    "pageWords": 406,
+    "uniquePct": 14.1,
+    "entries": 163
+   },
+   {
+    "code": "mw",
+    "pageWords": 1048,
+    "uniquePct": 12.9,
+    "entries": 286525
+   },
+   {
+    "code": "fri",
+    "pageWords": 474,
+    "uniquePct": 12,
+    "entries": 8155
+   },
+   {
+    "code": "vei",
+    "pageWords": 505,
+    "uniquePct": 11.7,
+    "entries": 3834
+   },
+   {
+    "code": "vcp",
+    "pageWords": 718,
+    "uniquePct": 9.3,
+    "entries": 50135
+   },
+   {
+    "code": "gst",
+    "pageWords": 584,
+    "uniquePct": 7.9,
+    "entries": 6780
+   },
+   {
+    "code": "ae",
+    "pageWords": 559,
+    "uniquePct": 7.8,
+    "entries": 11359
+   },
+   {
+    "code": "acsj",
+    "pageWords": 365,
+    "uniquePct": 7.6,
+    "entries": 240
+   },
+   {
+    "code": "mw72",
+    "pageWords": 603,
+    "uniquePct": 4.7,
+    "entries": 55390
+   },
+   {
+    "code": "pw",
+    "pageWords": 664,
+    "uniquePct": 4.4,
+    "entries": 170556
+   },
+   {
+    "code": "stc",
+    "pageWords": 687,
+    "uniquePct": 4.4,
+    "entries": 24574
+   },
+   {
+    "code": "gra",
+    "pageWords": 640,
+    "uniquePct": 4.1,
+    "entries": 12785
+   },
+   {
+    "code": "abch",
+    "pageWords": 604,
+    "uniquePct": 3.3,
+    "entries": 1965
+   },
+   {
+    "code": "snp",
+    "pageWords": 479,
+    "uniquePct": 3.3,
+    "entries": 453
+   },
+   {
+    "code": "armh",
+    "pageWords": 466,
+    "uniquePct": 3,
+    "entries": 7907
+   },
+   {
+    "code": "lan",
+    "pageWords": 534,
+    "uniquePct": 3,
+    "entries": 4944
+   },
+   {
+    "code": "yat",
+    "pageWords": 513,
+    "uniquePct": 2.8,
+    "entries": 45206
+   },
+   {
+    "code": "pwg",
+    "pageWords": 822,
+    "uniquePct": 1.9,
+    "entries": 123366
+   },
+   {
+    "code": "shs",
+    "pageWords": 542,
+    "uniquePct": 1.9,
+    "entries": 47326
+   },
+   {
+    "code": "md",
+    "pageWords": 539,
+    "uniquePct": 1.7,
+    "entries": 20749
+   },
+   {
+    "code": "cae",
+    "pageWords": 660,
+    "uniquePct": 1.6,
+    "entries": 40069
+   },
+   {
+    "code": "bop",
+    "pageWords": 521,
+    "uniquePct": 1.4,
+    "entries": 8961
+   },
+   {
+    "code": "ben",
+    "pageWords": 559,
+    "uniquePct": 0.7,
+    "entries": 17310
+   },
+   {
+    "code": "wil",
+    "pageWords": 708,
+    "uniquePct": 0.6,
+    "entries": 44577
+   },
+   {
+    "code": "ccs",
+    "pageWords": 663,
+    "uniquePct": 0.5,
+    "entries": 30010
+   },
+   {
+    "code": "pwkvn",
+    "pageWords": 677,
+    "uniquePct": 0.1,
+    "entries": 24976
+   }
+  ]
+ },
+ "gh3_failure_mode_coverage": {
+  "itemsPerFailureMode": {
+   "F1-script-and-order": 21,
+   "F2-transliteration": 29,
+   "F3-sandhi": 32,
+   "F4-compounds": 34,
+   "F5-dhatu-tracing": 7,
+   "F6-symbols": 3,
+   "F7-entry-abbreviations": 3,
+   "F8-citation-resolution": 2,
+   "F9-dictionary-choice": 18,
+   "F10-grammatical-labels": 1
+  },
+  "uncoveredModes": [],
+  "thinModes": [
+   "F6-symbols (3)",
+   "F7-entry-abbreviations (3)",
+   "F8-citation-resolution (2)",
+   "F10-grammatical-labels (1)"
+  ]
+ },
+ "gh4_abbreviation_exposure": {
+  "corpusLsCitations": 1245644,
+  "lsByLegendStatus": {
+   "data": 1187169,
+   "tokens": 0,
+   "none": 42714,
+   "notInLegendIndex": 15761
+  },
+  "shareInWithDataDicts": 0.953,
+  "legendCounts": {
+   "total": 44,
+   "withData": 18,
+   "tokensOnly": 1,
+   "none": 25
+  }
+ }
+}

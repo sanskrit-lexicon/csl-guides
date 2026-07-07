@@ -1,0 +1,1248 @@
+{
+ "generatedAt": "2026-07-07",
+ "generator": "scripts/build-heritage-coverage.mjs (csl-guides, H282 Stream 5)",
+ "source": "https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv (H099 MW↔Heritage entry-level crosswalk, 03-07-2026)",
+ "upstream": "Sanskrit Heritage Platform (Gérard Huet, INRIA) via the darkone23/Heritage_Resources GitHub mirror (03-2025, LGPLLR); live site is bot-walled — never fetched here",
+ "license": "Aggregate statistics over our own derived crosswalk; LGPLLR redistribution of the mirror raw data itself is a pending @DECIDE and NOT exercised by this feed",
+ "keying": "SLP1 MW key1 (initial = first SLP1 character)",
+ "anchorBase": "anchors resolve inside Heritage_Resources DICO/, e.g. https://github.com/darkone23/Heritage_Resources/blob/master/DICO/1.html",
+ "totals": {
+  "mwEntries": 185803,
+  "heritageCovered": 25140,
+  "pct": 13.5
+ },
+ "byInitial": {
+  "a": {
+   "total": 17764,
+   "covered": 2865,
+   "pct": 16.1
+  },
+  "A": {
+   "total": 4230,
+   "covered": 874,
+   "pct": 20.7
+  },
+  "v": {
+   "total": 17855,
+   "covered": 2289,
+   "pct": 12.8
+  },
+  "w": {
+   "total": 110,
+   "covered": 12,
+   "pct": 10.9
+  },
+  "W": {
+   "total": 17,
+   "covered": 2,
+   "pct": 11.8
+  },
+  "q": {
+   "total": 117,
+   "covered": 20,
+   "pct": 17.1
+  },
+  "Q": {
+   "total": 38,
+   "covered": 3,
+   "pct": 7.9
+  },
+  "R": {
+   "total": 3,
+   "covered": 1,
+   "pct": 33.3
+  },
+  "t": {
+   "total": 5086,
+   "covered": 726,
+   "pct": 14.3
+  },
+  "i": {
+   "total": 899,
+   "covered": 133,
+   "pct": 14.8
+  },
+  "T": {
+   "total": 23,
+   "covered": 1,
+   "pct": 4.3
+  },
+  "d": {
+   "total": 7476,
+   "covered": 946,
+   "pct": 12.7
+  },
+  "D": {
+   "total": 2263,
+   "covered": 297,
+   "pct": 13.1
+  },
+  "n": {
+   "total": 7966,
+   "covered": 1141,
+   "pct": 14.3
+  },
+  "p": {
+   "total": 20246,
+   "covered": 2821,
+   "pct": 13.9
+  },
+  "P": {
+   "total": 521,
+   "covered": 54,
+   "pct": 10.4
+  },
+  "b": {
+   "total": 3895,
+   "covered": 438,
+   "pct": 11.2
+  },
+  "B": {
+   "total": 4410,
+   "covered": 554,
+   "pct": 12.6
+  },
+  "m": {
+   "total": 10675,
+   "covered": 1275,
+   "pct": 11.9
+  },
+  "y": {
+   "total": 3079,
+   "covered": 368,
+   "pct": 12
+  },
+  "r": {
+   "total": 5176,
+   "covered": 583,
+   "pct": 11.3
+  },
+  "l": {
+   "total": 2613,
+   "covered": 345,
+   "pct": 13.2
+  },
+  "u": {
+   "total": 5107,
+   "covered": 949,
+   "pct": 18.6
+  },
+  "U": {
+   "total": 356,
+   "covered": 56,
+   "pct": 15.7
+  },
+  "S": {
+   "total": 9863,
+   "covered": 1087,
+   "pct": 11
+  },
+  "s": {
+   "total": 24059,
+   "covered": 2867,
+   "pct": 11.9
+  },
+  "z": {
+   "total": 601,
+   "covered": 77,
+   "pct": 12.8
+  },
+  "e": {
+   "total": 868,
+   "covered": 142,
+   "pct": 16.4
+  },
+  "o": {
+   "total": 158,
+   "covered": 30,
+   "pct": 19
+  },
+  "c": {
+   "total": 3278,
+   "covered": 478,
+   "pct": 14.6
+  },
+  "h": {
+   "total": 3531,
+   "covered": 396,
+   "pct": 11.2
+  },
+  "j": {
+   "total": 3089,
+   "covered": 464,
+   "pct": 15
+  },
+  "I": {
+   "total": 226,
+   "covered": 48,
+   "pct": 21.2
+  },
+  "f": {
+   "total": 503,
+   "covered": 54,
+   "pct": 10.7
+  },
+  "F": {
+   "total": 2,
+   "covered": 1,
+   "pct": 50
+  },
+  "x": {
+   "total": 5,
+   "covered": 1,
+   "pct": 20
+  },
+  "E": {
+   "total": 207,
+   "covered": 27,
+   "pct": 13
+  },
+  "O": {
+   "total": 412,
+   "covered": 48,
+   "pct": 11.7
+  },
+  "k": {
+   "total": 12208,
+   "covered": 1716,
+   "pct": 14.1
+  },
+  "K": {
+   "total": 957,
+   "covered": 138,
+   "pct": 14.4
+  },
+  "g": {
+   "total": 4599,
+   "covered": 631,
+   "pct": 13.7
+  },
+  "G": {
+   "total": 669,
+   "covered": 82,
+   "pct": 12.3
+  },
+  "N": {
+   "total": 3,
+   "covered": 1,
+   "pct": 33.3
+  },
+  "C": {
+   "total": 494,
+   "covered": 82,
+   "pct": 16.6
+  },
+  "J": {
+   "total": 144,
+   "covered": 16,
+   "pct": 11.1
+  },
+  "Y": {
+   "total": 2,
+   "covered": 1,
+   "pct": 50
+  }
+ },
+ "sample": [
+  {
+   "slp1": "tad",
+   "dcsRank": 2,
+   "anchor": "DICO/28.html#tad"
+  },
+  {
+   "slp1": "eva",
+   "dcsRank": 5,
+   "anchor": "DICO/17.html#eva"
+  },
+  {
+   "slp1": "yad",
+   "dcsRank": 6,
+   "anchor": "DICO/53.html#yad"
+  },
+  {
+   "slp1": "iti",
+   "dcsRank": 7,
+   "anchor": "DICO/11.html#iti"
+  },
+  {
+   "slp1": "tvad",
+   "dcsRank": 8,
+   "anchor": "DICO/30.html#tvad"
+  },
+  {
+   "slp1": "idam",
+   "dcsRank": 9,
+   "anchor": "DICO/11.html#idam"
+  },
+  {
+   "slp1": "api",
+   "dcsRank": 11,
+   "anchor": "DICO/4.html#api"
+  },
+  {
+   "slp1": "kf",
+   "dcsRank": 12,
+   "anchor": "DICO/22.html#k.r#1"
+  },
+  {
+   "slp1": "BU",
+   "dcsRank": 13,
+   "anchor": "DICO/47.html#Ubhuu"
+  },
+  {
+   "slp1": "sarva",
+   "dcsRank": 14,
+   "anchor": "DICO/69.html#sarva"
+  },
+  {
+   "slp1": "vac",
+   "dcsRank": 15,
+   "anchor": "DICO/57.html#vac"
+  },
+  {
+   "slp1": "mahat",
+   "dcsRank": 16,
+   "anchor": "DICO/50.html#mahat"
+  },
+  {
+   "slp1": "as",
+   "dcsRank": 17,
+   "anchor": "DICO/7.html#as#1"
+  },
+  {
+   "slp1": "etad",
+   "dcsRank": 18,
+   "anchor": "DICO/17.html#etad"
+  },
+  {
+   "slp1": "taTA",
+   "dcsRank": 19,
+   "anchor": "DICO/28.html#tathaa"
+  },
+  {
+   "slp1": "hi",
+   "dcsRank": 21,
+   "anchor": "DICO/73.html#hi#1"
+  },
+  {
+   "slp1": "vA",
+   "dcsRank": 22,
+   "anchor": "DICO/58.html#vaa#1"
+  },
+  {
+   "slp1": "rAjan",
+   "dcsRank": 23,
+   "anchor": "DICO/54.html#raajan"
+  },
+  {
+   "slp1": "iva",
+   "dcsRank": 24,
+   "anchor": "DICO/11.html#iva"
+  },
+  {
+   "slp1": "gam",
+   "dcsRank": 25,
+   "anchor": "DICO/24.html#gam"
+  },
+  {
+   "slp1": "deva",
+   "dcsRank": 26,
+   "anchor": "DICO/33.html#deva"
+  },
+  {
+   "slp1": "dfS",
+   "dcsRank": 27,
+   "anchor": "DICO/32.html#d.rz#1"
+  },
+  {
+   "slp1": "Adi",
+   "dcsRank": 28,
+   "anchor": "DICO/9.html#aadi"
+  },
+  {
+   "slp1": "aTa",
+   "dcsRank": 29,
+   "anchor": "DICO/1.html#atha"
+  },
+  {
+   "slp1": "tatra",
+   "dcsRank": 30,
+   "anchor": "DICO/28.html#tatra"
+  },
+  {
+   "slp1": "evam",
+   "dcsRank": 31,
+   "anchor": "DICO/17.html#evam"
+  },
+  {
+   "slp1": "arTa",
+   "dcsRank": 33,
+   "anchor": "DICO/6.html#artha"
+  },
+  {
+   "slp1": "yaTA",
+   "dcsRank": 35,
+   "anchor": "DICO/53.html#yathaa"
+  },
+  {
+   "slp1": "Darma",
+   "dcsRank": 36,
+   "anchor": "DICO/34.html#dharma"
+  },
+  {
+   "slp1": "Atman",
+   "dcsRank": 38,
+   "anchor": "DICO/9.html#aatman"
+  },
+  {
+   "slp1": "punar",
+   "dcsRank": 39,
+   "anchor": "DICO/41.html#punar"
+  },
+  {
+   "slp1": "eka",
+   "dcsRank": 41,
+   "anchor": "DICO/17.html#eka"
+  },
+  {
+   "slp1": "putra",
+   "dcsRank": 42,
+   "anchor": "DICO/41.html#putra"
+  },
+  {
+   "slp1": "dA",
+   "dcsRank": 43,
+   "anchor": "DICO/31.html#daa#1"
+  },
+  {
+   "slp1": "loka",
+   "dcsRank": 44,
+   "anchor": "DICO/56.html#loka"
+  },
+  {
+   "slp1": "agni",
+   "dcsRank": 45,
+   "anchor": "DICO/1.html#agni"
+  },
+  {
+   "slp1": "tva",
+   "dcsRank": 46,
+   "anchor": "DICO/30.html#tva"
+  },
+  {
+   "slp1": "Sru",
+   "dcsRank": 47,
+   "anchor": "DICO/64.html#zru"
+  },
+  {
+   "slp1": "vid",
+   "dcsRank": 48,
+   "anchor": "DICO/59.html#vid#1"
+  },
+  {
+   "slp1": "rasa",
+   "dcsRank": 49,
+   "anchor": "DICO/54.html#rasa"
+  },
+  {
+   "slp1": "anya",
+   "dcsRank": 50,
+   "anchor": "DICO/3.html#anya"
+  },
+  {
+   "slp1": "para",
+   "dcsRank": 51,
+   "anchor": "DICO/39.html#para"
+  },
+  {
+   "slp1": "karman",
+   "dcsRank": 52,
+   "anchor": "DICO/19.html#karman"
+  },
+  {
+   "slp1": "indra",
+   "dcsRank": 53,
+   "anchor": "DICO/11.html#indra"
+  },
+  {
+   "slp1": "sva",
+   "dcsRank": 54,
+   "anchor": "DICO/72.html#sva"
+  },
+  {
+   "slp1": "han",
+   "dcsRank": 55,
+   "anchor": "DICO/73.html#han#1"
+  },
+  {
+   "slp1": "brU",
+   "dcsRank": 56,
+   "anchor": "DICO/46.html#bruu"
+  },
+  {
+   "slp1": "sTA",
+   "dcsRank": 57,
+   "anchor": "DICO/71.html#sthaa#1"
+  },
+  {
+   "slp1": "brahman",
+   "dcsRank": 58,
+   "anchor": "DICO/46.html#brahman"
+  },
+  {
+   "slp1": "kAla",
+   "dcsRank": 59,
+   "anchor": "DICO/21.html#kaala#1"
+  },
+  {
+   "slp1": "tadA",
+   "dcsRank": 60,
+   "anchor": "DICO/28.html#tadaa"
+  },
+  {
+   "slp1": "jan",
+   "dcsRank": 62,
+   "anchor": "DICO/27.html#jan"
+  },
+  {
+   "slp1": "bala",
+   "dcsRank": 63,
+   "anchor": "DICO/46.html#bala"
+  },
+  {
+   "slp1": "rUpa",
+   "dcsRank": 64,
+   "anchor": "DICO/54.html#ruupa"
+  },
+  {
+   "slp1": "tri",
+   "dcsRank": 65,
+   "anchor": "DICO/30.html#tri"
+  },
+  {
+   "slp1": "raTa",
+   "dcsRank": 66,
+   "anchor": "DICO/54.html#ratha"
+  },
+  {
+   "slp1": "atra",
+   "dcsRank": 67,
+   "anchor": "DICO/1.html#atra"
+  },
+  {
+   "slp1": "pitf",
+   "dcsRank": 68,
+   "anchor": "DICO/41.html#pit.r"
+  },
+  {
+   "slp1": "ah",
+   "dcsRank": 69,
+   "anchor": "DICO/8.html#ah"
+  },
+  {
+   "slp1": "Pala",
+   "dcsRank": 70,
+   "anchor": "DICO/45.html#phala"
+  },
+  {
+   "slp1": "saha",
+   "dcsRank": 71,
+   "anchor": "DICO/69.html#saha#1"
+  },
+  {
+   "slp1": "guRa",
+   "dcsRank": 72,
+   "anchor": "DICO/24.html#gu.na"
+  },
+  {
+   "slp1": "iha",
+   "dcsRank": 73,
+   "anchor": "DICO/11.html#iha"
+  },
+  {
+   "slp1": "manas",
+   "dcsRank": 74,
+   "anchor": "DICO/49.html#manas"
+  },
+  {
+   "slp1": "yuj",
+   "dcsRank": 76,
+   "anchor": "DICO/53.html#yuj#1"
+  },
+  {
+   "slp1": "prAp",
+   "dcsRank": 77,
+   "anchor": "DICO/45.html#praap"
+  },
+  {
+   "slp1": "puruza",
+   "dcsRank": 79,
+   "anchor": "DICO/41.html#puru.sa"
+  },
+  {
+   "slp1": "yA",
+   "dcsRank": 81,
+   "anchor": "DICO/53.html#yaa"
+  },
+  {
+   "slp1": "vara",
+   "dcsRank": 82,
+   "anchor": "DICO/57.html#vara"
+  },
+  {
+   "slp1": "nara",
+   "dcsRank": 83,
+   "anchor": "DICO/34.html#nara"
+  },
+  {
+   "slp1": "guru",
+   "dcsRank": 84,
+   "anchor": "DICO/24.html#guru"
+  },
+  {
+   "slp1": "Sata",
+   "dcsRank": 85,
+   "anchor": "DICO/63.html#zata"
+  },
+  {
+   "slp1": "fzi",
+   "dcsRank": 86,
+   "anchor": "DICO/17.html#.r.si"
+  },
+  {
+   "slp1": "brAhmaRa",
+   "dcsRank": 87,
+   "anchor": "DICO/46.html#braahma.na"
+  },
+  {
+   "slp1": "yadi",
+   "dcsRank": 88,
+   "anchor": "DICO/53.html#yadi"
+  },
+  {
+   "slp1": "bahu",
+   "dcsRank": 89,
+   "anchor": "DICO/46.html#bahu"
+  },
+  {
+   "slp1": "jYA",
+   "dcsRank": 90,
+   "anchor": "DICO/27.html#j~naa#1"
+  },
+  {
+   "slp1": "doza",
+   "dcsRank": 91,
+   "anchor": "DICO/33.html#Udo.sa"
+  },
+  {
+   "slp1": "iz",
+   "dcsRank": 92,
+   "anchor": "DICO/11.html#i.s#1"
+  },
+  {
+   "slp1": "yat",
+   "dcsRank": 94,
+   "anchor": "DICO/53.html#yat#1"
+  },
+  {
+   "slp1": "muni",
+   "dcsRank": 96,
+   "anchor": "DICO/51.html#muni"
+  },
+  {
+   "slp1": "pUrva",
+   "dcsRank": 97,
+   "anchor": "DICO/41.html#puurva"
+  },
+  {
+   "slp1": "tapas",
+   "dcsRank": 98,
+   "anchor": "DICO/28.html#tapas"
+  },
+  {
+   "slp1": "go",
+   "dcsRank": 99,
+   "anchor": "DICO/25.html#go"
+  },
+  {
+   "slp1": "grah",
+   "dcsRank": 100,
+   "anchor": "DICO/25.html#grah"
+  },
+  {
+   "slp1": "pA",
+   "dcsRank": 101,
+   "anchor": "DICO/38.html#paa"
+  },
+  {
+   "slp1": "nAma",
+   "dcsRank": 102,
+   "anchor": "DICO/35.html#naama"
+  },
+  {
+   "slp1": "BUta",
+   "dcsRank": 103,
+   "anchor": "DICO/47.html#bhuuta"
+  },
+  {
+   "slp1": "parama",
+   "dcsRank": 106,
+   "anchor": "DICO/39.html#parama"
+  },
+  {
+   "slp1": "uttama",
+   "dcsRank": 107,
+   "anchor": "DICO/14.html#uttama"
+  },
+  {
+   "slp1": "Sara",
+   "dcsRank": 109,
+   "anchor": "DICO/63.html#zara"
+  },
+  {
+   "slp1": "muKa",
+   "dcsRank": 110,
+   "anchor": "DICO/51.html#mukha"
+  },
+  {
+   "slp1": "adas",
+   "dcsRank": 111,
+   "anchor": "DICO/2.html#adas"
+  },
+  {
+   "slp1": "anta",
+   "dcsRank": 115,
+   "anchor": "DICO/3.html#anta"
+  },
+  {
+   "slp1": "yatra",
+   "dcsRank": 118,
+   "anchor": "DICO/53.html#yatra"
+  },
+  {
+   "slp1": "namas",
+   "dcsRank": 119,
+   "anchor": "DICO/34.html#namas"
+  },
+  {
+   "slp1": "dvi",
+   "dcsRank": 120,
+   "anchor": "DICO/33.html#dvi"
+  },
+  {
+   "slp1": "Agam",
+   "dcsRank": 121,
+   "anchor": "DICO/9.html#aagam"
+  },
+  {
+   "slp1": "yajYa",
+   "dcsRank": 123,
+   "anchor": "DICO/53.html#yaj~na"
+  },
+  {
+   "slp1": "strI",
+   "dcsRank": 124,
+   "anchor": "DICO/71.html#strii"
+  },
+  {
+   "slp1": "pApa",
+   "dcsRank": 125,
+   "anchor": "DICO/40.html#paapa"
+  },
+  {
+   "slp1": "paYcan",
+   "dcsRank": 127,
+   "anchor": "DICO/38.html#pa~ncan"
+  },
+  {
+   "slp1": "kfzRa",
+   "dcsRank": 128,
+   "anchor": "DICO/22.html#k.r.s.na"
+  },
+  {
+   "slp1": "pARqava",
+   "dcsRank": 129,
+   "anchor": "DICO/40.html#paa.n.dava"
+  },
+  {
+   "slp1": "satya",
+   "dcsRank": 130,
+   "anchor": "DICO/66.html#satya"
+  },
+  {
+   "slp1": "vana",
+   "dcsRank": 132,
+   "anchor": "DICO/57.html#vana"
+  },
+  {
+   "slp1": "vAta",
+   "dcsRank": 133,
+   "anchor": "DICO/58.html#vaata"
+  },
+  {
+   "slp1": "rAma",
+   "dcsRank": 134,
+   "anchor": "DICO/54.html#raama"
+  },
+  {
+   "slp1": "ati",
+   "dcsRank": 135,
+   "anchor": "DICO/1.html#ati"
+  },
+  {
+   "slp1": "maDya",
+   "dcsRank": 136,
+   "anchor": "DICO/48.html#madhya"
+  },
+  {
+   "slp1": "tasmAt",
+   "dcsRank": 137,
+   "anchor": "DICO/28.html#tasmaat"
+  },
+  {
+   "slp1": "vIra",
+   "dcsRank": 138,
+   "anchor": "DICO/61.html#viira"
+  },
+  {
+   "slp1": "kaTam",
+   "dcsRank": 139,
+   "anchor": "DICO/18.html#katham"
+  },
+  {
+   "slp1": "jana",
+   "dcsRank": 140,
+   "anchor": "DICO/27.html#jana"
+  },
+  {
+   "slp1": "aNga",
+   "dcsRank": 142,
+   "anchor": "DICO/1.html#Uafga"
+  },
+  {
+   "slp1": "tejas",
+   "dcsRank": 143,
+   "anchor": "DICO/30.html#tejas"
+  },
+  {
+   "slp1": "pati",
+   "dcsRank": 145,
+   "anchor": "DICO/38.html#pati"
+  },
+  {
+   "slp1": "kara",
+   "dcsRank": 148,
+   "anchor": "DICO/19.html#kara#1"
+  },
+  {
+   "slp1": "varRa",
+   "dcsRank": 150,
+   "anchor": "DICO/57.html#var.na"
+  },
+  {
+   "slp1": "saptan",
+   "dcsRank": 152,
+   "anchor": "DICO/68.html#saptan"
+  },
+  {
+   "slp1": "ji",
+   "dcsRank": 154,
+   "anchor": "DICO/27.html#ji"
+  },
+  {
+   "slp1": "pAda",
+   "dcsRank": 154,
+   "anchor": "DICO/38.html#paada"
+  },
+  {
+   "slp1": "Bavat",
+   "dcsRank": 158,
+   "anchor": "DICO/47.html#bhavat#1"
+  },
+  {
+   "slp1": "antara",
+   "dcsRank": 160,
+   "anchor": "DICO/3.html#antara"
+  },
+  {
+   "slp1": "atas",
+   "dcsRank": 161,
+   "anchor": "DICO/1.html#atas"
+  },
+  {
+   "slp1": "catur",
+   "dcsRank": 163,
+   "anchor": "DICO/26.html#catur"
+  },
+  {
+   "slp1": "mUla",
+   "dcsRank": 164,
+   "anchor": "DICO/52.html#muula"
+  },
+  {
+   "slp1": "duHKa",
+   "dcsRank": 165,
+   "anchor": "DICO/32.html#du.hkha"
+  },
+  {
+   "slp1": "vAc",
+   "dcsRank": 166,
+   "anchor": "DICO/58.html#vaac"
+  },
+  {
+   "slp1": "mA",
+   "dcsRank": 167,
+   "anchor": "DICO/50.html#maa#1"
+  },
+  {
+   "slp1": "vipra",
+   "dcsRank": 168,
+   "anchor": "DICO/60.html#vipra"
+  },
+  {
+   "slp1": "jYAna",
+   "dcsRank": 169,
+   "anchor": "DICO/27.html#j~naana"
+  },
+  {
+   "slp1": "laB",
+   "dcsRank": 170,
+   "anchor": "DICO/55.html#labh"
+  },
+  {
+   "slp1": "mahAtman",
+   "dcsRank": 171,
+   "anchor": "DICO/50.html#mahaatman"
+  },
+  {
+   "slp1": "yAvat",
+   "dcsRank": 172,
+   "anchor": "DICO/53.html#yaavat"
+  },
+  {
+   "slp1": "pravac",
+   "dcsRank": 173,
+   "anchor": "DICO/44.html#pravac"
+  },
+  {
+   "slp1": "pitta",
+   "dcsRank": 174,
+   "anchor": "DICO/41.html#pitta"
+  },
+  {
+   "slp1": "car",
+   "dcsRank": 176,
+   "anchor": "DICO/26.html#car"
+  },
+  {
+   "slp1": "paS",
+   "dcsRank": 177,
+   "anchor": "DICO/39.html#paz"
+  },
+  {
+   "slp1": "karRa",
+   "dcsRank": 178,
+   "anchor": "DICO/19.html#kar.na"
+  },
+  {
+   "slp1": "vad",
+   "dcsRank": 179,
+   "anchor": "DICO/57.html#vad"
+  },
+  {
+   "slp1": "Baya",
+   "dcsRank": 181,
+   "anchor": "DICO/47.html#bhaya"
+  },
+  {
+   "slp1": "gaRa",
+   "dcsRank": 182,
+   "anchor": "DICO/24.html#ga.na"
+  },
+  {
+   "slp1": "kula",
+   "dcsRank": 184,
+   "anchor": "DICO/21.html#kula"
+  },
+  {
+   "slp1": "Siva",
+   "dcsRank": 185,
+   "anchor": "DICO/63.html#ziva"
+  },
+  {
+   "slp1": "daSan",
+   "dcsRank": 186,
+   "anchor": "DICO/31.html#dazan"
+  },
+  {
+   "slp1": "varza",
+   "dcsRank": 186,
+   "anchor": "DICO/57.html#var.sa"
+  },
+  {
+   "slp1": "jala",
+   "dcsRank": 188,
+   "anchor": "DICO/27.html#jala"
+  },
+  {
+   "slp1": "sadA",
+   "dcsRank": 189,
+   "anchor": "DICO/66.html#sadaa"
+  },
+  {
+   "slp1": "hA",
+   "dcsRank": 190,
+   "anchor": "DICO/73.html#haa#1"
+  },
+  {
+   "slp1": "puRya",
+   "dcsRank": 191,
+   "anchor": "DICO/41.html#pu.nya"
+  },
+  {
+   "slp1": "pada",
+   "dcsRank": 192,
+   "anchor": "DICO/38.html#pada"
+  },
+  {
+   "slp1": "budDi",
+   "dcsRank": 193,
+   "anchor": "DICO/46.html#buddhi"
+  },
+  {
+   "slp1": "anna",
+   "dcsRank": 194,
+   "anchor": "DICO/3.html#anna"
+  },
+  {
+   "slp1": "viSva",
+   "dcsRank": 194,
+   "anchor": "DICO/60.html#vizva"
+  },
+  {
+   "slp1": "BAga",
+   "dcsRank": 196,
+   "anchor": "DICO/47.html#bhaaga"
+  },
+  {
+   "slp1": "Sabda",
+   "dcsRank": 197,
+   "anchor": "DICO/63.html#zabda"
+  },
+  {
+   "slp1": "mantra",
+   "dcsRank": 199,
+   "anchor": "DICO/49.html#mantra"
+  },
+  {
+   "slp1": "SuBa",
+   "dcsRank": 200,
+   "anchor": "DICO/64.html#zubha"
+  },
+  {
+   "slp1": "soma",
+   "dcsRank": 201,
+   "anchor": "DICO/71.html#soma"
+  },
+  {
+   "slp1": "vacana",
+   "dcsRank": 202,
+   "anchor": "DICO/57.html#vacana"
+  },
+  {
+   "slp1": "BAva",
+   "dcsRank": 203,
+   "anchor": "DICO/47.html#bhaava"
+  },
+  {
+   "slp1": "gfha",
+   "dcsRank": 205,
+   "anchor": "DICO/25.html#g.rha"
+  },
+  {
+   "slp1": "vizRu",
+   "dcsRank": 207,
+   "anchor": "DICO/61.html#vi.s.nu"
+  },
+  {
+   "slp1": "vIrya",
+   "dcsRank": 208,
+   "anchor": "DICO/61.html#viirya"
+  },
+  {
+   "slp1": "bAhu",
+   "dcsRank": 209,
+   "anchor": "DICO/46.html#baahu"
+  },
+  {
+   "slp1": "pat",
+   "dcsRank": 211,
+   "anchor": "DICO/38.html#pat#1"
+  },
+  {
+   "slp1": "hita",
+   "dcsRank": 212,
+   "anchor": "DICO/73.html#hita#1"
+  },
+  {
+   "slp1": "SarIra",
+   "dcsRank": 213,
+   "anchor": "DICO/63.html#zariira"
+  },
+  {
+   "slp1": "mAtra",
+   "dcsRank": 214,
+   "anchor": "DICO/50.html#maatra"
+  },
+  {
+   "slp1": "uttara",
+   "dcsRank": 215,
+   "anchor": "DICO/14.html#Uuttara"
+  },
+  {
+   "slp1": "SrezWa",
+   "dcsRank": 216,
+   "anchor": "DICO/64.html#zre.s.tha"
+  },
+  {
+   "slp1": "hari",
+   "dcsRank": 217,
+   "anchor": "DICO/73.html#Uhari"
+  },
+  {
+   "slp1": "kArya",
+   "dcsRank": 217,
+   "anchor": "DICO/21.html#kaarya"
+  },
+  {
+   "slp1": "nAga",
+   "dcsRank": 217,
+   "anchor": "DICO/35.html#naaga"
+  },
+  {
+   "slp1": "maya",
+   "dcsRank": 220,
+   "anchor": "DICO/49.html#maya"
+  },
+  {
+   "slp1": "yuDizWira",
+   "dcsRank": 221,
+   "anchor": "DICO/53.html#yudhi.s.thira"
+  },
+  {
+   "slp1": "nAman",
+   "dcsRank": 222,
+   "anchor": "DICO/35.html#naaman"
+  },
+  {
+   "slp1": "indriya",
+   "dcsRank": 224,
+   "anchor": "DICO/11.html#indriya"
+  },
+  {
+   "slp1": "Siras",
+   "dcsRank": 225,
+   "anchor": "DICO/63.html#ziras"
+  },
+  {
+   "slp1": "rakta",
+   "dcsRank": 226,
+   "anchor": "DICO/54.html#rakta"
+  },
+  {
+   "slp1": "ISvara",
+   "dcsRank": 228,
+   "anchor": "DICO/12.html#iizvara"
+  },
+  {
+   "slp1": "BUmi",
+   "dcsRank": 229,
+   "anchor": "DICO/47.html#bhuumi"
+  },
+  {
+   "slp1": "BArata",
+   "dcsRank": 231,
+   "anchor": "DICO/47.html#bhaarata"
+  },
+  {
+   "slp1": "sma",
+   "dcsRank": 232,
+   "anchor": "DICO/72.html#sma"
+  },
+  {
+   "slp1": "Sakti",
+   "dcsRank": 233,
+   "anchor": "DICO/63.html#zakti"
+  },
+  {
+   "slp1": "deha",
+   "dcsRank": 234,
+   "anchor": "DICO/33.html#deha"
+  },
+  {
+   "slp1": "vAyu",
+   "dcsRank": 235,
+   "anchor": "DICO/58.html#vaayu"
+  },
+  {
+   "slp1": "Buj",
+   "dcsRank": 236,
+   "anchor": "DICO/47.html#bhuj#1"
+  },
+  {
+   "slp1": "sUrya",
+   "dcsRank": 236,
+   "anchor": "DICO/71.html#suurya"
+  },
+  {
+   "slp1": "ganDa",
+   "dcsRank": 238,
+   "anchor": "DICO/24.html#gandha"
+  },
+  {
+   "slp1": "viza",
+   "dcsRank": 240,
+   "anchor": "DICO/61.html#vi.sa"
+  },
+  {
+   "slp1": "deSa",
+   "dcsRank": 241,
+   "anchor": "DICO/33.html#deza"
+  },
+  {
+   "slp1": "lakzaRa",
+   "dcsRank": 242,
+   "anchor": "DICO/55.html#lak.sa.na"
+  },
+  {
+   "slp1": "kaPa",
+   "dcsRank": 243,
+   "anchor": "DICO/19.html#kapha"
+  },
+  {
+   "slp1": "diS",
+   "dcsRank": 244,
+   "anchor": "DICO/32.html#diz#1"
+  },
+  {
+   "slp1": "rAkzasa",
+   "dcsRank": 245,
+   "anchor": "DICO/54.html#raak.sasa"
+  },
+  {
+   "slp1": "veda",
+   "dcsRank": 245,
+   "anchor": "DICO/62.html#veda"
+  },
+  {
+   "slp1": "svayam",
+   "dcsRank": 247,
+   "anchor": "DICO/72.html#svayam"
+  },
+  {
+   "slp1": "yudDa",
+   "dcsRank": 248,
+   "anchor": "DICO/53.html#yuddha"
+  }
+ ]
+}

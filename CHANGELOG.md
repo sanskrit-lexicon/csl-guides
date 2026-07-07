@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-07-07
+
 ### Added
 - **Shared tasks & leaderboard page** (`/about/shared-tasks`): the *which-dictionary routing* shared task goes live — public benchmark `src/data/routing-benchmark.json` (dev 18 / test 6 scenarios over the 44-code answer space, derived from the gold panel by `scripts/build-routing-benchmark.mjs`), official scorer `scripts/score-routing-task.mjs` (strict + lenient accuracy with 95% Wilson intervals), leaderboard with quiz-router and random baselines, and PR-based submission protocol; a second task (*dictionary-lineage detection*) documented as a proposal pending a csl-atlas similarity artifact
 - **Data cards page** (`/developers/data-cards`): a Bender & Friedman data-statement convention for every dataset under `src/data/`, with a card per feed (catalog, abbreviations, atlas extract, atlas-viz feeds, corpus frequency, Heritage coverage, gold panel, benchmark, metrics, quizzes) — provenance, builder, license, known limitations, update policy — wired to the org `/data-release` path and the kosha data-hub manifest for anything released beyond the site

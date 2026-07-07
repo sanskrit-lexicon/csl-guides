@@ -151,6 +151,7 @@ const sidebars = {
         'about/history',
         'about/events',
         'about/publications',
+        'about/guides-hypotheses',
         'about/acknowledgments',
         'faq',
       ],

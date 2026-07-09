@@ -12,6 +12,7 @@ const sidebars = {
       collapsed: false,
       items: [
         'users/quick-start',
+        'users/first-sanskrit-sentence',
         'users/using-the-website',
         'users/search-and-display',
         'users/encoding-transliteration',

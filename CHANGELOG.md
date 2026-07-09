@@ -7,7 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-07-09
+
 ### Added
+- **Beginner article "How Long Until You Read Your First Sanskrit Sentence?"** (`/users/first-sanskrit-sentence`, [H314](https://github.com/gasyoun/Uprava/blob/main/handoffs/H314-Fable_csl-guides_beginner-lm-first-word-article_07.07.26.md)): the plain-language beginner lead-magnet — an honest data-backed timeline built on the committed `corpus-frequency.json` feed (top 25 lemmas = 22.5% of 4.55M DCS tokens), a top-10 first-words table, and a syllable-by-syllable walkthrough of *satyam eva jayate*; routes to the H312 transliterator, the Devanagari quiz, and Quick Start, with a soft samskrte.ru free-first-class bridge for Russian speakers
 - **"Your Name in Devanagari" transliterator tool** (`/tools/name-in-devanagari`, [H312](https://github.com/gasyoun/Uprava/blob/main/handoffs/H312-Sonnet_csl-guides_beginner-lm-transliterator-tool_07.07.26.md)): the first beginner lead-magnet — type a name or word in Latin letters and see it live in Devanagari, IAST, and SLP1, with quick-insert diacritic buttons, copy-to-clipboard, shareable PNG export, and a stubbed soft-email capture (real ESP/list wiring gated on the @DECIDE items in H312). Uses the vendored `sanskrit-util` transcoder via the abugida-correct `slp1_to_devanagari(to_slp1(text))` path — the package's own `iast_to_devanagari` was found to corrupt consonant+vowel sequences (`rāma` → `रआमअ`) and is filed upstream as [sanskrit-util#14](https://github.com/sanskrit-lexicon/sanskrit-util/issues/14).
 
 ## [0.5.0] - 2026-07-07

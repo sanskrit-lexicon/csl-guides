@@ -1,0 +1,175 @@
+{
+  "generatedAt": "2026-07-09",
+  "generator": "scripts/build-level-quiz.mjs (csl-guides, H313)",
+  "source": "src/data/corpus-frequency.json (VisualDCS/DCS frequency via kosha) for real-word/transliteration/frequency items; akṣara-sound + non-word distractors hand-authored (no source for \"plausible but wrong\" content)",
+  "sourceWords": {
+    "common": {
+      "slp1": "eva",
+      "iast": "eva",
+      "devanagari": "एव",
+      "rank": 5
+    },
+    "midFreq": {
+      "slp1": "anya",
+      "iast": "anya",
+      "devanagari": "अन्य",
+      "rank": 50
+    },
+    "rareA": {
+      "slp1": "vacas",
+      "iast": "vacas",
+      "devanagari": "वचस्",
+      "rank": 300
+    },
+    "rareB": {
+      "slp1": "bfhat",
+      "iast": "bṛhat",
+      "devanagari": "बृहत्",
+      "rank": 1000
+    },
+    "rareC": {
+      "slp1": "durbala",
+      "iast": "durbala",
+      "devanagari": "दुर्बल",
+      "rank": 1800
+    }
+  },
+  "items": [
+    {
+      "id": "letter-sound",
+      "difficulty": "easiest",
+      "en": {
+        "question": "Which sound does this Devanagari letter make: क",
+        "options": [
+          "ka",
+          "ta",
+          "ma",
+          "sa"
+        ],
+        "answer": "ka"
+      },
+      "ru": {
+        "question": "Какой звук передаёт эта буква деванагари: क",
+        "options": [
+          "ka",
+          "ta",
+          "ma",
+          "sa"
+        ],
+        "answer": "ka"
+      }
+    },
+    {
+      "id": "vowel-length",
+      "difficulty": "easy",
+      "en": {
+        "question": "Which pair shows a short vowel and its long counterpart?",
+        "options": [
+          "a / ā",
+          "k / t",
+          "m / s",
+          "ka / ta"
+        ],
+        "answer": "a / ā"
+      },
+      "ru": {
+        "question": "В какой паре показан краткий гласный и его долгая пара?",
+        "options": [
+          "a / ā",
+          "k / t",
+          "m / s",
+          "ka / ta"
+        ],
+        "answer": "a / ā"
+      }
+    },
+    {
+      "id": "real-word",
+      "difficulty": "medium",
+      "en": {
+        "question": "Which of these is a real Sanskrit word (not a made-up letter jumble)?",
+        "options": [
+          "एव",
+          "क्ष्ठौ",
+          "ऴ्ऱि",
+          "घ्व्रॗ"
+        ],
+        "answer": "एव"
+      },
+      "ru": {
+        "question": "Какое из этого — настоящее санскритское слово (а не набор букв)?",
+        "options": [
+          "एव",
+          "क्ष्ठौ",
+          "ऴ्ऱि",
+          "घ्व्रॗ"
+        ],
+        "answer": "एव"
+      }
+    },
+    {
+      "id": "transliteration-match",
+      "difficulty": "medium",
+      "en": {
+        "question": "What does अन्य transliterate to?",
+        "options": [
+          "anya",
+          "vacas",
+          "bṛhat",
+          "durbala"
+        ],
+        "answer": "anya"
+      },
+      "ru": {
+        "question": "Как अन्य записывается латиницей (IAST)?",
+        "options": [
+          "anya",
+          "vacas",
+          "bṛhat",
+          "durbala"
+        ],
+        "answer": "anya"
+      }
+    },
+    {
+      "id": "frequency-compare",
+      "difficulty": "harder",
+      "en": {
+        "question": "Which word actually shows up more often in real Sanskrit texts: \"eva\" or \"durbala\"?",
+        "options": [
+          "eva",
+          "durbala"
+        ],
+        "answer": "eva"
+      },
+      "ru": {
+        "question": "Какое слово чаще встречается в реальных санскритских текстах: «eva» или «durbala»?",
+        "options": [
+          "eva",
+          "durbala"
+        ],
+        "answer": "eva"
+      }
+    },
+    {
+      "id": "sandhi-concept",
+      "difficulty": "hardest",
+      "en": {
+        "question": "True or false: when two Sanskrit words meet in a sentence, their sounds often change to blend smoothly (a process called sandhi).",
+        "options": [
+          "True",
+          "False"
+        ],
+        "answer": "True"
+      },
+      "ru": {
+        "question": "Верно или нет: когда два санскритских слова стоят рядом в предложении, их звуки часто меняются, сливаясь друг с другом (это называется сандхи).",
+        "options": [
+          "Верно",
+          "Неверно"
+        ],
+        "answer": "Верно"
+      }
+    }
+  ]
+}

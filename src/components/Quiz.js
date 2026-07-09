@@ -26,22 +26,24 @@ import styles from './Quiz.module.css';
 // {itemId, correct, attempts} counters in localStorage — never sent anywhere. All
 // item types keep the plain <details> reveal when telemetry is off.
 
-const TELEMETRY_OPTIN_KEY = 'csl-guides-quiz-telemetry-optin';
-const TELEMETRY_STATS_KEY = 'csl-guides-quiz-stats-v1';
-const TELEMETRY_EVENT = 'csl-guides-quiz-telemetry-change';
+// Exported so other quiz-shaped components (e.g. LevelQuiz, H313) can share
+// the same opt-in/localStorage/export rails instead of duplicating them.
+export const TELEMETRY_OPTIN_KEY = 'csl-guides-quiz-telemetry-optin';
+export const TELEMETRY_STATS_KEY = 'csl-guides-quiz-stats-v1';
+export const TELEMETRY_EVENT = 'csl-guides-quiz-telemetry-change';
 
-function loadTelemetryOptIn() {
+export function loadTelemetryOptIn() {
   if (typeof window === 'undefined') return false;
   return window.localStorage.getItem(TELEMETRY_OPTIN_KEY) === '1';
 }
 
-function saveTelemetryOptIn(on) {
+export function saveTelemetryOptIn(on) {
   if (typeof window === 'undefined') return;
   window.localStorage.setItem(TELEMETRY_OPTIN_KEY, on ? '1' : '0');
   window.dispatchEvent(new Event(TELEMETRY_EVENT));
 }
 
-function loadQuizStats() {
+export function loadQuizStats() {
   if (typeof window === 'undefined') return {};
   try {
     return JSON.parse(window.localStorage.getItem(TELEMETRY_STATS_KEY) || '{}');
@@ -50,7 +52,7 @@ function loadQuizStats() {
   }
 }
 
-function recordQuizAnswer({quizTitle, item, correct}) {
+export function recordQuizAnswer({quizTitle, item, correct}) {
   if (typeof window === 'undefined') return;
   const stats = loadQuizStats();
   const prev = stats[item.id] || {attempts: 0, correct: 0};
@@ -63,7 +65,7 @@ function recordQuizAnswer({quizTitle, item, correct}) {
   window.localStorage.setItem(TELEMETRY_STATS_KEY, JSON.stringify(stats));
 }
 
-function exportQuizStats() {
+export function exportQuizStats() {
   if (typeof window === 'undefined') return;
   const stats = loadQuizStats();
   const items = Object.entries(stats).map(([itemId, s]) => ({itemId, ...s}));

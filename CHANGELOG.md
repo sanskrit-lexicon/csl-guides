@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.0] - 2026-07-09
+
 ### Added
 - **"What's Your Sanskrit Level?" quiz** (`/tools/sanskrit-level-quiz`, [H313](https://github.com/gasyoun/Uprava/blob/main/handoffs/H313-Sonnet_csl-guides_beginner-lm-level-quiz_07.07.26.md)): the second beginner lead-magnet — 6 questions ramping from an akṣara-sound check to a sandhi concept, with the real-word/transliteration/frequency-comparison items drawn from the committed `corpus-frequency.json` feed (`scripts/build-level-quiz.mjs` → `src/data/level-quiz.json`, bilingual EN/RU). Ends in a level badge (Curious Novice / Can Sound It Out / Ready for Grammar) + a next-step CTA (free first Zoom class, per the H312 §0 funnel skeleton) and a stubbed soft-email capture (real ESP/list wiring gated on the same @DECIDE items as H312). Reuses the H288 quiz telemetry rails (`Quiz.js` opt-in/localStorage/export helpers, now exported) instead of a second telemetry scheme.
 

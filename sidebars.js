@@ -110,6 +110,7 @@ const sidebars = {
         'tools/overview',
         'tools/name-in-devanagari',
         'tools/sanskrit-level-quiz',
+        'tools/word-game',
         'tools/simple-search',
         'tools/advanced-search',
         'tools/multi-dictionary',

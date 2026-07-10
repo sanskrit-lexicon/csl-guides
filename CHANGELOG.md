@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Sanskrit Word Game** (`/tools/word-game`, [H315](https://github.com/gasyoun/Uprava/blob/main/handoffs/H315-Sonnet_csl-guides_beginner-lm-word-game_07.07.26.md)): the fourth beginner lead-magnet — a flashcard-streak game (see a frequency-ranked word in Devanagari, guess its meaning, build a streak). 26 words drawn from `corpus-frequency.json` (ranks 3–145), each gloss hand-verified against its cited Monier-Williams `<L>` entry in `csl-orig/v02/mw/mw.txt` (`scripts/build-word-game.mjs` → `src/data/word-game.json`, bilingual EN/RU, MW quote stored for provenance). First three words are pinned easy wins (dopamine before challenge, per the H315 handoff); streak persists in localStorage; share-your-streak copy prompt + stubbed soft-email capture appear at streak milestones (5/10/20/50), matching the H312/H313 capture pattern. Reuses the H288 quiz telemetry rails (`Quiz.js`) instead of a fourth telemetry scheme.
+
 ## [0.7.0] - 2026-07-09
 
 ### Added

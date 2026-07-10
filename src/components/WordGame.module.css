@@ -1,0 +1,206 @@
+.widget {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-card-border-radius, 8px);
+  padding: 1.25rem 1.5rem;
+  background: var(--ifm-card-background-color, var(--ifm-background-surface-color));
+  margin: 1.5rem 0;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}
+
+.intro {
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0.8rem;
+}
+
+.telemetryToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.telemetryNote {
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-600);
+  margin: 0.2rem 0 1rem;
+}
+
+.streakRow {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.streakBadge,
+.streakBadgeMuted {
+  font-size: 0.9rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--ifm-color-primary-lighter);
+  background: color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+}
+
+.streakBadgeMuted {
+  color: var(--ifm-color-emphasis-600);
+  border-color: var(--ifm-color-emphasis-300);
+  background: transparent;
+}
+
+.card {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 5%, transparent);
+  margin-bottom: 1rem;
+}
+
+.devaText {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-family: 'Noto Sans Devanagari', 'Segoe UI', sans-serif;
+}
+
+.iastText {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  color: var(--ifm-color-emphasis-700);
+  background: transparent;
+}
+
+.question {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+
+.options {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.optionButton {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.optionButton:hover:not(:disabled) {
+  border-color: var(--ifm-color-primary);
+}
+
+.optionButton:disabled {
+  cursor: default;
+}
+
+.optionCorrect {
+  border-color: var(--ifm-color-success, #2e8b57);
+  background: color-mix(in srgb, var(--ifm-color-success, #2e8b57) 12%, transparent);
+}
+
+.optionIncorrect {
+  border-color: var(--ifm-color-danger, #c0392b);
+  background: color-mix(in srgb, var(--ifm-color-danger, #c0392b) 10%, transparent);
+}
+
+.feedbackCorrect {
+  font-weight: 600;
+  color: var(--ifm-color-success, #2e8b57);
+}
+
+.feedbackWrong {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.nextButton {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-button-color, #fff);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.share {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--ifm-color-emphasis-300);
+}
+
+.shareTitle {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0 0 0.6rem;
+  color: var(--ifm-color-primary);
+}
+
+.shareButton {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-primary);
+  background: transparent;
+  color: var(--ifm-color-primary);
+  cursor: pointer;
+  margin-bottom: 0.8rem;
+}
+
+.capture {
+  padding-top: 0.8rem;
+}
+
+.captureLabel {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.captureRow {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.captureInput {
+  flex: 1 1 200px;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.captureButton {
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: var(--ifm-color-primary);
+  color: var(--ifm-button-color, #fff);
+  cursor: pointer;
+}
+
+.thanks {
+  font-size: 0.9rem;
+  color: var(--ifm-color-success, #2e8b57);
+  margin: 0;
+}
+
+.sourceNote {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+  margin: 1rem 0 0;
+}

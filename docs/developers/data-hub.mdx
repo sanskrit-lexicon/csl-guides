@@ -1,0 +1,169 @@
+---
+id: data-hub
+title: "The kosha data hub — consuming canonical derived datasets"
+description: "How to read the kosha manifest, fetch a data-v* release, verify what you downloaded, and load a public dataset — worked examples with real checksums."
+sidebar_label: Data hub (kosha)
+---
+
+# The kosha data hub — consuming canonical derived datasets
+
+_Created: 11-07-2026 · Last updated: 11-07-2026_
+
+Beyond the dictionaries themselves ([Downloads & Data](/users/downloads-and-data)), the
+Sanskrit Lexicon organization derives a growing set of **reusable datasets** from CDSL and
+related corpora — root inventories, cross-dictionary headword unions, DCS↔CDSL crosswalks,
+corpus-frequency tables. These are hosted by
+[**kosha**](https://github.com/gasyoun/kosha), the org's data hub, so that anyone can fetch
+one without cloning half a dozen source repos or re-deriving something that already exists.
+
+This page is for **external consumers**: how to find out what's available, how to fetch it,
+how to check you got the right bytes, and how to load it. (csl-guides' own build-time feeds —
+the JSON files this site computes from — have their own convention; see
+[Data cards](/developers/data-cards).)
+
+## The manifest
+
+kosha publishes one machine-readable index of every canonical derived dataset the
+organization maintains:
+[`data/manifest/datasets.json`](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json).
+Each row is one dataset, with the fields that matter for reuse:
+
+| Field | Meaning |
+|---|---|
+| `id` / `title` | Stable identifier and human-readable name |
+| `tier` | `public`, `restricted`, or `intermediate` — see below |
+| `in_release` | Which `data-v*` release tag ships this file, if any |
+| `release_asset` | The filename to download from that release |
+| `format` / `rows` / `size_bytes` | What you're getting, before you fetch it |
+| `keying` | The join key and any caveats (e.g. coverage %, ambiguity) |
+| `source_repo` / `source_path` | Where the data is actually derived from |
+| `consumers` | Who in the org already depends on this — a signal it's stable |
+| `notes` | Known gotchas — read these before joining on the data |
+
+### The three tiers
+
+- **`public`** — clean, rights-cleared, downloadable from a `data-v*` GitHub release. This
+  page only walks through public-tier data.
+- **`restricted`** — exists and is used internally by org agents, but is rights-encumbered
+  (e.g. derived from unpublished translations) or otherwise not cleared for redistribution.
+  The manifest records that these rows exist so agents don't re-derive them, but their
+  contents, paths, and names are not published outside the org. If you need something the
+  manifest doesn't show, ask — don't assume it's absent just because it's not in the public
+  directory.
+- **`intermediate`** — raw or working data that feeds another, already-registered dataset. Not
+  a finished citable asset in its own right, so it's excluded from the public directory even
+  when the underlying files are technically public.
+
+## Fetching a release
+
+Public-tier datasets ship as assets on tagged GitHub releases of the kosha repo, e.g.
+[`data-v0.1.0`](https://github.com/gasyoun/kosha/releases/tag/data-v0.1.0). A release lists
+every asset with its size; download URLs are stable
+(`https://github.com/gasyoun/kosha/releases/download/<tag>/<asset>`).
+
+:::note Canonical hosting is interim
+The roadmap ([`DATA_HUB_ROADMAP.md`](https://github.com/gasyoun/kosha/blob/main/DATA_HUB_ROADMAP.md))
+plans to mirror public-tier files at `samskrtam.ru/kosha/data/` once that server comes online;
+until then, GitHub Releases are the canonical, citable location. If you need a URL that
+survives a future host move, pin to the release tag, not a directory listing.
+:::
+
+## Licensing
+
+All public-tier data-hub releases are **CC BY-SA 4.0**
+([`LICENSE-DATA.md`](https://github.com/gasyoun/kosha/blob/main/LICENSE-DATA.md)) — distinct
+from kosha's own code license. Attribution flows through to the original upstream: most
+datasets ultimately derive from the Cologne Digital Sanskrit Dictionaries (CC BY-SA 4.0) or
+the Digital Corpus of Sanskrit (CC BY 3.0/4.0, © Oliver Hellwig). Carry that attribution when
+you redistribute a derivative — ShareAlike means your downstream copy stays CC BY-SA 4.0 too.
+
+## Worked examples
+
+The three datasets below are the clearest self-contained reuse stories in the `data-v0.1.0`
+release: a small verb-root inventory, a cross-corpus crosswalk, and a frequency table keyed
+the same way as the crosswalk. Each step was actually run against the live release on
+11-07-2026 — the checksums are the real output of `sha256sum` on the downloaded files, not
+placeholders.
+
+### 1. `mw_roots.tsv` — MW verbal-root inventory
+
+2,113 rows, SLP1 root + explicit `verb_type` (750 `genuineroot` + 1,363 `root`), regenerated
+upstream from `csl-orig` — see its
+[data statement](https://github.com/gasyoun/kosha/blob/main/docs/data-statements/mw-roots.meta.md).
+
+```sh
+curl -LO https://github.com/gasyoun/kosha/releases/download/data-v0.1.0/mw_roots.tsv
+sha256sum mw_roots.tsv
+# 688273a435b4e824836d0287fb78a9ffc6ccb8f1071690efedf849cb46269f41
+```
+
+```python
+import pandas as pd
+roots = pd.read_csv("mw_roots.tsv", sep="\t")
+roots.head()
+#    mw_L  e k1_slp1 root_iast    verb_type      classes whitney_anchor westergaard
+# 0     9  1     aMS       aṃś  genuineroot  10P,10Ā            NaN         NaN
+# 1    87  1     aMs       aṃs  genuineroot      NaN            NaN         NaN
+```
+
+### 2. `dcs_cdsl_xref.tsv` — DCS lemma ↔ CDSL headword crosswalk
+
+15,902 rows linking Digital Corpus of Sanskrit lemma ids to CDSL headwords (81.4% linked) —
+never re-derive this join; it already exists.
+
+```sh
+curl -LO https://github.com/gasyoun/kosha/releases/download/data-v0.1.0/dcs_cdsl_xref.tsv
+sha256sum dcs_cdsl_xref.tsv
+# 208a62862b852077acc67f4aaacc2e581eaf0fe93ac1b8340cd93d6151974a3c
+```
+
+```python
+xref = pd.read_csv("dcs_cdsl_xref.tsv", sep="\t")
+xref.query("in_cdsl == 1").sort_values("token_count", ascending=False).head(3)
+#    dcs_id dcs_lemma_iast slp1 normkey  in_cdsl  token_count grammar
+# 0   37875            tad  tad     tad        1         3734    pron
+# 1  157144             ca   ca      ca        1         3385     ind
+```
+
+### 3. `lemma_frequency.tsv` — DCS lemma frequency, whole-corpus + per-period
+
+83,277 rows, SLP1-keyed, joins directly onto `dcs_cdsl_xref.tsv` via `slp1`/`normkey` — this
+is what powers this site's own
+[Corpus attestation](/dictionaries/corpus-attestation) page.
+
+```sh
+curl -LO https://github.com/gasyoun/kosha/releases/download/data-v0.1.0/lemma_frequency.tsv
+sha256sum lemma_frequency.tsv
+# 3d54e4dbf4fc90c75fdd10b7ab538ddde548718b703c935cadb4c22e43314d07
+```
+
+```python
+freq = pd.read_csv("lemma_frequency.tsv", sep="\t")
+# join onto the crosswalk to get CDSL-attested lemmas ranked by corpus frequency
+joined = freq.merge(xref, left_on="lemma_slp1", right_on="slp1")
+joined.sort_values("count_all", ascending=False)[["lemma_slp1", "count_all", "grammar_all"]].head(3)
+#   lemma_slp1  count_all grammar_all
+# 0         ca     155088         ind
+# 1        tad     151248        pron
+# 2         na      53981         ind
+```
+
+:::caution Read the `notes` field before joining
+`lemma_frequency.tsv`'s manifest row warns that upstream DCS period labels conflate aorist and
+perfect under `Tense=Past` — a caveat that only shows up if you read the manifest, not the file
+header. This is the point of the manifest: every dataset's known gotchas travel with it.
+:::
+
+## Where this fits
+
+- **Full dataset catalog** (including which datasets exist but aren't public): the
+  [manifest](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json) itself,
+  and kosha's browsable
+  [data + tools directory](https://gasyoun.github.io/kosha/directory/).
+- **Roadmap and rationale** for why the hub exists and what's still interim:
+  [`DATA_HUB_ROADMAP.md`](https://github.com/gasyoun/kosha/blob/main/DATA_HUB_ROADMAP.md).
+- **This site's own generated feeds** (a different, smaller set — the JSON that powers
+  csl-guides pages): [Data cards](/developers/data-cards).
+- **The dictionaries themselves** (not derived datasets): [Downloads & Data](/users/downloads-and-data).
+
+_Dr. Mārcis Gasūns_

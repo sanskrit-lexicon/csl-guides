@@ -147,6 +147,7 @@ const sidebars = {
         'developers/generation-pipeline',
         'developers/data-formats',
         'developers/data-cards',
+        'developers/data-hub',
         'developers/api',
       ],
     },

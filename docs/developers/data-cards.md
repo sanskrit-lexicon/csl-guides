@@ -42,6 +42,8 @@ Every dataset under `src/data/` must have, from the moment it is added:
    which is the org's registry of canonical derived datasets (public tier via
    [`data-v*` releases](https://github.com/gasyoun/kosha/releases), restricted tier private).
    None of the feeds below has a DOI yet; they are versioned only by this repo's releases.
+   For fetching and reusing datasets *from* that hub (as opposed to the feeds this site
+   ships), see [The kosha data hub](/developers/data-hub).
 
 Upstream rights for the non-Cologne feeds are documented per source in
 [`src/data/NON_COLOGNE_SOURCES.md`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/NON_COLOGNE_SOURCES.md).

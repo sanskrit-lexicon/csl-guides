@@ -1,0 +1,160 @@
+---
+id: citation-graph
+title: "The Citation Graph: How We Know What the Dictionaries Quote"
+description: "An explainer for the csl-atlas <ls> citation graph — 828,505 resolved citations across 912 classical texts and 11 Cologne dictionaries: what it is, how it was built, and how to reuse it."
+sidebar_label: The citation graph (explainer)
+---
+
+import CitationGraphShare, {CitationSpread} from '@site/src/components/CitationGraphShare';
+import data from '@site/src/data/citation-sources.json';
+
+# The Citation Graph: How We Know What the Dictionaries Quote
+
+The great Sanskrit dictionaries do not just *define* words — they *prove* them, by citing
+the classical texts where each sense occurs. In the Cologne digital sources those proofs
+are `<ls>` (literary source) tags: `<ls>MBh. 3, 12965</ls>` is Monier-Williams citing the
+Mahābhārata. Each dictionary, however, abbreviates in its own way — `MBh.`, `MBH`,
+`MAHĀBHĀRATA` — so the citations of different dictionaries could not be compared until the
+sibling [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) project resolved every
+dictionary's own abbreviations to shared canonical text nodes.
+
+The result is the **`<ls>` citation graph**: {data.stats.totalResolvedCites.toLocaleString('en-US')}
+resolved citations linking {data.stats.dictCount} dictionaries to{' '}
+{data.stats.nodeCount.toLocaleString('en-US')} canonical texts through{' '}
+{data.stats.edgeCount.toLocaleString('en-US')} dictionary→text edges. This page explains
+what that graph is, how it was built, and how to query it yourself. (For the interactive
+per-dictionary profiles, see [What Each Dictionary Quotes](/dictionaries/citation-sources).)
+
+## What the graph is — and is not
+
+It is a **citation-frequency graph**: each edge says *dictionary D cites text T, n times*.
+That makes citation habits comparable — you can see that Apte's favourite text is the
+*Raghuvaṃśa* while Böhtlingk & Roth lean on the epics and Pāṇini — and it makes the
+tradition's canon measurable: which texts *every* lexicographer reached for, and which only
+one ever quoted.
+
+It is **not** a per-passage index. The locus (book/verse) inside each `<ls>` tag is
+discarded — counts are per source-text only. And it is **not** a completeness claim:
+citation frequency measures lexicographic *habit*, not a text's importance.
+
+## Who feeds the graph
+
+<CitationGraphShare />
+
+PWG (Böhtlingk & Roth's seven-volume *Petersburger Wörterbuch*) dominates — its citation
+apparatus was industrial in scale, and two-thirds of its raw `<ls>` tags resolve. At the
+other end, MD contributes {data.dictTotals.md} citations: real, but read it as a
+placeholder, not a profile.
+
+## The long tail of the canon
+
+Breadth is as telling as volume. A handful of texts — the Mahābhārata, the Ṛgveda, the
+Rāmāyaṇa, the Manusmṛti — are quoted across nearly the whole tradition. But most of the
+canon is narrow:
+
+<CitationSpread />
+
+Two-thirds of the texts in the graph are cited by a **single** dictionary — typically a
+specialist reaching where nobody else did: BHS citing Buddhist Sanskrit texts no other
+dictionary touches, or PW's *Nachträge* tradition quoting obscure śāstra editions. The
+widely-shared core is small: only 74 texts appear in five or more dictionaries.
+
+## How it was built
+
+The full method lives in the csl-atlas
+[citations README](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/README.md);
+in brief:
+
+1. **Extract** every `<ls>…</ls>` tag from the [csl-orig](https://github.com/sanskrit-lexicon/csl-orig)
+   digital sources (~1.5 million raw tags across the 11 covered dictionaries).
+2. **Resolve** each leading abbreviation against that dictionary's own abbreviation legend
+   (this site's [abbreviations dataset](/dictionaries/abbreviations-comparison)), by
+   longest-prefix match.
+3. **Filter non-citations.** MW reuses `<ls>` for grammatical markers (`A.` = Active,
+   `ind.`) and editorial tags (`ibid.`, the `L.` = "lexicographers" convention) — 63,582
+   such markers are excluded auditably, not silently.
+4. **Borrow keys** where a dictionary has no legend of its own but a documented shared
+   convention: AP borrows AP90's key (same Apte system); SCH and PWKVN borrow PWG's
+   (the *Petersburger* tradition).
+5. **Fold variants** into one canonical node — diacritic- and case-insensitive merging
+   (`ṚGVEDA` ≡ `Ṛg-veda` ≡ `Ṛgveda`) plus a small hand-verified alias table
+   (*Mānavadharmaśāstra* and *Manu's Gesetzbuch* → *Manusmṛti*), every mapping a
+   well-established identification, never a guess.
+
+Overall, 57.8% of raw text-bearing `<ls>` tags resolve to a canonical text. The rest —
+unkeyed abbreviations, ambiguous scholar shorthands like `AUFRECHT` — stay in a public
+[unresolved-keys worklist](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_unresolved_top.tsv)
+rather than being guessed.
+
+## Known limitations
+
+- **Coverage is 11 of the 43 dictionaries** — those whose abbreviation legends resolve.
+  The Vedic concordances (VEI, PUI) carry no `<ls>` tags at all; GRA's Rigveda references
+  are verse numbers, not abbreviations; IEG cites inscription corpora, a separate
+  epigraphic universe deliberately left out.
+- **MW's yield is genuinely low** (~8% of its raw tags): after the grammatical-marker
+  filter, most of what remains follows the untracked `L.` convention or unkeyed
+  abbreviations, so MW currently resolves to only 5 coarse text nodes. Treat MW's edges as
+  trustworthy but its profile as a placeholder.
+- **Borrowed keys resolve partially** — SCH at 37%, PWKVN at 48% (they share only part of
+  the PWG abbreviation set).
+- **Title-synonymy tail.** The alias table folds the biggest variants; a text cited under
+  a second, lesser-used title may still count as two nodes (MD's "Rigveda" is not yet
+  folded into "Ṛgveda").
+- **Refinements in flight.** Per-locus resolution of Mahābhārata references and
+  verification of the *Indische Sprüche* anthology citations are active work on the
+  csl-atlas side; expect those regions of the graph to sharpen.
+
+## Query it yourself
+
+The graph is three small public TSV files — no database needed:
+
+| File | Columns |
+|---|---|
+| [`ls_citation_edges.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_edges.tsv) | `dict · canonical_text · count` — the graph itself |
+| [`ls_citation_nodes.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_nodes.tsv) | `canonical_text · total_cites · n_dicts · variant_forms` |
+| [`ls_citation_unresolved_top.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_unresolved_top.tsv) | the QA worklist of unresolved abbreviations |
+
+A ten-line start, straight from the raw file:
+
+```python
+import csv, urllib.request
+
+URL = ('https://raw.githubusercontent.com/sanskrit-lexicon/csl-atlas/'
+       'main/data/citations/ls_citation_edges.tsv')
+rows = list(csv.DictReader(
+    urllib.request.urlopen(URL).read().decode('utf-8').splitlines(),
+    delimiter='\t'))
+
+# Which dictionaries cite the Kathāsaritsāgara, and how often?
+for r in rows:
+    if r['canonical_text'] == 'Kathāsaritsāgara':
+        print(r['dict'], r['count'])
+```
+
+To rebuild the graph from scratch, run
+[`build_ls_citation_graph.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/build_ls_citation_graph.py)
+in a csl-atlas checkout with `csl-orig` and `csl-guides` as siblings (~1 minute). The data
+is CC BY-SA — cite csl-atlas and the Cologne Digital Sanskrit Dictionaries.
+
+:::note Trust block
+- **Evidence:** both figures above are computed at build time from the committed
+  [`src/data/citation-sources.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/citation-sources.json)
+  feed, vendored by
+  [`scripts/build-atlas-viz.mjs`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-atlas-viz.mjs)
+  from the csl-atlas citation graph (edges + nodes TSVs above; method in its
+  [README](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/README.md)):
+  **828,505 resolved `<ls>` citations → 912 canonical texts × 11 dictionaries, 1,701
+  edges** (graph v2, 06-07-2026; feed re-verified against the TSVs 12-07-2026).
+- **Limitations:** as listed above — 11 of 43 dictionaries; MW and MD are placeholders;
+  resolution rate 57.8% of text-bearing tags; frequency ≠ importance.
+- **Owner repo:** [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) (data) /
+  this repo (rendering).
+:::
+
+## See also
+
+- [What Each Dictionary Quotes](/dictionaries/citation-sources) — the interactive per-dictionary profiles
+- [Abbreviations & citations](/dictionaries/abbreviations-and-citations) — how `<ls>` tags work in the sources
+- [Abbreviations comparison](/dictionaries/abbreviations-comparison) — the per-dictionary legends the resolver uses
+- [The dictionary landscape](/dictionaries/landscape) — era × novelty × size for all 43

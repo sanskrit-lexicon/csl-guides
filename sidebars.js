@@ -40,6 +40,7 @@ const sidebars = {
         'dictionaries/catalog',
         'dictionaries/landscape',
         'dictionaries/citation-sources',
+        'dictionaries/citation-graph',
         'dictionaries/corpus-attestation',
         'dictionaries/machine-morphology',
         'dictionaries/abbreviations-and-citations',

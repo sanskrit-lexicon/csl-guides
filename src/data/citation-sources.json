@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-07",
+ "generatedAt": "2026-07-11",
  "generatedBy": "scripts/build-atlas-viz.mjs",
  "source": {
   "edges": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_edges.tsv",
@@ -88,6 +88,44 @@
    "text": "Medinīkośa",
    "totalCites": 13246,
    "nDicts": 6
+  }
+ ],
+ "spread": [
+  {
+   "nDicts": 1,
+   "texts": 608
+  },
+  {
+   "nDicts": 2,
+   "texts": 97
+  },
+  {
+   "nDicts": 3,
+   "texts": 102
+  },
+  {
+   "nDicts": 4,
+   "texts": 31
+  },
+  {
+   "nDicts": 5,
+   "texts": 25
+  },
+  {
+   "nDicts": 6,
+   "texts": 20
+  },
+  {
+   "nDicts": 7,
+   "texts": 12
+  },
+  {
+   "nDicts": 8,
+   "texts": 13
+  },
+  {
+   "nDicts": 9,
+   "texts": 4
   }
  ],
  "dictTotals": {

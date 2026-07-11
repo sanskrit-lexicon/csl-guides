@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-07",
+ "generatedAt": "2026-07-11",
  "generatedBy": "scripts/build-atlas-viz.mjs",
  "source": {
   "newick": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/sanhw1_cladogram.newick",

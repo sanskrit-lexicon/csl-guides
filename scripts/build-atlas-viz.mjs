@@ -76,6 +76,16 @@ const overall = nodes
   .sort((a, b) => b.totalCites - a.totalCites)
   .slice(0, TOP_OVERALL);
 
+// Spread histogram: how many canonical texts are cited by exactly n dictionaries —
+// the long-tail shape the citation-graph explainer page renders.
+const spreadByNDicts = [];
+for (const n of nodes) {
+  spreadByNDicts[n.nDicts] = (spreadByNDicts[n.nDicts] ?? 0) + 1;
+}
+const spread = spreadByNDicts
+  .map((texts, nDicts) => ({nDicts, texts}))
+  .filter((r) => r.nDicts > 0 && r.texts > 0);
+
 const citationSources = {
   generatedAt: new Date().toISOString().slice(0, 10),
   generatedBy: 'scripts/build-atlas-viz.mjs',
@@ -92,6 +102,7 @@ const citationSources = {
     totalResolvedCites: edges.reduce((s, e) => s + e.count, 0),
   },
   overall,
+  spread,
   dictTotals,
   dictTextCounts,
   perDict,

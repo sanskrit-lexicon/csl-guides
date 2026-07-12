@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.9.0] - 2026-07-12
+
 ### Added
 - **"How to read a Sanskrit dictionary entry" page** (`/dictionaries/entry-anatomy`, [H794](https://github.com/gasyoun/Uprava/blob/main/handoffs/H794-Opus_csl-guides_entry-anatomy-mdx-page_12.07.26.md)): the csl-guides consumer of the reusable `entry-anatomy` producer skill ([H791](https://github.com/gasyoun/Uprava/blob/main/handoffs/H791-Opus_claude-config_entry-anatomy-dict-skill_12.07.26.md)) — a colour-coded, hover-labelled dissection of four real entries, one per flagship dictionary (MW काल *kāla*, PWG गज *gaja*, AP90 काण *kāṇa*, GRA इध्म *idhma*), followed by a part-by-part written guide to the headword, homonym index, grammar tag, etymology, sense divisions, gloss, source citations, cross-references and Grassmann's attested Ṛg-Veda forms. New `EntryAnatomy` component + `scripts/build-entry-anatomy.py` → `src/data/entry-anatomy.json` (imports the skill over the sibling `csl-orig`, cleans residual markup, transliterates SLP1 Sanskrit forms to IAST, caps each card to 18 tokens); the committed JSON keeps the build free of the skill and csl-orig. Entry text renders as crawlable DOM (not an image), so the parts are SEO-visible. Placed in the Dictionaries sidebar after `abbreviations-comparison`.
 

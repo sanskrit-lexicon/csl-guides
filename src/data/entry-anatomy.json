@@ -1,0 +1,393 @@
+{
+  "_generated_by": "scripts/build-entry-anatomy.py over the /entry-anatomy skill (Uprava H791)",
+  "parts": [
+    {
+      "key": "headword",
+      "label": "Headword / lemma",
+      "color": "80,140,255",
+      "desc": "Devanāgarī + IAST + source key — the entry's address"
+    },
+    {
+      "key": "homonym",
+      "label": "Homonym index",
+      "color": "150,90,220",
+      "desc": "distinguishes identically-spelt but distinct headwords"
+    },
+    {
+      "key": "grammar",
+      "label": "Grammar tag",
+      "color": "230,140,40",
+      "desc": "gender / part-of-speech (m., mfn., n., ind., a.)"
+    },
+    {
+      "key": "etymology",
+      "label": "Etymology",
+      "color": "40,180,140",
+      "desc": "root / derivation / compound analysis"
+    },
+    {
+      "key": "sanskrit",
+      "label": "Sanskrit form",
+      "color": "110,90,210",
+      "desc": "cited Sanskrit words & inflected forms"
+    },
+    {
+      "key": "sense",
+      "label": "Sense marker",
+      "color": "210,150,30",
+      "desc": "numbered sense divisions"
+    },
+    {
+      "key": "gloss",
+      "label": "Gloss / definition",
+      "color": "120,120,120",
+      "desc": "the translational meaning"
+    },
+    {
+      "key": "citation",
+      "label": "Source citation",
+      "color": "220,70,90",
+      "desc": "attesting work abbreviations (RV., MBh., VS. …)"
+    },
+    {
+      "key": "crossref",
+      "label": "Cross-reference",
+      "color": "200,170,40",
+      "desc": "cf. / q.v. / Vgl. pointers to related headwords"
+    },
+    {
+      "key": "attested",
+      "label": "Attested form",
+      "color": "40,170,190",
+      "desc": "inflected forms with corpus loci (Grassmann)"
+    },
+    {
+      "key": "abbr",
+      "label": "Abbreviation",
+      "color": "150,150,150",
+      "desc": "scholarly abbreviation"
+    }
+  ],
+  "entries": [
+    {
+      "dict": "mw",
+      "dict_name": "Monier-Williams (1899)",
+      "k1": "kAla",
+      "k2": "kAla",
+      "devanagari": "काल",
+      "iast": "kāla",
+      "homonym": "1",
+      "id": "49019",
+      "page": "277,1",
+      "truncated": false,
+      "tokens": [
+        {
+          "part": "grammar",
+          "text": "mf(I, Pāṇ. iv, 1, 42)n."
+        },
+        {
+          "part": "gloss",
+          "text": " ("
+        },
+        {
+          "part": "abbr",
+          "text": "fr."
+        },
+        {
+          "part": "gloss",
+          "text": " √ 3. "
+        },
+        {
+          "part": "sanskrit",
+          "text": "kal"
+        },
+        {
+          "part": "gloss",
+          "text": "?), black, of a dark colour, dark-blue, "
+        },
+        {
+          "part": "citation",
+          "text": "MBh."
+        },
+        {
+          "part": "gloss",
+          "text": "; "
+        },
+        {
+          "part": "citation",
+          "text": "R."
+        },
+        {
+          "part": "gloss",
+          "text": " &c."
+        }
+      ]
+    },
+    {
+      "dict": "pwg",
+      "dict_name": "Böhtlingk & Roth, Petersburger Wörterbuch (1855–75)",
+      "k1": "gaja",
+      "k2": "gaja",
+      "devanagari": "गज",
+      "iast": "gaja",
+      "homonym": "",
+      "id": "21371",
+      "page": "2-0630",
+      "truncated": true,
+      "tokens": [
+        {
+          "part": "grammar",
+          "text": "m."
+        },
+        {
+          "part": "gloss",
+          "text": " 1) Elephant"
+        },
+        {
+          "part": "citation",
+          "text": "AK. 2,8,2,2"
+        },
+        {
+          "part": "gloss",
+          "text": ". "
+        },
+        {
+          "part": "citation",
+          "text": "H. 1217"
+        },
+        {
+          "part": "gloss",
+          "text": ". "
+        },
+        {
+          "part": "citation",
+          "text": "MED. j. 7"
+        },
+        {
+          "part": "gloss",
+          "text": ". "
+        },
+        {
+          "part": "citation",
+          "text": "ADBH. BR."
+        },
+        {
+          "part": "gloss",
+          "text": "in"
+        },
+        {
+          "part": "citation",
+          "text": "Ind. St. 1,39"
+        },
+        {
+          "part": "gloss",
+          "text": ". "
+        },
+        {
+          "part": "citation",
+          "text": "M. 8,296"
+        },
+        {
+          "part": "gloss",
+          "text": ". "
+        },
+        {
+          "part": "citation",
+          "text": "11,136"
+        },
+        {
+          "part": "gloss",
+          "text": ". "
+        },
+        {
+          "part": "citation",
+          "text": "VIŚV. 4,12"
+        },
+        {
+          "part": "gloss",
+          "text": ". "
+        },
+        {
+          "part": "gloss",
+          "text": " … "
+        }
+      ]
+    },
+    {
+      "dict": "ap90",
+      "dict_name": "Apte, Practical Sanskrit-English Dictionary (1890)",
+      "k1": "kARa",
+      "k2": "kARa",
+      "devanagari": "काण",
+      "iast": "kāṇa",
+      "homonym": "",
+      "id": "10654",
+      "page": "0392-b",
+      "truncated": true,
+      "tokens": [
+        {
+          "part": "grammar",
+          "text": "a."
+        },
+        {
+          "part": "etymology",
+          "text": " [ kaṇ nimīlane kartari ghañ Tv. ] "
+        },
+        {
+          "part": "sense",
+          "text": "1"
+        },
+        {
+          "part": "gloss",
+          "text": " One-eyed; "
+        },
+        {
+          "part": "sanskrit",
+          "text": "akṣṇā kāṇaḥ"
+        },
+        {
+          "part": "gloss",
+          "text": " Sk; "
+        },
+        {
+          "part": "sanskrit",
+          "text": "kāṇena cakṣuṣā kiṃ vā"
+        },
+        {
+          "part": "citation",
+          "text": "H. Pr. 12"
+        },
+        {
+          "part": "gloss",
+          "text": "; "
+        },
+        {
+          "part": "citation",
+          "text": "Ms. 3. 155."
+        },
+        {
+          "part": "sense",
+          "text": "2"
+        },
+        {
+          "part": "gloss",
+          "text": " Perforated, broken (as a cowrie); "
+        },
+        {
+          "part": "sanskrit",
+          "text": "prāptaḥ kāṇavarāṭakopi na mayā tṛṣṇe'dhunā muṃca mām"
+        },
+        {
+          "part": "citation",
+          "text": "Bh. 3. 4"
+        },
+        {
+          "part": "gloss",
+          "text": "; ("
+        },
+        {
+          "part": "abbr",
+          "text": "Mar."
+        },
+        {
+          "part": "sanskrit",
+          "text": "phuṭakī kavaḍī"
+        },
+        {
+          "part": "gloss",
+          "text": "). "
+        },
+        {
+          "part": "gloss",
+          "text": " … "
+        }
+      ]
+    },
+    {
+      "dict": "gra",
+      "dict_name": "Grassmann, Wörterbuch zum Rig-Veda (1873)",
+      "k1": "iDma",
+      "k2": "iDma/",
+      "devanagari": "इध्म",
+      "iast": "idhma",
+      "homonym": "",
+      "id": "1702",
+      "page": "0211",
+      "truncated": false,
+      "tokens": [
+        {
+          "part": "abbr",
+          "text": "m."
+        },
+        {
+          "part": "gloss",
+          "text": ", Brennholz [von idh], "
+        },
+        {
+          "part": "abbr",
+          "text": "vgl."
+        },
+        {
+          "part": "gloss",
+          "text": " suidhmá. -ás "
+        },
+        {
+          "part": "attested",
+          "text": "665,2"
+        },
+        {
+          "part": "gloss",
+          "text": "; "
+        },
+        {
+          "part": "attested",
+          "text": "916,6"
+        },
+        {
+          "part": "gloss",
+          "text": ". -ám "
+        },
+        {
+          "part": "attested",
+          "text": "94,4"
+        },
+        {
+          "part": "gloss",
+          "text": "; "
+        },
+        {
+          "part": "attested",
+          "text": "298,6"
+        },
+        {
+          "part": "gloss",
+          "text": "; "
+        },
+        {
+          "part": "attested",
+          "text": "308,2"
+        },
+        {
+          "part": "gloss",
+          "text": "; "
+        },
+        {
+          "part": "attested",
+          "text": "887,9"
+        },
+        {
+          "part": "gloss",
+          "text": ". -éna "
+        },
+        {
+          "part": "attested",
+          "text": "252,3"
+        },
+        {
+          "part": "gloss",
+          "text": "."
+        }
+      ]
+    }
+  ]
+}

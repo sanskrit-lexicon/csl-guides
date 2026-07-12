@@ -45,6 +45,7 @@ const sidebars = {
         'dictionaries/machine-morphology',
         'dictionaries/abbreviations-and-citations',
         'dictionaries/abbreviations-comparison',
+        'dictionaries/entry-anatomy',
         'dictionaries/ocr-prefaces',
         {
           type: 'category',

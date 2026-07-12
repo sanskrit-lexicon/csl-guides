@@ -1,0 +1,125 @@
+---
+id: entry-anatomy
+title: How to read a Sanskrit dictionary entry
+description: "The anatomy of a Cologne (CDSL) Sanskrit dictionary entry — headword, homonym index, grammar tag, etymology, sense divisions, source citations, cross-references and attested forms, each colour-coded and explained, across Monier-Williams, Böhtlingk-Roth, Apte and Grassmann."
+sidebar_label: Anatomy of an entry
+keywords:
+  - Sanskrit dictionary entry
+  - how to read Monier-Williams
+  - dictionary entry structure
+  - lemma grammar etymology citation
+  - Cologne Digital Sanskrit Lexicon
+---
+
+import EntryAnatomy from '@site/src/components/EntryAnatomy';
+
+A Sanskrit dictionary entry looks dense at first — a headword, then a run of
+abbreviations, italics, bracketed roots and clipped source names with no
+sentences to hold onto. But every entry is built from the **same handful of
+structural parts**, laid out in the same order. Once you can name those parts,
+any entry — in any of the [44 dictionaries](catalog) on the site — becomes
+readable.
+
+Below, four real entries are dissected: one from each of the flagship
+dictionaries. Every structural part is tinted and labelled; hover a coloured span
+to see what it is, and read the legend beneath the cards.
+
+<EntryAnatomy />
+
+## The parts, one by one
+
+### Headword / lemma
+
+The **headword** (or *lemma*) is the entry's address — the dictionary form of the
+word you looked up. On this site it is shown in **Devanāgarī** and **IAST**
+(the italic roman transliteration), e.g. काल · *kāla*. Internally the Cologne
+data keys each entry by an accent-stripped **SLP1** search key (`kAla`); see
+[Encoding & Transliteration](../users/encoding-transliteration) for how the input
+scripts map to one another.
+
+### Homonym index
+
+When two genuinely different words are spelt the same, each gets its own entry,
+distinguished by a small **superscript number** — काल¹ "time / black" versus a
+separate काल for a different sense-cluster. The index is how the dictionary keeps
+identical spellings apart; always check which numbered headword you are actually
+reading.
+
+### Grammar tag
+
+Right after the headword comes the **grammar tag** — gender and part of speech:
+`m.` (masculine), `f.` (feminine), `n.` (neuter), `mf(ī)n.` (an adjective with
+its feminine in *-ī*), `a.` (adjective), `ind.` (indeclinable). In Monier-Williams
+this can carry an inline grammatical citation to Pāṇini's grammar.
+
+### Etymology
+
+Many entries open the body with a **derivation** — the root the word comes from,
+a compound analysis, or a Uṇādi-sūtra reference. Monier-Williams marks it with
+`fr.` ("from") and the root sign √; Apte encloses it in square brackets
+(`[ kaṇ … ghañ ]`); Böhtlingk-Roth writes *von* ("from"). This is the part that
+tells you *why* the word means what it means.
+
+### Sense markers
+
+Longer entries split the meaning into **numbered senses** — ①, ②, ③ … Apte and
+Böhtlingk-Roth number their senses explicitly; Monier-Williams tends to run them
+together with semicolons. Read the sense numbers as the branches of the word's
+meaning.
+
+### Gloss / definition
+
+The **gloss** is the translational meaning itself — "fire", "an elephant",
+"heavy, weighty". In Monier-Williams and Apte it is English; in Böhtlingk-Roth
+and Grassmann it is **German** (*Feuer*, *Elephant*, *Brennholz*). It is the
+plain, un-tinted text between the marked-up parts.
+
+### Source citations
+
+The clipped capitalised abbreviations — `RV.`, `MBh.`, `R.`, `AK.`, `Ms.` — are
+**source citations**: the classical texts that attest the word in that sense,
+often with a precise book/verse locus (`RV. 1,12,6`). They are the evidence
+behind the definition. The full key to these abbreviations lives on the
+[Abbreviations & citations](abbreviations-and-citations) page, and you can see
+[which texts each dictionary quotes most](citation-sources).
+
+### Cross-references
+
+Pointers to related headwords — `cf.` / `q.v.` (Monier-Williams, Apte),
+*Vgl.* / *s.* (Böhtlingk-Roth, Grassmann) — send you to a synonym, a variant, or
+a fuller treatment elsewhere. Follow them; Sanskrit lexicography is a web, not a
+list.
+
+### Attested forms (Grassmann)
+
+Grassmann's *Wörterbuch zum Rig-Veda* is a **concordance** as much as a
+dictionary: under a headword it lists the actual **inflected forms** as they
+occur in the Ṛg-Veda, each with its **locus** — इध्म *idhma* "firewood" appears
+as *-ás* at 665,2 and 916,6, *-ám* at 94,4, and so on. No other CDSL dictionary
+records forms and loci this exhaustively.
+
+## The same word, four different entries
+
+The cards above deliberately use **different headwords** so each shows off its
+dictionary's character, but the deeper lesson is that the *same* word is
+structured differently by each editor. Monier-Williams is broad and
+English-facing; **[Apte (AP90)](ap90)** numbers its senses cleanly and quotes
+literary examples; **[Böhtlingk-Roth (PWG)](pwg)** is the deepest scholarly
+treatment, in German, with the fullest citations; **[Grassmann (GRA)](gra)** is
+Vedic-only and form-by-form. Choosing the right dictionary for your word is half
+the skill — the [dictionary landscape](landscape) and the
+[which-dictionary guide](../users/which-dictionary-quiz) help you pick.
+
+## Where to go next
+
+- A step-by-step walk-through of one dictionary: [Reading Monier-Williams](../users/reading-monier-williams).
+- Decode the abbreviations you meet: [Abbreviations & citations](abbreviations-and-citations).
+- Look a word up yourself: [Quick start](../users/quick-start) and [Search & display](../users/search-and-display).
+- Turn an inflected form back into its headword: [Machine morphology](machine-morphology).
+
+---
+
+_The coloured dissections on this page are generated from the CDSL digitized-text
+markup by the reusable `entry-anatomy` tool — the parts are read straight off the
+source tags, not guessed from print. Nested markup is flattened into its outer
+part, so the diagram is a teaching aid, not a formal parser._

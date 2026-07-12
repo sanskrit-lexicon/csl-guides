@@ -1,0 +1,101 @@
+/* Anatomy-of-an-entry cards. Part tints are translucent rgba set inline, so the
+   same values read on light and dark; only structural chrome is themed here. */
+.root {
+  margin: 1.25rem 0 1.75rem;
+}
+
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  background: var(--ifm-background-surface-color);
+  margin-bottom: 1rem;
+}
+
+.entry {
+  font-size: 1.05rem;
+  line-height: 2.15;
+  word-break: break-word;
+}
+
+.part {
+  border-radius: 4px;
+  padding: 1px 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.head {
+  font-weight: 600;
+}
+
+.dev {
+  font-family: 'Noto Sans Devanagari', 'Nirmala UI', 'Siddhanta', serif;
+  font-weight: 600;
+  font-size: 1.15em;
+}
+
+.iast {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.hom {
+  font-size: 0.7em;
+  margin-left: 1px;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.meta {
+  margin-top: 0.85rem;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.metaDim {
+  color: var(--ifm-color-emphasis-600);
+  font-variant-numeric: tabular-nums;
+}
+
+.legend {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem 1.5rem;
+  margin-top: 1.25rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  background: var(--ifm-background-color);
+}
+
+@media (max-width: 640px) {
+  .legend {
+    grid-template-columns: 1fr;
+  }
+}
+
+.legendRow {
+  display: grid;
+  grid-template-columns: 15px 1fr;
+  column-gap: 0.6rem;
+  align-items: baseline;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.legendRow b {
+  grid-column: 2;
+}
+
+.legendDesc {
+  grid-column: 2;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.82rem;
+}
+
+.swatch {
+  width: 13px;
+  height: 13px;
+  border-radius: 4px;
+  margin-top: 4px;
+}

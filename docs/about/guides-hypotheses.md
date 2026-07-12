@@ -184,10 +184,10 @@ into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/ma
 ---
 
 **Provenance.** Authored and measured 07-07-2026 by Fable 5 (`claude-fable-5`) under
-handoff [H278](https://github.com/gasyoun/Uprava/blob/main/handoffs/H278-Fable_csl-guides_guides_stream1_hypotheses_07.07.26.md)
+handoff [H278](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H278-Fable_csl-guides_guides_stream1_hypotheses_07.07.26.md)
 (Stream 1 of the csl-guides research programme); ACL-standard metric presentation
 (Wilson CIs, chance/majority baselines, correlation significance) added same day under
-[H281](https://github.com/gasyoun/Uprava/blob/main/handoffs/H281-Fable_csl-guides_guides_stream4_acl_uplift_07.07.26.md)
+[H281](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H281-Fable_csl-guides_guides_stream4_acl_uplift_07.07.26.md)
 (Stream 4) per the convention on the [Publications page](/about/publications). Metrics artifact:
 [hypothesis-metrics.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/hypothesis-metrics.json).
 

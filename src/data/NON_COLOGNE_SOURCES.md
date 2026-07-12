@@ -4,17 +4,17 @@ _Created: 07-07-2026 · Last updated: 07-07-2026_
 
 Per-source evidence records for the non-Cologne dictionary/corpus data layers the guides
 can draw on, per handoff
-[H282](https://github.com/gasyoun/Uprava/blob/main/handoffs/H282-Fable_csl-guides_guides_stream5_noncologne_reuse_07.07.26.md)
+[H282](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H282-Fable_csl-guides_guides_stream5_noncologne_reuse_07.07.26.md)
 (Stream 5 of the
-[H272](https://github.com/gasyoun/Uprava/blob/main/handoffs/H272-Fable_csl-guides_guides_hypotheses_viz_datalayers_acl_07.07.26.md)
+[H272](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H272-Fable_csl-guides_guides_hypotheses_viz_datalayers_acl_07.07.26.md)
 csl-guides DH-uplift programme). Each record states the exact artifact, its
 license/rights, and the feed shape. **Rule inherited from the org spine: consume the
 committed derived artifact; never scrape a live site per consumer.** Wired feeds live in
 [`src/data/`](https://github.com/sanskrit-lexicon/csl-guides/tree/main/src/data) and are
 SLP1-keyed JSON so Streams 2 (visualizations,
-[H279](https://github.com/gasyoun/Uprava/blob/main/handoffs/H279-Fable_csl-guides_guides_stream2_visualizations_07.07.26.md))
+[H279](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H279-Fable_csl-guides_guides_stream2_visualizations_07.07.26.md))
 and 3 (data-layer sections,
-[H280](https://github.com/gasyoun/Uprava/blob/main/handoffs/H280-Fable_csl-guides_guides_stream3_data_layer_sections_07.07.26.md))
+[H280](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H280-Fable_csl-guides_guides_stream3_data_layer_sections_07.07.26.md))
 can join them against dictionary headwords without transcoding.
 
 ## 1. DCS / VisualDCS — corpus frequency + attestation ✅ WIRED
@@ -71,7 +71,7 @@ can join them against dictionary headwords without transcoding.
   ruled to land in `VisualDCS/non-derived/vedaweb/` per
   [ROADMAP_VEDAWEB_REUSE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_VEDAWEB_REUSE.md)
   Phase 1, handoff
-  [H096](https://github.com/gasyoun/Uprava/blob/main/handoffs/H096-Sonnet_VisualDCS_vedaweb_feed_export_03.07.26.md).
+  [H096](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H096-Sonnet_VisualDCS_vedaweb_feed_export_03.07.26.md).
 - **Status 07-07-2026:** the export has not been run yet (`non-derived/vedaweb/` does
   not exist). Per the org rule (one bulk export, then all consumers read the feed) the
   guides must NOT hit the VedaWeb API independently. **Follow-on:** once H096 lands,

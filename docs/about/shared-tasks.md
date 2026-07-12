@@ -94,7 +94,7 @@ leaderboard with one degenerate submission. Interest / discussion → the
 ---
 
 **Provenance.** Tasks designed 07-07-2026 by Fable 5 (`claude-fable-5`) under handoff
-[H281](https://github.com/gasyoun/Uprava/blob/main/handoffs/H281-Fable_csl-guides_guides_stream4_acl_uplift_07.07.26.md)
+[H281](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H281-Fable_csl-guides_guides_stream4_acl_uplift_07.07.26.md)
 (Stream 4, ACL-standards uplift). Task-1 numbers are reproducible from
 [routing-benchmark.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/routing-benchmark.json)
 and the committed scorer.

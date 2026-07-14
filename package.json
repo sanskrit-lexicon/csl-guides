@@ -14,6 +14,7 @@
     "build:word-game": "node scripts/build-word-game.mjs",
     "build:heritage-coverage": "node scripts/build-heritage-coverage.mjs",
     "build:atlas-viz": "node scripts/build-atlas-viz.mjs",
+    "verify:atlas-viz": "node scripts/verify-atlas-viz.mjs",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

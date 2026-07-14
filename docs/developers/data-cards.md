@@ -222,7 +222,7 @@ Upstream rights for the non-Cologne feeds are documented per source in
 
 **Provenance.** Convention and cards authored 07-07-2026 by Fable 5 (`claude-fable-5`)
 under handoff
-[H281](https://github.com/gasyoun/Uprava/blob/main/handoffs/H281-Fable_csl-guides_guides_stream4_acl_uplift_07.07.26.md)
+[H281](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H281-Fable_csl-guides_guides_stream4_acl_uplift_07.07.26.md)
 (Stream 4, ACL-standards uplift), reusing the standards survey in
 [ACL_DH_COMPATIBILITY_ANALYSIS.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ReverseDictionary/ACL_DH_COMPATIBILITY_ANALYSIS.md)
 (H265).

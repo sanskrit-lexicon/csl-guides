@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- **Docusaurus 3.10.2 combined bump** — Dependabot split the 3.10.1 → 3.10.2 upgrade into one PR per package ([#110](https://github.com/sanskrit-lexicon/csl-guides/pull/110), [#111](https://github.com/sanskrit-lexicon/csl-guides/pull/111), [#112](https://github.com/sanskrit-lexicon/csl-guides/pull/112)); each one alone left the remaining `@docusaurus/*` packages at 3.10.1, and Docusaurus rejects a mixed core/plugin version set (`Invalid name=docusaurus-plugin-content-docs version number=3.10.1`), so all three builds were red and their auto-merge could never fire. Bumped `@docusaurus/core`, `preset-classic`, `theme-mermaid`, `module-type-aliases` and `types` to 3.10.2 together; production build verified green locally.
+
 ## [0.9.0] - 2026-07-12
 
 ### Added

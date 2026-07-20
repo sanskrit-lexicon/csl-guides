@@ -25,5 +25,11 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      # Cheap, deterministic, and independent of the build — so it runs first and
+      # fails in seconds rather than after a ~40s compile. Guards the H1387 defect:
+      # every quiz bank was once authored with its answer first, so "always pick A"
+      # scored 100% on six public quizzes.
+      - name: Verify quiz answer positions
+        run: npm run verify:quiz-positions
       - name: Build site
         run: npm run build

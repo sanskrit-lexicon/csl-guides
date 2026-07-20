@@ -48,14 +48,19 @@ function matchBracket(text, start) {
 }
 
 // Re-emit `values` in the same layout the original span used — inline stays
-// inline, multi-line keeps its element and closing-bracket indentation.
+// inline, multi-line keeps its element and closing-bracket indentation, and the
+// file's existing line ending is preserved. That last part matters on Windows:
+// these files are checked out CRLF, so hardcoding "\n" made the transform
+// report permanent drift on exactly the two banks with multi-line arrays while
+// reporting "0 reordered" — a rewrite that changes only invisible bytes.
 function renderLike(raw, values) {
   const encoded = values.map((v) => JSON.stringify(v));
-  if (!raw.includes('\n')) return `[${encoded.join(', ')}]`;
-  const lines = raw.split('\n');
-  const elemIndent = (lines[1] ?? '').match(/^\s*/)[0];
-  const closeIndent = (lines[lines.length - 1] ?? '').match(/^\s*/)[0];
-  return `[\n${encoded.map((e) => elemIndent + e).join(',\n')}\n${closeIndent}]`;
+  if (!/\r?\n/.test(raw)) return `[${encoded.join(', ')}]`;
+  const eol = raw.includes('\r\n') ? '\r\n' : '\n';
+  const lines = raw.split(/\r?\n/);
+  const elemIndent = (lines[1] ?? '').match(/^[^\S\r\n]*/)[0];
+  const closeIndent = (lines[lines.length - 1] ?? '').match(/^[^\S\r\n]*/)[0];
+  return `[${eol}${encoded.map((e) => elemIndent + e).join(`,${eol}`)}${eol}${closeIndent}]`;
 }
 
 function normalize(text, stem) {

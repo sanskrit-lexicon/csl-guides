@@ -33,3 +33,38 @@ jobs:
         run: npm run verify:quiz-positions
       - name: Build site
         run: npm run build
+      # G22 browser regression check (H1217). Unlike the quiz check above this one
+      # needs the PRODUCTION bundle actually served — "build green" only proves the
+      # JS compiles, not that the DOM is right at runtime — so it runs after the
+      # build and costs a chromium download plus ~12s of page checks.
+      #
+      # Deliberately NOT added to deploy.yml, which is where the quiz check does
+      # sit. Its assertions are data-dependent (43 circles / 41 leaves, one per
+      # dictionary), so adding a dictionary legitimately changes them. On a PR
+      # that is a useful prompt to update EXPECTED; on the deploy path it would
+      # block publishing the site over a correct data change.
+      - name: Install Playwright chromium
+        run: npx playwright install --with-deps chromium
+      - name: Verify atlas viz against the production bundle
+        run: |
+          # Run docusaurus serve DIRECTLY, not via `npm run serve`: npm spawns the
+          # real server as a child, so killing the npm PID orphans it, the port
+          # stays held and the step hangs to timeout (hit while developing this).
+          # One node process means one PID to kill.
+          # A plain static file server is not a substitute either — the site builds
+          # with trailingSlash:false, so pages are `landscape.html` and an
+          # extensionless request 404s unless the server resolves .html, which
+          # docusaurus serve does and python's http.server does not.
+          node node_modules/@docusaurus/core/bin/docusaurus.mjs serve \
+            --port 3555 --no-open > /dev/null 2>&1 &
+          serve_pid=$!
+          for _ in $(seq 1 60); do
+            curl -sf -o /dev/null http://localhost:3555/csl-guides/ && break
+            sleep 1
+          done
+          set +e
+          node scripts/verify-atlas-viz.mjs --base-url http://localhost:3555/csl-guides/
+          status=$?
+          set -e
+          kill "$serve_pid" 2>/dev/null || true
+          exit $status

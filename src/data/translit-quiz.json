@@ -40,7 +40,7 @@
       "type": "multiple-choice",
       "difficulty": "medium",
       "question": "In Harvard-Kyoto, the sound ś (as in śiva) is written:",
-      "options": ["S", "z", "sh", "ś"],
+      "options": ["S", "z", "ś", "sh"],
       "answer": "z",
       "explanation": "SLP1 writes it S, ITRANS writes it sh, Harvard-Kyoto writes it z — three ASCII spellings of one letter.",
       "tags": ["schemes", "sibilants", "siva"]
@@ -51,7 +51,7 @@
       "type": "multiple-choice",
       "difficulty": "medium",
       "question": "In ITRANS, the sound ś (as in śiva) is written:",
-      "options": ["sh", "z", "S", "c"],
+      "options": ["S", "c", "z", "sh"],
       "answer": "sh",
       "tags": ["schemes", "sibilants", "siva"]
     },
@@ -61,7 +61,7 @@
       "type": "multiple-choice",
       "difficulty": "easy",
       "question": "Which scheme is described as “Roman with diacritics (IAST-style)”?",
-      "options": ["roman", "hk", "itrans", "slp1"],
+      "options": ["hk", "roman", "itrans", "slp1"],
       "answer": "roman",
       "tags": ["schemes"]
     },
@@ -189,7 +189,7 @@
       "type": "multiple-choice",
       "difficulty": "medium",
       "question": "Which of these dictionaries marks NO Vedic accents?",
-      "options": ["Apte (AP90)", "Monier-Williams (MW)", "Böhtlingk-Roth (PWG)", "Grassmann (GRA)"],
+      "options": ["Monier-Williams (MW)", "Grassmann (GRA)", "Apte (AP90)", "Böhtlingk-Roth (PWG)"],
       "answer": "Apte (AP90)",
       "explanation": "MW, PWG/PW, and Grassmann all mark accents; Grassmann centrally, as a Ṛg-Veda dictionary. Apte does not.",
       "tags": ["accents"]

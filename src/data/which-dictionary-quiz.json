@@ -8,7 +8,7 @@
     {
       "id": "WD-01", "group": "reading", "type": "multiple-choice", "difficulty": "easy",
       "question": "You want the broadest classical Sanskrit→English reference, one that also marks Vedic accents. Which dictionary?",
-      "options": ["Monier-Williams (MW)", "Apte (AP90)", "Edgerton BHS", "Stchoupak (STC)"],
+      "options": ["Stchoupak (STC)", "Edgerton BHS", "Monier-Williams (MW)", "Apte (AP90)"],
       "answer": "Monier-Williams (MW)",
       "explanation": "MW is the standard general reference — encyclopaedic, rich in compounds and citations, and it marks Vedic accents.",
       "tags": ["reading"]
@@ -16,7 +16,7 @@
     {
       "id": "WD-02", "group": "reading", "type": "multiple-choice", "difficulty": "medium",
       "question": "You're reading the Mahāvastu and a word — looking like a Sanskritized Pali form — isn't in Monier-Williams. Where next?",
-      "options": ["Edgerton BHS", "Apte (AP90)", "Wilson (WIL)", "Goldstücker (GST)"],
+      "options": ["Goldstücker (GST)", "Apte (AP90)", "Wilson (WIL)", "Edgerton BHS"],
       "answer": "Edgerton BHS",
       "explanation": "BHS is the specialist dictionary of Buddhist Hybrid Sanskrit; it indexes the Buddhist canon and triangulates each form against Pali and classical Sanskrit.",
       "tags": ["reading", "buddhist"]
@@ -24,7 +24,7 @@
     {
       "id": "WD-03", "group": "reading", "type": "multiple-choice", "difficulty": "medium",
       "question": "You want the deepest scholarly treatment with the fullest citations, and German is fine. Which?",
-      "options": ["Böhtlingk-Roth (PWG)", "Macdonell (MD)", "Benfey (BEN)", "Apte (AP90)"],
+      "options": ["Macdonell (MD)", "Apte (AP90)", "Benfey (BEN)", "Böhtlingk-Roth (PWG)"],
       "answer": "Böhtlingk-Roth (PWG)",
       "explanation": "The Großes Petersburger Wörterbuch (PWG) is the deepest scholarly Sanskrit dictionary; PW is its shorter version, SCH supplements it, CCS distils it.",
       "tags": ["reading", "scholarly"]
@@ -40,7 +40,7 @@
     {
       "id": "WD-05", "group": "composing", "type": "multiple-choice", "difficulty": "medium",
       "question": "You have an English word and need its Sanskrit equivalents — i.e. you're composing Sanskrit. Which?",
-      "options": ["Apte English-Sanskrit (AE)", "Apte (AP90)", "Monier-Williams (MW)", "Edgerton BHS"],
+      "options": ["Edgerton BHS", "Monier-Williams (MW)", "Apte English-Sanskrit (AE)", "Apte (AP90)"],
       "answer": "Apte English-Sanskrit (AE)",
       "explanation": "AE (and Borooah, BOR) are English→Sanskrit dictionaries for composition — the reverse direction of the reading dictionaries.",
       "tags": ["composing"]
@@ -48,7 +48,7 @@
     {
       "id": "WD-06", "group": "language", "type": "multiple-choice", "difficulty": "medium",
       "question": "You want a modern French gloss. Which dictionary?",
-      "options": ["Stchoupak–Renou (STC)", "Burnouf (BUR)", "Cappeller German (CCS)", "Bopp (BOP)"],
+      "options": ["Bopp (BOP)", "Stchoupak–Renou (STC)", "Burnouf (BUR)", "Cappeller German (CCS)"],
       "answer": "Stchoupak–Renou (STC)",
       "explanation": "STC (1932) is the standard French dictionary; Burnouf (BUR, 1866) is the older French one it superseded.",
       "tags": ["language", "french"]
@@ -56,7 +56,7 @@
     {
       "id": "WD-07", "group": "language", "type": "multiple-choice", "difficulty": "hard",
       "question": "You want Latin glosses and Indo-European cognates by the founder of comparative grammar. Which?",
-      "options": ["Bopp Glossarium (BOP)", "Cappeller (CAE)", "Benfey (BEN)", "Goldstücker (GST)"],
+      "options": ["Cappeller (CAE)", "Goldstücker (GST)", "Benfey (BEN)", "Bopp Glossarium (BOP)"],
       "answer": "Bopp Glossarium (BOP)",
       "explanation": "Bopp's Glossarium Sanscritum (1847) glosses in Latin and cites cognates (e.g. Latin axilla for aṃśa).",
       "tags": ["language", "etymology"]
@@ -64,7 +64,7 @@
     {
       "id": "WD-08", "group": "specialist", "type": "multiple-choice", "difficulty": "hard",
       "question": "You need to identify a Sanskrit plant name botanically. Which resource?",
-      "options": ["Sanskrit Names of Plants (SNP)", "Puranic Encyclopedia (PE)", "Monier-Williams (MW)", "Kṛdantarūpamālā (KRM)"],
+      "options": ["Puranic Encyclopedia (PE)", "Monier-Williams (MW)", "Kṛdantarūpamālā (KRM)", "Sanskrit Names of Plants (SNP)"],
       "answer": "Sanskrit Names of Plants (SNP)",
       "explanation": "Meulenbeld's SNP maps Sanskrit plant names to their botanical identity with a thorough source apparatus.",
       "tags": ["specialist", "botany"]
@@ -80,7 +80,7 @@
     {
       "id": "WD-10", "group": "specialist", "type": "multiple-choice", "difficulty": "medium",
       "question": "You want to identify and locate a proper name in the Mahābhārata. Which?",
-      "options": ["Index to MBh Names (INM)", "Puranic Encyclopedia (PE)", "Vedic Index (VEI)", "Catalogus Catalogorum (ACC)"],
+      "options": ["Index to MBh Names (INM)", "Catalogus Catalogorum (ACC)", "Vedic Index (VEI)", "Puranic Encyclopedia (PE)"],
       "answer": "Index to MBh Names (INM)",
       "explanation": "Sörensen's INM is the name-index to the epic; the Mahābhārata Cultural Index (MCI) adds cultural detail.",
       "tags": ["specialist", "epic"]
@@ -88,7 +88,7 @@
     {
       "id": "WD-11", "group": "specialist", "type": "multiple-choice", "difficulty": "medium",
       "question": "You want the story and identity behind a Purāṇic name, in clear English. Which?",
-      "options": ["Puranic Encyclopedia (PE)", "The Purāṇa Index (PUI)", "Monier-Williams (MW)", "Abhidhānacintāmaṇi (ABCH)"],
+      "options": ["Puranic Encyclopedia (PE)", "Abhidhānacintāmaṇi (ABCH)", "Monier-Williams (MW)", "The Purāṇa Index (PUI)"],
       "answer": "Puranic Encyclopedia (PE)",
       "explanation": "Mani's PE narrates the stories; the Purāṇa Index (PUI) is the terse locational index to the same material.",
       "tags": ["specialist", "purana"]
@@ -96,7 +96,7 @@
     {
       "id": "WD-12", "group": "specialist", "type": "multiple-choice", "difficulty": "hard",
       "question": "You want the classical *synonyms* of a word (a thesaurus), in the traditional kośa form. Which?",
-      "options": ["Abhidhānacintāmaṇi (ABCH)", "Monier-Williams (MW)", "Macdonell (MD)", "Yates (YAT)"],
+      "options": ["Abhidhānacintāmaṇi (ABCH)", "Macdonell (MD)", "Monier-Williams (MW)", "Yates (YAT)"],
       "answer": "Abhidhānacintāmaṇi (ABCH)",
       "explanation": "ABCH (Hemacandra) and Abhidhānaratnamālā (ARMH) are synonym kośas — they group the Sanskrit words for a concept. The big modern kośas are SKD and VCP.",
       "tags": ["specialist", "kosha"]
@@ -104,7 +104,7 @@
     {
       "id": "WD-13", "group": "specialist", "type": "multiple-choice", "difficulty": "medium",
       "question": "You want a name or subject in *Vedic* literature, with scholarly references. Which?",
-      "options": ["Vedic Index (VEI)", "Puranic Encyclopedia (PE)", "Monier-Williams (MW)", "Bopp (BOP)"],
+      "options": ["Bopp (BOP)", "Vedic Index (VEI)", "Monier-Williams (MW)", "Puranic Encyclopedia (PE)"],
       "answer": "Vedic Index (VEI)",
       "explanation": "Macdonell & Keith's Vedic Index of Names and Subjects is the standard scholarly index to Vedic realia.",
       "tags": ["specialist", "vedic"]
@@ -118,7 +118,7 @@
     {
       "id": "WD-15", "group": "historical", "type": "multiple-choice", "difficulty": "hard",
       "question": "You want the *earliest* major Sanskrit-English dictionary, the foundation Monier-Williams built on. Which?",
-      "options": ["Wilson (WIL)", "Benfey (BEN)", "Yates (YAT)", "Macdonell (MD)"],
+      "options": ["Yates (YAT)", "Benfey (BEN)", "Wilson (WIL)", "Macdonell (MD)"],
       "answer": "Wilson (WIL)",
       "explanation": "Wilson (1832) is the first major Sanskrit-English dictionary; MW later built on it.",
       "tags": ["historical"]
@@ -132,7 +132,7 @@
     {
       "id": "WD-17", "group": "reading", "type": "multiple-choice", "difficulty": "easy",
       "question": "You want a compact, accented student's dictionary to read with — short definitions, accent shown. Which?",
-      "options": ["Macdonell (MD)", "Böhtlingk-Roth (PWG)", "Catalogus Catalogorum (ACC)", "Apte English-Sanskrit (AE)"],
+      "options": ["Macdonell (MD)", "Catalogus Catalogorum (ACC)", "Apte English-Sanskrit (AE)", "Böhtlingk-Roth (PWG)"],
       "answer": "Macdonell (MD)",
       "explanation": "Macdonell's is the compact accented student dictionary; it pairs with his grammars.",
       "tags": ["reading"]

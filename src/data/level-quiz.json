@@ -41,20 +41,20 @@
       "en": {
         "question": "Which sound does this Devanagari letter make: क",
         "options": [
-          "ka",
-          "ta",
+          "sa",
           "ma",
-          "sa"
+          "ta",
+          "ka"
         ],
         "answer": "ka"
       },
       "ru": {
         "question": "Какой звук передаёт эта буква деванагари: क",
         "options": [
-          "ka",
-          "ta",
+          "sa",
           "ma",
-          "sa"
+          "ta",
+          "ka"
         ],
         "answer": "ka"
       }
@@ -65,20 +65,20 @@
       "en": {
         "question": "Which pair shows a short vowel and its long counterpart?",
         "options": [
-          "a / ā",
           "k / t",
           "m / s",
-          "ka / ta"
+          "ka / ta",
+          "a / ā"
         ],
         "answer": "a / ā"
       },
       "ru": {
         "question": "В какой паре показан краткий гласный и его долгая пара?",
         "options": [
-          "a / ā",
           "k / t",
           "m / s",
-          "ka / ta"
+          "ka / ta",
+          "a / ā"
         ],
         "answer": "a / ā"
       }
@@ -90,8 +90,8 @@
         "question": "Which of these is a real Sanskrit word (not a made-up letter jumble)?",
         "options": [
           "एव",
-          "क्ष्ठौ",
           "ऴ्ऱि",
+          "क्ष्ठौ",
           "घ्व्रॗ"
         ],
         "answer": "एव"
@@ -100,8 +100,8 @@
         "question": "Какое из этого — настоящее санскритское слово (а не набор букв)?",
         "options": [
           "एव",
-          "क्ष्ठौ",
           "ऴ्ऱि",
+          "क्ष्ठौ",
           "घ्व्रॗ"
         ],
         "answer": "एव"
@@ -114,9 +114,9 @@
         "question": "What does अन्य transliterate to?",
         "options": [
           "anya",
-          "vacas",
           "bṛhat",
-          "durbala"
+          "durbala",
+          "vacas"
         ],
         "answer": "anya"
       },
@@ -124,9 +124,9 @@
         "question": "Как अन्य записывается латиницей (IAST)?",
         "options": [
           "anya",
-          "vacas",
           "bṛhat",
-          "durbala"
+          "durbala",
+          "vacas"
         ],
         "answer": "anya"
       }
@@ -157,16 +157,16 @@
       "en": {
         "question": "True or false: when two Sanskrit words meet in a sentence, their sounds often change to blend smoothly (a process called sandhi).",
         "options": [
-          "True",
-          "False"
+          "False",
+          "True"
         ],
         "answer": "True"
       },
       "ru": {
         "question": "Верно или нет: когда два санскритских слова стоят рядом в предложении, их звуки часто меняются, сливаясь друг с другом (это называется сандхи).",
         "options": [
-          "Верно",
-          "Неверно"
+          "Неверно",
+          "Верно"
         ],
         "answer": "Верно"
       }

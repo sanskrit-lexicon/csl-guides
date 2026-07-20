@@ -19,6 +19,7 @@ import {readFile, writeFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {dirname, join} from 'node:path';
 import {slp1_to_devanagari, from_slp1} from '../src/vendor/sanskrit-util.js';
+import {canonicalOrder, applyOrder} from './_quiz-options.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -145,6 +146,20 @@ const items = [
     },
   },
 ];
+
+// Each item above is authored with its correct answer written first, which is
+// the readable way to write them but shipped a quiz where "always pick A"
+// scored 6/6 (H1387). Permute deterministically before writing, seeded on the
+// item id, applying ONE order to both locales so en/ru stay positionally
+// parallel — the renderer picks item[locale] and the two must agree on which
+// slot holds which choice. Same helper the normalizer uses, so a regeneration
+// and a normalize run converge on identical output.
+for (const item of items) {
+  const order = canonicalOrder(item.en.options, `level-quiz:${item.id}`);
+  for (const loc of ['en', 'ru']) {
+    item[loc].options = applyOrder(item[loc].options, order);
+  }
+}
 
 const out = {
   generatedAt: '2026-07-09',

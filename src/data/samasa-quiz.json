@@ -19,7 +19,7 @@
     {
       "id": "SM-02", "group": "types", "type": "multiple-choice", "difficulty": "medium",
       "question": "rāmaḥ ca kṛṣṇaḥ ca → rāmakṛṣṇau (\"Rāma and Kṛṣṇa\"). What type of compound?",
-      "options": ["dvandva (copulative)", "tatpuruṣa (determinative)", "bahuvrīhi (possessive)", "avyayībhāva (adverbial)"],
+      "options": ["tatpuruṣa (determinative)", "dvandva (copulative)", "avyayībhāva (adverbial)", "bahuvrīhi (possessive)"],
       "answer": "dvandva (copulative)",
       "explanation": "A dvandva joins members that would otherwise be linked by 'and' (ca). Here the members are taken separately (itaretara), so the compound is dual.",
       "tags": ["dvandva"]
@@ -27,7 +27,7 @@
     {
       "id": "SM-03", "group": "types", "type": "multiple-choice", "difficulty": "hard",
       "question": "sukham ca duḥkham ca → sukhaduḥkham, neuter singular (\"pleasure and pain\"). Which dvandva subtype?",
-      "options": ["samāhāra (collective)", "itaretara (separate)", "dvigu", "nañ"],
+      "options": ["dvigu", "nañ", "samāhāra (collective)", "itaretara (separate)"],
       "answer": "samāhāra (collective)",
       "explanation": "A samāhāra dvandva takes the members collectively as a unit — always neuter singular; pairs of opposites often take this form. (An itaretara dvandva, by contrast, is dual/plural.)",
       "tags": ["dvandva"]
@@ -35,7 +35,7 @@
     {
       "id": "SM-04", "group": "types", "type": "multiple-choice", "difficulty": "medium",
       "question": "vṛkṣa-mūlam = vṛkṣasya mūlam (\"root of a tree, tree-root\"). What type?",
-      "options": ["tatpuruṣa (determinative)", "dvandva (copulative)", "bahuvrīhi (possessive)", "avyayībhāva (adverbial)"],
+      "options": ["tatpuruṣa (determinative)", "bahuvrīhi (possessive)", "avyayībhāva (adverbial)", "dvandva (copulative)"],
       "answer": "tatpuruṣa (determinative)",
       "explanation": "In a tatpuruṣa the first member has a case relationship to the second. Here it's a genitive relation (vṛkṣasya), so a ṣaṣṭhī-tatpuruṣa.",
       "tags": ["tatpurusa"]
@@ -49,7 +49,7 @@
     {
       "id": "SM-06", "group": "subtypes", "type": "multiple-choice", "difficulty": "medium",
       "question": "pūrṇa-candraḥ = pūrṇaḥ candraḥ (\"full moon\") — the members refer to the same object. What subtype?",
-      "options": ["karmadhāraya", "dvigu", "bahuvrīhi", "dvandva"],
+      "options": ["bahuvrīhi", "dvandva", "dvigu", "karmadhāraya"],
       "answer": "karmadhāraya",
       "explanation": "A karmadhāraya (samānādhikaraṇa-tatpuruṣa) is descriptive: dissolved, both members have the SAME case (refer to one object) — adjective + noun.",
       "tags": ["tatpurusa", "karmadharaya"]
@@ -57,7 +57,7 @@
     {
       "id": "SM-07", "group": "subtypes", "type": "multiple-choice", "difficulty": "hard",
       "question": "A descriptive compound (like a karmadhāraya) but whose first member is a numeral or a direction word — e.g. eka-vacana. What is it called?",
-      "options": ["dvigu", "upapada", "nañ-tatpuruṣa", "avyayībhāva"],
+      "options": ["nañ-tatpuruṣa", "upapada", "avyayībhāva", "dvigu"],
       "answer": "dvigu",
       "explanation": "A dvigu has the karmadhāraya sense but a numeral/direction first member (eka- 'one', dvi- 'two', bahu- 'many').",
       "tags": ["tatpurusa", "dvigu"]
@@ -65,7 +65,7 @@
     {
       "id": "SM-08", "group": "subtypes", "type": "multiple-choice", "difficulty": "hard",
       "question": "a-jñānam = a- + jñānam (\"ignorance\") — a negative particle as first member. What subtype?",
-      "options": ["nañ-tatpuruṣa", "dvigu", "avyayībhāva", "bahuvrīhi"],
+      "options": ["nañ-tatpuruṣa", "avyayībhāva", "bahuvrīhi", "dvigu"],
       "answer": "nañ-tatpuruṣa",
       "explanation": "A nañ-tatpuruṣa has a negative/privative particle (na-, an-, a-) as its first member, giving a negative sense.",
       "tags": ["tatpurusa", "nan"]
@@ -73,7 +73,7 @@
     {
       "id": "SM-09", "group": "subtypes", "type": "multiple-choice", "difficulty": "hard",
       "question": "kumbha-kāra (\"potter\") = kumbha (\"pot\") + √kṛ (\"to make\") — the second member is a root-derivative. What subtype?",
-      "options": ["upapada", "dvigu", "karmadhāraya", "nañ"],
+      "options": ["karmadhāraya", "nañ", "upapada", "dvigu"],
       "answer": "upapada",
       "explanation": "An upapada compound has a dhātu (root) derivative as its second member (here -kāra from √kṛ).",
       "tags": ["tatpurusa", "upapada"]
@@ -81,7 +81,7 @@
     {
       "id": "SM-10", "group": "types", "type": "multiple-choice", "difficulty": "medium",
       "question": "padmākṣa describes a person, meaning \"whose eyes are like lotuses, lotus-eyed\" (padma + akṣa). What type?",
-      "options": ["bahuvrīhi (possessive)", "tatpuruṣa (determinative)", "dvandva (copulative)", "dvigu"],
+      "options": ["tatpuruṣa (determinative)", "bahuvrīhi (possessive)", "dvigu", "dvandva (copulative)"],
       "answer": "bahuvrīhi (possessive)",
       "explanation": "A bahuvrīhi is exocentric: it forms an adjective describing something OUTSIDE the compound (the lotus-eyed person), not the eyes themselves.",
       "tags": ["bahuvrihi"]
@@ -95,7 +95,7 @@
     {
       "id": "SM-12", "group": "types", "type": "multiple-choice", "difficulty": "medium",
       "question": "sa-krodham (\"with anger, angrily\") is indeclinable and works as an adverb (sa- + krodha). What type?",
-      "options": ["avyayībhāva (adverbial)", "bahuvrīhi (possessive)", "dvandva (copulative)", "karmadhāraya"],
+      "options": ["karmadhāraya", "bahuvrīhi (possessive)", "avyayībhāva (adverbial)", "dvandva (copulative)"],
       "answer": "avyayībhāva (adverbial)",
       "explanation": "An avyayībhāva is indeclinable (avyaya) and functions as an adverb; first member an indeclinable/prefix, whole in neuter-singular form (cf. yathā-śraddham 'according to one's faith').",
       "tags": ["avyayibhava"]

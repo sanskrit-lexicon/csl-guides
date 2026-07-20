@@ -18,12 +18,89 @@
 // never left a reusable regression script (H1217/G22, 18-07-2026).
 
 import {chromium} from 'playwright';
+import {readFile} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import {dirname, join} from 'node:path';
 
 const args = process.argv.slice(2);
 const baseUrlArg = args.indexOf('--base-url');
 const BASE = baseUrlArg !== -1 ? args[baseUrlArg + 1] : 'http://localhost:3000/csl-guides/';
 
-const EXPECTED = {circles: 43, leaves: 41};
+const DATA = join(dirname(fileURLToPath(import.meta.url)), '..', 'src', 'data');
+const readJson = async (f) => JSON.parse(await readFile(join(DATA, f), 'utf8'));
+
+// ---------------------------------------------------------------------------
+// Expected counts are DERIVED from the same committed feeds the pages render,
+// never pinned. They used to be literals (`{circles: 43, leaves: 41}`), which
+// meant adding a dictionary turned this regression check red for a completely
+// correct data change — and the failure said "expected 43", giving no hint that
+// the right fix was to edit the checker rather than the site.
+// ---------------------------------------------------------------------------
+
+// The chart's fixed colour/legend order, mirrored from DictionaryLandscape.js.
+// It cannot be imported: that file is JSX and this script runs under plain node.
+// So instead of trusting the copy, `deriveCircles` asserts the data contains no
+// group outside this list — if one appears, the copy has drifted AND the chart
+// needs a new palette entry, and we want to hear about it either way.
+const GROUP_ORDER = [
+  'Sanskrit-English',
+  'Specialized',
+  'Sanskrit-Sanskrit',
+  'Sanskrit-German',
+  'English-Sanskrit',
+  'Sanskrit-French',
+  'Sanskrit-Latin',
+];
+
+// One <circle> per catalog dictionary that has BOTH an atlas row and a year —
+// the join in DictionaryLandscape.js `joinRows()` (a dictionary with no csl-orig
+// source has no atlas row; PD has no year).
+function deriveCircles(catalog, atlas) {
+  const groupsSeen = new Set();
+  let n = 0;
+  for (const g of catalog.groups) {
+    for (const item of g.items) {
+      if (!atlas.dicts[item.code.toLowerCase()] || !item.year) continue;
+      groupsSeen.add(g.name);
+      n++;
+    }
+  }
+  const unknown = [...groupsSeen].filter((g) => !GROUP_ORDER.includes(g));
+  if (unknown.length) {
+    throw new Error(
+      `dictionaries.json has group(s) the chart cannot colour: ${unknown.join(', ')}. ` +
+        'Add them to GROUP_ORDER in DictionaryLandscape.js and to this script.',
+    );
+  }
+  return n;
+}
+
+// Leaves of the UPGMA tree. Internal nodes in this Newick are unlabeled, so a
+// leaf is exactly a name token sitting immediately after '(' or ',' and before
+// its branch length.
+function deriveLeaves(cladogram) {
+  return (cladogram.newick.match(/[(,]\s*[A-Za-z][\w.-]*\s*:/g) || []).length;
+}
+
+const [catalog, atlas, cladogram, citationSources] = await Promise.all([
+  readJson('dictionaries.json'),
+  readJson('atlas-extract.json'),
+  readJson('cladogram.json'),
+  readJson('citation-sources.json'),
+]);
+
+const EXPECTED = {
+  circles: deriveCircles(catalog, atlas),
+  leaves: deriveLeaves(cladogram),
+  // The <details> fallback lists every row of the `overall` feed.
+  citationRows: citationSources.overall.length,
+};
+
+console.log(
+  `Derived expectations from src/data: circles=${EXPECTED.circles} ` +
+    `(dictionaries.json x atlas-extract.json), leaves=${EXPECTED.leaves} (cladogram.json newick), ` +
+    `citation rows=${EXPECTED.citationRows} (citation-sources.json overall)`,
+);
 
 const browser = await chromium.launch();
 let allOk = true;
@@ -90,9 +167,15 @@ await checkPage('dictionaries/citation-sources', async (page, {fail, ok}) => {
   if (selectCount < 1) fail('no dictionary <select> found');
   else ok(`dict selector present (${selectCount})`);
 
+  // Exact, not a floor: this table is a straight render of the `overall` feed,
+  // so a partial render (the regression that matters — a fallback that silently
+  // drops rows) is invisible to a >=5 threshold.
   const rowCount = await page.locator('article details table tbody tr').count();
-  if (rowCount < 5) fail(`data-table fallback has only ${rowCount} rows, expected >=5`);
-  else ok(`data-table fallback rows = ${rowCount}`);
+  if (rowCount !== EXPECTED.citationRows) {
+    fail(`data-table fallback rows = ${rowCount}, expected ${EXPECTED.citationRows}`);
+  } else {
+    ok(`data-table fallback rows = ${rowCount}`);
+  }
 
   const detailsCount = await page.locator('article details').count();
   if (detailsCount < 1) fail('no <details> data-table fallback found');
@@ -102,6 +185,15 @@ await checkPage('dictionaries/citation-sources', async (page, {fail, ok}) => {
 // corpus-attestation.mdx / machine-morphology.mdx (H280): SSR-safe pure-markup
 // coverage tables, not charts — verify they actually render real rows, not an
 // empty/broken table.
+//
+// These two stay FLOORS rather than derived exact counts, deliberately. Each
+// page composes several components whose row counts come from MDX props
+// (`<CorpusFrequencyTop n={25} />`, `<PeriodProfiles lemmas={[...8]} />`,
+// `<HeritageSample n={15} />`) — presentation choices, not data. Deriving them
+// would mean re-implementing three components' slicing rules here, so the
+// checker would break whenever someone tuned a prop, which is exactly the
+// false-red this change set out to remove. The floor still catches the
+// regression these were written for: a table that renders empty or broken.
 await checkPage('dictionaries/corpus-attestation', async (page, {fail, ok}) => {
   const rowCount = await page.locator('table tbody tr').count();
   if (rowCount < 5) fail(`coverage table has only ${rowCount} rows, expected >=5`);

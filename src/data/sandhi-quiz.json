@@ -121,7 +121,7 @@
       "type": "multiple-choice",
       "difficulty": "hard",
       "question": "Apply vowel sandhi:  e + a  →  ?",
-      "options": ["e (a elided, written with an avagraha: e ’)", "ai", "aya", "ā"],
+      "options": ["e (a elided, written with an avagraha: e ’)", "ai", "ā", "aya"],
       "answer": "e (a elided, written with an avagraha: e ’)",
       "explanation": "principle 6 — when e or o is followed by a short a, the a is elided and replaced by an avagraha (e ’, o ’).",
       "tags": ["vowel-sandhi", "avagraha"]
@@ -159,7 +159,7 @@
       "type": "multiple-choice",
       "difficulty": "easy",
       "question": "What is the guṇa of u?",
-      "options": ["o", "au", "va", "ū"],
+      "options": ["ū", "o", "au", "va"],
       "answer": "o",
       "tags": ["guna"]
     },
@@ -188,7 +188,7 @@
       "type": "multiple-choice",
       "difficulty": "hard",
       "question": "Visarga sandhi — apply:  rāmaḥ + āgataḥ  →  ?",
-      "options": ["rāma āgataḥ", "rāmo āgataḥ", "rāmā āgataḥ", "rāmāgataḥ"],
+      "options": ["rāmāgataḥ", "rāmo āgataḥ", "rāma āgataḥ", "rāmā āgataḥ"],
       "answer": "rāma āgataḥ",
       "explanation": "before a vowel other than a short a, the -s of -aḥ is simply dropped, leaving -a (the two words stay separate: rāma āgataḥ).",
       "tags": ["visarga"]

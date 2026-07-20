@@ -115,9 +115,9 @@
       "question": "Under the entry 'Buddha', a bold sub-entry printed as '-kalpa' represents:",
       "options": [
         "A cross-reference to another dictionary",
-        "A samasa formed by appending it to the entry word, i.e. Buddhakalpa",
         "An alternate spelling of Buddha",
-        "A grammatical note about the entry"
+        "A grammatical note about the entry",
+        "A samasa formed by appending it to the entry word, i.e. Buddhakalpa"
       ],
       "answer": "A samasa formed by appending it to the entry word, i.e. Buddhakalpa",
       "tags": [
@@ -223,8 +223,8 @@
       "question": "In MW, the abbreviation 'MBh.' stands for which text?",
       "options": [
         "Bhagavad-gita",
-        "Mahabharata",
         "Manu-bhashya",
+        "Mahabharata",
         "Mundaka"
       ],
       "answer": "Mahabharata",
@@ -305,9 +305,9 @@
       "difficulty": "hard",
       "question": "Why is 'Astanga' hard to find on the page its heading words suggest?",
       "options": [
-        "It is spelled differently in the dictionary",
         "MW gives a separate entry word for a samasa whose adjoining word begins with 'a', so it sits on the next page (117)",
         "It is only in the Supplement",
+        "It is spelled differently in the dictionary",
         "The heading words are printed in reverse order"
       ],
       "answer": "MW gives a separate entry word for a samasa whose adjoining word begins with 'a', so it sits on the next page (117)",

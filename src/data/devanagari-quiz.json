@@ -31,7 +31,7 @@
     {
       "id": "DV-04", "group": "vowels", "type": "multiple-choice", "difficulty": "easy",
       "question": "At which mouth position is the vowel 'a' produced?",
-      "options": ["guttural (kaṇṭhya)", "palatal (tālavya)", "labial (oṣṭhya)", "dental (dantya)"],
+      "options": ["guttural (kaṇṭhya)", "palatal (tālavya)", "dental (dantya)", "labial (oṣṭhya)"],
       "answer": "guttural (kaṇṭhya)",
       "explanation": "'a' is the central, guttural vowel — the whole alphabet is an embellishment of this sound.",
       "tags": ["vowels", "positions"]
@@ -45,7 +45,7 @@
     {
       "id": "DV-06", "group": "vowels", "type": "multiple-choice", "difficulty": "hard",
       "question": "The compound vowel 'e' is formed using which two mouth positions?",
-      "options": ["guttural + palatal", "guttural + labial", "palatal + labial", "dental + labial"],
+      "options": ["palatal + labial", "dental + labial", "guttural + labial", "guttural + palatal"],
       "answer": "guttural + palatal",
       "explanation": "'e' arises when 'a' (guttural) is sounded through the 'i' (palatal) position — kaṇṭha-tālavya. 'o' is guttural + labial (kaṇṭhoṣṭhya).",
       "tags": ["vowels", "positions"]
@@ -59,7 +59,7 @@
     {
       "id": "DV-08", "group": "consonants", "type": "multiple-choice", "difficulty": "medium",
       "question": "The pa-varga consonants (pa pha ba bha ma) are stops made at the …?",
-      "options": ["lips (labial)", "teeth (dental)", "throat (guttural)", "palate (palatal)"],
+      "options": ["lips (labial)", "palate (palatal)", "throat (guttural)", "teeth (dental)"],
       "answer": "lips (labial)",
       "explanation": "Each varga is a set of stops at one position; the pa-varga (labials) close at the lips.",
       "tags": ["consonants", "varga"]
@@ -79,7 +79,7 @@
     {
       "id": "DV-11", "group": "consonants", "type": "multiple-choice", "difficulty": "easy",
       "question": "Which single consonant comes last, after the sibilants?",
-      "options": ["ha", "kṣa", "ḷa", "ṅa"],
+      "options": ["ha", "ṅa", "ḷa", "kṣa"],
       "answer": "ha",
       "explanation": "ha is the final (aspirate) consonant of the alphabet.",
       "tags": ["consonants"]
@@ -87,7 +87,7 @@
     {
       "id": "DV-12", "group": "order", "type": "multiple-choice", "difficulty": "hard",
       "question": "In Sanskrit alphabetical order, do vowel-initial or consonant-initial words come first?",
-      "options": ["all vowels first, then consonants", "consonants first", "interleaved a, ka, ā, kha…", "by length, short before long"],
+      "options": ["consonants first", "interleaved a, ka, ā, kha…", "by length, short before long", "all vowels first, then consonants"],
       "answer": "all vowels first, then consonants",
       "explanation": "The order is: all the vowels (a ā i ī u ū ṛ ṝ ḷ e ai o au), then anusvāra/visarga, then the consonants by varga, semivowels, sibilants, ha.",
       "tags": ["order"]
@@ -107,7 +107,7 @@
     {
       "id": "DV-15", "group": "conjuncts", "type": "multiple-choice", "difficulty": "hard",
       "question": "The special conjunct क्ष (kṣa) is composed of which two consonants?",
-      "options": ["ka + ṣa", "ka + śa", "kha + sa", "ca + ṣa"],
+      "options": ["kha + sa", "ka + śa", "ka + ṣa", "ca + ṣa"],
       "answer": "ka + ṣa",
       "explanation": "kṣa = ka + ṣa; the other famous special conjunct, jña (ज्ञ), is ja + ña.",
       "tags": ["conjuncts"]

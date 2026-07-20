@@ -33,6 +33,13 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      # Also gated here, not just in ci.yml: that workflow runs only on
+      # pull_request, so a direct push to main would publish an unchecked quiz to
+      # the live site — which is exactly the surface the H1387 defect sat on.
+      # Deliberately NOT continue-on-error; it is deterministic, so a red here
+      # means the data really is gameable and should not ship.
+      - name: Verify quiz answer positions
+        run: npm run verify:quiz-positions
       - name: Refresh dictionary catalog from live site (non-fatal)
         run: npm run build:catalog
         continue-on-error: true

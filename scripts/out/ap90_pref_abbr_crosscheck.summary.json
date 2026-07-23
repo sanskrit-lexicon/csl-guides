@@ -1,0 +1,15 @@
+{
+  "dict": "AP90",
+  "keys": 211,
+  "hits_nonshort": 137,
+  "pref_only": 47,
+  "low_count": 9,
+  "body": "C:\\Users\\user\\Documents\\GitHub\\csl-orig\\v02\\ap90\\ap90.txt",
+  "pref": [
+    "C:\\Users\\user\\Documents\\GitHub\\AP90\\prefaces\\ap90pref05.md",
+    "C:\\Users\\user\\Documents\\GitHub\\AP90\\prefaces\\ap90pref06.md"
+  ],
+  "tsv": "scripts\\out\\ap90_pref_abbr_crosscheck.tsv",
+  "report": "scripts\\out\\ap90_pref_abbr_crosscheck.md",
+  "date": "2026-07-23"
+}

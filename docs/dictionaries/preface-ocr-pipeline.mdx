@@ -1,0 +1,199 @@
+---
+id: preface-ocr-pipeline
+title: Preface OCR pipeline
+description: "Operator manual for CDSL front-matter OCR — vision skill, Tesseract audit layer, PD sibling pipeline, and Claude Code vs Grok attribution."
+sidebar_label: Preface OCR pipeline
+---
+
+# Preface OCR pipeline
+
+How Cologne dictionary **front matter** (title pages, prefaces/forewords, abbreviation lists, addenda) is turned into searchable Markdown plus English and Russian editions — and which agent path produced which deliverable.
+
+**Public catalogue of finished text:** [OCR'd prefaces](ocr-prefaces).  
+**Cologne scan index:** [csldoc dictionaries](https://sanskrit-lexicon.uni-koeln.de/scans/csldev/csldoc/build/dictionaries/index.html).
+
+---
+
+## Two related pipelines
+
+| Pipeline | Skill / code | Input | Output | Role |
+|---|---|---|---|---|
+| **CDSL front matter** | `/cologne-preface-ocr` (Claude Code command + Codex twin) | csldoc **PNG** scans | per-dict `prefaces/` (source + EN/RU + `*_all.*`) | **Production** path for Cologne dicts |
+| **PD (Deccan College)** | [`PD/run_ocr.py`](https://github.com/sanskrit-lexicon/PD/blob/main/run_ocr.py) on branch `feat/ocr-v2-pipeline` | local **PDF** front matter | `GA.md`, `AUB.md`, `RG.md`, `SWC.md`, `AOB.md` in [PD](https://github.com/sanskrit-lexicon/PD) | Separate corpus; Tesseract crop-then-OCR |
+
+Do **not** treat the PD branch as a rename of the CDSL skill. They share *layout ideas* (crop-then-OCR, column modes); they do not share the same authoring engine for Cologne scans.
+
+---
+
+## Engines inside the CDSL skill
+
+| Engine | Name in docs | Author of canonical pages? | Mechanism |
+|---|---|---|---|
+| **A** | Vision band OCR | **Yes** | Native-resolution crops (≤ ~1900 px/side) → vision model → faithful transcription |
+| **B** | Tesseract crop-then-OCR (Grok/PD family) | **No** (audit only on CDSL) | Tesseract `deu|eng|san` on column bands; metrics vs A |
+
+**Hard rule:** never auto-promote B text into `<code>prefNN.md`. B may disagree and still be wrong (especially title names and diacritic-heavy abbreviation keys). Evidence: [PWG A vs B comparison](https://github.com/sanskrit-lexicon/PD/blob/main/COMPARISON_PWG_OCR_A_VS_B.md) (mean Jaccard ~0.51 vs A as gold; prose best, abbrev/title worst).
+
+---
+
+## CDSL phases (`/cologne-preface-ocr`)
+
+| Phase | What happens |
+|---|---|
+| **0** | Resolve dict code → local repo (`PW`→`PWK`, `MW`/`MWE`→`MWS`, `WIL`/`YAT`→`Wil-YAT`, …) |
+| **1** | Discover scan pages from csldoc toctree (trust toctree order, not filename sort) |
+| **2** | Download PNGs into `prefaces/scans/` |
+| **3** | **Engine A** — OCR each page into `<code>prefNN.md` (YAML header + transcription) |
+| **3.5** | **Engine B audit (recommended)** — Tesseract pass; write `prefaces/AUDIT_A_VS_B.md`; re-vision only flagged bands |
+| **4** | Translations: `.en.md` if source ≠ English; always `.ru.md` |
+| **5** | Consolidated `*_all.*` via `build_combined.py` |
+| **6** | `prefaces/README.md` + root README surface + cost/run notes; refresh [ocr-prefaces](ocr-prefaces) |
+| **7** | Delete temp crops / `_audit_b/`; commit only if asked |
+
+### Phase 3.5 — what B is for
+
+| Signal | Action |
+|---|---|
+| A long, B empty in a band | Possible A invention or B crop fail → re-vision the band |
+| B dense, A short | Possible A skip → re-OCR missing region with A |
+| Both disagree on a number/date | Re-vision the locus from the scan |
+| Diacritic-only key mismatch | Expected B weakness — do not “fix” A toward B |
+| B-only “Institute of Indology…” | Digitizer stamp — ignore (A correctly omits) |
+
+Reference tooling: [`PD/compare_pwg_a_vs_b.py`](https://github.com/sanskrit-lexicon/PD/blob/main/compare_pwg_a_vs_b.py). Full phase text lives in the skill runbook (Claude: `~/.claude/commands/cologne-preface-ocr.md`; Codex: `~/.codex/skills/cologne-preface-ocr/`).
+
+### Non-negotiable OCR rule (Phase 3)
+
+Never Read a full downsampled page. Scans are 3000–6800 px; downsampling yields fluent but **fabricated** text. Split columns, cut overlapping horizontal bands, keep each crop ≤ ~1900 px on its longest side.
+
+---
+
+## Deliverable layout (per dictionary)
+
+```text
+<prepo>/prefaces/
+  scans/                 # source PNGs
+  <code>prefNN.md        # source-language OCR (Engine A)
+  <code>prefNN.en.md     # English (omit if source is already English)
+  <code>prefNN.ru.md     # Russian
+  <code>pref_all.*.md    # consolidated editions
+  build_combined.py
+  README.md
+  AUDIT_A_VS_B.md        # optional Phase 3.5 QA
+```
+
+Indexed on the site: [OCR'd prefaces](ocr-prefaces).
+
+---
+
+## Who OCR'd what: Claude Code vs Grok
+
+Attribution is by **production pipeline**, not git commit identity (commits often land under the human maintainer account after an agent run). “Produced by `/cologne-preface-ocr`” in root-README run notes = **Claude Code** vision path (skill default tier: Fable 5 / Opus 4.8 fallback).
+
+Census of local clones **23-07-2026**.
+
+### Claude Code — CDSL production (Engine A, `/cologne-preface-ocr`)
+
+All rows below are **canonical edition** pages under each repo’s `prefaces/` (source + translations as applicable). None of these production files were authored by the Grok/Tesseract path.
+
+| Code | Repo | ~Source pages | Source lang | First landed (approx.) |
+|---|---|---:|---|---|
+| PWG | [PWG](https://github.com/sanskrit-lexicon/PWG) | 27 | de | 2026-06-16 |
+| PW | [PWK](https://github.com/sanskrit-lexicon/PWK) | 5 | de | 2026-06-17 |
+| SCH | [SCH](https://github.com/sanskrit-lexicon/SCH) | 5 | de | 2026-06-17 |
+| MW | [MWS](https://github.com/sanskrit-lexicon/MWS) | 29 | en | 2026-06-17 |
+| MWE | [MWS](https://github.com/sanskrit-lexicon/MWS) (`mwepref*`) | 11 | en | 2026-07-03 |
+| GRA | [GRA](https://github.com/sanskrit-lexicon/GRA) | 6 | de | 2026-06-22 |
+| CCS | [CCS](https://github.com/sanskrit-lexicon/CCS) | 6 | de | 2026-06-22 |
+| INM | [INM](https://github.com/sanskrit-lexicon/INM) | 9 | en | 2026-06-22 |
+| IEG | [prefaces_ieg](https://github.com/sanskrit-lexicon/prefaces_ieg) | 10 | en | 2026-06-22 |
+| SHS | [SHS](https://github.com/sanskrit-lexicon/SHS) | 2 | en | 2026-06-22 |
+| BOP | [BOP](https://github.com/sanskrit-lexicon/BOP) | 5 | la | 2026-06-22 |
+| STC | [STC](https://github.com/sanskrit-lexicon/STC) | 5 | fr | 2026-06-22 |
+| VCP | [VCP](https://github.com/sanskrit-lexicon/VCP) | 7 | sa | 2026-06-22 |
+| MD | [MD](https://github.com/sanskrit-lexicon/MD) | 10 | en | 2026-06-23 |
+| CAE | [CAE](https://github.com/sanskrit-lexicon/CAE) | 6 | en | 2026-06-23 |
+| BHS | [BHS](https://github.com/sanskrit-lexicon/BHS) | 15 | en | 2026-06-23 |
+| BOR | [BOR](https://github.com/sanskrit-lexicon/BOR) | 36 | en | 2026-06-23 |
+| VEI | [VEI](https://github.com/sanskrit-lexicon/VEI) | 16 | en | 2026-06-23 |
+| MW72 | [MW72](https://github.com/sanskrit-lexicon/MW72) | 25 | en | 2026-06-23 |
+| WIL | [Wil-YAT](https://github.com/sanskrit-lexicon/Wil-YAT) | 6 | en | 2026-06-23 |
+| YAT | [Wil-YAT](https://github.com/sanskrit-lexicon/Wil-YAT) | 3 | en | 2026-06-23 |
+| KRM | [KRM](https://github.com/sanskrit-lexicon/KRM) | 24 | sa/en | 2026-06-23 |
+| MCI | [MCI](https://github.com/sanskrit-lexicon/MCI) | 28 | en | 2026-06-23 |
+
+**Count:** 23 CDSL codes with **production** OCR via Claude Code / `/cologne-preface-ocr` (landed in a real dict or staging **git** repo with `prefaces/` on a branch).
+
+### Claude Code — local-only / incomplete (worktree residue)
+
+Claude Code started more than the 23 “full” dicts. Some work never landed in a dictionary remote: it sits in **local staging folders** under `GitHub/prefaces_<code>/` (or stub dirs inside the dict clone). Those folders are **not** linked to a sanskrit-lexicon preface remote; many are only visible because they live under the local `GitHub/` tree and are **gitignored by a parent meta-repo** (`/*` ignore). Deleted git worktrees leave **no remote history** of unfinished pages — only whatever still sits on disk.
+
+Census of **local machine** (23-07-2026), Claude Code Engine A residue:
+
+| Code | Local path | Source pages on disk | Scans | Status | On GitHub remote? |
+|---|---|---:|---:|---|---|
+| **GST** | `GitHub/prefaces_gst/` | 8/8 + RU + `*_all.*` + README | 8 | **Looks complete locally** — not promoted to a GST/`prefaces/` remote | **No** (local-only) |
+| **PGN** | `GitHub/prefaces_pgn/` | 10/10 + RU + `*_all.*` + README | 10 | **Looks complete locally** — not promoted | **No** (local-only) |
+| **SNP** | `GitHub/prefaces_snp/` | 7/7 + RU + `*_all.*` + README | 7 | **Looks complete locally** — not promoted | **No** (local-only) |
+| **LAN** | `GitHub/prefaces_lan/` | **2**/19 (+ RU for those 2); leftover `_crops/` | 19 | **Partial** (title + early pages only) | **No** (local-only) |
+| **PE** | `GitHub/prefaces_pe/prefaces/` | 0 (manifests / discover scripts only) | 0 | **Stub** (Phase 1–2 only) | **No** |
+| **BUR** | `BUR/prefaces/` | 0 (`_manifest`, download probes, empty `scans/`) | 0 | **Stub** | Scripts may be in dirty/WIP history only — **no edition pages** |
+| **PUI** | `PUI/prefaces/scans/` | 0 (one tiny/placeholder PNG) | 1 | **Stub** | **No** edition |
+| **SKD** | `SKD/prefaces/scans/` | 0 (empty scans dir) | 0 | **Stub** | **No** edition |
+
+**Deleted worktrees:** no remaining linked worktrees for AP90/BEN/AE/… preface runs; `git branch -r` on sample dict clones has no `preface|ocr` topic branches (except unrelated `MWS` paper scaffold). **If a worktree was removed without merge/push, unfinished OCR for that run is gone** unless a copy was left in `prefaces_*` as above.
+
+**Rescue priority (human):** commit/promote local-complete **GST, PGN, SNP** into proper remotes before disk loss; finish **LAN** from remaining scans; treat BUR/PE/PUI/SKD as restart-from-skill.
+
+### Grok — production OCR (Engine B primary)
+
+| Work | Location | Notes |
+|---|---|---|
+| Deccan College PD front matter (GA, AUB, RG, SWC, AOB) | [PD](https://github.com/sanskrit-lexicon/PD) · branch `feat/ocr-v2-pipeline` | Tesseract 5.5 `eng+san`; crop-then-OCR; layout modes `multi_pair` / `multi_seq` / `prose_2col`. **Not** a Cologne csldoc dict. |
+
+### Grok — tooling / QA / docs (not production CDSL pages)
+
+| Work | Location | Notes |
+|---|---|---|
+| PWG A vs B bake-off | [COMPARISON_PWG_OCR_A_VS_B.md](https://github.com/sanskrit-lexicon/PD/blob/main/COMPARISON_PWG_OCR_A_VS_B.md), `PD/pwg_a_vs_b/`, [`compare_pwg_a_vs_b.py`](https://github.com/sanskrit-lexicon/PD/blob/main/compare_pwg_a_vs_b.py) | Sample pages only; confirms A remains gold for PWG |
+| Phase 3.5 audit design | skill runbook + this page | B as comparison layer after Claude Code drafts |
+| Skill + public index updates | `/cologne-preface-ocr`, [ocr-prefaces](ocr-prefaces) | Inventory refresh, dual-engine wording, partial-residue census |
+
+**Grok has not replaced Claude Code as author of any CDSL `prefaces/<code>prefNN.md` edition** as of this census. Future CDSL runs may still use Grok only for Phase 3.5 audit (or a human may run Tesseract locally the same way).
+
+### Not yet OCR'd (no usable local edition)
+
+Cold queue (no full local pages, or only empty stubs): **AP90, AP, AE, BEN, BUR, SKD, ABCH, ACC, LRV, PE, PUI** (+ finish **LAN**).  
+Local-complete but **unpublished**: **GST, PGN, SNP** (see table above). Default author path: **Claude Code / Engine A**, then optional **Phase 3.5** audit; for GST/PGN/SNP prefer **promote existing local trees** over re-OCR.
+
+---
+
+## How to run (operators)
+
+```text
+# CDSL dictionary (Claude Code or Codex with the skill loaded)
+/cologne-preface-ocr PWG
+/cologne-preface-ocr AP90
+/cologne-preface-ocr all    # skips Done inventory rows
+
+# PD PDFs only (Grok / local Python)
+cd PD
+python run_ocr.py
+python run_ocr.py --only AOB.pdf --start-page 20
+
+# Optional bake-off / audit sample (PWG-shaped; adapt for other codes)
+python compare_pwg_a_vs_b.py
+```
+
+Requirements for Phase 3.5 / PD: Tesseract 5.x with appropriate traineddata (`deu`, `eng`, `san`, …), `pillow`, `pytesseract` (PD also: `pymupdf`, `numpy`, `beautifulsoup4`).
+
+---
+
+## Related pages
+
+- [OCR'd prefaces](ocr-prefaces) — finished editions and queue  
+- [Catalog](catalog) — code ↔ repo mapping  
+- [Scans and print](../users/scans-and-print) — end-user scan access  
+- [Generation pipeline](../developers/generation-pipeline) — headword XML pipeline (different system)
+
+_Last census: 23-07-2026 · Pipeline docs: Grok 4.5 (`grok-4.5`) with skill/run-note evidence from Claude Code `/cologne-preface-ocr` runs._

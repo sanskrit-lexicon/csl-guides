@@ -47,6 +47,7 @@ const sidebars = {
         'dictionaries/abbreviations-comparison',
         'dictionaries/entry-anatomy',
         'dictionaries/ocr-prefaces',
+        'dictionaries/preface-ocr-pipeline',
         {
           type: 'category',
           label: 'Featured dictionaries',

@@ -28,35 +28,76 @@ reference numbers, and Latin quotations are kept **verbatim** across all three l
 the digitizer's running-header/footer stamps are omitted; printed page numbers are
 preserved inline.
 
+**How this is produced:** the `/cologne-preface-ocr` skill (vision band OCR on csldoc
+scans). Operator manual, phases (including Phase 3.5 Tesseract audit), and
+**Claude Code vs Grok attribution** for every finished dict:
+[Preface OCR pipeline](preface-ocr-pipeline).
+
+A separate Tesseract pipeline (`feat/ocr-v2-pipeline` in the [PD](https://github.com/sanskrit-lexicon/PD)
+repo) handles Deccan College *Encyclopaedic Dictionary* PDF front matter — not CDSL.
+
+Cologne front-matter index (all codes that have scans):
+[csldoc dictionaries index](https://sanskrit-lexicon.uni-koeln.de/scans/csldev/csldoc/build/dictionaries/index.html).
+
 ## Available now
 
-| Dictionary | Source language | Pages | Index | German | English | Russian |
-|---|---|---|---|---|---|---|
-| **[Böhtlingk & Roth, *Sanskrit-Wörterbuch* (PWG)](pwg)** | German | 27 | [README](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.ru.md) |
-| **[Böhtlingk, *Sanskrit-Wörterbuch in kürzerer Fassung* (PW)](pw)** | German | 5 | [README](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.ru.md) |
-| **[Grassmann, *Wörterbuch zum Rig-Veda* (GRA)](gra)** | German | 6 | [README](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/grapref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/grapref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/grapref_all.ru.md) |
-| **[Macdonell, *A Sanskrit-English Dictionary* (MD)](md)** | English | 10 | [README](https://github.com/sanskrit-lexicon/MD/blob/main/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/MD/blob/main/prefaces/mdpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/MD/blob/main/prefaces/mdpref_all.ru.md) |
-| **Schmidt, *Nachträge zum Sanskrit-Wörterbuch* (SCH)** | German | 5 | [README](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.ru.md) |
+Census of local clones **23-07-2026**. Page counts are source-language pages (approx.).
+
+| Dictionary | Source language | Pages | Index | Source | English | Russian |
+|---|---|---:|---|---|---|---|
+| **[Böhtlingk & Roth (PWG)](pwg)** | German | 27 | [README](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.ru.md) |
+| **[Böhtlingk (PW)](pw)** | German | 5 | [README](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.ru.md) |
+| **[Grassmann (GRA)](gra)** | German | 6 | [README](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/grapref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/grapref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/grapref_all.ru.md) |
+| **[Schmidt (SCH)](sch)** | German | 5 | [README](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.ru.md) |
+| **[Cappeller SW (CCS)](ccs)** | German | 6 | [README](https://github.com/sanskrit-lexicon/CCS/blob/main/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/CCS/blob/main/prefaces/ccspref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/CCS/blob/main/prefaces/ccspref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/CCS/blob/main/prefaces/ccspref_all.ru.md) |
+| **[Macdonell (MD)](md)** | English | 10 | [README](https://github.com/sanskrit-lexicon/MD/blob/main/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/MD/blob/main/prefaces/mdpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/MD/blob/main/prefaces/mdpref_all.ru.md) |
+| **[Cappeller SE (CAE)](cae)** | English | 6 | [README](https://github.com/sanskrit-lexicon/CAE/blob/main/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/CAE/blob/main/prefaces/caepref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/CAE/blob/main/prefaces/caepref_all.ru.md) |
+| **[Edgerton BHS](bhs)** | English | 15 | [README](https://github.com/sanskrit-lexicon/BHS/blob/main/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/BHS/blob/main/prefaces/bhspref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/BHS/blob/main/prefaces/bhspref_all.ru.md) |
+| **[Borooah (BOR)](bor)** | English | 36 | [README](https://github.com/sanskrit-lexicon/BOR/blob/main/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/BOR/blob/main/prefaces/borpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/BOR/blob/main/prefaces/borpref_all.ru.md) |
+| **[Sörensen INM](inm)** | English | 9 | [README](https://github.com/sanskrit-lexicon/INM/blob/main/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/INM/blob/main/prefaces/inmpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/INM/blob/main/prefaces/inmpref_all.ru.md) |
+| **[Sircar IEG](ieg)** | English | 10 | [README](https://github.com/sanskrit-lexicon/prefaces_ieg/blob/master/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/prefaces_ieg/blob/master/prefaces/iegpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/prefaces_ieg/blob/master/prefaces/iegpref_all.ru.md) |
+| **[Shabda-Sagara (SHS)](shs)** | English | 2 | [README](https://github.com/sanskrit-lexicon/SHS/blob/main/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/SHS/blob/main/prefaces/shspref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/SHS/blob/main/prefaces/shspref_all.ru.md) |
+| **[Vedic Index (VEI)](vei)** | English | 16 | [README](https://github.com/sanskrit-lexicon/VEI/blob/main/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/VEI/blob/main/prefaces/veipref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/VEI/blob/main/prefaces/veipref_all.ru.md) |
+| **[Monier-Williams SE (MW)](mw)** | English | 29 | [README](https://github.com/sanskrit-lexicon/MWS/blob/master/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/MWS/blob/master/prefaces/mwpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/MWS/blob/master/prefaces/mwpref_all.ru.md) |
+| **[Monier-Williams ES (MWE)](mwe)** | English | 11 | (same `MWS/prefaces/`) | — | under `mwepref*` | under `mwepref*.ru.md` |
+| **[MW 1872 (MW72)](mw72)** | English | 25 | [README](https://github.com/sanskrit-lexicon/MW72/blob/master/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/MW72/blob/master/prefaces/mw72pref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/MW72/blob/master/prefaces/mw72pref_all.ru.md) |
+| **[Wilson (WIL)](wil)** | English | 6 | [README](https://github.com/sanskrit-lexicon/Wil-YAT/blob/main/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/Wil-YAT/blob/main/prefaces/wilpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/Wil-YAT/blob/main/prefaces/wilpref_all.ru.md) |
+| **[Yates (YAT)](yat)** | English | 3 | (same `Wil-YAT/prefaces/`) | — | [.en](https://github.com/sanskrit-lexicon/Wil-YAT/blob/main/prefaces/yatpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/Wil-YAT/blob/main/prefaces/yatpref_all.ru.md) |
+| **[Bopp (BOP)](bop)** | Latin | 5 | [README](https://github.com/sanskrit-lexicon/BOP/blob/main/prefaces/README.md) | [.la](https://github.com/sanskrit-lexicon/BOP/blob/main/prefaces/boppref_all.la.md) | [.en](https://github.com/sanskrit-lexicon/BOP/blob/main/prefaces/boppref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/BOP/blob/main/prefaces/boppref_all.ru.md) |
+| **[Stchoupak (STC)](stc)** | French | 5 | [README](https://github.com/sanskrit-lexicon/STC/blob/master/prefaces/README.md) | [.fr](https://github.com/sanskrit-lexicon/STC/blob/master/prefaces/stcpref_all.fr.md) | [.en](https://github.com/sanskrit-lexicon/STC/blob/master/prefaces/stcpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/STC/blob/master/prefaces/stcpref_all.ru.md) |
+| **[Vācaspatya (VCP)](vcp)** | Sanskrit | 7 | [README](https://github.com/sanskrit-lexicon/VCP/blob/main/prefaces/README.md) | [.sa](https://github.com/sanskrit-lexicon/VCP/blob/main/prefaces/vcppref_all.sa.md) | [.en](https://github.com/sanskrit-lexicon/VCP/blob/main/prefaces/vcppref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/VCP/blob/main/prefaces/vcppref_all.ru.md) |
+| **[Kṛdantarūpamālā (KRM)](krm)** | Sanskrit/English | 24 | [README](https://github.com/sanskrit-lexicon/KRM/blob/main/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/KRM/blob/main/prefaces/krmpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/KRM/blob/main/prefaces/krmpref_all.ru.md) |
+| **[Mahābhārata Cultural Index (MCI)](mci)** | English | 28 | [README](https://github.com/sanskrit-lexicon/MCI/blob/master/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/MCI/blob/master/prefaces/mcipref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/MCI/blob/master/prefaces/mcipref_all.ru.md) |
 
 :::note Codes vs. repos
-**PW** is the website display code; its repository is named
-[`PWK`](https://github.com/sanskrit-lexicon/PWK). See the
-[catalog](catalog) for the full code↔repo mapping.
+**PW** → repo [`PWK`](https://github.com/sanskrit-lexicon/PWK). **MW / MWE** → [`MWS`](https://github.com/sanskrit-lexicon/MWS). **WIL / YAT** → [`Wil-YAT`](https://github.com/sanskrit-lexicon/Wil-YAT). **IEG** currently lives in staging repo [`prefaces_ieg`](https://github.com/sanskrit-lexicon/prefaces_ieg). See the [catalog](catalog) for the full code↔repo mapping.
 :::
 
-## What's covered
+## Queue (not yet on the public / production index)
 
-- **PWG** — the foundational seven-volume St Petersburg dictionary (1855–1875): title pages
-  and forewords for each volume, the lists of cited works, and the addenda.
-- **PW** — the abridged edition, *Erster Theil (Die Vocale)*, St Petersburg 1879: title
-  page, *Vorwort*, and the *Verzeichniss der citirten Werke* (abbreviation list).
-- **GRA** — Hermann Grassmann's *Wörterbuch zum Rig-Veda*, Leipzig 1873: title page,
-  foreword, and the Cologne-hosted English translation page by Felix Rau.
-- **MD** — Arthur A. Macdonell's *A Sanskrit-English Dictionary*, London 1893: title page,
-  dedication, preface, alphabet, and list of abbreviations.
-- **SCH** — Richard Schmidt's *Nachträge* (supplement) to the abridged dictionary, Leipzig
-  1928: title page and the four-page *Vorwort*.
+From the [csldoc front-matter index](https://sanskrit-lexicon.uni-koeln.de/scans/csldev/csldoc/build/dictionaries/index.html), these codes still lack a **production** `prefaces/` deliverable (as of 23-07-2026). The “23 full” list above is only what landed in a real repo; Claude Code left **additional local residue** (see [pipeline manual](preface-ocr-pipeline#claude-code--local-only--incomplete-worktree-residue)).
 
-More dictionaries will be added here as their front matter is transcribed. The scanned
-originals for every dictionary remain available through each entry's **csl-doc front-matter
+| Priority | Codes | Notes |
+|---|---|---|
+| **P0 — promote local-complete (do not re-OCR first)** | GST, PGN, SNP | Full pages + RU + consolidated sit under local `GitHub/prefaces_{gst,pgn,snp}/` only — **not on GitHub remote**; worktree-style staging, easy to lose |
+| **P1 — high-use general lexica** | AP90, AP, AE, BEN, BUR | Everyday / historical core; BUR is stub scripts only |
+| **P2 — classical / indigenous** | SKD, ABCH | SKD has partial EN excerpts in [skd.mdx](skd) from a docx path, not full scan OCR; SKD `prefaces/scans/` empty |
+| **P3 — partial / specialized** | LAN (2/19 pages local), ACC, LRV, PE, PUI | LAN has scans + two pages on disk; PE/PUI stubs |
+
+**Deleted worktrees:** unfinished runs that were never copied into `prefaces_*` or a dict repo leave **no recoverable remote trace**. Operator manual: [Preface OCR pipeline](preface-ocr-pipeline).
+
+Scanned originals for every dictionary remain available through each entry's **csl-doc front-matter
 page** (linked from the [catalog](catalog)).
+
+## What's covered (highlights)
+
+- **PWG** — seven-volume St Petersburg dictionary (1855–1875): title pages and forewords per volume, lists of cited works, addenda.
+- **PW** — abridged edition, *Erster Theil (Die Vocale)*, 1879: title page, *Vorwort*, abbreviation list.
+- **GRA** — Grassmann *Wörterbuch zum Rig-Veda*, 1873: title, foreword, English translation page.
+- **MD** — Macdonell, 1893: title, dedication, preface, alphabet, abbreviations.
+- **SCH** — Schmidt *Nachträge*, 1928: title + four-page *Vorwort*.
+- **MW / MWE / MW72** — Monier-Williams family (1899 SE, English-Sanskrit, 1872).
+- **VCP / KRM** — indigenous Sanskrit lexicographic front matter.
+- **BOP / STC** — Latin and French sources (Bopp; Stchoupak).
+
+More dictionaries will be added here as their front matter is transcribed via `/cologne-preface-ocr`.

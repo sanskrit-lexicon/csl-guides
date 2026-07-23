@@ -76,21 +76,22 @@ Census of local clones **23-07-2026**. Page counts are source-language pages (ap
 | **[Apte ES (AE)](ae)** | English | 7 | [README](https://github.com/gasyoun/prefaces_ae/blob/main/prefaces/README.md) | — | [.en](https://github.com/gasyoun/prefaces_ae/blob/main/prefaces/aepref_all.en.md) | [.ru](https://github.com/gasyoun/prefaces_ae/blob/main/prefaces/aepref_all.ru.md) |
 | **[Benfey (BEN)](ben)** | English | 3 | [PR branch](https://github.com/sanskrit-lexicon/BEN/tree/feat/prefaces-ocr/prefaces) | — | HTML-layer extract + RU | HTML-layer extract + RU |
 | **[Aufrecht ACC](acc)** | English/German | 1 | [PR branch](https://github.com/sanskrit-lexicon/ACC/tree/feat/prefaces-ocr/prefaces) | — | HTML-layer extract + RU | HTML-layer extract + RU |
+| **[Burnouf (BUR)](bur)** | French | 28 | [PR branch](https://github.com/sanskrit-lexicon/BUR/tree/feat/prefaces-ocr/prefaces) | [.fr](https://github.com/sanskrit-lexicon/BUR/blob/feat/prefaces-ocr/prefaces/burpref_all.fr.md) | [.en](https://github.com/sanskrit-lexicon/BUR/blob/feat/prefaces-ocr/prefaces/burpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/BUR/blob/feat/prefaces-ocr/prefaces/burpref_all.ru.md) |
+| **[Puranic Encyclopaedia (PE)](pe)** | English | 4/26 | [prefaces_pe](https://github.com/gasyoun/prefaces_pe) | — | title + foreword + preface | RU for 01–04; genealogy tables pending |
 
 :::note Codes vs. repos
-**PW** → [`PWK`](https://github.com/sanskrit-lexicon/PWK). **MW / MWE** → [`MWS`](https://github.com/sanskrit-lexicon/MWS). **WIL / YAT** → [`Wil-YAT`](https://github.com/sanskrit-lexicon/Wil-YAT). Staging front-matter repos under `gasyoun/prefaces_*` (GST, PGN, SNP, LAN, AE, IEG pattern). Some new dict editions land first on `feat/prefaces-ocr` branches pending merge. See the [catalog](catalog).
+**PW** → [`PWK`](https://github.com/sanskrit-lexicon/PWK). **MW / MWE** → [`MWS`](https://github.com/sanskrit-lexicon/MWS). **WIL / YAT** → [`Wil-YAT`](https://github.com/sanskrit-lexicon/Wil-YAT). Staging front-matter repos under `gasyoun/prefaces_*` (GST, PGN, SNP, LAN, AE, PE, IEG pattern). New dict editions often land on `feat/prefaces-ocr` branches pending merge. See the [catalog](catalog).
 :::
 
-## Queue (still incomplete as of 23-07-2026 evening)
+## Queue (still incomplete as of 23-07-2026 late)
 
 | Priority | Codes | Notes |
 |---|---|---|
-| **In flight** | BUR (28 scan pages, FR), PE (26 pages; title/preface first) | Scans downloaded; vision OCR agents running |
-| **Multi-scan cold** | SKD (~32), PUI (~37) | csldoc toctree with PNG scans — still to run |
-| **Missing / 404 pref index** | AP (use AP90 sibling?), ABCH, LRV | No usable `${code}pref.html` toctree found |
-| **Partial HTML notes** | ACC Part III duplicates Part II in source HTML | documented in ACC pref notes |
+| **Partial** | PE (genealogy tables 05–26) | 01–04 done |
+| **Multi-scan cold** | SKD (~32), PUI (~37) | csldoc PNG toctrees — next drain |
+| **Missing / 404 pref index** | AP, ABCH, LRV | No usable `${code}pref.html` (AP may share AP90 material) |
 
-**Promoted this session (were local-only):** GST, PGN, SNP → `gasyoun/prefaces_*`. **Finished vision:** LAN 19/19. **HTML text-layer extract + RU:** AP90, AE, BEN, ACC.
+**This session:** promoted GST/PGN/SNP/LAN/AE; finished LAN vision 19/19; HTML extract+RU for AP90/AE/BEN/ACC; full BUR 28 FR+EN+RU; PE 01–04.
 
 Operator manual: [Preface OCR pipeline](preface-ocr-pipeline).
 

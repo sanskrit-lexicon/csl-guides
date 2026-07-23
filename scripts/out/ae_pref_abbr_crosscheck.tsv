@@ -1,0 +1,11 @@
+key_raw	key_norm	in_pref	body_count	samples	flag	short_key	sources	expansion
+S.	S.	1	12105	9,17,22	short_key	1	aepref07.md:57;aepref07.md:61;aepref07.md:63	B.Shankar Bhashya.
+V.	V.	1	7076	14,21,26	short_key	1	aepref07.md:69	M.Vyavahara Mayukha (Mr. Mandlik's edition.)
+v.	v.	1	7076	14,21,26	short_key	1	aepref06.md:107;aepref06.md:111	i.Verb intransitive.
+D.	D.	1	510	31,84,84	short_key	1	aepref07.md:19	K.Dashakumaracharita, I denoting the Purvapithika, and II the Uttarapithika, and the Arabic figure,| the number of the story.
+q.	q.	1	430	1255,1283,1296	short_key	1	aepref06.md:95	v.Quod vide, which see.
+gen.	gen.	1	275	201,455,457		0	aepref06.md:51	abs.Genitive absolute.
+loc.	loc.	1	111	93,190,636		0	aepref06.md:65	abs.Locative absolute.
+pot.	pot.	1	42	2769,4968,4968		0	aepref06.md:83	pass.Potential passive participle.
+pron.	pron.	1	28	1537,2297,6372		0	aepref06.md:93	a.Pronominal adjective.
+sim.	sim.	1	14	8608,9379,12505		0	aepref06.md:99	comp.Similar compound.

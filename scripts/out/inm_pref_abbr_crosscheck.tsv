@@ -1,0 +1,93 @@
+key_raw	key_norm	in_pref	body_count	samples	flag	short_key	sources	expansion
+**(††)**	(††)	1	0		pref_only	0	inmpref08.md:105	mixed prose and çlokas.
+**M°Pu°st.**	M°Pu°st.	1	0		pref_only	0	inmpref08.md:51	Mahāpurushastave.
+**Pa°vra°mā°**	Pa°vra°mā°	1	0		pref_only	0	inmpref08.md:61	Pativratāmāhātmyaparvan.
+**Shd.**	Shd.	1	0		pref_only	0	inmpref08.md:73	Sahadeva.
+**pl., plur.**	pl., plur.	1	0		pref_only	0	inmpref08.md:64	plural.
+**Kṛ.**	Kṛ.	1	3	14757,18406,23533	low_count	0	inmpref08.md:45	Kṛshṇa.
+**Pāṇḍ.**	Pāṇḍ.	1	3	19461,19466,21219	low_count	0	inmpref08.md:60	Pāṇḍava.
+**Sapt.**	Sapt.	1	3	3206,26947,26956	low_count	0	inmpref08.md:71	Saptarshayaḥ.
+**Var.**	Var.	1	3	10798,36531,136221	low_count	0	inmpref08.md:83	Varuṇa.
+**Yudh.**	Yudh.	1	3	16098,20289,21224	low_count	0	inmpref08.md:91	Yudhishṭhira.
+**Bhīmas.**	Bhīmas.	1	2	16205,26999	low_count	0	inmpref08.md:21	Bhīmasena.
+**Kp.**	Kp.	1	2	5466,9631	low_count	0	inmpref08.md:44	Kimpurusha.
+**MSNSt.**	MSNSt.	1	2	2400,3269	low_count	0	inmpref08.md:53	Mahādevasahasranāmastotra.
+**(†)**	(†)	1	1	8339	low_count	0	inmpref08.md:103	in trishṭubh (or jagatī) mixed with çlokas.
+**Dhṛshṭady.**	Dhṛshṭady.	1	1	60558	low_count	0	inmpref08.md:33	Dhṛshṭadyumna.
+**Janam.**	Janam.	1	1	108143	low_count	0	inmpref08.md:41	Janamejaya.
+**Pç.**	Pç.	1	1	14520	low_count	0	inmpref08.md:62	Piçāca.
+**VDSNK.**	VDSNK.	1	1	2395	low_count	0	inmpref08.md:85	Vishṇor divyasahasranāmakathana.
+**( )**	( )	1	0		short_pref_only	1	inmpref08.md:99	headings occurring in the prose remark before the verse quoted.
+**[ ]**	[ ]	1	0		short_pref_only	1	inmpref08.md:98	(1) headings not occurring as names in the text; (2) passages of the text in which a synonym is substituted for the name in question; (3) explanatory additions.
+**\***	\	1	0		short_pref_only	1	inmpref08.md:100	(1) a blessing on the reader; (2) headings which are not, or possibly are not, proper names.
+**\*\***	\\	1	0		short_pref_only	1	inmpref08.md:101	repeated.
+**°**	°	1	0		short_pref_only	1	inmpref08.md:97	abbreviation of a word.
+**⌐**	⌐	1	0		short_pref_only	1	inmpref08.md:107	married to.
+**>**	>	1	84654	2,5,7	short_key	1	inmpref08.md:106	succession.
+**P.**	P.	1	10362	41,46,49	short_key	1	inmpref08.md:59	Pitṛ.
+**†**	†	1	8887	931,1033,1033	short_key	1	inmpref08.md:102	in trishṭubh (or jagatī).
+**C.**	C.	1	6972	14,48,140	short_key	1	inmpref08.md:24	Calcutta edition.
+**S.**	S.	1	3843	34,101,104	short_key	1	inmpref08.md:70	Sādhya.
+**V.**	V.	1	3652	95,106,112	short_key	1	inmpref08.md:79;inmpref08.md:80	Burdwan edition.
+**A.**	A.	1	3534	4,78,193	short_key	1	inmpref08.md:12	Açvin.
+**Ā.**	Ā.	1	3534	4,78,193	short_key	1	inmpref08.md:13	Āditya.
+**I.**	I.	1	3506	46,140,161	short_key	1	inmpref08.md:40	Indra.
+**R.**	R.	1	2915	30,108,118	short_key	1	inmpref08.md:67	Rudra.
+**Ṛ.**	Ṛ.	1	2915	30,108,118	short_key	1	inmpref08.md:68	Ṛshi.
+**K.**	K.	1	2011	34,61,71	short_key	1	inmpref08.md:43	Kinnara.
+**B.**	B.	1	1799	48,156,259	short_key	1	inmpref08.md:19	Bombay edition.
+**+**	+	1	1765	1,88,106	short_key	1	inmpref08.md:109	assisted by.
+**D.**	D.	1	1187	226,230,252	short_key	1	inmpref08.md:28	Deva.
+**G.**	G.	1	1132	226,320,553	short_key	1	inmpref08.md:37	Gandharva.
+**N.**	N.	1	828	186,215,226	short_key	1	inmpref08.md:56	Nāga.
+**M.**	M.	1	767	40,104,111	short_key	1	inmpref08.md:49	Marut.
+**&**	&	1	758	237,245,248	short_key	1	inmpref08.md:108	fights against.
+**Y.**	Y.	1	643	69,114,226	short_key	1	inmpref08.md:90	Yaksha.
+**††**	††	1	631	3279,3294,3296	short_key	1	inmpref08.md:104	prose passage.
+**U.**	U.	1	238	50,269,1108	short_key	1	inmpref08.md:78	Uraga.
+**do.**	do.	1	8512	116,127,129		0	inmpref08.md:35	ditto.
+**Arj.**	Arj.	1	3776	82,128,130		0	inmpref08.md:17	Arjuna.
+**cf.**	cf.	1	1885	47,50,92		0	inmpref08.md:27	compare.
+**Nak.**	Nak.	1	1421	59,71,191		0	inmpref08.md:57	Nakula.
+**Dhṛt.**	Dhṛt.	1	1357	39,40,231		0	inmpref08.md:34	Dhṛtarāshṭra.
+**Bh.**	Bh.	1	1263	2049,2165,2273		0	inmpref08.md:20	Bhūta.
+**q.v.**	q.v.	1	1056	322,326,393		0	inmpref08.md:66	quod vide.
+**Rā.**	Rā.	1	800	78,226,248		0	inmpref08.md:69	Rākshasa.
+**As.**	As.	1	785	101,104,214		0	inmpref08.md:18	Asura.
+**Çak.**	Çak.	1	601	98,166,234		0	inmpref08.md:26	Çakuni.
+**Jayadr.**	Jayadr.	1	586	41,46,99		0	inmpref08.md:42	Jayadratha.
+**all.**	all.	1	536	2634,2648,2658		0	inmpref08.md:15	allusion.
+**sg.**	sg.	1	474	6077,14953,15197		0	inmpref08.md:72	singular.
+**PCR.**	PCR.	1	436	409,1200,1281		0	inmpref08.md:63	Protap Chandra Roy's translation.
+**Kub.**	Kub.	1	416	992,1378,2655		0	inmpref08.md:46	Kubera.
+**Dā.**	Dā.	1	366	320,988,1227		0	inmpref08.md:29	Dānava.
+**Nīl.**	Nīl.	1	362	588,589,590		0	inmpref08.md:58	Nīlakaṇṭha.
+**Si.**	Si.	1	296	46,252,1031		0	inmpref08.md:74	Siddha.
+**adj.**	adj.	1	263	1661,1804,2404		0	inmpref08.md:14	adjective.
+**Vaiv.**	Vaiv.	1	207	105,113,2182		0	inmpref08.md:82	Vaivasvata.
+**Dhārt.**	Dhārt.	1	161	1464,5329,5352		0	inmpref08.md:32	Dhārtarāshṭra.
+**Mhbhr.**	Mhbhr.	1	158	221,786,1080		0	inmpref08.md:50	Mahābhārata.
+**Hanūm.**	Hanūm.	1	142	6383,6514,6762		0	inmpref08.md:39	Hanūmat.
+**Aps.**	Aps.	1	84	2201,2455,2717		0	inmpref08.md:16	Apsaras.
+**M.-ṛ.**	M.-ṛ.	1	70	1056,1270,7674		0	inmpref08.md:52	Maharshi.
+**Cā.**	Cā.	1	57	252,1031,5263		0	inmpref08.md:25	Cāraṇa.
+**Dhanurv.**	Dhanurv.	1	54	2633,5328,6079		0	inmpref08.md:31	Dhanurveda.
+**D.-ṛ.**	D.-ṛ.	1	46	1270,4546,7759		0	inmpref08.md:36	Devarshi.
+**Vi.**	Vi.	1	28	1697,1729,1738		0	inmpref08.md:87	Viçva.
+**Dai.**	Dai.	1	25	7769,8072,8091		0	inmpref08.md:30	Daitya.
+**Sū.**	Sū.	1	25	14419,32622,35401		0	inmpref08.md:76	Sūrya.
+**B.-ṛ.**	B.-ṛ.	1	23	1697,7601,8995		0	inmpref08.md:22	Brahmarshi.
+**V.-D.**	V.-D.	1	22	1727,1759,1770		0	inmpref08.md:84	Viçve devāḥ.
+**Bṛh.**	Bṛh.	1	18	2180,3724,14698		0	inmpref08.md:23	Bṛhaspati.
+**Vaiç.**	Vaiç.	1	18	16999,16999,19520		0	inmpref08.md:81	Vaiçampāyana.
+**VP.**	VP.	1	16	378,394,704		0	inmpref08.md:88	the Vishṇu Purāṇa, translated by H. H. Wilson, edited by FitzEdward Hall, London, 1864–77.
+**Sū. Si.**	Sū. Si.	1	15	14419,32622,35401		0	inmpref08.md:77	the Sūrya Siddhānta (Journal of the American Oriental Society, vol. vi, 1860).
+**Ved.**	Ved.	1	14	825,954,9377		0	inmpref08.md:86	Veda.
+**Gh.**	Gh.	1	13	728,1722,7605		0	inmpref08.md:38	Guhyaka.
+**M.-U.**	M.-U.	1	13	8103,10078,12440		0	inmpref08.md:55	Mahoraga.
+**Lp.**	Lp.	1	11	1764,7569,36425		0	inmpref08.md:48	Lokapāla.
+**Mu.**	Mu.	1	9	2713,2724,8943		0	inmpref08.md:54	Muni.
+**Pn.**	Pn.	1	8	8291,11692,18610		0	inmpref08.md:65	Pannaga.
+**LIA.**	LIA.	1	7	705,1166,4798		0	inmpref08.md:47	Lassen's Indische Altertumskunde.
+**Sp.**	Sp.	1	7	55493,57825,59405		0	inmpref08.md:75	Serpent.
+**v.s.**	v.s.	1	5	2177,2183,2239		0	inmpref08.md:89	vide supra.

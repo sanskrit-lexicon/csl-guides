@@ -2,105 +2,86 @@
 
 _Created: 23-07-2026 · Last updated: 23-07-2026_
 
-**Handoff:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)  
-**Tool:** [`scripts/pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py)  
-**Model provenance:** Grok 4.5 (`grok-4.5`) executing H1530 (filename tier Sonnet; mechanical census).
+**Handoffs:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) · [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)  
+**Tool:** [`scripts/pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py)
 
 ## Non-goals
 
 - **No bulk overwrite** of `prefaces/*.md` from body matches.
-- **Scan remains truth** for expansions (OCR of the printed legend).
-- Body is a **prioritisation channel** only (pref_only / low_count flags).
-- Do **not** full-diff Vorwort/title pages against body prose.
-- Short keys (&lt; 3 non-space chars) are counted but flagged `short_key` — high false-positive risk (`s.`, `v.`, `a.`).
+- **Scan remains truth** for expansions.
+- Body is a **prioritisation channel** only.
+- Short keys (&lt; 3 non-space chars) flagged `short_key`.
 
 ## Inputs
 
-| Role | Path |
+| Role | Value |
 |------|------|
 | Pref sources | `ap90pref05.md`, `ap90pref06.md` |
-| Body | `ap90.txt` under csl-orig (`11,766,345` bytes) |
-| low_count threshold | ≤ 3 |
-| min_key_chars | 3 |
-| case fold | yes (default; PWG body keys are UPPER) |
+| Discover | abbr_hint (2/6 pages) |
+| Body | `ap90.txt` (11,766,345 bytes) |
+| Folds | case + diacritic (default) |
 
 ## Summary
 
 | Metric | n |
 |--------|--:|
-| Keys parsed from pref | 211 |
-| Non-short keys with body_count &gt; 0 | 137 |
-| `pref_only` (non-short, body_count = 0) | 47 |
-| `low_count` (1…3) | 9 |
-| Short keys (excluded from main flags) | 27 |
+| Keys parsed | 211 |
+| Hits (non-short) | 177 (84%) |
+| `pref_only` | 7 |
+| `low_count` (≤3) | 21 |
+| Short keys | 27 |
 
 ## Top body hits (non-short)
 
 | key_norm | body_count | flag | samples |
 |---|---:|---|---|
-| `Si.` | 22447 | — | 20,40,41 |
-| `Sv.` | 4468 | — | 8,119,156 |
+| `Sv.` | 4712 | — | 8,11,12 |
 | `Ms.` | 4215 | — | 114,120,120 |
 | `comp.` | 4202 | — | 133,199,264 |
 | `&c.` | 3139 | — | 23,29,45 |
 | `Ku.` | 2995 | — | 192,239,383 |
-| `Sat.` | 2818 | — | 3,4,119 |
+| `Si.` | 2750 | — | 246,325,753 |
 | `Ved.` | 2120 | — | 96,197,221 |
 | `Pt.` | 1912 | — | 592,1123,1124 |
-| `Me.` | 1905 | — | 242,741,744 |
+| `Me.` | 1906 | — | 242,741,744 |
 | `ind.` | 1751 | — | 12,584,904 |
-| `Ki.` | 1650 | — | 223,324,818 |
+| `Màl.` | 1725 | — | 605,621,1757 |
+| `Ki.` | 1653 | — | 223,324,818 |
+| `Vîr.` | 1605 | — | 40,48,219 |
 | `Ve.` | 1600 | — | 133,160,209 |
 | `Bk.` | 1498 | — | 295,295,295 |
-| `Bg.` | 1193 | — | 116,220,505 |
 
-## `pref_only` sample (keys in pref legend, zero body hits)
-
-These are **review candidates** (OCR key mismatch, rare/starred works, orthography drift, or true unused abbreviations) — not auto-fixes.
+## `pref_only` sample
 
 | key_norm | body_count | flag | samples |
 |---|---:|---|---|
 | `Ait Br.` | 0 | pref_only | — |
-| `Aryâ.` | 0 | pref_only | — |
-| `Avyayî.` | 0 | pref_only | — |
-| `Baudhây.` | 0 | pref_only | — |
-| `Bhàva P.` | 0 | pref_only | — |
-| `Bhâg.` | 0 | pref_only | — |
-| `Bhâr.` | 0 | pref_only | — |
-| `Bhâshâ P.` | 0 | pref_only | — |
-| `Bîj.` | 0 | pref_only | — |
-| `Bṛi.` | 0 | pref_only | — |
 | `Chand M.` | 0 | pref_only | — |
 | `Chaṇḍ K.` | 0 | pref_only | — |
-| `Chât.` | 0 | pref_only | — |
-| `Châṇ.` | 0 | pref_only | — |
-| `Dáy.` | 0 | pref_only | — |
-| `Dṛi.` | 0 | pref_only | — |
 | `Etym., Ety.` | 0 | pref_only | — |
-| `Golâdh.` | 0 | pref_only | — |
-| `Gît.` | 0 | pref_only | — |
-| `Halày.` | 0 | pref_only | — |
+| `Isop.` | 0 | pref_only | — |
+| `Vṛind.` | 0 | pref_only | — |
+| `Yv., Yaj.` | 0 | pref_only | — |
 
 ## `low_count` sample
 
 | key_norm | body_count | flag | samples |
 |---|---:|---|---|
+| `Avyayî.` | 3 | low_count | 1550,73346,170544 |
 | `Muṇḍ.` | 3 | low_count | 7631,15031,26729 |
-| `Sar.` | 3 | low_count | 9459,39043,214100 |
+| `Nîti.` | 3 | low_count | 22270,38562,46281 |
+| `Sar.` | 3 | low_count | 9459,39043,214103 |
 | `Subst.` | 3 | low_count | 22293,24441,62288 |
 | `Ujjval.` | 3 | low_count | 43968,46154,57310 |
-| `Vid.` | 2 | low_count | 123855,187487 |
+| `Baudhây.` | 2 | low_count | 12246,204663 |
+| `Kaus.` | 2 | low_count | 22310,71454 |
+| `Nîtipr.` | 2 | low_count | 44580,88617 |
+| `Vid.` | 2 | low_count | 123856,187487 |
+| `Bhâr.` | 1 | low_count | 12369 |
+| `Bhâshâ P.` | 1 | low_count | 154308 |
 | `Dhan.` | 1 | low_count | 71657 |
 | `Dhūrt.` | 1 | low_count | 41689 |
-| `Hch.` | 1 | low_count | 187993 |
-| `Siva P.` | 1 | low_count | 178114 |
-
-## Residual notes
-
-- Case is folded by default (pref `Bhag.` matches body `BHAG.`).
-- Diacritic / OCR orthography is **not** folded in v1 (`Âçv.` ≠ body `ACV.`, `Çâk.` ≠ `SAK.`).
-  High `pref_only` on PWG is therefore expected and mostly review-queue signal, not proof the abbreviation is unused.
-- Compound keys with spaces (`Ait. Br.`, `H. an.`) need the body to use the same spacing.
+| `Golâdh.` | 1 | low_count | 51705 |
 
 ## Reproduce
 
@@ -108,8 +89,8 @@ These are **review candidates** (OCR key mismatch, rare/starred works, orthograp
 python scripts/pref_abbr_crosscheck.py --dict AP90 --out-dir scripts/out
 ```
 
-Companion TSV: [`ap90_pref_abbr_crosscheck.tsv`](./ap90_pref_abbr_crosscheck.tsv)
+TSV: [`ap90_pref_abbr_crosscheck.tsv`](./ap90_pref_abbr_crosscheck.tsv)
 
 ---
 
-_Auto-generated by pref_abbr_crosscheck.py (H1530)._
+_Auto-generated by pref_abbr_crosscheck.py (H1543)._

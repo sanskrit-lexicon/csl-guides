@@ -1,0 +1,212 @@
+key_raw	key_norm	in_pref	body_count	samples	flag	short_key	sources	expansion
+A.b.	A.b.	1	0		pref_only	0	borpref20.md:13	Ārya Bhaṭṭa
+A.p.	A.p.	1	0		pref_only	0	borpref20.md:16	Agni Purāṇa
+B.a.	B.a.	1	0		pref_only	0	borpref20.md:22	Brahmāṇḍa Purāṇa
+B.v.	B.v.	1	0		pref_only	0	borpref20.md:31	Brahma Vaivarta Purāṇa
+Bh.p.	Bh.p.	1	0		pref_only	0	borpref20.md:28	Bhaviṣya Purāṇa
+C.r.	C.r.	1	0		pref_only	0	borpref20.md:35	Champū Rāmāyaṇa
+D.b.	D.b.	1	0		pref_only	0	borpref20.md:40	Devī Bhāgavata
+D.c.	D.c.	1	0		pref_only	0	borpref20.md:41	Dattaka Chandrikā
+D.m.	D.m.	1	0		pref_only	0	borpref20.md:44	Dattaka Mimānsā
+G.p.	G.p.	1	0		pref_only	0	borpref20.md:51	Garuḍa Purāṇa
+H.r.	H.r.	1	0		pref_only	0	borpref20.md:54	Hāyana Ratna
+K.p.	K.p.	1	0		pref_only	0	borpref20.md:67	Kurma Purāṇa
+L.j.	L.j.	1	0		pref_only	0	borpref20.md:73	Laghu Jātaka
+L.p.	L.p.	1	0		pref_only	0	borpref20.md:74	Liṅga Purāṇa
+M.m.	M.m.	1	0		pref_only	0	borpref21.md:21	Mantra Mahodadhi
+N.p.	N.p.	1	0		pref_only	0	borpref21.md:31	Nāradīya Purāṇa
+P.d.	P.d.	1	0		pref_only	0	borpref21.md:36	Pātanjala Darśana and Vyāsa's Commentary
+P.p.	P.p.	1	0		pref_only	0	borpref21.md:37	Padma Purāṇa
+R.t.	R.t.	1	0		pref_only	0	borpref21.md:45	Raghunandana's Tattvas
+S.b.	S.b.	1	0		pref_only	0	borpref21.md:51	Śaṅkara on Brihadāraṇyka Upaniṣad
+S.g.	S.g.	1	0		pref_only	0	borpref21.md:55	Śaṅkara on Bhagavadgītā
+V.c.	V.c.	1	0		pref_only	0	borpref21.md:76	Śaṅkarācharya's Viveka Chuḍāmaṇi
+V.d.	V.d.	1	0		pref_only	0	borpref21.md:77	Vaiṣeśika Darśana and Śaṅkara Miśra's Commentary on it
+Va.p.	Va.p.	1	0		pref_only	0	borpref21.md:74	Vāyu Purāṇa
+\*An.<br>Ana.	\An.<br>Ana.	1	0		pref_only	0	borpref20.md:14	Anargha Rāghava Nāṭaka
+\*B.r.	\B.r.	1	0		pref_only	0	borpref20.md:30	Bāla Rāmāyaṇa
+\*Cha.	\Cha.	1	0		pref_only	0	borpref20.md:34	Chanda Kauśika Nāṭaka
+\*Ma.	\Ma.	1	0		pref_only	0	borpref20.md:77	Mālati Mādhava
+\*Ma.n.	\Ma.n.	1	0		pref_only	0	borpref21.md:12	Mahā Nāṭaka
+\*Mal.	\Mal.	1	0		pref_only	0	borpref20.md:79	Mālavikāgnimitra
+\*Mr.	\Mr.	1	0		pref_only	0	borpref21.md:24	Mricchakatika
+\*Mu.	\Mu.	1	0		pref_only	0	borpref21.md:25	Mudrā Rākṣasa
+\*Na.	\Na.	1	0		pref_only	0	borpref21.md:27	Nāgānanda
+\*Pr.	\Pr.	1	0		pref_only	0	borpref21.md:38	Prasanna Rāghava Nāṭaka
+\*Pri.	\Pri.	1	0		pref_only	0	borpref21.md:39	Priyadarśikā Nātikā
+\*Ra.	\Ra.	1	0		pref_only	0	borpref21.md:41	Ratnāvalī
+\*Sa.	\Sa.	1	0		pref_only	0	borpref21.md:47	Śakuntalā
+\*U.	\U.	1	0		pref_only	0	borpref21.md:69	Uttara Rāmacharita
+\*V.	\V.	1	0		pref_only	0	borpref21.md:71	Vikramorvaśī
+\*Vi.	\Vi.	1	0		pref_only	0	borpref21.md:78	Vīra Charita
+\*Vid.	\Vid.	1	0		pref_only	0	borpref21.md:79	Viddha Śālabhañjikā
+c.10.	c.10.	1	0		pref_only	0	borpref22.md:47	10th. or चुर् class
+c.2.	c.2.	1	0		pref_only	0	borpref22.md:39	2nd or अद् class
+c.3.	c.3.	1	0		pref_only	0	borpref22.md:40	3rd or हु class
+c.4.	c.4.	1	0		pref_only	0	borpref22.md:41	4th. or दिव् class
+c.5.	c.5.	1	0		pref_only	0	borpref22.md:42	5th. or सु class
+c.6.	c.6.	1	0		pref_only	0	borpref22.md:43	6th. or तुद् class
+c.7.	c.7.	1	0		pref_only	0	borpref22.md:44	7th. or रुध् class
+c.8.	c.8.	1	0		pref_only	0	borpref22.md:45	8th. or तन् class
+c.9.	c.9.	1	0		pref_only	0	borpref22.md:46	9th. or क्री class
+c.of.	c.of.	1	0		pref_only	0	borpref22.md:48	causal of
+i.q.	i.q.	1	0		pref_only	0	borpref22.md:82	idem quod, the same
+ib., ibidem.	ib., ibidem.	1	0		pref_only	0	borpref22.md:83	in the same place
+id., idem,	id., idem,	1	0		pref_only	0	borpref22.md:84	the same
+sen. [gen. sen.]	sen. [gen. sen.]	1	0		pref_only	0	borpref22.md:78	in a general sense
+§H.	§H.	1	0		pref_only	0	borpref20.md:52	Hitopadeśa
+§S.	§S.	1	0		pref_only	0	borpref21.md:46	Śaṅkarāchārya's Commentary on Vedānta Sūtras
+†B.	†B.	1	0		pref_only	0	borpref20.md:21	Bhaṭṭi Kāvya
+†B.p.	†B.p.	1	0		pref_only	0	borpref20.md:27	Bhāgavata Purāṇa
+†Gi.	†Gi.	1	0		pref_only	0	borpref20.md:49	Gita Govinda
+†Ka.	†Ka.	1	0		pref_only	0	borpref20.md:59	Kāmandakī
+†Kav.	†Kav.	1	0		pref_only	0	borpref20.md:63	Kāvya Prakāśa
+†Ki.	†Ki.	1	0		pref_only	0	borpref20.md:66	Kirātarjunia
+†Ku.	†Ku.	1	0		pref_only	0	borpref20.md:69	Kumāra Sambhava
+†M.	†M.	1	0		pref_only	0	borpref20.md:76	Manu Saṁhitā
+†Me.	†Me.	1	0		pref_only	0	borpref21.md:17	Meghadūta
+†N.	†N.	1	0		pref_only	0	borpref21.md:26	Naiṣadha Charita
+†R.	†R.	1	0		pref_only	0	borpref21.md:40	Raghu Vaṁśa
+†Ri.	†Ri.	1	0		pref_only	0	borpref21.md:44	Ṛtu Saṁhāra
+†Sah.	†Sah.	1	0		pref_only	0	borpref21.md:48	Sāhitya Darpaṇa
+†Si.	†Si.	1	0		pref_only	0	borpref21.md:58	Śiśupālavadha
+†V.m.	†V.m.	1	0		pref_only	0	borpref21.md:82	Varāhamihira's Brihat Saṁhitā
+‡D.	‡D.	1	0		pref_only	0	borpref20.md:37	Daśakumāra Charita
+‡P.	‡P.	1	0		pref_only	0	borpref21.md:33	Panchatantra
+Bham.	Bham.	1	3	27416,78593,87154	low_count	0	borpref20.md:26	Bhāminī Vilāsa
+L.s.	L.s.	1	3	53339,74872,77869	low_count	0	borpref20.md:75	Likhita Saṁhitā
+S.P.	S.P.	1	3	6378,51406,78884	low_count	0	borpref21.md:60	Śiva Purāṇa
+S.d.	S.d.	1	3	111962,122233,126419	low_count	0	borpref21.md:54	Sāṅkhya Darśana
+corresp.	corresp.	1	3	333,492,3750	low_count	0	borpref22.md:56	corresponding
+freq.	freq.	1	3	8890,8890,57651	low_count	0	borpref22.md:75	frequentative
+A.s.	A.s.	1	2	68704,68706	low_count	0	borpref20.md:18	Āṅgirasa Saṁhitā
+Au.	Au.	1	2	89760,128555	low_count	0	borpref20.md:20	Auśanasa Saṁhitā
+Dak.	Dak.	1	2	41174,93270	low_count	0	borpref20.md:39	Dakṣa Saṁhitā
+K.b.	K.b.	1	2	52362,57485	low_count	0	borpref20.md:64	Kulluka Bhaṭṭa's Commentary on Manu
+K.d.	K.d.	1	2	71528,128763	low_count	0	borpref20.md:65	Jogadhyāna Miśra's Kṣetratatva Dīpikā
+M.p.	M.p.	1	2	115420,131102	low_count	0	borpref21.md:23	Mārkaṇḍeya Purāṇa
+S.c.	S.c.	1	2	40481,51857	low_count	0	borpref21.md:52	Śaṅkara on the Chhāndogya
+Shat.	Shat.	1	2	49315,79331	low_count	0	borpref21.md:57	Śātātapa Saṁhitā
+avy.	avy.	1	2	22,80833	low_count	0	borpref22.md:35	avyayībhāva
+dva.	dva.	1	2	4512,101372	low_count	0	borpref22.md:63	dvandva
+Br.	Br.	1	1	120104	low_count	0	borpref20.md:29	Brahma Purāṇa
+C.s.	C.s.	1	1	112562	low_count	0	borpref20.md:36	Charaka Saṁhitā
+H.s.	H.s.	1	1	56858	low_count	0	borpref20.md:55	Hārita Saṁhitā
+M.b.	M.b.	1	1	83931	low_count	0	borpref21.md:14	Mahā-Bhāṣya
+M.c.	M.c.	1	1	84242	low_count	0	borpref21.md:15	Mādhava Champū
+Mis.	Mis.	1	1	24638	low_count	0	borpref21.md:19	Vāchaspati Miśra
+N.d.	N.d.	1	1	51999	low_count	0	borpref21.md:28	Nyaya Darśana and Vātsyāyana's Commentary
+S.p.b.	S.p.b.	1	1	78884	low_count	0	borpref21.md:61	Sāṅkhya Pravachana Bhāṣya
+altern.	altern.	1	1	376	low_count	0	borpref22.md:30	alternative
+c.1.	c.1.	1	1	107477	low_count	0	borpref22.md:38	1st. or भू class
+card.	card.	1	1	12270	low_count	0	borpref22.md:49	cardinal
+correl.	correl.	1	1	88262	low_count	0	borpref22.md:55	correlative
+equi.	equi.	1	1	24529	low_count	0	borpref22.md:66	equivalent
+fut.	fut.	1	1	61434	low_count	0	borpref22.md:76	future
+indecl.	indecl.	1	1	16750	low_count	0	borpref22.md:86	ideclinable
+=	=	1	75533	8,10,12	short_key	1	borpref22.md:65	equivalent to or identical with
+C.	C.	1	10772	20,39,40	short_key	1	borpref20.md:32	Bāṇabhaṭṭa's Śriharṣa Charita
+f.	f.	1	7824	192,313,314	short_key	1	borpref22.md:72	feminine
+T.	T.	1	4205	46,73,74	short_key	1	borpref21.md:66	Vāchaspati Miśra's Sāṅkhya Tattva Kaumudī
+A.	A.	1	3849	14,54,87	short_key	1	borpref20.md:12	Amara Koṣa
+L.	L.	1	1925	39,187,238	short_key	1	borpref20.md:71	Lalita Vistara
+J.	J.	1	1837	192,209,234	short_key	1	borpref20.md:56	Jivānanda Vidyāsāgara's Kāvya Saṁgraha
+G.	G.	1	1516	47,74,88	short_key	1	borpref20.md:46	Bhagavadgitā
+Y.	Y.	1	1443	22,131,197	short_key	1	borpref22.md:16	Yājñavalkya Saṁhitā
+K.	K.	1	1437	336,358,368	short_key	1	borpref20.md:58	Kādambari
+con.	con.	1	2914	27,54,106		0	borpref22.md:53	conjuction
+comp.	comp.	1	2365	22,378,410		0	borpref22.md:52	compound
+etc.	etc.	1	1608	20,454,459		0	borpref22.md:68	etcetera
+expr.	expr.	1	1549	22,332,722		0	borpref22.md:71	express,-ed,-ion
+adj.	adj.	1	1547	192,209,234		0	borpref22.md:28	adjective
+Ram.	Ram.	1	773	139,412,447		0	borpref21.md:43	Rāmāyaṇa
+app.	app.	1	697	879,1083,1289		0	borpref22.md:32	apparently
+Mah.	Mah.	1	696	850,853,2432		0	borpref20.md:78	Mahābhārata
+fig.	fig.	1	658	47,500,562		0	borpref22.md:73	figurative,-ly
+Sra.	Sra.	1	579	310,320,921		0	borpref21.md:63	Rudradhara's Śrādhaviveka
+Ta.	Ta.	1	571	825,919,1056		0	borpref21.md:67	Chandrakānta's Tattvāvalī
+gen.	gen.	1	541	26,34,408		0	borpref22.md:77	genitive; generally
+dvi.	dvi.	1	354	28,295,1065		0	borpref22.md:64	dvigu
+circumlo.	circumlo.	1	328	2996,4989,5117		0	borpref22.md:50	circumlocution
+Ha.	Ha.	1	324	8568,9229,9804		0	borpref20.md:53	Harivaṁśa
+Bha.	Bha.	1	307	9229,13714,14888		0	borpref20.md:25	Bhāva Prakāśa
+Mi.	Mi.	1	307	74,88,947		0	borpref21.md:18	Mitākṣarā
+dep.	dep.	1	307	1584,1633,1633		0	borpref22.md:59	dependent
+At.	At.	1	304	396,410,722		0	borpref20.md:19	Atri Saṁhitā
+adv.	adv.	1	247	367,373,395		0	borpref22.md:29	adverb
+Sr.	Sr.	1	200	1043,2433,2786		0	borpref21.md:62	Suśruta
+Ya.	Ya.	1	183	315,852,1280		0	borpref22.md:17	Yama Saṁhitā
+Li.	Li.	1	161	1576,6289,8348		0	borpref20.md:72	Līlāvatī
+Mit.	Mit.	1	139	2991,3629,4479		0	borpref21.md:20	Viramitrodaya
+deri.	deri.	1	132	2144,6005,6013		0	borpref22.md:60	derive,-ative,-ation
+Vam.	Vam.	1	131	205,260,673		0	borpref21.md:73	Vāmana Purāṇa
+acc.	acc.	1	127	344,348,408		0	borpref22.md:27	accusative
+Ni.	Ni.	1	117	921,2683,3430		0	borpref21.md:29	Mādhavakara's Nidāna
+Ch.	Ch.	1	100	2546,5361,6107		0	borpref20.md:33	Rāmanātha's Chandra Śekhara Champū
+anal.	anal.	1	98	782,3430,4365		0	borpref22.md:31	analogous,-ly
+B.c.	B.c.	1	90	2381,4541,4601		0	borpref20.md:23	Bhārata Champū
+bene.	bene.	1	89	777,2142,2159		0	borpref22.md:37	benedictive
+Da.	Da.	1	87	500,821,4469		0	borpref20.md:38	Dāyabhāga
+bah.	bah.	1	80	378,412,733		0	borpref22.md:36	bahubrīhi
+Va.	Va.	1	75	14,1194,2383		0	borpref21.md:72	Vāsavadattā
+foll.	foll.	1	75	351,944,1025		0	borpref22.md:74	following
+De.	De.	1	71	1389,2108,2232		0	borpref20.md:42	Devala Saṁhitā
+V.t.	V.t.	1	71	47879,48286,48365		0	borpref22.md:14	Vasanta Tilaka Bhāna
+Mat.	Mat.	1	70	10033,10694,21330		0	borpref21.md:13	Matsya Purāṇa
+abl.	abl.	1	64	1000,1060,2634		0	borpref22.md:24	ablative
+Su.	Su.	1	57	17171,19613,19615		0	borpref21.md:64	Sūrya Siddhānta
+Com.	Com.	1	56	376,4065,8438		0	borpref22.md:18	Commentary
+com.	com.	1	56	376,4065,8438		0	borpref22.md:51	compare
+Viv.	Viv.	1	54	24361,24395,24703		0	borpref21.md:81	Vivāda Chintāmaṇi
+gram.	gram.	1	53	1457,3012,5047		0	borpref22.md:80	grammar
+Raj.	Raj.	1	51	269,1048,1049		0	borpref21.md:42	Rājataraṅgiṇī
+abst.	abst.	1	50	576,576,577		0	borpref22.md:26	abstract
+i.e.	i.e.	1	50	43500,47551,48097		0	borpref22.md:81	id est, that is
+Sam.	Sam.	1	45	3936,5761,10854		0	borpref21.md:49	Samvarta Saṁhitā
+dif.	dif.	1	42	14448,14455,20554		0	borpref22.md:62	different
+Vri.	Vri.	1	40	18829,21839,24360		0	borpref21.md:83	Vrihaspati Saṁhitā
+M.n.	M.n.	1	36	42242,48807,49308		0	borpref21.md:22	Malli Nātha's Commentaries
+Go.	Go.	1	33	29695,31581,38671		0	borpref20.md:50	Golādhyāya and its Mitākṣarā
+Up.	Up.	1	31	1565,5722,9878		0	borpref21.md:70	Upaniṣad
+defec.	defec.	1	29	10285,12972,32655		0	borpref22.md:58	defective
+Kat.	Kat.	1	27	24861,31089,45109		0	borpref20.md:62	Kātyāyana Saṁhitā
+dat.	dat.	1	27	795,1686,4658		0	borpref22.md:57	dative
+pa.	pa.	1	27	32787,33152,35661		0	borpref21.md:34	Parāśara Saṁhitā
+indef.	indef.	1	24	5288,68414,68414		0	borpref22.md:87	idenfinite
+Ap.	Ap.	1	23	20406,20554,25693		0	borpref20.md:15	Āpastamba Saṁhitā
+V.p.	V.p.	1	23	40475,50120,52408		0	borpref22.md:12	Viṣṇu Purāṇa
+Say.	Say.	1	22	25820,32271,34163		0	borpref21.md:65	Sāyaṇa
+geo.	geo.	1	22	6288,9931,17833		0	borpref22.md:79	geometry
+Nil.	Nil.	1	20	18941,21953,21998		0	borpref21.md:30	Nīlakaṇṭha's Commentary [on] the Mahābhārata
+Par.	Par.	1	18	42106,46843,51944		0	borpref21.md:35	Bhāṣā Parichcheda
+ast.	ast.	1	17	587,9789,14618		0	borpref22.md:34	astronomy
+Vij.	Vij.	1	16	22935,35479,38631		0	borpref21.md:80	Bījagaṇita
+appel.	appel.	1	15	5587,5587,5588		0	borpref22.md:33	appellative
+M.d.	M.d.	1	14	80310,81416,81418		0	borpref21.md:16	Mīmāsnā Darśana and Savara Svamī's Commentary.
+N.s.	N.s.	1	14	43358,53919,56704		0	borpref21.md:32	Nāradīya Saṁhitā
+S.k.	S.k.	1	14	49114,49569,49571		0	borpref21.md:59	Shiddhānta Kaumudī
+San.	San.	1	13	1671,50707,50709		0	borpref21.md:50	Śaṅkara Vijaya
+Ja.	Ja.	1	12	1971,5740,30883		0	borpref20.md:57	Bṛhat Jātaka
+cons.	cons.	1	12	5858,7871,10930		0	borpref22.md:54	construction
+Ga.	Ga.	1	11	12544,19109,41227		0	borpref20.md:47	Gautama Saṁhitā
+Gan.	Gan.	1	11	41532,41533,41541		0	borpref20.md:48	Gaṇitādhyāya and its Mitākṣarā
+Vas.	Vas.	1	11	18608,52587,75865		0	borpref21.md:75	Vaśiṣṭha Saṁhitā
+Vy.	Vy.	1	11	22,32311,34016		0	borpref22.md:15	Vyāsa Saṁhitā
+desi.	desi.	1	11	3125,7226,34429		0	borpref22.md:61	desiderative
+A.r.	A.r.	1	10	48651,52425,56409		0	borpref20.md:17	Adhyātma Rāmāyaṇa
+D.s.	D.s.	1	10	40030,43441,47437		0	borpref20.md:45	Sarva Darśana Saṁgraha
+K.s.	K.s.	1	10	49518,52149,53500		0	borpref20.md:68	Kathā Sarit Sāgara
+absol.	absol.	1	10	972,28511,47563		0	borpref22.md:25	absolute,-ly
+etym.	etym.	1	10	32861,45246,45246		0	borpref22.md:69	etymology,-ical
+V.s.	V.s.	1	9	40467,49688,52363		0	borpref22.md:13	Viṣṇu Smriti
+exs.	exs.	1	9	47121,47121,47122		0	borpref22.md:70	example, examples
+Kar.	Kar.	1	8	16882,31295,77638		0	borpref20.md:61	Karaṇḍa Vyūha
+Kuv.	Kuv.	1	8	5551,42747,42954		0	borpref20.md:70	Kuvalayānanda
+Tar.	Tar.	1	8	4089,10250,42599		0	borpref21.md:68	Vidyanmoda Taraṅgiṇī
+Bh.	Bh.	1	7	66996,120061,120833		0	borpref20.md:24	Bhoja Prabandha
+Dh.	Dh.	1	5	8591,10603,37816		0	borpref20.md:43	Dhanañjaya Vijaya
+Sca.	Sca.	1	5	13417,31002,73745		0	borpref21.md:53	Scanda Purāṇa
+Sha.	Sha.	1	5	36094,45430,75214		0	borpref21.md:56	Shankha Saṁhitā
+esp.	esp.	1	5	333,492,3750		0	borpref22.md:67	especially
+imper.	imper.	1	5	8584,11058,11150		0	borpref22.md:85	imperative
+Kal.	Kal.	1	4	25645,32962,33455		0	borpref20.md:60	Kalki Purāṇa

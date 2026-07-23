@@ -1,0 +1,117 @@
+key_raw	key_norm	in_pref	body_count	samples	flag	short_key	sources	expansion
+Bhavishyap.	Bhavishyap.	1	0		pref_only	0	benpref03.md:35	Bhavishya-Purâṇa.
+Bhâshâp.	Bhâshâp.	1	0		pref_only	0	benpref03.md:31	Bhâshâparichchheda, in Bibliotheca Indica and in my Sanskrit Chrestomathy.
+Chaur.	Chaur.	1	0		pref_only	0	benpref03.md:63	and Chaurap.  Chaurapańchâçikâ, in Bohlen's ed. of Bhartṛ{??}ari.
+Daçak.	Daçak.	1	0		pref_only	0	benpref03.md:83	Daçakumâracharita, ed. Wilson, partly in my Chr.
+Govardh. Āryas.	Govardh. Āryas.	1	0		pref_only	0	benpref03.md:105	Govardhana Āryasaptati, ed. Soma Nath Mookerjea.
+Mṛichchh.	Mṛichchh.	1	0		pref_only	0	benpref03.md:163	Mṛichchhakaṭikâ, ed. Stenzler.
+Naish.	Naish.	1	0		pref_only	0	benpref03.md:167	Naishadhacharita, ed. Calc.
+Somadev.	Somadev.	1	0		pref_only	0	benpref03.md:225	Nal.  Somadeva's Nala, published by Brockhaus.
+Suçr.	Suçr.	1	0		pref_only	0	benpref03.md:229	Suçruta, ed. Calc.; the first numeral denotes the vol., the second the page, the third the line.
+Swed.	Swed.	1	0		pref_only	0	benpref03.md:233	Swedish.
+ÇKD.	ÇKD.	1	0		pref_only	0	benpref03.md:69	Çabdakalpadruma.
+Çukas.	Çukas.	1	0		pref_only	0	benpref03.md:77	Çukasaptati (MSS. of St. Petersburg).
+Çvet.	Çvet.	1	0		pref_only	0	benpref03.md:79	Up.  Çvetâçvataropanishad, in Bibliotheca Indica.
+Çântiç.	Çântiç.	1	0		pref_only	0	benpref03.md:49	Çântiçataka, in Häberlin's Sanskrit Anthology.
+Çârṅg.	Çârṅg.	1	0		pref_only	0	benpref03.md:51	Paddh.  Çârṅgadhara-Paddhati (MSS. used by Böhtl.).
+Çṛiṅgârat.	Çṛiṅgârat.	1	0		pref_only	0	benpref03.md:73	Çṛiṅgâratilaks, ed. Gildemeister, in his edition of the Meghadūta.
+Ṛit.  Ṛitusam̄hâra, ed.	Ṛit. Ṛitusam̄hâra, ed.	1	0		pref_only	0	benpref03.md:211	Bohlen, the first chapter also in Lass., the sixth in my Chrestomathy.
+Ratnâv.	Ratnâv.	1	3	41990,84311,86612	low_count	0	benpref03.md:207	Ratnâvalî, 2. ed. Calc.
+Icel.	Icel.	1	2	63518,82853	low_count	0	benpref03.md:117	Icelandic.
+Lalit.	Lalit.	1	2	34781,80701	low_count	0	benpref03.md:137	Lalitavistara, in Bibliotheca Indica.
+Mudrâr.	Mudrâr.	1	2	16277,16451	low_count	0	benpref03.md:165	Mudrârâkshasa, ed. Calc.
+Ssk.	Ssk.	1	2	722,722	low_count	0	benpref03.md:227	and Sskr.  Sanskrit.
+Sâṅkhya Aph.	Sâṅkhya Aph.	1	2	25144,80132	low_count	0	benpref03.md:215	Sâṅkhya Sūtras, in Hall's ed. of Saṅkhya Pravachana Bhâshya in Bibl. Ind.
+Vârt.	Vârt.	1	2	73499,78473	low_count	0	benpref03.md:243	Vârtika.
+Web.	Web.	1	2	66076,77928	low_count	0	benpref03.md:251	Ind. St.  Weber, Indische Studien, i. e. ‘Essaya concerning India.’
+Châṇ.	Châṇ.	1	1	19642	low_count	0	benpref03.md:57	Châṇakya, published in Häberlin's Anthology, and by Weber in Berl. Monatsb. Hist. Phil. Cl., i. e. in ‘Monthly Reports of the Berlin Academy of Sciences, Class of History and Philology,’ 1864.
+Gött.	Gött.	1	1	86616	low_count	0	benpref03.md:103	Gel. Anz.  Göttinger Gelebrte Anzeigen, i. e. ‘Scientific Reports published in Göttingen.’
+Häb.	Häb.	1	1	4387	low_count	0	benpref03.md:109	and Häberl. Chr. or Anth.  Kâvya Sangraha, ‘A Sanskrit Anthology,’ by John Häberlin.
+N.N.L.	N.N.L.	1	1	81959	low_count	0	benpref03.md:175	New Netherlandis or Dutch.
+Pańch.	Pańch.	1	1	37778	low_count	0	benpref03.md:187	Pańchatantra, ed. Kosegarten; the numerals are used on the same system as in Hit. When there is added ‘ed. orn.,’ it denotes the fragment of the recensio ornatior, published by Kosegarten.
+Upak.	Upak.	1	1	23627	low_count	0	benpref03.md:235	Upakoça, an episode of the Kathâs., ed. Brockhaus.
+Vop.	Vop.	1	1	20218	low_count	0	benpref03.md:249	Vopadeva, ed. Böhtlingk.
+Çrut.	Çrut.	1	1	2410	low_count	0	benpref03.md:75	and Çrutab.  Çrutabodha, ed. Brockhaus.
+d.	d.	1	8052	67,73,120	short_key	1	benpref03.md:81	distich.
+MBh.	MBh.	1	7385	118,118,213		0	benpref03.md:157	Mahâbhârata, ed. Calc.
+Man.	Man.	1	6266	10,12,13		0	benpref03.md:151	Mânavadharmaçâstra, ed. Haughton and Lois. (i. e. Loiseleur Deslongchamps). Where there is a numeral in brackets, it denotes the verse of Jones’ translation.
+Râm.	Râm.	1	5175	89,113,309		0	benpref03.md:205	Râmâyaṇa, the two first books after the ed. of Schlegel; when that of Gorresio is meant, there is added Gorr.; the remaining books after Gorresio's.
+Comp.	Comp.	1	3479	11,22,39		0	benpref03.md:71	Compound.
+Chr.	Chr.	1	3024	128,293,334		0	benpref03.md:65	my Sanskrit Chrestomathy.
+Bhag.	Bhag.	1	2315	124,315,573		0	benpref03.md:25	Bhagavadgîtâ, ed. Schlegel.
+Bhâg.	Bhâg.	1	2315	124,315,573		0	benpref03.md:27	P.  Bhâgavata-Purâṇa, ed. Burnouf.
+Hit.	Hit.	1	1831	1305,1344,1390		0	benpref03.md:115	Hitopadeça, ed. of Lassen, and when followed by M.M., that of Max Müller. When followed by two Arabian numerals, the first denotes the page, the second the line; when followed by a Roman and Arabian n
+Par.	Par.	1	1814	52,68,81		0	benpref03.md:189	Parasmaipada.
+Caus.	Caus.	1	1384	67,462,463		0	benpref03.md:55	Causal.
+Râjat.	Râjat.	1	1326	179,328,408		0	benpref03.md:203	Râjataraṅgiṇî, ed. Troyer, the fifth book in my Chrestomathy.
+Vikr.	Vikr.	1	1162	412,440,790		0	benpref03.md:247	Vikramorvaçî, ed. Bollensen.
+Lat.	Lat.	1	1061	58,73,154		0	benpref03.md:143	Latin.
+Ragh.	Ragh.	1	937	360,681,740		0	benpref03.md:199	Raghuvaffiça, ed. Stenzler.
+Râgh.	Râgh.	1	937	360,681,740		0	benpref03.md:201	Râghavânanda, Sch. ad Man.
+Bhartṛ.	Bhartṛ.	1	792	408,412,432		0	benpref03.md:29	Bhartṛihari, ed. Bohlen.
+Rigv.	Rigv.	1	770	128,656,657		0	benpref03.md:209	Rigveda.
+Lass.	Lass.	1	765	372,1260,1774		0	benpref03.md:139;benpref03.md:141	Lassen, Anthologia Sanskritica.
+Utt.	Utt.	1	726	40163,40302,40464		0	benpref03.md:237	Râmach.  Uttara Râmacharita, 2. ed. Calc., 1862.
+Kathâs.	Kathâs.	1	722	1401,1406,1416		0	benpref03.md:125	Kathâsaritsâgara, ed. Brockhaus.
+Hariv.	Hariv.	1	697	872,1570,2517		0	benpref03.md:111	Harivam̄ça, ed. Calc.
+A.S.	A.S.	1	603	161,193,420		0	benpref03.md:19	Anglo-Saxon.
+Pr.	Pr.	1	568	496,1021,1305		0	benpref03.md:193	prologue.
+Nal.	Nal.	1	503	740,767,1104		0	benpref03.md:169	Nala, an episode of the MBh. ed. Bopp.; a numeral in brackets denotes Böhtlingk's ed. in his Chrestomathy.
+Megh.	Megh.	1	501	313,650,1354		0	benpref03.md:159	Meghadūta, ed. Gildemeister.
+Yâjń.	Yâjń.	1	494	938,981,1311		0	benpref03.md:253	Yâjńavalkya, ed. Stenzler.
+Goth.	Goth.	1	429	58,73,193		0	benpref03.md:101	Gothic.
+Böhtl.	Böhtl.	1	426	496,1021,1041		0	benpref03.md:37;benpref03.md:39	Chr.  Böhtlingk, Sanskrit Chrestomathy.
+Kir.	Kir.	1	422	225,424,1356		0	benpref03.md:129	and Kirât.  Kirâtârjunîya, 2. ed. Calc., 1846, and the fifth book in my Chr.
+Vedântas.	Vedântas.	1	422	583,587,766		0	benpref03.md:245	Vedântasâra, in my Chrestomathy.
+Ch.	Ch.	1	399	722,927,927		0	benpref03.md:59	Chezy.
+Çâk.	Çâk.	1	381	313,2879,3351		0	benpref03.md:47	Çâkuntala, ed. Böhtlingk.
+Mâlat.	Mâlat.	1	352	14435,14561,14652		0	benpref03.md:147	Mâlatîmâdhava, ed. Calc.
+O.H.G.	O.H.G.	1	350	161,420,769		0	benpref03.md:179	Old High German.
+denomin.	denomin.	1	238	2696,2700,6521		0	benpref03.md:87	denominative.
+Johns.	Johns.	1	231	40880,41065,42986		0	benpref03.md:121	Sel.  Johnson's Selections from the Mahâbhârata.
+Prab.	Prab.	1	217	3623,4630,4630		0	benpref03.md:195	Prabodhachandrodaya, ed. Brockhaus.
+Mâlav.	Mâlav.	1	195	1356,1732,2614		0	benpref03.md:149	Mâlavikâgnimitra, ed. Tullberg.
+Bhaṭṭ.	Bhaṭṭ.	1	171	4798,4911,4915		0	benpref03.md:33	Bhaṭṭikâvya, ed. Calc.
+Kumâras.	Kumâras.	1	170	4144,5076,5904		0	benpref03.md:133	Kumârasam̄bhava, ed. Stenzler.
+Mârk.	Mârk.	1	167	412,461,4237		0	benpref03.md:153	P.  Mârkaṇḍeya-Purâṇa, in Bibliotheca Indica.
+Draup.	Draup.	1	142	1612,3696,4258		0	benpref03.md:93	Draupadîpramâtha, an episode of the MBh., ed. Bopp.
+Arj.	Arj.	1	129	4242,4482,5182		0	benpref03.md:17	Arjunasamâgama, an episode of the MBh., ed. Bopp.
+Indr.	Indr.	1	129	4502,4757,4772		0	benpref03.md:119	Indralokâgamana, an episode of the MBh., ed. Bopp.
+Sâv.	Sâv.	1	123	2220,3548,4096		0	benpref03.md:217	Sâvitryupâkhyâna, an episode of the MBh., ed. Bopp.
+Gît.	Gît.	1	121	740,5692,7052		0	benpref03.md:99	Gîtagovinda. ed. Lassen.
+Hiḍ.	Hiḍ.	1	98	5023,6044,6536		0	benpref03.md:113	Hiḍimbavadha, an episode of the MBh., ed. Bopp.
+Kâm.	Kâm.	1	92	5276,6551,11233		0	benpref03.md:123	and Kâmand. Nîtis.  Kâmandakîya Nîtisâra, in Bibliotheca Indica.
+frequent.	frequent.	1	88	636,2696,16613		0	benpref03.md:95	frequentative.
+Amar.	Amar.	1	78	5092,5146,6110		0	benpref03.md:13	Amaruçataka, ed. Calcutt.
+Brâhmaṇ.	Brâhmaṇ.	1	70	492,7087,8713		0	benpref03.md:43	and Brâhmaṇav.  Brâhmaṇavilâpa, an episode of the MBh., ed. Bopp.
+Nalod.	Nalod.	1	68	461,6110,12405		0	benpref03.md:171	Nalodya, ed. Benary.
+Prâkṛ.	Prâkṛ.	1	68	722,722,1092		0	benpref03.md:197	Prâkṛit.
+Sund.	Sund.	1	62	2851,7500,10803		0	benpref03.md:231	Sundopasundopâkhyâna, an episode of the MBh., ed. Bopp.
+Sâh.	Sâh.	1	57	2216,12075,15638		0	benpref03.md:213	D.  Sâhitya Darpaṇa, in Bibliotheca Indica.
+Pâṇ.	Pâṇ.	1	56	20968,24171,44159		0	benpref03.md:185	Pâṇini, ed. Böhtlingk.
+Dev.	Dev.	1	52	512,1457,2508		0	benpref03.md:91	Devîmâhâtmya, ed. Poley.
+Part.	Part.	1	42	13,467,3341		0	benpref03.md:191	particle.
+Chât.	Chât.	1	34	12405,16644,21580		0	benpref03.md:61	Châtaka, in Zeitschrift für die Kunde des Morgenlands, i. e. ‘Journal for the Knowledge of the Orient,’ vol. iv.
+Kull.	Kull.	1	29	2976,8213,11201		0	benpref03.md:131	Kullūka Schol. ed. Man.
+Matsyop.	Matsyop.	1	26	4410,5130,7836		0	benpref03.md:155	Matsyopâkhyâna, an episode of the MBh., ed. Bopp.
+Nyây.	Nyây.	1	23	39687,39687,39832		0	benpref03.md:177	S.  Nyâya-Sūtrâṇi of Gotama, ed. Calc.
+desid.	desid.	1	23	3004,4899,7220		0	benpref03.md:89	desiderative.
+Varâh.	Varâh.	1	22	24057,28477,28818		0	benpref03.md:239;benpref03.md:241	Bṛih.  Varâhamihira's Bṛihajjâtaka.
+Çiç.	Çiç.	1	17	25130,25130,25130		0	benpref03.md:67	Çiçupâlavadha, 2. ed. Calc.; the ninth book in my Chr.
+Kâvya Prak.	Kâvya Prak.	1	12	52894,63711,69231		0	benpref03.md:127	Kâvya Prakaça, 2. ed. Calcutta, 1865.
+O.N.	O.N.	1	12	658,22883,53512		0	benpref03.md:181	Old Norse.
+Ghaṭ.	Ghaṭ.	1	11	15433,16273,24442		0	benpref03.md:97	Ghaṭakarpara, ed. Cale.
+Mit.	Mit.	1	11	5399,13562,16328		0	benpref03.md:161	Mitâksharâ, ed. Calc., 1829.
+Daçar.	Daçar.	1	9	6818,6828,19961		0	benpref03.md:85	Daça-Rūpa, ed. Fitz-Edward Hall.
+Brahmav.	Brahmav.	1	8	62029,65526,65811		0	benpref03.md:45	P.  Brahmavaivarta-Purâṇa, ed. Stenzler.
+Kusumâńj.	Kusumâńj.	1	8	48941,68265,68757		0	benpref03.md:135	Kusumâńjali, ed. Cowell.
+Mahâv.	Mahâv.	1	8	1444,5720,31485		0	benpref03.md:145	Mahâvîracharita, ed. Trithen.
+Padmap.	Padmap.	1	8	70796,72488,74651		0	benpref03.md:183	Padma-Purâṇa, ed. Wollheim.
+N.H.G.	N.H.G.	1	7	1814,2646,3122		0	benpref03.md:173	New High German.
+Yogas.	Yogas.	1	7	21234,69118,71419		0	benpref03.md:255	Yogasūtrâṇi, ed. Allahabed, 1852-53.
+Grammar.	Grammar.	1	6	25851,25863,26442		0	benpref03.md:107	Grammarians.
+Siddh.	Siddh.	1	6	57093,65124,71324		0	benpref03.md:219;benpref03.md:221	K.  Siddhântakaumudi, ed. Calc., 4to.
+Çatr.	Çatr.	1	6	25932,30933,33444		0	benpref03.md:53	Çatrum̄jayamâhâtmya, ed. A. Weber.
+Br.	Br.	1	5	4325,12097,21355		0	benpref03.md:41	Brockhaus.
+Skandap.	Skandap.	1	5	9590,12261,16100		0	benpref03.md:223	Kâçikh.  Kâçikhaṇḍa, a part of the Skanda-Purâṇa (MSS.).
+Aufr.	Aufr.	1	4	68965,70418,73519		0	benpref03.md:23	Ujjvalad.  Ujjvaladatta, ed. Autrecht.

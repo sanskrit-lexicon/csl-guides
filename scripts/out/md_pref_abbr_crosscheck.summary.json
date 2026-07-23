@@ -1,0 +1,16 @@
+{
+  "dict": "MD",
+  "wave": "A",
+  "status": "ok",
+  "keys": 151,
+  "hits_nonshort": 106,
+  "pref_only": 20,
+  "low_count": 9,
+  "short": 25,
+  "pref_pages": 1,
+  "discover": "abbr_hint (1/10 pages)",
+  "body": "C:\\Users\\user\\Documents\\GitHub\\csl-orig\\v02\\md\\md.txt",
+  "tsv": "scripts\\out\\md_pref_abbr_crosscheck.tsv",
+  "report": "scripts\\out\\md_pref_abbr_crosscheck.md",
+  "date": "2026-07-23"
+}

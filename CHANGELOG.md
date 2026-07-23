@@ -8,8 +8,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- **Preface OCR pipeline operator manual** — [`docs/dictionaries/preface-ocr-pipeline.mdx`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-ocr-pipeline.mdx): engines A/B, Phase 3.5, attribution, residue census. Linked from [ocr-prefaces](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/ocr-prefaces.mdx).
-- **OCR prefaces index expansion (23-07-2026 drain)** — added GST, PGN, SNP, LAN, AP90, AE, BEN, ACC to Available-now (promoted local residue + HTML-layer extracts + finished LAN vision); queue reduced to BUR/PE (in flight), SKD/PUI, and missing pref indexes (AP/ABCH/LRV).
+- **Preface OCR pipeline operator manual** — [`docs/dictionaries/preface-ocr-pipeline.mdx`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-ocr-pipeline.mdx): engines A/B, Phase 3.5, attribution. Linked from [ocr-prefaces](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/ocr-prefaces.mdx).
+- **OCR prefaces index expansion** — GST, PGN, SNP, LAN, AP90, AE, BEN, ACC, BUR, PE (partial) on Available-now.
+
+### Changed
+- **OCR prefaces index post-merge rewrite (23-07-2026)** — AP90 #49, BEN #32, ACC #25, BUR #13 merged; all rows now point at **default-branch** `prefaces/` READMEs and `*_all.*` blobs (no `feat/prefaces-ocr` links). Queue: PE genealogy, SKD, PUI, AP/ABCH/LRV.
 
 ### Changed
 - **`verify-atlas-viz` expectations are now derived from the data, not pinned.** The check asserted `{circles: 43, leaves: 41}` as literals, so adding a dictionary turned it red for a completely correct data change — and the message (`expected 43`) gave no hint that the right fix was to edit the checker rather than the site. Each count now comes from the same committed feed the page renders:

@@ -122,28 +122,20 @@ All rows below are **canonical edition** pages under each repo’s `prefaces/` (
 | KRM | [KRM](https://github.com/sanskrit-lexicon/KRM) | 24 | sa/en | 2026-06-23 |
 | MCI | [MCI](https://github.com/sanskrit-lexicon/MCI) | 28 | en | 2026-06-23 |
 
-**Count:** 23 CDSL codes with **production** OCR via Claude Code / `/cologne-preface-ocr` (landed in a real dict or staging **git** repo with `prefaces/` on a branch).
+**Public index of editions:** [ocr-prefaces.mdx](ocr-prefaces) (csl-guides).  
+**Count (23-07-2026 post-merge):** ~32 dictionary codes with production or staging editions on a default branch. Merged that day: AP90 #49, BEN #32, ACC #25, BUR #13.
 
-### Claude Code — local-only / incomplete (worktree residue)
+### Claude Code — residue status (after promote + drain)
 
-Claude Code started more than the 23 “full” dicts. Some work never landed in a dictionary remote: it sits in **local staging folders** under `GitHub/prefaces_<code>/` (or stub dirs inside the dict clone). Those folders are **not** linked to a sanskrit-lexicon preface remote; many are only visible because they live under the local `GitHub/` tree and are **gitignored by a parent meta-repo** (`/*` ignore). Deleted git worktrees leave **no remote history** of unfinished pages — only whatever still sits on disk.
+| Code | Remote home | Status |
+|---|---|---|
+| GST, PGN, SNP, LAN, AE | `gasyoun/prefaces_*` on `main` | **Promoted / complete** |
+| PE | `gasyoun/prefaces_pe` | **Partial** (01–04; genealogy 05–26 pending) |
+| AP90, BEN, ACC, BUR | `sanskrit-lexicon/*` default branch | **Merged 23-07-2026** |
+| SKD, PUI | — | **Still cold** (multi-scan OCR not run) |
+| AP, ABCH, LRV | — | **No usable `${code}pref.html`** |
 
-Census of **local machine** (23-07-2026), Claude Code Engine A residue:
-
-| Code | Local path | Source pages on disk | Scans | Status | On GitHub remote? |
-|---|---|---:|---:|---|---|
-| **GST** | `GitHub/prefaces_gst/` | 8/8 + RU + `*_all.*` + README | 8 | **Looks complete locally** — not promoted to a GST/`prefaces/` remote | **No** (local-only) |
-| **PGN** | `GitHub/prefaces_pgn/` | 10/10 + RU + `*_all.*` + README | 10 | **Looks complete locally** — not promoted | **No** (local-only) |
-| **SNP** | `GitHub/prefaces_snp/` | 7/7 + RU + `*_all.*` + README | 7 | **Looks complete locally** — not promoted | **No** (local-only) |
-| **LAN** | `GitHub/prefaces_lan/` | **2**/19 (+ RU for those 2); leftover `_crops/` | 19 | **Partial** (title + early pages only) | **No** (local-only) |
-| **PE** | `GitHub/prefaces_pe/prefaces/` | 0 (manifests / discover scripts only) | 0 | **Stub** (Phase 1–2 only) | **No** |
-| **BUR** | `BUR/prefaces/` | 0 (`_manifest`, download probes, empty `scans/`) | 0 | **Stub** | Scripts may be in dirty/WIP history only — **no edition pages** |
-| **PUI** | `PUI/prefaces/scans/` | 0 (one tiny/placeholder PNG) | 1 | **Stub** | **No** edition |
-| **SKD** | `SKD/prefaces/scans/` | 0 (empty scans dir) | 0 | **Stub** | **No** edition |
-
-**Deleted worktrees:** no remaining linked worktrees for AP90/BEN/AE/… preface runs; `git branch -r` on sample dict clones has no `preface|ocr` topic branches (except unrelated `MWS` paper scaffold). **If a worktree was removed without merge/push, unfinished OCR for that run is gone** unless a copy was left in `prefaces_*` as above.
-
-**Rescue priority (human):** commit/promote local-complete **GST, PGN, SNP** into proper remotes before disk loss; finish **LAN** from remaining scans; treat BUR/PE/PUI/SKD as restart-from-skill.
+Local-only staging under the `GitHub/` meta-tree is obsolete for GST/PGN/SNP/LAN/AE — use the remotes above.
 
 ### Grok — production OCR (Engine B primary)
 
@@ -161,10 +153,13 @@ Census of **local machine** (23-07-2026), Claude Code Engine A residue:
 
 **Grok has not replaced Claude Code as author of any CDSL `prefaces/<code>prefNN.md` edition** as of this census. Future CDSL runs may still use Grok only for Phase 3.5 audit (or a human may run Tesseract locally the same way).
 
-### Not yet OCR'd (no usable local edition)
+### Not yet OCR'd / incomplete
 
-Cold queue (no full local pages, or only empty stubs): **AP90, AP, AE, BEN, BUR, SKD, ABCH, ACC, LRV, PE, PUI** (+ finish **LAN**).  
-Local-complete but **unpublished**: **GST, PGN, SNP** (see table above). Default author path: **Claude Code / Engine A**, then optional **Phase 3.5** audit; for GST/PGN/SNP prefer **promote existing local trees** over re-OCR.
+- **Partial:** PE genealogy tables (pages 05–26).
+- **Cold multi-scan:** SKD, PUI.
+- **No pref HTML:** AP, ABCH, LRV.
+
+Default author path: **Claude Code / Engine A**, then optional **Phase 3.5** audit.
 
 ---
 

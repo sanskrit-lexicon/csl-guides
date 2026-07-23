@@ -68,23 +68,31 @@ Census of local clones **23-07-2026**. Page counts are source-language pages (ap
 | **[Vācaspatya (VCP)](vcp)** | Sanskrit | 7 | [README](https://github.com/sanskrit-lexicon/VCP/blob/main/prefaces/README.md) | [.sa](https://github.com/sanskrit-lexicon/VCP/blob/main/prefaces/vcppref_all.sa.md) | [.en](https://github.com/sanskrit-lexicon/VCP/blob/main/prefaces/vcppref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/VCP/blob/main/prefaces/vcppref_all.ru.md) |
 | **[Kṛdantarūpamālā (KRM)](krm)** | Sanskrit/English | 24 | [README](https://github.com/sanskrit-lexicon/KRM/blob/main/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/KRM/blob/main/prefaces/krmpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/KRM/blob/main/prefaces/krmpref_all.ru.md) |
 | **[Mahābhārata Cultural Index (MCI)](mci)** | English | 28 | [README](https://github.com/sanskrit-lexicon/MCI/blob/master/prefaces/README.md) | — | [.en](https://github.com/sanskrit-lexicon/MCI/blob/master/prefaces/mcipref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/MCI/blob/master/prefaces/mcipref_all.ru.md) |
+| **[Goldstücker (GST)](gst)** | English | 8 | [README](https://github.com/gasyoun/prefaces_gst/blob/main/prefaces/README.md) | — | [.en](https://github.com/gasyoun/prefaces_gst/blob/main/prefaces/gstpref_all.en.md) | [.ru](https://github.com/gasyoun/prefaces_gst/blob/main/prefaces/gstpref_all.ru.md) |
+| **[PGN Gupta names](pgn)** | English | 10 | [README](https://github.com/gasyoun/prefaces_pgn/blob/main/prefaces/README.md) | — | [.en](https://github.com/gasyoun/prefaces_pgn/blob/main/prefaces/pgnpref_all.en.md) | [.ru](https://github.com/gasyoun/prefaces_pgn/blob/main/prefaces/pgnpref_all.ru.md) |
+| **[SNP plant names](snp)** | English | 7 | [README](https://github.com/gasyoun/prefaces_snp/blob/main/prefaces/README.md) | — | [.en](https://github.com/gasyoun/prefaces_snp/blob/main/prefaces/snppref_all.en.md) | [.ru](https://github.com/gasyoun/prefaces_snp/blob/main/prefaces/snppref_all.ru.md) |
+| **[Lanman Reader (LAN)](lan)** | English | 19 | [README](https://github.com/gasyoun/prefaces_lan/blob/main/README.md) | — | [.en](https://github.com/gasyoun/prefaces_lan/blob/main/prefaces/lanpref_all.en.md) | [.ru](https://github.com/gasyoun/prefaces_lan/blob/main/prefaces/lanpref_all.ru.md) |
+| **[Apte Practical (AP90)](ap90)** | English | 6 | [PR branch](https://github.com/sanskrit-lexicon/AP90/tree/feat/prefaces-ocr/prefaces) | — | HTML-layer extract + RU | HTML-layer extract + RU |
+| **[Apte ES (AE)](ae)** | English | 7 | [README](https://github.com/gasyoun/prefaces_ae/blob/main/prefaces/README.md) | — | [.en](https://github.com/gasyoun/prefaces_ae/blob/main/prefaces/aepref_all.en.md) | [.ru](https://github.com/gasyoun/prefaces_ae/blob/main/prefaces/aepref_all.ru.md) |
+| **[Benfey (BEN)](ben)** | English | 3 | [PR branch](https://github.com/sanskrit-lexicon/BEN/tree/feat/prefaces-ocr/prefaces) | — | HTML-layer extract + RU | HTML-layer extract + RU |
+| **[Aufrecht ACC](acc)** | English/German | 1 | [PR branch](https://github.com/sanskrit-lexicon/ACC/tree/feat/prefaces-ocr/prefaces) | — | HTML-layer extract + RU | HTML-layer extract + RU |
 
 :::note Codes vs. repos
-**PW** → repo [`PWK`](https://github.com/sanskrit-lexicon/PWK). **MW / MWE** → [`MWS`](https://github.com/sanskrit-lexicon/MWS). **WIL / YAT** → [`Wil-YAT`](https://github.com/sanskrit-lexicon/Wil-YAT). **IEG** currently lives in staging repo [`prefaces_ieg`](https://github.com/sanskrit-lexicon/prefaces_ieg). See the [catalog](catalog) for the full code↔repo mapping.
+**PW** → [`PWK`](https://github.com/sanskrit-lexicon/PWK). **MW / MWE** → [`MWS`](https://github.com/sanskrit-lexicon/MWS). **WIL / YAT** → [`Wil-YAT`](https://github.com/sanskrit-lexicon/Wil-YAT). Staging front-matter repos under `gasyoun/prefaces_*` (GST, PGN, SNP, LAN, AE, IEG pattern). Some new dict editions land first on `feat/prefaces-ocr` branches pending merge. See the [catalog](catalog).
 :::
 
-## Queue (not yet on the public / production index)
-
-From the [csldoc front-matter index](https://sanskrit-lexicon.uni-koeln.de/scans/csldev/csldoc/build/dictionaries/index.html), these codes still lack a **production** `prefaces/` deliverable (as of 23-07-2026). The “23 full” list above is only what landed in a real repo; Claude Code left **additional local residue** (see [pipeline manual](preface-ocr-pipeline#claude-code--local-only--incomplete-worktree-residue)).
+## Queue (still incomplete as of 23-07-2026 evening)
 
 | Priority | Codes | Notes |
 |---|---|---|
-| **P0 — promote local-complete (do not re-OCR first)** | GST, PGN, SNP | Full pages + RU + consolidated sit under local `GitHub/prefaces_{gst,pgn,snp}/` only — **not on GitHub remote**; worktree-style staging, easy to lose |
-| **P1 — high-use general lexica** | AP90, AP, AE, BEN, BUR | Everyday / historical core; BUR is stub scripts only |
-| **P2 — classical / indigenous** | SKD, ABCH | SKD has partial EN excerpts in [skd.mdx](skd) from a docx path, not full scan OCR; SKD `prefaces/scans/` empty |
-| **P3 — partial / specialized** | LAN (2/19 pages local), ACC, LRV, PE, PUI | LAN has scans + two pages on disk; PE/PUI stubs |
+| **In flight** | BUR (28 scan pages, FR), PE (26 pages; title/preface first) | Scans downloaded; vision OCR agents running |
+| **Multi-scan cold** | SKD (~32), PUI (~37) | csldoc toctree with PNG scans — still to run |
+| **Missing / 404 pref index** | AP (use AP90 sibling?), ABCH, LRV | No usable `${code}pref.html` toctree found |
+| **Partial HTML notes** | ACC Part III duplicates Part II in source HTML | documented in ACC pref notes |
 
-**Deleted worktrees:** unfinished runs that were never copied into `prefaces_*` or a dict repo leave **no recoverable remote trace**. Operator manual: [Preface OCR pipeline](preface-ocr-pipeline).
+**Promoted this session (were local-only):** GST, PGN, SNP → `gasyoun/prefaces_*`. **Finished vision:** LAN 19/19. **HTML text-layer extract + RU:** AP90, AE, BEN, ACC.
+
+Operator manual: [Preface OCR pipeline](preface-ocr-pipeline).
 
 Scanned originals for every dictionary remain available through each entry's **csl-doc front-matter
 page** (linked from the [catalog](catalog)).

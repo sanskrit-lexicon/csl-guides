@@ -8,7 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- **Preface OCR pipeline operator manual** — [`docs/dictionaries/preface-ocr-pipeline.mdx`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-ocr-pipeline.mdx): engines A (vision / Claude Code) vs B (Tesseract audit / Grok–PD family), full skill phases including Phase 3.5, deliverable layout, Claude Code vs Grok attribution for the **23 production** CDSL editions, and a census of **local-only / incomplete** Claude Code residue (`prefaces_gst|pgn|snp` complete-on-disk but unpublished; `prefaces_lan` partial; BUR/PE/PUI/SKD stubs; deleted worktrees leave no remote trace). Linked from [ocr-prefaces](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/ocr-prefaces.mdx) and the Dictionaries sidebar.
+- **Preface OCR pipeline operator manual** — [`docs/dictionaries/preface-ocr-pipeline.mdx`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-ocr-pipeline.mdx): engines A/B, Phase 3.5, attribution, residue census. Linked from [ocr-prefaces](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/ocr-prefaces.mdx).
+- **OCR prefaces index expansion (23-07-2026 drain)** — added GST, PGN, SNP, LAN, AP90, AE, BEN, ACC to Available-now (promoted local residue + HTML-layer extracts + finished LAN vision); queue reduced to BUR/PE (in flight), SKD/PUI, and missing pref indexes (AP/ABCH/LRV).
 
 ### Changed
 - **`verify-atlas-viz` expectations are now derived from the data, not pinned.** The check asserted `{circles: 43, leaves: 41}` as literals, so adding a dictionary turned it red for a completely correct data change — and the message (`expected 43`) gave no hint that the right fix was to edit the checker rather than the site. Each count now comes from the same committed feed the page renders:

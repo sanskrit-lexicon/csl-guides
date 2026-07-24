@@ -48,6 +48,8 @@ const sidebars = {
         'dictionaries/entry-anatomy',
         'dictionaries/ocr-prefaces',
         'dictionaries/preface-ocr-pipeline',
+        'dictionaries/preface-front-matter-enrichment-use-cases',
+        'dictionaries/pref-body-naming-authority',
         {
           type: 'category',
           label: 'Featured dictionaries',

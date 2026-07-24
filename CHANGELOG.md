@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- **H1559 PWG/PW preface quality probe** — pre-registered stratified sample (15 pages), dual-pass Engine A vs B metrics, scan-locus table (n=42), DE↔EN sense check (n=12): [`scripts/out/H1559_pref_ocr_en_sample_error_rates_24.07.2026.md`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/H1559_pref_ocr_en_sample_error_rates_24.07.2026.md) + [`scripts/pref_ocr_en_quality_probe.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_ocr_en_quality_probe.py). Linked from [preface-ocr-pipeline](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-ocr-pipeline.mdx) and [ocr-prefaces](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/ocr-prefaces.mdx). Tracks [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123) · [PWG#210](https://github.com/sanskrit-lexicon/PWG/issues/210).
 - **Preface OCR pipeline operator manual** — [`docs/dictionaries/preface-ocr-pipeline.mdx`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-ocr-pipeline.mdx): engines A/B, Phase 3.5, attribution. Linked from [ocr-prefaces](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/ocr-prefaces.mdx).
 - **OCR prefaces index expansion** — GST, PGN, SNP, LAN, AP90, AE, BEN, ACC, BUR, PE (partial) on Available-now.
 

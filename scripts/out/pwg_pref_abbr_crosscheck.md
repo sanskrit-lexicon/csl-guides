@@ -5,12 +5,13 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 **Handoffs:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) · [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)  
 **Tool:** [`scripts/pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py)
 
-## Non-goals
+## Policy (H1569)
 
-- **No bulk overwrite** of `prefaces/*.md` from body matches.
-- **Scan remains truth** for expansions.
-- Body is a **prioritisation channel** only.
+- **Body `.txt` wins** for how a work is *named* (siglum orthography).
+- Pref legend keys are corrected **toward body** via gated apply + change log — not left as raw OCR when body attests a form.
+- **Expansions** (titles) remain scan-faithful; this census does not rewrite them.
 - Short keys (&lt; 3 non-space chars) flagged `short_key`.
+- Hold without body attestation: rare/MS works, long bib titles, ambiguous keys.
 
 ## Inputs
 
@@ -26,9 +27,9 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | Metric | n |
 |--------|--:|
 | Keys parsed | 395 |
-| Hits (non-short) | 257 (65%) |
-| `pref_only` | 133 |
-| `low_count` (≤3) | 52 |
+| Hits (non-short) | 278 (70%) |
+| `pref_only` | 112 |
+| `low_count` (≤3) | 56 |
 | Short keys | 5 |
 
 ## Top body hits (non-short)
@@ -55,31 +56,32 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 
 | key_norm | body_count | flag | samples |
 |---|---:|---|---|
-| `A Dict. Beng. and S. (Haughton,)` | 0 | pref_only | — |
 | `AV. Pariç.` | 0 | pref_only | — |
 | `Avad. Çat.` | 0 | pref_only | — |
 | `Burn. Lot. de la b. l.` | 0 | pref_only | — |
 | `DAÇABH.` | 0 | pref_only | — |
-| `Dhjânav. Up.` | 0 | pref_only | — |
 | `Divja-Av.` | 0 | pref_only | — |
 | `Drâhj.` | 0 | pref_only | — |
 | `Durgârkât.` | 0 | pref_only | — |
 | `Dâj. oder Dâjabh.` | 0 | pref_only | — |
 | `Gild. Scriptorum Arabum etc.` | 0 | pref_only | — |
 | `Gâb. Up.` | 0 | pref_only | — |
-| `Gîr. oder Gîtag.` | 0 | pref_only | — |
-| `Gṛhjasâṃgr.` | 0 | pref_only | — |
-| `Hindu Th. (Wilson,)` | 0 | pref_only | — |
 | `Horâç.` | 0 | pref_only | — |
-| `Institutt. (Lassen,)` | 0 | pref_only | — |
 | `Javaneçv.` | 0 | pref_only | — |
 | `Jaǵ. V.` | 0 | pref_only | — |
 | `Jogas.` | 0 | pref_only | — |
+| `Jâǵnikad. Paddh. zu Kâtj. Çr.` | 0 | pref_only | — |
+| `KRIJĀSAM.` | 0 | pref_only | — |
+| `Kaij.` | 0 | pref_only | — |
+| `Kaush. Br.` | 0 | pref_only | — |
+| `Kaush. Up.` | 0 | pref_only | — |
+| `Khând. Up.` | 0 | pref_only | — |
 
 ## `low_count` sample
 
 | key_norm | body_count | flag | samples |
 |---|---:|---|---|
+| `A Dict. Beng. and S.` | 3 | low_count | 7098,63181,66756 |
 | `Amarad.` | 3 | low_count | 1413,184025,328519 |
 | `Bhav. P.` | 3 | low_count | 975,133695,277977 |
 | `Gel. Anzz. d. k. b. Ak. d. Ww.` | 3 | low_count | 61550,83529,127675 |
@@ -94,7 +96,6 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | `Subh.` | 3 | low_count | 69070,124282,141294 |
 | `Vâr. P.` | 3 | low_count | 94527,100411,114021 |
 | `\Kir.` | 3 | low_count | 31268,182226,450358 |
-| `Amṛtav. Up.` | 2 | low_count | 36350,49821 |
 
 ## Reproduce
 

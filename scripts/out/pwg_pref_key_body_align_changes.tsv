@@ -1,0 +1,22 @@
+old	new	class	confidence	alt_body_count	replacements	files	notes
+SADDH. P. (mit nachfolgender einfacher Zahl)	SADDH. P.	spacing	high	171	1	pwgpref19.md:1	alt='SADDH. P.' body_n=171
+A Dict. Beng. and S. (Haughton,)	A Dict. Beng. and S.	spacing	med	3	3	pwgpref07.en.md:1; pwgpref07.md:1; pwgpref07.ru.md:1	alt='A Dict. Beng. and S.' body_n=3
+Zur L. u. G. d. W. (Roth,)	Zur L. u. G. d. W.	spacing	high	26	3	pwgpref11.en.md:1; pwgpref11.md:1; pwgpref11.ru.md:1	alt='Zur L. u. G. d. W.' body_n=26
+Lebensb. (Schiefner,)	Lebensb.	spacing	high	340	3	pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1	alt='Lebensb.' body_n=340
+Institutt. (Lassen,)	Institutt.	spacing	med	1	3	pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1	alt='Institutt.' body_n=1
+Mat. ind. (Ainslie,)	Mat. ind.	spacing	high	21	3	pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1	alt='Mat. ind.' body_n=21
+Hindu Th. (Wilson,)	Hindu Th.	spacing	high	16	3	pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1	alt='Hindu Th.' body_n=16
+Maç. oder Maç. S.	Maç.	spacing	high	289	1	pwgpref09.md:1	alt='Maç.' body_n=289
+Gîr. oder Gîtag.	Gîtag.	spacing	med	4	1	pwgpref08.md:1	alt='Gîtag.' body_n=4
+Pent. (Lassen,)	Pent.	spacing	med	4	3	pwgpref10.en.md:1; pwgpref10.md:1; pwgpref10.ru.md:1	alt='Pent.' body_n=4
+Parâçarapaddh.	Parâśarapaddh.	ortho	high	10	3	pwgpref16.en.md:1; pwgpref16.md:1; pwgpref16.ru.md:1	alt='Parâśarapaddh.' body_n=10
+Pathjâpathjav.	Pathyâpathyav.	ortho	med	1	3	pwgpref16.en.md:1; pwgpref16.md:1; pwgpref16.ru.md:1	alt='Pathyâpathyav.' body_n=1
+Varâh. L. Ǵât.	Varâh. L. Jât.	ortho	high	18	3	pwgpref11.en.md:1; pwgpref11.md:1; pwgpref11.ru.md:1	alt='Varâh. L. Jât.' body_n=18
+Lit. (Weber,)	Lit.	spacing	high	1491	3	pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1	alt='Lit.' body_n=1491
+Siddhântaçir.	Siddhântaśir.	ortho	high	73	3	pwgpref10.en.md:1; pwgpref10.md:1; pwgpref10.ru.md:1	alt='Siddhântaśir.' body_n=73
+Çârńg. Paddh.	Śârńg. Paddh.	ortho	high	36	3	pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1	alt='Śârńg. Paddh.' body_n=36
+Dhjânav. Up.	Dhyânav. Up.	ortho	med	2	3	pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1	alt='Dhyânav. Up.' body_n=2
+Juktikalpat.	Yuktikalpat.	ortho	med	4	3	pwgpref16.en.md:1; pwgpref16.md:1; pwgpref16.ru.md:1	alt='Yuktikalpat.' body_n=4
+Kâtj. Paddh.	Kâty. Paddh.	ortho	high	10	3	pwgpref16.en.md:1; pwgpref16.md:1; pwgpref16.ru.md:1	alt='Kâty. Paddh.' body_n=10
+Çvetâçv. Up.	Śvetâśv. Up.	ortho	high	605	3	pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1	alt='Śvetâśv. Up.' body_n=605
+Gṛhjasâṃgr.	Gṛhyasâṃgr.	ortho	high	158	3	pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1	alt='Gṛhyasâṃgr.' body_n=158

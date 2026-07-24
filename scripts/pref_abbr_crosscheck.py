@@ -2,11 +2,17 @@
 """pref_abbr_crosscheck.py — census pref OCR abbreviation keys vs body .txt.
 
 Cross-check CDSL front-matter abbreviation legends (pref Markdown OCR) against
-dictionary body text in csl-orig. Body is a *third channel* for prioritising
-review loci — it does **not** auto-overwrite pref OCR or modernise 19th-c.
-orthography. Full-diff of Vorwort/title pages is out of scope.
+dictionary body text in csl-orig.
 
-H1530 pilot · H1543 scale (--all / waves / path map / diacritic fold).
+**Naming authority (H1569):** csl-orig body `.txt` was already human-edited;
+pref OCR was not. Legend **keys** (sigla) should match how the body *names*
+the same works. This tool is the census/prioritisation channel; apply body-
+aligned key repairs via `pref_key_body_align.py` with a change-log meta doc.
+We do **not** modernise 19th-c. orthography for its own sake — we align names.
+Expansions (titles) stay scan-faithful unless a key rewrite requires a minimal
+key-side fix. Full-diff of Vorwort/title pages is out of scope.
+
+H1530 pilot · H1543 scale · H1560 typed residual · H1569 body naming authority.
 stdlib only.
 
 Examples (from csl-guides repo root)::
@@ -550,12 +556,13 @@ _Created: {today} · Last updated: {today}_
 **Handoffs:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) · [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)  
 **Tool:** [`scripts/pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py)
 
-## Non-goals
+## Policy (H1569)
 
-- **No bulk overwrite** of `prefaces/*.md` from body matches.
-- **Scan remains truth** for expansions.
-- Body is a **prioritisation channel** only.
+- **Body `.txt` wins** for how a work is *named* (siglum orthography).
+- Pref legend keys are corrected **toward body** via gated apply + change log — not left as raw OCR when body attests a form.
+- **Expansions** (titles) remain scan-faithful; this census does not rewrite them.
 - Short keys (&lt; {min_key_chars} non-space chars) flagged `short_key`.
+- Hold without body attestation: rare/MS works, long bib titles, ambiguous keys.
 
 ## Inputs
 
@@ -614,11 +621,11 @@ def write_rollup(path: Path, summaries: list[dict]) -> None:
         "**Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123) · "
         "**Tool:** [`pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py)",
         "",
-        "## Non-goals",
+        "## Policy (H1569)",
         "",
-        "- No bulk pref overwrite from body matches.",
-        "- Scan remains truth for expansions; body prioritises review loci.",
-        "- Residual `pref_only` can be OCR orthography, rare works, or true unused keys.",
+        "- Body `.txt` wins for siglum *naming*; pref keys align toward body (gated apply + change log).",
+        "- Expansions stay scan-faithful; residual `pref_only` is typed (ortho / ocr / spacing / rare / true_unused).",
+        "- Do not invent forms with zero body hits; do not delete rare/MS legend keys solely for body silence.",
         "",
         "## Rollup",
         "",

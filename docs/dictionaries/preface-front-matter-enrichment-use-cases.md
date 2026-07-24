@@ -91,7 +91,7 @@ Each use case names: **actor**, **pref input**, **join** (if any), **output**, *
 - **Actor:** DH analyst, paper author, abbreviations-comparison maintainer.
 - **Pref input:** per-dict legend tables (PWG, PW, MW, AP90, …).
 - **Join:** same underlying work under different sigla and orthographies.
-- **Output:** crosswalk “work_id → {PWG: …, PW: …, MW: …}”; comparison tables.
+- **Output:** crosswalk `work_id → {PWG: …, PW: …, MW: …}`; comparison tables.
 - **Home:** [abbreviations comparison](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/abbreviations-comparison); kosha / SHARED_CODE-style crosswalks.
 
 ### UC-3 — Structured legend store (machine-readable)

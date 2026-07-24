@@ -98,6 +98,25 @@ Upstream rights for the non-Cologne feeds are documented per source in
   resolution distinction.
 - **Update policy.** Re-run when a dictionary repo gains or fixes a legend.
 
+### pref-legends.json — preface legend store (PWG/PW pilot)
+
+- **What / why.** Site feed for UC-1 abbreviations UX: pref OCR key → expansion joined to
+  body `<ls>` citation counts and typed `pref_only` residual class. Powers PWG/PW sections
+  in the [Abbreviations](/dictionaries/abbreviations-comparison) component (sorted by body
+  frequency). Other dictionaries still use `abbreviations.json`.
+- **Provenance.**
+  [build-pref-legends.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-pref-legends.mjs)
+  vendors
+  [`scripts/out/pwg_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_legend.json)
+  +
+  [`pw_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_legend.json)
+  (H1591 emit). Schema:
+  [legend.schema.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/legend.schema.json).
+- **License / rights.** Public-domain dictionary front matter + derived counts.
+- **Known limitations.** Pilot only (PWG, PW). `work_id` values are provisional
+  (`review_required`). Expansions stay scan-faithful; keys are body-aligned where applied.
+- **Update policy.** After `pref_legend_emit.py`, run `npm run build:pref-legends`.
+
 ### atlas-extract.json — vendored csl-atlas OBS extract
 
 - **What / why.** Per-dictionary novelty (unique-headword share) and `<ls>` citation

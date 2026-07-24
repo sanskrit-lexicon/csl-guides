@@ -1,0 +1,16 @@
+label	dict	stratum	a_file	scan	a_chars	b_chars	a_tok	b_tok	jaccard	recall_a
+pwg-title-v1	PWG	title	pwgpref01.md	pwg1-0000--01.png	160	143	21	20	0.464	0.619
+pwg-title-v2	PWG	title	pwgpref12.md	pwg2-0000--01.png	155	156	21	21	0.4	0.571
+pwg-title-v7	PWG	title	pwgpref26.md	pwg7-0000--01.png	206	202	28	29	0.5	0.679
+pwg-vorwort-v1-p1	PWG	vorwort	pwgpref02.md	pwg1-0000--02.png	3438	3787	331	419	0.693	0.927
+pwg-vorwort-v2	PWG	vorwort	pwgpref15.md	pwg2-0000--04.png	1042	1254	140	190	0.642	0.921
+pwg-vorwort-v7-final	PWG	vorwort	pwgpref27.md	pwg7-0000--02.png	3081	3474	343	413	0.699	0.907
+pwg-abbr-v1-p1	PWG	abbreviations	pwgpref07.md	pwg1-0000--06.png	3828	4112	377	466	0.4	0.639
+pwg-abbr-v1-p4	PWG	abbreviations	pwgpref10.md	pwg1-0000--10.png	5608	6057	519	629	0.338	0.559
+pwg-abbr-v2-add	PWG	abbreviations	pwgpref16.md	pwg2-0000--05.png	3422	3540	279	344	0.309	0.527
+pwg-addenda-v1	PWG	addenda	pwgpref13.md	pwg2-0000--02.png	3197	3297	355	408	0.355	0.563
+pwg-addenda-v2	PWG	addenda	pwgpref14.md	pwg2-0000--03.png	2314	3134	269	407	0.357	0.662
+pw-title-v1	PW	title	pwpref01.md	pw1-000-1.png	303	383	48	70	0.494	0.812
+pw-vorwort	PW	vorwort	pwpref02.md	pw1-000-2.png	3326	3726	354	445	0.601	0.847
+pw-abbr-p1	PW	abbreviations	pwpref03.md	pw1-000-3.png	5819	6235	474	679	0.246	0.481
+pw-abbr-p3	PW	abbreviations	pwpref05.md	pw1-000-5.png	4851	5135	423	572	0.208	0.404

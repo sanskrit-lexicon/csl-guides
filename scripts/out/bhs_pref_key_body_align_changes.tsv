@@ -1,15 +1,1 @@
-old	new	class	confidence	alt_body_count	replacements	files	notes
-Turner (R.L.), Nep. Dict.	Turner, Nep. Dict.	spacing	high	8	2	bhspref11.md:1; bhspref11.ru.md:1	alt='Turner, Nep. Dict.' body_n=8
-Meyer, Kauṭ. (Arth.)	Meyer, Kauṭ.	spacing	med	4	2	bhspref10.md:1; bhspref10.ru.md:1	alt='Meyer, Kauṭ.' body_n=4
-B. in Tr. (Warren)	B. in Tr.	spacing	med	1	2	bhspref08.md:1; bhspref08.ru.md:1	alt='B. in Tr.' body_n=1
-Uhlenbeck (C.C.)	Uhlenbeck	spacing	med	3	2	bhspref11.md:1; bhspref11.ru.md:1	alt='Uhlenbeck' body_n=3
-(Jä.,) Jäschke	Jäschke	spacing	high	14	2	bhspref09.md:1; bhspref09.ru.md:1	alt='Jäschke' body_n=14
-Kauṭ. (Arth.)	Kauṭ.	spacing	high	26	2	bhspref09.md:1; bhspref09.ru.md:1	alt='Kauṭ.' body_n=26
-Geiger (W.)	Geiger	spacing	high	37	2	bhspref09.md:1; bhspref09.ru.md:1	alt='Geiger' body_n=37
-Rājat(ar).	Rājat.	spacing	high	15	2	bhspref10.md:1; bhspref10.ru.md:1	alt='Rājat.' body_n=15
-Tatp(ur).	Tatp.	spacing	high	8	2	bhspref11.md:1; bhspref11.ru.md:1	alt='Tatp.' body_n=8
-der(iv).	der.	spacing	high	5	2	bhspref09.md:1; bhspref09.ru.md:1	alt='der.' body_n=5
-Pug(g).	Pug.	spacing	med	1	2	bhspref10.md:1; bhspref10.ru.md:1	alt='Pug.' body_n=1
-s.v(v).	s.v.	spacing	high	1936	2	bhspref11.md:1; bhspref11.ru.md:1	alt='s.v.' body_n=1936
-var(r).	var.	spacing	high	149	2	bhspref11.md:1; bhspref11.ru.md:1	alt='var.' body_n=149
-ms(s).	ms.	spacing	high	807	2	bhspref10.md:1; bhspref10.ru.md:1	alt='ms.' body_n=807
+old	new	class	alt_body_count	replacements	files	notes	source_key

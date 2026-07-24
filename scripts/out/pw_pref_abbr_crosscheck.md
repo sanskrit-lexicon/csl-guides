@@ -27,8 +27,8 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | Metric | n |
 |--------|--:|
 | Keys parsed | 302 |
-| Hits (non-short) | 261 (86%) |
-| `pref_only` | 37 |
+| Hits (non-short) | 272 (90%) |
+| `pref_only` | 26 |
 | `low_count` (≤3) | 36 |
 | Short keys | 4 |
 
@@ -58,9 +58,7 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 |---|---:|---|---|
 | `AV. Prâjaçḱ.` | 0 | pref_only | — |
 | `Anukram. zu RV.` | 0 | pref_only | — |
-| `Bhar. Nâṭjaç.` | 0 | pref_only | — |
 | `Bhavishjott. P.` | 0 | pref_only | — |
-| `Bhoǵa-Pr.` | 0 | pref_only | — |
 | `Bhoǵa-Ḱar.` | 0 | pref_only | — |
 | `Bhâshâp.` | 0 | pref_only | — |
 | `Harshaḱ.` | 0 | pref_only | — |
@@ -68,14 +66,16 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | `Kaush. Âr.` | 0 | pref_only | — |
 | `Kshitîç.` | 0 | pref_only | — |
 | `Kshurikop.` | 0 | pref_only | — |
-| `Kâtj. Çr.` | 0 | pref_only | — |
 | `Kṛshis.` | 0 | pref_only | — |
-| `Mahâvîraḱ.` | 0 | pref_only | — |
 | `Mayr, Ind. Erb.` | 0 | pref_only | — |
 | `Mâṇḍ. Çikshâ` | 0 | pref_only | — |
-| `Mṛḱḱh.` | 0 | pref_only | — |
 | `Naish.` | 0 | pref_only | — |
 | `Nîlak. mit einer Zahl` | 0 | pref_only | — |
+| `Pañḱat. ohne nähere Angabe` | 0 | pref_only | — |
+| `Prâjaçḱittat.` | 0 | pref_only | — |
+| `Pushpas.` | 0 | pref_only | — |
+| `Shaḍv. Br.` | 0 | pref_only | — |
+| `Subhâshitar.` | 0 | pref_only | — |
 
 ## `low_count` sample
 

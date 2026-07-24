@@ -1,0 +1,212 @@
+key_raw	key_norm	in_pref	body_count	samples	flag	short_key	sources	expansion
+Ait Br.	Ait Br.	1	0		pref_only	0	ap90pref05.md:15	Aitareya Brâhmaṇa (Bombay).
+Chand M.	Chand M.	1	0		pref_only	0	ap90pref05.md:77	Chhandomanjarî.
+Chaṇḍ K.	Chaṇḍ K.	1	0		pref_only	0	ap90pref05.md:75	Chaṇḍakausika.
+Etym., Ety.	Etym., Ety.	1	0		pref_only	0	ap90pref06.md:55	Etymology.
+Isop.	Isop.	1	0		pref_only	0	ap90pref05.md:131	Isopanishad.
+Vṛind.	Vṛind.	1	0		pref_only	0	ap90pref05.md:387	S Vṛindâvanasataka.
+Yv., Yaj.	Yv., Yaj.	1	0		pref_only	0	ap90pref05.md:395	Yajurveda.
+Avyayî.	Avyayî.	1	3	1550,73346,170544	low_count	0	ap90pref06.md:31	Avyayîbhâva.
+Muṇḍ.	Muṇḍ.	1	3	7631,15031,26729	low_count	0	ap90pref05.md:213	Muṇḍakopanishad.
+Nîti.	Nîti.	1	3	22270,38562,46281	low_count	0	ap90pref05.md:227	Nîtisâra.
+Sar.	Sar.	1	3	9459,39043,214103	low_count	0	ap90pref05.md:275;ap90pref05.md:279	K. Sarasvatîkaṇṭhâbharaṇa.
+Subst.	Subst.	1	3	22293,24441,62288	low_count	0	ap90pref06.md:137	Substantive.
+Ujjval.	Ujjval.	1	3	43968,46154,57310	low_count	0	ap90pref05.md:341	Ujjvaladatta.
+Baudhây.	Baudhây.	1	2	12246,204663	low_count	0	ap90pref05.md:37	Baudhâyana.
+Kaus.	Kaus.	1	2	22310,71454	low_count	0	ap90pref05.md:147;ap90pref05.md:149;ap90pref05.md:151	Kausikasūtra.
+Nîtipr.	Nîtipr.	1	2	44580,88617	low_count	0	ap90pref05.md:229	Nîtipradîpa.
+Vid.	Vid.	1	2	123856,187487	low_count	0	ap90pref05.md:373	Vidagdhamukhamaṇḍana.
+Bhâr.	Bhâr.	1	1	12369	low_count	0	ap90pref05.md:47	Ch. Bhâratachampū (Bombay).
+Bhâshâ P.	Bhâshâ P.	1	1	154308	low_count	0	ap90pref05.md:49	Bhàshàparichchheda.
+Dhan.	Dhan.	1	1	71657	low_count	0	ap90pref05.md:93	V Dhananjayavijaya.
+Dhūrt.	Dhūrt.	1	1	41689	low_count	0	ap90pref05.md:97	Dhūrtasamâgama.
+Golâdh.	Golâdh.	1	1	51705	low_count	0	ap90pref05.md:117	Golâdhyàya.
+Hch.	Hch.	1	1	187996	low_count	0	ap90pref05.md:125	Harshacharita.
+Mâdh.	Mâdh.	1	1	31988	low_count	0	ap90pref05.md:179	N. Mâdhavanidâna.
+Siva P.	Siva P.	1	1	24956	low_count	0	ap90pref05.md:299	Siva Purâṇa.
+Vedànta P.	Vedànta P.	1	1	23764	low_count	0	ap90pref05.md:369	Vedântaparibhâshâ.
+Vâgb.	Vâgb.	1	1	76712	low_count	0	ap90pref05.md:351	Vâgbhaṭa.
+Vâk.	Vâk.	1	1	41404	low_count	0	ap90pref05.md:359	P. Vâkyapadîya.
+A.	A.	1	21032	12,99,123	short_key	1	ap90pref05.md:19;ap90pref05.md:25;ap90pref06.md:25	L. Anandalaharî.
+a.	a.	1	21032	12,99,123	short_key	1	ap90pref06.md:13	Adjective.
+e.	e.	1	18923	56,104,109	short_key	1	ap90pref06.md:51	g. Exempli gratia, for example.
+S.	S.	1	17611	59,69,114	short_key	1	ap90pref05.md:265;ap90pref05.md:285;ap90pref05.md:287;ap90pref05.md:305;ap90pref05.md:309	Sakuntalâ (Bombay).
+s.	s.	1	17611	59,69,114	short_key	1	ap90pref06.md:139	v. sub voce, see under the word.
+N.	N.	1	17460	4,11,66	short_key	1	ap90pref05.md:217;ap90pref06.md:101	Naishadhacharita.
+n.	n.	1	17460	4,11,66	short_key	1	ap90pref06.md:99	Neuter.
+R.	R.	1	16621	13,92,117	short_key	1	ap90pref05.md:247;ap90pref05.md:259	Raghuvamsa (Bombay).
+D.	D.	1	14200	12,96,194	short_key	1	ap90pref05.md:91;ap90pref05.md:101	Bhàg Devîbhâgavata.
+P.	P.	1	12689	60,62,133	short_key	1	ap90pref05.md:231;ap90pref05.md:235;ap90pref05.md:237;ap90pref06.md:111	Pâṇini's Ashṭâdhyâyî.
+p.	p.	1	12689	60,62,133	short_key	1	ap90pref06.md:123	p. Past passive participle.
+T.	T.	1	12473	3,40,63	short_key	1	ap90pref05.md:329	S. Tarkasamgraha (Bombay).
+G.	G.	1	8694	13,116,172	short_key	1	ap90pref05.md:113;ap90pref05.md:115	L. Gangâlaharî.
+U.	U.	1	7619	107,192,239	short_key	1	ap90pref05.md:333;ap90pref06.md:143	Uttararàmacharita.
+Y.	Y.	1	7274	118,121,147	short_key	1	ap90pref05.md:391	Yâjñavalkya (Mr. Mandlik's Edition).
+i.	i.	1	7031	56,60,62	short_key	1	ap90pref06.md:77	e. id est, that is.
+L.	L.	1	6687	151,263,337	short_key	1	ap90pref06.md:85	Latin.
+K.	K.	1	6627	61,118,139	short_key	1	ap90pref05.md:135;ap90pref05.md:163	Kâdambarî (Bombay).
+f.	f.	1	6203	73,124,143	short_key	1	ap90pref06.md:57	or fem. Feminine.
+M.	M.	1	5967	143,175,206	short_key	1	ap90pref05.md:177	Mâlavikâgnimitra (Bombay).
+m.	m.	1	5967	143,175,206	short_key	1	ap90pref06.md:91	or mas. Masculine.
+H.	H.	1	4880	32,263,349	short_key	1	ap90pref05.md:119;ap90pref05.md:127	Hitopadesa (Nirṇaya Ságara Edition).
+V.	V.	1	4415	4,129,135	short_key	1	ap90pref05.md:349;ap90pref05.md:379;ap90pref05.md:383;ap90pref05.md:385;ap90pref05.md:389	Vikramorvasîyam (Bombay).
+v.	v.	1	4415	4,129,135	short_key	1	ap90pref06.md:149	l. Various reading.
+B.	B.	1	1251	103,136,268	short_key	1	ap90pref05.md:57;ap90pref05.md:59	R. Bálarâmáyaṇa (Benares).
+q.	q.	1	988	129,169,1161	short_key	1	ap90pref06.md:131	v. quod vide, which see.
+J.	J.	1	48	5823,22293,24441	short_key	1	ap90pref05.md:133	N. V. Jaiminîyanyâyamâlâvistara (Goldstücker's Edition).
+Sv.	Sv.	1	4712	8,11,12		0	ap90pref05.md:321	Sâmaveda.
+Ms.	Ms.	1	4215	114,120,120		0	ap90pref05.md:207	Manusmṛiti.
+comp.	comp.	1	4202	133,199,264		0	ap90pref06.md:41	Compound.
+&c.	&c.	1	3139	23,29,45		0	ap90pref06.md:157	Et cætera.
+Ku.	Ku.	1	2995	192,239,383		0	ap90pref05.md:167	Kumârasambhava (Bombay).
+Si.	Si.	1	2750	246,325,753		0	ap90pref05.md:289	Sisupâlavadha.
+Ved.	Ved.	1	2120	96,197,221		0	ap90pref06.md:147	Vedic.
+Pt.	Pt.	1	1912	592,1123,1124		0	ap90pref05.md:245	Panchatantra (Bombay).
+Me.	Me.	1	1906	242,741,744		0	ap90pref05.md:195	Meghadūta (Bombay).
+ind.	ind.	1	1751	12,584,904		0	ap90pref06.md:79	Indeclinable.
+Màl.	Màl.	1	1725	605,621,1757		0	ap90pref05.md:183	Mâlatîmâdhava (Bombay).
+Ki.	Ki.	1	1653	223,324,818		0	ap90pref05.md:159	Kirâtârjunîya.
+Vîr.	Vîr.	1	1605	40,48,219		0	ap90pref05.md:377	M. Vîramitrodaya.
+Ve.	Ve.	1	1600	133,160,209		0	ap90pref05.md:367	Veṇîsamhâra.
+Bk.	Bk.	1	1498	295,295,295		0	ap90pref05.md:55	Bhaṭṭikâvya.
+Bg.	Bg.	1	1193	116,220,505		0	ap90pref05.md:39	Bhagavadgîtâ (Bombay).
+Dṛi.	Dṛi.	1	1172	357,1214,1296		0	ap90pref05.md:103	S. Dṛishṭântasataka.
+Bh.	Bh.	1	1150	691,772,1052		0	ap90pref05.md:41	Bhartṛihari's three Satakas (the figures 1., 2., 3. after Bh. denoting Sṛingâraº, Nîtiº, and Vâirâgyaº).
+Bri.	Bri.	1	1125	193,1368,1396		0	ap90pref05.md:63;ap90pref05.md:69	S. Varâhamihira's Bṛihatsamhitâ.
+Bṛi.	Bṛi.	1	1125	193,1368,1396		0	ap90pref05.md:61;ap90pref05.md:65;ap90pref05.md:71	S. Varâhamihira's Bṛihatsamhitâ.
+cf.	cf.	1	1053	263,327,348		0	ap90pref06.md:37	Compare.
+Uṇ.	Uṇ.	1	1012	316,322,1414		0	ap90pref05.md:343	Uṇâdisūtras.
+Caus.	Caus.	1	871	296,1090,5555		0	ap90pref06.md:35	Causal.
+Rs.	Rs.	1	793	269,479,2042		0	ap90pref05.md:261	Ritusamhâra (Bombay).
+Mu.	Mu.	1	756	717,1290,1778		0	ap90pref05.md:209	Mudrârâkshasa (Bombay),
+Bv.	Bv.	1	707	4682,5547,5549		0	ap90pref05.md:73	Bhâminîvilâsa (Bombay).
+Dk.	Dk.	1	639	139,286,562		0	ap90pref05.md:99	Dasakumâracharita (Bombay).
+Mk.	Mk.	1	619	698,2106,2141		0	ap90pref05.md:203	Mṛichchhakaṭika
+Ch.	Ch.	1	582	1086,7154,7532		0	ap90pref05.md:85;ap90pref05.md:87	P. Chaurapanchâsikâ.
+Râm.	Râm.	1	542	498,2067,2732		0	ap90pref05.md:253	Râmâyaṇa (Bombay).
+Mv.	Mv.	1	534	594,595,602		0	ap90pref05.md:215	Mahâvîracharita (Borooah's Edition),
+Gît.	Gît.	1	523	5556,5557,11274		0	ap90pref05.md:111	Gîtagovinda.
+Sk.	Sk.	1	517	61,466,1283		0	ap90pref05.md:301	Siddhânta-Kaumudî (Bombay).
+Priy.	Priy.	1	516	593,1179,1745		0	ap90pref05.md:243	D. Priyadarsikâ (Bombay).
+Mb.	Mb.	1	474	103,474,1896		0	ap90pref05.md:191	Mahâbhârata (Bombay).
+Den.	Den.	1	395	1925,3343,8055		0	ap90pref06.md:45	Denominative.
+pl.	pl.	1	395	418,1296,1429		0	ap90pref06.md:119	Plural.
+fig.	fig.	1	393	732,1669,1885		0	ap90pref06.md:59	Figuentative.
+sing.	sing.	1	388	8174,8458,8481		0	ap90pref06.md:135	Singular.
+Bîj.	Bîj.	1	334	944,1667,1676		0	ap90pref05.md:53	Bîjagaṇita.
+Upan.	Upan.	1	331	609,1070,2805		0	ap90pref05.md:347	Upanishad.
+opp.	opp.	1	321	2929,3128,3728		0	ap90pref06.md:109	Opposite of.
+Up.	Up.	1	319	1109,1328,1437		0	ap90pref05.md:345	Upanishad.
+Tv.	Tv.	1	308	4,341,380		0	ap90pref05.md:331	Târânâtha's Vàchaspatyam.
+Ud.	Ud.	1	301	5931,5965,7936		0	ap90pref05.md:337;ap90pref05.md:339	D. Uddhavadūta.
+Amaru.	Amaru.	1	284	29804,32615,32616		0	ap90pref05.md:21	Amarusataka.
+Rv.	Rv.	1	273	291,302,498		0	ap90pref05.md:263	Rigveda (Max Müller's Edition).
+Ak.	Ak.	1	266	298,2108,3307		0	ap90pref05.md:17	Amarakosha. („).
+acc.	acc.	1	239	4696,5863,6390		0	ap90pref06.md:17	Accusative.
+Vall.	Vall.	1	209	2704,2704,2705		0	ap90pref05.md:361	Subh. Vallabhadeva's Subhâshitâvali (Bombaay)
+loc.	loc.	1	209	3215,5862,10212		0	ap90pref06.md:89	Locative.
+Subh.	Subh.	1	207	5808,13967,18879		0	ap90pref05.md:311;ap90pref05.md:315	Subháshitaratnâkara (Bombay).
+Ary.	Ary.	1	204	2380,10314,12353		0	ap90pref05.md:27	S. Aryavidyâsudhàkara (Bombay).
+Ratn.	Ratn.	1	197	683,712,3103		0	ap90pref05.md:257	Ratnâvalî (Bombay).
+Br.	Br.	1	194	901,1328,1478		0	ap90pref05.md:67	Sùt Brahmasūtras.
+pot.	pot.	1	192	6589,7075,10686		0	ap90pref06.md:121	p. Potential passive participle.
+pass.	pass.	1	184	7432,7862,10630		0	ap90pref06.md:113	Passive.
+Ks.	Ks.	1	171	610,886,1023		0	ap90pref05.md:165	Kathâsaritsàgara.
+Med.	Med.	1	164	442,11160,13603		0	ap90pref05.md:197	Medinîkosha.
+gram.	gram.	1	160	498,3739,4490		0	ap90pref06.md:73	Grammar.
+gen.	gen.	1	152	3128,6960,7432		0	ap90pref06.md:65	Genitive.
+Sid.	Sid.	1	149	5865,8883,12223		0	ap90pref05.md:291;ap90pref05.md:293;ap90pref05.md:295	Mukt. Siddhântamuktâvali.
+Dáy.	Dáy.	1	146	164,9539,9551		0	ap90pref05.md:89	B., Dày.  Dáyabhàga.
+desid.	desid.	1	146	5865,8883,12223		0	ap90pref06.md:47	Desiderative.
+Mar.	Mar.	1	145	230,1630,1689		0	ap90pref06.md:93	Marâṭhî.
+Malli.	Malli.	1	135	3113,3731,3795		0	ap90pref05.md:185	Mallinátha.
+abl.	abl.	1	129	6351,6827,7434		0	ap90pref06.md:15	Ablative.
+phil.	phil.	1	125	8183,8185,11800		0	ap90pref06.md:117	Philosophy.
+lit.	lit.	1	109	1251,1885,1935		0	ap90pref06.md:87	Literal.
+instr.	instr.	1	108	5801,10259,11909		0	ap90pref06.md:83	Instrumental.
+dat.	dat.	1	106	16459,24718,29700		0	ap90pref06.md:43	Dative.
+Rhet.	Rhet.	1	102	5663,6229,11746		0	ap90pref06.md:133	Rhetoric.
+adv.	adv.	1	95	135,616,645		0	ap90pref06.md:19	Adverb.
+Mit.	Mit.	1	93	6047,6732,10534		0	ap90pref05.md:199	Mitâksharâ (Bombay).
+Av.	Av.	1	92	17967,24330,26293		0	ap90pref05.md:35	Atharva-veda.
+Ras.	Ras.	1	86	1717,3829,4265		0	ap90pref05.md:255	M. Rasamanjarî.
+Susr.	Susr.	1	84	7037,7064,7683		0	ap90pref05.md:319	Susruta.
+ibid.	ibid.	1	84	519,4320,5606		0	ap90pref06.md:75	The same.
+Nir.	Nir.	1	77	852,3705,4216		0	ap90pref05.md:225	Nirukta.
+Nom.	Nom.	1	75	20794,22309,22590		0	ap90pref06.md:103	Nominative.
+Mahàn.	Mahàn.	1	73	1852,10210,11764		0	ap90pref05.md:181	Mahânâṭaka.
+Sat.	Sat.	1	69	1735,14958,15541		0	ap90pref05.md:281	Br. Satapatha Brâhmaṇa.
+Kull.	Kull.	1	68	883,884,898		0	ap90pref05.md:169	Kullūka.
+astr.	astr.	1	68	1146,2954,3014		0	ap90pref06.md:27	Astronomy.
+Sàn.	Sàn.	1	65	10162,20411,20412		0	ap90pref05.md:269	K. Sânkhyakârikâ.
+Sán.	Sán.	1	65	10162,20411,20412		0	ap90pref05.md:273	S. Sànkhyasūtra.
+Math.	Math.	1	63	14611,20902,21269		0	ap90pref06.md:95	Mathematics.
+Prasna.	Prasna.	1	62	6079,7156,7156		0	ap90pref05.md:241	Up. Prasnopanishad.
+Vás.	Vás.	1	62	4121,4134,8618		0	ap90pref05.md:363	Vásavadattâ (Hall's Edition).
+Mârk.	Mârk.	1	59	3571,17155,31306		0	ap90pref05.md:189	P. Mârkaṇḍeya Purâṇa.
+Châṇ.	Châṇ.	1	58	1109,1437,5775		0	ap90pref05.md:81	Châṇakyasataka.
+Gr.	Gr.	1	56	13,264,327		0	ap90pref06.md:71	Greek.
+du.	du.	1	56	47310,47676,50514		0	ap90pref06.md:49	Dual.
+Bhâg.	Bhâg.	1	52	1125,4808,10988		0	ap90pref05.md:45	Bhágavata (Bombay).
+Mbh.	Mbh.	1	52	4645,6929,15393		0	ap90pref05.md:193	Mahâbhâshya (Bombay).
+Sây.	Sây.	1	49	18228,19461,19568		0	ap90pref05.md:283	Sâyaṇa.
+inf.	inf.	1	48	34026,39392,39398		0	ap90pref06.md:81	Infinitive.
+Bhav.	Bhav.	1	47	1993,13489,21791		0	ap90pref05.md:43	P. Bhavishyottara Purâṇa.
+Chandr.	Chandr.	1	43	39832,39833,64201		0	ap90pref05.md:79	Chandrâloka.
+Várt.	Várt.	1	42	63,1723,2792		0	ap90pref06.md:145	Vârtika.
+Hem.	Hem.	1	40	1044,1081,2905		0	ap90pref05.md:129	Hemachandra.
+Apast.	Apast.	1	39	1913,6280,7569		0	ap90pref05.md:23	Apastamba.
+Vb.	Vb.	1	39	3587,3856,15735		0	ap90pref05.md:365	Viddhasâlabhanjikâ (Bombay).
+Arith.	Arith.	1	31	2596,34240,65343		0	ap90pref06.md:23	Arithmetic.
+Tarka K.	Tarka K.	1	31	9980,22407,38530		0	ap90pref05.md:325	Tarkakaumudî (Bombay).
+fr.	fr.	1	31	2217,5450,5530		0	ap90pref06.md:61	From.
+Mâṇḍ.	Mâṇḍ.	1	29	13855,15934,15952		0	ap90pref05.md:187	Mâṇḍūkyopanishad.
+pers.	pers.	1	29	4438,8824,20348		0	ap90pref06.md:115	Persian.
+Nala.	Nala.	1	28	20952,21554,33153		0	ap90pref05.md:221	Nalopâkhyâna (Bombay).
+pron.	pron.	1	25	9044,35093,50209		0	ap90pref06.md:129	a. Pronominal adjective.
+Sabdak.	Sabdak.	1	22	20783,20947,25645		0	ap90pref05.md:267	Sabdakalpadruma.
+Ghaṭ.	Ghaṭ.	1	21	42393,67581,88305		0	ap90pref05.md:109	Ghaṭakarparakàvya.
+Hariv.	Hariv.	1	21	10410,21492,24112		0	ap90pref05.md:123	Harivamsa.
+Asval.	Asval.	1	19	1294,5318,15730		0	ap90pref05.md:33	Asvaláyana's Sùtras.
+Prab.	Prab.	1	19	268,30262,40513		0	ap90pref05.md:239	Prabodhachandrodaya (Bombay).
+Aryâ.	Aryâ.	1	18	14124,14129,17490		0	ap90pref05.md:29	S. Aryâsaptasatî (published in the Kávyamâlâ).
+Nâg.	Nâg.	1	18	25522,57454,61093		0	ap90pref05.md:219	Nàgânanda.
+Sarva.	Sarva.	1	18	7580,20428,27127		0	ap90pref05.md:277	S. Sarvadarsanasamgraha.
+Com.	Com.	1	17	17131,20512,20785		0	ap90pref06.md:39	Commentary.
+Germ.	Germ.	1	17	1130,1131,1553		0	ap90pref06.md:67	German.
+Medic.	Medic.	1	17	27968,52149,53346		0	ap90pref06.md:97	Medicine.
+Râj.	Râj.	1	16	41695,41695,41714		0	ap90pref05.md:249;ap90pref05.md:251	P. Râjaprasasti.
+num.	num.	1	16	47796,82496,97935		0	ap90pref06.md:105	a. Numeral adjective.
+Bah.	Bah.	1	15	6392,20337,20338		0	ap90pref06.md:33	Bahuvrîhi.
+Moha M.	Moha M.	1	15	13133,106148,112941		0	ap90pref05.md:205	Mohamudgara.
+Pres.	Pres.	1	14	11437,22881,34372		0	ap90pref06.md:125	Present tense.
+Vop.	Vop.	1	14	52406,52414,53127		0	ap90pref05.md:381	or Bop. Vopadeva.
+pres.	pres.	1	14	11437,22881,34372		0	ap90pref06.md:127	p. Present participle.
+Nalod.	Nalod.	1	13	42280,42281,209789		0	ap90pref05.md:223	Nalodaya.
+Voc.	Voc.	1	13	20984,35649,40383		0	ap90pref06.md:151	Vocative.
+Asvad.	Asvad.	1	12	78732,79370,111601		0	ap90pref05.md:31	Asvadhâṭî (published in the Subhâshitaratnákara).
+Goth.	Goth.	1	12	263,349,8886		0	ap90pref06.md:69	Gothic.
+Skanda.	Skanda.	1	12	91886,92566,97054		0	ap90pref05.md:303	P. Skanda Purâṇa.
+Trik.	Trik.	1	11	20943,21155,29805		0	ap90pref05.md:327	Trikâṇḍasesha.
+Vet.	Vet.	1	11	20383,20810,35329		0	ap90pref05.md:371	Vetálapancha vimsati.
+alg.	alg.	1	11	46035,81158,83189		0	ap90pref06.md:21	Algebra.
+Kàṭh.	Kàṭh.	1	10	10211,28597,38398		0	ap90pref05.md:145	Kàtyáyana.
+Kîr.	Kîr.	1	10	159994,182842,190202		0	ap90pref05.md:161	K. Kîrtikaumudî (Bombay).
+Srut.	Srut.	1	10	55033,55034,60011		0	ap90pref05.md:307	Srutabodha.
+Tat.	Tat.	1	10	6392,13491,20340		0	ap90pref06.md:141	Tatpurusha.
+Eng.	Eng.	1	9	13,8885,23184		0	ap90pref06.md:53	English.
+Lîlâ.	Lîlâ.	1	9	123,156,3499		0	ap90pref05.md:175	Lîlâvatî.
+Vais.	Vais.	1	9	19289,19866,35207		0	ap90pref05.md:355	Sūt. Vaiseshikasūtras.
+Kuval.	Kuval.	1	8	6239,38492,48645		0	ap90pref05.md:173	Kuvalayânanda.
+astrol.	astrol.	1	8	88470,122912,134270		0	ap90pref06.md:29	Astrology.
+Mîm.	Mîm.	1	7	28133,68416,68524		0	ap90pref05.md:201	Mîmâmsâ.
+Bhàva P.	Bhàva P.	1	6	35394,58317,62688		0	ap90pref05.md:51	Bhàvaprakâsa.
+Halày.	Halày.	1	6	28584,32278,36959		0	ap90pref05.md:121	Haláyudha.
+Svet.	Svet.	1	6	20383,20810,35329		0	ap90pref05.md:323	Up. Svetâsvataropanishad.
+freq.	freq.	1	6	5866,43495,45884		0	ap90pref06.md:63	Frequentative.
+Chât.	Chât.	1	5	41563,43415,61747		0	ap90pref05.md:83	Chàtakâshṭaka (in two parts.)
+Gaut.	Gaut.	1	5	25675,27582,38652		0	ap90pref05.md:105;ap90pref05.md:107	S.  Gautamasūtra.
+Mugdha.	Mugdha.	1	5	7951,19741,29820		0	ap90pref05.md:211	Mugdhabodha.
+Pad.	Pad.	1	5	161459,199358,233378		0	ap90pref05.md:233	D. Padânkadūta.
+Dharm.	Dharm.	1	4	49389,49389,259432		0	ap90pref05.md:95	Dharmaviveka.
+Karpūr.	Karpūr.	1	4	99938,192848,242910		0	ap90pref05.md:141	Karpūramanjàrî (published in the Kàvyamàlà).

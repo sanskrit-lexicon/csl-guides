@@ -1,0 +1,16 @@
+{
+  "dict": "GRA",
+  "wave": "A",
+  "status": "ok",
+  "keys": 6,
+  "hits_nonshort": 0,
+  "pref_only": 6,
+  "low_count": 0,
+  "short": 0,
+  "pref_pages": 6,
+  "discover": "fallback_all_source (6 pages; no abbr hint)",
+  "body": "C:\\Users\\user\\Documents\\GitHub\\csl-orig\\v02\\gra\\gra.txt",
+  "tsv": "scripts\\out\\gra_pref_abbr_crosscheck.tsv",
+  "report": "scripts\\out\\gra_pref_abbr_crosscheck.md",
+  "date": "2026-07-23"
+}

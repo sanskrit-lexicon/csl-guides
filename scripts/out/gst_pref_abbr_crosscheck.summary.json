@@ -1,0 +1,16 @@
+{
+  "dict": "GST",
+  "wave": "C",
+  "status": "ok",
+  "keys": 1,
+  "hits_nonshort": 0,
+  "pref_only": 0,
+  "low_count": 0,
+  "short": 1,
+  "pref_pages": 8,
+  "discover": "fallback_all_source (8 pages; no abbr hint)",
+  "body": "C:\\Users\\user\\Documents\\GitHub\\csl-orig\\v02\\gst\\gst.txt",
+  "tsv": "scripts\\out\\gst_pref_abbr_crosscheck.tsv",
+  "report": "scripts\\out\\gst_pref_abbr_crosscheck.md",
+  "date": "2026-07-23"
+}

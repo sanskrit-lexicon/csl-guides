@@ -1,0 +1,16 @@
+{
+  "dict": "BHS",
+  "wave": "A",
+  "status": "ok",
+  "keys": 348,
+  "hits_nonshort": 267,
+  "pref_only": 53,
+  "low_count": 58,
+  "short": 28,
+  "pref_pages": 6,
+  "discover": "abbr_hint (6/15 pages)",
+  "body": "C:\\Users\\user\\Documents\\GitHub\\csl-orig\\v02\\bhs\\bhs.txt",
+  "tsv": "scripts\\out\\bhs_pref_abbr_crosscheck.tsv",
+  "report": "scripts\\out\\bhs_pref_abbr_crosscheck.md",
+  "date": "2026-07-23"
+}

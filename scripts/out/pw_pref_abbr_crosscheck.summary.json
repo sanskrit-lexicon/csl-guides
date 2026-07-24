@@ -1,0 +1,16 @@
+{
+  "dict": "PW",
+  "wave": "—",
+  "status": "ok",
+  "keys": 302,
+  "hits_nonshort": 209,
+  "pref_only": 89,
+  "low_count": 28,
+  "short": 4,
+  "pref_pages": 3,
+  "discover": "abbr_hint (3/5 pages)",
+  "body": "C:\\Users\\user\\Documents\\GitHub\\csl-orig\\v02\\pw\\pw.txt",
+  "tsv": "scripts\\out\\pw_pref_abbr_crosscheck.tsv",
+  "report": "scripts\\out\\pw_pref_abbr_crosscheck.md",
+  "date": "2026-07-24"
+}

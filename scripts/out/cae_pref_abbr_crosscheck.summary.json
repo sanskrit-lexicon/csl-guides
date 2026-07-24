@@ -1,0 +1,16 @@
+{
+  "dict": "CAE",
+  "wave": "A",
+  "status": "ok",
+  "keys": 74,
+  "hits_nonshort": 56,
+  "pref_only": 1,
+  "low_count": 1,
+  "short": 17,
+  "pref_pages": 2,
+  "discover": "abbr_hint (2/6 pages)",
+  "body": "C:\\Users\\user\\Documents\\GitHub\\csl-orig\\v02\\cae\\cae.txt",
+  "tsv": "scripts\\out\\cae_pref_abbr_crosscheck.tsv",
+  "report": "scripts\\out\\cae_pref_abbr_crosscheck.md",
+  "date": "2026-07-23"
+}

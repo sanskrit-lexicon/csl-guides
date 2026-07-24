@@ -1,0 +1,5 @@
+key_raw	key_norm	in_pref	body_count	samples	flag	short_key	sources	expansion
+ए	ए	1	0		short_pref_only	1	burpref06.md:16	ऐ
+ओ	ओ	1	0		short_pref_only	1	burpref06.md:16	औ
+ê	ê	1	222044	2,2,2	short_key	1	burpref06.md:18	æ
+ô	ô	1	81334	2,7,7	short_key	1	burpref06.md:18	ɔ

@@ -1,0 +1,16 @@
+{
+  "dict": "PWG",
+  "wave": "—",
+  "status": "ok",
+  "keys": 395,
+  "hits_nonshort": 257,
+  "pref_only": 133,
+  "low_count": 52,
+  "short": 5,
+  "pref_pages": 7,
+  "discover": "abbr_hint (7/27 pages)",
+  "body": "C:\\Users\\user\\Documents\\GitHub\\csl-orig\\v02\\pwg\\pwg.txt",
+  "tsv": "scripts\\out\\pwg_pref_abbr_crosscheck.tsv",
+  "report": "scripts\\out\\pwg_pref_abbr_crosscheck.md",
+  "date": "2026-07-24"
+}

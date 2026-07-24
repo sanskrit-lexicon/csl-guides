@@ -1,0 +1,75 @@
+key_raw	key_norm	in_pref	body_count	samples	flag	short_key	sources	expansion
+s.v.	s.v.	1	0		pref_only	0	caepref06.md:38	sub voce.
+pref.	pref.	1	3	9972,12863,57598	low_count	0	caepref06.md:22	ix
+A.	A.	1	17727	21,25,28	short_key	1	caepref06.md:14	ctive
+a.	a.	1	17727	21,25,28	short_key	1	caepref06.md:15	djective
+N.	N.	1	14908	2,9,18	short_key	1	caepref06.md:33	ame
+n.	n.	1	14908	2,9,18	short_key	1	caepref06.md:34	euter
+M.	M.	1	13504	5,9,31	short_key	1	caepref06.md:31	iddle
+m.	m.	1	13504	5,9,31	short_key	1	caepref06.md:30	asculine
+f.	f.	1	8783	12,15,68	short_key	1	caepref06.md:38	eminine
+E.	E.	1	8093	77,83,83	short_key	1	caepref06.md:33	pithet
+C.	C.	1	5993	6,65,142	short_key	1	caepref06.md:22	ausative
+r.	r.	1	5556	5,46,59	short_key	1	caepref06.md:27	arely
+S.	S.	1	4689	2,12,15	short_key	1	caepref06.md:30	imple
+s.	s.	1	4689	2,12,15	short_key	1	caepref06.md:31	ubstantive
+D.	D.	1	3914	9,65,74	short_key	1	caepref06.md:28	esiderative
+P.	P.	1	2201	71,373,430	short_key	1	caepref06.md:41	assive
+w.	w.	1	1069	810,1251,1254	short_key	1	caepref06.md:41	ith
+I.	I.	1	1017	83,159,162	short_key	1	caepref06.md:15	ntensive
+o.	o.	1	172	327,3304,4527	short_key	1	caepref06.md:37	ften
+acc.	acc.	1	1725	142,551,851		0	caepref06.md:19	usative
+adv.	adv.	1	1608	158,167,196		0	caepref06.md:21	erb
+loc.	loc.	1	1231	142,163,192		0	caepref06.md:29	ative
+prec.	prec.	1	1141	163,820,2390		0	caepref06.md:20	eding
+instr.	instr.	1	1047	327,536,1222		0	caepref06.md:22	umental
+lit.	lit.	1	852	49,158,162		0	caepref06.md:27	erally
+pl.	pl.	1	798	95,327,376		0	caepref06.md:19	ural
+gen.	gen.	1	768	21,25,28		0	caepref06.md:42	etive
+pp.	pp.	1	748	373,937,1100		0	caepref06.md:21	participle.
+esp.	esp.	1	667	430,655,761		0	caepref06.md:36	ecially
+cf.	cf.	1	666	323,986,1048		0	caepref06.md:24	compare.
+abl.	abl.	1	658	18,810,1129		0	caepref06.md:16	ative
+i.e.	i.e.	1	550	83,159,162		0	caepref06.md:16	that is.
+cert.	cert.	1	504	754,1573,3164		0	caepref06.md:23	ain
+seq.	seq.	1	452	323,357,751		0	caepref06.md:33	following.
+dat.	dat.	1	426	7404,7537,7609		0	caepref06.md:30	ive
+q.v.	q.v.	1	384	1103,1254,1304		0	caepref06.md:26	which see.
+pers.	pers.	1	260	2,3125,3226		0	caepref06.md:17	on or personal
+sev.	sev.	1	244	981,5622,6245		0	caepref06.md:34	eral
+du.	du.	1	239	783,792,4308		0	caepref06.md:32	al
+i.g.	i.g.	1	220	5595,15797,19881		0	caepref06.md:17	in general.
+sgl.	sgl.	1	189	481,1323,2316		0	caepref06.md:35	singular.
+fig.	fig.	1	187	3060,3072,6070		0	caepref06.md:39	uratively
+ger.	ger.	1	187	550,626,850		0	caepref06.md:14	und
+intr.	intr.	1	185	8302,15138,15448		0	caepref06.md:24	ansitive
+nom.	nom.	1	178	2613,3266,7717		0	caepref06.md:35	inative
+superl.	superl.	1	144	1039,1498,1501		0	caepref06.md:37	ative
+inf.	inf.	1	118	143,414,6630		0	caepref06.md:21	initive
+impers.	impers.	1	98	3125,5080,6249		0	caepref06.md:19	onally
+den.	den.	1	78	645,1837,4344		0	caepref06.md:31	ominative
+opp.	opp.	1	68	1304,2296,2305		0	caepref06.md:38	osed
+prep.	prep.	1	66	1211,1215,1587		0	caepref06.md:23	osition
+pron.	pron.	1	54	2,2412,3226		0	caepref06.md:25	oun
+add.	add.	1	48	35214,53410,66803		0	caepref06.md:20	itions
+trans.	trans.	1	46	15570,28969,29102		0	caepref06.md:39	itive
+part.	part.	1	40	1504,11357,11648		0	caepref06.md:15	icle
+sc.	sc.	1	28	5761,5765,5906		0	caepref06.md:32	ilicet
+voc.	voc.	1	27	2609,8606,14852		0	caepref06.md:40	ative
+e.g.	e.g.	1	26	8492,11743,21743		0	caepref06.md:34	for example.
+indecl.	indecl.	1	26	3098,9744,11280		0	caepref06.md:20	inable
+comp.	comp.	1	25	71,496,7341		0	caepref06.md:25	arative
+absol.	absol.	1	22	810,9745,18864		0	caepref06.md:17	utely
+interr.	interr.	1	22	17342,21595,22495		0	caepref06.md:23	ogative
+correl.	correl.	1	21	13386,21645,21792		0	caepref06.md:27	ative
+conj.	conj.	1	14	16790,35919,58412		0	caepref06.md:26	unctive
+pres.	pres.	1	13	15939,23297,36854		0	caepref06.md:24	ent
+encl.	encl.	1	12	16511,16789,16961		0	caepref06.md:35	itic
+imper.	imper.	1	11	24857,38305,40754		0	caepref06.md:18	ative
+fut.	fut.	1	10	27611,30863,41349		0	caepref06.md:40	ure
+orig.	orig.	1	8	16189,19942,31372		0	caepref06.md:40	inally
+excl.	excl.	1	7	12871,14337,15563		0	caepref06.md:37	amation
+l.l.	l.l.	1	6	27769,53290,83759		0	caepref06.md:28	later language.
+opt.	opt.	1	5	52778,54576,58413		0	caepref06.md:39	ative
+num.	num.	1	4	27930,31832,91085		0	caepref06.md:36	eral
+perf.	perf.	1	4	23010,27223,27242		0	caepref06.md:16	ect

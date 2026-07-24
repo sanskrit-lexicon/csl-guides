@@ -192,3 +192,64 @@
   background: var(--ifm-color-emphasis-100);
   border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
 }
+
+/* Pref-legend pilot (PWG/PW) — body-count column + residual chips */
+.badgePref {
+  background: var(--ifm-color-info-contrast-background);
+  color: var(--ifm-color-info-contrast-foreground);
+}
+
+.prefBanner {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+  margin: 0 0 0.75rem;
+  line-height: 1.45;
+}
+
+.list thead th {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: left;
+  color: var(--ifm-color-emphasis-600);
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.15rem 0.6rem 0.25rem 0;
+  position: sticky;
+  top: 0;
+  background: var(--ifm-background-surface-color, var(--ifm-background-color));
+}
+
+.colAbbr {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.colBody {
+  width: 1%;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.bodyCount {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+  width: 1%;
+}
+
+.residual {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.05em 0.4em;
+  border-radius: 1em;
+  background: var(--ifm-color-warning-contrast-background);
+  color: var(--ifm-color-warning-contrast-foreground);
+  white-space: nowrap;
+}
+
+.reviewHint {
+  font-size: 0.68rem;
+  color: var(--ifm-color-emphasis-500);
+  font-style: italic;
+}

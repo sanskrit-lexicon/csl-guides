@@ -9,6 +9,7 @@
     "build": "docusaurus build",
     "build:catalog": "node scripts/build-catalog.mjs",
     "build:abbreviations": "node scripts/build-abbreviations.mjs",
+    "build:pref-legends": "node scripts/build-pref-legends.mjs",
     "build:corpus-frequency": "node scripts/build-corpus-frequency.mjs",
     "build:level-quiz": "node scripts/build-level-quiz.mjs",
     "build:word-game": "node scripts/build-word-game.mjs",

@@ -14,7 +14,7 @@ Outputs from [`pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl
 
 **Handoffs:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) (pilot) · [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) (scale) · [H1560](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1560-Sonnet_csl-guides_pref-only-pwg-pw-decompose_24.07.26.md) (PWG/PW `pref_only` taxonomy) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)
 
-**Non-goals:** no bulk pref overwrite from body matches; scan remains truth for expansions; residual is typed, not “unused abbreviations.”
+**Policy (H1569):** body `.txt` wins for siglum *naming*; pref keys align toward body via gated apply + change log. Expansions stay scan-faithful. Residual is typed, not “unused abbreviations.” See [pref-body-naming-authority.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md).
 
 ```text
 python scripts/pref_abbr_crosscheck.py --self-check
@@ -22,6 +22,8 @@ python scripts/pref_abbr_crosscheck.py --list-catalog
 python scripts/pref_abbr_crosscheck.py --all --out-dir scripts/out --json-summary
 python scripts/pref_abbr_crosscheck.py --wave A --out-dir scripts/out
 python scripts/pref_only_decompose.py --all
+python scripts/pref_key_body_align.py --dict PWG --apply
+python scripts/pref_key_body_align.py --dict PW --apply
 ```
 
 _Dr. Mārcis Gasūns_

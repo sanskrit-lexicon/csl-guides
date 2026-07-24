@@ -5,12 +5,13 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 **Handoffs:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) · [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)  
 **Tool:** [`scripts/pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py)
 
-## Non-goals
+## Policy (H1569)
 
-- **No bulk overwrite** of `prefaces/*.md` from body matches.
-- **Scan remains truth** for expansions.
-- Body is a **prioritisation channel** only.
+- **Body `.txt` wins** for how a work is *named* (siglum orthography).
+- Pref legend keys are corrected **toward body** via gated apply + change log — not left as raw OCR when body attests a form.
+- **Expansions** (titles) remain scan-faithful; this census does not rewrite them.
 - Short keys (&lt; 3 non-space chars) flagged `short_key`.
+- Hold without body attestation: rare/MS works, long bib titles, ambiguous keys.
 
 ## Inputs
 
@@ -26,9 +27,9 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | Metric | n |
 |--------|--:|
 | Keys parsed | 302 |
-| Hits (non-short) | 209 (69%) |
-| `pref_only` | 89 |
-| `low_count` (≤3) | 28 |
+| Hits (non-short) | 234 (77%) |
+| `pref_only` | 64 |
+| `low_count` (≤3) | 32 |
 | Short keys | 4 |
 
 ## Top body hits (non-short)
@@ -47,17 +48,15 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | `ṚV.` | 1909 | — | 25,201,709 |
 | `Med.` | 1870 | — | 824,3446,5452 |
 | `Gal.` | 1737 | — | 28,247,267 |
+| `Âpast. Śr.` | 1718 | — | 51581,88832,95370 |
 | `Bhâvapr.` | 1697 | — | 4923,5084,5236 |
 | `Kâd.` | 1658 | — | 5113,7247,8118 |
-| `VP.` | 1546 | — | 766,875,1595 |
 
 ## `pref_only` sample
 
 | key_norm | body_count | flag | samples |
 |---|---:|---|---|
-| `AV. Pariç.` | 0 | pref_only | — |
 | `AV. Prâjaçḱ.` | 0 | pref_only | — |
-| `AV. Ǵjot.` | 0 | pref_only | — |
 | `Anukram. zu RV.` | 0 | pref_only | — |
 | `Bhar. Nâṭjaç.` | 0 | pref_only | — |
 | `Bhavishjott. P.` | 0 | pref_only | — |
@@ -65,16 +64,18 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | `Bhoǵa-Ḱar.` | 0 | pref_only | — |
 | `Bhâshâp.` | 0 | pref_only | — |
 | `Bîǵag.` | 0 | pref_only | — |
-| `Devatâdhj. Brâhm.` | 0 | pref_only | — |
-| `Dhjânab. Up.` | 0 | pref_only | — |
 | `Divjâv.` | 0 | pref_only | — |
-| `Gaṇit. Pratjabd.` | 0 | pref_only | — |
 | `Gâbâlop.` | 0 | pref_only | — |
 | `Harshaḱ.` | 0 | pref_only | — |
-| `Hem. Jog.` | 0 | pref_only | — |
 | `Hâsj.` | 0 | pref_only | — |
 | `Jogas.` | 0 | pref_only | — |
-| `Jogat. Up.` | 0 | pref_only | — |
+| `Kaush. Up.` | 0 | pref_only | — |
+| `Kaush. Âr.` | 0 | pref_only | — |
+| `Kauç.` | 0 | pref_only | — |
+| `Kshitîç.` | 0 | pref_only | — |
+| `Kshurikop.` | 0 | pref_only | — |
+| `Kuvalaj.` | 0 | pref_only | — |
+| `Kâtj. Çr.` | 0 | pref_only | — |
 
 ## `low_count` sample
 

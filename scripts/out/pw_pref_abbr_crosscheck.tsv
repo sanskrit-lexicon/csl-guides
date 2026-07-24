@@ -1,7 +1,5 @@
 key_raw	key_norm	in_pref	body_count	samples	flag	short_key	sources	expansion
-AV. Pariç.	AV. Pariç.	1	0		pref_only	0	pwpref03.md:60	Pariçishṭa zum AV., Hdschr. (Roth).
 AV. Prâjaçḱ.	AV. Prâjaçḱ.	1	0		pref_only	0	pwpref03.md:62	Prâjaçḱitta zum AV., Hdschr. (Roth).
-AV. Ǵjot.	AV. Ǵjot.	1	0		pref_only	0	pwpref03.md:56	Ǵjotisha zum AV., Hdschr. (Roth).
 Anukram. zu RV.	Anukram. zu RV.	1	0		pref_only	0	pwpref03.md:38	Anukramaṇikâ zu RV. im Comm. Sâjaṇa's.
 Bhar. Nâṭjaç.	Bhar. Nâṭjaç.	1	0		pref_only	0	pwpref03.md:78	Bhâratîjanâṭjaçâstra am Schluss von Daçar. in der Bibl. ind.
 Bhavishjott. P.	Bhavishjott. P.	1	0		pref_only	0	pwpref03.md:86	Bhavishjottarapurâṇa nach Citaten in andern Werken.
@@ -9,33 +7,24 @@ Bhoǵa-Pr.	Bhoǵa-Pr.	1	0		pref_only	0	pwpref03.md:90	Bhoǵaprabandha, Benares 1
 Bhoǵa-Ḱar.	Bhoǵa-Ḱar.	1	0		pref_only	0	pwpref03.md:88	Bhoǵakaritra, Madras 1862 (Stenzler).
 Bhâshâp.	Bhâshâp.	1	0		pref_only	0	pwpref03.md:80	Bhâshâpariḱḱheda in der Bibl. ind.
 Bîǵag.	Bîǵag.	1	0		pref_only	0	pwpref03.md:94	Bîǵaganita, Calcutta 1846 (Kern).
-Devatâdhj. Brâhm.	Devatâdhj. Brâhm.	1	0		pref_only	0	pwpref03.md:164	Daiv. Br.
-Dhjânab. Up.	Dhjânab. Up.	1	0		pref_only	0	pwpref03.md:172	Dhjânabindûpanishad in der Bibl. ind. (Geldner und Roth).
 Divjâv.	Divjâv.	1	0		pref_only	0	pwpref03.md:180	Divjâvadâna, Hdschr. (Schiefner).
-Gaṇit. Pratjabd.	Gaṇit. Pratjabd.	1	0		pref_only	0	pwpref03.md:202	Gaṇita, Pratjabdaçuddi (Kern).
 Gâbâlop.	Gâbâlop.	1	0		pref_only	0	pwpref03.md:182	Gâbâlopanishad in der Bibl. ind. (Geldner und Roth).
 Harshaḱ.	Harshaḱ.	1	0		pref_only	0	pwpref04.md:30	Harshaḱarita, Calcutta 1876 (Kern).
-Hem. Jog.	Hem. Jog.	1	0		pref_only	0	pwpref04.md:38	Hemaḱandra's Jogaçâstra in Z. d. d. m. G. 28. Aus einem hdschr. Comm. hat Windisch manche Berichtigung und Erklärung mir bereitwilligst zukommen lassen.
 Hâsj.	Hâsj.	1	0		pref_only	0	pwpref04.md:32	Hâsjârnava, Bombay 1757 und Hdschr. (Cappeller).
 Jogas.	Jogas.	1	0		pref_only	0	pwpref04.md:56	Jogasûtra.
-Jogat. Up.	Jogat. Up.	1	0		pref_only	0	pwpref04.md:58	Jogatattvopanishad in der Bibl. ind. (Geldner und Roth).
 Kaush. Up.	Kaush. Up.	1	0		pref_only	0	pwpref04.md:104	Kaushîtakibrâhmanopanishad in der Bibl. ind.
 Kaush. Âr.	Kaush. Âr.	1	0		pref_only	0	pwpref04.md:102	Kaushîtakâranjaka (Weber).
 Kauç.	Kauç.	1	0		pref_only	0	pwpref04.md:98	Kauçika's Sûtra zum AV., Hdschrr. (Roth und Weber).
 Kshitîç.	Kshitîç.	1	0		pref_only	0	pwpref04.md:120	Kshitiçavaṁçâvalîḱarita, Ausg. von Pertsch.
 Kshurikop.	Kshurikop.	1	0		pref_only	0	pwpref04.md:122	Kshurikopanishad in der Bibl. ind.
 Kuvalaj.	Kuvalaj.	1	0		pref_only	0	pwpref04.md:132	Kuvalajânanda, nach zwei lithogr. Ausgg.
-Kâtj. Dh.	Kâtj. Dh.	1	0		pref_only	0	pwpref04.md:94	Kâtjâjana's Dharmaçâstra (Stenzler).
-Kâtj. Snânas.	Kâtj. Snânas.	1	0		pref_only	0	pwpref04.md:96	Kâtjâjana's Snânasûtra (Stenzler).
 Kâtj. Çr.	Kâtj. Çr.	1	0		pref_only	0	pwpref04.md:92	Kâtjâjana's Çrautasûtra, nach Weber's Index.
 Kâvjapr.	Kâvjapr.	1	0		pref_only	0	pwpref04.md:108	Kâvjaprakâça, Calcutta 1866. Nach Ullâsa und Sûtra citirt, wenn nicht S. (Seite) und Z. (Zeile) hinzugefügt werden.
 Kṛshis.	Kṛshis.	1	0		pref_only	0	pwpref04.md:118	Parâçara's Kṛshisaṁgraha, Calcutta 1862 (Roth).
 Lâṭj.	Lâṭj.	1	0		pref_only	0	pwpref04.md:140	Lâṭjâjana's Çrautasûtra in der Bibl. ind.
 Mahâvîraḱ.	Mahâvîraḱ.	1	0		pref_only	0	pwpref04.md:158	Mahâvîraḱarita, Ausg. von Trithen.
-Maitrjup.	Maitrjup.	1	0		pref_only	0	pwpref04.md:162	Maitrjupanishad in der Bibl. ind. Die Accente, die wegen ihrer Fehlerhaftigkeit oft weggelassen oder durch (!) als verdächtig bezeichnet wurden, hat Schröder einer Hdschr. entnommen.
 Mayr, Ind. Erb.	Mayr, Ind. Erb.	1	0		pref_only	0	pwpref04.md:182	Das indische Erbrecht von Aurel Mayr, Wien 1873.
 Med. avj.	Med. avj.	1	0		pref_only	0	pwpref04.md:188	Avjajânekârthavarga am Ende des Medinîkoça.
-Mân. Gṛhj.	Mân. Gṛhj.	1	0		pref_only	0	pwpref04.md:172	Mânavagṛhjasûtra, nach einer Hdschr. in der Universitätsbibliothek zu Bombay (Schröder).
 Mâṇḍ. Çikshâ	Mâṇḍ. Çikshâ	1	0		pref_only	0	pwpref04.md:170	Mâṇḍûkî Çikshâ (Weber).
 Mṛḱḱh.	Mṛḱḱh.	1	0		pref_only	0	pwpref04.md:196	Mṛḱḱhakaṭika, Ausg. von Stenzler. Comm. zu Mṛḱḱh. sind die Auszüge in den Anmerkungen zu meiner Uebersetzung dieses Schauspiels.
 Naish.	Naish.	1	0		pref_only	0	pwpref04.md:202	Naishadhaḱarita.
@@ -46,28 +35,21 @@ Praçnop.	Praçnop.	1	0		pref_only	0	pwpref05.md:36	Praçnopanishad in der Bibl.
 Prij.	Prij.	1	0		pref_only	0	pwpref05.md:46	Prijadarçikâ, Calcutta 1874 (Cappeller).
 Prâjaçḱittat.	Prâjaçḱittat.	1	0		pref_only	0	pwpref05.md:38	Prâjaçḱittatattva (Roth).
 Pushpas.	Pushpas.	1	0		pref_only	0	pwpref05.md:50	Pushpasûtra (Weber).
-Pâr. Gṛhj.	Pâr. Gṛhj.	1	0		pref_only	0	pwpref05.md:24	Pâraskara's Gṛhjasûtra, Ausg. von Stenzler.
-Saṁnj. Up.	Saṁnj. Up.	1	0		pref_only	0	pwpref05.md:82	Saṁnjâsopanishad in der Bibl. ind. (Geldner und Roth).
 Shaḍv. Br.	Shaḍv. Br.	1	0		pref_only	0	pwpref05.md:96	Shaḍviṁçabrâhmaṇa (Weber).
-Siddh. Çir.	Siddh. Çir.	1	0		pref_only	0	pwpref05.md:98	Siddhântaçiromaṇi (Kern).
 Subhâshitar.	Subhâshitar.	1	0		pref_only	0	pwpref05.md:104	Subhâshitaratnâkara, Bombay 1872.
 Suparṇ. und Suparṇâdhj.	Suparṇ. und Suparṇâdhj.	1	0		pref_only	0	pwpref05.md:108	Suparṇâdhjâja, herausg. von Elimar Grube in Ind. St. 14.
 Suçr.	Suçr.	1	0		pref_only	0	pwpref05.md:106	Suçruta (Roth).
 Sâṁkhjak.	Sâṁkhjak.	1	0		pref_only	0	pwpref05.md:80	Sâṁkhjakârikâ, Ausg. von Wilson.
 Sûrjad.	Sûrjad.	1	0		pref_only	0	pwpref05.md:110	Sûrjadevajaǵvan (Kern).
 Sûrjas.	Sûrjas.	1	0		pref_only	0	pwpref05.md:112	Sûrjasiddhânta in der Bibl. ind.
-Tâṇḍja-Br.	Tâṇḍja-Br.	1	0		pref_only	0	pwpref05.md:122	Tâṇḍjabrâhmaṇa in der Bibl. ind. Im grossen Wörterbuch als Pañḱav. Br. citirt.
 Uǵǵval.	Uǵǵval.	1	0		pref_only	0	pwpref05.md:136	Uǵǵvaladatta, Commentator der Uṇâdisûtra.
 Vaidjabh.	Vaidjabh.	1	0		pref_only	0	pwpref05.md:146	Vaidjabhâshja (Roth).
-Varâh. Jogaj.	Varâh. Jogaj.	1	0		pref_only	0	pwpref05.md:162	Varâhamihira's Jogajâtrâ, herausg. von Kern in Ind. St. 10. 14 und 15.
 Varâh. Lagu.	Varâh. Lagu.	1	0		pref_only	0	pwpref05.md:164	Varâhamihira's Laghuǵâtaka. Die zwei ersten Adhjâja herausgegeben von Weber in Ind. St. 2.
 Vaṁçabr.	Vaṁçabr.	1	0		pref_only	0	pwpref05.md:156	Vaṁçabrâhmaṇa, Ausg. von Burnell (Roth).
 Vikramâñḱaḱ.	Vikramâñḱaḱ.	1	0		pref_only	0	pwpref05.md:184	Vikramâñḱadevaḱarita, Ausg. von Bühler.
 Vishṇus.	Vishṇus.	1	0		pref_only	0	pwpref05.md:186	Vishṇusûtra, zur Herausgabe vorbereitet von J. Jolly (Jolly).
 Vâju-P.	Vâju-P.	1	0		pref_only	0	pwpref05.md:150	Vâjupurâṇa, nach Citaten in andern Werken.
 Weber, Kṛshṇaǵ.	Weber, Kṛshṇaǵ.	1	0		pref_only	0	pwpref05.md:198	Weber, Ueber die Kṛshṇaǵanmâshṭamî. Berlin 1868.
-Weber, Ǵjot.	Weber, Ǵjot.	1	0		pref_only	0	pwpref05.md:196	Weber, Ueber den Vedakalender, Namens Ǵjotisham.
-Âpast. Çr.	Âpast. Çr.	1	0		pref_only	0	pwpref03.md:42	Âpastamba's Çrautasûtra, Hdschr. (Garbe und Roth).
 Ârjabh.	Ârjabh.	1	0		pref_only	0	pwpref03.md:44	Ârjabhaṭa, Ausg. von Kern (Kern).
 Ârsh. Br.	Ârsh. Br.	1	0		pref_only	0	pwpref03.md:48	Ârshejabrâhmaṇa, Ausg. von Burnell.
 Âçv. Gṛhj.	Âçv. Gṛhj.	1	0		pref_only	0	pwpref03.md:18	Âçvalâjana's Gṛhjasûtra; Ausg. von Stenzler.
@@ -77,17 +59,10 @@ Weber, Ǵjot.	Weber, Ǵjot.	1	0		pref_only	0	pwpref05.md:196	Weber, Ueber den Ve
 Çaṃk.	Çaṃk.	1	0		pref_only	0	pwpref03.md:116	Çaṃkaràḱârja als Commentator verschiedener Upanishad.
 Çira-Up.	Çira-Up.	1	0		pref_only	0	pwpref03.md:146	Çiraupanishad in der Bibl. ind. (Geldner und Roth).
 Çulbas.	Çulbas.	1	0		pref_only	0	pwpref03.md:154	Çulbasûtra in der Zeitschrift The Pandit IX. X und New Series I (Cappeller).
-Çvetâçv. Up.	Çvetâçv. Up.	1	0		pref_only	0	pwpref03.md:156	Çvetâçvataropanishad in der Bibl. ind.
-Çârñg. Paddh.	Çârñg. Paddh.	1	0		pref_only	0	pwpref03.md:128	Çârñgadhara's Paddhati, Hdschr. im Asiatischen Museum der Kais. Ak. d. Ww. in St. Petersburg.
-Çârñg. Saṃh.	Çârñg. Saṃh.	1	0		pref_only	0	pwpref03.md:130	Çârñgadhara's Saṃhitâ, Bombay 1853 (Roth).
-Çâṅkh. Br.	Çâṅkh. Br.	1	0		pref_only	0	pwpref03.md:120	Çâṅkhâjana's Brâhmaṇa (Weber).
 Çâṅkh. Gṛhj.	Çâṅkh. Gṛhj.	1	0		pref_only	0	pwpref03.md:124	Çâṅkhâjana's Gṛhjasûtra, herausg. von Oldenberg in Ind. St. 15.
-Çâṅkh. Çr.	Çâṅkh. Çr.	1	0		pref_only	0	pwpref03.md:122	Çâṅkhâjana's Çrautasûtra (Weber).
 Ǵaim.	Ǵaim.	1	0		pref_only	0	pwpref03.md:184	Ǵaimini's Mîmâṃsâdarçana in der Bibl. ind.
-Ǵaim. Bhâr.	Ǵaim. Bhâr.	1	0		pref_only	0	pwpref03.md:186	Ǵaimini's Bhârata, nach Citaten in Ind. St.
 Ḱaurap.	Ḱaurap.	1	0		pref_only	0	pwpref04.md:100	Ḱaurapaṅḱâçikâ, Ausg. von Boulen.
 Ḱhandom.	Ḱhandom.	1	0		pref_only	0	pwpref04.md:112	Ḱhandomanǵarî, herausg. von Brockhaus in Berichte über die Verhandlungen der Kön. Sächsischen Gesellschaft der Wissenschaften zu Leipzig. Phil.-hist. Kl. Bd. VI, 1854.
-Ḱhând. Up.	Ḱhând. Up.	1	0		pref_only	0	pwpref04.md:114	Ḱhândogjopanishad in der Bibl. ind.
 Childers	Childers	1	3	9582,427206,585077	low_count	0	pwpref03.md:140	Childers' Pali-Wörterbuch.
 Halâj.	Halâj.	1	3	622578,622578,622578	low_count	0	pwpref04.md:20	Halâjudha's Wörterbuch, Ausg. von Aufrecht.
 Kenop.	Kenop.	1	3	41316,41424,587710	low_count	0	pwpref04.md:110	Kenopanishad in der Bibl. ind.
@@ -103,10 +78,14 @@ Wilson, Sel. W.	Wilson, Sel. W.	1	2	60455,584099	low_count	0	pwpref05.md:202	Sel
 Ânandag.	Ânandag.	1	2	15918,118499	low_count	0	pwpref03.md:36	Ânandagiri, Glossator zu Çaṃkaràḱârja's Comm. zu Bṛh. Âr. Up. in der Bibl. ind. (Kern).
 Beitr. z. K. d. ig. Spr.	Beitr. z. K. d. ig. Spr.	1	1	74701	low_count	0	pwpref03.md:70	Beiträge zur Kunde der indogermanischen Sprachen.
 Burn. Intr.	Burn. Intr.	1	1	569844	low_count	0	pwpref03.md:110	Burnouf, Introduction à l'histoire du Buddhisme indien.
+Devatâdhy. Brâhm.	Devatâdhy. Brâhm.	1	1	71551	low_count	0	pwpref03.md:164	Daiv. Br.
 Dhammap.	Dhammap.	1	1	69538	low_count	0	pwpref03.md:166	Dhammapada, Ausg. von Fausböll.
 Harisv.	Harisv.	1	1	13645	low_count	0	pwpref04.md:26	Harisvâmin.
 Hem. Pr. Gr. ed. Bomb.	Hem. Pr. Gr. ed. Bomb.	1	1	40983	low_count	0	pwpref04.md:40	Hemaḱandra's Prâkrit-Grammatik, Bombay (Stenzler).
 Hit. ed. Johns.	Hit. ed. Johns.	1	1	27400	low_count	0	pwpref04.md:46	Hitopadeça, Ausg. von Johnson, London und Hertford 1847.
+Jaim. Bhâr.	Jaim. Bhâr.	1	1	47659	low_count	0	pwpref03.md:186	Ǵaimini's Bhârata, nach Citaten in Ind. St.
+Kâty. Dh.	Kâty. Dh.	1	1	73633	low_count	0	pwpref04.md:94	Kâtjâjana's Dharmaçâstra (Stenzler).
+Kâty. Snânas.	Kâty. Snânas.	1	1	75295	low_count	0	pwpref04.md:96	Kâtjâjana's Snânasûtra (Stenzler).
 M. K. S.	M. K. S.	1	1	31486	low_count	0	pwpref04.md:194	Mân. K. S.
 Mâdh. Kâlan.	Mâdh. Kâlan.	1	1	73079	low_count	0	pwpref04.md:152	Mâdhava's Kâlanirnaja (Weber).
 Mân. K. S.	Mân. K. S.	1	1	28745	low_count	0	pwpref04.md:174	Mânavakalpasûtra, nach Citaten bei Gold.
@@ -132,6 +111,7 @@ Ind. St.	Ind. St.	1	1942	34,288,338		0	pwpref04.md:54	Indische Studien von Weber
 ṚV.	ṚV.	1	1909	25,201,709		0	pwpref05.md:66	Ṛgveda (Roth).
 Med.	Med.	1	1870	824,3446,5452		0	pwpref04.md:186	Medinîkoça.
 Gal.	Gal.	1	1737	28,247,267		0	pwpref03.md:188	Galanos' Wörterbuch, Abschrift von Weber; vgl. Monatsbericht der Kön. Pr. Akad. der Wissensch. 1876, S. 801. fgg. (Cappeller).
+Âpast. Śr.	Âpast. Śr.	1	1718	51581,88832,95370		0	pwpref03.md:42	Âpastamba's Çrautasûtra, Hdschr. (Garbe und Roth).
 Bhâvapr.	Bhâvapr.	1	1697	4923,5084,5236		0	pwpref03.md:84	Bhâvapraḱâça, Calcutta 1875 und Hdschr. (Roth).
 Kâd.	Kâd.	1	1658	5113,7247,8118		0	pwpref04.md:66	Kâdambarî, Calcutta Saṁvat 1919 (Kern).
 VP.	VP.	1	1546	766,875,1595		0	pwpref05.md:188	Vishṇupurâṇa, ed. Bomb.
@@ -154,6 +134,7 @@ Nâr.	Nâr.	1	529	4147,10191,14097		0	pwpref04.md:204	Nârada's Dharmaçâstra (
 Sâj.	Sâj.	1	529	2497,2497,2498		0	pwpref05.md:74	Sâjaṇa.
 Sâv.	Sâv.	1	528	17200,92232,96478		0	pwpref05.md:94	Sâvitrî, herausg. von Bopp.
 Vâsav.	Vâsav.	1	525	92232,96478,100920		0	pwpref05.md:170	Vâsavadattâ in der Bibl. ind.
+Tâṇḍya-Br.	Tâṇḍya-Br.	1	520	25,1736,3248		0	pwpref05.md:122	Tâṇḍjabrâhmaṇa in der Bibl. ind. Im grossen Wörterbuch als Pañḱav. Br. citirt.
 Bâdar.	Bâdar.	1	518	17132,18052,18992		0	pwpref03.md:64	Bâdarâjaṇa's Brahmasûtra in der Bibl. ind.
 Vaitân.	Vaitân.	1	479	2460,4443,8171		0	pwpref05.md:148	Vaitânasûtra, Ausg. von Garbe.
 Kâlaḱ.	Kâlaḱ.	1	450	3307,3307,3308		0	pwpref04.md:70	Kâlaḱakra, Hdschr. (Schiefner).
@@ -176,12 +157,16 @@ VS.	VS.	1	289	1398,8822,9036		0	pwpref05.md:192	Vâǵasânejisaṁhitâ (Roth un
 Ait. Br.	Ait. Br.	1	273	1398,4470,7005		0	pwpref03.md:26	Aitarejabrâhmaṇa, Ausg. von Haug.
 Ind. Antiq.	Ind. Antiq.	1	272	41579,62776,65281		0	pwpref04.md:52	Indian Antiquary (Roth).
 Mahâbh.	Mahâbh.	1	256	700,7523,11758		0	pwpref04.md:154	Mahâbhâshja, lith. in Benares.
+Mân. Gṛhy.	Mân. Gṛhy.	1	252	74003,74077,75542		0	pwpref04.md:172	Mânavagṛhjasûtra, nach einer Hdschr. in der Universitätsbibliothek zu Bombay (Schröder).
+Varâh. Yogay.	Varâh. Yogay.	1	249	57067,65467,79562		0	pwpref05.md:162	Varâhamihira's Jogajâtrâ, herausg. von Kern in Ind. St. 10. 14 und 15.
 TS. Prât.	TS. Prât.	1	225	1240,3680,4061		0	pwpref05.md:134	Prâtiçâkhja zur TS., Ausg. von Whitney.
 Taitt. Âr.	Taitt. Âr.	1	224	4558,4564,6656		0	pwpref05.md:118	Taittirîjâraṇjaka in der Bibl. ind.
+Śâṅkh. Śr.	Śâṅkh. Śr.	1	224	3165,15313,22928		0	pwpref03.md:122	Çâṅkhâjana's Çrautasûtra (Weber).
 Agni-P.	Agni-P.	1	212	73630,74362,75933		0	pwpref03.md:22	Agnipurâṇa in der Bibl. ind.
 Sâh. D.	Sâh. D.	1	208	736,4266,6455		0	pwpref05.md:72	Sâhitjadarpaṇa in der Bibl. ind.
 Çânt.	Çânt.	1	204	6563,6845,14150		0	pwpref03.md:126	Çântanava's Phiṭsûtra, Ausg. von Kielhorn.
 Kâṭh.	Kâṭh.	1	201	3464,4301,12337		0	pwpref04.md:88	Kâṭhaka (Weber).
+Pâr. Gṛhy.	Pâr. Gṛhy.	1	198	718,1398,1547		0	pwpref05.md:24	Pâraskara's Gṛhjasûtra, Ausg. von Stenzler.
 Venîs.	Venîs.	1	196	364,556,574		0	pwpref05.md:172	Venîsaṁhâra, Ausg. von Grill (Cappeller).
 Ait. Âr.	Ait. Âr.	1	190	4161,4775,6875		0	pwpref03.md:24	Aitarejâranjaka in der Bibl. ind. In der Regel citirt nach Seite und Zeile (Kern und Roth).
 Mudrâr.	Mudrâr.	1	188	1791,4431,6603		0	pwpref04.md:198	Mudrârâkshasa, nach zwei Ausgaben, Calcutta 1831 und 1926 (Cappeller).
@@ -206,8 +191,10 @@ LA.	LA.	1	117	2180,10443,15612		0	pwpref04.md:134	Lassen's Anthologie 3te Ausg.
 Kâm. Nîtis.	Kâm. Nîtis.	1	113	8203,9341,21244		0	pwpref04.md:72	Kâmandakîjanîtisâra in der Bibl. ind.
 B. A. J.	B. A. J.	1	107	3520,4248,4321		0	pwpref03.md:66	Bombay Asiatic Journal (Geldner).
 Hâr.	Hâr.	1	107	3257,3257,4004		0	pwpref04.md:24	Hârâvalî.
+Śâṅkh. Br.	Śâṅkh. Br.	1	107	14421,14427,14476		0	pwpref03.md:120	Çâṅkhâjana's Brâhmaṇa (Weber).
 Dhûrtan.	Dhûrtan.	1	104	8014,9675,15859		0	pwpref03.md:174	Dhûrtanartaka, Hdschr. (Cappeller).
 H. an.	H. an.	1	104	31856,32409,32847		0	pwpref04.md:22	Hemaḱandra's Anekârthasaṁgraha.
+Chând. Up.	Chând. Up.	1	103	7853,12732,13959		0	pwpref04.md:114	Ḱhândogjopanishad in der Bibl. ind.
 ṚV. Prât.	ṚV. Prât.	1	100	709,848,9949		0	pwpref05.md:68	Prâtiçâkhja zum Ṛgveda.
 Kull.	Kull.	1	99	12509,12527,13162		0	pwpref04.md:124	Kullûka, Commentator des Manu.
 Gaṇit.	Gaṇit.	1	97	22307,26437,26458		0	pwpref03.md:194	Gaṇitâdhjâja in Bhâskara's Siddhântaçiromaṇi, Benares 1866 (Kern).
@@ -230,6 +217,8 @@ Dhâtup.	Dhâtup.	1	62	97953,98357,111523		0	pwpref03.md:170	Dhâtupâṭha, Aus
 J. A. O. S.	J. A. O. S.	1	58	1016,1083,19411		0	pwpref04.md:50	Journal of the American Oriental Society.
 Vâs.	Vâs.	1	58	688,2531,3225		0	pwpref05.md:168	Vâsantikâ, Hdschr. (Cappeller).
 Lîlâv.	Lîlâv.	1	55	26117,28733,36354		0	pwpref04.md:142	Bhâskara's Lîlâvatî, Calcutta 1846 (Kern).
+Maitryup.	Maitryup.	1	55	3228,6197,9728		0	pwpref04.md:162	Maitrjupanishad in der Bibl. ind. Die Accente, die wegen ihrer Fehlerhaftigkeit oft weggelassen oder durch (!) als verdächtig bezeichnet wurden, hat Schröder einer Hdschr. entnommen.
+AV. Pariś.	AV. Pariś.	1	54	50845,64908,68759		0	pwpref03.md:60	Pariçishṭa zum AV., Hdschr. (Roth).
 Mantrabr.	Mantrabr.	1	54	5949,14555,17144		0	pwpref04.md:176	Mantrabrâhmana, Calcutta 1872 (Roth).
 Sâmav. Br.	Sâmav. Br.	1	53	9418,9430,11097		0	pwpref05.md:76	Sâmavidhânabrâhmaṇa, Ausg. von Burnell.
 Mit.	Mit.	1	52	12260,16136,26133		0	pwpref04.md:192	Mitâksharâ. Bei zwei Zahlen ist der Vjavahârâdhjâja, Calcutta 1829, gemeint, bei zwei Zahlen mit folgendem a oder b nebst Angabe der Zeile — das vollständige Werk in 4to.
@@ -241,6 +230,7 @@ Pratâpar.	Pratâpar.	1	45	27888,37288,37327		0	pwpref05.md:44	Pratâparudrîja.
 Çatr.	Çatr.	1	44	34893,34896,34899		0	pwpref03.md:138	Çatruṃǵajamâhâtmja, Ausg. von Weber.
 Colebr. Alg.	Colebr. Alg.	1	43	11358,19402,20282		0	pwpref03.md:148	Colebrooke, Algebra with Arithmetic and Mensuration u. s. w. London 1817.
 Nâgân.	Nâgân.	1	42	513,3523,12842		0	pwpref04.md:200	Nâgânanda, nach zwei Calcuttaer Ausgaben (Cappeller).
+Śârñg. Saṃh.	Śârñg. Saṃh.	1	41	19824,20553,20862		0	pwpref03.md:130	Çârñgadhara's Saṃhitâ, Bombay 1853 (Roth).
 Kâr.	Kâr.	1	40	96801,113936,114895		0	pwpref04.md:82	Kârikâ.
 Kautuḱar.	Kautuḱar.	1	37	96801,113936,114895		0	pwpref04.md:106	Kautukaratnâkara, Hdschr. (Cappeller).
 Nṛs. Up.	Nṛs. Up.	1	35	25791,26325,30041		0	pwpref05.md:12	Nṛsiṁhatâpanîjopanishad, herausg. von Weber in Ind. St. 9 und in der Bibl. ind.
@@ -248,6 +238,7 @@ Bṛh. Âr. Up.	Bṛh. Âr. Up.	1	34	10059,15918,16136		0	pwpref03.md:104	Bṛha
 Kumârasv.	Kumârasv.	1	34	37288,37327,55376		0	pwpref04.md:128	Kumârasvâmin, Commentator des Pratâpar. (Pischel).
 J. R. A. S.	J. R. A. S.	1	32	22757,34725,64761		0	pwpref04.md:62	Journal of the Royal Asiatic Society (Kern).
 VS. Prât.	VS. Prât.	1	32	15267,15600,18158		0	pwpref05.md:194	Prâtiçâkhja zu VS. in Ind. St. 4.
+Śvetâśv. Up.	Śvetâśv. Up.	1	32	14367,19320,53645		0	pwpref03.md:156	Çvetâçvataropanishad in der Bibl. ind.
 Jolly, Schuld.	Jolly, Schuld.	1	30	24827,52005,78064		0	pwpref04.md:60	Jolly, Ueber das indische Schuldrecht, in Münchener philos.-philol. Abh. 1877, S. 287. fgg.
 Tattvas.	Tattvas.	1	28	688,3225,5093		0	pwpref05.md:126	Tattvasamâsa, Mirzapore 1850 (Roth).
 Taitt. Up.	Taitt. Up.	1	27	15400,44549,46614		0	pwpref05.md:120	Taittirîjopanishad in der Bibl. ind.
@@ -256,6 +247,7 @@ Daçak.	Daçak.	1	26	9026,9026,9027		0	pwpref03.md:158	Daçakumâra, Ausg. von B
 Jâǵñ.	Jâǵñ.	1	26	4700,4700,4701		0	pwpref04.md:48	Jâǵñavalkja's Gesetzbuch, Ausg. von Stenzler.
 Vet.	Vet.	1	26	10443,151762,245171		0	pwpref05.md:178	Vetâlapañḱaviṁçati in LA.
 Govindân.	Govindân.	1	25	55911,60158,100821		0	pwpref04.md:16	Govindânanda, Glossator zu Çaṁkarâḱârja's Comm. zu Bâdar. (Kern).
+Hem. Yog.	Hem. Yog.	1	25	12589,13514,16933		0	pwpref04.md:38	Hemaḱandra's Jogaçâstra in Z. d. d. m. G. 28. Aus einem hdschr. Comm. hat Windisch manche Berichtigung und Erklärung mir bereitwilligst zukommen lassen.
 Pischel, de Gr. pr.	Pischel, de Gr. pr.	1	25	70361,101048,114019		0	pwpref05.md:32	Pischel, de Grammaticis prâcriticis. Vratislaviae 1874.
 Ratnam.	Ratnam.	1	25	4669,37501,94361		0	pwpref05.md:60	Ratnamâlâ (Roth).
 Saṁsk. K.	Saṁsk. K.	1	25	41946,87198,418315		0	pwpref05.md:84	Anantadeva's Saṁskârakaustubha, obl. fol.
@@ -267,6 +259,7 @@ Kan.	Kan.	1	21	1797,9415,12973		0	pwpref04.md:74	Kanâda's Vaiçeshikadarçana i
 Paribh.	Paribh.	1	20	88939,137560,150536		0	pwpref05.md:26	Paribhâshâ in Paribhâshenduçekhara, Ausg. von Kielhorn.
 L. K.	L. K.	1	17	81206,197609,208679		0	pwpref04.md:144	Laghuk.
 Amṛt. Up.	Amṛt. Up.	1	16	6609,7363,81815		0	pwpref03.md:34	Amṛtabindûpanishad in der Bibl. ind. (Geldner und Roth).
+Śârñg. Paddh.	Śârñg. Paddh.	1	15	73536,384919,463028		0	pwpref03.md:128	Çârñgadhara's Paddhati, Hdschr. im Asiatischen Museum der Kais. Ak. d. Ww. in St. Petersburg.
 Bibl. ind.	Bibl. ind.	1	13	70638,73349,89079		0	pwpref03.md:92	Bibliotheca indica.
 Pañḱar.	Pañḱar.	1	13	98509,253851,253851		0	pwpref05.md:18	Nârada's Pañḱarâtra in der Bibl. ind.
 Gaṇit. Bhagaṇ.	Gaṇit. Bhagaṇ.	1	12	64758,109449,113899		0	pwpref03.md:198	Gaṇita, Bhagaṇâdhjâja (Kern).
@@ -275,10 +268,14 @@ Wise	Wise	1	12	32361,57428,80945		0	pwpref05.md:204	Commentary on the Hindu Syst
 Gaṇit. Tripr.	Gaṇit. Tripr.	1	11	22307,74295,74295		0	pwpref03.md:204	Gaṇita, Tripraçnâdhikâra (Kern).
 Sârâv.	Sârâv.	1	11	10124,64861,114319		0	pwpref05.md:88	Sârâvalî, citirt bei Utpala zu Varâh. Bṛh.
 Ait. Up.	Ait. Up.	1	10	2721,10421,32082		0	pwpref03.md:28	Aitarejopanishad in der Bibl. ind.
+Dhyânab. Up.	Dhyânab. Up.	1	10	40831,192752,195410		0	pwpref03.md:172	Dhjânabindûpanishad in der Bibl. ind. (Geldner und Roth).
 Vâlakh.	Vâlakh.	1	10	32794,52469,103807		0	pwpref05.md:152	Vâlakhilja, die zwischen ṚV. 8,48 und 49 eingeschobenen Lieder (Roth).
+Weber, Jyot.	Weber, Jyot.	1	10	772,54171,74216		0	pwpref05.md:196	Weber, Ueber den Vedakalender, Namens Ǵjotisham.
+AV. Jyot.	AV. Jyot.	1	9	27095,54849,113368		0	pwpref03.md:56	Ǵjotisha zum AV., Hdschr. (Roth).
 Gauḍap.	Gauḍap.	1	9	14859,16376,16394		0	pwpref03.md:208	Gauḍapâda, Commentator der Sâṃkhjakârikâ.
 Pañḱad.	Pañḱad.	1	9	253857,253857,253857		0	pwpref05.md:16	Pañḱadaṇḍakḱḱhattraprabandha, herausg. von Weber.
 Saddh. P. 4	Saddh. P. 4	1	9	66224,204561,208901		0	pwpref05.md:70	das 4te Kapitel des Saddharmapuṇḍarîka, lithographirt in Parabole de l'Enfant egaré. Par Ph. Éd. Foucaux. Paris 1854.
+Saṁny. Up.	Saṁny. Up.	1	9	24246,31956,44260		0	pwpref05.md:82	Saṁnjâsopanishad in der Bibl. ind. (Geldner und Roth).
 Vâgbh.	Vâgbh.	1	9	52324,85877,300064		0	pwpref05.md:142	Vâgbhaṭa's Âjurvedadarçana (Roth).
 Garbhop.	Garbhop.	1	8	19454,99961,156542		0	pwpref03.md:206	Garbhopanishad in Bibl. ind. (Geldner und Roth).
 Karmapr.	Karmapr.	1	8	88103,99215,223675		0	pwpref04.md:86	Karmapradîpa (Stenzler). Steht unter dem falschen Titel Kâtjâjanasmṛti im Dharmaçâstrasaṁgraha, Vol. I, S. 603—644.
@@ -286,6 +283,7 @@ Karmapr.	Karmapr.	1	8	88103,99215,223675		0	pwpref04.md:86	Karmapradîpa (Stenzl
 Brahmabindûp.	Brahmabindûp.	1	7	14403,16135,74647		0	pwpref03.md:96	Brahmabindûpanishad in der Bibl. ind. (Geldner und Roth).
 Brahmop.	Brahmop.	1	7	66644,176560,288433		0	pwpref03.md:100	Brahmopanishad in der Bibl. ind. (Geldner und Roth).
 Daiv. Br.	Daiv. Br.	1	7	18213,51707,89031		0	pwpref03.md:162	Daivatabrâhmaṇa, Calcutta 1875 und Ausg. von Burnell, Mangalore 1873 (Roth).
+Gaṇit. Pratyabd.	Gaṇit. Pratyabd.	1	7	26437,26458,81316		0	pwpref03.md:202	Gaṇita, Pratjabdaçuddi (Kern).
 Bṛhadd.	Bṛhadd.	1	6	53867,166799,216127		0	pwpref03.md:102	Bṛhaddevatâ.
 Cat. NW. Pr.	Cat. NW. Pr.	1	6	9597,136028,176649		0	pwpref03.md:136	A Catalogue of S. Mss. in private libraries of the North-Western Provinces. I. Benares 1874 (Roth).
 Gaṇit. Grah.	Gaṇit. Grah.	1	6	88653,179777,206192		0	pwpref03.md:200	Gaṇita, Grahâṇajanâdhjâja (Kern).
@@ -295,9 +293,11 @@ Vaǵras.	Vaǵras.	1	6	508640,508640,508640		0	pwpref05.md:144	Vaǵrasûḱî, Au
 Bühl. Guz.	Bühl. Guz.	1	5	9573,9603,356266		0	pwpref03.md:108	Catalogue of S. Mss. from Guzerat etc. by G. Bühler. Bombay 1871—1873 (Roth).
 Colebr. Misc. Ess.	Colebr. Misc. Ess.	1	5	56655,388358,502735		0	pwpref03.md:150	Miscellaneous Essays by H. T. Colebrooke. London 1837.
 Njâm.	Njâm.	1	5	44518,56512,111794		0	pwpref04.md:218	Ǵaiminîjanjâjamâlâvistara, Ausg. von Goldstücker und Cowell (Kern).
+Siddh. Śir.	Siddh. Śir.	1	5	10699,10854,18752		0	pwpref05.md:98	Siddhântaçiromaṇi (Kern).
 Brahma-P.	Brahma-P.	1	4	44276,237823,587215		0	pwpref03.md:98	Brahmapurâṇa nach Citaten in verschiedenen Werken.
 Hiḍ.	Hiḍ.	1	4	66945,326455,349884		0	pwpref04.md:42	Hiḍimbavadha, Ausg. von Bopp.
 Kusum.	Kusum.	1	4	17472,42665,595131		0	pwpref04.md:130	Kusumânǵali, Ausg. von Cowell.
 Njâs.	Njâs.	1	4	160941,504399,526527		0	pwpref04.md:220	Gotama's Njâjadarçana in der Bibl. ind. Die Ausg. Calcutta 1828 wird durch Beifügung von (1828) bezeichnet. (Kern).
 Weber, Nax.	Weber, Nax.	1	4	44324,79173,79226		0	pwpref05.md:200	Weber, Die vedischen Nachrichten von den naxatra. Berlin 1860.
+Yogat. Up.	Yogat. Up.	1	4	11321,33986,81827		0	pwpref04.md:58	Jogatattvopanishad in der Bibl. ind. (Geldner und Roth).
 Âruṇ. Up.	Âruṇ. Up.	1	4	30070,72329,112071		0	pwpref03.md:50	Âruṇejopanishad in der Bibl. ind. (Geldner und Roth).

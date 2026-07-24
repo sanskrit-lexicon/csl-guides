@@ -14,10 +14,10 @@ The residual is **typed**, not a pile of unused abbreviations:
 - **ocr_key** residual specials (`ḱ`, `Ǵ`, leading quotes) after the current fold table.
 - **true_unused** is mostly long bibliographic titles and external works, not core legend sigla.
 
-## Non-goals
+## Policy update (H1569)
 
-- No bulk pref overwrite from body.
-- No silent new diacritic invent-a-fold without documented examples.
+- Body `.txt` wins for siglum *naming*; apply gated key repairs with change log (see [pref-body-naming-authority.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md)).
+- This decomposition remains the typed residual used as the apply input.
 
 ## Per-dict sample distribution
 

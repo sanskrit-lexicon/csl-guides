@@ -37,6 +37,8 @@ This **supersedes** the H1530–H1560 non-goal “no bulk pref overwrite / scan 
 | [`scripts/pref_fold_table.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_fold_table.json) | **UC-8** documented orthography / OCR folds (examples + rules) |
 | [`scripts/build_pref_fold_table.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build_pref_fold_table.py) | Rebuild fold table from PWG/PW align change logs |
 
+**Paper / FINDINGS residual tables:** [Pref residual methods appendix (UC-13)](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/pref-body-residual-methods.md).
+
 ## UC-8 fold table (no silent invent-a-fold)
 
 Orthography candidates that are **not** pure diacritic-strip live in [`scripts/pref_fold_table.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_fold_table.json):

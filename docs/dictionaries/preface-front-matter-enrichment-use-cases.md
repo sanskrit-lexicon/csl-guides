@@ -1,6 +1,6 @@
 # Prefaces as enrichment: proposal and use cases
 
-_Created: 24-07-2026 · Last updated: 24-07-2026_
+_Created: 24-07-2026 · Last updated: 24-07-2026 (UC-13 site appendix link)_
 
 **Status:** proposal (research + product framing) · **Audience:** CDSL / csl-guides maintainers, DH pipeline owners, paper authors  
 **Related:** [OCR'd prefaces](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/ocr-prefaces) · [Preface OCR pipeline](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/preface-ocr-pipeline) · [Pref keys ↔ body naming authority](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md) · [Abbreviations & citations](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/abbreviations-and-citations) · Issue [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)
@@ -181,7 +181,7 @@ Each use case names: **actor**, **pref input**, **join** (if any), **output**, *
 - **Pref input:** typed residual tables (`ALL_pref_only_decompose`, align change logs).
 - **Join:** hit rates by wave; before/after align census.
 - **Output:** appendix tables (“pref_only is typed, not unused”); honest limitations.
-- **Home:** data paper; Uprava FINDINGS; csl-guides CHANGELOG.
+- **Home:** [Pref residual methods appendix](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/pref-body-residual-methods.md) (site); data paper; Uprava FINDINGS; csl-guides CHANGELOG.
 
 ### UC-14 — RU/EN student-facing copy from Vorwort
 

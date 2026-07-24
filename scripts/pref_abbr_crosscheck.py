@@ -12,13 +12,15 @@ We do **not** modernise 19th-c. orthography for its own sake — we align names.
 Expansions (titles) stay scan-faithful unless a key rewrite requires a minimal
 key-side fix. Full-diff of Vorwort/title pages is out of scope.
 
-H1530 pilot · H1543 scale · H1560 typed residual · H1569 body naming authority.
+H1530 pilot · H1543 scale · H1560 typed residual · H1569 body naming authority ·
+H1591 legend emit (`--emit-legend` → pref_legend_emit).
 stdlib only.
 
 Examples (from csl-guides repo root)::
 
     python scripts/pref_abbr_crosscheck.py --self-check
     python scripts/pref_abbr_crosscheck.py --dict PWG --out-dir scripts/out
+    python scripts/pref_abbr_crosscheck.py --dict PWG --out-dir scripts/out --emit-legend
     python scripts/pref_abbr_crosscheck.py --wave A --out-dir scripts/out
     python scripts/pref_abbr_crosscheck.py --all --out-dir scripts/out --json-summary
 """
@@ -686,6 +688,7 @@ def run_one(
     all_source: bool = False,
     json_summary: bool = False,
     wave: str = "—",
+    emit_legend: bool = False,
 ) -> dict:
     code = dict_code.upper()
     discover_note = ""
@@ -787,6 +790,16 @@ def run_one(
     if json_summary:
         js = out_dir / f"{stem}.summary.json"
         js.write_text(json.dumps(summary, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    if emit_legend:
+        try:
+            from pref_legend_emit import emit_dict  # noqa: WPS433
+
+            legend = emit_dict(code, out_dir)
+            summary["legend"] = str(out_dir / f"{code.lower()}_legend.json")
+            summary["legend_n"] = legend.get("n")
+        except Exception as exc:  # noqa: BLE001 — surface but keep census status
+            summary["legend_error"] = str(exc)[:200]
+            print(f"legend emit ERROR {code}: {exc}", flush=True)
     print(json.dumps({k: summary[k] for k in ("dict", "keys", "hits_nonshort", "pref_only", "low_count", "status")}), flush=True)
     return summary
 
@@ -890,6 +903,11 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--list-catalog", action="store_true", help="Print DICT_CATALOG and exit")
     ap.add_argument("--self-check", action="store_true")
     ap.add_argument("--json-summary", action="store_true")
+    ap.add_argument(
+        "--emit-legend",
+        action="store_true",
+        help="After census, emit scripts/out/{code}_legend.json (UC-3 / H1591)",
+    )
     args = ap.parse_args(argv)
 
     if args.self_check:
@@ -935,6 +953,7 @@ def main(argv: list[str] | None = None) -> int:
                 all_source=args.all_source_pages,
                 json_summary=args.json_summary,
                 wave=wave,
+                emit_legend=args.emit_legend,
             )
         except Exception as exc:  # noqa: BLE001 — batch continues
             s = {

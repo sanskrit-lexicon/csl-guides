@@ -17,6 +17,7 @@
     "verify:atlas-viz": "node scripts/verify-atlas-viz.mjs",
     "normalize:quiz-positions": "node scripts/normalize-quiz-answer-positions.mjs",
     "verify:quiz-positions": "node scripts/verify-quiz-answer-positions.mjs",
+    "check:pref-legend": "python scripts/pref_legend_parity.py --check",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

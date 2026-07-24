@@ -2,7 +2,7 @@
 
 _Created: 23-07-2026 · Last updated: 24-07-2026_
 
-Outputs from [`pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py) and the H1560 residual classifier [`pref_only_decompose.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_only_decompose.py).
+Outputs from [`pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py), the H1560 residual classifier [`pref_only_decompose.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_only_decompose.py), and the H1591 legend store emit [`pref_legend_emit.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_legend_emit.py).
 
 | Artifact | Role |
 |----------|------|
@@ -11,8 +11,10 @@ Outputs from [`pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl
 | `{code}_pref_abbr_crosscheck.{md,tsv,summary.json}` | Per-dictionary census |
 | [PWG_PW_pref_only_decompose.md](./PWG_PW_pref_only_decompose.md) | **H1560 rollup** — typed residual for PWG+PW |
 | `{pwg,pw}_pref_only_decompose.{md,tsv}` | Top-50 classified `pref_only` samples |
+| [`pwg_legend.json`](./pwg_legend.json) · [`pw_legend.json`](./pw_legend.json) | **H1591 UC-3** structured legend store (pilot) |
+| Schema | [`../legend.schema.json`](../legend.schema.json) · parity: `python scripts/pref_legend_parity.py --check` |
 
-**Handoffs:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) (pilot) · [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) (scale) · [H1560](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1560-Sonnet_csl-guides_pref-only-pwg-pw-decompose_24.07.26.md) (PWG/PW `pref_only` taxonomy) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)
+**Handoffs:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) (pilot) · [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) (scale) · [H1560](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1560-Sonnet_csl-guides_pref-only-pwg-pw-decompose_24.07.26.md) (PWG/PW `pref_only` taxonomy) · [H1591](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1591-Sonnet_csl-guides_pref-legend-store-emit_24.07.26.md) (legend emit) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)
 
 **Policy (H1569):** body `.txt` wins for siglum *naming*; pref keys align toward body via gated apply + change log. Expansions stay scan-faithful. Residual is typed, not “unused abbreviations.” See [pref-body-naming-authority.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md).
 
@@ -24,6 +26,9 @@ python scripts/pref_abbr_crosscheck.py --wave A --out-dir scripts/out
 python scripts/pref_only_decompose.py --all
 python scripts/pref_key_body_align.py --dict PWG --apply
 python scripts/pref_key_body_align.py --dict PW --apply
+python scripts/pref_legend_emit.py --dict PWG --dict PW
+python scripts/pref_legend_parity.py --check
+# or: npm run check:pref-legend
 ```
 
 _Dr. Mārcis Gasūns_

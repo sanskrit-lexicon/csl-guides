@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sanskrit-lexicon.github.io/csl-guides/schemas/legend.schema.json",
+  "title": "Preface abbreviation legend store (per dictionary)",
+  "description": "Machine-readable legend emitted from pref OCR × body cross-check (UC-3 / H1591). Pilot: PWG + PW.",
+  "type": "object",
+  "required": ["dict", "generated", "n", "rows"],
+  "additionalProperties": false,
+  "properties": {
+    "dict": {
+      "type": "string",
+      "description": "Dictionary code (PWG, PW, …)",
+      "minLength": 1
+    },
+    "generated": {
+      "type": "string",
+      "description": "ISO date the emit was produced (YYYY-MM-DD)"
+    },
+    "source": {
+      "type": "object",
+      "description": "Provenance paths relative to repo root",
+      "additionalProperties": { "type": "string" }
+    },
+    "n": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "len(rows); must equal the row count"
+    },
+    "rows": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/legend_row" }
+    }
+  },
+  "$defs": {
+    "legend_row": {
+      "type": "object",
+      "required": [
+        "dict",
+        "key",
+        "expansion",
+        "class",
+        "body_count",
+        "residual_class",
+        "work_id",
+        "review_required",
+        "sources",
+        "fold_applied"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "dict": {
+          "type": "string",
+          "minLength": 1
+        },
+        "key": {
+          "type": "string",
+          "description": "Body-aligned key_norm where applicable",
+          "minLength": 1
+        },
+        "expansion": {
+          "type": "string",
+          "description": "Scan-faithful title/gloss from pref (not invented)"
+        },
+        "class": {
+          "type": "string",
+          "enum": ["work", "grammar", "meta", "unknown"]
+        },
+        "body_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "residual_class": {
+          "type": ["string", "null"],
+          "description": "From pref_only_decompose when pref_only; else null"
+        },
+        "work_id": {
+          "type": ["string", "null"],
+          "description": "Provisional work identity (prov:DICT:slug) or null; review_required if provisional"
+        },
+        "review_required": {
+          "type": "boolean",
+          "description": "True when work_id is provisional or class is unknown (R8)"
+        },
+        "sources": {
+          "type": "string",
+          "description": "pref file:line (semicolon-joined if multi)"
+        },
+        "fold_applied": {
+          "type": ["string", "null"],
+          "description": "Ref into pref_fold_table when a fold was applied (UC-8); null in wave-1 emit"
+        }
+      }
+    }
+  }
+}

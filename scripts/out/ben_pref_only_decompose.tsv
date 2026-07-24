@@ -1,0 +1,18 @@
+dict	key_norm	class	confidence	alt_form	alt_body_count	body_count	expansion	sources	notes
+BEN	Ṛit. Ṛitusam̄hâra, ed.	true_unused	low		0	0	Bohlen, the first chapter also in Lass., the sixth in my Chrestomathy.	benpref03.md:211	no_alt_hit
+BEN	Govardh. Āryas.	true_unused	low		0	0	Govardhana Āryasaptati, ed. Soma Nath Mookerjea.	benpref03.md:105	no_alt_hit
+BEN	Bhavishyap.	true_unused	low		0	0	Bhavishya-Purâṇa.	benpref03.md:35	no_alt_hit
+BEN	Çṛiṅgârat.	true_unused	low		0	0	Çṛiṅgâratilaks, ed. Gildemeister, in his edition of the Meghadūta.	benpref03.md:73	no_alt_hit
+BEN	Mṛichchh.	true_unused	low		0	0	Mṛichchhakaṭikâ, ed. Stenzler.	benpref03.md:163	no_alt_hit
+BEN	Bhâshâp.	true_unused	low		0	0	Bhâshâparichchheda, in Bibliotheca Indica and in my Sanskrit Chrestomathy.	benpref03.md:31	no_alt_hit
+BEN	Somadev.	true_unused	low		0	0	Nal.  Somadeva's Nala, published by Brockhaus.	benpref03.md:225	no_alt_hit
+BEN	Çântiç.	ortho	high	Śântiś.	16	0	Çântiçataka, in Häberlin's Sanskrit Anthology.	benpref03.md:49	alt='Śântiś.' body_n=16
+BEN	Chaur.	true_unused	low		0	0	and Chaurap.  Chaurapańchâçikâ, in Bohlen's ed. of Bhartṛ{??}ari.	benpref03.md:63	no_alt_hit
+BEN	Daçak.	ortho	high	Daśak.	1098	0	Daçakumâracharita, ed. Wilson, partly in my Chr.	benpref03.md:83	alt='Daśak.' body_n=1098
+BEN	Naish.	true_unused	low		0	0	Naishadhacharita, ed. Calc.	benpref03.md:167	no_alt_hit
+BEN	Çukas.	ortho	med	Śukas.	4	0	Çukasaptati (MSS. of St. Petersburg).	benpref03.md:77	alt='Śukas.' body_n=4
+BEN	Çârṅg.	ortho	med	Śârṅg.	1	0	Paddh.  Çârṅgadhara-Paddhati (MSS. used by Böhtl.).	benpref03.md:51	alt='Śârṅg.' body_n=1
+BEN	Suçr.	ortho	high	Suśr.	776	0	Suçruta, ed. Calc.; the first numeral denotes the vol., the second the page, the third the line.	benpref03.md:229	alt='Suśr.' body_n=776
+BEN	Swed.	true_unused	low		0	0	Swedish.	benpref03.md:233	no_alt_hit
+BEN	Çvet.	ortho	med	Śvet.	1	0	Up.  Çvetâçvataropanishad, in Bibliotheca Indica.	benpref03.md:79	alt='Śvet.' body_n=1
+BEN	ÇKD.	ortho	high	ŚKD.	27	0	Çabdakalpadruma.	benpref03.md:69	alt='ŚKD.' body_n=27

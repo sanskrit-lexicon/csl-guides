@@ -27,9 +27,9 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | Metric | n |
 |--------|--:|
 | Keys parsed | 395 |
-| Hits (non-short) | 278 (70%) |
-| `pref_only` | 112 |
-| `low_count` (≤3) | 56 |
+| Hits (non-short) | 322 (82%) |
+| `pref_only` | 68 |
+| `low_count` (≤3) | 59 |
 | Short keys | 5 |
 
 ## Top body hits (non-short)
@@ -43,39 +43,39 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | `AK.` | 28273 | — | 14,42,43 |
 | `Kathâs.` | 25078 | — | 1744,1744,2299 |
 | `AV.` | 21528 | — | 24,45,48 |
+| `Śat. Br.` | 20941 | — | 183,183,222 |
+| `Suśr.` | 20306 | — | 693,820,823 |
 | `an.` | 20269 | — | 14,20,43 |
 | `St.` | 19558 | — | 19,54,93 |
 | `Hariv.` | 15689 | — | 49,49,157 |
 | `Varâh. Bṛh.` | 15212 | — | 3485,3536,5285 |
 | `Med.` | 15136 | — | 4,14,17 |
 | `Varâh. Bṛh. S.` | 14323 | — | 15711,16025,22830 |
-| `H. an.` | 9986 | — | 20,43,48 |
-| `Ragh.` | 9870 | — | 222,530,833 |
 
 ## `pref_only` sample
 
 | key_norm | body_count | flag | samples |
 |---|---:|---|---|
-| `AV. Pariç.` | 0 | pref_only | — |
-| `Avad. Çat.` | 0 | pref_only | — |
 | `Burn. Lot. de la b. l.` | 0 | pref_only | — |
-| `DAÇABH.` | 0 | pref_only | — |
-| `Divja-Av.` | 0 | pref_only | — |
-| `Drâhj.` | 0 | pref_only | — |
 | `Durgârkât.` | 0 | pref_only | — |
 | `Dâj. oder Dâjabh.` | 0 | pref_only | — |
 | `Gild. Scriptorum Arabum etc.` | 0 | pref_only | — |
-| `Gâb. Up.` | 0 | pref_only | — |
-| `Horâç.` | 0 | pref_only | — |
 | `Javaneçv.` | 0 | pref_only | — |
-| `Jaǵ. V.` | 0 | pref_only | — |
-| `Jogas.` | 0 | pref_only | — |
 | `Jâǵnikad. Paddh. zu Kâtj. Çr.` | 0 | pref_only | — |
-| `KRIJĀSAM.` | 0 | pref_only | — |
-| `Kaij.` | 0 | pref_only | — |
 | `Kaush. Br.` | 0 | pref_only | — |
 | `Kaush. Up.` | 0 | pref_only | — |
-| `Khând. Up.` | 0 | pref_only | — |
+| `Koshṭhîpr.` | 0 | pref_only | — |
+| `Kshur. Up.` | 0 | pref_only | — |
+| `Kâtj. Çr.` | 0 | pref_only | — |
+| `Kâturbhú.` | 0 | pref_only | — |
+| `Kâvjâk.` | 0 | pref_only | — |
+| `Laghuǵ.` | 0 | pref_only | — |
+| `Mańǵuçrîn.` | 0 | pref_only | — |
+| `Mâdhj. Rec.` | 0 | pref_only | — |
+| `Mâṇḍ. Up. Kâr.` | 0 | pref_only | — |
+| `Mém. sur l'Inde (Reinaud,)` | 0 | pref_only | — |
+| `Mṛkkh.` | 0 | pref_only | — |
+| `Nârâjanaḱakr.` | 0 | pref_only | — |
 
 ## `low_count` sample
 

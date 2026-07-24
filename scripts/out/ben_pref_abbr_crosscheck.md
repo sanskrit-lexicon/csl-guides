@@ -1,16 +1,17 @@
 # Pref abbr × body `.txt` cross-check — BEN
 
-_Created: 23-07-2026 · Last updated: 23-07-2026_
+_Created: 24-07-2026 · Last updated: 24-07-2026_
 
 **Handoffs:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) · [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)  
 **Tool:** [`scripts/pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py)
 
-## Non-goals
+## Policy (H1569)
 
-- **No bulk overwrite** of `prefaces/*.md` from body matches.
-- **Scan remains truth** for expansions.
-- Body is a **prioritisation channel** only.
+- **Body `.txt` wins** for how a work is *named* (siglum orthography).
+- Pref legend keys are corrected **toward body** via gated apply + change log — not left as raw OCR when body attests a form.
+- **Expansions** (titles) remain scan-faithful; this census does not rewrite them.
 - Short keys (&lt; 3 non-space chars) flagged `short_key`.
+- Hold without body attestation: rare/MS works, long bib titles, ambiguous keys.
 
 ## Inputs
 
@@ -26,9 +27,9 @@ _Created: 23-07-2026 · Last updated: 23-07-2026_
 | Metric | n |
 |--------|--:|
 | Keys parsed | 116 |
-| Hits (non-short) | 98 (84%) |
-| `pref_only` | 17 |
-| `low_count` (≤3) | 16 |
+| Hits (non-short) | 105 (91%) |
+| `pref_only` | 10 |
+| `low_count` (≤3) | 18 |
 | Short keys | 1 |
 
 ## Top body hits (non-short)
@@ -47,9 +48,9 @@ _Created: 23-07-2026 · Last updated: 23-07-2026_
 | `Caus.` | 1384 | — | 67,462,463 |
 | `Râjat.` | 1326 | — | 179,328,408 |
 | `Vikr.` | 1162 | — | 412,440,790 |
+| `Daśak.` | 1098 | — | 293,334,400 |
 | `Lat.` | 1061 | — | 58,73,154 |
 | `Ragh.` | 937 | — | 360,681,740 |
-| `Râgh.` | 937 | — | 360,681,740 |
 
 ## `pref_only` sample
 
@@ -58,18 +59,11 @@ _Created: 23-07-2026 · Last updated: 23-07-2026_
 | `Bhavishyap.` | 0 | pref_only | — |
 | `Bhâshâp.` | 0 | pref_only | — |
 | `Chaur.` | 0 | pref_only | — |
-| `Daçak.` | 0 | pref_only | — |
 | `Govardh. Āryas.` | 0 | pref_only | — |
 | `Mṛichchh.` | 0 | pref_only | — |
 | `Naish.` | 0 | pref_only | — |
 | `Somadev.` | 0 | pref_only | — |
-| `Suçr.` | 0 | pref_only | — |
 | `Swed.` | 0 | pref_only | — |
-| `ÇKD.` | 0 | pref_only | — |
-| `Çukas.` | 0 | pref_only | — |
-| `Çvet.` | 0 | pref_only | — |
-| `Çântiç.` | 0 | pref_only | — |
-| `Çârṅg.` | 0 | pref_only | — |
 | `Çṛiṅgârat.` | 0 | pref_only | — |
 | `Ṛit. Ṛitusam̄hâra, ed.` | 0 | pref_only | — |
 

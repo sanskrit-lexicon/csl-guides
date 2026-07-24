@@ -1,0 +1,54 @@
+dict	key_norm	class	confidence	alt_form	alt_body_count	body_count	expansion	sources	notes
+BHS	E. Lamotte, Mél. chin. et boud.	true_unused	low		0	0	Mélanges chinoises et bouddhiques.	bhspref09.md:238	no_alt_hit
+BHS	Winternitz, H(ist). I(nd). Lit.	true_unused	low		0	0	W's History of Indian Literature (English version; vols. 1 and 2, Calcutta, 1927 and 1933).	bhspref11.md:92	no_alt_hit
+BHS	Turner (R.L.), Nep. Dict.	spacing	high	Turner, Nep. Dict.	8	0	Dictionary of the Nepali Language, London, 1931.	bhspref11.md:42	alt='Turner, Nep. Dict.' body_n=8
+BHS	Neisser, Z. Wbch. d. RV.	true_unused	low		0	0	W. Neisser, Zum Wörterbuch des Rigveda.	bhspref10.md:70	no_alt_hit
+BHS	Kh.p., Khud.p. (comm.)	true_unused	low		0	0	Khuddaka-pāṭha (commentary) (Pali).	bhspref09.md:220	no_alt_hit
+BHS	Meyer, Kauṭ. (Arth.)	spacing	med	Meyer, Kauṭ.	4	0	J. J. Meyer's translation of Kauṭ., Leipzig, 1926.	bhspref10.md:28	alt='Meyer, Kauṭ.' body_n=4
+BHS	Wack(ernagel), AIGr.	true_unused	low		0	0	Altindische Grammatik, Göttingen, 1896, 1905, 1930.	bhspref11.md:84	no_alt_hit
+BHS	B (as in Wh. Roots)	true_unused	low		0	0	Brāhmaṇa(s).	bhspref08.md:106	no_alt_hit
+BHS	S (as in Wh. Roots)	true_unused	low		0	0	Sūtra(s).	bhspref10.md:168	no_alt_hit
+BHS	U (as in Wh. Roots)	true_unused	low		0	0	Upaniṣads.	bhspref11.md:44	no_alt_hit
+BHS	B. in Tr. (Warren)	spacing	med	B. in Tr.	1	0	Warren's Buddhism in Translations, HOS. 3.	bhspref08.md:108	alt='B. in Tr.' body_n=1
+BHS	JR (Vikramacarita)	true_unused	low		0	0	Jainistic Recension of the Vikr., see HOS 26–27.	bhspref09.md:206	no_alt_hit
+BHS	Miln.(p.), Milp.	true_unused	low		0	0	Milindapañha (Pali).	bhspref10.md:34	no_alt_hit
+BHS	Przyluski, Aśoka	true_unused	low		0	0	La Légende de l'Empereur Açoka, Paris, 1923.	bhspref10.md:138	no_alt_hit
+BHS	Uhlenbeck (C.C.)	spacing	med	Uhlenbeck	3	0	Kurzgefasstes etymologisches Wörterbuch der altindischen Sprache (Amsterdam, 1898–99).	bhspref11.md:46	alt='Uhlenbeck' body_n=3
+BHS	postp., postpos.	true_unused	low		0	0	postposition.	bhspref10.md:126	no_alt_hit
+BHS	MIndic or MInd.	true_unused	low		0	0	Middle Indic.	bhspref10.md:36	no_alt_hit
+BHS	(Jä.,) Jäschke	spacing	high	Jäschke	14	0	Jäschke, Tibetan-English Dictionary.	bhspref09.md:196	alt='Jäschke' body_n=14
+BHS	Kauṭ. (Arth.)	spacing	high	Kauṭ.	26	0	Kauṭilīya (Arthaśāstra).	bhspref09.md:218	alt='Kauṭ.' body_n=26
+BHS	San., Sanatk.	true_unused	low		0	0	Sanatkumāracaritam (Ap.), ed. Jacobi (1921).	bhspref10.md:172	no_alt_hit
+BHS	Vism., Vis.M.	true_unused	low		0	0	Visuddhi-magga (Pali).	bhspref11.md:68	no_alt_hit
+BHS	inst., instr.	true_unused	low		0	0	instrumental.	bhspref09.md:174	no_alt_hit
+BHS	(Hoernle) MR	true_unused	low		0	0	Hoernle (general editor), Manuscript Remains of Buddhist literature found in Eastern Turkestan, Oxford, 1916. BHS fragments ed. by Hoernle, Lüders, Pargiter, Thomas.	bhspref07.md:86	no_alt_hit
+BHS	v.l., vv.ll.	true_unused	low		0	0	variant reading(s).	bhspref11.md:70	no_alt_hit
+BHS	Bcṭ, Bca.ṭ.	true_unused	low		0	0	Bodhicaryāvatāra-ṭīkā, ed. LaVallée Poussin, Brussels, 1898. Technical terms cited from Index.	bhspref07.md:22	no_alt_hit
+BHS	Dpv., Dpvs.	true_unused	low		0	0	Dīp.	bhspref09.md:78	no_alt_hit
+BHS	Geiger (W.)	spacing	high	Geiger	37	0	Pali, Strassburg, 1916. Cited by numbers of sections, without the symbol §.	bhspref09.md:122	alt='Geiger' body_n=37
+BHS	lect. diff.	true_unused	low		0	0	lectio difficilior.	bhspref09.md:246	no_alt_hit
+BHS	It., Itiv.	true_unused	low		0	0	Itivuttaka (Pali).	bhspref09.md:182	no_alt_hit
+BHS	Rājat(ar).	spacing	high	Rājat.	15	0	Rājataraṃginī (ed. Stein).	bhspref10.md:150	alt='Rājat.' body_n=15
+BHS	ch., chap.	true_unused	low		0	0	chapter.	bhspref09.md:10	no_alt_hit
+BHS	Bv, Bu.v.	true_unused	low		0	0	Buddha-vaṃsa (Pali).	bhspref08.md:146	no_alt_hit
+BHS	Ep. Zeyl.	true_unused	low		0	0	Epigraphia Zeylanica.	bhspref09.md:90	no_alt_hit
+BHS	Tatp(ur).	spacing	high	Tatp.	8	0	Tatpuruṣa.	bhspref11.md:18	alt='Tatp.' body_n=8
+BHS	NAWGött.	true_unused	low		0	0	Nachrichten der Akademie der Wissenschaften zu Göttingen.	bhspref10.md:66	no_alt_hit
+BHS	Ved. St.	true_unused	low		0	0	Pischel and Geldner, Vedische Studien (3 vols.).	bhspref11.md:60	no_alt_hit
+BHS	der(iv).	spacing	high	der.	5	0	derived, derivative.	bhspref09.md:50	alt='der.' body_n=5
+BHS	Pug(g).	spacing	med	Pug.	1	0	Puggala Paññatti (Pali).	bhspref10.md:142	alt='Pug.' body_n=1
+BHS	s.v(v).	spacing	high	s.v.	1936	0	under the word(s).	bhspref11.md:12	alt='s.v.' body_n=1936
+BHS	var(r).	spacing	high	var.	149	0	variant(s).	bhspref11.md:52	alt='var.' body_n=149
+BHS	vs, vss	true_unused	low		0	0	verse, verses.	bhspref11.md:76	no_alt_hit
+BHS	Mṛcch.	true_unused	low		0	0	Mṛcchakaṭikā.	bhspref10.md:42	no_alt_hit
+BHS	Sūyag.	true_unused	low		0	0	Sūyagaḍaṅgasutta (AMg.).	bhspref11.md:10	no_alt_hit
+BHS	ms(s).	spacing	high	ms.	807	0	manuscript(s).	bhspref10.md:44	alt='ms.' body_n=807
+BHS	uncpd.	true_unused	low		0	0	uncompounded.	bhspref11.md:48	no_alt_hit
+BHS	ABORI	true_unused	low		0	0	Annals of the Bhandarkar Oriental Research Institute (Poona).	bhspref08.md:50	no_alt_hit
+BHS	AbhK.	true_unused	low		0	0	preceding.	bhspref07.md:12	no_alt_hit
+BHS	Nidd¹	true_unused	low		0	0	Mahā-Niddesa (Pali).	bhspref10.md:78	no_alt_hit
+BHS	Sdhp.	true_unused	low		0	0	Saddhammopāyana (Pali).	bhspref10.md:186	no_alt_hit
+BHS	impf.	true_unused	low		0	0	imperfect.	bhspref09.md:158	no_alt_hit
+BHS	ASGW	true_unused	low		0	0	Abhandlungen der sächsischen Gesellschaft der Wissenschaften.	bhspref08.md:94	no_alt_hit
+BHS	ApŚ!	true_unused	low		0	0	Āpastamba Śrauta Sūtra.	bhspref08.md:90	no_alt_hit
+BHS	ZII	true_unused	low		0	0	Zeitschrift für Indologie und Iranistik.	bhspref11.md:100	no_alt_hit

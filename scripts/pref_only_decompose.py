@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""H1560 — decompose PWG/PW pref_only residual into typed classes.
+"""H1560/H1571 — decompose pref_only residual into typed classes.
 
 Reads frozen crosscheck TSVs, probes body for alternate orthography, writes
-classified TSV + MD under scripts/out/. No bulk pref overwrite.
+classified TSV + MD under scripts/out/. Feeds pref_key_body_align.py (H1569).
 
 Taxonomy: ortho | rare | ocr_key | spacing | true_unused | ambiguous
 """
@@ -273,6 +273,8 @@ def load_tsv(path: Path) -> list[dict]:
 def pick_sample(pref_only: list[dict], n: int = 50) -> list[dict]:
     # Prefer multi-token / longer keys first (more diagnostic), then alpha
     ranked = sorted(pref_only, key=lambda r: (-len(r["key_norm"]), r["key_norm"]))
+    if n <= 0 or n >= len(ranked):
+        return ranked
     return ranked[:n]
 
 
@@ -458,62 +460,38 @@ def run_dict(code: str, out_dir: Path, sample_n: int = 50, control_n: int = 20) 
 
 
 def write_rollup(out_dir: Path, summaries: list[dict]) -> None:
-    path = out_dir / "PWG_PW_pref_only_decompose.md"
+    path = out_dir / "ALL_pref_only_decompose.md"
     lines = [
-        "# Pref-only decomposition rollup — PWG + PW",
+        "# Pref-only decomposition rollup — all dicts",
         "",
         f"_Created: {TODAY} · Last updated: {TODAY}_",
         "",
-        f"**Handoff:** [H1560](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1560-Sonnet_csl-guides_pref-only-pwg-pw-decompose_24.07.26.md) · "
-        f"**Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)",
+        f"**Handoff:** [H1571](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1571-Sonnet_csl-guides_pref-body-align-all-dicts_24.07.26.md) · "
+        f"**Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123) · "
+        f"**Policy:** [pref-body-naming-authority.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md)",
         "",
-        "## Finding",
-        "",
-        "H1543 left high `pref_only` on PWG (133) and PW (89) **even with case + diacritic fold**.",
-        "The residual is **typed**, not a pile of unused abbreviations:",
-        "",
-        "- Large share is **ortho** (German *j* = *y*, `Kâtj.`/`Kâty.`, `Gṛhja`/`Gṛhya`, dual `X oder Y` keys).",
-        "- **rare** tracks handschrift / occasional works in the expansion.",
-        "- **ocr_key** residual specials (`ḱ`, `Ǵ`, leading quotes) after the current fold table.",
-        "- **true_unused** is mostly long bibliographic titles and external works, not core legend sigla.",
-        "",
-        "## Non-goals",
-        "",
-        "- No bulk pref overwrite from body.",
-        "- No silent new diacritic invent-a-fold without documented examples.",
-        "",
-        "## Per-dict sample distribution",
+        "Body `.txt` wins for siglum *naming*. Typed residual for gated apply.",
         "",
         "| Dict | pref_only total | sample | ortho | rare | ocr_key | spacing | true_unused | ambiguous |",
         "|------|----------------:|-------:|------:|-----:|--------:|--------:|------------:|----------:|",
     ]
     for s in summaries:
-        d = s["dist"]
+        d = s.get("dist") or {}
         lines.append(
-            f"| **{s['dict']}** | {s['pref_only_total']} | {s['sample_n']} | "
+            f"| **{s['dict']}** | {s.get('pref_only_total', 0)} | {s.get('sample_n', 0)} | "
             f"{d.get('ortho', 0)} | {d.get('rare', 0)} | {d.get('ocr_key', 0)} | "
             f"{d.get('spacing', 0)} | {d.get('true_unused', 0)} | {d.get('ambiguous', 0)} |"
         )
     lines += [
         "",
-        "## Artifacts",
-        "",
-        "- [`pwg_pref_only_decompose.md`](./pwg_pref_only_decompose.md) / [`.tsv`](./pwg_pref_only_decompose.tsv)",
-        "- [`pw_pref_only_decompose.md`](./pw_pref_only_decompose.md) / [`.tsv`](./pw_pref_only_decompose.tsv)",
-        "- Frozen census: [`pwg_pref_abbr_crosscheck.tsv`](./pwg_pref_abbr_crosscheck.tsv), [`pw_pref_abbr_crosscheck.tsv`](./pw_pref_abbr_crosscheck.tsv)",
-        "- Tool: [`pref_only_decompose.py`](../pref_only_decompose.py) (classifier) · [`pref_abbr_crosscheck.py`](../pref_abbr_crosscheck.py) (census)",
-        "",
-        "## Reproduce",
-        "",
         "```text",
-        "python scripts/pref_abbr_crosscheck.py --dict PWG --out-dir scripts/out --json-summary",
-        "python scripts/pref_abbr_crosscheck.py --dict PW --out-dir scripts/out --json-summary",
-        "python scripts/pref_only_decompose.py --all",
+        "python scripts/pref_only_decompose.py --all --sample-n 0",
+        "python scripts/pref_key_body_align.py --all --apply",
         "```",
         "",
         "---",
         "",
-        "_H1560 · Grok 4.5 (`grok-4.5`)._",
+        "_H1571 · Grok 4.5 (`grok-4.5`)._",
         "",
         "_Dr. Mārcis Gasūns_",
         "",
@@ -525,17 +503,33 @@ def write_rollup(out_dir: Path, summaries: list[dict]) -> None:
 def main(argv: list[str] | None = None) -> int:
     import argparse
 
-    ap = argparse.ArgumentParser(description="Decompose pref_only residual (H1560)")
-    ap.add_argument("--dict", dest="dict_code", help="PWG or PW")
-    ap.add_argument("--all", action="store_true", help="Run PWG and PW")
+    ap = argparse.ArgumentParser(description="Decompose pref_only residual (H1560/H1571)")
+    ap.add_argument("--dict", dest="dict_code", help="Dictionary code")
+    ap.add_argument("--all", action="store_true", help="All dicts with pref_only in census TSV")
     ap.add_argument("--out-dir", type=Path, default=HERE / "out")
-    ap.add_argument("--sample-n", type=int, default=50)
+    ap.add_argument("--sample-n", type=int, default=0, help="0 = classify all pref_only")
     ap.add_argument("--control-n", type=int, default=20)
+    ap.add_argument("--min-pref-only", type=int, default=1)
     args = ap.parse_args(argv)
 
+    out_dir = Path(args.out_dir)
     codes: list[str] = []
     if args.all:
-        codes = ["PWG", "PW"]
+        for p in sorted(out_dir.glob("*_pref_abbr_crosscheck.tsv")):
+            stem = p.name.replace("_pref_abbr_crosscheck.tsv", "")
+            if stem.lower() == "all":
+                continue
+            code = stem.upper()
+            n_po = 0
+            with p.open(encoding="utf-8") as f:
+                for r in csv.DictReader(f, delimiter="\t"):
+                    if r.get("flag") == "pref_only":
+                        n_po += 1
+            if n_po >= args.min_pref_only:
+                codes.append(code)
+                print(f"queue {code} pref_only={n_po}", flush=True)
+            else:
+                print(f"skip {code} pref_only={n_po}", flush=True)
     elif args.dict_code:
         codes = [args.dict_code.upper()]
     else:
@@ -544,11 +538,14 @@ def main(argv: list[str] | None = None) -> int:
     summaries = []
     for code in codes:
         print(f"=== {code} ===", flush=True)
-        summaries.append(
-            run_dict(code, Path(args.out_dir), sample_n=args.sample_n, control_n=args.control_n)
-        )
+        try:
+            summaries.append(
+                run_dict(code, out_dir, sample_n=args.sample_n, control_n=args.control_n)
+            )
+        except Exception as e:
+            print(f"  ERROR {code}: {e}", flush=True)
     if len(summaries) > 1:
-        write_rollup(Path(args.out_dir), summaries)
+        write_rollup(out_dir, summaries)
     return 0
 
 

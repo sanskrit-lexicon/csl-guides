@@ -1,19 +1,12 @@
 dict	key_norm	class	confidence	alt_form	alt_body_count	body_count	expansion	sources	notes
-PWG	SADDH. P. (mit nachfolgender einfacher Zahl)	spacing	high	SADDH. P.	171	0	SADDHARMAPUNDARĪKA, handschriftlich in der Pariser Bibliothek, nach Mittheilungen von A. Schiefner.	pwgpref19.md:34	alt='SADDH. P.' body_n=171
 PWG	Zur Geschichte u. s. w. (Lassen,)	true_unused	low		0	0	Zur Geschichte der Griechischen und Indoskythischen Könige in Baktrien, Kabul und Indien durch Entzifferung der Altkabulischen Legenden auf ihren Münzen, von Christian Lassen. Bonn 1838. 8°.	pwgpref11.md:50	long_bib_or_external_title
-PWG	A Dict. Beng. and S. (Haughton,)	spacing	med	A Dict. Beng. and S.	3	0	A Dictionary Bengali and Sanskrit, explained in English.	pwgpref07.md:16	alt='A Dict. Beng. and S.' body_n=3
 PWG	Jâǵnikad. Paddh. zu Kâtj. Çr.	rare	high		0	0	Jâǵnikadeva's Paddhati zu Kâtjâjana's Çrautasûtra; nach Mittheilungen von A. Weber.	pwgpref16.md:28	expansion_rare_signal
 PWG	Gild. Scriptorum Arabum etc.	true_unused	low		0	0	Scriptorum Arabum de Rebus Indicis loci et opuscula inedita. Ad codicum Pariss. etc. fidem recensuit et illustravit J. Gildemeister. Bonnae MDCCCXXXVIII.	pwgpref16.md:24	long_bib_or_external_title
 PWG	Mém. sur l'Inde (Reinaud,)	true_unused	low		0	0	Mémoire géographique, historique et scientifique sur l'Inde antérieurement au milieu du XIe siècle de l'ère chrétienne d'après les écrivains arabes, persans et chinois par M. Reinaud. Paris 1849.	pwgpref09.md:84	long_bib_or_external_title
-PWG	Zur L. u. G. d. W. (Roth,)	spacing	high	Zur L. u. G. d. W.	26	0	Zur Literatur und Geschichte des Weda. Drei Abhandlungen von Rudolph Roth. Stuttgart 1846.	pwgpref11.md:51	alt='Zur L. u. G. d. W.' body_n=26
 PWG	Pravar. oder Pravarâdhj.	spacing	med	Pravar.	1	0	Pravarâdhjâja.	pwgpref10.md:31	alt='Pravar.' body_n=1
 PWG	Verh. d. k. s. G. d. Ww.	true_unused	low		0	0	Verhandlungen der königlich-sächsischen Gesellschaft der Wissenschaften zu Leipzig.	pwgpref16.md:67	long_bib_or_external_title
 PWG	Burn. Lot. de la b. l.	true_unused	low		0	0	Le Lotus de la bonne loi, traduit du Sanscrit etc. par M. E. Burnouf. Paris 1852.	pwgpref07.md:69	long_bib_or_external_title
 PWG	RV. Prât. oder Prâtiç.	spacing	high	RV. Prât.	1788	0	Prâtiçâkhja zum Ṛgveda, citirt nach Paṭala und Versen. Hdschr. S. Roth in der Einl. z. Nir. S. XLVII.	pwgpref10.md:52	alt='RV. Prât.' body_n=1788
-PWG	Lebensb. (Schiefner,)	spacing	high	Lebensb.	340	0	Eine tibetische Lebensbeschreibung Çâkjamuni's, des Begründers des Buddhathums, im Auszuge mitgetheilt von [Fortsetzung in der rechten Spalte] [...]	pwgpref09.md:55	alt='Lebensb.' body_n=340
-PWG	Institutt. (Lassen,)	spacing	med	Institutt.	1	0	Institutiones linguae pracriticae. Scripsit Christianus Lassen. Bonnae ad Rhenum 1837.	pwgpref08.md:83	alt='Institutt.' body_n=1
-PWG	Mat. ind. (Ainslie,)	spacing	high	Mat. ind.	21	0	Materia indica; or some account of those articles which are employed by the Hindoes, or eastern nations, in their medicine, arts and agriculture etc. London. Vol. I. 1826. Vol. II. 1831.	pwgpref09.md:77	alt='Mat. ind.' body_n=21
-PWG	Hindu Th. (Wilson,)	spacing	high	Hindu Th.	16	0	Select specimens of the Theatre of the Hindus, translated from the original Sanscrit, by Horace Hayman Wilson. Second edition. London 1835.	pwgpref08.md:72	alt='Hindu Th.' body_n=16
 PWG	Prab. oder Prabodh.	spacing	high	Prab.	2836	0	Prabodhaḱandrodaja, ed. Brockhaus (Gild. Bibl. 216).	pwgpref10.md:27	alt='Prab.' body_n=2836
 PWG	Tib. Lebensb. Çâkj.	true_unused	low		0	0	Tibetische Lebensbeschreibung Çâkjamuni's, das Original von dem oben unter Lebensb. (Schiefner) aufgeführten Auszuge.	pwgpref10.md:83	no_alt_hit
 PWG	Prât. oder Prâtiç.	spacing	high	Prât.	4358	0	Prâtiçâkhja.	pwgpref10.md:30	alt='Prât.' body_n=4358
@@ -21,31 +14,100 @@ PWG	VAGRĀSANASĀDHANAM.	rare	high		0	0	VAGRĀSANASĀDHANAMĀLĀ, handschriftlic
 PWG	Vikr. oder Vikram.	spacing	high	Vikr.	1665	0	Vikramorvaçî, ed. Bollensen (Gild. Bibl. 206). Eine einfache Zahl verweist auf einen Çloka, eine doppelte — auf Seite und Zeile.	pwgpref11.md:27	alt='Vikr.' body_n=1665
 PWG	Çâńk. oder Çâńkar.	true_unused	low		0	0	Çâńkara (ein Scholiast des Çikuntala) und Çâńkarakârâ.	pwgpref08.md:14	dual_oder_key; no_alt_hit
 PWG	Dâj. oder Dâjabh.	ortho	low		0	0	Dâjabhâga, ed. Calc. 1829 (Gild. Bibl. 344).	pwgpref08.md:38	dual_oder_key; j_series_no_confirmed_body_alt
-PWG	Maç. oder Maç. S.	spacing	high	Maç.	289	0	Maçaka's Kalpasûtrâni.	pwgpref09.md:61	alt='Maç.' body_n=289
-PWG	Gîr. oder Gîtag.	spacing	med	Gîtag.	4	0	Gîtagovinda, ed. Lassen (Gild. Bibl. 168).	pwgpref08.md:57	alt='Gîtag.' body_n=4
 PWG	Nîl. oder Nîlak.	spacing	high	Nîlak.	1275	0	Nîlakaṇṭha, ein Scholiast des Mahâbhârata (angeführt in Bopp's Ausgabe des Nala) und auch des AK. (angeführt im ÇKDr.).	pwgpref10.md:14	alt='Nîlak.' body_n=1275
 PWG	Sch. oder Schol.	spacing	high	Sch.	7123	0	Scholiast.	pwgpref10.md:66	alt='Sch.' body_n=7123
 PWG	Vop. oder Vopad.	spacing	high	Vop.	5956	0	Vopadeva's Grammatik, nach Böhtlingk's Ausgabe (Gild. Bibl. 249, a. S. 170).	pwgpref11.md:38	alt='Vop.' body_n=5956
 PWG	Çuk. oder Çukas.	true_unused	low		0	0	Çukasaptati in Lassen's Anthologie (Gild. Bibl. 48).	pwgpref08.md:34	dual_oder_key; no_alt_hit
-PWG	Pent. (Lassen,)	spacing	med	Pent.	4	0	Christiani Lassenii commentatio geographica atque historica de Pentapotamia indica. Bonnae ad Rhenum 1827.	pwgpref10.md:26	alt='Pent.' body_n=4
 PWG	Mâṇḍ. Up. Kâr.	true_unused	low		0	0	Gaudapâda's Kârikâ zur Mâṇḍ. Up. in der Bibliotheca indica.	pwgpref09.md:75	no_alt_hit
-PWG	Parâçarapaddh.	ortho	high	Parâśarapaddh.	10	0	Parâçarapaddhati; nach Anführungen im ÇKDr.	pwgpref16.md:49	alt='Parâśarapaddh.' body_n=10
-PWG	Pathjâpathjav.	ortho	med	Pathyâpathyav.	1	0	Pathjâpathjaviveka; nach Anführungen im ÇKDr.	pwgpref16.md:51	alt='Pathyâpathyav.' body_n=1
 PWG	Roxb. Fl. ind.	true_unused	low		0	0	Flora indica or Description of Indian plants. By the late William Roxburgh. Serampore 1832. Vol. I. II. III. 8°.	pwgpref10.md:49	long_bib_or_external_title
-PWG	Varâh. L. Ǵât.	ortho	high	Varâh. L. Jât.	18	0	Varâhamihira's Laghuǵâtaka.	pwgpref11.md:15	alt='Varâh. L. Jât.' body_n=18
-PWG	Lit. (Weber,)	spacing	high	Lit.	1491	0	Akademische Vorlesungen über Indische Literaturgeschichte. Gehalten von A. Weber. Berlin 1852.	pwgpref09.md:58	alt='Lit.' body_n=1491
 PWG	Nârâjanaḱakr.	rare	high		0	0	Nârâjanaḱakravartin, ein Schol. des AK.; nach Anführungen im ÇKDr.	pwgpref16.md:48	expansion_rare_signal
 PWG	Prâjaçkittav.	rare	high		0	0	Prâjaçkittaviveka, nach Anführungen im ÇKDr.	pwgpref10.md:29	expansion_rare_signal
 PWG	RĀSHTRAPĀLAP.	rare	high		0	0	RĀSHTRAPĀLAPARIPRIKKHĀ, handschriftlich in der Pariser Bibliothek, nach Mittheilungen von A. Schiefner.	pwgpref19.md:32	expansion_rare_signal
-PWG	Siddhântaçir.	ortho	high	Siddhântaśir.	73	0	Siddhântaçiromaṇi, nach Anführungen im ÇKDr.	pwgpref10.md:68	alt='Siddhântaśir.' body_n=73
 PWG	Up. und Upak.	true_unused	low		0	0	Upakoçâ (Geschichte der; s. Gild. Bibl. 239).	pwgpref16.md:63	no_alt_hit
 PWG	\Lalit. Calc.	ocr_key	high	Lalit. Calc.	39	0	Lalitavistara in der Bibliotheca indica.	pwgpref09.md:53	alt='Lalit. Calc.' body_n=39
-PWG	Çârńg. Paddh.	ortho	high	Śârńg. Paddh.	36	0	Çârńgadhara's Paddhati; vgl. Bulletin historico-philologique de l'Académie Impériale des sciences de St.-Pétersbourg. T. VIII, S. 113. fgg. oder Mélanges asiatiques, T. I, S. 279. fgg.	pwgpref08.md:21	alt='Śârńg. Paddh.' body_n=36
-PWG	Dhjânav. Up.	ortho	med	Dhyânav. Up.	2	0	Dhjânavindûpanishad.	pwgpref08.md:43	alt='Dhyânav. Up.' body_n=2
-PWG	Juktikalpat.	ortho	med	Yuktikalpat.	4	0	Juktikalpataru von Buoǵarâǵa; nach Anführungen im ÇKDr.	pwgpref16.md:30	alt='Yuktikalpat.' body_n=4
-PWG	Kâtj. Paddh.	ortho	high	Kâty. Paddh.	10	0	Jâǵnikadeva's Paddhati zu Kâtjâjana's Çrautasûtra.	pwgpref16.md:33	alt='Kâty. Paddh.' body_n=10
-PWG	Çvetâçv. Up.	ortho	high	Śvetâśv. Up.	605	0	Çvetâçvataropanishad in der Bibliotheca indica.	pwgpref08.md:35	alt='Śvetâśv. Up.' body_n=605
 PWG	Çâńkh. Gṛhj.	ortho	low		0	0	Çâńkhâjana's Gṛhjasûtrâni.	pwgpref08.md:16	j_series_no_confirmed_body_alt
 PWG	ʼUtt. Râmaḱ.	ocr_key	med		0	0	Uttara-Râmaḱaritra, ed. Calc. (Gild. Bibl. 212).	pwgpref10.md:90	ocr_special_char_no_body_alt
 PWG	ʼVjavahârat.	ortho	low		0	0	Vjavahâratattva, ed. Calc. (Gild. Bibl. 342).	pwgpref11.md:30	j_series_no_confirmed_body_alt
-PWG	Gṛhjasâṃgr.	ortho	high	Gṛhyasâṃgr.	158	0	Gṛhjasaṃgrahapariçishta, 2 Prapâṭhaka von 106 und 103 Versen; vgl. Roth, Zur L. u. G. d. W. S. 120. Hdschr.	pwgpref08.md:62	alt='Gṛhyasâṃgr.' body_n=158
+PWG	Mâdhj. Rec.	true_unused	low		0	0	Mâdhjaṃdina-Recension.	pwgpref09.md:63	no_alt_hit
+PWG	Pat. Jogâç.	ortho	low		0	0	Pataṅgali's Jogâçâstra, ed. Ballantyne, Allahabad 1853.	pwgpref10.md:25	j_series_no_confirmed_body_alt
+PWG	Paṅkav. Br.	true_unused	low		0	0	Paṅkaviṃçabrâhmaṇa.	pwgpref10.md:21	no_alt_hit
+PWG	Çrâddhaviv.	ortho	med	Śrâddhaviv.	1	0	Çrâddhaviveka; nach Anführungen im ÇKDr.	pwgpref16.md:19	alt='Śrâddhaviv.' body_n=1
+PWG	AV. Pariç.	ortho	high	AV. Pariś.	146	0	Pariçishṭa des Atharvaveda.	pwgpref07.md:42	alt='AV. Pariś.' body_n=146
+PWG	Avad. Çat.	ortho	high	Avad. Śat.	5	0	Avadânaçataka, eine buddhistische Legendensammlung.	pwgpref07.md:38	alt='Avad. Śat.' body_n=5
+PWG	Durgârkât.	rare	high		0	0	Durgârkâtattva; nach Anführungen im ÇKDr.	pwgpref16.md:22	expansion_rare_signal
+PWG	Kaush. Br.	true_unused	low		0	0	Kaushîtakibrâhmaṇa.	pwgpref09.md:34	no_alt_hit
+PWG	Kaush. Up.	true_unused	low		0	0	Kaushîtakjupanishad.	pwgpref09.md:35	no_alt_hit
+PWG	Khând. Up.	ortho	high	Chând. Up.	2049	0	Khândogjopanishad, nach der Ausgabe von Röer in der Bibliotheca indica.	pwgpref09.md:41	alt='Chând. Up.' body_n=2049
+PWG	Koshṭhîpr.	rare	high		0	0	Koshṭhîpradîpa, nach Anführungen im ÇKDr.	pwgpref09.md:44	expansion_rare_signal
+PWG	Kshur. Up.	true_unused	low		0	0	Kshurikopanishad.	pwgpref16.md:34	no_alt_hit
+PWG	Mańǵuçrîn.	ocr_key	med		0	0	Ârjamańǵuçrînâmasańgîti, s. Verz. d. Pet. H. No. 121.	pwgpref09.md:76	ocr_special_char_no_body_alt
+PWG	Pâr. Gṛhj.	ortho	high	Pâr. Gṛhy.	838	0	Pâraskara's Gṛhjasûtrâṇi.	pwgpref10.md:23	alt='Pâr. Gṛhy.' body_n=838
+PWG	Shaḍv. Br.	true_unused	low		0	0	Shaḍviṃçabrâhmaṇa.	pwgpref10.md:67	no_alt_hit
+PWG	Teǵov. Up.	ocr_key	med		0	0	Teǵovindûpanishad.	pwgpref10.md:82	ocr_special_char_no_body_alt
+PWG	Tithjâdit.	ortho	high	Tithyâdit.	122	0	Tithjâditattva; nach Anführungen im ÇKDr.	pwgpref16.md:60	alt='Tithyâdit.' body_n=122
+PWG	\Brahma-S.	ocr_key	high	Brahma-S.	5	0	Brahmasûtra, nach Anführungen in Wind. Sancara.	pwgpref07.md:61	alt='Brahma-S.' body_n=5
+PWG	\Kâvja-Pr.	ortho	low		0	0	Kâvjaprakâça, ed. Calc. (Gild. Bibl. 265).	pwgpref09.md:38	j_series_no_confirmed_body_alt
+PWG	Âçv. Gṛhj.	rare	high		0	0	Âçvalâjana's Gṛhjasûtrâni in 4 Adhjâja. Hdschr.	pwgpref07.md:13	expansion_rare_signal
+PWG	Çatar. Up.	ortho	high	Śatar. Up.	7	0	Çatarudrijopanishad.	pwgpref08.md:22	alt='Śatar. Up.' body_n=7
+PWG	Çaun. Kât.	true_unused	low		0	0	Çaunaka's Kâturâdhjâjikâ, citirt nach Adhjâja und Sûtra. — Av. Prât.	pwgpref08.md:24	no_alt_hit
+PWG	Çâńkh. Br.	ortho	high	Śâńkh. Br.	882	0	Çâńkhâjana's Brâhmaṇa.	pwgpref08.md:15	alt='Śâńkh. Br.' body_n=882
+PWG	Çâńkh. Çr.	ortho	high	Śâńkh. Śr.	2728	0	Çâńkhâjana's Çrautasûtrâni.	pwgpref08.md:17	alt='Śâńkh. Śr.' body_n=2728
+PWG	Ǵjotishat.	rare	high		0	0	Ǵjotishatattva; nach Anführungen im ÇKDr.	pwgpref16.md:25	expansion_rare_signal
+PWG	ʼRâga-Tar.	ambiguous	low		0	0	Râgataraṅgiṇî, ed. Troyer (Gild. Bibl. 148) für die 6 ersten Taraṃga's; für die folgenden die Calc. Ausg. (Gild. Bibl. 147).	pwgpref10.md:37	markup_or_conditional_legend
+PWG	ʼVedântas.	ocr_key	high	Vedântas.	671	0	Vedântasâra, ed. Calc. (Gild. Bibl. 279).	pwgpref11.md:19	alt='Vedântas.' body_n=671
+PWG	Divja-Av.	ortho	high	Divya-Av.	6	0	Divjâvadâna, eine buddhistische Legendensammlung.	pwgpref08.md:44	alt='Divya-Av.' body_n=6
+PWG	Javaneçv.	ortho	low		0	0	Javaneçvara.	pwgpref09.md:12	j_series_no_confirmed_body_alt
+PWG	KRIJĀSAM.	ortho	med	KRIYĀSAM.	1	0	KRIJĀSAMUKKAJA, handschriftlich in der Pariser Bibliothek, nach Mittheilungen von A. Schiefner.	pwgpref19.md:24	alt='KRIYĀSAM.' body_n=1
+PWG	Kâtj. Çr.	rare	high		0	0	Kâtjâjana's Çrautasûtrâni. 26 Adhjâja. Hdschr.	pwgpref09.md:30	expansion_rare_signal
+PWG	Kâturbhú.	rare	high		0	0	Kâturbhuǵa, ein Scholiast des Mahâbhârata; nach Anführungen in Bopp's Ausgabe des Nala (s. unter N.).	pwgpref09.md:31	expansion_rare_signal
+PWG	Matsja-P.	ortho	high	Matsya-P.	150	0	Matsjapurâṇa.	pwgpref09.md:78	alt='Matsya-P.' body_n=150
+PWG	Saṅgîtad.	rare	high		0	0	Saṅgîtadâmodara (über Musik), nach Anführungen im ÇKDr.	pwgpref10.md:60	expansion_rare_signal
+PWG	Sâṃkhjak.	ortho	high	Sâṃkhyak.	876	0	Sâṃkhjakârikâ, ed. Wilson (Gild. Bibl. 271), mit Benutzung des Index in Lassen's Ausgabe (Gild. Bibl. 270).	pwgpref10.md:61	alt='Sâṃkhyak.' body_n=876
+PWG	\Bhâshâp.	ambiguous	low		0	0	Bhâshâpariḱḱheda nach der Ausgabe von Röer in der Bibliotheca indica.	pwgpref07.md:52	markup_or_conditional_legend
+PWG	Çrâddhat.	ortho	high	Śrâddhat.	11	0	Çrâddhatattva; nach Anführungen im ÇKDr.	pwgpref16.md:18	alt='Śrâddhat.' body_n=11
+PWG	Çṛńgârat.	ortho	high	Śṛńgârat.	117	0	Çṛńgâratilaka, ed. Gildemeister (Gild. Bibl. 151).	pwgpref08.md:32	alt='Śṛńgârat.' body_n=117
+PWG	ʼNjâja-S.	ortho	low		0	0	Gotama's Njâjasûtrâṇi, ed. Calc. (Gild. Bibl. 274).	pwgpref10.md:17	j_series_no_confirmed_body_alt
+PWG	ʼVivâdaḱ.	ocr_key	med		0	0	Vivâdaḱintâmaṇi, ed. Calc. (Gild. Bibl. 351).	pwgpref11.md:29	ocr_special_char_no_body_alt
+PWG	Gâb. Up.	ortho	high	Jâb. Up.	8	0	Gâbâlopanishad.	pwgpref08.md:48	alt='Jâb. Up.' body_n=8
+PWG	Kuvalaj.	ortho	high	Kuvalay.	220	0	Kuvalajânanda (Rhetorik) von Apjadîkshita mit dem Alaṃkârakandrikâ genannten Commentar des Vaidjanâtha. Pûna 1846. 176 Bll. querfolio.	pwgpref09.md:49	alt='Kuvalay.' body_n=220
+PWG	KĀPIÇĀV.	ortho	med	KĀPIŚĀV.	1	0	KĀPIÇĀVADĀNA, handschriftlich in der Pariser Bibliothek, nach Mittheilungen von A. Schiefner.	pwgpref19.md:20	alt='KĀPIŚĀV.' body_n=1
+PWG	Matsjop.	ortho	high	Matsyop.	73	0	Matsjopâkhjâna, ed. Bopp (Gild. Bibl. 106).	pwgpref09.md:79	alt='Matsyop.' body_n=73
+PWG	Praçnop.	ortho	high	Praśnop.	260	0	Praçnopanishad, nach der Ausgabe von Röer in der Bibliotheca indica.	pwgpref10.md:28	alt='Praśnop.' body_n=260
+PWG	Pushpas.	true_unused	low		0	0	Pushpasûtra.	pwgpref10.md:34	no_alt_hit
+PWG	PĀÇAKAK.	true_unused	low		0	0	PĀÇAKAKEVALĪ in «Monatsberichte der Kön. Akademie der Wissenschaften zu Berlin», 1859, S. 158. fgg.	pwgpref19.md:30	no_alt_hit
+PWG	\Mudrâr.	ocr_key	high	Mudrâr.	93	0	Mudrârâkshasa, ed. Calc. (Gild. Bibl. 213).	pwgpref09.md:87	alt='Mudrâr.' body_n=93
+PWG	Âçv. Çr.	ortho	high	Âśv. Śr.	2295	0	Âçvalâjana's Çrautasûtrâni in 12 Adhjâja. Handschrift.	pwgpref07.md:12	alt='Âśv. Śr.' body_n=2295
+PWG	Çabdârn.	ortho	high	Śabdârn.	14	0	Çabdârnava, ein Wörterbuch; nach Anführungen im ÇKDr.	pwgpref08.md:11	alt='Śabdârn.' body_n=14
+PWG	Çat. Br.	ortho	high	Śat. Br.	20941	0	Çatapathabrâhmaṇa in der Mâdhjandina-Çâkhâ, with extracts made from the commentaries of Sâjana, Harisvâmin and Dvivedaganga, edited by Dr. Albrecht Weber. Berlin Ferd. Dümmler's Buchhandlung. London W	pwgpref08.md:23	alt='Śat. Br.' body_n=20941
+PWG	Çâk. Ch.	ortho	high	Śâk. Ch.	285	0	Chezy's Ausgabe des Çikuntala (Gild. Bibl. 187).	pwgpref08.md:13	alt='Śâk. Ch.' body_n=285
+PWG	ʼRatnâv.	ocr_key	high	Ratnâv.	95	0	Ratnâvalî, ed. Calc. (Gild. Bibl. 214).	pwgpref10.md:48	alt='Ratnâv.' body_n=95
+PWG	DAÇABH.	ortho	high	DAŚABH.	12	0	DAÇABHŪMIÇVARA, handschriftlich in der Pariser Bibliothek, nach Mittheilungen von A. Schiefner.	pwgpref19.md:12	alt='DAŚABH.' body_n=12
+PWG	Jaǵ. V.	ortho	high	Yaj. V.	5	0	Jaǵurveda.	pwgpref09.md:11	alt='Yaj. V.' body_n=5
+PWG	Kâvjâk.	rare	high		0	0	Kâvjakandrikâ, ein Lehrbuch der Rhetorik; nach Anführungen im ÇKDr.	pwgpref09.md:37	expansion_rare_signal
+PWG	Laghuǵ.	ocr_key	med		0	0	Varâhamihira's Laghuǵâtaka.	pwgpref09.md:51	ocr_special_char_no_body_alt
+PWG	Purush.	rare	high		0	0	Purushottama, ein Lexicograph (unter Anderm auch Verfasser des Trik. und der Hâr.); nach Anführungen im ÇKDr.	pwgpref10.md:33	expansion_rare_signal
+PWG	Sûrjas.	ortho	high	Sûryas.	1867	0	Sûrjasiddhânta, nach Anführungen in Haughton, A Dict. Beng. and S.	pwgpref10.md:75	alt='Sûryas.' body_n=1867
+PWG	Vâju-P.	ortho	high	Vâyu-P.	237	0	Vâjupurâṇa.	pwgpref10.md:93	alt='Vâyu-P.' body_n=237
+PWG	\Bhaṭṭ.	ocr_key	high	Bhaṭṭ.	2786	0	Bhaṭṭikâvja, ed. Calc. (Gild. Bibl. 137).	pwgpref07.md:53	alt='Bhaṭṭ.' body_n=2786
+PWG	\Mahâv.	ocr_key	high	Mahâv.	13	0	Mahâvîrakarita. The Mahá Víra Charita, or the history of Ráma, a Sanscrit play, by Bhatta Bhavabhúti. Edited by Francis Henry Trithen. London 1848.	pwgpref09.md:66	alt='Mahâv.' body_n=13
+PWG	\Mâlat.	ocr_key	high	Mâlat.	40	0	Mâlatîmâdhava, ed. Calc. (Gild. Bibl. 210).	pwgpref09.md:71	alt='Mâlat.' body_n=40
+PWG	\Mâlav.	ocr_key	high	Mâlav.	1201	0	Mâlavikâgnimitra, ed. Tullberg (Gild. Bibl. 209).	pwgpref09.md:72	alt='Mâlav.' body_n=1201
+PWG	\Naish.	ambiguous	low		0	0	Naishadhakarita, ed. Calc. (Gild. Bibl. 143).	pwgpref09.md:91	markup_or_conditional_legend
+PWG	Çântiç.	ortho	high	Śântiś.	269	0	Çihlana's Çântiçataka in Haeberlin's Anthology, S. 410. fgg.	pwgpref08.md:19	alt='Śântiś.' body_n=269
+PWG	Çîdhar.	true_unused	low		0	0	Çîdharasvâmin, ein Scholiast der Bhag.	pwgpref08.md:31	no_alt_hit
+PWG	ʼVîram.	ocr_key	med	Vîram.	4	0	Vîramitrodaja.	pwgpref11.md:28	alt='Vîram.' body_n=4
+PWG	Drâhj.	ortho	high	Drâhy.	11	0	Drâhjâjana.	pwgpref16.md:21	alt='Drâhy.' body_n=11
+PWG	Horâç.	ortho	high	Horâś.	21	0	Horâçâstra.	pwgpref08.md:76	alt='Horâś.' body_n=21
+PWG	Jogas.	ortho	high	Yogas.	752	0	Jogasûtra (The Aphorisms of the Yoga Philosophy of Patanjali. I. Allahabad 1852. II. ebend. 1853.).	pwgpref16.md:29	alt='Yogas.' body_n=752
+PWG	Mṛkkh.	true_unused	low		0	0	Mṛkkhakaṭikâ, ed. Stenzler (Gild. Bibl. 186).	pwgpref09.md:86	no_alt_hit
+PWG	Vaidj.	ortho	high	Vaidy.	44	0	Vaidjaka.	pwgpref10.md:91	alt='Vaidy.' body_n=44
+PWG	Vjutp.	ortho	high	Vyutp.	1741	0	Vjutpatti oder Mahâvjutpatti (s. Mél. asiat. II, 382), ein sanskrit-tibetisches Wörterbuch aus dem Taṅgur (Bd. 123 der Sûtra, S. 223—377). Die Mittheilungen aus diesem Werke nebst andern auf den Budhi	pwgpref11.md:31	alt='Vyutp.' body_n=1741
+PWG	\Kull.	ocr_key	high	Kull.	1420	0	Kullûka, ein Scholiast des Manu, vollständig abgedruckt unter andern in der Calc. Ausg. von 1830 (Gild. Bibl. 288).	pwgpref09.md:45	alt='Kull.' body_n=1420
+PWG	Çârńg.	ortho	high	Śârńg.	666	0	Çârńgadhara.	pwgpref08.md:20	alt='Śârńg.' body_n=666
+PWG	Kaij.	ortho	high	Kaiy.	54	0	Kaijaṭa, ein Erklärer von Patańǵali's Mahâbhâshja.	pwgpref09.md:17	alt='Kaiy.' body_n=54
+PWG	Kâtj.	ortho	high	Kâty.	8789	0	Kâtjâjana.	pwgpref09.md:29	alt='Kâty.' body_n=8789
+PWG	Lâṭj.	ortho	high	Lâṭy.	2608	0	Lâṭjâjana's Sûtra zum SV. Hdschr.	pwgpref09.md:54	alt='Lâṭy.' body_n=2608
+PWG	Suçr.	ortho	high	Suśr.	20306	0	Suçruta, ed. Calc. (Gild. Bibl. 367); citirt nach Band, Seite und Zeile. Den Titel der Hessler'schen Uebersetzung s. bei Gild. Bibl. 368.	pwgpref10.md:73	alt='Suśr.' body_n=20306
+PWG	Viçv.	ortho	high	Viśv.	403	0	Viçvâmitra's Kampf in Böhtlingk's Chrestomathie.	pwgpref11.md:25	alt='Viśv.' body_n=403
+PWG	Çvut.	true_unused	low		0	0	Çrautabodha in der Zeitschrift für die Kunde des Morgenlandes, IV, S. 60 fgg. Ein dabeistehendes Br. verweist auf die von Brockhaus besorgte Ausgabe in seinem Werke: Ueber den Druck Sanskritischer Wer	pwgpref08.md:33	no_alt_hit
+PWG	Ǵjot.	ortho	high	Jyot.	542	0	Ǵjotisha.	pwgpref08.md:58	alt='Jyot.' body_n=542

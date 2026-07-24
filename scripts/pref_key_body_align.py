@@ -1,18 +1,15 @@
 # -*- coding: utf-8 -*-
-"""pref_key_body_align.py — apply body-attested pref legend key renames (H1569).
+"""pref_key_body_align.py — apply body-attested pref legend key renames (H1569/H1571).
 
 Policy: csl-orig body .txt wins for *naming* of works. Pref OCR keys are
 rewritten toward body forms when a classify row provides alt_form with
 alt_body_count >= 1. Every change is written to a change-log meta document.
 
-Does not invent forms. Does not delete rare/MS keys. Expansions unchanged
-except the bold key token.
-
 Examples::
 
-    python scripts/pref_key_body_align.py --dict PWG --dry-run
-    python scripts/pref_key_body_align.py --dict PWG --apply
-    python scripts/pref_key_body_align.py --dict PW --apply
+    python scripts/pref_key_body_align.py --dict AP90 --apply
+    python scripts/pref_key_body_align.py --all --apply
+    python scripts/pref_key_body_align.py --all --dry-run
 """
 from __future__ import annotations
 
@@ -31,22 +28,11 @@ REPO = HERE.parent
 GITHUB = REPO.parent
 TODAY = date.today().strftime("%d-%m-%Y")
 
+sys.path.insert(0, str(HERE))
+from pref_abbr_crosscheck import DICT_CATALOG, resolve_pref_root  # noqa: E402
+
 APPLY_CLASSES = frozenset({"ortho", "ocr_key", "spacing"})
 MIN_ALT_BODY = 1
-
-# Pref roots (source DE pages + translations that carry the same bold keys).
-DICT_PREF: dict[str, dict] = {
-    "PWG": {
-        "root": GITHUB / "PWG" / "prefaces",
-        "prefix": "pwgpref",
-        "decompose": HERE / "out" / "pwg_pref_only_decompose.tsv",
-    },
-    "PW": {
-        "root": GITHUB / "PWK" / "prefaces",
-        "prefix": "pwpref",
-        "decompose": HERE / "out" / "pw_pref_only_decompose.tsv",
-    },
-}
 
 
 def load_apply_rows(tsv: Path) -> list[dict]:
@@ -78,13 +64,11 @@ def load_apply_rows(tsv: Path) -> list[dict]:
                     "expansion": (r.get("expansion") or "")[:120],
                 }
             )
-    # Longest first so nested keys don't partial-corrupt
     rows.sort(key=lambda x: -len(x["old"]))
     return rows
 
 
 def pref_source_files(root: Path, prefix: str) -> list[Path]:
-    """Source + translation pages that hold bold keys (not consolidated all)."""
     out: list[Path] = []
     if not root.is_dir():
         return out
@@ -92,48 +76,65 @@ def pref_source_files(root: Path, prefix: str) -> list[Path]:
         if not p.is_file() or not p.name.endswith(".md"):
             continue
         low = p.name.lower()
-        if low in ("readme.md",) or "methods" in low or "build" in low:
+        if low in ("readme.md",) or "methods" in low:
             continue
         if "pref_all" in low or low.endswith(".meta.md"):
             continue
-        if not low.startswith(prefix.lower()):
+        if "change" in low and "align" in low:
             continue
-        # pwgpref07.md, pwgpref07.en.md, pwgpref07.ru.md
+        if not low.startswith(prefix.lower()):
+            # wil01.md / yat01.md style
+            if prefix in ("wil", "yat") and re.match(rf"^{prefix}\d+", low):
+                out.append(p)
+            continue
         out.append(p)
     return out
 
 
 def replace_key_in_text(text: str, old: str, new: str) -> tuple[str, int]:
-    """Replace bold-key and bare-key legend forms. Returns (text, n_replacements)."""
     n = 0
-    # PWG-style: **KEY** =
     bold_old = f"**{old}**"
     bold_new = f"**{new}**"
     if bold_old in text:
         c = text.count(bold_old)
         text = text.replace(bold_old, bold_new)
         n += c
-    # Eq style without bold: KEY =  at line start (PW sometimes)
-    # Only whole-line-ish: start or after whitespace before =
-    pat = re.compile(
-        rf"(?m)^(\s*)({re.escape(old)})(\s*=\s+)"
+    # Table cells: | old | expansion |
+    pat_cell = re.compile(
+        rf"(?m)^(\|[ \t]*)({re.escape(old)})([ \t]*\|)"
     )
-    text2, c2 = pat.subn(rf"\1{new}\3", text)
+    text2, c2 = pat_cell.subn(rf"\1{new}\3", text)
     if c2:
         text = text2
         n += c2
-    # Leading OCR junk variants already handled if old includes them
+    # Eq style: KEY = at line start
+    pat = re.compile(rf"(?m)^(\s*)({re.escape(old)})(\s*=\s+)")
+    text3, c3 = pat.subn(rf"\1{new}\3", text)
+    if c3:
+        text = text3
+        n += c3
+    # Indented AP90-style: "  KEY. expansion" — only exact key token at start
+    pat_ind = re.compile(rf"(?m)^([ \t]+)({re.escape(old)})(\s+)")
+    text4, c4 = pat_ind.subn(rf"\1{new}\3", text)
+    if c4:
+        text = text4
+        n += c4
     return text, n
 
 
 def apply_dict(code: str, dry_run: bool) -> dict:
-    meta = DICT_PREF[code]
-    root: Path = meta["root"]
-    tsv: Path = meta["decompose"]
+    code = code.upper()
+    if code not in DICT_CATALOG:
+        raise SystemExit(f"unknown dict {code}")
+    meta = DICT_CATALOG[code]
+    root = resolve_pref_root(code)
+    tsv = HERE / "out" / f"{code.lower()}_pref_only_decompose.tsv"
     if not tsv.is_file():
-        raise SystemExit(f"missing decompose TSV: {tsv}")
-    if not root.is_dir():
-        raise SystemExit(f"missing pref root: {root}")
+        print(f"=== {code} === SKIP no decompose TSV", flush=True)
+        return {"dict": code, "status": "skip_no_tsv", "changes": 0, "replacements": 0}
+    if not root or not root.is_dir():
+        print(f"=== {code} === SKIP no pref root", flush=True)
+        return {"dict": code, "status": "skip_no_root", "changes": 0, "replacements": 0}
 
     rows = load_apply_rows(tsv)
     files = pref_source_files(root, meta["prefix"])
@@ -141,8 +142,6 @@ def apply_dict(code: str, dry_run: bool) -> dict:
     print(f"  candidates: {len(rows)}  files: {len(files)}  dry_run={dry_run}", flush=True)
 
     changes: list[dict] = []
-    file_hits: dict[str, int] = {}
-
     for row in rows:
         old, new = row["old"], row["new"]
         total = 0
@@ -156,30 +155,31 @@ def apply_dict(code: str, dry_run: bool) -> dict:
                 continue
             total += n
             touched.append(f"{path.name}:{n}")
-            file_hits[path.name] = file_hits.get(path.name, 0) + n
             if not dry_run:
                 path.write_text(updated, encoding="utf-8", newline="\n")
         if total > 0:
-            changes.append(
-                {
-                    **row,
-                    "replacements": total,
-                    "files": "; ".join(touched),
-                }
+            changes.append({**row, "replacements": total, "files": "; ".join(touched)})
+            print(
+                f"  {'WOULD ' if dry_run else ''}{old!r} → {new!r}  ×{total}  ({row['class']})",
+                flush=True,
             )
-            print(f"  {'WOULD ' if dry_run else ''}{old!r} → {new!r}  ×{total}  ({row['class']})", flush=True)
-        else:
-            print(f"  SKIP (not found in files): {old!r} → {new!r}", flush=True)
 
-    # Change log
     out_dir = HERE / "out"
     out_dir.mkdir(parents=True, exist_ok=True)
     log_md = out_dir / f"{code.lower()}_pref_key_body_align_changes.md"
     log_tsv = out_dir / f"{code.lower()}_pref_key_body_align_changes.tsv"
     write_change_log(log_md, log_tsv, code, changes, dry_run, root)
-    print(f"  wrote {log_md}", flush=True)
-    print(f"  applied_rows={len(changes)} replacements={sum(c['replacements'] for c in changes)}", flush=True)
-    return {"dict": code, "changes": len(changes), "replacements": sum(c["replacements"] for c in changes)}
+    print(
+        f"  wrote {log_md.name}  rows={len(changes)} repl={sum(c['replacements'] for c in changes)}",
+        flush=True,
+    )
+    return {
+        "dict": code,
+        "status": "ok",
+        "changes": len(changes),
+        "replacements": sum(c["replacements"] for c in changes),
+        "root": str(root),
+    }
 
 
 def write_change_log(
@@ -196,17 +196,11 @@ def write_change_log(
         "",
         f"_Created: {TODAY} · Last updated: {TODAY}_",
         "",
-        f"**Handoff:** [H1569](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1569-Sonnet_csl-guides_pref-body-naming-authority-apply_24.07.26.md) · "
+        f"**Handoff:** [H1571](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1571-Sonnet_csl-guides_pref-body-align-all-dicts_24.07.26.md) · "
         f"**Policy:** [pref-body-naming-authority.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md) · "
         f"**Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)",
         "",
-        "## Policy",
-        "",
-        "- Body `.txt` wins for siglum *naming*; pref keys rewritten only with body-attested `alt_form`.",
-        "- Every row below is one documented change (or dry-run proposal).",
-        "- Expansions not rewritten. `rare` / `true_unused` / unattested `ambiguous` held.",
-        "",
-        f"**Pref root:** `{root}`",
+        f"**Pref root:** `{root.as_posix() if hasattr(root, 'as_posix') else root}`",
         f"**Rows with ≥1 file hit:** {len(changes)}",
         f"**Total replacements:** {sum(c['replacements'] for c in changes)}",
         "",
@@ -224,32 +218,19 @@ def write_change_log(
         lines.append("| — | — | — | *(none)* | | | | |")
     lines += [
         "",
-        "## Reproduce",
-        "",
         "```text",
         f"python scripts/pref_key_body_align.py --dict {code} --apply",
-        f"cd {root} && python build_combined.py",
         "```",
         "",
         "---",
         "",
-        f"_H1569 · Grok 4.5 (`grok-4.5`) · {mode}._",
+        f"_H1571 · Grok 4.5 (`grok-4.5`) · {mode}._",
         "",
         "_Dr. Mārcis Gasūns_",
         "",
     ]
     path_md.write_text("\n".join(lines), encoding="utf-8")
-
-    cols = [
-        "old",
-        "new",
-        "class",
-        "confidence",
-        "alt_body_count",
-        "replacements",
-        "files",
-        "notes",
-    ]
+    cols = ["old", "new", "class", "confidence", "alt_body_count", "replacements", "files", "notes"]
     with path_tsv.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=cols, delimiter="\t", lineterminator="\n", extrasaction="ignore")
         w.writeheader()
@@ -257,30 +238,68 @@ def write_change_log(
             w.writerow(c)
 
 
+def write_rollup(out_dir: Path, summaries: list[dict], dry_run: bool) -> None:
+    path = out_dir / "ALL_pref_key_body_align.md"
+    mode = "DRY-RUN" if dry_run else "APPLIED"
+    lines = [
+        f"# Pref key → body naming align — ALL ({mode})",
+        "",
+        f"_Created: {TODAY} · Last updated: {TODAY}_",
+        "",
+        f"**Handoff:** [H1571](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1571-Sonnet_csl-guides_pref-body-align-all-dicts_24.07.26.md) · "
+        f"**Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)",
+        "",
+        "| Dict | status | change rows | replacements |",
+        "|------|--------|------------:|-------------:|",
+    ]
+    tot_c = tot_r = 0
+    for s in summaries:
+        lines.append(
+            f"| **{s['dict']}** | {s.get('status', 'ok')} | {s.get('changes', 0)} | {s.get('replacements', 0)} |"
+        )
+        tot_c += s.get("changes", 0)
+        tot_r += s.get("replacements", 0)
+    lines += [
+        "",
+        f"**Total change rows:** {tot_c} · **Total replacements:** {tot_r}",
+        "",
+        "---",
+        "",
+        f"_H1571 · Grok 4.5 (`grok-4.5`) · {mode}._",
+        "",
+        "_Dr. Mārcis Gasūns_",
+        "",
+    ]
+    path.write_text("\n".join(lines), encoding="utf-8")
+    print(f"wrote {path}", flush=True)
+
+
 def main(argv: list[str] | None = None) -> int:
-    ap = argparse.ArgumentParser(description="Align pref legend keys to body naming (H1569)")
-    ap.add_argument("--dict", dest="dict_code", help="PWG or PW")
-    ap.add_argument("--all", action="store_true", help="PWG and PW")
-    ap.add_argument("--apply", action="store_true", help="Write files (default is dry-run)")
-    ap.add_argument("--dry-run", action="store_true", help="Explicit dry-run (default)")
+    ap = argparse.ArgumentParser(description="Align pref legend keys to body naming (H1569/H1571)")
+    ap.add_argument("--dict", dest="dict_code", help="Dictionary code")
+    ap.add_argument("--all", action="store_true", help="All codes with decompose TSV")
+    ap.add_argument("--apply", action="store_true", help="Write files")
+    ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args(argv)
 
     codes: list[str] = []
     if args.all:
-        codes = ["PWG", "PW"]
+        out = HERE / "out"
+        for p in sorted(out.glob("*_pref_only_decompose.tsv")):
+            code = p.name.split("_")[0].upper()
+            # pwg_pref_only → PWG; ap90 → AP90
+            stem = p.name.replace("_pref_only_decompose.tsv", "")
+            code = stem.upper()
+            codes.append(code)
     elif args.dict_code:
         codes = [args.dict_code.upper()]
     else:
         ap.error("provide --dict CODE or --all")
 
-    dry = not args.apply
-    if args.dry_run:
-        dry = True
-
-    for code in codes:
-        if code not in DICT_PREF:
-            raise SystemExit(f"unsupported dict {code}; choose PWG or PW")
-        apply_dict(code, dry_run=dry)
+    dry = not args.apply or args.dry_run
+    summaries = [apply_dict(c, dry_run=dry) for c in codes]
+    if len(summaries) > 1:
+        write_rollup(HERE / "out", summaries, dry)
     return 0
 
 

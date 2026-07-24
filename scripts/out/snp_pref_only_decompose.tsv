@@ -1,0 +1,5 @@
+dict	key_norm	class	confidence	alt_form	alt_body_count	body_count	expansion	sources	notes
+SNP	&nbsp;&nbsp;&nbsp;&nbsp;b) COMMIPHORA ROXBURGHII ALSTON	true_unused	low		0	0	C. AGALLOCHA ENGL. = BALSAMODENDRUM AGALLOCHA WIGHT ET ARN. = B. COMMI-	snppref04.md:32	long_bib_or_external_title
+SNP	(1) a) Chopra : [COMMIPHORA ROXBURGHII (ARN.) ENGL.]	true_unused	low		0	0	[C. AGALLOCHA (WIGHT ET ARN.) ENGL.] = BALSAMODENDRUM ROXBURGHII ARN. = AMYRIS COMMIPHORA ROXB.;	snppref04.md:29	long_bib_or_external_title
+SNP	&nbsp;&nbsp;&nbsp;&nbsp;a) COMMIPHORA MUKUL ENGL.	true_unused	low		0	0	C. ROXBURGHII ENGL. = BALSAMODENDRUM ROXBURGHII STOCKS = B. WIGHTII ARN.;	snppref04.md:31	long_bib_or_external_title
+SNP	&nbsp;&nbsp;&nbsp;&nbsp;b)	rare	high		0	0	*ṛṣabhaka* (Avk; Vśs); *ṛṣabhaka* is an unidentifiable plant, but Vśs identifies it as CARPOPOGON PRURIENS; see : *kapikacchŭ*;	snppref04.md:24	expansion_rare_signal

@@ -27,9 +27,9 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | Metric | n |
 |--------|--:|
 | Keys parsed | 302 |
-| Hits (non-short) | 234 (77%) |
-| `pref_only` | 64 |
-| `low_count` (≤3) | 32 |
+| Hits (non-short) | 261 (86%) |
+| `pref_only` | 37 |
+| `low_count` (≤3) | 36 |
 | Short keys | 4 |
 
 ## Top body hits (non-short)
@@ -63,19 +63,19 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | `Bhoǵa-Pr.` | 0 | pref_only | — |
 | `Bhoǵa-Ḱar.` | 0 | pref_only | — |
 | `Bhâshâp.` | 0 | pref_only | — |
-| `Bîǵag.` | 0 | pref_only | — |
-| `Divjâv.` | 0 | pref_only | — |
-| `Gâbâlop.` | 0 | pref_only | — |
 | `Harshaḱ.` | 0 | pref_only | — |
-| `Hâsj.` | 0 | pref_only | — |
-| `Jogas.` | 0 | pref_only | — |
 | `Kaush. Up.` | 0 | pref_only | — |
 | `Kaush. Âr.` | 0 | pref_only | — |
-| `Kauç.` | 0 | pref_only | — |
 | `Kshitîç.` | 0 | pref_only | — |
 | `Kshurikop.` | 0 | pref_only | — |
-| `Kuvalaj.` | 0 | pref_only | — |
 | `Kâtj. Çr.` | 0 | pref_only | — |
+| `Kṛshis.` | 0 | pref_only | — |
+| `Mahâvîraḱ.` | 0 | pref_only | — |
+| `Mayr, Ind. Erb.` | 0 | pref_only | — |
+| `Mâṇḍ. Çikshâ` | 0 | pref_only | — |
+| `Mṛḱḱh.` | 0 | pref_only | — |
+| `Naish.` | 0 | pref_only | — |
+| `Nîlak. mit einer Zahl` | 0 | pref_only | — |
 
 ## `low_count` sample
 
@@ -83,6 +83,7 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 |---|---:|---|---|
 | `Childers` | 3 | low_count | 9582,427206,585077 |
 | `Halâj.` | 3 | low_count | 622578,622578,622578 |
+| `Jâbâlop.` | 3 | low_count | 56152,371611,393903 |
 | `Kenop.` | 3 | low_count | 41316,41424,587710 |
 | `Sarvopan.` | 3 | low_count | 89212,181758,515050 |
 | `Çabdaḱ.` | 3 | low_count | 255656,255656,255656 |
@@ -91,11 +92,10 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | `Gaṇit. Adhim.` | 2 | low_count | 46301,283326 |
 | `Haug, Acc.` | 2 | low_count | 54077,343515 |
 | `Kâṇḍ.` | 2 | low_count | 435,459754 |
+| `Med. avy.` | 2 | low_count | 32847,258783 |
+| `Prayogar.` | 2 | low_count | 44276,237823 |
 | `Sâras.` | 2 | low_count | 26193,82299 |
 | `Wilson, Sel. W.` | 2 | low_count | 60455,584099 |
-| `Ânandag.` | 2 | low_count | 15918,118499 |
-| `Beitr. z. K. d. ig. Spr.` | 1 | low_count | 74701 |
-| `Burn. Intr.` | 1 | low_count | 569844 |
 
 ## Reproduce
 

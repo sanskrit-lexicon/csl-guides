@@ -1,0 +1,21 @@
+dict	key_norm	class	confidence	alt_form	alt_body_count	body_count	expansion	sources	notes
+MD	incor., incorr.	true_unused	low		0	0	incorrect.	mdpref10.md:76	no_alt_hit
+MD	indc., indec.	true_unused	low		0	0	indeclinable.	mdpref10.md:78	no_alt_hit
+MD	col., coll.	true_unused	low		0	0	collective, -ly.	mdpref10.md:33	no_alt_hit
+MD	enc., encl.	true_unused	low		0	0	enclitic.	mdpref10.md:53	no_alt_hit
+MD	pos., poss.	true_unused	low		0	0	possessive.	mdpref10.md:112	no_alt_hit
+MD	or., orig.	true_unused	low		0	0	originally.	mdpref10.md:101	no_alt_hit
+MD	ph., phil.	true_unused	low		0	0	philosophical term.	mdpref10.md:109	no_alt_hit
+MD	&c., etc.	true_unused	low		0	0	et cetera, and so forth.	mdpref10.md:168	long_bib_or_external_title
+MD	bg., beg.	true_unused	low		0	0	beginning.	mdpref10.md:29	no_alt_hit
+MD	nr., num.	true_unused	low		0	0	numeral.	mdpref10.md:96	no_alt_hit
+MD	pn., prn.	true_unused	low		0	0	pronoun.	mdpref10.md:111	no_alt_hit
+MD	rel., rl.	true_unused	low		0	0	relative.	mdpref10.md:129	no_alt_hit
+MD	rep., rp.	true_unused	low		0	0	repeated.	mdpref10.md:130	no_alt_hit
+MD	s., sg.	true_unused	low		0	0	singular.	mdpref10.md:133	no_alt_hit
+MD	indf.	true_unused	low		0	0	indefinite.	mdpref10.md:79	no_alt_hit
+MD	e.g.	true_unused	low		0	0	for example.	mdpref10.md:51	no_alt_hit
+MD	i.e.	true_unused	low		0	0	that is.	mdpref10.md:71	no_alt_hit
+MD	q.v.	true_unused	low		0	0	which see.	mdpref10.md:126	no_alt_hit
+MD	s.v.	true_unused	low		0	0	sub voce.	mdpref10.md:144	no_alt_hit
+MD	v.r.	true_unused	low		0	0	various reading.	mdpref10.md:157	no_alt_hit

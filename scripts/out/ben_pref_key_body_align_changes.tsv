@@ -1,8 +1,1 @@
-old	new	class	confidence	alt_body_count	replacements	files	notes
-Çântiç.	Śântiś.	ortho	high	16	2	benpref03.md:1; benpref03.ru.md:1	alt='Śântiś.' body_n=16
-Daçak.	Daśak.	ortho	high	1098	2	benpref03.md:1; benpref03.ru.md:1	alt='Daśak.' body_n=1098
-Çukas.	Śukas.	ortho	med	4	2	benpref03.md:1; benpref03.ru.md:1	alt='Śukas.' body_n=4
-Çârṅg.	Śârṅg.	ortho	med	1	2	benpref03.md:1; benpref03.ru.md:1	alt='Śârṅg.' body_n=1
-Suçr.	Suśr.	ortho	high	776	2	benpref03.md:1; benpref03.ru.md:1	alt='Suśr.' body_n=776
-Çvet.	Śvet.	ortho	med	1	2	benpref03.md:1; benpref03.ru.md:1	alt='Śvet.' body_n=1
-ÇKD.	ŚKD.	ortho	high	27	2	benpref03.md:1; benpref03.ru.md:1	alt='ŚKD.' body_n=27
+old	new	class	alt_body_count	replacements	files	notes	source_key

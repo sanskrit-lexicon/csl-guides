@@ -27,9 +27,9 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | Metric | n |
 |--------|--:|
 | Keys parsed | 395 |
-| Hits (non-short) | 322 (82%) |
-| `pref_only` | 68 |
-| `low_count` (≤3) | 59 |
+| Hits (non-short) | 335 (85%) |
+| `pref_only` | 55 |
+| `low_count` (≤3) | 62 |
 | Short keys | 5 |
 
 ## Top body hits (non-short)
@@ -60,22 +60,22 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | `Durgârkât.` | 0 | pref_only | — |
 | `Dâj. oder Dâjabh.` | 0 | pref_only | — |
 | `Gild. Scriptorum Arabum etc.` | 0 | pref_only | — |
-| `Javaneçv.` | 0 | pref_only | — |
 | `Jâǵnikad. Paddh. zu Kâtj. Çr.` | 0 | pref_only | — |
 | `Kaush. Br.` | 0 | pref_only | — |
 | `Kaush. Up.` | 0 | pref_only | — |
 | `Koshṭhîpr.` | 0 | pref_only | — |
 | `Kshur. Up.` | 0 | pref_only | — |
-| `Kâtj. Çr.` | 0 | pref_only | — |
 | `Kâturbhú.` | 0 | pref_only | — |
 | `Kâvjâk.` | 0 | pref_only | — |
-| `Laghuǵ.` | 0 | pref_only | — |
 | `Mańǵuçrîn.` | 0 | pref_only | — |
 | `Mâdhj. Rec.` | 0 | pref_only | — |
 | `Mâṇḍ. Up. Kâr.` | 0 | pref_only | — |
 | `Mém. sur l'Inde (Reinaud,)` | 0 | pref_only | — |
 | `Mṛkkh.` | 0 | pref_only | — |
 | `Nârâjanaḱakr.` | 0 | pref_only | — |
+| `Nîl. oder Nîlak.` | 0 | pref_only | — |
+| `Paṅkav. Br.` | 0 | pref_only | — |
+| `Prab. oder Prabodh.` | 0 | pref_only | — |
 
 ## `low_count` sample
 

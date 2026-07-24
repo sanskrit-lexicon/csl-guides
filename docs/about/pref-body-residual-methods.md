@@ -181,7 +181,9 @@ After source pref page edits, rebuild each dictionary’s combined pref editions
 |------|------|
 | [Prefaces as enrichment — use cases](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-front-matter-enrichment-use-cases.md) | Product/research map (UC-1…UC-14); this appendix is UC-13 |
 | [Pref keys ↔ body naming authority](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md) | Apply gate + fold registry |
-| [OCR'd prefaces](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/ocr-prefaces) | Edition index |
+| [OCR'd prefaces](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/ocr-prefaces) | Edition index + **FAIR path map** (UC-11) |
+| [PWG METHODS](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/METHODS.md) · [PW METHODS](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/METHODS.md) | Per-dict how-to-cite + OCR provenance |
+| [Legend emit](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_legend_emit.py) · [pwg/pw `_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/tree/main/scripts/out) | UC-3 machine legend store (residual class joined) |
 | [Preface OCR pipeline](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/preface-ocr-pipeline) | Operator manual |
 | [Abbreviations & citations](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/abbreviations-and-citations) | User-facing legend UX |
 | [Guides Hypotheses](./guides-hypotheses.md) (GH-4) | Legend coverage of corpus citations (related exposure bound) |

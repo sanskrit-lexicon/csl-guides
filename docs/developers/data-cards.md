@@ -102,8 +102,12 @@ Upstream rights for the non-Cologne feeds are documented per source in
 
 - **What / why.** Site feed for UC-1 abbreviations UX: pref OCR key → expansion joined to
   body `<ls>` citation counts and typed `pref_only` residual class. Powers PWG/PW sections
-  in the [Abbreviations](/dictionaries/abbreviations-comparison) component (sorted by body
-  frequency). Other dictionaries still use `abbreviations.json`.
+  in the [Abbreviations](/dictionaries/abbreviations-and-citations) component (sorted by body
+  frequency). Other dictionaries still use `abbreviations.json`. FAIR catalogue of the
+  underlying OCR editions: [OCR'd prefaces](/dictionaries/ocr-prefaces) (UC-11 path map) ·
+  METHODS [PWG](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/METHODS.md) /
+  [PW](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/METHODS.md) · naming
+  [pref-body-naming-authority](/dictionaries/pref-body-naming-authority).
 - **Provenance.**
   [build-pref-legends.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-pref-legends.mjs)
   vendors

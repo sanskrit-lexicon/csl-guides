@@ -12,10 +12,11 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 
 ## Ranked improvement backlog
 
-1. Promote UC-3 structured legend store to a committed generator with schema.
-2. Wire UC-1 tooltips from legend store into a site component.
-3. UC-2 pilot: PWG↔PW↔MW work-identity table from pref expansions + body counts.
-4. Resolve open questions (site JSON vs scripts/out only; rare/MS UI).
+1. ~~Promote UC-3 structured legend store to a committed generator with schema.~~ **Done (H1591).**
+2. ~~Wire UC-1 tooltips from legend store into a site component.~~ **Done (H1593) for PWG/PW.**
+3. ~~UC-11 FAIR path map on ocr-prefaces + reciprocal links.~~ **Done (H1595).**
+4. UC-2 pilot: PWG↔PW↔MW work-identity table from pref expansions + body counts.
+5. Resolve open questions (rare/MS UI; Zenodo DOI at next dict release).
 
 ## Limitations
 
@@ -34,6 +35,7 @@ _Created: 24-07-2026 · Last updated: 24-07-2026_
 | Date | Change |
 |------|--------|
 | 24-07-2026 | Initial proposal + 14 use cases + priority map |
+| 24-07-2026 | UC-11 concrete path map (H1595 FAIR cross-links) |
 
 ---
 

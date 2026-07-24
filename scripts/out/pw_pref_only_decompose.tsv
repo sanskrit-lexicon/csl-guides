@@ -1,0 +1,51 @@
+dict	key_norm	class	confidence	alt_form	alt_body_count	body_count	expansion	sources	notes
+PW	Pañḱat. ohne nähere Angabe	ocr_key	med		0	0	Pañḱataṇtra, vollständige Ausg. von Kosegarten. Mit Beifügung von ed. Bomb. — die Ausg. von Bühler und Kielhorn.	pwpref05.md:20	ocr_special_char_no_body_alt
+PW	Suparṇ. und Suparṇâdhj.	true_unused	low		0	0	Suparṇâdhjâja, herausg. von Elimar Grube in Ind. St. 14.	pwpref05.md:108	no_alt_hit
+PW	Nîlak. mit einer Zahl	ambiguous	low		0	0	Nîl.	pwpref04.md:210	markup_or_conditional_legend
+PW	Devatâdhj. Brâhm.	ortho	med	Devatâdhy. Brâhm.	1	0	Daiv. Br.	pwpref03.md:164	alt='Devatâdhy. Brâhm.' body_n=1
+PW	Âçv. Gṛhj. Pariç.	ortho	low		0	0	Pariçishṭa zu Âçv. Gṛhj. in der Bibl. ind.	pwpref03.md:20	j_series_no_confirmed_body_alt
+PW	Gaṇit. Pratjabd.	ortho	high	Gaṇit. Pratyabd.	7	0	Gaṇita, Pratjabdaçuddi (Kern).	pwpref03.md:202	alt='Gaṇit. Pratyabd.' body_n=7
+PW	Anukram. zu RV.	ambiguous	low		0	0	Anukramaṇikâ zu RV. im Comm. Sâjaṇa's.	pwpref03.md:38	markup_or_conditional_legend
+PW	Bhavishjott. P.	ortho	low		0	0	Bhavishjottarapurâṇa nach Citaten in andern Werken.	pwpref03.md:86	j_series_no_confirmed_body_alt
+PW	Mayr, Ind. Erb.	true_unused	low		0	0	Das indische Erbrecht von Aurel Mayr, Wien 1873.	pwpref04.md:182	long_bib_or_external_title
+PW	Weber, Kṛshṇaǵ.	ocr_key	med		0	0	Weber, Ueber die Kṛshṇaǵanmâshṭamî. Berlin 1868.	pwpref05.md:198	ocr_special_char_no_body_alt
+PW	Bhar. Nâṭjaç.	ortho	low		0	0	Bhâratîjanâṭjaçâstra am Schluss von Daçar. in der Bibl. ind.	pwpref03.md:78	j_series_no_confirmed_body_alt
+PW	Kâtj. Snânas.	ortho	med	Kâty. Snânas.	1	0	Kâtjâjana's Snânasûtra (Stenzler).	pwpref04.md:96	alt='Kâty. Snânas.' body_n=1
+PW	Prâjaçḱittat.	ocr_key	med		0	0	Prâjaçḱittatattva (Roth).	pwpref05.md:38	ocr_special_char_no_body_alt
+PW	Varâh. Jogaj.	ortho	high	Varâh. Yogay.	249	0	Varâhamihira's Jogajâtrâ, herausg. von Kern in Ind. St. 10. 14 und 15.	pwpref05.md:162	alt='Varâh. Yogay.' body_n=249
+PW	Çârñg. Paddh.	ortho	high	Śârñg. Paddh.	15	0	Çârñgadhara's Paddhati, Hdschr. im Asiatischen Museum der Kais. Ak. d. Ww. in St. Petersburg.	pwpref03.md:128	alt='Śârñg. Paddh.' body_n=15
+PW	AV. Prâjaçḱ.	rare	high		0	0	Prâjaçḱitta zum AV., Hdschr. (Roth).	pwpref03.md:62	expansion_rare_signal
+PW	Dhjânab. Up.	ortho	high	Dhyânab. Up.	10	0	Dhjânabindûpanishad in der Bibl. ind. (Geldner und Roth).	pwpref03.md:172	alt='Dhyânab. Up.' body_n=10
+PW	Mâṇḍ. Çikshâ	true_unused	low		0	0	Mâṇḍûkî Çikshâ (Weber).	pwpref04.md:170	no_alt_hit
+PW	Subhâshitar.	true_unused	low		0	0	Subhâshitaratnâkara, Bombay 1872.	pwpref05.md:104	no_alt_hit
+PW	Varâh. Lagu.	true_unused	low		0	0	Varâhamihira's Laghuǵâtaka. Die zwei ersten Adhjâja herausgegeben von Weber in Ind. St. 2.	pwpref05.md:164	no_alt_hit
+PW	Vikramâñḱaḱ.	ocr_key	med		0	0	Vikramâñḱadevaḱarita, Ausg. von Bühler.	pwpref05.md:184	ocr_special_char_no_body_alt
+PW	Weber, Ǵjot.	ortho	high	Weber, Jyot.	10	0	Weber, Ueber den Vedakalender, Namens Ǵjotisham.	pwpref05.md:196	alt='Weber, Jyot.' body_n=10
+PW	Çvetâçv. Up.	ortho	high	Śvetâśv. Up.	32	0	Çvetâçvataropanishad in der Bibl. ind.	pwpref03.md:156	alt='Śvetâśv. Up.' body_n=32
+PW	Çârñg. Saṃh.	ortho	high	Śârñg. Saṃh.	41	0	Çârñgadhara's Saṃhitâ, Bombay 1853 (Roth).	pwpref03.md:130	alt='Śârñg. Saṃh.' body_n=41
+PW	Çâṅkh. Gṛhj.	ortho	low		0	0	Çâṅkhâjana's Gṛhjasûtra, herausg. von Oldenberg in Ind. St. 15.	pwpref03.md:124	j_series_no_confirmed_body_alt
+PW	Siddh. Çir.	ortho	high	Siddh. Śir.	5	0	Siddhântaçiromaṇi (Kern).	pwpref05.md:98	alt='Siddh. Śir.' body_n=5
+PW	Ǵaim. Bhâr.	ortho	med	Jaim. Bhâr.	1	0	Ǵaimini's Bhârata, nach Citaten in Ind. St.	pwpref03.md:186	alt='Jaim. Bhâr.' body_n=1
+PW	AV. Pariç.	ortho	high	AV. Pariś.	54	0	Pariçishṭa zum AV., Hdschr. (Roth).	pwpref03.md:60	alt='AV. Pariś.' body_n=54
+PW	Bhoǵa-Ḱar.	ocr_key	med		0	0	Bhoǵakaritra, Madras 1862 (Stenzler).	pwpref03.md:88	ocr_special_char_no_body_alt
+PW	Jogat. Up.	ortho	med	Yogat. Up.	4	0	Jogatattvopanishad in der Bibl. ind. (Geldner und Roth).	pwpref04.md:58	alt='Yogat. Up.' body_n=4
+PW	Kaush. Up.	true_unused	low		0	0	Kaushîtakibrâhmanopanishad in der Bibl. ind.	pwpref04.md:104	no_alt_hit
+PW	Kaush. Âr.	true_unused	low		0	0	Kaushîtakâranjaka (Weber).	pwpref04.md:102	no_alt_hit
+PW	Kshurikop.	true_unused	low		0	0	Kshurikopanishad in der Bibl. ind.	pwpref04.md:122	no_alt_hit
+PW	Mahâvîraḱ.	ocr_key	med		0	0	Mahâvîraḱarita, Ausg. von Trithen.	pwpref04.md:158	ocr_special_char_no_body_alt
+PW	Mân. Gṛhj.	ortho	high	Mân. Gṛhy.	252	0	Mânavagṛhjasûtra, nach einer Hdschr. in der Universitätsbibliothek zu Bombay (Schröder).	pwpref04.md:172	alt='Mân. Gṛhy.' body_n=252
+PW	Pâr. Gṛhj.	ortho	high	Pâr. Gṛhy.	198	0	Pâraskara's Gṛhjasûtra, Ausg. von Stenzler.	pwpref05.md:24	alt='Pâr. Gṛhy.' body_n=198
+PW	Saṁnj. Up.	ortho	high	Saṁny. Up.	9	0	Saṁnjâsopanishad in der Bibl. ind. (Geldner und Roth).	pwpref05.md:82	alt='Saṁny. Up.' body_n=9
+PW	Shaḍv. Br.	true_unused	low		0	0	Shaḍviṁçabrâhmaṇa (Weber).	pwpref05.md:96	no_alt_hit
+PW	Tâṇḍja-Br.	ortho	high	Tâṇḍya-Br.	520	0	Tâṇḍjabrâhmaṇa in der Bibl. ind. Im grossen Wörterbuch als Pañḱav. Br. citirt.	pwpref05.md:122	alt='Tâṇḍya-Br.' body_n=520
+PW	Âpast. Çr.	ortho	high	Âpast. Śr.	1718	0	Âpastamba's Çrautasûtra, Hdschr. (Garbe und Roth).	pwpref03.md:42	alt='Âpast. Śr.' body_n=1718
+PW	Âçv. Gṛhj.	ortho	low		0	0	Âçvalâjana's Gṛhjasûtra; Ausg. von Stenzler.	pwpref03.md:18	j_series_no_confirmed_body_alt
+PW	Çâṅkh. Br.	ortho	high	Śâṅkh. Br.	107	0	Çâṅkhâjana's Brâhmaṇa (Weber).	pwpref03.md:120	alt='Śâṅkh. Br.' body_n=107
+PW	Çâṅkh. Çr.	ortho	high	Śâṅkh. Śr.	224	0	Çâṅkhâjana's Çrautasûtra (Weber).	pwpref03.md:122	alt='Śâṅkh. Śr.' body_n=224
+PW	Ḱhând. Up.	ortho	high	Chând. Up.	103	0	Ḱhândogjopanishad in der Bibl. ind.	pwpref04.md:114	alt='Chând. Up.' body_n=103
+PW	AV. Ǵjot.	ortho	high	AV. Jyot.	9	0	Ǵjotisha zum AV., Hdschr. (Roth).	pwpref03.md:56	alt='AV. Jyot.' body_n=9
+PW	Bhoǵa-Pr.	ocr_key	med		0	0	Bhoǵaprabandha, Benares 1925 (Kern).	pwpref03.md:90	ocr_special_char_no_body_alt
+PW	Hem. Jog.	ortho	high	Hem. Yog.	25	0	Hemaḱandra's Jogaçâstra in Z. d. d. m. G. 28. Aus einem hdschr. Comm. hat Windisch manche Berichtigung und Erklärung mir bereitwilligst zukommen lassen.	pwpref04.md:38	alt='Hem. Yog.' body_n=25
+PW	Kâtj. Dh.	ortho	med	Kâty. Dh.	1	0	Kâtjâjana's Dharmaçâstra (Stenzler).	pwpref04.md:94	alt='Kâty. Dh.' body_n=1
+PW	Kâtj. Çr.	ortho	low		0	0	Kâtjâjana's Çrautasûtra, nach Weber's Index.	pwpref04.md:92	j_series_no_confirmed_body_alt
+PW	Maitrjup.	ortho	high	Maitryup.	55	0	Maitrjupanishad in der Bibl. ind. Die Accente, die wegen ihrer Fehlerhaftigkeit oft weggelassen oder durch (!) als verdächtig bezeichnet wurden, hat Schröder einer Hdschr. entnommen.	pwpref04.md:162	alt='Maitryup.' body_n=55

@@ -13,7 +13,10 @@ Expansions (titles) stay scan-faithful unless a key rewrite requires a minimal
 key-side fix. Full-diff of Vorwort/title pages is out of scope.
 
 H1530 pilot · H1543 scale · H1560 typed residual · H1569 body naming authority ·
-H1591 legend emit (`--emit-legend` → pref_legend_emit).
+H1591 legend emit (`--emit-legend` → pref_legend_emit) ·
+H1592 UC-8 fold table (orthography registry in ``pref_fold_table.json``; loaded by
+``pref_key_body_align`` for candidate generation — this census still uses only
+``fold_diacritics`` for search matching, not invent-a-fold renames).
 stdlib only.
 
 Examples (from csl-guides repo root)::

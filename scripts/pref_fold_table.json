@@ -1,0 +1,897 @@
+{
+  "version": 1,
+  "title": "Pref orthography / OCR fold table (UC-8)",
+  "description": "Documented old→new key folds for pref legend ↔ body naming. Loaded by pref_key_body_align.py (additive candidate generation) — never invent a fold without a row here or body attestation. Diacritic strip for search lives separately in fold_diacritics().",
+  "policy": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md",
+  "handoff": "https://github.com/gasyoun/Uprava/blob/main/handoffs/H1592-Sonnet_csl-guides_pref-fold-table-registry_24.07.26.md",
+  "issue": "https://github.com/sanskrit-lexicon/csl-guides/issues/123",
+  "use_case": "UC-8",
+  "examples": [
+    {
+      "id": "ex-pwg-01",
+      "dict": "PWG",
+      "old": "Tib. Lebensb. Çâkj.",
+      "new": "Tib. Lebensb. Śâky.",
+      "class": "ortho",
+      "body_n": 1,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "source_key='Tib. Lebensb. Çâkj.'"
+    },
+    {
+      "id": "ex-pwg-02",
+      "dict": "PWG",
+      "old": "Çâńkh. Gṛhj.",
+      "new": "Śâńkh. Gṛhy.",
+      "class": "ortho",
+      "body_n": 897,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "source_key='Çâńkh. Gṛhj.'"
+    },
+    {
+      "id": "ex-pwg-03",
+      "dict": "PWG",
+      "old": "ʼUtt. Râmaḱ.",
+      "new": "Utt. Râmac.",
+      "class": "ocr_key",
+      "body_n": 4,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "surface_of='Utt. Râmaḱ.'"
+    },
+    {
+      "id": "ex-pwg-04",
+      "dict": "PWG",
+      "old": "ʼVjavahârat.",
+      "new": "Vyavahârat.",
+      "class": "ocr_key",
+      "body_n": 42,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "surface_of='Vjavahârat.'"
+    },
+    {
+      "id": "ex-pwg-05",
+      "dict": "PWG",
+      "old": "Pat. Jogâç.",
+      "new": "Pat. Yogâś.",
+      "class": "ortho",
+      "body_n": 1,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "source_key='Pat. Jogâç.'"
+    },
+    {
+      "id": "ex-pwg-06",
+      "dict": "PWG",
+      "old": "Pravarâdhj.",
+      "new": "Pravarâdhy.",
+      "class": "ortho",
+      "body_n": 444,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "source_key='Pravar. oder Pravarâdhj.'"
+    },
+    {
+      "id": "ex-pwg-07",
+      "dict": "PWG",
+      "old": "\\*Kâvja-Pr.",
+      "new": "Kâvya-Pr.",
+      "class": "ocr_key",
+      "body_n": 15,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "surface_of='Kâvja-Pr.'"
+    },
+    {
+      "id": "ex-pwg-08",
+      "dict": "PWG",
+      "old": "Teǵov. Up.",
+      "new": "Tejov. Up.",
+      "class": "ortho",
+      "body_n": 2,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "source_key='Teǵov. Up.'"
+    },
+    {
+      "id": "ex-pwg-09",
+      "dict": "PWG",
+      "old": "Âçv. Gṛhj.",
+      "new": "Âśv. Gṛhy.",
+      "class": "ortho",
+      "body_n": 1751,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "source_key='Âçv. Gṛhj.'"
+    },
+    {
+      "id": "ex-pwg-10",
+      "dict": "PWG",
+      "old": "Javaneçv.",
+      "new": "Yavaneśv.",
+      "class": "ortho",
+      "body_n": 7,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "source_key='Javaneçv.'"
+    },
+    {
+      "id": "ex-pwg-11",
+      "dict": "PWG",
+      "old": "Kâtj. Çr.",
+      "new": "Kâty. Śr.",
+      "class": "ortho",
+      "body_n": 8694,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "source_key='Kâtj. Çr.'"
+    },
+    {
+      "id": "ex-pwg-12",
+      "dict": "PWG",
+      "old": "ʼNjâja-S.",
+      "new": "Nyâya-S.",
+      "class": "ocr_key",
+      "body_n": 24,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "surface_of='Njâja-S.'"
+    },
+    {
+      "id": "ex-pwg-13",
+      "dict": "PWG",
+      "old": "ʼVivâdaḱ.",
+      "new": "Vivâdac.",
+      "class": "ocr_key",
+      "body_n": 47,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "surface_of='Vivâdaḱ.'"
+    },
+    {
+      "id": "ex-pwg-14",
+      "dict": "PWG",
+      "old": "Laghuǵ.",
+      "new": "Laghuj.",
+      "class": "ortho",
+      "body_n": 242,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "source_key='Laghuǵ.'"
+    },
+    {
+      "id": "ex-pwg-15",
+      "dict": "PWG",
+      "old": "Prâtiç.",
+      "new": "Prâtiś.",
+      "class": "ortho",
+      "body_n": 11,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_key_body_align_changes.md",
+      "notes": "source_key='Prât. oder Prâtiç.'"
+    },
+    {
+      "id": "ex-pw-01",
+      "dict": "PW",
+      "old": "Âçv. Gṛhj. Pariç.",
+      "new": "Âśv. Gṛhy. Pariś.",
+      "class": "ortho",
+      "body_n": 7,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_key_body_align_changes.md",
+      "notes": "source_key='Âçv. Gṛhj. Pariç.'"
+    },
+    {
+      "id": "ex-pw-02",
+      "dict": "PW",
+      "old": "Bhar. Nâṭjaç.",
+      "new": "Bhar. Nâṭyaś.",
+      "class": "ortho",
+      "body_n": 43,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_key_body_align_changes.md",
+      "notes": "source_key='Bhar. Nâṭjaç.'"
+    },
+    {
+      "id": "ex-pw-03",
+      "dict": "PW",
+      "old": "Çâṅkh. Gṛhj.",
+      "new": "Śâṅkh. Gṛhy.",
+      "class": "ortho",
+      "body_n": 172,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_key_body_align_changes.md",
+      "notes": "source_key='Çâṅkh. Gṛhj.'"
+    },
+    {
+      "id": "ex-pw-04",
+      "dict": "PW",
+      "old": "Mahâvîraḱ.",
+      "new": "Mahâvîrac.",
+      "class": "ortho",
+      "body_n": 277,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_key_body_align_changes.md",
+      "notes": "source_key='Mahâvîraḱ.'"
+    },
+    {
+      "id": "ex-pw-05",
+      "dict": "PW",
+      "old": "Âçv. Gṛhj.",
+      "new": "Âśv. Gṛhy.",
+      "class": "ortho",
+      "body_n": 131,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_key_body_align_changes.md",
+      "notes": "source_key='Âçv. Gṛhj.'"
+    },
+    {
+      "id": "ex-pw-06",
+      "dict": "PW",
+      "old": "Bhoǵa-Pr.",
+      "new": "Bhoja-Pr.",
+      "class": "ortho",
+      "body_n": 29,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_key_body_align_changes.md",
+      "notes": "source_key='Bhoǵa-Pr.'"
+    },
+    {
+      "id": "ex-pw-07",
+      "dict": "PW",
+      "old": "Kâtj. Çr.",
+      "new": "Kâty. Śr.",
+      "class": "ortho",
+      "body_n": 795,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_key_body_align_changes.md",
+      "notes": "source_key='Kâtj. Çr.'"
+    },
+    {
+      "id": "ex-pw-08",
+      "dict": "PW",
+      "old": "Ḱhandom.",
+      "new": "Chandom.",
+      "class": "ortho",
+      "body_n": 4,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_key_body_align_changes.md",
+      "notes": "source_key='Ḱhandom.'"
+    },
+    {
+      "id": "ex-pw-09",
+      "dict": "PW",
+      "old": "Uǵǵval.",
+      "new": "Ujjval.",
+      "class": "ortho",
+      "body_n": 21,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_key_body_align_changes.md",
+      "notes": "source_key='Uǵǵval.'"
+    },
+    {
+      "id": "ex-pw-10",
+      "dict": "PW",
+      "old": "Ḱaurap.",
+      "new": "Caurap.",
+      "class": "ortho",
+      "body_n": 41,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_key_body_align_changes.md",
+      "notes": "source_key='Ḱaurap.'"
+    },
+    {
+      "id": "ex-pw-11",
+      "dict": "PW",
+      "old": "Mṛḱḱh.",
+      "new": "Mṛcch.",
+      "class": "ortho",
+      "body_n": 246,
+      "source_log": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_key_body_align_changes.md",
+      "notes": "source_key='Mṛḱḱh.'"
+    }
+  ],
+  "rules": [
+    {
+      "id": "rule-grhy-j-y",
+      "kind": "ortho",
+      "pattern": "Gṛhj",
+      "replacement": "Gṛhy",
+      "flags": "regex",
+      "notes": "j/y in Gṛhy compound",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-grhya-j-y",
+      "kind": "ortho",
+      "pattern": "Gṛhja",
+      "replacement": "Gṛhya",
+      "flags": "regex",
+      "notes": "j/y in Gṛhya",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-pratyabd-j-y",
+      "kind": "ortho",
+      "pattern": "Pratjabd",
+      "replacement": "Pratyabd",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-pathy-j-y",
+      "kind": "ortho",
+      "pattern": "Pathjâpathjav",
+      "replacement": "Pathyâpathyav",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-dhyana-v",
+      "kind": "ortho",
+      "pattern": "Dhjânav",
+      "replacement": "Dhyânav",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-dhyana-b",
+      "kind": "ortho",
+      "pattern": "Dhjânab",
+      "replacement": "Dhyânab",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-dhyana",
+      "kind": "ortho",
+      "pattern": "Dhjâna",
+      "replacement": "Dhyâna",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-divya",
+      "kind": "ortho",
+      "pattern": "Divja",
+      "replacement": "Divya",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-divyav",
+      "kind": "ortho",
+      "pattern": "Divjâv",
+      "replacement": "Divyâv",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-natya-c",
+      "kind": "ortho",
+      "pattern": "Nâṭjaç",
+      "replacement": "Nâṭyaç",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-natya",
+      "kind": "ortho",
+      "pattern": "Nâṭja",
+      "replacement": "Nâṭya",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-bhavishya",
+      "kind": "ortho",
+      "pattern": "Bhavishjott",
+      "replacement": "Bhavishyott",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-maitry",
+      "kind": "ortho",
+      "pattern": "Maitrj",
+      "replacement": "Maitry",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-samny",
+      "kind": "ortho",
+      "pattern": "Saṁnj",
+      "replacement": "Saṁny",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-tandya",
+      "kind": "ortho",
+      "pattern": "Tâṇḍja",
+      "replacement": "Tâṇḍya",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-devatadhy",
+      "kind": "ortho",
+      "pattern": "Devatâdhj",
+      "replacement": "Devatâdhy",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-suparnadhy",
+      "kind": "ortho",
+      "pattern": "Suparṇâdhj",
+      "replacement": "Suparṇâdhy",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-pravaradhy",
+      "kind": "ortho",
+      "pattern": "Pravarâdhj",
+      "replacement": "Pravarâdhy",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-katy",
+      "kind": "ortho",
+      "pattern": "Kâtj\\.",
+      "replacement": "Kâty.",
+      "flags": "regex",
+      "notes": "Kâtj→Kâty (documented UC-8)",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-kaiy",
+      "kind": "ortho",
+      "pattern": "Kaij\\.",
+      "replacement": "Kaiy.",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-yogas",
+      "kind": "ortho",
+      "pattern": "Jogas",
+      "replacement": "Yogas",
+      "flags": "regex",
+      "notes": "J→Y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-yogat",
+      "kind": "ortho",
+      "pattern": "Jogat",
+      "replacement": "Yogat",
+      "flags": "regex",
+      "notes": "J→Y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-yogay",
+      "kind": "ortho",
+      "pattern": "Jogaj",
+      "replacement": "Yogay",
+      "flags": "regex",
+      "notes": "J→Y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-yukti",
+      "kind": "ortho",
+      "pattern": "Juktikalpat",
+      "replacement": "Yuktikalpat",
+      "flags": "regex",
+      "notes": "J→Y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-yavane",
+      "kind": "ortho",
+      "pattern": "Javaneçv",
+      "replacement": "Yavaneçv",
+      "flags": "regex",
+      "notes": "J→Y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-yajnika",
+      "kind": "ortho",
+      "pattern": "Jâǵnikad",
+      "replacement": "Yâjñikad",
+      "flags": "regex",
+      "notes": "J/ǵ fold",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-yaj",
+      "kind": "ortho",
+      "pattern": "Jaǵ\\.",
+      "replacement": "Yaj.",
+      "flags": "regex",
+      "notes": "J/ǵ",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-jyot",
+      "kind": "ortho",
+      "pattern": "Ǵjot",
+      "replacement": "Jyot",
+      "flags": "regex",
+      "notes": "Ǵ→J",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-jaim",
+      "kind": "ortho",
+      "pattern": "Ǵaim",
+      "replacement": "Jaim",
+      "flags": "regex",
+      "notes": "Ǵ→J",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-bhoga",
+      "kind": "ortho",
+      "pattern": "Bhoǵa",
+      "replacement": "Bhoga",
+      "flags": "regex",
+      "notes": "ǵ body form Bhoga/Bhoja family",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-bijag",
+      "kind": "ortho",
+      "pattern": "Bîǵag",
+      "replacement": "Bîjag",
+      "flags": "regex",
+      "notes": "ǵ→j",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-prayascitt",
+      "kind": "ortho",
+      "pattern": "Prâjaçḱitt",
+      "replacement": "Prâyaçcitt",
+      "flags": "regex",
+      "notes": "j/y + ḱ/c",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-prayasc",
+      "kind": "ortho",
+      "pattern": "Prâjaçḱ",
+      "replacement": "Prâyaçc",
+      "flags": "regex",
+      "notes": "j/y + ḱ/c",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-prayascitt2",
+      "kind": "ortho",
+      "pattern": "Prâjaçkitt",
+      "replacement": "Prâyaçcitt",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-chand",
+      "kind": "ortho",
+      "pattern": "Khând\\.",
+      "replacement": "Chând.",
+      "flags": "regex",
+      "notes": "Kh→Ch OCR/ortho",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-chand-k",
+      "kind": "ortho",
+      "pattern": "Ḱhând\\.",
+      "replacement": "Chând.",
+      "flags": "regex",
+      "notes": "Ḱh→Ch",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-drahy",
+      "kind": "ortho",
+      "pattern": "Drâhj",
+      "replacement": "Drâhy",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-day",
+      "kind": "ortho",
+      "pattern": "Dâj\\.",
+      "replacement": "Dây.",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-dayabh",
+      "kind": "ortho",
+      "pattern": "Dâjabh",
+      "replacement": "Dâyabh",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-vyavahara",
+      "kind": "ortho",
+      "pattern": "Vjavahârat",
+      "replacement": "Vyavahârat",
+      "flags": "regex",
+      "notes": "j/y after V",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-jabalop",
+      "kind": "ortho",
+      "pattern": "Gâbâlop",
+      "replacement": "Jâbâlop",
+      "flags": "regex",
+      "notes": "G→J body",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-jab",
+      "kind": "ortho",
+      "pattern": "Gâb\\.",
+      "replacement": "Jâb.",
+      "flags": "regex",
+      "notes": "G→J",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-kuvalay",
+      "kind": "ortho",
+      "pattern": "Kuvalaj",
+      "replacement": "Kuvalay",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-kavyapr",
+      "kind": "ortho",
+      "pattern": "Kâvjapr",
+      "replacement": "Kâvyapr",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-kavya",
+      "kind": "ortho",
+      "pattern": "Kâvja",
+      "replacement": "Kâvya",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-samkhya",
+      "kind": "ortho",
+      "pattern": "Sâṁkhjak",
+      "replacement": "Sâṁkhyak",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-samkhya2",
+      "kind": "ortho",
+      "pattern": "Sâṃkhjak",
+      "replacement": "Sâṃkhyak",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-vaidya",
+      "kind": "ortho",
+      "pattern": "Vaidjabh",
+      "replacement": "Vaidyabh",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-vaidy",
+      "kind": "ortho",
+      "pattern": "Vaidj\\.",
+      "replacement": "Vaidy.",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-prayoga",
+      "kind": "ortho",
+      "pattern": "Prajogar",
+      "replacement": "Prayogar",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-med-avy",
+      "kind": "ortho",
+      "pattern": "Med\\. avj",
+      "replacement": "Med. avy",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-hasy",
+      "kind": "ortho",
+      "pattern": "Hâsj",
+      "replacement": "Hâsy",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-laty",
+      "kind": "ortho",
+      "pattern": "Lâṭj",
+      "replacement": "Lâṭy",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-priy",
+      "kind": "ortho",
+      "pattern": "Prij\\.",
+      "replacement": "Priy.",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-suryad",
+      "kind": "ortho",
+      "pattern": "Sûrjad",
+      "replacement": "Sûryad",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-suryas",
+      "kind": "ortho",
+      "pattern": "Sûrjas",
+      "replacement": "Sûryas",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-vayu",
+      "kind": "ortho",
+      "pattern": "Vâju-P",
+      "replacement": "Vâyu-P",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-aryabh",
+      "kind": "ortho",
+      "pattern": "Ârjabh",
+      "replacement": "Âryabh",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-matsya",
+      "kind": "ortho",
+      "pattern": "Matsja",
+      "replacement": "Matsya",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-matsyop",
+      "kind": "ortho",
+      "pattern": "Matsjop",
+      "replacement": "Matsyop",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-tithya",
+      "kind": "ortho",
+      "pattern": "Tithjâdit",
+      "replacement": "Tithyâdit",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-vyutp",
+      "kind": "ortho",
+      "pattern": "Vjutp",
+      "replacement": "Vyutp",
+      "flags": "regex",
+      "notes": "j/y",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-kriya",
+      "kind": "ortho",
+      "pattern": "KRIJĀSAM",
+      "replacement": "KRIYĀSAM",
+      "flags": "regex",
+      "notes": "J→Y caps",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-git",
+      "kind": "ortho",
+      "pattern": "Gîr\\.",
+      "replacement": "Gît.",
+      "flags": "regex",
+      "notes": "OCR r→t",
+      "source": "ORTHO_SUBS in pref_key_body_align.py (H1580); registry home is this fold table (UC-8 / H1592)"
+    },
+    {
+      "id": "rule-c-cedilla-to-sacute",
+      "kind": "ortho",
+      "pattern": "ç",
+      "replacement": "ś",
+      "flags": "literal",
+      "notes": "ç → ś (body IAST-ish); UC-8"
+    },
+    {
+      "id": "rule-c-cedilla-upper",
+      "kind": "ortho",
+      "pattern": "Ç",
+      "replacement": "Ś",
+      "flags": "literal",
+      "notes": "Ç → Ś"
+    },
+    {
+      "id": "rule-k-acute-to-c",
+      "kind": "ortho",
+      "pattern": "ḱ",
+      "replacement": "c",
+      "flags": "literal",
+      "notes": "ḱ/c OCR (UC-8 example)"
+    },
+    {
+      "id": "rule-k-acute-upper",
+      "kind": "ortho",
+      "pattern": "Ḱ",
+      "replacement": "C",
+      "flags": "literal",
+      "notes": "Ḱ → C"
+    },
+    {
+      "id": "rule-g-acute-to-j",
+      "kind": "ortho",
+      "pattern": "ǵ",
+      "replacement": "j",
+      "flags": "literal",
+      "notes": "ǵ → j (Laghuǵ→Laghuj)"
+    },
+    {
+      "id": "rule-g-acute-upper",
+      "kind": "ortho",
+      "pattern": "Ǵ",
+      "replacement": "J",
+      "flags": "literal",
+      "notes": "Ǵ → J"
+    }
+  ]
+}

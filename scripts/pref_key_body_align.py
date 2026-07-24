@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""pref_key_body_align.py — apply body-attested pref legend key renames (H1569/H1571/H1580).
+"""pref_key_body_align.py — apply body-attested pref legend key renames (H1569/H1571/H1580/H1592).
 
 Policy: csl-orig body .txt wins for *naming* of works.
 
@@ -10,8 +10,14 @@ Boost (H1580):
 - Match OCR prefixes (``\\``, ``*``, ``ʼ``) and dual ``**A** oder **B**`` sides.
 - Expanded orthography candidates (j/y, ç/ś, Gṛhj/Gṛhy, Kâtj/Kâty, …).
 
+UC-8 / H1592:
+- Documented folds live in ``scripts/pref_fold_table.json`` (examples + rules).
+- ``candidate_alts`` loads that table **additively** (exact example hits first,
+  then pattern rules) — never invent a silent fold outside the registry + body gate.
+
 Examples::
 
+    python scripts/pref_key_body_align.py --self-check
     python scripts/pref_key_body_align.py --dict PWG --apply
     python scripts/pref_key_body_align.py --all --apply
 """
@@ -19,16 +25,19 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import re
 import sys
 from datetime import date
 from pathlib import Path
+from typing import Any
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 HERE = Path(__file__).resolve().parent
 TODAY = date.today().strftime("%d-%m-%Y")
+FOLD_TABLE_PATH = HERE / "pref_fold_table.json"
 
 sys.path.insert(0, str(HERE))
 from pref_abbr_crosscheck import (  # noqa: E402
@@ -40,9 +49,10 @@ from pref_abbr_crosscheck import (  # noqa: E402
 
 MIN_ALT_BODY = 1
 MIN_KEY_CHARS = 3
+MIN_FOLD_EXAMPLES = 10
 
-# Pref → body-ish orthography (documented; applied only if body attests).
-ORTHO_SUBS: list[tuple[str, str]] = [
+# Fallback if pref_fold_table.json is missing (keep in sync via build_pref_fold_table.py).
+ORTHO_SUBS_FALLBACK: list[tuple[str, str]] = [
     (r"Gṛhj", "Gṛhy"),
     (r"Gṛhja", "Gṛhya"),
     (r"Pratjabd", "Pratyabd"),
@@ -109,6 +119,44 @@ ORTHO_SUBS: list[tuple[str, str]] = [
     (r"Gîr\.", "Gît."),
 ]
 
+_FOLD_CACHE: dict[str, Any] | None = None
+
+
+def load_fold_table(path: Path | None = None) -> dict[str, Any]:
+    """Load UC-8 ``pref_fold_table.json`` (examples + rules). Empty shell if missing."""
+    global _FOLD_CACHE
+    p = path or FOLD_TABLE_PATH
+    if _FOLD_CACHE is not None and path is None:
+        return _FOLD_CACHE
+    if not p.is_file():
+        shell: dict[str, Any] = {"version": 0, "examples": [], "rules": []}
+        if path is None:
+            _FOLD_CACHE = shell
+        return shell
+    with p.open(encoding="utf-8") as f:
+        data = json.load(f)
+    if path is None:
+        _FOLD_CACHE = data
+    return data
+
+
+def ortho_subs_from_table(table: dict[str, Any] | None = None) -> list[tuple[str, str]]:
+    """Regex pattern rules from the fold table; fallback to hard-coded list."""
+    table = table if table is not None else load_fold_table()
+    out: list[tuple[str, str]] = []
+    for rule in table.get("rules") or []:
+        if rule.get("flags", "regex") != "regex":
+            continue
+        pat = rule.get("pattern")
+        rep = rule.get("replacement")
+        if isinstance(pat, str) and isinstance(rep, str) and pat:
+            out.append((pat, rep))
+    return out or list(ORTHO_SUBS_FALLBACK)
+
+
+# Public name kept for callers/tests; populated from fold table at import.
+ORTHO_SUBS: list[tuple[str, str]] = ortho_subs_from_table()
+
 
 def prep(s: str) -> str:
     return fold_diacritics(s).upper()
@@ -131,9 +179,14 @@ def count_in(search_body: str, form: str) -> int:
 
 
 def candidate_alts(key: str) -> list[tuple[str, str]]:
-    """(alt, kind) — kind in ortho|spacing|ocr_key."""
+    """(alt, kind) — kind in ortho|spacing|ocr_key.
+
+    UC-8 fold table is applied first (exact examples, then rules); remaining
+    heuristics stay additive and still require body attestation at apply time.
+    """
     seen: set[str] = set()
     out: list[tuple[str, str]] = []
+    fold = load_fold_table()
 
     def add(alt: str, kind: str) -> None:
         alt = alt.strip()
@@ -146,6 +199,44 @@ def candidate_alts(key: str) -> list[tuple[str, str]]:
             return
         seen.add(alt)
         out.append((alt, kind))
+
+    stripped = key.lstrip("\\*'ʼ`†‡§")
+
+    # --- UC-8 fold table: exact documented examples (highest confidence) ---
+    for ex in fold.get("examples") or []:
+        old = (ex.get("old") or "").strip()
+        new = (ex.get("new") or "").strip()
+        if not old or not new:
+            continue
+        kind = (ex.get("class") or "ortho").strip() or "ortho"
+        if key == old or stripped == old:
+            add(new, kind)
+        # also match when key is the surface form of a dual "A oder B" note
+        notes = ex.get("notes") or ""
+        if f"source_key='{key}'" in notes or f"surface_of='{key}'" in notes:
+            add(new, kind)
+
+    # --- UC-8 fold table: pattern / literal rules ---
+    for rule in fold.get("rules") or []:
+        pat = rule.get("pattern")
+        rep = rule.get("replacement")
+        if not isinstance(pat, str) or not isinstance(rep, str) or not pat:
+            continue
+        kind = (rule.get("kind") or "ortho").strip() or "ortho"
+        flags = rule.get("flags", "regex")
+        if flags == "literal":
+            if pat in key:
+                add(key.replace(pat, rep), kind)
+            if stripped != key and pat in stripped:
+                add(stripped.replace(pat, rep), kind)
+        else:
+            try:
+                if re.search(pat, key):
+                    add(re.sub(pat, rep, key), kind)
+                if stripped != key and re.search(pat, stripped):
+                    add(re.sub(pat, rep, stripped), kind)
+            except re.error:
+                continue
 
     # list-bullet prefix (MW72)
     if key.startswith("- "):
@@ -174,7 +265,6 @@ def candidate_alts(key: str) -> list[tuple[str, str]]:
     if "." in nospace:
         add(nospace, "spacing")
 
-    stripped = key.lstrip("\\*'ʼ`†‡§")
     if stripped != key:
         add(stripped, "ocr_key")
     add(re.sub(r"^[\\*'ʼ`†‡§]+", "", key), "ocr_key")
@@ -196,12 +286,15 @@ def candidate_alts(key: str) -> list[tuple[str, str]]:
             if j2y2 != stripped:
                 add(j2y2, "ortho")
 
-    for a, b in ORTHO_SUBS:
-        if re.search(a, key):
-            add(re.sub(a, b, key), "ortho")
-        if stripped != key and re.search(a, stripped):
-            add(re.sub(a, b, stripped), "ortho")
+    # Fallback regex rules if table empty; otherwise table rules already applied.
+    if not (fold.get("rules") or []):
+        for a, b in ORTHO_SUBS_FALLBACK:
+            if re.search(a, key):
+                add(re.sub(a, b, key), "ortho")
+            if stripped != key and re.search(a, stripped):
+                add(re.sub(a, b, stripped), "ortho")
 
+    # Residual char-class heuristics (also covered by literal table rules when present)
     add(key.replace("ç", "ś").replace("Ç", "Ś"), "ortho")
     add(key.replace("ç", "s").replace("Ç", "S"), "ortho")
     add(key.replace("ḱ", "k").replace("Ḱ", "K"), "ortho")
@@ -233,6 +326,47 @@ def candidate_alts(key: str) -> list[tuple[str, str]]:
     add(key.replace("Kauç", "Kauś"), "ortho")
 
     return out
+
+
+def self_check_fold_table() -> int:
+    """Validate UC-8 fold table: non-empty, ≥MIN examples with body_n, loadable rules."""
+    if not FOLD_TABLE_PATH.is_file():
+        print(f"FAIL: missing {FOLD_TABLE_PATH}", flush=True)
+        return 1
+    table = load_fold_table()
+    examples = table.get("examples") or []
+    rules = table.get("rules") or []
+    with_body = [e for e in examples if int(e.get("body_n") or 0) >= 1]
+    pwg_pw = [e for e in with_body if (e.get("dict") or "").upper() in ("PWG", "PW")]
+    errs: list[str] = []
+    if len(examples) < 1:
+        errs.append("examples empty")
+    if len(with_body) < MIN_FOLD_EXAMPLES:
+        errs.append(f"need ≥{MIN_FOLD_EXAMPLES} examples with body_n≥1, got {len(with_body)}")
+    if len(pwg_pw) < MIN_FOLD_EXAMPLES:
+        errs.append(f"need ≥{MIN_FOLD_EXAMPLES} PWG/PW examples with body_n, got {len(pwg_pw)}")
+    if len(rules) < 1:
+        errs.append("rules empty")
+    # smoke: documented UC-8 samples produce body-ish alts
+    probes = [
+        ("Kâtj. Çr.", "Kâty."),
+        ("Âçv. Gṛhj.", "Gṛhy"),
+        ("Laghuǵ.", "Laghuj"),
+        ("Mahâvîraḱ.", "Mahâvîrac"),
+    ]
+    for old, expect_sub in probes:
+        alts = [a for a, _ in candidate_alts(old)]
+        if not any(expect_sub in a for a in alts):
+            errs.append(f"candidate_alts({old!r}) missing alt containing {expect_sub!r}; got {alts[:8]}")
+    if errs:
+        print("self-check FAIL:", "; ".join(errs), flush=True)
+        return 1
+    print(
+        f"self-check OK: examples={len(examples)} body_n≥1={len(with_body)} "
+        f"PWG/PW={len(pwg_pw)} rules={len(rules)} path={FOLD_TABLE_PATH.name}",
+        flush=True,
+    )
+    return 0
 
 
 def best_body_alt(key: str, search_body: str) -> tuple[str, int, str]:
@@ -618,7 +752,15 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--apply", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument(
+        "--self-check",
+        action="store_true",
+        help="Validate pref_fold_table.json (UC-8) and exit",
+    )
     args = ap.parse_args(argv)
+
+    if args.self_check:
+        return self_check_fold_table()
 
     codes: list[str] = []
     if args.all:

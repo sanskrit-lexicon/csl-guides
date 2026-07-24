@@ -140,7 +140,8 @@ Each use case names: **actor**, **pref input**, **join** (if any), **output**, *
 - **Pref input:** residual `ortho` / `ocr_key` pairs with body-attested alts (change logs).
 - **Join:** fold tables in `pref_abbr_crosscheck` / `pref_key_body_align`.
 - **Output:** documented fold examples (j/y, Gṛhj/Gṛhy, Kâtj/Kâty, ḱ/c) without silent invent-a-fold.
-- **Home:** [naming authority](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md); sanskrit-util notes where relevant.
+- **Home:** [naming authority](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md); registry [`scripts/pref_fold_table.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_fold_table.json) (H1592); sanskrit-util notes where relevant.
+- **Status (H1592):** shipped — 26 PWG/PW examples + pattern rules; `pref_key_body_align.py --self-check`.
 
 ### UC-9 — Correction and addenda harvest
 

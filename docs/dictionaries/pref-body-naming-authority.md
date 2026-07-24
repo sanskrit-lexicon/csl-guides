@@ -2,7 +2,7 @@
 
 _Created: 24-07-2026 · Last updated: 24-07-2026_
 
-**Handoff:** [H1569](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1569-Sonnet_csl-guides_pref-body-naming-authority-apply_24.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123) · **Prior:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) · [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) · [H1560](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1560-Sonnet_csl-guides_pref-only-pwg-pw-decompose_24.07.26.md) · **Enrichment proposal:** [preface-front-matter-enrichment-use-cases.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-front-matter-enrichment-use-cases.md)
+**Handoff:** [H1569](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1569-Sonnet_csl-guides_pref-body-naming-authority-apply_24.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123) · **Prior:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) · [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) · [H1560](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1560-Sonnet_csl-guides_pref-only-pwg-pw-decompose_24.07.26.md) · [H1592](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1592-Sonnet_csl-guides_pref-fold-table-registry_24.07.26.md) (UC-8 fold table) · **Enrichment proposal:** [preface-front-matter-enrichment-use-cases.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-front-matter-enrichment-use-cases.md)
 
 ## Ruling (24-07-2026)
 
@@ -31,13 +31,41 @@ This **supersedes** the H1530–H1560 non-goal “no bulk pref overwrite / scan 
 
 | Script | Role |
 |--------|------|
-| [`scripts/pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py) | Census keys vs body |
+| [`scripts/pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py) | Census keys vs body (search-time `fold_diacritics` only) |
 | [`scripts/pref_only_decompose.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_only_decompose.py) | Type residual `pref_only` |
-| [`scripts/pref_key_body_align.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_key_body_align.py) | Apply gated key rewrites + write change log |
+| [`scripts/pref_key_body_align.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_key_body_align.py) | Apply gated key rewrites + write change log; loads fold table |
+| [`scripts/pref_fold_table.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_fold_table.json) | **UC-8** documented orthography / OCR folds (examples + rules) |
+| [`scripts/build_pref_fold_table.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build_pref_fold_table.py) | Rebuild fold table from PWG/PW align change logs |
+
+## UC-8 fold table (no silent invent-a-fold)
+
+Orthography candidates that are **not** pure diacritic-strip live in [`scripts/pref_fold_table.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_fold_table.json):
+
+| Section | Content |
+|---------|---------|
+| `examples` | Concrete `old → new` from PWG/PW align change logs, each with `dict`, `body_n`, `class`, `source_log` URL |
+| `rules` | Documented pattern/literal substitutions (j/y, Gṛhj/Gṛhy, Kâtj/Kâty, ḱ/c, ǵ/j, ç/ś, …) |
+
+`pref_key_body_align.candidate_alts` loads the table **additively** (exact examples first, then rules, then residual heuristics). A candidate still applies only when the body attests the alt (`body_n ≥ 1`). Do **not** invent a new fold in code without a registry row + body evidence.
+
+Canonical pilot examples (from the H1580 change logs):
+
+| old (pref OCR) | new (body) | dict | body_n |
+|----------------|------------|------|-------:|
+| `Âçv. Gṛhj.` | `Âśv. Gṛhy.` | PWG | 1751 |
+| `Kâtj. Çr.` | `Kâty. Śr.` | PWG | 8694 |
+| `Çâńkh. Gṛhj.` | `Śâńkh. Gṛhy.` | PWG | 897 |
+| `Laghuǵ.` | `Laghuj.` | PWG | 242 |
+| `Mahâvîraḱ.` | `Mahâvîrac.` | PW | 277 |
+| `Mṛḱḱh.` | `Mṛcch.` | PW | 246 |
+
+Validate: `python scripts/pref_key_body_align.py --self-check` (requires ≥10 PWG/PW examples with `body_n ≥ 1`).
+
+Search-time diacritic strip in crosscheck (`fold_diacritics`) is a **separate** matching aid and is not a substitute for this registry.
 
 ## Change logs
 
-Per-dict apply runs write a dated change-log meta document under `scripts/out/` (e.g. `pwg_pref_key_body_align_changes.md`) listing every `old → new` with class, body count, source file, and line.
+Per-dict apply runs write a dated change-log meta document under `scripts/out/` (e.g. `pwg_pref_key_body_align_changes.md`) listing every `old → new` with class, body count, source file, and line. Those logs are the **source of truth** for new fold-table `examples` rows — regenerate with `python scripts/build_pref_fold_table.py` after a meaningful align pass.
 
 After editing source pages, rebuild consolidated editions with each dict’s `prefaces/build_combined.py`.
 
@@ -46,6 +74,7 @@ After editing source pages, rebuild consolidated editions with each dict’s `pr
 ```text
 python scripts/pref_abbr_crosscheck.py --dict PWG --out-dir scripts/out --json-summary
 python scripts/pref_only_decompose.py --dict PWG
+python scripts/pref_key_body_align.py --self-check
 python scripts/pref_key_body_align.py --dict PWG --apply
 # then in PWG/prefaces: python build_combined.py
 ```

@@ -163,9 +163,15 @@ Each use case names: **actor**, **pref input**, **join** (if any), **output**, *
 
 - **Actor:** library, citing scholar, Zenodo deposit.
 - **Pref input:** full pref trees + METHODS + CITATION.cff.
-- **Join:** DOI / release packaging when rights allow.
+- **Join:** DOI / release packaging when rights allow; body-naming policy + machine legend for resolution provenance.
 - **Output:** citable DE/EN/RU front-matter editions per dictionary.
-- **Home:** per-dict `prefaces/METHODS.md`; [ocr-prefaces index](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/ocr-prefaces).
+- **Home:** per-dict `prefaces/METHODS.md`; [ocr-prefaces index](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/ocr-prefaces) (**FAIR path map** on that page).
+- **Cross-linked surfaces (H1595):**
+  - Index: [ocr-prefaces](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/ocr-prefaces)
+  - METHODS pilot: [PWG](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/METHODS.md) · [PW](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/METHODS.md)
+  - Naming: [pref-body-naming-authority](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md)
+  - Legend emit: [`pref_legend_emit.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_legend_emit.py) · [`scripts/out/*_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/tree/main/scripts/out) · [`src/data/pref-legends.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/pref-legends.json)
+  - Residual appendix: [UC-13 methods](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/pref-body-residual-methods.md)
 
 ### UC-12 — Publish-safety split surface
 

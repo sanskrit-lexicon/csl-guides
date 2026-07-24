@@ -167,6 +167,7 @@ const sidebars = {
         'about/events',
         'about/publications',
         'about/guides-hypotheses',
+        'about/pref-body-residual-methods',
         'about/shared-tasks',
         'about/dh-programme',
         'about/acknowledgments',

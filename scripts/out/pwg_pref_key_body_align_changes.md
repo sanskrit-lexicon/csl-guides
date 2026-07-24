@@ -2,60 +2,67 @@
 
 _Created: 24-07-2026 · Last updated: 24-07-2026_
 
-**Handoff:** [H1569](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1569-Sonnet_csl-guides_pref-body-naming-authority-apply_24.07.26.md) · **Policy:** [pref-body-naming-authority.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)
+**Handoff:** [H1571](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1571-Sonnet_csl-guides_pref-body-align-all-dicts_24.07.26.md) · **Policy:** [pref-body-naming-authority.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)
 
-## Policy
-
-- Body `.txt` wins for siglum *naming*; pref keys rewritten only with body-attested `alt_form`.
-- Every row below is one documented change (or dry-run proposal).
-- Expansions not rewritten. `rare` / `true_unused` / unattested `ambiguous` held.
-
-**Pref root:** `PWG/prefaces` (sanskrit-lexicon/PWG)
-**Rows with ≥1 file hit:** 21
-**Total replacements:** 57 (DE + EN + RU source pages where the bold key matched)
-
-### Census delta (after apply)
-
-| Metric | Before | After |
-|--------|-------:|------:|
-| hits (non-short) | 257 | **278** |
-| `pref_only` | 133 | **112** (−21) |
+**Pref root:** `C:/Users/user/Documents/GitHub/PWG/prefaces`
+**Rows with ≥1 file hit:** 44
+**Total replacements:** 132
 
 ## Changes
 
 | # | class | conf | old key | new key (body) | body_n | × | files |
 |--:|-------|------|---------|----------------|-------:|--:|-------|
-| 1 | `spacing` | high | `SADDH. P. (mit nachfolgender einfacher Zahl)` | `SADDH. P.` | 171 | 1 | pwgpref19.md:1 |
-| 2 | `spacing` | med | `A Dict. Beng. and S. (Haughton,)` | `A Dict. Beng. and S.` | 3 | 3 | pwgpref07.en.md:1; pwgpref07.md:1; pwgpref07.ru.md:1 |
-| 3 | `spacing` | high | `Zur L. u. G. d. W. (Roth,)` | `Zur L. u. G. d. W.` | 26 | 3 | pwgpref11.en.md:1; pwgpref11.md:1; pwgpref11.ru.md:1 |
-| 4 | `spacing` | high | `Lebensb. (Schiefner,)` | `Lebensb.` | 340 | 3 | pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1 |
-| 5 | `spacing` | med | `Institutt. (Lassen,)` | `Institutt.` | 1 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
-| 6 | `spacing` | high | `Mat. ind. (Ainslie,)` | `Mat. ind.` | 21 | 3 | pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1 |
-| 7 | `spacing` | high | `Hindu Th. (Wilson,)` | `Hindu Th.` | 16 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
-| 8 | `spacing` | high | `Maç. oder Maç. S.` | `Maç.` | 289 | 1 | pwgpref09.md:1 |
-| 9 | `spacing` | med | `Gîr. oder Gîtag.` | `Gîtag.` | 4 | 1 | pwgpref08.md:1 |
-| 10 | `spacing` | med | `Pent. (Lassen,)` | `Pent.` | 4 | 3 | pwgpref10.en.md:1; pwgpref10.md:1; pwgpref10.ru.md:1 |
-| 11 | `ortho` | high | `Parâçarapaddh.` | `Parâśarapaddh.` | 10 | 3 | pwgpref16.en.md:1; pwgpref16.md:1; pwgpref16.ru.md:1 |
-| 12 | `ortho` | med | `Pathjâpathjav.` | `Pathyâpathyav.` | 1 | 3 | pwgpref16.en.md:1; pwgpref16.md:1; pwgpref16.ru.md:1 |
-| 13 | `ortho` | high | `Varâh. L. Ǵât.` | `Varâh. L. Jât.` | 18 | 3 | pwgpref11.en.md:1; pwgpref11.md:1; pwgpref11.ru.md:1 |
-| 14 | `spacing` | high | `Lit. (Weber,)` | `Lit.` | 1491 | 3 | pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1 |
-| 15 | `ortho` | high | `Siddhântaçir.` | `Siddhântaśir.` | 73 | 3 | pwgpref10.en.md:1; pwgpref10.md:1; pwgpref10.ru.md:1 |
-| 16 | `ortho` | high | `Çârńg. Paddh.` | `Śârńg. Paddh.` | 36 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
-| 17 | `ortho` | med | `Dhjânav. Up.` | `Dhyânav. Up.` | 2 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
-| 18 | `ortho` | med | `Juktikalpat.` | `Yuktikalpat.` | 4 | 3 | pwgpref16.en.md:1; pwgpref16.md:1; pwgpref16.ru.md:1 |
-| 19 | `ortho` | high | `Kâtj. Paddh.` | `Kâty. Paddh.` | 10 | 3 | pwgpref16.en.md:1; pwgpref16.md:1; pwgpref16.ru.md:1 |
-| 20 | `ortho` | high | `Çvetâçv. Up.` | `Śvetâśv. Up.` | 605 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
-| 21 | `ortho` | high | `Gṛhjasâṃgr.` | `Gṛhyasâṃgr.` | 158 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
-
-## Reproduce
+| 1 | `ortho` | med | `Çrâddhaviv.` | `Śrâddhaviv.` | 1 | 3 | pwgpref16.en.md:1; pwgpref16.md:1; pwgpref16.ru.md:1 |
+| 2 | `ortho` | high | `AV. Pariç.` | `AV. Pariś.` | 146 | 3 | pwgpref07.en.md:1; pwgpref07.md:1; pwgpref07.ru.md:1 |
+| 3 | `ortho` | high | `Avad. Çat.` | `Avad. Śat.` | 5 | 3 | pwgpref07.en.md:1; pwgpref07.md:1; pwgpref07.ru.md:1 |
+| 4 | `ortho` | high | `Khând. Up.` | `Chând. Up.` | 2049 | 3 | pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1 |
+| 5 | `ortho` | high | `Pâr. Gṛhj.` | `Pâr. Gṛhy.` | 838 | 3 | pwgpref10.en.md:1; pwgpref10.md:1; pwgpref10.ru.md:1 |
+| 6 | `ortho` | high | `Tithjâdit.` | `Tithyâdit.` | 122 | 3 | pwgpref16.en.md:1; pwgpref16.md:1; pwgpref16.ru.md:1 |
+| 7 | `ortho` | high | `Çatar. Up.` | `Śatar. Up.` | 7 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
+| 8 | `ortho` | high | `Çâńkh. Br.` | `Śâńkh. Br.` | 882 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
+| 9 | `ortho` | high | `Çâńkh. Çr.` | `Śâńkh. Śr.` | 2728 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
+| 10 | `ocr_key` | high | `ʼVedântas.` | `Vedântas.` | 671 | 3 | pwgpref11.en.md:1; pwgpref11.md:1; pwgpref11.ru.md:1 |
+| 11 | `ortho` | high | `Divja-Av.` | `Divya-Av.` | 6 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
+| 12 | `ortho` | med | `KRIJĀSAM.` | `KRIYĀSAM.` | 1 | 3 | pwgpref19.en.md:1; pwgpref19.md:1; pwgpref19.ru.md:1 |
+| 13 | `ortho` | high | `Matsja-P.` | `Matsya-P.` | 150 | 3 | pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1 |
+| 14 | `ortho` | high | `Sâṃkhjak.` | `Sâṃkhyak.` | 876 | 3 | pwgpref10.en.md:1; pwgpref10.md:1; pwgpref10.ru.md:1 |
+| 15 | `ortho` | high | `Çrâddhat.` | `Śrâddhat.` | 11 | 3 | pwgpref16.en.md:1; pwgpref16.md:1; pwgpref16.ru.md:1 |
+| 16 | `ortho` | high | `Çṛńgârat.` | `Śṛńgârat.` | 117 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
+| 17 | `ortho` | high | `Gâb. Up.` | `Jâb. Up.` | 8 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
+| 18 | `ortho` | high | `Kuvalaj.` | `Kuvalay.` | 220 | 3 | pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1 |
+| 19 | `ortho` | med | `KĀPIÇĀV.` | `KĀPIŚĀV.` | 1 | 3 | pwgpref19.en.md:1; pwgpref19.md:1; pwgpref19.ru.md:1 |
+| 20 | `ortho` | high | `Matsjop.` | `Matsyop.` | 73 | 3 | pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1 |
+| 21 | `ortho` | high | `Praçnop.` | `Praśnop.` | 260 | 3 | pwgpref10.en.md:1; pwgpref10.md:1; pwgpref10.ru.md:1 |
+| 22 | `ortho` | high | `Âçv. Çr.` | `Âśv. Śr.` | 2295 | 3 | pwgpref07.en.md:1; pwgpref07.md:1; pwgpref07.ru.md:1 |
+| 23 | `ortho` | high | `Çabdârn.` | `Śabdârn.` | 14 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
+| 24 | `ortho` | high | `Çat. Br.` | `Śat. Br.` | 20941 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
+| 25 | `ortho` | high | `Çâk. Ch.` | `Śâk. Ch.` | 285 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
+| 26 | `ocr_key` | high | `ʼRatnâv.` | `Ratnâv.` | 95 | 3 | pwgpref10.en.md:1; pwgpref10.md:1; pwgpref10.ru.md:1 |
+| 27 | `ortho` | high | `DAÇABH.` | `DAŚABH.` | 12 | 3 | pwgpref19.en.md:1; pwgpref19.md:1; pwgpref19.ru.md:1 |
+| 28 | `ortho` | high | `Jaǵ. V.` | `Yaj. V.` | 5 | 3 | pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1 |
+| 29 | `ortho` | high | `Sûrjas.` | `Sûryas.` | 1867 | 3 | pwgpref10.en.md:1; pwgpref10.md:1; pwgpref10.ru.md:1 |
+| 30 | `ortho` | high | `Vâju-P.` | `Vâyu-P.` | 237 | 3 | pwgpref10.en.md:1; pwgpref10.md:1; pwgpref10.ru.md:1 |
+| 31 | `ortho` | high | `Çântiç.` | `Śântiś.` | 269 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
+| 32 | `ocr_key` | med | `ʼVîram.` | `Vîram.` | 4 | 3 | pwgpref11.en.md:1; pwgpref11.md:1; pwgpref11.ru.md:1 |
+| 33 | `ortho` | high | `Drâhj.` | `Drâhy.` | 11 | 3 | pwgpref16.en.md:1; pwgpref16.md:1; pwgpref16.ru.md:1 |
+| 34 | `ortho` | high | `Horâç.` | `Horâś.` | 21 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
+| 35 | `ortho` | high | `Jogas.` | `Yogas.` | 752 | 3 | pwgpref16.en.md:1; pwgpref16.md:1; pwgpref16.ru.md:1 |
+| 36 | `ortho` | high | `Vaidj.` | `Vaidy.` | 44 | 3 | pwgpref10.en.md:1; pwgpref10.md:1; pwgpref10.ru.md:1 |
+| 37 | `ortho` | high | `Vjutp.` | `Vyutp.` | 1741 | 3 | pwgpref11.en.md:1; pwgpref11.md:1; pwgpref11.ru.md:1 |
+| 38 | `ortho` | high | `Çârńg.` | `Śârńg.` | 666 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
+| 39 | `ortho` | high | `Kaij.` | `Kaiy.` | 54 | 3 | pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1 |
+| 40 | `ortho` | high | `Kâtj.` | `Kâty.` | 8789 | 3 | pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1 |
+| 41 | `ortho` | high | `Lâṭj.` | `Lâṭy.` | 2608 | 3 | pwgpref09.en.md:1; pwgpref09.md:1; pwgpref09.ru.md:1 |
+| 42 | `ortho` | high | `Suçr.` | `Suśr.` | 20306 | 3 | pwgpref10.en.md:1; pwgpref10.md:1; pwgpref10.ru.md:1 |
+| 43 | `ortho` | high | `Viçv.` | `Viśv.` | 403 | 3 | pwgpref11.en.md:1; pwgpref11.md:1; pwgpref11.ru.md:1 |
+| 44 | `ortho` | high | `Ǵjot.` | `Jyot.` | 542 | 3 | pwgpref08.en.md:1; pwgpref08.md:1; pwgpref08.ru.md:1 |
 
 ```text
 python scripts/pref_key_body_align.py --dict PWG --apply
-cd C:\Users\user\Documents\GitHub\PWG\prefaces && python build_combined.py
 ```
 
 ---
 
-_H1569 · Grok 4.5 (`grok-4.5`) · APPLIED._
+_H1571 · Grok 4.5 (`grok-4.5`) · APPLIED._
 
 _Dr. Mārcis Gasūns_

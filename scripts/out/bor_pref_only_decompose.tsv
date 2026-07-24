@@ -1,0 +1,75 @@
+dict	key_norm	class	confidence	alt_form	alt_body_count	body_count	expansion	sources	notes
+BOR	sen. [gen. sen.]	true_unused	low		0	0	in a general sense	borpref22.md:78	no_alt_hit
+BOR	\An.<br>Ana.	ambiguous	low		0	0	Anargha Rāghava Nāṭaka	borpref20.md:14	markup_or_conditional_legend
+BOR	ib., ibidem.	true_unused	low		0	0	in the same place	borpref22.md:83	no_alt_hit
+BOR	id., idem,	true_unused	low		0	0	the same	borpref22.md:84	no_alt_hit
+BOR	\Ma.n.	ambiguous	low		0	0	Mahā Nāṭaka	borpref21.md:12	markup_or_conditional_legend
+BOR	Bh.p.	true_unused	low		0	0	Bhaviṣya Purāṇa	borpref20.md:28	no_alt_hit
+BOR	Va.p.	true_unused	low		0	0	Vāyu Purāṇa	borpref21.md:74	no_alt_hit
+BOR	\B.r.	ocr_key	med	B.r.	1	0	Bāla Rāmāyaṇa	borpref20.md:30	alt='B.r.' body_n=1
+BOR	\Cha.	ocr_key	med	Cha.	1	0	Chanda Kauśika Nāṭaka	borpref20.md:34	alt='Cha.' body_n=1
+BOR	\Mal.	ocr_key	high	Mal.	72	0	Mālavikāgnimitra	borpref20.md:79	alt='Mal.' body_n=72
+BOR	\Pri.	ocr_key	high	Pri.	7	0	Priyadarśikā Nātikā	borpref21.md:39	alt='Pri.' body_n=7
+BOR	\Vid.	ocr_key	med	Vid.	3	0	Viddha Śālabhañjikā	borpref21.md:79	alt='Vid.' body_n=3
+BOR	c.10.	true_unused	low		0	0	10th. or चुर् class	borpref22.md:47	no_alt_hit
+BOR	c.of.	true_unused	low		0	0	causal of	borpref22.md:48	no_alt_hit
+BOR	†B.p.	true_unused	low		0	0	Bhāgavata Purāṇa	borpref20.md:27	no_alt_hit
+BOR	†Kav.	true_unused	low		0	0	Kāvya Prakāśa	borpref20.md:63	no_alt_hit
+BOR	†Sah.	true_unused	low		0	0	Sāhitya Darpaṇa	borpref21.md:48	no_alt_hit
+BOR	†V.m.	true_unused	low		0	0	Varāhamihira's Brihat Saṁhitā	borpref21.md:82	no_alt_hit
+BOR	A.b.	true_unused	low		0	0	Ārya Bhaṭṭa	borpref20.md:13	no_alt_hit
+BOR	A.p.	true_unused	low		0	0	Agni Purāṇa	borpref20.md:16	no_alt_hit
+BOR	B.a.	true_unused	low		0	0	Brahmāṇḍa Purāṇa	borpref20.md:22	no_alt_hit
+BOR	B.v.	true_unused	low		0	0	Brahma Vaivarta Purāṇa	borpref20.md:31	no_alt_hit
+BOR	C.r.	true_unused	low		0	0	Champū Rāmāyaṇa	borpref20.md:35	no_alt_hit
+BOR	D.b.	true_unused	low		0	0	Devī Bhāgavata	borpref20.md:40	no_alt_hit
+BOR	D.c.	true_unused	low		0	0	Dattaka Chandrikā	borpref20.md:41	no_alt_hit
+BOR	D.m.	true_unused	low		0	0	Dattaka Mimānsā	borpref20.md:44	no_alt_hit
+BOR	G.p.	true_unused	low		0	0	Garuḍa Purāṇa	borpref20.md:51	no_alt_hit
+BOR	H.r.	true_unused	low		0	0	Hāyana Ratna	borpref20.md:54	no_alt_hit
+BOR	K.p.	true_unused	low		0	0	Kurma Purāṇa	borpref20.md:67	no_alt_hit
+BOR	L.j.	true_unused	low		0	0	Laghu Jātaka	borpref20.md:73	no_alt_hit
+BOR	L.p.	true_unused	low		0	0	Liṅga Purāṇa	borpref20.md:74	no_alt_hit
+BOR	M.m.	true_unused	low		0	0	Mantra Mahodadhi	borpref21.md:21	no_alt_hit
+BOR	N.p.	true_unused	low		0	0	Nāradīya Purāṇa	borpref21.md:31	no_alt_hit
+BOR	P.d.	true_unused	low		0	0	Pātanjala Darśana and Vyāsa's Commentary	borpref21.md:36	no_alt_hit
+BOR	P.p.	true_unused	low		0	0	Padma Purāṇa	borpref21.md:37	no_alt_hit
+BOR	R.t.	true_unused	low		0	0	Raghunandana's Tattvas	borpref21.md:45	no_alt_hit
+BOR	S.b.	true_unused	low		0	0	Śaṅkara on Brihadāraṇyka Upaniṣad	borpref21.md:51	no_alt_hit
+BOR	S.g.	true_unused	low		0	0	Śaṅkara on Bhagavadgītā	borpref21.md:55	no_alt_hit
+BOR	V.c.	true_unused	low		0	0	Śaṅkarācharya's Viveka Chuḍāmaṇi	borpref21.md:76	no_alt_hit
+BOR	V.d.	true_unused	low		0	0	Vaiṣeśika Darśana and Śaṅkara Miśra's Commentary on it	borpref21.md:77	no_alt_hit
+BOR	\Ma.	ocr_key	high	Ma.	125	0	Mālati Mādhava	borpref20.md:77	alt='Ma.' body_n=125
+BOR	\Mr.	ocr_key	high	Mr.	296	0	Mricchakatika	borpref21.md:24	alt='Mr.' body_n=296
+BOR	\Mu.	ocr_key	high	Mu.	267	0	Mudrā Rākṣasa	borpref21.md:25	alt='Mu.' body_n=267
+BOR	\Na.	ocr_key	high	Na.	197	0	Nāgānanda	borpref21.md:27	alt='Na.' body_n=197
+BOR	\Pr.	ocr_key	high	Pr.	1552	0	Prasanna Rāghava Nāṭaka	borpref21.md:38	alt='Pr.' body_n=1552
+BOR	\Ra.	ocr_key	high	Ra.	217	0	Ratnāvalī	borpref21.md:41	alt='Ra.' body_n=217
+BOR	\Sa.	ocr_key	high	Sa.	469	0	Śakuntalā	borpref21.md:47	alt='Sa.' body_n=469
+BOR	\Vi.	ocr_key	high	Vi.	881	0	Vīra Charita	borpref21.md:78	alt='Vi.' body_n=881
+BOR	c.2.	true_unused	low		0	0	2nd or अद् class	borpref22.md:39	no_alt_hit
+BOR	c.3.	true_unused	low		0	0	3rd or हु class	borpref22.md:40	no_alt_hit
+BOR	c.4.	true_unused	low		0	0	4th. or दिव् class	borpref22.md:41	no_alt_hit
+BOR	c.5.	true_unused	low		0	0	5th. or सु class	borpref22.md:42	no_alt_hit
+BOR	c.6.	true_unused	low		0	0	6th. or तुद् class	borpref22.md:43	no_alt_hit
+BOR	c.7.	true_unused	low		0	0	7th. or रुध् class	borpref22.md:44	no_alt_hit
+BOR	c.8.	true_unused	low		0	0	8th. or तन् class	borpref22.md:45	no_alt_hit
+BOR	c.9.	true_unused	low		0	0	9th. or क्री class	borpref22.md:46	no_alt_hit
+BOR	i.q.	true_unused	low		0	0	idem quod, the same	borpref22.md:82	no_alt_hit
+BOR	†Gi.	true_unused	low		0	0	Gita Govinda	borpref20.md:49	no_alt_hit
+BOR	†Ka.	true_unused	low		0	0	Kāmandakī	borpref20.md:59	no_alt_hit
+BOR	†Ki.	true_unused	low		0	0	Kirātarjunia	borpref20.md:66	no_alt_hit
+BOR	†Ku.	true_unused	low		0	0	Kumāra Sambhava	borpref20.md:69	no_alt_hit
+BOR	†Me.	true_unused	low		0	0	Meghadūta	borpref21.md:17	no_alt_hit
+BOR	†Ri.	true_unused	low		0	0	Ṛtu Saṁhāra	borpref21.md:44	no_alt_hit
+BOR	†Si.	true_unused	low		0	0	Śiśupālavadha	borpref21.md:58	no_alt_hit
+BOR	\U.	ambiguous	low		0	0	Uttara Rāmacharita	borpref21.md:69	markup_or_conditional_legend
+BOR	\V.	ambiguous	low		0	0	Vikramorvaśī	borpref21.md:71	markup_or_conditional_legend
+BOR	§H.	true_unused	low		0	0	Hitopadeśa	borpref20.md:52	no_alt_hit
+BOR	§S.	true_unused	low		0	0	Śaṅkarāchārya's Commentary on Vedānta Sūtras	borpref21.md:46	no_alt_hit
+BOR	†B.	true_unused	low		0	0	Bhaṭṭi Kāvya	borpref20.md:21	no_alt_hit
+BOR	†M.	true_unused	low		0	0	Manu Saṁhitā	borpref20.md:76	no_alt_hit
+BOR	†N.	true_unused	low		0	0	Naiṣadha Charita	borpref21.md:26	no_alt_hit
+BOR	†R.	true_unused	low		0	0	Raghu Vaṁśa	borpref21.md:40	no_alt_hit
+BOR	‡D.	true_unused	low		0	0	Daśakumāra Charita	borpref20.md:37	no_alt_hit
+BOR	‡P.	true_unused	low		0	0	Panchatantra	borpref21.md:33	no_alt_hit

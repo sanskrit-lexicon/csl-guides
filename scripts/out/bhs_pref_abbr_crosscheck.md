@@ -1,16 +1,17 @@
 # Pref abbr × body `.txt` cross-check — BHS
 
-_Created: 23-07-2026 · Last updated: 23-07-2026_
+_Created: 24-07-2026 · Last updated: 24-07-2026_
 
 **Handoffs:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) · [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)  
 **Tool:** [`scripts/pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py)
 
-## Non-goals
+## Policy (H1569)
 
-- **No bulk overwrite** of `prefaces/*.md` from body matches.
-- **Scan remains truth** for expansions.
-- Body is a **prioritisation channel** only.
+- **Body `.txt` wins** for how a work is *named* (siglum orthography).
+- Pref legend keys are corrected **toward body** via gated apply + change log — not left as raw OCR when body attests a form.
+- **Expansions** (titles) remain scan-faithful; this census does not rewrite them.
 - Short keys (&lt; 3 non-space chars) flagged `short_key`.
+- Hold without body attestation: rare/MS works, long bib titles, ambiguous keys.
 
 ## Inputs
 
@@ -26,9 +27,9 @@ _Created: 23-07-2026 · Last updated: 23-07-2026_
 | Metric | n |
 |--------|--:|
 | Keys parsed | 348 |
-| Hits (non-short) | 267 (77%) |
-| `pref_only` | 53 |
-| `low_count` (≤3) | 58 |
+| Hits (non-short) | 281 (81%) |
+| `pref_only` | 39 |
+| `low_count` (≤3) | 61 |
 | Short keys | 28 |
 
 ## Top body hits (non-short)
@@ -47,34 +48,34 @@ _Created: 23-07-2026 · Last updated: 23-07-2026_
 | `KSA` | 2474 | — | 44,44,44 |
 | `Māy` | 2257 | — | 155,431,479 |
 | `ff.` | 2027 | — | 20,20,20 |
+| `s.v.` | 1936 | — | 8,8,139 |
 | `Mg.` | 1800 | — | 199,415,495 |
 | `mg.` | 1800 | — | 199,415,495 |
-| `Śikṣ` | 1708 | — | 20,20,77 |
 
 ## `pref_only` sample
 
 | key_norm | body_count | flag | samples |
 |---|---:|---|---|
 | `(Hoernle) MR` | 0 | pref_only | — |
-| `(Jä.,) Jäschke` | 0 | pref_only | — |
 | `ABORI` | 0 | pref_only | — |
 | `ASGW` | 0 | pref_only | — |
 | `AbhK.` | 0 | pref_only | — |
 | `ApŚ!` | 0 | pref_only | — |
 | `B (as in Wh. Roots)` | 0 | pref_only | — |
-| `B. in Tr. (Warren)` | 0 | pref_only | — |
 | `Bcṭ, Bca.ṭ.` | 0 | pref_only | — |
 | `Bv, Bu.v.` | 0 | pref_only | — |
 | `Dpv., Dpvs.` | 0 | pref_only | — |
 | `E. Lamotte, Mél. chin. et boud.` | 0 | pref_only | — |
 | `Ep. Zeyl.` | 0 | pref_only | — |
-| `Geiger (W.)` | 0 | pref_only | — |
 | `It., Itiv.` | 0 | pref_only | — |
 | `JR (Vikramacarita)` | 0 | pref_only | — |
-| `Kauṭ. (Arth.)` | 0 | pref_only | — |
 | `Kh.p., Khud.p. (comm.)` | 0 | pref_only | — |
 | `MIndic or MInd.` | 0 | pref_only | — |
-| `Meyer, Kauṭ. (Arth.)` | 0 | pref_only | — |
+| `Miln.(p.), Milp.` | 0 | pref_only | — |
+| `Mṛcch.` | 0 | pref_only | — |
+| `NAWGött.` | 0 | pref_only | — |
+| `Neisser, Z. Wbch. d. RV.` | 0 | pref_only | — |
+| `Nidd¹` | 0 | pref_only | — |
 
 ## `low_count` sample
 
@@ -89,12 +90,12 @@ _Created: 23-07-2026 · Last updated: 23-07-2026_
 | `Saundarān.` | 3 | low_count | 12237,12433,32777 |
 | `Skt. Synt.` | 3 | low_count | 24061,32229,62145 |
 | `Toch.` | 3 | low_count | 33685,33685,33685 |
+| `Uhlenbeck` | 3 | low_count | 36379,39575,70129 |
 | `Wh.` | 3 | low_count | 12851,15663,39575 |
 | `equiv.` | 3 | low_count | 51123,53087,71319 |
 | `fn.` | 3 | low_count | 29341,30057,60985 |
 | `ŚB.` | 3 | low_count | 86,579,39715 |
 | `Abhidh-s.` | 2 | low_count | 30089,30089 |
-| `IF.` | 2 | low_count | 27937,58271 |
 
 ## Reproduce
 

@@ -1,0 +1,154 @@
+dict	key_norm	class	confidence	alt_form	alt_body_count	body_count	expansion	sources	notes
+MW72	- Kirāt. or Kirātārj.	true_unused	low		0	0	Kirātārjunīya.	mw72pref24.md:92	no_alt_hit
+MW72	- inst. or inst. c.	true_unused	low		0	0	Instrumental case.	mw72pref24.md:88	no_alt_hit
+MW72	- Cond. or Condit.	true_unused	low		0	0	Conditional.	mw72pref24.md:51	no_alt_hit
+MW72	- Armen. or Armn.	true_unused	low		0	0	Armenian or the language of Brittany.	mw72pref24.md:27	no_alt_hit
+MW72	- Vārt. or Vārtt.	true_unused	low		0	0	Vārtika.	mw72pref24.md:160	no_alt_hit
+MW72	- abl. or abl. c.	true_unused	low		0	0	ablative case.	mw72pref24.md:15	no_alt_hit
+MW72	- acc. or acc. c.	true_unused	low		0	0	accusative case.	mw72pref24.md:16	no_alt_hit
+MW72	- dat. or dat. c.	true_unused	low		0	0	dative case.	mw72pref24.md:53	no_alt_hit
+MW72	- gen. or gen. c.	true_unused	low		0	0	genitive case.	mw72pref24.md:71	no_alt_hit
+MW72	- loc. or loc. c.	true_unused	low		0	0	locative case.	mw72pref24.md:97	no_alt_hit
+MW72	- voc. or voc. c.	true_unused	low		0	0	vocative case.	mw72pref24.md:163	no_alt_hit
+MW72	- Boh. or Bohem.	true_unused	low		0	0	Bohemian.	mw72pref24.md:34	no_alt_hit
+MW72	- Inf. or Infin.	true_unused	low		0	0	Infinitive mood.	mw72pref24.md:87	no_alt_hit
+MW72	- compar. degree	true_unused	low		0	0	comparative degree.	mw72pref24.md:50	no_alt_hit
+MW72	- Vājasaneyi-s.	ortho	low		0	0	Vājasaneyi-saṃhitā.	mw72pref24.md:159	j_series_no_confirmed_body_alt
+MW72	- comp., compd.	true_unused	low		0	0	compound, compounds.	mw72pref24.md:48	no_alt_hit
+MW72	- Bhāgavata-P.	true_unused	low		0	0	Bhāgavata-Purāṇa, Burnouf's edition, or Bombay edition for the later books.	mw72pref24.md:32	no_alt_hit
+MW72	- Cambro-Brit.	true_unused	low		0	0	the language of Wales.	mw72pref24.md:40	no_alt_hit
+MW72	- Nom. or nom.	true_unused	low		0	0	Nominative case.	mw72pref24.md:111	no_alt_hit
+MW72	- Osc. or Osk.	true_unused	low		0	0	Oscan or verb.	mw72pref24.md:114	no_alt_hit
+MW72	- ed. or edit.	true_unused	low		0	0	edition.	mw72pref24.md:59	no_alt_hit
+MW72	- Vishṇu-Pur.	true_unused	low		0	0	Vishṇu-Purāṇa.	mw72pref24.md:162	no_alt_hit
+MW72	- m. or masc.	true_unused	low		0	0	masculine gender.	mw72pref24.md:99	no_alt_hit
+MW72	- n. or neut.	true_unused	low		0	0	neuter gender.	mw72pref24.md:107	no_alt_hit
+MW72	- Angl. Sax.	spacing	high	Angl. Sax.	310	0	Anglo-Saxon.	mw72pref24.md:22	alt='Angl. Sax.' body_n=310
+MW72	- Atharva-v.	true_unused	low		0	0	Atharva-veda, edited by Roth and Whitney.	mw72pref24.md:31	no_alt_hit
+MW72	- Ep. or ep.	true_unused	low		0	0	Epic, i.e. as works at the Mahā-bhārata, Rāmāyaṇa, &c.	mw72pref24.md:62	no_alt_hit
+MW72	- col. cols.	true_unused	low		0	0	column, columns.	mw72pref24.md:46	no_alt_hit
+MW72	- f. or fem.	true_unused	low		0	0	feminine.	mw72pref24.md:67	no_alt_hit
+MW72	- ¯ (macron)	true_unused	low		0	0	that a vowel or syllable is long.	mw72pref24.md:168	no_alt_hit
+MW72	- Bhaṭṭi-k.	true_unused	low		0	0	Bhaṭṭi-kāvya, Calcutta edition.	mw72pref24.md:33	no_alt_hit
+MW72	- Kumāra-s.	true_unused	low		0	0	Kumāra-sambhava.	mw72pref24.md:93	no_alt_hit
+MW72	- MS., MSS.	spacing	med	MS., MSS.	1	0	manuscript, manuscripts.	mw72pref24.md:105	alt='MS., MSS.' body_n=1
+MW72	- rt., rts.	spacing	med	rt., rts.	1	0	root, roots.	mw72pref24.md:139	alt='rt., rts.' body_n=1
+MW72	- Mahā-bh.	true_unused	low		0	0	Mahā-bhārata, Calcutta edition.	mw72pref24.md:100	no_alt_hit
+MW72	- Raghu-v.	true_unused	low		0	0	Raghu-vaṃśa.	mw72pref24.md:136	no_alt_hit
+MW72	- Sabda-k.	true_unused	low		0	0	Śabda-kalpa-druma.	mw72pref24.md:141	no_alt_hit
+MW72	- Intens.	spacing	high	Intens.	545	0	Intensive.	mw72pref24.md:89	alt='Intens.' body_n=545
+MW72	- Prākṛit	spacing	high	Prākṛit	9	0	Prākṛit.	mw72pref24.md:130	alt='Prākṛit' body_n=9
+MW72	- Sāma-v.	true_unused	low		0	0	Sāma-veda.	mw72pref24.md:143	no_alt_hit
+MW72	- accord.	spacing	high	accord.	7	0	according.	mw72pref24.md:17	alt='accord.' body_n=7
+MW72	- astrol.	spacing	high	astrol.	7	0	astrology.	mw72pref24.md:29	alt='astrol.' body_n=7
+MW72	- astron.	spacing	high	astron.	26	0	astronomy.	mw72pref24.md:30	alt='astron.' body_n=26
+MW72	- compar.	spacing	high	compar.	70	0	comparative.	mw72pref24.md:49	alt='compar.' body_n=70
+MW72	- defect.	spacing	high	defect.	9	0	defective.	mw72pref24.md:54	alt='defect.' body_n=9
+MW72	- explet.	spacing	med	explet.	1	0	expletive.	mw72pref24.md:66	alt='explet.' body_n=1
+MW72	- impers.	spacing	med	impers.	2	0	impersonal, i.e. used impersonally.	mw72pref24.md:83	alt='impers.' body_n=2
+MW72	- mathem.	spacing	high	mathem.	5	0	mathematics.	mw72pref24.md:101	alt='mathem.' body_n=5
+MW72	- nom. c.	spacing	high	nom. c.	9	0	nominative case.	mw72pref24.md:112	alt='nom. c.' body_n=9
+MW72	- patron.	spacing	high	patron.	6	0	patronymic.	mw72pref24.md:121	alt='patron.' body_n=6
+MW72	- pronom.	spacing	high	pronom.	40	0	pronominal.	mw72pref24.md:133	alt='pronom.' body_n=40
+MW72	- superl.	spacing	high	superl.	82	0	superlative degree.	mw72pref24.md:153	alt='superl.' body_n=82
+MW72	- Adi-p.	true_unused	low		0	0	Ādi-parvan of the Mahā-bhārata.	mw72pref24.md:18	no_alt_hit
+MW72	- Armen.	spacing	high	Armen.	8	0	Armenian.	mw72pref24.md:28	alt='Armen.' body_n=8
+MW72	- Buddh.	spacing	med	Buddh.	2	0	Buddhist.	mw72pref24.md:38	alt='Buddh.' body_n=2
+MW72	- Class.	spacing	high	Class.	43	0	Classical.	mw72pref24.md:45	alt='Class.' body_n=43
+MW72	- Desid.	spacing	high	Desid.	719	0	Desiderative.	mw72pref24.md:55	alt='Desid.' body_n=719
+MW72	- Ionic.	spacing	med	Ionic.	1	0	Ionic.	mw72pref24.md:90	alt='Ionic.' body_n=1
+MW72	- Naigh.	spacing	high	Naigh.	267	0	Naighaṇṭuka.	mw72pref24.md:108	alt='Naigh.' body_n=267
+MW72	- Pruss.	spacing	high	Pruss.	20	0	Prussian.	mw72pref24.md:134	alt='Pruss.' body_n=20
+MW72	- Rig-v.	true_unused	low		0	0	Rig-veda.	mw72pref24.md:138	no_alt_hit
+MW72	- Sabin.	spacing	med	Sabin.	4	0	Sabine or Sabellian (old Italic dialect).	mw72pref24.md:142	alt='Sabin.' body_n=4
+MW72	- Sansk.	spacing	med	Sansk.	1	0	Sanskrit.	mw72pref24.md:144	alt='Sansk.' body_n=1
+MW72	- Schol.	spacing	high	Schol.	29	0	Scholiast or Commentator.	mw72pref24.md:147	alt='Schol.' body_n=29
+MW72	- Theat.	true_unused	low		0	0	Theatre or feat.	mw72pref24.md:155	no_alt_hit
+MW72	- Unādis	true_unused	low		0	0	Uṇādi-sūtras (Aufrecht's edition).	mw72pref24.md:157	no_alt_hit
+MW72	- arith.	true_unused	low		0	0	arithmetic.	mw72pref24.md:25	no_alt_hit
+MW72	- dimin.	spacing	med	dimin.	3	0	diminutive.	mw72pref24.md:56	alt='dimin.' body_n=3
+MW72	- epith.	spacing	med	epith.	4	0	epithet.	mw72pref24.md:63	alt='epith.' body_n=4
+MW72	- medic.	spacing	high	medic.	13	0	medicine.	mw72pref24.md:102	alt='medic.' body_n=13
+MW72	- subst.	spacing	high	subst.	7	0	substantive.	mw72pref24.md:152	alt='subst.' body_n=7
+MW72	- Arab.	spacing	med	Arab.	3	0	Arabic.	mw72pref24.md:26	alt='Arab.' body_n=3
+MW72	- B. R.	spacing	high	B. R.	21	0	Böhtlingk and Roth.	mw72pref24.md:35	alt='B. R.' body_n=21
+MW72	- Bibl.	true_unused	low		0	0	Hibernian or Irish. [Hib.]	mw72pref24.md:79	no_alt_hit
+MW72	- Bret.	spacing	med	Bret.	2	0	Breton.	mw72pref24.md:37	alt='Bret.' body_n=2
+MW72	- Caus.	spacing	high	Caus.	1956	0	Causal.	mw72pref24.md:41	alt='Caus.' body_n=1956
+MW72	- Gael.	spacing	med	Gael.	2	0	Gaelic.	mw72pref24.md:70	alt='Gael.' body_n=2
+MW72	- Germ.	spacing	high	Germ.	649	0	German or High-German.	mw72pref24.md:74	alt='Germ.' body_n=649
+MW72	- Goth.	spacing	high	Goth.	441	0	Gothic.	mw72pref24.md:75	alt='Goth.' body_n=441
+MW72	- Gram.	spacing	high	Gram.	182	0	A Practical Sanskrit Grammar by Monier Williams, third edition, published at the Clarendon Press.	mw72pref24.md:77	alt='Gram.' body_n=182
+MW72	- Hind.	spacing	high	Hind.	19	0	Hindī.	mw72pref24.md:80	alt='Hind.' body_n=19
+MW72	- Hund.	true_unused	low		0	0	the German form of Icelandic.	mw72pref24.md:91	no_alt_hit
+MW72	- Icel.	spacing	med	Icel.	2	0	Icelandic.	mw72pref24.md:81	alt='Icel.' body_n=2
+MW72	- Impf.	spacing	high	Impf.	75	0	Imperfect tense.	mw72pref24.md:84	alt='Impf.' body_n=75
+MW72	- Impv.	spacing	high	Impv.	94	0	Imperative.	mw72pref24.md:85	alt='Impv.' body_n=94
+MW72	- Lett.	spacing	high	Lett.	13	0	Lettish.	mw72pref24.md:95	alt='Lett.' body_n=13
+MW72	- Lith.	spacing	high	Lith.	383	0	Lithuanian.	mw72pref24.md:96	alt='Lith.' body_n=383
+MW72	- Megh.	spacing	med	Megh.	2	0	Megha-dūta, Johnson's second edition.	mw72pref24.md:103	alt='Megh.' body_n=2
+MW72	- Pass.	spacing	high	Pass.	573	0	Passive voice.	mw72pref24.md:120	alt='Pass.' body_n=573
+MW72	- Perf.	spacing	high	Perf.	106	0	Perfect tense.	mw72pref24.md:122	alt='Perf.' body_n=106
+MW72	- Pers.	spacing	high	Pers.	54	0	Persian.	mw72pref24.md:123	alt='Pers.' body_n=54
+MW72	- Prep.	spacing	high	Prep.	31	0	Preposition.	mw72pref24.md:131	alt='Prep.' body_n=31
+MW72	- Pres.	spacing	high	Pres.	98	0	Present tense.	mw72pref24.md:132	alt='Pres.' body_n=98
+MW72	- Refl.	spacing	med	Refl.	1	0	Reflexive or used reflexively.	mw72pref24.md:137	alt='Refl.' body_n=1
+MW72	- Russ.	spacing	high	Russ.	83	0	Russian.	mw72pref24.md:140	alt='Russ.' body_n=83
+MW72	- Scot.	spacing	high	Scot.	12	0	Scotch or Highland-Scotch.	mw72pref24.md:149	alt='Scot.' body_n=12
+MW72	- Slav.	spacing	high	Slav.	226	0	Slavonic or Slavonian.	mw72pref24.md:151	alt='Slav.' body_n=226
+MW72	- Unhx.	true_unused	low		0	0	Unādya.	mw72pref24.md:156	no_alt_hit
+MW72	- anom.	spacing	high	anom.	29	0	anomalous, irregular.	mw72pref24.md:23	alt='anom.' body_n=29
+MW72	- chap.	spacing	high	chap.	5	0	chapter.	mw72pref24.md:43	alt='chap.' body_n=5
+MW72	- comm.	spacing	med	comm.	2	0	commentator or commentary.	mw72pref24.md:47	alt='comm.' body_n=2
+MW72	- cons.	spacing	med	cons.	2	0	consonant.	mw72pref24.md:52	alt='cons.' body_n=2
+MW72	- etym.	spacing	high	etym.	19	0	etymology.	mw72pref24.md:65	alt='etym.' body_n=19
+MW72	- gend.	spacing	high	gend.	5	0	gender.	mw72pref24.md:72	alt='gend.' body_n=5
+MW72	- geom.	spacing	high	geom.	7	0	geometry.	mw72pref24.md:73	alt='geom.' body_n=7
+MW72	- gram.	spacing	high	gram.	182	0	grammar.	mw72pref24.md:78	alt='gram.' body_n=182
+MW72	- long.	spacing	high	long.	32	0	longitude.	mw72pref24.md:98	alt='long.' body_n=32
+MW72	- pers.	spacing	high	pers.	54	0	person.	mw72pref24.md:124	alt='pers.' body_n=54
+MW72	- phil.	spacing	high	phil.	125	0	philosophy.	mw72pref24.md:125	alt='phil.' body_n=125
+MW72	- poet.	spacing	high	poet.	164	0	poetic, poetic license.	mw72pref24.md:127	alt='poet.' body_n=164
+MW72	- s. v.	spacing	high	s. v.	174	0	sub voce.	mw72pref24.md:154	alt='s. v.' body_n=174
+MW72	- scil.	spacing	high	scil.	365	0	scilicet.	mw72pref24.md:148	alt='scil.' body_n=365
+MW72	- sing.	spacing	high	sing.	727	0	singular number.	mw72pref24.md:150	alt='sing.' body_n=727
+MW72	- Aor.	spacing	high	Aor.	469	0	Aorist.	mw72pref24.md:24	alt='Aor.' body_n=469
+MW72	- Dor.	spacing	high	Dor.	52	0	Doric.	mw72pref24.md:57	alt='Dor.' body_n=52
+MW72	- Eng.	spacing	high	Eng.	109	0	English.	mw72pref24.md:61	alt='Eng.' body_n=109
+MW72	- Fut.	spacing	high	Fut.	70	0	Future.	mw72pref24.md:69	alt='Fut.' body_n=70
+MW72	- Lat.	spacing	high	Lat.	834	0	Latin.	mw72pref24.md:94	alt='Lat.' body_n=834
+MW72	- Mod.	spacing	high	Mod.	151	0	Modern.	mw72pref24.md:104	alt='Mod.' body_n=151
+MW72	- Nir.	spacing	med	Nir.	4	0	Nirukta.	mw72pref24.md:110	alt='Nir.' body_n=4
+MW72	- Par.	spacing	high	Par.	74	0	Participle.	mw72pref24.md:119	alt='Par.' body_n=74
+MW72	- Pol.	spacing	high	Pol.	6	0	Polish.	mw72pref24.md:128	alt='Pol.' body_n=6
+MW72	- Pāṇ.	spacing	high	Pāṇ.	723	0	Pāṇini.	mw72pref24.md:118	alt='Pāṇ.' body_n=723
+MW72	- Sax.	spacing	high	Sax.	369	0	Saxon.	mw72pref24.md:145	alt='Sax.' body_n=369
+MW72	- Say.	spacing	high	Say.	2373	0	Sāyaṇa or according to Sāyaṇa.	mw72pref24.md:146	alt='Say.' body_n=2373
+MW72	- Ved.	spacing	high	Ved.	11989	0	Vedic or Veda.	mw72pref24.md:161	alt='Ved.' body_n=11989
+MW72	- adj.	spacing	high	adj.	207	0	adjective.	mw72pref24.md:19	alt='adj.' body_n=207
+MW72	- alg.	spacing	med	alg.	3	0	algebra.	mw72pref24.md:21	alt='alg.' body_n=3
+MW72	- e.g.	true_unused	low		0	0	exempli gratiā.	mw72pref24.md:60	no_alt_hit
+MW72	- esp.	spacing	med	esp.	1	0	especially.	mw72pref24.md:64	alt='esp.' body_n=1
+MW72	- i.e.	spacing	med	i.e.	1	0	id est.	mw72pref24.md:82	alt='i.e.' body_n=1
+MW72	- ind.	spacing	high	ind.	4502	0	indeclinable, either an indeclinable participle or an adverb or a case used adverbially.	mw72pref24.md:86	alt='ind.' body_n=4502
+MW72	- neg.	spacing	med	neg.	2	0	negative.	mw72pref24.md:109	alt='neg.' body_n=2
+MW72	- obs.	spacing	high	obs.	8	0	obsolete.	mw72pref24.md:113	alt='obs.' body_n=8
+MW72	- q.v.	true_unused	low		0	0	quod vide.	mw72pref24.md:135	no_alt_hit
+MW72	- usu.	spacing	med	usu.	3	0	usually.	mw72pref24.md:158	alt='usu.' body_n=3
+MW72	- Æol.	spacing	high	Æol.	12	0	Æolic.	mw72pref24.md:20	alt='Æol.' body_n=12
+MW72	- &c.	spacing	high	&c.	6977	0	et cetera.	mw72pref24.md:166	alt='&c.' body_n=6977
+MW72	- Br.	spacing	high	Br.	32	0	Brāhmaṇa.	mw72pref24.md:36	alt='Br.' body_n=32
+MW72	- Gr.	spacing	high	Gr.	889	0	Greek.	mw72pref24.md:76	alt='Gr.' body_n=889
+MW72	- Pp.	spacing	high	Pp.	17	0	parvan or section of the Mahā-bhārata.	mw72pref24.md:117	alt='Pp.' body_n=17
+MW72	- Pr.	spacing	high	Pr.	5	0	proper.	mw72pref24.md:129	alt='Pr.' body_n=5
+MW72	- cf.	spacing	high	cf.	9307	0	confer, compare.	mw72pref24.md:42	alt='cf.' body_n=9307
+MW72	- cl.	spacing	high	cl.	6861	0	class.	mw72pref24.md:44	alt='cl.' body_n=6861
+MW72	- du.	spacing	high	du.	549	0	dual number.	mw72pref24.md:58	alt='du.' body_n=549
+MW72	- fr.	spacing	high	fr.	7660	0	from.	mw72pref24.md:68	alt='fr.' body_n=7660
+MW72	- pl.	spacing	high	pl.	2227	0	plural number.	mw72pref24.md:126	alt='pl.' body_n=2227
+MW72	singo	true_unused	low		0	0	(siñj).	mw72pref25.md:49	no_alt_hit
+MW72	- A.	spacing	med	-A.	1	0	Ātmane-pada ; the long mark over the A. has been omitted for convenience in printing.	mw72pref24.md:14	alt='-A.' body_n=1
+MW72	- N.	spacing	med	-N.	2	0	Name.	mw72pref24.md:106	alt='-N.' body_n=2
+MW72	- P.	spacing	high	-P.	118	0	Parasmai-pada.	mw72pref24.md:116	alt='-P.' body_n=118
+MW72	- c.	true_unused	low		0	0	case.	mw72pref24.md:39	no_alt_hit
+MW72	- p.	spacing	high	-p.	118	0	page.	mw72pref24.md:115	alt='-p.' body_n=118

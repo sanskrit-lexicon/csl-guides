@@ -1,0 +1,7 @@
+dict	key_norm	class	confidence	alt_form	alt_body_count	body_count	expansion	sources	notes
+IEG	Appendix I— Privileges attached to Free Holdings	true_unused	low		0	0	388—408	iegpref03.md:17	long_bib_or_external_title
+IEG	Appendix II— Tax Names in Dravidian Languages	true_unused	low		0	0	409—427	iegpref03.md:18	long_bib_or_external_title
+IEG	Dravidian palatal alveolar &nbsp; n	true_unused	low		0	0	ṉ	iegpref10.md:20	long_bib_or_external_title
+IEG	Dravidian palatal alveolar &nbsp; r	true_unused	low		0	0	ṟ	iegpref10.md:22	long_bib_or_external_title
+IEG	Ag. Syst. or Ag. Syst. Anc. Ind.	rare	high		0	0	*Agrarian System of Ancient India* by U. N. Ghoshal.	iegpref08.md:10	expansion_rare_signal
+IEG	Suc. Sāt. or Suc. Sāt. L. Dec.	rare	high		0	0	*The Successors of the Sātavāhanas in the Lower Deccan* by D. C. Sircar.	iegpref09.md:46	expansion_rare_signal

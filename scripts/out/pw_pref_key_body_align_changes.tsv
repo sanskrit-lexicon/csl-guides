@@ -1,26 +1,28 @@
 old	new	class	confidence	alt_body_count	replacements	files	notes
-Devatâdhj. Brâhm.	Devatâdhy. Brâhm.	ortho	med	1	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Devatâdhy. Brâhm.' body_n=1
-Gaṇit. Pratjabd.	Gaṇit. Pratyabd.	ortho	high	7	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Gaṇit. Pratyabd.' body_n=7
-Kâtj. Snânas.	Kâty. Snânas.	ortho	med	1	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Kâty. Snânas.' body_n=1
-Varâh. Jogaj.	Varâh. Yogay.	ortho	high	249	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Varâh. Yogay.' body_n=249
-Çârñg. Paddh.	Śârñg. Paddh.	ortho	high	15	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Śârñg. Paddh.' body_n=15
-Dhjânab. Up.	Dhyânab. Up.	ortho	high	10	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Dhyânab. Up.' body_n=10
-Weber, Ǵjot.	Weber, Jyot.	ortho	high	10	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Weber, Jyot.' body_n=10
-Çvetâçv. Up.	Śvetâśv. Up.	ortho	high	32	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Śvetâśv. Up.' body_n=32
-Çârñg. Saṃh.	Śârñg. Saṃh.	ortho	high	41	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Śârñg. Saṃh.' body_n=41
-Siddh. Çir.	Siddh. Śir.	ortho	high	5	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Siddh. Śir.' body_n=5
-Ǵaim. Bhâr.	Jaim. Bhâr.	ortho	med	1	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Jaim. Bhâr.' body_n=1
-AV. Pariç.	AV. Pariś.	ortho	high	54	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='AV. Pariś.' body_n=54
-Jogat. Up.	Yogat. Up.	ortho	med	4	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Yogat. Up.' body_n=4
-Mân. Gṛhj.	Mân. Gṛhy.	ortho	high	252	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Mân. Gṛhy.' body_n=252
-Pâr. Gṛhj.	Pâr. Gṛhy.	ortho	high	198	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Pâr. Gṛhy.' body_n=198
-Saṁnj. Up.	Saṁny. Up.	ortho	high	9	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Saṁny. Up.' body_n=9
-Tâṇḍja-Br.	Tâṇḍya-Br.	ortho	high	520	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Tâṇḍya-Br.' body_n=520
-Âpast. Çr.	Âpast. Śr.	ortho	high	1718	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Âpast. Śr.' body_n=1718
-Çâṅkh. Br.	Śâṅkh. Br.	ortho	high	107	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Śâṅkh. Br.' body_n=107
-Çâṅkh. Çr.	Śâṅkh. Śr.	ortho	high	224	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Śâṅkh. Śr.' body_n=224
-Ḱhând. Up.	Chând. Up.	ortho	high	103	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Chând. Up.' body_n=103
-AV. Ǵjot.	AV. Jyot.	ortho	high	9	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='AV. Jyot.' body_n=9
-Hem. Jog.	Hem. Yog.	ortho	high	25	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Hem. Yog.' body_n=25
-Kâtj. Dh.	Kâty. Dh.	ortho	med	1	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Kâty. Dh.' body_n=1
-Maitrjup.	Maitryup.	ortho	high	55	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Maitryup.' body_n=55
+Med. avj.	Med. avy.	ortho	med	2	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Med. avy.' body_n=2
+Prajogar.	Prayogar.	ortho	med	2	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Prayogar.' body_n=2
+Sâṁkhjak.	Sâṁkhyak.	ortho	high	33	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Sâṁkhyak.' body_n=33
+Vaidjabh.	Vaidyabh.	ortho	med	1	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Vaidyabh.' body_n=1
+Gâbâlop.	Jâbâlop.	ortho	med	3	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Jâbâlop.' body_n=3
+Kuvalaj.	Kuvalay.	ortho	high	12	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Kuvalay.' body_n=12
+Kâvjapr.	Kâvyapr.	ortho	high	136	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Kâvyapr.' body_n=136
+Praçnop.	Praśnop.	ortho	high	9	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Praśnop.' body_n=9
+Vaṁçabr.	Vaṁśabr.	ortho	high	20	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Vaṁśabr.' body_n=20
+Âçv. Çr.	Âśv. Śr.	ortho	high	182	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Âśv. Śr.' body_n=182
+Çat. Br.	Śat. Br.	ortho	high	1470	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Śat. Br.' body_n=1470
+Çira-Up.	Śira-Up.	ortho	high	8	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Śira-Up.' body_n=8
+Divjâv.	Divyâv.	ortho	high	10	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Divyâv.' body_n=10
+Sûrjad.	Sûryad.	ortho	high	8	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Sûryad.' body_n=8
+Sûrjas.	Sûryas.	ortho	high	57	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Sûryas.' body_n=57
+Vâju-P.	Vâyu-P.	ortho	high	12	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Vâyu-P.' body_n=12
+Ârjabh.	Âryabh.	ortho	high	132	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Âryabh.' body_n=132
+Çulbas.	Śulbas.	ortho	high	200	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Śulbas.' body_n=200
+Bîǵag.	Bîjag.	ortho	high	53	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Bîjag.' body_n=53
+Jogas.	Yogas.	ortho	high	76	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Yogas.' body_n=76
+Hâsj.	Hâsy.	ortho	high	83	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Hâsy.' body_n=83
+Kauç.	Kauś.	ortho	high	460	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Kauś.' body_n=460
+Lâṭj.	Lâṭy.	ortho	high	429	3	pwpref04.en.md:1; pwpref04.md:1; pwpref04.ru.md:1	alt='Lâṭy.' body_n=429
+Prij.	Priy.	ortho	high	49	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Priy.' body_n=49
+Suçr.	Suśr.	ortho	high	666	3	pwpref05.en.md:1; pwpref05.md:1; pwpref05.ru.md:1	alt='Suśr.' body_n=666
+Çaṃk.	Śaṃk.	ortho	high	537	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Śaṃk.' body_n=537
+Ǵaim.	Jaim.	ortho	high	336	3	pwpref03.en.md:1; pwpref03.md:1; pwpref03.ru.md:1	alt='Jaim.' body_n=336

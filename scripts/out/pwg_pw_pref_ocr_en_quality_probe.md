@@ -84,6 +84,17 @@ EN probe: 8 segments sense-checked (DE↔EN), drawn from the same sample — tit
 
 ---
 
+## Addendum (H1721, 27-07-2026) — fixed
+
+The 3 confirmed omissions above are fixed, and a boundary scan of the PWG abbreviation pages this probe did not sample (`pwgpref08/10/11/19`) found one more instance of the same failure mode:
+
+- PWG: [PR #217](https://github.com/sanskrit-lexicon/PWG/pull/217) (merged) — `pwgpref07` (`(Haughton,)` attribution restored), `pwgpref09` (fabricated continuation note replaced with the 3 real entries; `Jaǵ. V.` key re-verified against the scan), `pwgpref19` (new finding: missing first entry `Buddhokt.`, same page-boundary crop failure). `pwgpref08/10/11` boundary-checked clean.
+- PWK: [PR #140](https://github.com/sanskrit-lexicon/PWK/pull/140) (merged) — `pwpref03` (`Golâdhj.` last-entry omission appended).
+
+Both PRs regenerate their combined DE/EN/RU files via `build_combined.py`; tracked on [PWG#210](https://github.com/sanskrit-lexicon/PWG/issues/210).
+
+---
+
 ## Provenance
 
 | Field | Value |

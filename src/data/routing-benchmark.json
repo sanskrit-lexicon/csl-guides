@@ -5,7 +5,7 @@
  "license": "CC-BY-SA-4.0",
  "derivedFrom": "src/data/which-dictionary-gold.json",
  "documentedIn": "docs/about/shared-tasks.md",
- "annotation": "Fable 5 (claude-fable-5), single pass, 2026-07-07; no second annotator yet (known limitation, recorded in the hypothesis note).",
+ "annotation": "Fable 5 (claude-fable-5), single pass, 2026-07-07; no second annotator yet (known limitation, recorded in the hypothesis note). Grok 4.5 (grok-4.5) second pass 27-07-2026: 24/24 strict agree, Cohen κ=1.0 (cross-vendor LLM; not human IAA) — H1745.",
  "answerSpace": [
   "ABCH",
   "ACC",
@@ -268,5 +268,14 @@
     ]
    }
   ]
+ },
+ "secondPass": {
+  "annotator": "Grok 4.5 (grok-4.5)",
+  "date": "2026-07-27",
+  "handoff": "H1745",
+  "strict_agree": 24,
+  "n": 24,
+  "cohens_kappa": 1.0,
+  "caveat": "LLM second pass, not human IAA"
  }
 }

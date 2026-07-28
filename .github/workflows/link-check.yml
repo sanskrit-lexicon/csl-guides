@@ -40,6 +40,12 @@ jobs:
           # excluded here, not because the link is dead. See H1738 for the full ruling; the
           # open question of whether public repos should cite private-repo docs at all is
           # tracked as a GTD @DECIDE, not resolved by this exclusion.
+          # dl.acm.org 403s any non-institutional client (verified live, same bot-blocking
+          # class as the CDSL/Play excludes above) — excluded for the same reason.
+          # buttondown.com/cdsl is a placeholder: the newsletter form in newsletter.mdx has
+          # never had its Buttondown account created (see the comment at the top of that
+          # file), so the URL 404s by design, not by rot. Tracked as a GTD @DO to finish
+          # account setup and drop this exclusion once live (H1738).
           args: >-
             --no-progress
             --root-dir "${{ github.workspace }}"
@@ -52,6 +58,8 @@ jobs:
             --exclude "play\.google\.com"
             --exclude "github\.com/gasyoun/Uprava"
             --exclude "github\.com/gasyoun/prefaces_ieg"
+            --exclude "dl\.acm\.org"
+            --exclude "buttondown\.com/cdsl"
             "./**/*.md"
             "./**/*.mdx"
           fail: true

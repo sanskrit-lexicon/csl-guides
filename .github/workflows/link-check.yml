@@ -34,10 +34,11 @@ jobs:
           # --accept tolerates HTTP 429 (rate-limited but alive — common from github.com
           # when many blob links are checked at once); a genuinely removed page returns 404,
           # which still fails the job.
-          # gasyoun/Uprava is a PRIVATE repo (the org's internal handoff/GTD hub) — an
-          # unauthenticated checker always 404s on it, so every blob URL into it is excluded
-          # here, not because the link is dead. See H1738 for the full ruling; the open
-          # question of whether public repos should cite private-Uprava docs at all is
+          # gasyoun/Uprava and gasyoun/prefaces_ieg are PRIVATE repos (the org's internal
+          # handoff/GTD hub, and a copyright-sensitive front-matter source respectively) — an
+          # unauthenticated checker always 404s on them, so every blob URL into either is
+          # excluded here, not because the link is dead. See H1738 for the full ruling; the
+          # open question of whether public repos should cite private-repo docs at all is
           # tracked as a GTD @DECIDE, not resolved by this exclusion.
           args: >-
             --no-progress
@@ -50,6 +51,7 @@ jobs:
             --exclude "c-salt\.uni-koeln\.de"
             --exclude "play\.google\.com"
             --exclude "github\.com/gasyoun/Uprava"
+            --exclude "github\.com/gasyoun/prefaces_ieg"
             "./**/*.md"
             "./**/*.mdx"
           fail: true

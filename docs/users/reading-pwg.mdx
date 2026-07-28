@@ -1,0 +1,169 @@
+---
+id: reading-pwg
+title: How to read Böhtlingk–Roth (PWG)
+description: "A reading pack for the seven-volume Großes Petersburger Wörterbuch — what its Vorwort declares, the ~20 sigla you will actually meet (ranked by measured body frequency), the grammatical authorities, and why the rare manuscript sigla are intentional."
+sidebar_label: Reading Böhtlingk–Roth (PWG)
+---
+
+# How to read Böhtlingk–Roth (PWG)
+
+Böhtlingk & Roth's *Sanskrit-Wörterbuch* — the **Großes Petersburger Wörterbuch**, seven
+volumes, 1855–1875 — is the deepest citation apparatus in Sanskrit lexicography, and the
+first page of any entry throws its abbreviations at you: `R.`, `H.`, `P. 6,1,116`,
+`Verz. d. B. H.` This page is the **dictionary-literacy pack**: what the editors say the
+book is, which sigla you will actually meet (ranked by how often the digital text really
+uses them), and how to tell a literary citation from a grammarian's rule or a manuscript
+source.
+
+For the **online lookup mechanics** (displays, input schemes, entry markup) see the
+[PWG dictionary guide](../dictionaries/pwg); for the full transcribed front matter with
+English and Russian translations see [OCR'd prefaces](../dictionaries/ocr-prefaces).
+
+## What the Vorwort declares
+
+The Foreword to volume 1 (1855) states the design in its own words
+([English translation](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref02.en.md)):
+
+> Our dictionary consists of two elements not entirely resolvable into one another: the
+> material of the word-collections made by learned Indians, and our own collections drawn
+> from Sanskrit literature.
+
+That sentence explains most of what you will see on the page. Indian lexica (Amarakośa,
+Hemacandra, the Medinī…) are reproduced **and** checked against real usage, so entries
+record where the two disagree — the editors insist on keeping even the "residue of Indian
+lexicography that does not resolve into actual usage" rather than discarding it. The other
+declared commitment is **Veda first**: the editors treat complete excerption of Vedic
+literature as "the right beginning for our work"
+([Foreword, 2](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref03.en.md)),
+and read the hymns from the texts themselves — Sāyaṇa and the commentators are demoted to
+"only one of the aids", not the standard of interpretation
+([Foreword, 3](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref04.en.md)).
+
+The Foreword also declares the **search conventions** a reader needs
+([Foreword, 5](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref06.en.md)):
+
+- Verbal roots are listed **without** the vowels *ṛ, ṝ, ḷ* and without final diphthongs;
+  final *-ṛ* of nominal stems is written *-ar*.
+- Denominatives stand under their **suffix**, not in root form.
+- The accent is marked in a simplified notation (Vedic examples keep the manuscripts'
+  marking), and **no verb class is given** — it follows from the quoted 3rd sg. present.
+- The work was divided: **Roth** covered Vedic literature, Suśruta's Āyurveda and plant
+  names; **Böhtlingk** the rest and the arrangement of the whole.
+
+## The sigla you will actually meet
+
+The front matter legend declares **395 abbreviations**; the digital body actually uses 257
+of them (65%). Frequency is heavily concentrated — the twenty sigla below account for the
+bulk of all citations, and the very shortest marks (single capital letters) were assigned
+to the works cited most. Counts are measured occurrences in the digital text
+(`csl-orig/v02/pwg/pwg.txt`), from the site's legend feed
+[`pref-legends.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/pref-legends.json):
+
+| # | Siglum | Work (as the legend declares it) | Body citations |
+|--:|---|---|--:|
+| 1 | `R.` | Rāmāyaṇa (books 1–2 Schlegel's ed. unless marked) | 234,443 |
+| 2 | `H.` | Hemacandra's *Abhidhānacintāmaṇi* (synonymic lexicon) | 197,887 |
+| 3 | `P.` | **Pāṇini's grammar** — a rule, not a text passage | 95,965 |
+| 4 | `N.` | *Nalopākhyāna* in Böhtlingk's Chrestomathie | 90,941 |
+| 5 | `M.` | Manu's law-book (ed. Loiseleur Deslongchamps) | 83,397 |
+| 6 | `MBh.` | Mahābhārata, Calcutta ed. | 67,272 |
+| 7 | `RV.` | Ṛgveda — cited by maṇḍala, sūkta, ṛc | 58,146 |
+| 8 | `Bhag.` | Bhagavadgītā, ed. Schlegel | 33,406 |
+| 9 | `Bhâg. P.` | Bhāgavatapurāṇa | 30,744 |
+| 10 | `AK.` | Amarakośa | 28,273 |
+| 11 | `Kathâs.` | Kathāsaritsāgara, ed. Brockhaus | 25,078 |
+| 12 | `AV.` | Atharvaveda-saṃhitā, ed. Roth & Whitney | 21,528 |
+| 13 | `Śat. Br.` | Śatapathabrāhmaṇa (Mādhyandina) | 20,941 |
+| 14 | `Suśr.` | Suśruta, Calcutta ed. — vol., page, line | 20,306 |
+| 15 | `an.` | *Anekārthasaṃgraha* (= `H. an.`) | 20,269 |
+| 16 | `St.` | Stenzler | 19,558 |
+| 17 | `Hariv.` | Harivaṃśa (vol. 4 of the MBh. ed.) | 15,689 |
+| 18 | `Varâh. Bṛh.` | Varāhamihira's *Bṛhajjātaka* | 15,212 |
+| 19 | `Med.` | Medinīkośa | 15,136 |
+| 20 | `Varâh. Bṛh. S.` | Varāhamihira's *Bṛhatsaṃhitā* | 14,323 |
+
+Two habits worth forming immediately:
+
+- **A siglum's numbers point into one specific edition.** The legend entry tells you which:
+  `MBh.` means the Calcutta edition; `R.` without further mark means Schlegel's edition
+  for books 1–2 and Gorresio's for books 3–6; `Suśr.` is cited by volume, page and line of
+  the Calcutta print. Reading a citation without knowing its edition is how misquotations start.
+- **The single letters are earned, not arbitrary** — `R.`, `H.`, `N.`, `M.`, `P.` mark the
+  five workhorses of the whole dictionary. Learn these five and a third of the apparatus
+  reads itself.
+
+The full legend, with every declared abbreviation, its expansion and its measured count, is
+rendered on the [PWG guide's abbreviations section](../dictionaries/pwg#abbreviations).
+
+## Grammarians' rules are not text citations
+
+The legend feed classes the 395 keys as **393 work sigla, 1 grammar siglum, 1 meta
+siglum** — but the learner-relevant split is functional. A cluster of sigla cite
+**grammatical authority**, and their references read differently:
+
+| Siglum | Authority | Body citations | How to read the reference |
+|---|---|--:|---|
+| `P.` | Pāṇini's *Aṣṭādhyāyī* | 95,965 | `P. 6,1,116` = book, chapter, sūtra — a **rule** |
+| `Kâty.` | Kātyāyana (vārttikas on Pāṇini) | 8,789 | usually via the Pāṇini apparatus |
+| `gaṇa.` | the gaṇapāṭha in Böhtlingk's Pāṇini ed. | 8,419 | membership in a listed word-class |
+| `Siddh. K.` | *Siddhāntakaumudī* | 1,407 | the later grammatical compendium |
+| `Pat.` | Patañjali's *Mahābhāṣya* (via Böhtlingk's excerpts) | 1,152 | the great commentary on Pāṇini |
+| `Sch.` / `Schol.` | "Scholiast" — the commentator on whatever text is at hand | — | a **meta** marker, not one fixed work |
+
+When an entry cites `P. 6,1,116.` it is telling you *this form is licensed by that rule* —
+a statement about grammar, not an attestation in literature. The distinction matters
+because the Vorwort's critical stance (usage beats the glossators) applies to word
+*meanings*; for word *formation* the grammarians remain the cited authority.
+
+## The rare and manuscript sigla are intentional
+
+395 declared abbreviations against 257 used is not sloppiness — the gap is **typed and
+explainable**, and the legend was never meant to be a checklist of the body:
+
+- **The legend grew with the work.** Each later volume opens with its own front matter,
+  including "abbreviations newly added" lists (volume 3's list is where the Buddhist
+  manuscript sources first appear —
+  [Foreword, 3-2](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref19.en.md)).
+  Seven of the 27 transcribed front-matter pages are abbreviation legend.
+- **Manuscript sources are first-class citizens.** From volume 3, A. Schiefner supplied
+  readings from Buddhist manuscripts in the Paris library: `SADDH. P.`
+  (*Saddharmapuṇḍarīka*, 171 body citations), `UPAG. AV.` (*Upaguptāvadāna*, 15),
+  `DAŚABH.` (*Daśabhūmīśvara*, 12), `KAṬHINĀV.` (3), down to `KĀPIŚĀV.` and
+  `KRIYĀSAM.` with a single citation each. A siglum with one hit is a deliberate record of
+  a source consulted, not an OCR artifact. `Kâty. Śr.` — cited **8,694** times — is
+  likewise marked `Hdschr.` (manuscript) in the legend, and Weber's *catalogue* of the
+  Berlin manuscripts (`Verz. d. B. H.`) alone accounts for 4,677 citations.
+- **The measured residual is typed.** The census leaves 133 legend keys with no body match
+  (pref-only); the feed carries a typed residual class on 52 keys: 22 `true_unused` (mostly
+  long bibliographic titles of European scholarship), 12 `rare` (manuscript and
+  occasional works), 9 `ocr_key` (transliteration specials like `ḱ`, `Ǵ`), 5 `spacing`
+  (dual keys such as `Vop. oder Vopad.` — the body always uses the short form, so the
+  double key itself scores zero), 3 `ambiguous`, 1 `ortho` (German *j* for *y*). The full
+  decomposition: [pref-only rollup](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/PWG_PW_pref_only_decompose.md).
+
+So when you meet an unfamiliar siglum, the order of hypotheses is: a later volume's
+addition → a manuscript source → a European reference work — and only then a transcription
+problem.
+
+## Where these numbers come from
+
+Frequency counts and classifications on this page trace to the site's legend feed
+[`src/data/pref-legends.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/pref-legends.json)
+(PWG: 395 legend entries, generated 24-07-2026 from the OCR'd front matter × digital body
+census). The census itself: [crosscheck rollup](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/ALL_pref_abbr_crosscheck.md)
+(PWG: 395 keys, 257 attested, 65%, 133 pref-only). Vorwort quotations follow the English
+translation in [`PWG/prefaces/`](https://github.com/sanskrit-lexicon/PWG/tree/main/prefaces)
+([consolidated English edition](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.en.md)).
+
+## See also
+
+- **[Böhtlingk-Roth (PWG)](../dictionaries/pwg)** — lookup mechanics, entry markup, a
+  worked sample entry
+- **[How to read the PW](reading-pw)** — the same author's shorter recension, and how its
+  conventions differ
+- **[OCR'd prefaces](../dictionaries/ocr-prefaces)** — the complete front matter,
+  transcribed and translated
+- **[Entry anatomy](../dictionaries/entry-anatomy)** — dissected entries across
+  dictionaries
+- **[Abbreviations & Citations](../dictionaries/abbreviations-and-citations)** — citing
+  conventions across CDSL

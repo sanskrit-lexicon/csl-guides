@@ -44,8 +44,13 @@ jobs:
           # class as the CDSL/Play excludes above) — excluded for the same reason.
           # buttondown.com/cdsl is a placeholder: the newsletter form in newsletter.mdx has
           # never had its Buttondown account created (see the comment at the top of that
-          # file), so the URL 404s by design, not by rot. Tracked as a GTD @DO to finish
-          # account setup and drop this exclusion once live (H1738).
+          # file), so both the embed-subscribe API URL and the /cdsl page 404 by design, not
+          # by rot. Tracked as a GTD @DO to finish account setup and drop this exclusion once
+          # live (H1738).
+          # sarit.indology.info (502) and hss.iitb.ac.in (untrusted TLS cert, WSC 2027
+          # conference page) were confirmed live-broken on the far end across two independent
+          # checks (a manual fetch and two separate workflow runs) on 28-07-2026 — excluded as
+          # externally-owned outages, not links we can fix here. Revisit if they come back.
           args: >-
             --no-progress
             --root-dir "${{ github.workspace }}"
@@ -59,7 +64,9 @@ jobs:
             --exclude "github\.com/gasyoun/Uprava"
             --exclude "github\.com/gasyoun/prefaces_ieg"
             --exclude "dl\.acm\.org"
-            --exclude "buttondown\.com/cdsl"
+            --exclude "buttondown\.com"
+            --exclude "sarit\.indology\.info"
+            --exclude "hss\.iitb\.ac\.in"
             "./**/*.md"
             "./**/*.mdx"
           fail: true

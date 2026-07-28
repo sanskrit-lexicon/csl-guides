@@ -34,6 +34,10 @@ jobs:
           # --accept tolerates HTTP 429 (rate-limited but alive — common from github.com
           # when many blob links are checked at once); a genuinely removed page returns 404,
           # which still fails the job.
+          # --timeout/--retry-wait-time/--max-retries: lychee's 20s default timeout tripped
+          # on openhumanitiesdata.metajnl.com, a real, live, just image-heavy page (verified
+          # by hand) — widened + added retries instead of excluding a domain that isn't
+          # actually broken.
           # gasyoun/Uprava and gasyoun/prefaces_ieg are PRIVATE repos (the org's internal
           # handoff/GTD hub, and a copyright-sensitive front-matter source respectively) — an
           # unauthenticated checker always 404s on them, so every blob URL into either is
@@ -54,6 +58,9 @@ jobs:
           args: >-
             --no-progress
             --root-dir "${{ github.workspace }}"
+            --timeout 30
+            --retry-wait-time 5
+            --max-retries 2
             --accept "200..=299, 429"
             --scheme https
             --scheme http

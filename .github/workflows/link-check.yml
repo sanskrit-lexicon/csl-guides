@@ -34,10 +34,12 @@ jobs:
           # --accept tolerates HTTP 429 (rate-limited but alive — common from github.com
           # when many blob links are checked at once); a genuinely removed page returns 404,
           # which still fails the job.
-          # --timeout/--retry-wait-time/--max-retries: lychee's 20s default timeout tripped
-          # on openhumanitiesdata.metajnl.com, a real, live, just image-heavy page (verified
-          # by hand) — widened + added retries instead of excluding a domain that isn't
-          # actually broken.
+          # --timeout/--retry-wait-time/--max-retries: widened from lychee 20s defaults for
+          # slow hosts. openhumanitiesdata.metajnl.com still TIMED OUT under 30s×2 retries
+          # on the 28-07-2026 weekly run (run 30335396092) — excluded below as flaky, not
+          # link-rot; revisit if the journal hardens TTFB.
+          # dch.phil-fak.uni-koeln.de 403s non-browser/CI agents (same bot-block class as
+          # CDSL/Play/dl.acm above) — excluded, not because the page is gone.
           # gasyoun/Uprava and gasyoun/prefaces_ieg are PRIVATE repos (the org's internal
           # handoff/GTD hub, and a copyright-sensitive front-matter source respectively) — an
           # unauthenticated checker always 404s on them, so every blob URL into either is
@@ -74,6 +76,8 @@ jobs:
             --exclude "buttondown\.com"
             --exclude "sarit\.indology\.info"
             --exclude "hss\.iitb\.ac\.in"
+            --exclude "dch\.phil-fak\.uni-koeln\.de"
+            --exclude "openhumanitiesdata\.metajnl\.com"
             "./**/*.md"
             "./**/*.mdx"
           fail: true

@@ -1,0 +1,161 @@
+---
+id: reading-pw
+title: How to read the PW (Böhtlingk's shorter dictionary)
+description: "A reading pack for Böhtlingk's Sanskrit-Wörterbuch in kürzerer Fassung — what its Foreword promises, the ~20 sigla ranked by measured body frequency, the asterisk convention for grammarian-only words, and why some legend keys are rare on purpose."
+sidebar_label: Reading the PW
+---
+
+# How to read the PW (Böhtlingk's shorter dictionary)
+
+Böhtlingk's *Sanskrit-Wörterbuch in kürzerer Fassung* (`PW`, seven parts, 1879–1889) is
+the dictionary most readers of German actually keep at hand: the whole headword coverage
+of the seven-volume [Großes Petersburger Wörterbuch](../dictionaries/pwg), corrected and
+extended, at a fraction of the bulk. But "shorter" was achieved by a set of deliberate
+conventions — an asterisk that flags dictionary-only words, citations that assume you can
+reach the larger work, accents only where the sources have them. This page reads the
+front matter so you don't have to learn those conventions by being burned.
+
+For **online lookup mechanics** and the entry markup see the
+[PW dictionary guide](../dictionaries/pw); the complete front matter, with English and
+Russian translations, is in [OCR'd prefaces](../dictionaries/ocr-prefaces).
+
+## What the Foreword declares
+
+The single Foreword page of 1879
+([English translation](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref02.en.md))
+sets out the contract with the reader:
+
+> The new dictionary was thus not meant to supplant the older one, but … to improve where
+> something was to be improved, and to add where something was lacking, while, by the
+> omission of all the citations and passages given there, constantly reminding the reader
+> that the larger dictionary must remain the principal source.
+
+The operative conventions, in the Foreword's own order:
+
+- **The asterisk `*`** marks "a word, a meaning, a construction or a gender hitherto
+  adduced only by grammarians or lexicographers" — the single most important reading mark
+  in the book. No asterisk means the form is attested in literature; with it, you are
+  looking at the Indian grammatical tradition's testimony only. (A grammarian *using* a
+  word as an author, though, counts as literature — and the *Bhaṭṭikāvya*, as a versified
+  Pāṇini exercise, is denied "the name of an independent literary work".)
+- **Accents appear only for words that occur in accented (Vedic) texts.** Where only a
+  vocative was attested, the accent is left undetermined and the source work is named
+  instead.
+- **Quoted passages are gone by design** — a PW entry gives you the judgment and the
+  reference; the evidence lives in PWG. The two books are meant to be used as a pair.
+- **The work was collaborative:** Roth, Kern, Stenzler and Weber are credited as the four
+  main contributors of corrections and new material, with a dozen further scholars named.
+- Spelling variants in व/ब and श/ष/स are listed **once**, under the older or better
+  attested spelling — check the other spelling before concluding a word is absent.
+
+## The sigla you will actually meet
+
+The "Abkürzungen der Werke" legend (three front-matter pages) declares **302
+abbreviations**; the digital body attests 209 of them (69%). As in PWG, the shortest
+sigla mark the most-used sources. Counts are measured occurrences in the digital text
+(`csl-orig/v02/pw/pw.txt`), from the site's legend feed
+[`pref-legends.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/pref-legends.json):
+
+| # | Siglum | Work (as the legend declares it) | Body citations |
+|--:|---|---|--:|
+| 1 | `M.` | *Mānavadharmaśāstra* (Manu) | 68,781 |
+| 2 | `R.` | Rāmāyaṇa — kāṇḍa 1–2 Schlegel's ed., 3–6 Gorresio's | 56,864 |
+| 3 | `P.` | Pāṇini | 13,706 |
+| 4 | `H.` | Hemacandra's *Abhidhānacintāmaṇi*, ed. Böhtlingk & Rieu | 13,185 |
+| 5 | `Chr.` | Böhtlingk's Sanskrit-Chrestomathie, 2nd ed. | 7,328 |
+| 6 | `MBh.` | Mahābhārata — parvan, adhyāya, śloka of the Bombay ed. | 4,710 |
+| 7 | `Spr.` | *Indische Sprüche*, ed. Böhtlingk, 2nd ed. | 3,272 |
+| 8 | `Çâṇḍ.` | Aphorisms of Śāṇḍilya (Bibl. indica) | 3,259 |
+| 9 | `Çâk.` | Śākuntala, ed. Böhtlingk (unless `Pisch.`/`Premaḱ.` added) | 3,190 |
+| 10 | `Âpast.` | Āpastamba's Dharmasūtra, ed. Bühler | 3,078 |
+| 11 | `AV.` | Atharvaveda, ed. Roth & Whitney | 2,084 |
+| 12 | `Hemâdri` | Hemādri's *Caturvargacintāmaṇi* (Bibl. indica) | 1,986 |
+| 13 | `Ind. St.` | *Indische Studien* (Weber) | 1,942 |
+| 14 | `ṚV.` | Ṛgveda | 1,909 |
+| 15 | `Med.` | Medinīkośa | 1,870 |
+| 16 | `Gal.` | Galanos' dictionary, in Weber's manuscript copy | 1,737 |
+| 17 | `Âpast. Śr.` | Āpastamba's Śrautasūtra — manuscript (Garbe & Roth) | 1,718 |
+| 18 | `Bhâvapr.` | *Bhāvaprakāśa*, Calcutta 1875 + manuscript | 1,697 |
+| 19 | `Kâd.` | *Kādambarī*, Calcutta saṃvat 1919 (Kern) | 1,658 |
+| 20 | `VP.` | Viṣṇupurāṇa, Bombay ed. | 1,546 |
+
+Conventions the table already illustrates:
+
+- **A superscript number is an edition switch:** `VP.²` (594 citations, not shown above)
+  is the *second* edition of Wilson's Viṣṇupurāṇa translation, ed. Hall — a different
+  book from `VP.`.
+- **A parenthesised name is a channel, not a work:** `(Kern)`, `(Roth)`, `(Garbe und
+  Roth)` in the legend record *who supplied or checked* the source.
+- **Default edition unless marked:** `Çâk.` cites Böhtlingk's own Śākuntala edition
+  unless `Pisch.` (Pischel) or `Premaḱ.` (Premacandra) is appended — the same
+  edition-discipline as PWG's `R.`.
+- Note the recension shift against PWG: the Ṛgveda siglum is spelled `ṚV.` here but `RV.`
+  in PWG, and `MBh.` now points into the **Bombay** edition where PWG cited the Calcutta
+  print. Sigla do not transfer between the two dictionaries unexamined.
+
+The full legend with every key, expansion and count is rendered on the
+[PW guide's abbreviations section](../dictionaries/pw#abbreviations).
+
+## The grammatical layer
+
+The legend itself is almost entirely work sigla (301 of 302; the one grammar-classed key
+is `Pischel, de Gr. pr.` — Pischel's *De grammaticis prācriticis*, 25 citations). The
+grammatical *authorities* are cited as works: `P.` (Pāṇini, 13,706), `Pat. zu P.`
+(Patañjali on Pāṇini, 172), `Kâty. Śr.` and kin for the ritual sūtras. But PW's real
+metalanguage lives **inside the entry**, not in the legend:
+
+- the **asterisk** described above — the grammarian-only flag;
+- the grammatical **tags** (`<ab>…</ab>` in the digital text: gender, *priv.*, case
+  labels) — see the worked sample in the [PW guide](../dictionaries/pw#reading-an-entry);
+- the **citation-free abridgement** itself: where PWG argues with the glossators at
+  length, PW compresses the verdict into marks and word order.
+
+So the literacy skill for PW is less "which grammarian is this?" (usually Pāṇini) and
+more "is this form literature or lexicography?" — exactly what the asterisk answers.
+
+## The rare keys are intentional
+
+302 declared keys against 209 attested is, as with PWG, a typed and explainable gap, not
+noise:
+
+- **Manuscript sources carry real weight.** `Âpast. Śr.` — a manuscript, per the legend —
+  has 1,718 body citations; `Bhâvapr.` combines a Calcutta print with a manuscript;
+  `Maitr. S.` (1,507) was cited from L. Schröder's edition *while it was still being
+  prepared for publication* — which is why some of its accents only appear in the
+  addenda. The manuscript **catalogues** are sources too: `Verz. d. Oxf. H.` (Aufrecht's
+  Oxford catalogue, 181 citations) and `Verz. d. B. H.` (Weber's Berlin catalogue, 67).
+- **The measured residual is typed.** The census leaves 89 legend keys with no body match
+  (pref-only); the feed carries a typed residual class on 26 keys: 16 `true_unused`
+  (mostly external scholarship cited in the front matter, not in entries), 6 `ocr_key`
+  (Böhtlingk's special letters `ḱ`, `ǵ` in keys like `Harshaḱ.`), 2 `ambiguous`, 1
+  `rare`, 1 `ortho`. In the H1560 50-key sample the dominant residual cause was
+  **orthography** — the legend's German *j* where the body writes *y* — a
+  transliteration-era artifact, not a phantom source. Full decomposition:
+  [pref-only rollup](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/PWG_PW_pref_only_decompose.md).
+
+Meeting an unknown siglum in PW, assume first a spelling-variant of a declared key
+(*j*/*y*, `ḱ`/`c`), then a front-matter-only reference — and remember the full evidence
+trail for any entry continues in PWG.
+
+## Where these numbers come from
+
+Frequency counts and classifications trace to
+[`src/data/pref-legends.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/pref-legends.json)
+(PW: 302 legend entries, generated 24-07-2026 from the OCR'd front matter × digital body
+census). The census: [crosscheck rollup](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/ALL_pref_abbr_crosscheck.md)
+(PW: 302 keys, 209 attested, 69%, 89 pref-only). Foreword quotations follow the English
+translation in [`PWK/prefaces/`](https://github.com/sanskrit-lexicon/PWK/tree/main/prefaces)
+([consolidated English edition](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.en.md)).
+
+## See also
+
+- **[Böhtlingk shorter (PW)](../dictionaries/pw)** — lookup mechanics, the `PW`-code /
+  `PWK`-repo trap, a worked sample entry
+- **[How to read Böhtlingk–Roth (PWG)](reading-pwg)** — the parent dictionary this one
+  abridges and corrects
+- **[OCR'd prefaces](../dictionaries/ocr-prefaces)** — the complete front matter,
+  transcribed and translated
+- **[Entry anatomy](../dictionaries/entry-anatomy)** — dissected entries across
+  dictionaries
+- **[Abbreviations & Citations](../dictionaries/abbreviations-and-citations)** — citing
+  conventions across CDSL

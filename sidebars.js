@@ -21,6 +21,8 @@ const sidebars = {
         'users/sandhi-quiz',
         'users/samasa-quiz',
         'users/reading-monier-williams',
+        'users/reading-pwg',
+        'users/reading-pw',
         'users/which-dictionary-quiz',
         'users/downloads-and-data',
         'users/scans-and-print',

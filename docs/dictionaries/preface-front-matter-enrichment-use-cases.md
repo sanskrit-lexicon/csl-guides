@@ -1,6 +1,6 @@
 # Prefaces as enrichment: proposal and use cases
 
-_Created: 24-07-2026 · Last updated: 24-07-2026 (UC-13 site appendix link)_
+_Created: 24-07-2026 · Last updated: 28-07-2026 (UC-4 reading packs shipped)_
 
 **Status:** proposal (research + product framing) · **Audience:** CDSL / csl-guides maintainers, DH pipeline owners, paper authors  
 **Related:** [OCR'd prefaces](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/ocr-prefaces) · [Preface OCR pipeline](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/preface-ocr-pipeline) · [Pref keys ↔ body naming authority](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md) · [Abbreviations & citations](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/abbreviations-and-citations) · Issue [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)
@@ -109,6 +109,7 @@ Each use case names: **actor**, **pref input**, **join** (if any), **output**, *
 - **Join:** example body entries using those sigla.
 - **Output:** per-dictionary “reading pack” page or quiz bank seed.
 - **Home:** csl-guides user docs; Systema / course companions; [entry anatomy](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/entry-anatomy).
+- **Status (H1760):** shipped — reading packs [How to read Böhtlingk–Roth (PWG)](https://sanskrit-lexicon.github.io/csl-guides/users/reading-pwg) and [How to read the PW](https://sanskrit-lexicon.github.io/csl-guides/users/reading-pw), frequency-ranked from `pref-legends.json`.
 
 ### UC-5 — Pedagogy: grammar metalanguage glossary
 

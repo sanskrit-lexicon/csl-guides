@@ -62,6 +62,8 @@ Do **not** treat the PD branch as a rename of the CDSL skill. They share *layout
 
 Reference tooling: [`PD/compare_pwg_a_vs_b.py`](https://github.com/sanskrit-lexicon/PD/blob/main/compare_pwg_a_vs_b.py). Full phase text lives in the skill runbook (Claude: `~/.claude/commands/cologne-preface-ocr.md`; Codex: `~/.codex/skills/cologne-preface-ocr/`).
 
+**Bounded sample quality probe (PWG + PW, 24-07-2026):** pre-registered 15-page stratified sample + scan-locus table + DE↔EN sense check — [H1559 report](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/H1559_pref_ocr_en_sample_error_rates_24.07.2026.md) (runner: [`scripts/pref_ocr_en_quality_probe.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_ocr_en_quality_probe.py)). Dual-pass is A-vs-B only; scan-locus is the honest gold-vs-print probe.
+
 ### Non-negotiable OCR rule (Phase 3)
 
 Never Read a full downsampled page. Scans are 3000–6800 px; downsampling yields fluent but **fabricated** text. Split columns, cut overlapping horizontal bands, keep each crop ≤ ~1900 px on its longest side.

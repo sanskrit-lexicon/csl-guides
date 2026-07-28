@@ -22,35 +22,7 @@ in-repo `prefaces/` README and the consolidated single-file editions.
   contents (`…pref_all.de.md`, `…pref_all.en.md`, `…pref_all.ru.md`, …).
 - **Original scans** under `prefaces/scans/` where the source is multi-page PNG/JPG scans.
 - **Operator manual** (phases, engines A/B, attribution): [Preface OCR pipeline](preface-ocr-pipeline).
-- **What prefaces teach / use cases** (proposal): [Preface front-matter enrichment](preface-front-matter-enrichment-use-cases).
-- **Pref keys ↔ body naming policy**: [Body naming authority](pref-body-naming-authority).
-- **Reading packs built from this front matter (UC-4)**:
-  [How to read Böhtlingk–Roth (PWG)](../users/reading-pwg) ·
-  [How to read the PW](../users/reading-pw).
-
-## FAIR / citable editions (UC-11)
-
-Each finished dictionary ships a **citable front-matter package** under that repo’s
-`prefaces/` tree (source language + EN/RU consolidated editions, README inventory, and —
-where written — a `METHODS.md` with OCR policy, provenance, and how to cite). This index is
-the public catalogue; the methods notes and machine legend paths below are the join points
-for libraries, paper authors, and Zenodo-style packaging (DOI when a release is cut).
-
-| Surface | Where | Role |
-|---|---|---|
-| **This index** | [ocr-prefaces](ocr-prefaces) | Catalogue of DE/EN/RU (etc.) editions + README / consolidated links |
-| **METHODS (pilot)** | [PWG METHODS](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/METHODS.md) · [PW METHODS](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/METHODS.md) | How the OCR was produced; BibTeX / citation layers; license |
-| **Naming authority** | [pref-body-naming-authority](pref-body-naming-authority) | Body `.txt` wins for **siglum** naming; expansions stay scan-faithful |
-| **Legend store emit (UC-3)** | [`pref_legend_emit.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_legend_emit.py) · [`pwg_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_legend.json) · [`pw_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_legend.json) · [schema](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/legend.schema.json) · parity `npm run check:pref-legend` | Machine-readable legend + body counts + residual class |
-| **Site legend feed** | [`src/data/pref-legends.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/pref-legends.json) via `npm run build:pref-legends` | Powers Abbreviations UX for PWG/PW |
-| **Residual methods (UC-13)** | [Pref residual methods appendix](/about/pref-body-residual-methods) | Typed `pref_only` tables for papers / FINDINGS |
-| **Operator manual** | [Preface OCR pipeline](preface-ocr-pipeline) | Engines A/B, phases, attribution |
-| **Outputs directory** | [`scripts/out/README.md`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/README.md) | Crosscheck / decompose / align / legend artifact index |
-
-**How to cite a front-matter edition:** use the dictionary’s `prefaces/METHODS.md` (two layers:
-printed book + this digital OCR). Until a Zenodo DOI is attached at release, prefer the
-GitHub tree URL + METHODS + consolidated `*_all.en.md` Pages link given in that METHODS
-file. CITATION.cff at each dictionary repo root points at both layers.
+- **Sample quality probe (PWG/PW, H1559):** [OCR + EN error-rate report](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/H1559_pref_ocr_en_sample_error_rates_24.07.2026.md) — stratified 15 pages, scan-locus + dual-pass + EN sense tables.
 
 Sanskrit (Devanāgarī and transliteration), work titles, bibliographic abbreviation keys,
 reference numbers, and Latin quotations are kept **verbatim** across languages; digitizer
@@ -71,8 +43,8 @@ source-language pages (approx.).
 
 | Dictionary | Source language | Pages | Index | Source | English | Russian |
 |---|---|---:|---|---|---|---|
-| **[Böhtlingk & Roth (PWG)](pwg)** | German | 27 | [README](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/README.md) · [METHODS](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/METHODS.md) | [.de](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.ru.md) |
-| **[Böhtlingk (PW)](pw)** | German | 5 | [README](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/README.md) · [METHODS](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/METHODS.md) | [.de](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.ru.md) |
+| **[Böhtlingk & Roth (PWG)](pwg)** | German | 27 | [README](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/pwgpref_all.ru.md) |
+| **[Böhtlingk (PW)](pw)** | German | 5 | [README](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/pwpref_all.ru.md) |
 | **[Grassmann (GRA)](gra)** | German | 6 | [README](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/grapref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/grapref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/GRA/blob/main/prefaces/grapref_all.ru.md) |
 | **[Schmidt (SCH)](sch)** | German | 5 | [README](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/SCH/blob/master/prefaces/schpref_all.ru.md) |
 | **[Cappeller SW (CCS)](ccs)** | German | 6 | [README](https://github.com/sanskrit-lexicon/CCS/blob/main/prefaces/README.md) | [.de](https://github.com/sanskrit-lexicon/CCS/blob/main/prefaces/ccspref_all.de.md) | [.en](https://github.com/sanskrit-lexicon/CCS/blob/main/prefaces/ccspref_all.en.md) | [.ru](https://github.com/sanskrit-lexicon/CCS/blob/main/prefaces/ccspref_all.ru.md) |

@@ -1,6 +1,6 @@
 # Prefaces as enrichment: proposal and use cases
 
-_Created: 24-07-2026 · Last updated: 28-07-2026 (UC-4 reading packs shipped)_
+_Created: 24-07-2026 · Last updated: 04-08-2026 (H1854 hostile read: P1 adjudicated, MW struck from UC-2 pilot)_
 
 **Status:** proposal (research + product framing) · **Audience:** CDSL / csl-guides maintainers, DH pipeline owners, paper authors  
 **Related:** [OCR'd prefaces](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/ocr-prefaces) · [Preface OCR pipeline](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/preface-ocr-pipeline) · [Pref keys ↔ body naming authority](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md) · [Abbreviations & citations](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/abbreviations-and-citations) · Issue [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)
@@ -93,6 +93,7 @@ Each use case names: **actor**, **pref input**, **join** (if any), **output**, *
 - **Join:** same underlying work under different sigla and orthographies.
 - **Output:** crosswalk `work_id → {PWG: …, PW: …, MW: …}`; comparison tables.
 - **Home:** [abbreviations comparison](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/abbreviations-comparison); kosha / SHARED_CODE-style crosswalks.
+- **Status (H1854 hostile read):** survives narrowed — committed inputs exist for PWG/PW ([`pwg_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_legend.json), [`pw_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_legend.json)) and AP90 ([`ap90_pref_abbr_crosscheck.tsv`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/ap90_pref_abbr_crosscheck.tsv)); **MW struck** — `scripts/out/` has no `mw_*` artifact (legend never parsed), re-add after an MW legend emit.
 
 ### UC-3 — Structured legend store (machine-readable)
 
@@ -126,6 +127,7 @@ Each use case names: **actor**, **pref input**, **join** (if any), **output**, *
 - **Join:** body `<ls>` census; optional external corpus attestation.
 - **Output:** “legend coverage of corpus citations”; missing-legend vs unused-legend rates (cf. guides hypotheses GH-4).
 - **Home:** csl-atlas / csl-observatory; [corpus attestation](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/corpus-attestation); data paper methods.
+- **Status (H1854 hostile read):** survives narrowed — the corpus-wide "legend coverage" number already shipped as GH-4 (Tested, 95.3 %, [guides-hypotheses](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/guides-hypotheses.md)); what remains is only the **per-dictionary missing-legend vs unused-legend split**, consuming [`ALL_pref_abbr_crosscheck.summary.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/ALL_pref_abbr_crosscheck.summary.json).
 
 ### UC-7 — Scan deep-links and edition genealogy
 
@@ -205,7 +207,8 @@ Each use case names: **actor**, **pref input**, **join** (if any), **output**, *
 | Priority | Use cases | Why |
 |----------|-----------|-----|
 | **P0 — already partially built** | UC-1, UC-3, UC-8, UC-11, UC-13 | Tools + OCR editions + naming policy + residual typing exist |
-| **P1 — high leverage, clear consumers** | UC-2, UC-4, UC-6 | Product + paper + comparison surfaces |
+| **Shipped** | UC-4 | Reading packs live since 28-07-2026 (H1760) — see UC-4 status line |
+| **P1 — high leverage, clear consumers** | UC-2 (PWG↔PW↔AP90; **MW struck** pending an MW legend emit — H1854 M1), UC-6 (per-dict missing/unused-legend split only; corpus-wide bound already answered by GH-4 — H1854 M3) | Product + paper + comparison surfaces |
 | **P2 — domain depth** | UC-5, UC-7, UC-9, UC-10 | Needs more human judgment / external registries |
 | **P3 — opportunistic** | UC-12, UC-14 | Rights and copy when a release or course needs them |
 

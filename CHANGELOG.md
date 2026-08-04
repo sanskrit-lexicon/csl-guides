@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- **Preface-enrichment proposal hostile read ([H1854](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1854-Fable_csl-guides_preface-enrichment-proposal-hostile-read_29.07.26.md))**: every claim and P1 row of [preface-front-matter-enrichment-use-cases](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-front-matter-enrichment-use-cases.md) adversarially verified against committed artifacts — 3 Major / 4 Minor findings recorded in the metadoc; UC-4 confirmed shipped and moved out of P1; UC-2 survives narrowed (MW struck — no committed MW legend artifact); UC-6 survives narrowed (per-dict missing/unused-legend split only; corpus-wide bound already answered by GH-4). Fable 5 (`claude-fable-5`).
+
 ## [0.11.0] - 2026-07-31
 ### Added
 - **Preface enrichment P0 ask-batch plan set** (#130).

@@ -19,6 +19,16 @@ H1592 UC-8 fold table (orthography registry in ``pref_fold_table.json``; loaded 
 ``fold_diacritics`` for search matching, not invent-a-fold renames).
 stdlib only.
 
+**MW (`mw`) documented parser delta — H2279, 06-08-2026:** `--dict MW` parses 0 keys,
+not a parser bug. MW's OCR'd front matter (`MWS/prefaces/mwpref01..29.md`) covers only
+the title page, Preface, and Introduction (pp. v–xxxii); none of those 29 pages match
+`ABBREV_HINTS`, and `mwpref29.md` itself points past the transcribed range — "the names
+of which will be found in the List of Works and Authors at p. xxxiii." That legend page
+(p. xxxiii+) was never OCR'd into `MWS/prefaces/` (confirmed against the upstream CDSL
+toctree, which also stops at p. xxxii) nor embedded in `csl-orig/v02/mw/mw.txt`'s body
+(which opens directly on entry `a`, no legend preamble). MW stays out of UC-2 until that
+page is transcribed upstream — do not hand-type a substitute legend.
+
 Examples (from csl-guides repo root)::
 
     python scripts/pref_abbr_crosscheck.py --self-check

@@ -1,6 +1,6 @@
 # Metadoc — preface-front-matter-enrichment-use-cases.md
 
-_Created: 24-07-2026 · Last updated: 04-08-2026_
+_Created: 24-07-2026 · Last updated: 06-08-2026_
 
 | Field | Value |
 |-------|-------|
@@ -15,7 +15,11 @@ _Created: 24-07-2026 · Last updated: 04-08-2026_
 1. ~~Promote UC-3 structured legend store to a committed generator with schema.~~ **Done (H1591).**
 2. ~~Wire UC-1 tooltips from legend store into a site component.~~ **Done (H1593) for PWG/PW.**
 3. ~~UC-11 FAIR path map on ocr-prefaces + reciprocal links.~~ **Done (H1595).**
-4. UC-2 pilot: PWG↔PW(↔AP90) work-identity table from pref expansions + body counts — **MW struck by H1854 M1** (no committed MW legend artifact; re-add after an MW legend emit).
+4. UC-2 pilot: PWG↔PW(↔AP90) work-identity table from pref expansions + body counts — **MW
+   struck by H1854 M1**, root cause investigated and confirmed by **H2279 (06-08-2026)**:
+   its p. xxxiii+ "List of Works and Authors" legend was never OCR'd upstream —
+   `pref_abbr_crosscheck.py --dict MW` parses 0 keys by design (documented in the script
+   header), not a parser defect. Re-add after that page is transcribed into `MWS/prefaces/`.
 5. Resolve open questions (rare/MS UI; Zenodo DOI at next dict release).
 
 ## H1854 hostile-read verdict (04-08-2026)
@@ -89,6 +93,7 @@ crosscheck outputs.
 | 24-07-2026 | Initial proposal + 14 use cases + priority map |
 | 24-07-2026 | UC-11 concrete path map (H1595 FAIR cross-links) |
 | 04-08-2026 | H1854 hostile-read verdict: 3 Major / 4 Minor; UC-2 + UC-6 survive narrowed, UC-4 confirmed shipped; priority map fixed in subject. Fable 5 (`claude-fable-5`) |
+| 06-08-2026 | UC-2 MW investigated (H2279): blocked on missing p. xxxiii+ legend OCR, documented delta, not a parser fix |
 
 ---
 

@@ -1,6 +1,6 @@
 # Prefaces as enrichment: proposal and use cases
 
-_Created: 24-07-2026 · Last updated: 04-08-2026 (H1854 hostile read: P1 adjudicated, MW struck from UC-2 pilot)_
+_Created: 24-07-2026 · Last updated: 06-08-2026 (H2279: MW-struck reason investigated and documented)_
 
 **Status:** proposal (research + product framing) · **Audience:** CDSL / csl-guides maintainers, DH pipeline owners, paper authors  
 **Related:** [OCR'd prefaces](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/ocr-prefaces) · [Preface OCR pipeline](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/preface-ocr-pipeline) · [Pref keys ↔ body naming authority](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md) · [Abbreviations & citations](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/abbreviations-and-citations) · Issue [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)
@@ -89,9 +89,14 @@ Each use case names: **actor**, **pref input**, **join** (if any), **output**, *
 ### UC-2 — Cross-dictionary work identity
 
 - **Actor:** DH analyst, paper author, abbreviations-comparison maintainer.
-- **Pref input:** per-dict legend tables (PWG, PW, MW, AP90, …).
+- **Pref input:** per-dict legend tables (PWG, PW, AP90, …). **MW excluded (H2279,
+  06-08-2026):** MW's transcribed front matter (`MWS/prefaces/mwpref01..29.md`) stops at
+  p. xxxii; its "List of Works and Authors" legend (p. xxxiii+) was never OCR'd upstream
+  and isn't embedded in `csl-orig/v02/mw/mw.txt` either — `pref_abbr_crosscheck.py --dict
+  MW` parses 0 keys because the source page doesn't exist yet, not because the parser
+  fails on it. Re-attempt once that page is transcribed into `MWS/prefaces/`.
 - **Join:** same underlying work under different sigla and orthographies.
-- **Output:** crosswalk `work_id → {PWG: …, PW: …, MW: …}`; comparison tables.
+- **Output:** crosswalk `work_id → {PWG: …, PW: …}`; comparison tables (MW joins once unblocked).
 - **Home:** [abbreviations comparison](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/abbreviations-comparison); kosha / SHARED_CODE-style crosswalks.
 - **Status (H1854 hostile read):** survives narrowed — committed inputs exist for PWG/PW ([`pwg_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_legend.json), [`pw_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_legend.json)) and AP90 ([`ap90_pref_abbr_crosscheck.tsv`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/ap90_pref_abbr_crosscheck.tsv)); **MW struck** — `scripts/out/` has no `mw_*` artifact (legend never parsed), re-add after an MW legend emit.
 

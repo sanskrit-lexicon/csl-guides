@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.13.1] - 2026-08-06
 ### Changed
 - **UC-2 MW investigation — documented parser delta, not a fix (H2279)** — attempted to unlock MW (struck from UC-2 by H1854 M1) via the existing `pref_abbr_crosscheck.py` → `pref_only_decompose.py` → `pref_legend_emit.py` chain. Finding: MW parses 0 keys because its transcribed front matter ([`MWS/prefaces/mwpref01..29.md`](https://github.com/sanskrit-lexicon/MWS/tree/main/prefaces)) stops at p. xxxii, while MW's actual abbreviation legend — the "List of Works and Authors" — sits at p. xxxiii+, a page that was never OCR'd upstream (confirmed against the live CDSL toctree) and isn't embedded in [`csl-orig/v02/mw/mw.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw.txt) either. Documented the delta in [`scripts/pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py) header and updated the [UC-2 use-case](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-front-matter-enrichment-use-cases.md) + its [metadoc](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-front-matter-enrichment-use-cases.meta.md) backlog item 4 accordingly. MW stays excluded from UC-2 pending upstream OCR of p. xxxiii+ — no hand-typed legend was substituted. Tracking: [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123).
 

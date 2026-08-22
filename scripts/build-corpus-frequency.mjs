@@ -15,22 +15,32 @@
 // headwords without transcoding.
 //
 // Usage: node scripts/build-corpus-frequency.mjs   (npm run build:corpus-frequency)
-// Requires the sibling checkout ../kosha (the committed JSON output means the
-// site build itself never needs it).
+//        node scripts/build-corpus-frequency.mjs --check [--tsv <path>]
+// Requires the sibling checkout ../kosha for BUILD; --check needs it too.
+//
+// EDGE CONTRACT (SHARED_CODE §24, Interlink Graph v2 W4 reference impl):
+// the committed JSON pins sourceSha256 of the exact upstream TSV bytes it was
+// built from. `--check` re-hashes the sibling TSV and exits 1 on drift
+// ("upstream moved — rebuild and re-commit"); it never writes in check mode.
 
+import {createHash} from 'node:crypto';
 import {readFile, writeFile} from 'node:fs/promises';
 import {fileURLToPath} from 'node:url';
 import {dirname, join} from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
-const SOURCE = join(ROOT, '..', 'kosha', 'data', 'frequency', 'lemma_frequency.tsv');
+const DEFAULT_SOURCE = join(ROOT, '..', 'kosha', 'data', 'frequency', 'lemma_frequency.tsv');
 const OUT = join(ROOT, 'src', 'data', 'corpus-frequency.json');
 const TOP_N = 2000;
 
-let tsv;
+const checkOnly = process.argv.includes('--check');
+const tsvArgIdx = process.argv.indexOf('--tsv');
+const SOURCE = tsvArgIdx !== -1 ? process.argv[tsvArgIdx + 1] : DEFAULT_SOURCE;
+
+let raw;
 try {
-  tsv = await readFile(SOURCE, 'utf8');
+  raw = await readFile(SOURCE);
 } catch {
   console.error(
     `Cannot read ${SOURCE}.\n` +
@@ -39,6 +49,33 @@ try {
       'The committed src/data/corpus-frequency.json remains valid without it.',
   );
   process.exit(1);
+}
+const sourceSha256 = createHash('sha256').update(raw).digest('hex');
+const tsv = raw.toString('utf8');
+
+if (checkOnly) {
+  let feed;
+  try {
+    feed = JSON.parse(await readFile(OUT, 'utf8'));
+  } catch {
+    console.error(`EDGE CONTRACT RED: cannot parse pinned feed ${OUT}`);
+    process.exit(1);
+  }
+  const pinned = feed.sourceSha256;
+  if (!pinned) {
+    console.error('EDGE CONTRACT RED: committed feed has no sourceSha256 pin — rebuild to add it.');
+    process.exit(1);
+  }
+  if (pinned !== sourceSha256) {
+    console.error(
+      `EDGE CONTRACT RED: upstream lemma_frequency.tsv moved.\n` +
+        `  pinned   ${pinned}\n  current  ${sourceSha256}\n` +
+        `Rebuild (npm run build:corpus-frequency) and re-commit the vendored feed.`,
+    );
+    process.exit(1);
+  }
+  console.log(`EDGE CONTRACT GREEN: vendored corpus-frequency matches upstream (${sourceSha256.slice(0, 12)}…).`);
+  process.exit(0);
 }
 
 const lines = tsv
@@ -96,6 +133,8 @@ const feed = {
   generator: 'scripts/build-corpus-frequency.mjs (csl-guides, H282 Stream 5)',
   source:
     'https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv (SLP1-keyed join of VisualDCS M9 archive.sqlite period_freq + core_vocab)',
+  sourceSha256,
+  edgeContract: 'SHARED_CODE §24 (Interlink Graph v2 W4) — verify: node scripts/build-corpus-frequency.mjs --check',
   upstream:
     'Digital Corpus of Sanskrit (Oliver Hellwig), CC BY — via VisualDCS DCS-data-2026; consume this feed, do not re-parse CoNLL-U',
   license: 'CC BY (DCS upstream); derived aggregation',

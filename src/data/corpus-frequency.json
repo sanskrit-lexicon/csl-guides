@@ -1,7 +1,9 @@
 {
- "generatedAt": "2026-07-07",
+ "generatedAt": "2026-08-22",
  "generator": "scripts/build-corpus-frequency.mjs (csl-guides, H282 Stream 5)",
  "source": "https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv (SLP1-keyed join of VisualDCS M9 archive.sqlite period_freq + core_vocab)",
+ "sourceSha256": "3d54e4dbf4fc90c75fdd10b7ab538ddde548718b703c935cadb4c22e43314d07",
+ "edgeContract": "SHARED_CODE §24 (Interlink Graph v2 W4) — verify: node scripts/build-corpus-frequency.mjs --check",
  "upstream": "Digital Corpus of Sanskrit (Oliver Hellwig), CC BY — via VisualDCS DCS-data-2026; consume this feed, do not re-parse CoNLL-U",
  "license": "CC BY (DCS upstream); derived aggregation",
  "keying": "SLP1 lemma (sanskrit-util normalised)",

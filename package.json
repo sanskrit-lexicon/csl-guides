@@ -24,7 +24,11 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "build:ortho-query-expansions": "node scripts/build-ortho-query-expansions.mjs",
+    "check:ortho-edge": "node scripts/build-ortho-query-expansions.mjs --check",
+    "selftest:ortho-tamper": "node scripts/build-ortho-query-expansions.mjs --tamper-selftest",
+    "verify:ortho-query": "node scripts/verify-ortho-query.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.2",

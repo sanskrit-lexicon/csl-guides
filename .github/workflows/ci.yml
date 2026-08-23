@@ -31,8 +31,18 @@ jobs:
       # scored 100% on six public quizzes.
       - name: Verify quiz answer positions
         run: npm run verify:quiz-positions
+      # SHARED_CODE §24 edge contract (H3340): the vendored SanskritSpellCheck
+      # reform maps must match the SHA-256 pins inside the committed expansion
+      # feed and the sibling upstream checkout. Cheap and independent of the
+      # build, so it fails in seconds.
+      - name: Check ortho-drift edge contract
+        run: npm run check:ortho-edge
       - name: Build site
         run: npm run build
+      # H3340 acceptance proof: Thier->Tier through the real lunr + the
+      # normalized query path is what actually shipped in the bundle.
+      - name: Verify ortho-drift search normalization
+        run: node scripts/verify-ortho-query.mjs --bundle build
       # G22 browser regression check (H1217). Unlike the quiz check above this one
       # needs the PRODUCTION bundle actually served — "build green" only proves the
       # JS compiles, not that the DOM is right at runtime — so it runs after the

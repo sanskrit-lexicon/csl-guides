@@ -51,6 +51,10 @@ const config = {
       }),
     ],
   ],
+  // H3340 note: the search bar/page are EJECTED copies under src/theme/
+  // (SearchBar, SearchPage) whose query call is wrapped with ortho-drift
+  // normalization (src/ortho/normalizeQuery.mjs). Swizzling these "unsafe
+  // internal" components was deliberate — see the handoff and the PR body.
 
   presets: [
     [

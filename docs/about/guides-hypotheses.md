@@ -7,7 +7,7 @@ sidebar_label: Guides Hypotheses
 
 # Guides Hypotheses — a testable QA agenda for this site
 
-_Created: 07-07-2026 · Last updated: 07-07-2026_
+_Created: 07-07-2026 · Last updated: 26-08-2026_
 
 This page holds **guides-specific, falsifiable hypotheses** — claims about this
 documentation site and the learner using it, *not* about the dictionary evidence itself
@@ -35,7 +35,7 @@ into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/ma
 | ID | Type | Claim | Status | Key number |
 |---|---|---|---|---|
 | GH-1 | Tested (with caveat) | The which-dictionary quiz routes users where a lexicographer would. | **Supported on the 18 covered scenarios; refuted as *complete* routing** — 5 of 6 probe scenarios route to dictionaries the quiz never recommends. | 18/18 agreement; 9 never-targeted golds |
-| GH-2 | Tested | Deep-page depth follows dictionary fame/size, not lexical novelty. | **Supported** — depth tracks entry count (ρ = 0.56), not unique-headword share (ρ = −0.17). | IEG: 57.5 % unique, 440 words; PWG: 1.9 % unique, 822 words |
+| GH-2 | Tested · re-tested 26-08-2026 | Deep-page depth follows dictionary fame/size, not lexical novelty. | **Supported originally — broken by the prescribed fix.** After the four high-novelty thin pages were deepened (26-08-2026), depth no longer tracks size alone: ρ(depth, unique %) moved −0.17 → **+0.26** (p = 0.084). | IEG: 57.5 % unique, 440 → 1004 words; PWG: 1.9 % unique, 822 words |
 | GH-3 | Tested | The six-quiz track under-covers the entry-*reading* failure modes relative to the word-*finding* ones. | **Supported** — finding modes get 21–34 items each; reading modes get 1–3. | F8 citation-resolution: 2 items vs F4 compounds: 34 |
 | GH-4 | Tested (upper bound) | Most citations a reader meets are in dictionaries whose abbreviation legend this site documents. | **Supported as an exposure bound** — 95.3 % of corpus `<ls>` citations occur in legend-documented dictionaries. | 1,187,169 / 1,245,644 |
 | GH-5 | Instrumented — awaiting data | Quiz difficulty labels predict real learner error rates. | **Instrumentation shipped** — opt-in `localStorage` telemetry on multiple-choice questions; no error-rate data collected yet. | — |
@@ -102,8 +102,28 @@ into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/ma
   455), **PUI** (38.6 %, 434), against **PWG** (1.9 % unique, 822 words). Counterexample
   worth keeping honest: **SKD** is both high-novelty (37.1 %) *and* the deepest page
   (1,500 words), so the skew is a tendency, not a law.
-- **Next test.** Bring the four high-novelty thin pages (IEG, PGN, ACC, PUI) to ≥700 words
-  and re-run; the correlation should move toward zero if the fix is real.
+- **Re-test executed (26-08-2026, OxAlpha `opencode/x-preview-f-free`).** The prescribed fix
+  was applied: the four high-novelty thin pages were deepened to 918–1,079 words each
+  (IEG 440 → 1004, PGN 443 → 1045, ACC 455 → 1079, PUI 434 → 918 — every added claim sourced
+  to `csl-orig` records or the dictionaries' own digitized front matter), then
+  `build-hypothesis-metrics.mjs` re-run over the same n = 44 frame:
+
+  | Metric | Before (07-07-2026) | After (26-08-2026) |
+  |---|---|---|
+  | ρ(depth, unique %) | −0.17 (p = 0.26) | **+0.264** (p = 0.084) |
+  | ρ(depth, entries) | 0.56 (p = 7.7 × 10⁻⁵) | 0.472 (p = 0.0012) |
+
+  The size-only explanation did not survive its own next test: depth no longer *anti*-
+  correlates with lexical novelty — it moved through zero to a weak positive association
+  (not significant at α = 0.05), while the size correlation weakened but remains significant.
+  Honest reading: after the uplift, depth tracks both novelty and size moderately; the
+  original claim "depth follows fame/size, **not** novelty" is no longer supported on this
+  site's current state. Both measurements stay visible above as the before/after pair.
+- **Next test (updated).** The correlation-level question is settled for now. What remains
+  open at the content level: whether the four deepened pages' *added claims* hold up under a
+  hostile read, and whether the remaining sub-700-word high-novelty pages (none currently —
+  KRM at 36.6 %/487 words and INM at 22.7 %/467 words are the nearest misses) deserve the
+  same treatment.
 
 ## GH-3 — The quiz track teaches word-*finding*, not entry-*reading*
 

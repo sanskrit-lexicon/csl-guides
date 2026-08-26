@@ -57,6 +57,7 @@ Upstream rights for the non-Cologne feeds are documented per source in
 | [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/atlas-extract.json) | vendored | verbatim copy (H278) | [csl-atlas OBS artifacts](https://github.com/sanskrit-lexicon/csl-atlas/tree/main/data/obs) | CC BY 4.0 (atlas) |
 | [citation-sources.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/citation-sources.json) + [cladogram.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/cladogram.json) | generated | [build-atlas-viz.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-atlas-viz.mjs) | csl-atlas committed artifacts | CC BY 4.0 (atlas) |
 | [corpus-frequency.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/corpus-frequency.json) | generated | [build-corpus-frequency.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-corpus-frequency.mjs) | DCS via [kosha lemma_frequency.tsv](https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv) | CC BY 4.0 |
+| [vedic-accent.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/vedic-accent.json) | generated | [build-vedic-accent.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-vedic-accent.mjs) (SHA-256 edge contract, `--check`) | [VedaWeb bulk export](https://github.com/gasyoun/VisualDCS/tree/main/non-derived/vedaweb) (Casaretto et al. 2025 word-split), joined to corpus-frequency.json | CC BY 4.0 (VedaWeb, Universität zu Köln) |
 | [heritage-coverage.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/heritage-coverage.json) | generated | [build-heritage-coverage.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-heritage-coverage.mjs) | [MW↔Heritage crosswalk](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv) | aggregates only (LGPLLR raw not redistributed) |
 | [which-dictionary-gold.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/which-dictionary-gold.json) | annotated | single pass, Fable 5 (`claude-fable-5`), 2026-07-07 | dictionary front matter + atlas OBS | CC-BY-SA-4.0 |
 | [routing-benchmark.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/routing-benchmark.json) | generated | [build-routing-benchmark.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-routing-benchmark.mjs) | derived from the gold panel | CC-BY-SA-4.0 |
@@ -168,6 +169,36 @@ Upstream rights for the non-Cologne feeds are documented per source in
   period labels carry an upstream label-truncation caveat (`3200`/`4700` = slots 3/4),
   decoded on the page.
 - **Update policy.** Re-run on kosha frequency-table release bumps.
+
+### vedic-accent.json — RV attestation + udātta-marked forms for the top DCS lemmas
+
+- **What / why.** For each of the 845 (of 2,000) most frequent Classical lemmas attested in
+  the Rigveda slice: its RV token count and up to three distinct udātta-marked attested
+  forms — the accented reading signal under
+  [Corpus attestation](/dictionaries/corpus-attestation) ("The same words in the accented
+  Rigveda").
+- **Provenance.**
+  [build-vedic-accent.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-vedic-accent.mjs)
+  streams the LANDED VedaWeb 2.0 bulk export
+  ([VisualDCS/non-derived/vedaweb](https://github.com/gasyoun/VisualDCS/tree/main/non-derived/vedaweb),
+  Casaretto et&nbsp;al. 2025 udātta-marked word-split; one-time acquisition per H096,
+  rights confirmed per H359). It never queries `vedaweb.uni-koeln.de` (Anubis/WAF-blocked
+  since 27-07-2026). Keys: `lemma_vedaweb` values normalised (root sign / variant
+  alternates / hyphens / accent marks stripped, syllabic liquids folded to SLP1
+  *f*/*x*) → matched against corpus-frequency.json SLP1 keys. The committed feed pins the
+  upstream file's SHA-256 (`--check` mode exits 1 on drift), mirroring the
+  corpus-frequency edge contract.
+- **Language & encoding.** SLP1 lemma keys; display forms verbatim Vedic-accented IAST;
+  UTF-8.
+- **License / rights.** CC BY 4.0 — attribute "VedaWeb 2.0, Universität zu Köln" plus the
+  Casaretto et&nbsp;al. citation carried in the feed's `upstream` field.
+- **Known limitations.** The join is a **lower bound**: stems whose RV citation form differs
+  from the corpus layer's key do not match (the frequent pronouns are the visible example:
+  RV data cites *sá- ~ tá-* where the corpus layer keys *tad*). Accent marks are stripped
+  for keying only and always shown verbatim on the page. Aggregates only — no stanza-level
+  text is redistributed.
+- **Update policy.** Re-run when VisualDCS refreshes the vedaweb export; `--check` flags
+  the drift.
 
 ### heritage-coverage.json — MW↔Heritage coverage aggregates
 

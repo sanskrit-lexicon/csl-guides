@@ -64,21 +64,29 @@ can join them against dictionary headwords without transcoding.
   owned by [HERITAGE_INRIA_ROADMAP.md](https://github.com/gasyoun/SanskritLexicography/blob/master/HERITAGE_INRIA_ROADMAP.md)
   Phases 3–6 — not duplicated here.
 
-## 3. VedaWeb / Vedic corpora — older-layer dimension ⏳ RECORD ONLY (feed gated upstream)
+## 3. VedaWeb / Vedic corpora — older-layer dimension ✅ CONSUMED (feed landed, consumer shipped)
 
-- **Artifact (planned):** the VedaWeb 2.0 Rig-Veda bulk export (Casaretto 2025 accented
+- **Artifact:** the VedaWeb 2.0 Rig-Veda bulk export (Casaretto 2025 accented
   word-split, lemmatization, accented text, Lubotsky padapāṭha) — **CC BY 4.0** —
-  ruled to land in `VisualDCS/non-derived/vedaweb/` per
+  landed in `VisualDCS/non-derived/vedaweb/` per
   [ROADMAP_VEDAWEB_REUSE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_VEDAWEB_REUSE.md)
   Phase 1, handoff
-  [H096](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H096-Sonnet_VisualDCS_vedaweb_feed_export_03.07.26.md).
-- **Status 07-07-2026:** the export has not been run yet (`non-derived/vedaweb/` does
-  not exist). Per the org rule (one bulk export, then all consumers read the feed) the
-  guides must NOT hit the VedaWeb API independently. **Follow-on:** once H096 lands,
-  add `scripts/build-vedic-accent.mjs` over that feed; the Vedic side of the guides
-  can meanwhile lean on GRA (Cologne, already covered by the catalog/deep pages).
-- **Feed shape (proposed):** SLP1-keyed `{lemma → {rvOccurrences, accentedForms[]}}`
-  joined to GRA headwords.
+  [H096](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H096-Sonnet_VisualDCS_vedaweb_feed_export_03.07.26.md)
+  (08-07-2026; rights confirmed CC BY 4.0 for all four candidate layers per H359).
+- **Status 26-08-2026:** **consumed.** `scripts/build-vedic-accent.mjs`
+  (`npm run build:vedic-accent`) reads the landed
+  `casaretto_accented_wordsplit.json.gz` offline and emits
+  [src/data/vedic-accent.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/vedic-accent.json)
+  (SHA-256 edge contract with `--check`): 845 of the top-2,000 DCS lemmas joined,
+  each with RV token count + up to three udātta-marked attested forms, rendered in
+  "The same words in the accented Rigveda" on
+  [Corpus attestation](../../dictionaries/corpus-attestation). The guides never hit the
+  VedaWeb API (one-bulk-export org rule; Anubis/WAF-blocked since 27-07-2026 anyway).
+  The Vedic side otherwise still leans on GRA (Cologne, already covered by the catalog/deep
+  pages).
+- **Join shape (shipped):** SLP1-keyed `{lemma → {rvTokens, forms[]}}` joined to the DCS
+  top-2000 frequency layer (not GRA headwords as first proposed) — a stated lower bound:
+  stems whose RV citation form differs from the corpus key do not match.
 
 ## 4. DharmaMitra (Berkeley) — MT/morphology ecosystem ⏳ RECORD ONLY
 

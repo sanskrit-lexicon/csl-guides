@@ -13,6 +13,11 @@ import {DictAbbreviations} from '@site/src/components/Abbreviations';
 **technical terms (administrative, fiscal, legal, social) that occur in Indian inscriptions**,
 each defined and tied to the epigraphical corpus it comes from. Glosses are in **English**.
 
+It is one of the most *independent* datasets on CDSL: measured against the rest of the
+corpus, **57.5 % of its headwords appear in no other digitized dictionary here** (second
+highest of all 44), which is exactly what you would expect of a work that indexes a document
+genre — stone and copper-plate records — that literary lexicons barely touch.
+
 ## At a glance
 
 | | |
@@ -20,7 +25,7 @@ each defined and tied to the epigraphical corpus it comes from. Glosses are in *
 | **Code** | `IEG` (source in [`csl-orig/v02/ieg`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/ieg); no separate repo) |
 | **Full title** | *Indian Epigraphical Glossary* |
 | **Author** | D. C. Sircar |
-| **Year / size** | 1966 · ~**580** pages |
+| **Year / size** | 1966 · ~**580** pages · ~7,900 entries |
 | **Type** | Glossary of epigraphical terms (Sanskrit/Prakrit → English) |
 | **Source** | [`csl-orig/v02/ieg/`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/ieg) |
 | **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/IEGScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/IEGScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/IEGScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/IEGScan/2020/web/mobile1/index.php) |
@@ -29,9 +34,18 @@ each defined and tied to the epigraphical corpus it comes from. Glosses are in *
 
 ## When to use it
 
-Reach for `IEG` when reading **inscriptions** and you meet an administrative, fiscal, or legal
-term that a literary dictionary won't gloss in its technical sense. For general meanings use
-**[Monier-Williams (MW)](mw)**.
+Reach for `IEG` when reading **inscriptions** — or modern editions of them — and you meet an
+administrative, fiscal, legal, or institutional term that a literary dictionary will not gloss
+in its technical sense. Typical wins:
+
+1. **Revenue and land terms** — classes of land tenure, tax names, measures.
+2. **Administrative titles** — offices of the court, provincial and local administration,
+   military ranks.
+3. **Religious-institutional vocabulary** — temple offices, endowment formulas, monastic
+   terms as inscriptions actually use them.
+
+For general meanings use **[Monier-Williams (MW)](mw)**; for *names* (persons and places)
+from the same inscriptional world use **[PGN](pgn)**.
 
 ## Reading an entry
 
@@ -49,24 +63,75 @@ The first entry (`csl-orig/v02/ieg/ieg.txt`):
 | `(CII 1)` | the source — *Corpus Inscriptionum Indicarum*, vol. 1 |
 | `illness` | the English gloss |
 
-See [Data Formats](../developers/data-formats) for the markup reference.
+Many entries have **numbered senses**, each with its own citation trail, because the same term
+behaves differently in different record types. Real example (`csl-orig/v02/ieg/ieg.txt`, entry
+57), lightly wrapped for readability:
 
-## What makes it distinctive
+```
+<L>57<pc>004<k1>AcArya<k2>AcArya
+{%Acarya%}¦ (<ls>EI</ls> 33; <ls>BL</ls>), title of a religious teacher;
+used commonly by the Buddhists and Jains (<ls>LL</ls>; <ls>SII</ls> 1).
+<P>¦ (<ls>CII</ls> 3; <ls>EI</ls> 32; <ls>ML</ls>), a spiritual guide or teacher; a preceptor.
+<P>¦ Same as {%Sthan-acarya%} (<ls>EI</ls> 17), a temple priest.
+<P>¦ (<ls>EI</ls> 8; <ls>IA</ls> 14), an architect; used in the sense of 'a master',
+i. e. 'a master-mason'; cf. {%Acari%} …
+```
 
-- **Built for inscriptions.** Administrative/technical senses, keyed to the epigraphical corpus.
-- **The standard reference** for epigraphical terminology (Sircar).
-
-
-## Headword key conventions
-
-`<k1>` = `<k2>` = SLP1 (epigraphical technical term). Glosses are terse English definitions with a corpus source in parentheses.
+What to notice:
 
 | Convention | Marker / form | Example | Note |
 |---|---|---|---|
 | Search key | SLP1 (technical term) | `AbADa` | k1 = k2 |
 | Body form | IAST italic `{%…%}` | `{%ābādha%}` | The printed form |
 | Corpus source | `(CII N)` etc. | `(CII 1)` = *Corpus Inscriptionum Indicarum*, vol. 1 | Where the term appears in the epigraphic record |
-| Gloss | Terse English | `illness` | The specialized epigraphical meaning |
+| Full citation | `<ls>` + volume/page | `<ls>Ep. Ind.</ls>, Vol. IX, p. 151` | Longer form used inside prose notes |
+| New sense | `<P>¦` at line start | sense 2, 3, 4… | Each sense carries its own sources |
+| Cross-reference | `cf.` / `See` | `see {%abhaya-mudra%}` | Points to the head entry for compounds |
+
+The glosses are terse but precise about *register*: under `{%abhaya%}`, sense 1 is the
+hand-pose (`{%mudra%}`) on images, cited from *Epigraphia Indica* vol. 24, while sense 2 is
+"place of security to persons in distress" — with a Tamil equivalent noted — keyed to siglum
+`SITI` in Sircar's own source list. That bilingual aside is typical: South-Indian
+inscriptional practice often surfaces Tamil forms.
+
+See [Data Formats](../developers/data-formats) for the markup reference.
+
+## Where the citations point
+
+Sircar keys almost every sense to a named inscription series. The sigla you will meet most are
+the multi-volume national corpora and epigraphy journals — `CII` (*Corpus Inscriptionum
+Indicarum*), `EI` (*Epigraphia Indica*), `IA` (*Indian Antiquary*), `SII` (*South-Indian
+Inscriptions*) — alongside journal sigla such as `IHQ`. `IEG`'s printed key to these
+abbreviations survives as **scanned front matter** (linked from
+[csl-doc](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/prefaces/iegpref.rst));
+its legend is not yet transcribed machine-readably on this site — see
+[Abbreviations compared](abbreviations-and-citations) for where `IEG` stands. With roughly
+**11,400 `<ls>` citation tags** across the file, a sense without a source pointer is the
+exception, not the rule.
+
+## Search tips
+
+1. **Think compounds.** The headwords are technical compounds (`{%abhaya-mudra%}`,
+   `{%daṇḍādhipa%}`); if the compound misses, try the members.
+2. **Try both spellings.** Sanskritized Prakrit and vernacular forms sit beside classical
+   ones (`{%acara%}` next to `{%ācāra%}`).
+3. **Read every sense.** An inscription term frequently has a mundane meaning in one corpus
+   and an office-title meaning in another; the `<P>` paragraphs keep them separate.
+4. **Follow the `cf.` links.** Synonym chains (`{%Daṇḍādhipa%}` → `{%Daṇḍapāla%}`,
+   `{%Daṇḍādhipati%}`) map the terminology of one administrative sphere.
+
+## What makes it distinctive
+
+- **Built for inscriptions.** Administrative/technical senses, keyed to the epigraphical corpus.
+- **The standard reference** for epigraphical terminology (Sircar was the leading epigraphist
+  of his generation and the general editor of *Epigraphia Indica*).
+- **Highly independent headword stock** — the majority of its terms occur nowhere else on
+  CDSL (57.5 % unique share per the site's atlas measurements, see
+  [Guides Hypotheses](../about/guides-hypotheses)).
+
+## Headword key conventions
+
+`<k1>` = `<k2>` = SLP1 (epigraphical technical term). Glosses are terse English definitions with a corpus source in parentheses.
 
 ## Abbreviations
 

@@ -62,7 +62,7 @@ page that documents the measurement in full.
 | Measurement | Result | Documented at |
 |---|---|---|
 | Which-dictionary routing accuracy (GH-1) | 18/18 = 100%, 95% Wilson CI [82.4%, 100%], vs random-4 (25%) and majority-class (5.6%) baselines — **but** 5 of 6 probe scenarios route to dictionaries the quiz never recommends (9 never-targeted golds) | [GH-1](./guides-hypotheses.md#gh-1--which-dictionary-routing-accuracy) |
-| Deep-page depth follows size, not novelty (GH-2) | ρ(depth, entries) = 0.56 (n = 44, p = 7.7×10⁻⁵); ρ(depth, unique %) = −0.17 (p = 0.26, n.s.) | [GH-2](./guides-hypotheses.md#gh-2--deep-page-depth-follows-size-not-novelty) |
+| Deep-page depth follows size, not novelty (GH-2) | at first measurement: ρ(depth, entries) = 0.56 (n = 44, p = 7.7×10⁻⁵); ρ(depth, unique %) = −0.17 (p = 0.26, n.s.) — **re-tested 26-08-2026 after the four thin pages were deepened: ρ(depth, unique %) = +0.26 (p = 0.084); the size-only reading no longer holds** | [GH-2](./guides-hypotheses.md#gh-2--deep-page-depth-follows-size-not-novelty) |
 | Quiz track teaches word-*finding*, not entry-*reading* (GH-3) | finding modes carry 18–34 items each; reading modes 1–7 (citation-resolution: 2; grammatical labels: 1) | [GH-3](./guides-hypotheses.md#gh-3--the-quiz-track-teaches-word-finding-not-entry-reading) |
 | Abbreviation-legend exposure (GH-4) | 95.3% of corpus `<ls>` citations (1,187,169 of 1,245,644) fall in legend-documented dictionaries | [GH-4](./guides-hypotheses.md#gh-4--abbreviation-legend-exposure) |
 | Difficulty-label calibration (GH-5) | instrumented — opt-in, client-only quiz telemetry shipped; no error-rate data yet | [GH-5](./guides-hypotheses.md) |
@@ -90,7 +90,8 @@ DCS is CC BY) and
 the LGPLLR raw data is deliberately not exercised). The five-resource survey with
 per-source rights verdicts lives in
 [NON_COLOGNE_SOURCES.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/NON_COLOGNE_SOURCES.md):
-DCS and Heritage wired; VedaWeb gated on an upstream bulk export; DharmaMitra
+DCS and Heritage wired; VedaWeb landed upstream and consumed (the
+[vedic-accent feed](../developers/data-cards.md), 26-08-2026); DharmaMitra
 link-only (no bulk-download license); Saṃsādhanī validation-only until a LICENSE
 appears upstream.
 
@@ -104,9 +105,10 @@ into
 The headline finding is deliberately double-edged: the routing quiz is perfectly
 *consistent* (18/18 against a gold panel) yet demonstrably *incomplete* (5 of 6 probe
 scenarios need dictionaries the quiz never recommends — SKD/VCP, ACC, GRA, reader
-vocabularies, compact German). GH-2 found that page depth tracks dictionary **size**
-(ρ = 0.56), not **novelty** (ρ = −0.17): the most under-served pages are the
-high-novelty indexes IEG, PGN, ACC, PUI.
+vocabularies, compact German). GH-2 found that page depth tracked dictionary **size**
+(ρ = 0.56), not **novelty** (ρ = −0.17): the most under-served pages were the
+high-novelty indexes IEG, PGN, ACC, PUI — which were then deepened (26-08-2026), moving
+ρ(depth, unique %) to +0.26 and retiring the size-only reading.
 
 ### S2 — visualizations (the landscape)
 
@@ -150,7 +152,9 @@ The programme's own standard requires saying what is *not* done:
 - **GH-1** — no inter-annotator κ yet (single gold pass); the quiz targets 18 of 44
   catalogued dictionaries. A second, independent gold pass and quiz extension toward
   the 9 never-targeted golds are the named next tests.
-- **GH-2** — bring IEG, PGN, ACC, PUI to ≥700 words and re-run the correlation.
+- ~~**GH-2** — bring IEG, PGN, ACC, PUI to ≥700 words and re-run the correlation~~
+  **DONE 26-08-2026**: pages now 918–1,079 words; ρ(depth, unique %) moved −0.17 → +0.26 —
+  the fix was real and the size-only reading is retired.
 - **GH-3** — an entry-reading quiz would rebalance the track; the next-quiz-topic
   choice is a maintainer decision, now with data behind it.
 - **GH-4** — the exposure bound (95.3%) awaits replacement by token-level coverage
@@ -158,8 +162,10 @@ The programme's own standard requires saying what is *not* done:
 - **GH-5** — instrumentation is live; results wait on opt-in telemetry exports.
 - **Shared task 2 (dictionary-lineage detection)** — a proposal until csl-atlas
   commits the headword-overlap similarity artifact it would score against.
-- **VedaWeb feed** — gated on the upstream VedaWeb 2.0 bulk export; the
-  corpus-attestation page grows a Vedic-accent section when it lands.
+- ~~**VedaWeb feed** — gated on the upstream VedaWeb 2.0 bulk export; the
+  corpus-attestation page grows a Vedic-accent section when it lands~~
+  **DONE 26-08-2026**: the H096 export landed 08-07-2026 and the consumer shipped —
+  "The same words in the accented Rigveda" on [Corpus attestation](../dictionaries/corpus-attestation).
 - **DOIs** — no feed has a DOI yet; the routing benchmark and gold panel are the
   first candidates for a citable data release.
 - **Venue choice** — the landscape is documented; picking a venue for a concrete

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-07",
+ "generatedAt": "2026-08-26",
  "generatedBy": "scripts/build-hypothesis-metrics.mjs (H278; ACL-standard CI/baseline/significance fields added in H281)",
  "documentedIn": "docs/about/guides-hypotheses.md",
  "gh1_routing": {
@@ -33,11 +33,11 @@
  },
  "gh2_depth_vs_novelty": {
   "dictionariesCompared": 44,
-  "spearmanDepthVsUnique": -0.174,
-  "spearmanDepthVsUniqueP": 0.26,
-  "pearsonDepthVsUnique": 0.097,
-  "spearmanDepthVsEntries": 0.56,
-  "spearmanDepthVsEntriesP": 0.000077,
+  "spearmanDepthVsUnique": 0.264,
+  "spearmanDepthVsUniqueP": 0.084,
+  "pearsonDepthVsUnique": 0.552,
+  "spearmanDepthVsEntries": 0.472,
+  "spearmanDepthVsEntriesP": 0.0012,
   "rows": [
    {
     "code": "bhs",
@@ -47,25 +47,25 @@
    },
    {
     "code": "ieg",
-    "pageWords": 440,
+    "pageWords": 1004,
     "uniquePct": 57.5,
     "entries": 7932
    },
    {
     "code": "pgn",
-    "pageWords": 443,
+    "pageWords": 1045,
     "uniquePct": 54.9,
     "entries": 485
    },
    {
     "code": "acc",
-    "pageWords": 455,
+    "pageWords": 1079,
     "uniquePct": 43.3,
     "entries": 49833
    },
    {
     "code": "pui",
-    "pageWords": 434,
+    "pageWords": 918,
     "uniquePct": 38.6,
     "entries": 17512
    },
@@ -203,7 +203,7 @@
    },
    {
     "code": "pw",
-    "pageWords": 664,
+    "pageWords": 690,
     "uniquePct": 4.4,
     "entries": 170556
    },
@@ -251,7 +251,7 @@
    },
    {
     "code": "pwg",
-    "pageWords": 822,
+    "pageWords": 845,
     "uniquePct": 1.9,
     "entries": 123366
    },

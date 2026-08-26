@@ -11,7 +11,14 @@ import {DictAbbreviations} from '@site/src/components/Abbreviations';
 
 `ACC` is Theodor Aufrecht's *Catalogus Catalogorum* — not a word dictionary but the great
 **bibliographical catalogue of Sanskrit works and authors**, indexing titles and names against
-the manuscript catalogues in which they appear. A finding-aid for Sanskrit literature.
+the manuscript catalogues in which they appear. A finding-aid for Sanskrit literature: the
+title means *a catalogue of catalogues*, and expresses, in Aufrecht's own words, "the sources
+from which the present work is" compiled.
+
+It is among the largest datasets on CDSL — **just under 50,000 entries** — and one of the most
+*independent*: **43.3 % of its headwords occur in no other digitized dictionary here**, the
+natural result of indexing work-titles, commentators, and library collections rather than
+vocabulary.
 
 ## At a glance
 
@@ -20,7 +27,8 @@ the manuscript catalogues in which they appear. A finding-aid for Sanskrit liter
 | **Code** | `ACC` (GitHub repo [`ACC`](https://github.com/sanskrit-lexicon/ACC)) |
 | **Full title** | *Catalogus Catalogorum* |
 | **Author** | Theodor Aufrecht |
-| **Size** | ~**1216** pages |
+| **Size** | ~**1216** pages · ~49,800 entries |
+| **Edition** | Parts I–II Leipzig 1891 & 1896 (F. A. Brockhaus); Part III 1903; reprinted 1962 |
 | **Type** | Bibliographical catalogue (works & authors) |
 | **Source** | [`csl-orig/v02/acc/`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/acc) |
 | **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/ACCScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/ACCScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/ACCScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/ACCScan/2020/web/mobile1/index.php) |
@@ -29,9 +37,15 @@ the manuscript catalogues in which they appear. A finding-aid for Sanskrit liter
 
 ## When to use it
 
-Reach for `ACC` to find **where a Sanskrit work or author is catalogued** — its subject and the
-manuscript catalogues that list it. It indexes literature, not vocabulary; for word meanings use
-**[Monier-Williams (MW)](mw)**.
+Reach for `ACC` to find **where a Sanskrit work or author is catalogued** — its subject field
+and the manuscript catalogues that record it. Concretely:
+
+1. **Identify a work** behind a title met in a colophon or citation — its subject, its
+   commentator, where manuscripts are listed.
+2. **Trace a commentator or author** across the literature that carries their name.
+3. **Locate manuscript holdings** as they stood in the printed catalogues of Aufrecht's day.
+
+It indexes literature, not vocabulary; for word meanings use **[Monier-Williams (MW)](mw)**.
 
 ## Reading an entry
 
@@ -43,20 +57,73 @@ references. The first entry (`csl-orig/v02/acc/acc.txt`):
 {#aMSadaSA#}¦ jy. Rice 28.
 ```
 
+An author entry looks different again (`csl-orig/v02/acc/acc.txt`, entry 1925):
+
+```
+<L>1925<pc>1-048,1<k1>AnandarAya<k2>AnandarAya
+{#AnandarAya#}¦ patron of Samaraja (Damacarita). Oxf. 138^b.
+```
+
 | In the source | Meaning |
 |---|---|
-| `<pc>1-001,1` | page-column reference |
-| `{#aMSadaSA#}` | the **work title** *Aṃśadaśā* (search key `<k1>`) |
+| `<pc>1-048,1` | page-column reference (volume 1, p. 48, col. 1) |
+| `{#aMSadaSA#}` | the **work title** *Aṃśadaśā* (search key `<k1>`, SLP1 in bold `{#…#}`) |
 | `jy.` | subject abbreviation — *jyotiṣa* (astronomy/astrology) |
-| `Rice 28` | the catalogue reference (Rice's catalogue, p. 28) |
+| `Rice 28` / `Oxf. 138^b` | the catalogue reference — which printed catalogue lists it, at what page or folio (`^b` = the second side of folio 138) |
+| `patron of Samaraja (Damacarita)` | for authors: the relationship that identifies them |
 
 See [Data Formats](../developers/data-formats) for the markup reference.
+
+## The two abbreviation systems
+
+Every entry compresses two facts into sigla, both keyed in the work's own front matter —
+which survives on CDSL as a fully transcribed [digitized preface](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/prefaces/accpref.rst),
+unlike most scan-only front matter here.
+
+**Subject tags** are Aufrecht's terse field markers. His preface names them directly:
+"*an.* anonymous, *dh.* dharma, *fr.* fragmentary, *gr.* grammatical, *ny.* nyaya,
+*tantr.* tantric", alongside *jy.* (*jyotiṣa*) and others. Counted across the whole file, the
+most common are `dh.` (dharma, ~1,950 entries), `jy.` (~1,580), `ny.` (~940), and `gr.` (~540)
+— a fair map of what nineteenth-century libraries collected.
+
+**Catalogue references** point into the printed manuscript catalogues the entries were
+harvested from. From the same preface: `Oxf.` is the Bodleian catalogue Aufrecht himself wrote
+(1864); `Cambr.` his Trinity College Cambridge catalogue (1869); `IO.` the India Office
+collections (Colebrooke, Wilkins, Burnell and others, catalogued by Eggeling); `W.` Weber's
+Berlin *Verzeichniss* (1853); `L.` Rajendralala Mitra's *Notices of Sanskrit MSS.* — plus
+dozens of regional lists (a typical entry cites `Rice 28`). When you expand a reference like
+`Oxf. 138^b` you get a shelf, not a definition: ACC tells you **where manuscripts were**, and
+the reader follows from there.
+
+## How the file is organized
+
+The three parts were each alphabetized separately — the digitized user notes are explicit that
+"the entries in each volume are separately alphabetized" — so the digital text runs through the
+alphabet once per volume-part. The file also preserves the catalogue's internal structure as
+section headings: clusters of related works sit under head-texts ("Commentaries on the
+*Tarkasaṃgraha*", commentaries grouped two-by-two under their base works) and under named
+anthology-collections (treatises "mostly extracted from the *Gadādharī*", tracts from the
+*Jagadīśī*). Searching a base text's name can therefore surface a whole family of commentary
+entries that no single alphabetical position would reveal.
+
+## Search tips
+
+1. **Titles, not meanings.** Search the Sanskrit title in SLP1 transliteration; there is no
+   English gloss to search for.
+2. **Mind the per-volume alphabets.** A title has up to three separate positions (Parts I, II,
+   III); check all runs before concluding absence.
+3. **Search commentators by name.** Author entries carry relationships ("patron of…",
+   "commentator on…") that identify minor figures nowhere else.
+4. **Follow section headers.** Commentary families cluster under their base work's heading.
 
 ## What makes it distinctive
 
 - **A catalogue of catalogues.** The standard index of Sanskrit works and authors.
 - **Bibliographical, not lexical** — it points to manuscripts and catalogues.
-
+- **Fully transcribed front matter** — the preface with both abbreviation keys is searchable
+  text on CDSL.
+- **Highly independent headword stock** — 43.3 % unique share per the site's atlas
+  measurements, see [Guides Hypotheses](../about/guides-hypotheses).
 
 ## Headword key conventions
 
@@ -65,8 +132,9 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 | Convention | Marker / form | Example | Note |
 |---|---|---|---|
 | Search key | SLP1 (title / name) | `aMSadaSA` | Type the Sanskrit title or author name in SLP1 |
+| Title form | SLP1 bold `{#…#}` | `{#aMSadaSA#}` | The printed title |
 | Subject code | Short abbreviation after headword | `jy.` = *jyotiṣa* (astrology) | Subject field of the work |
-| Catalogue reference | Catalogue name + page | `Rice 28` | The manuscript catalogue that records the work |
+| Catalogue reference | Catalogue name + page/folio | `Rice 28`, `Oxf. 138^b` | The manuscript catalogue that records the work |
 | No English gloss | No definition | — | ACC gives location information, not meaning |
 
 ## Abbreviations

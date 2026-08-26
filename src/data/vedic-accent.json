@@ -1,0 +1,8862 @@
+{
+ "generatedAt": "2026-08-26",
+ "generator": "scripts/build-vedic-accent.mjs (csl-guides)",
+ "source": "https://github.com/gasyoun/VisualDCS/blob/main/non-derived/vedaweb/casaretto_accented_wordsplit.json.gz (VedaWeb 2.0 bulk export H096, landed 08-07-2026)",
+ "sourceSha256": "33c193af7d477f3f8e0cd5d041da86986f11b86ee6b9ba6d4c674961ac91ac89",
+ "edgeContract": "SHARED_CODE §24 (Interlink Graph v2 W4) — verify: node scripts/build-vedic-accent.mjs --check",
+ "upstream": "Casaretto, Coenen, Fischer, Halfmann, Korobzow, Kölligan & Reinöhl (2025), the morphologically glossed Rigveda (Zurich annotation corpus revised and extended), hosted on VedaWeb, Universität zu Köln",
+ "license": "CC BY 4.0 (rights confirmed per H359); derived aggregation — attribute \"VedaWeb 2.0, Universität zu Köln\"",
+ "keying": "lemma_vedaweb normalised (no root sign / variant alternates / hyphens / accent marks) -> sanskrit-util to_slp1, joined against src/data/corpus-frequency.json SLP1 keys (top 2,000 DCS lemmas). Lower bound: unmatched stems exist.",
+ "joinTarget": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/corpus-frequency.json",
+ "stats": {
+  "rvStanzas": 10552,
+  "rvTokens": 164758,
+  "dcsTopN": 2000,
+  "joinedLemmas": 845,
+  "joinedDcsTokenShare": 0.4529,
+  "joinedDcsTokens": 2061192,
+  "dcsTokensTotal": 4550704
+ },
+ "lemmas": [
+  {
+   "slp1": "ca",
+   "rank": 1,
+   "dcsCount": 155088,
+   "rvTokens": 1093,
+   "forms": [
+    "ca",
+    "ca +"
+   ]
+  },
+  {
+   "slp1": "na",
+   "rank": 3,
+   "dcsCount": 53981,
+   "rvTokens": 2099,
+   "forms": [
+    "ná"
+   ]
+  },
+  {
+   "slp1": "mad",
+   "rank": 4,
+   "dcsCount": 49367,
+   "rvTokens": 236,
+   "forms": [
+    "mátsi",
+    "mádema",
+    "ámadan"
+   ]
+  },
+  {
+   "slp1": "eva",
+   "rank": 5,
+   "dcsCount": 45884,
+   "rvTokens": 209,
+   "forms": [
+    "evá",
+    "évāḥ",
+    "évān"
+   ]
+  },
+  {
+   "slp1": "iti",
+   "rank": 7,
+   "dcsCount": 44379,
+   "rvTokens": 83,
+   "forms": [
+    "íti"
+   ]
+  },
+  {
+   "slp1": "tu",
+   "rank": 10,
+   "dcsCount": 35004,
+   "rvTokens": 58,
+   "forms": [
+    "tú",
+    "tú +"
+   ]
+  },
+  {
+   "slp1": "api",
+   "rank": 11,
+   "dcsCount": 34022,
+   "rvTokens": 90,
+   "forms": [
+    "ápi"
+   ]
+  },
+  {
+   "slp1": "kf",
+   "rank": 12,
+   "dcsCount": 33251,
+   "rvTokens": 1213,
+   "forms": [
+    "kr̥dhi",
+    "kr̥tam",
+    "kr̥ṇván"
+   ]
+  },
+  {
+   "slp1": "BU",
+   "rank": 13,
+   "dcsCount": 32612,
+   "rvTokens": 862,
+   "forms": [
+    "bhava",
+    "bodhi",
+    "bhuvat"
+   ]
+  },
+  {
+   "slp1": "sarva",
+   "rank": 14,
+   "dcsCount": 31377,
+   "rvTokens": 68,
+   "forms": [
+    "sárvā",
+    "sárve",
+    "sárvam"
+   ]
+  },
+  {
+   "slp1": "vac",
+   "rank": 15,
+   "dcsCount": 30970,
+   "rvTokens": 213,
+   "forms": [
+    "voce",
+    "óktā",
+    "vocaḥ"
+   ]
+  },
+  {
+   "slp1": "taTA",
+   "rank": 19,
+   "dcsCount": 22741,
+   "rvTokens": 15,
+   "forms": [
+    "táthā"
+   ]
+  },
+  {
+   "slp1": "tatas",
+   "rank": 20,
+   "dcsCount": 21960,
+   "rvTokens": 23,
+   "forms": [
+    "tátas"
+   ]
+  },
+  {
+   "slp1": "hi",
+   "rank": 21,
+   "dcsCount": 19452,
+   "rvTokens": 824,
+   "forms": [
+    "hí",
+    "hitám",
+    "hinóti"
+   ]
+  },
+  {
+   "slp1": "vA",
+   "rank": 22,
+   "dcsCount": 19249,
+   "rvTokens": 345,
+   "forms": [
+    "vā",
+    "vāti",
+    "vātu"
+   ]
+  },
+  {
+   "slp1": "rAjan",
+   "rank": 23,
+   "dcsCount": 17082,
+   "rvTokens": 247,
+   "forms": [
+    "rā́jā",
+    "rājan",
+    "rā́jan"
+   ]
+  },
+  {
+   "slp1": "iva",
+   "rank": 24,
+   "dcsCount": 16240,
+   "rvTokens": 1024,
+   "forms": [
+    "iva"
+   ]
+  },
+  {
+   "slp1": "gam",
+   "rank": 25,
+   "dcsCount": 15950,
+   "rvTokens": 632,
+   "forms": [
+    "gata",
+    "gahi",
+    "gamat"
+   ]
+  },
+  {
+   "slp1": "deva",
+   "rank": 26,
+   "dcsCount": 15141,
+   "rvTokens": 1646,
+   "forms": [
+    "deva",
+    "déva",
+    "devám"
+   ]
+  },
+  {
+   "slp1": "dfS",
+   "rank": 27,
+   "dcsCount": 14755,
+   "rvTokens": 125,
+   "forms": [
+    "dr̥śé",
+    "dárśam",
+    "ádarśi"
+   ]
+  },
+  {
+   "slp1": "aTa",
+   "rank": 29,
+   "dcsCount": 14105,
+   "rvTokens": 154,
+   "forms": [
+    "átha",
+    "átha +"
+   ]
+  },
+  {
+   "slp1": "tatra",
+   "rank": 30,
+   "dcsCount": 13768,
+   "rvTokens": 24,
+   "forms": [
+    "tátra",
+    "tátra +"
+   ]
+  },
+  {
+   "slp1": "evam",
+   "rank": 31,
+   "dcsCount": 13163,
+   "rvTokens": 1,
+   "forms": [
+    "evám"
+   ]
+  },
+  {
+   "slp1": "sa",
+   "rank": 32,
+   "dcsCount": 13017,
+   "rvTokens": 3345,
+   "forms": [
+    "sá",
+    "té",
+    "sáḥ"
+   ]
+  },
+  {
+   "slp1": "arTa",
+   "rank": 33,
+   "dcsCount": 12546,
+   "rvTokens": 30,
+   "forms": [
+    "ártham",
+    "árthāni",
+    "ártheṣu"
+   ]
+  },
+  {
+   "slp1": "ka",
+   "rank": 34,
+   "dcsCount": 12187,
+   "rvTokens": 468,
+   "forms": [
+    "ké",
+    "kím",
+    "káḥ"
+   ]
+  },
+  {
+   "slp1": "yaTA",
+   "rank": 35,
+   "dcsCount": 11776,
+   "rvTokens": 278,
+   "forms": [
+    "yáthā",
+    "yathā",
+    "yáthā-yathā"
+   ]
+  },
+  {
+   "slp1": "su",
+   "rank": 37,
+   "dcsCount": 11408,
+   "rvTokens": 854,
+   "forms": [
+    "sú",
+    "suté",
+    "sú +"
+   ]
+  },
+  {
+   "slp1": "Atman",
+   "rank": 38,
+   "dcsCount": 11147,
+   "rvTokens": 22,
+   "forms": [
+    "ātmā́",
+    "ātmáni",
+    "ātmánaḥ"
+   ]
+  },
+  {
+   "slp1": "punar",
+   "rank": 39,
+   "dcsCount": 10749,
+   "rvTokens": 95,
+   "forms": [
+    "púnar",
+    "púnaḥ-punar"
+   ]
+  },
+  {
+   "slp1": "vE",
+   "rank": 40,
+   "dcsCount": 10527,
+   "rvTokens": 28,
+   "forms": [
+    "vaí"
+   ]
+  },
+  {
+   "slp1": "eka",
+   "rank": 41,
+   "dcsCount": 10275,
+   "rvTokens": 225,
+   "forms": [
+    "ékā",
+    "ékaḥ",
+    "ékam"
+   ]
+  },
+  {
+   "slp1": "putra",
+   "rank": 42,
+   "dcsCount": 10176,
+   "rvTokens": 122,
+   "forms": [
+    "putra",
+    "putré",
+    "putráḥ"
+   ]
+  },
+  {
+   "slp1": "dA",
+   "rank": 43,
+   "dcsCount": 9987,
+   "rvTokens": 2,
+   "forms": [
+    "dé",
+    "dā́ḥ"
+   ]
+  },
+  {
+   "slp1": "loka",
+   "rank": 44,
+   "dcsCount": 9824,
+   "rvTokens": 9,
+   "forms": [
+    "loké",
+    "lokám",
+    "lokā́ḥ"
+   ]
+  },
+  {
+   "slp1": "agni",
+   "rank": 45,
+   "dcsCount": 9689,
+   "rvTokens": 1724,
+   "forms": [
+    "ágne",
+    "agne",
+    "agním"
+   ]
+  },
+  {
+   "slp1": "tva",
+   "rank": 46,
+   "dcsCount": 9633,
+   "rvTokens": 32,
+   "forms": [
+    "tvā",
+    "tve",
+    "tvam"
+   ]
+  },
+  {
+   "slp1": "vid",
+   "rank": 48,
+   "dcsCount": 9384,
+   "rvTokens": 1,
+   "forms": [
+    "vidā́"
+   ]
+  },
+  {
+   "slp1": "rasa",
+   "rank": 49,
+   "dcsCount": 9348,
+   "rvTokens": 47,
+   "forms": [
+    "ráse",
+    "rásam",
+    "rásāḥ"
+   ]
+  },
+  {
+   "slp1": "anya",
+   "rank": 50,
+   "dcsCount": 9324,
+   "rvTokens": 223,
+   "forms": [
+    "anyé",
+    "anyát",
+    "anyáḥ"
+   ]
+  },
+  {
+   "slp1": "para",
+   "rank": 51,
+   "dcsCount": 8813,
+   "rvTokens": 44,
+   "forms": [
+    "páre",
+    "párā",
+    "paré"
+   ]
+  },
+  {
+   "slp1": "karman",
+   "rank": 52,
+   "dcsCount": 8625,
+   "rvTokens": 40,
+   "forms": [
+    "kárma",
+    "kárman",
+    "kármāṇi"
+   ]
+  },
+  {
+   "slp1": "indra",
+   "rank": 53,
+   "dcsCount": 8452,
+   "rvTokens": 2435,
+   "forms": [
+    "índra",
+    "índre",
+    "indra"
+   ]
+  },
+  {
+   "slp1": "sva",
+   "rank": 54,
+   "dcsCount": 8376,
+   "rvTokens": 132,
+   "forms": [
+    "své",
+    "svám",
+    "sváḥ"
+   ]
+  },
+  {
+   "slp1": "han",
+   "rank": 55,
+   "dcsCount": 8257,
+   "rvTokens": 411,
+   "forms": [
+    "hatá",
+    "jahi",
+    "áhan"
+   ]
+  },
+  {
+   "slp1": "brU",
+   "rank": 56,
+   "dcsCount": 7953,
+   "rvTokens": 134,
+   "forms": [
+    "brūhi",
+    "bravat",
+    "abravīt"
+   ]
+  },
+  {
+   "slp1": "sTA",
+   "rank": 57,
+   "dcsCount": 7882,
+   "rvTokens": 407,
+   "forms": [
+    "sthuḥ",
+    "asthāt",
+    "tasthau"
+   ]
+  },
+  {
+   "slp1": "brahman",
+   "rank": 58,
+   "dcsCount": 7813,
+   "rvTokens": 305,
+   "forms": [
+    "bráhma",
+    "brahmā́",
+    "bráhmāṇi"
+   ]
+  },
+  {
+   "slp1": "kAla",
+   "rank": 59,
+   "dcsCount": 7662,
+   "rvTokens": 1,
+   "forms": [
+    "kālé"
+   ]
+  },
+  {
+   "slp1": "bala",
+   "rank": 63,
+   "dcsCount": 7315,
+   "rvTokens": 19,
+   "forms": [
+    "bálam",
+    "bálāt",
+    "bálāni"
+   ]
+  },
+  {
+   "slp1": "rUpa",
+   "rank": 64,
+   "dcsCount": 7308,
+   "rvTokens": 49,
+   "forms": [
+    "rūpé",
+    "rūpám",
+    "rūpā́"
+   ]
+  },
+  {
+   "slp1": "tri",
+   "rank": 65,
+   "dcsCount": 6759,
+   "rvTokens": 161,
+   "forms": [
+    "trī́",
+    "triṣú",
+    "trī́n"
+   ]
+  },
+  {
+   "slp1": "raTa",
+   "rank": 66,
+   "dcsCount": 6437,
+   "rvTokens": 471,
+   "forms": [
+    "ráthe",
+    "rátham",
+    "ráthaḥ"
+   ]
+  },
+  {
+   "slp1": "atra",
+   "rank": 67,
+   "dcsCount": 6130,
+   "rvTokens": 123,
+   "forms": [
+    "átra",
+    "atrám",
+    "atraíḥ"
+   ]
+  },
+  {
+   "slp1": "ah",
+   "rank": 69,
+   "dcsCount": 5988,
+   "rvTokens": 72,
+   "forms": [
+    "āha",
+    "āhuḥ",
+    "āhúḥ"
+   ]
+  },
+  {
+   "slp1": "Pala",
+   "rank": 70,
+   "dcsCount": 5982,
+   "rvTokens": 2,
+   "forms": [
+    "phálam",
+    "phálasya"
+   ]
+  },
+  {
+   "slp1": "saha",
+   "rank": 71,
+   "dcsCount": 5936,
+   "rvTokens": 63,
+   "forms": [
+    "sahá",
+    "sahā́saḥ",
+    "sahā́nām"
+   ]
+  },
+  {
+   "slp1": "iha",
+   "rank": 73,
+   "dcsCount": 5697,
+   "rvTokens": 289,
+   "forms": [
+    "ihá",
+    "ihéha",
+    "ihá +"
+   ]
+  },
+  {
+   "slp1": "manas",
+   "rank": 74,
+   "dcsCount": 5528,
+   "rvTokens": 238,
+   "forms": [
+    "mánaḥ",
+    "mánasā",
+    "mánase"
+   ]
+  },
+  {
+   "slp1": "sama",
+   "rank": 75,
+   "dcsCount": 5474,
+   "rvTokens": 65,
+   "forms": [
+    "same",
+    "samam",
+    "samáḥ"
+   ]
+  },
+  {
+   "slp1": "yuj",
+   "rank": 76,
+   "dcsCount": 5373,
+   "rvTokens": 269,
+   "forms": [
+    "yújam",
+    "yujā́",
+    "yujáḥ"
+   ]
+  },
+  {
+   "slp1": "puruza",
+   "rank": 79,
+   "dcsCount": 5208,
+   "rvTokens": 9,
+   "forms": [
+    "púruṣam",
+    "púruṣaḥ",
+    "púruṣeṇa"
+   ]
+  },
+  {
+   "slp1": "kAma",
+   "rank": 80,
+   "dcsCount": 5167,
+   "rvTokens": 75,
+   "forms": [
+    "kā́me",
+    "kā́mam",
+    "kā́mān"
+   ]
+  },
+  {
+   "slp1": "vara",
+   "rank": 82,
+   "dcsCount": 5055,
+   "rvTokens": 7,
+   "forms": [
+    "varáḥ",
+    "varā́",
+    "varā́ḥ"
+   ]
+  },
+  {
+   "slp1": "guru",
+   "rank": 84,
+   "dcsCount": 4857,
+   "rvTokens": 6,
+   "forms": [
+    "gurú",
+    "gurúḥ",
+    "gurúm"
+   ]
+  },
+  {
+   "slp1": "Sata",
+   "rank": 85,
+   "dcsCount": 4789,
+   "rvTokens": 127,
+   "forms": [
+    "śaté",
+    "śatám",
+    "śatā́"
+   ]
+  },
+  {
+   "slp1": "brAhmaRa",
+   "rank": 87,
+   "dcsCount": 4709,
+   "rvTokens": 15,
+   "forms": [
+    "brāhmaṇáḥ",
+    "brā́hmaṇāt",
+    "brāhmaṇā́ḥ"
+   ]
+  },
+  {
+   "slp1": "yadi",
+   "rank": 88,
+   "dcsCount": 4703,
+   "rvTokens": 76,
+   "forms": [
+    "yádi",
+    "yádi +"
+   ]
+  },
+  {
+   "slp1": "bahu",
+   "rank": 89,
+   "dcsCount": 4668,
+   "rvTokens": 32,
+   "forms": [
+    "bahú",
+    "bahúḥ",
+    "bahóḥ"
+   ]
+  },
+  {
+   "slp1": "jYA",
+   "rank": 90,
+   "dcsCount": 4568,
+   "rvTokens": 71,
+   "forms": [
+    "jānán",
+    "jānīhi",
+    "jānata"
+   ]
+  },
+  {
+   "slp1": "iz",
+   "rank": 92,
+   "dcsCount": 4534,
+   "rvTokens": 239,
+   "forms": [
+    "iṣé",
+    "íṣaḥ",
+    "íṣam"
+   ]
+  },
+  {
+   "slp1": "yoga",
+   "rank": 93,
+   "dcsCount": 4526,
+   "rvTokens": 18,
+   "forms": [
+    "yóge",
+    "yógam",
+    "yógaḥ"
+   ]
+  },
+  {
+   "slp1": "yat",
+   "rank": 94,
+   "dcsCount": 4488,
+   "rvTokens": 51,
+   "forms": [
+    "yetire",
+    "yatate",
+    "yátate"
+   ]
+  },
+  {
+   "slp1": "Bagavant",
+   "rank": 94,
+   "dcsCount": 4488,
+   "rvTokens": 6,
+   "forms": [
+    "bhágavān",
+    "bhágavatī",
+    "bhágavantaḥ"
+   ]
+  },
+  {
+   "slp1": "muni",
+   "rank": 96,
+   "dcsCount": 4416,
+   "rvTokens": 5,
+   "forms": [
+    "múniḥ",
+    "múnīnām",
+    "múnayaḥ"
+   ]
+  },
+  {
+   "slp1": "pUrva",
+   "rank": 97,
+   "dcsCount": 4404,
+   "rvTokens": 117,
+   "forms": [
+    "pū́rve",
+    "pū́rvā",
+    "pū́rvam"
+   ]
+  },
+  {
+   "slp1": "tapas",
+   "rank": 98,
+   "dcsCount": 4400,
+   "rvTokens": 21,
+   "forms": [
+    "tápaḥ",
+    "tápasā",
+    "tápase"
+   ]
+  },
+  {
+   "slp1": "go",
+   "rank": 99,
+   "dcsCount": 4319,
+   "rvTokens": 543,
+   "forms": [
+    "góḥ",
+    "gā́ḥ",
+    "góṣu"
+   ]
+  },
+  {
+   "slp1": "SrI",
+   "rank": 104,
+   "dcsCount": 4152,
+   "rvTokens": 114,
+   "forms": [
+    "śriyé",
+    "śrī́ḥ",
+    "śríyam"
+   ]
+  },
+  {
+   "slp1": "sahasra",
+   "rank": 105,
+   "dcsCount": 4134,
+   "rvTokens": 134,
+   "forms": [
+    "sahásrā",
+    "sahásre",
+    "sahásram"
+   ]
+  },
+  {
+   "slp1": "parama",
+   "rank": 106,
+   "dcsCount": 4128,
+   "rvTokens": 74,
+   "forms": [
+    "paramé",
+    "paramám",
+    "paramā́"
+   ]
+  },
+  {
+   "slp1": "uttama",
+   "rank": 107,
+   "dcsCount": 4123,
+   "rvTokens": 39,
+   "forms": [
+    "uttamé",
+    "uttamám",
+    "uttamáḥ"
+   ]
+  },
+  {
+   "slp1": "Sara",
+   "rank": 109,
+   "dcsCount": 4026,
+   "rvTokens": 4,
+   "forms": [
+    "śára",
+    "śarásya",
+    "śarā́saḥ"
+   ]
+  },
+  {
+   "slp1": "muKa",
+   "rank": 110,
+   "dcsCount": 4007,
+   "rvTokens": 6,
+   "forms": [
+    "múkhā",
+    "múkhe",
+    "múkham"
+   ]
+  },
+  {
+   "slp1": "priya",
+   "rank": 113,
+   "dcsCount": 3968,
+   "rvTokens": 214,
+   "forms": [
+    "priyé",
+    "priyám",
+    "priyáḥ"
+   ]
+  },
+  {
+   "slp1": "smf",
+   "rank": 114,
+   "dcsCount": 3966,
+   "rvTokens": 2,
+   "forms": [
+    "smarethām",
+    "smárāthaḥ"
+   ]
+  },
+  {
+   "slp1": "anta",
+   "rank": 115,
+   "dcsCount": 3936,
+   "rvTokens": 43,
+   "forms": [
+    "ántā",
+    "ánte",
+    "ántāt"
+   ]
+  },
+  {
+   "slp1": "yatra",
+   "rank": 118,
+   "dcsCount": 3831,
+   "rvTokens": 124,
+   "forms": [
+    "yátra",
+    "yátra +",
+    "yátra-yatra"
+   ]
+  },
+  {
+   "slp1": "namas",
+   "rank": 119,
+   "dcsCount": 3814,
+   "rvTokens": 182,
+   "forms": [
+    "námaḥ",
+    "námasā",
+    "námasi"
+   ]
+  },
+  {
+   "slp1": "vat",
+   "rank": 122,
+   "dcsCount": 3773,
+   "rvTokens": 8,
+   "forms": [
+    "vatema",
+    "vātaya",
+    "vátantaḥ"
+   ]
+  },
+  {
+   "slp1": "yajYa",
+   "rank": 123,
+   "dcsCount": 3743,
+   "rvTokens": 457,
+   "forms": [
+    "yajñé",
+    "yajñám",
+    "yajñáḥ"
+   ]
+  },
+  {
+   "slp1": "strI",
+   "rank": 124,
+   "dcsCount": 3737,
+   "rvTokens": 11,
+   "forms": [
+    "strī́",
+    "stríyaḥ",
+    "stríyam"
+   ]
+  },
+  {
+   "slp1": "pApa",
+   "rank": 125,
+   "dcsCount": 3733,
+   "rvTokens": 12,
+   "forms": [
+    "pāpám",
+    "pāpáḥ",
+    "pāpáyā"
+   ]
+  },
+  {
+   "slp1": "kfzRa",
+   "rank": 128,
+   "dcsCount": 3716,
+   "rvTokens": 47,
+   "forms": [
+    "kr̥ṣṇé",
+    "kr̥ṣṇā́",
+    "kr̥ṣṇám"
+   ]
+  },
+  {
+   "slp1": "satya",
+   "rank": 130,
+   "dcsCount": 3694,
+   "rvTokens": 137,
+   "forms": [
+    "satya",
+    "satyé",
+    "satyáḥ"
+   ]
+  },
+  {
+   "slp1": "ha",
+   "rank": 131,
+   "dcsCount": 3659,
+   "rvTokens": 184,
+   "forms": [
+    "ha",
+    "ha +"
+   ]
+  },
+  {
+   "slp1": "vana",
+   "rank": 132,
+   "dcsCount": 3658,
+   "rvTokens": 107,
+   "forms": [
+    "vánā",
+    "váne",
+    "vánāt"
+   ]
+  },
+  {
+   "slp1": "vAta",
+   "rank": 133,
+   "dcsCount": 3634,
+   "rvTokens": 96,
+   "forms": [
+    "vāta",
+    "vā́tā",
+    "vā́te"
+   ]
+  },
+  {
+   "slp1": "rAma",
+   "rank": 134,
+   "dcsCount": 3631,
+   "rvTokens": 2,
+   "forms": [
+    "rāmé",
+    "rāmám"
+   ]
+  },
+  {
+   "slp1": "ati",
+   "rank": 135,
+   "dcsCount": 3619,
+   "rvTokens": 188,
+   "forms": [
+    "áti"
+   ]
+  },
+  {
+   "slp1": "maDya",
+   "rank": 136,
+   "dcsCount": 3601,
+   "rvTokens": 38,
+   "forms": [
+    "mádhye",
+    "mádhyam",
+    "mádhyāt"
+   ]
+  },
+  {
+   "slp1": "vIra",
+   "rank": 138,
+   "dcsCount": 3549,
+   "rvTokens": 136,
+   "forms": [
+    "vīra",
+    "vīráḥ",
+    "vīrám"
+   ]
+  },
+  {
+   "slp1": "kaTam",
+   "rank": 139,
+   "dcsCount": 3543,
+   "rvTokens": 2,
+   "forms": [
+    "kathám"
+   ]
+  },
+  {
+   "slp1": "jana",
+   "rank": 140,
+   "dcsCount": 3519,
+   "rvTokens": 327,
+   "forms": [
+    "jáne",
+    "jánā",
+    "jánam"
+   ]
+  },
+  {
+   "slp1": "suKa",
+   "rank": 141,
+   "dcsCount": 3515,
+   "rvTokens": 11,
+   "forms": [
+    "sukhé",
+    "sukhám",
+    "sukháḥ"
+   ]
+  },
+  {
+   "slp1": "aNga",
+   "rank": 142,
+   "dcsCount": 3490,
+   "rvTokens": 51,
+   "forms": [
+    "aṅgá",
+    "áṅgam",
+    "áṅgaiḥ"
+   ]
+  },
+  {
+   "slp1": "tejas",
+   "rank": 143,
+   "dcsCount": 3472,
+   "rvTokens": 7,
+   "forms": [
+    "téjaḥ",
+    "téjase",
+    "téjasā"
+   ]
+  },
+  {
+   "slp1": "pati",
+   "rank": 145,
+   "dcsCount": 3430,
+   "rvTokens": 276,
+   "forms": [
+    "patī",
+    "pate",
+    "pátī"
+   ]
+  },
+  {
+   "slp1": "divya",
+   "rank": 146,
+   "dcsCount": 3424,
+   "rvTokens": 100,
+   "forms": [
+    "divyé",
+    "divyám",
+    "divyā́"
+   ]
+  },
+  {
+   "slp1": "kara",
+   "rank": 148,
+   "dcsCount": 3384,
+   "rvTokens": 2,
+   "forms": [
+    "karā́",
+    "karéṇa"
+   ]
+  },
+  {
+   "slp1": "varRa",
+   "rank": 150,
+   "dcsCount": 3299,
+   "rvTokens": 23,
+   "forms": [
+    "várṇe",
+    "várṇam",
+    "várṇau"
+   ]
+  },
+  {
+   "slp1": "prARa",
+   "rank": 151,
+   "dcsCount": 3285,
+   "rvTokens": 5,
+   "forms": [
+    "prāṇáḥ",
+    "prāṇám",
+    "prāṇā́t"
+   ]
+  },
+  {
+   "slp1": "pAda",
+   "rank": 154,
+   "dcsCount": 3273,
+   "rvTokens": 4,
+   "forms": [
+    "pā́dāḥ",
+    "pā́daḥ"
+   ]
+  },
+  {
+   "slp1": "adya",
+   "rank": 156,
+   "dcsCount": 3268,
+   "rvTokens": 217,
+   "forms": [
+    "adyá",
+    "adyá +",
+    "adyā́dya +"
+   ]
+  },
+  {
+   "slp1": "A",
+   "rank": 157,
+   "dcsCount": 3267,
+   "rvTokens": 2843,
+   "forms": [
+    "ā́"
+   ]
+  },
+  {
+   "slp1": "devI",
+   "rank": 159,
+   "dcsCount": 3258,
+   "rvTokens": 162,
+   "forms": [
+    "devi",
+    "devī",
+    "dévi"
+   ]
+  },
+  {
+   "slp1": "antara",
+   "rank": 160,
+   "dcsCount": 3224,
+   "rvTokens": 18,
+   "forms": [
+    "ántarā",
+    "ántaram",
+    "ántaraḥ"
+   ]
+  },
+  {
+   "slp1": "atas",
+   "rank": 161,
+   "dcsCount": 3217,
+   "rvTokens": 61,
+   "forms": [
+    "átas"
+   ]
+  },
+  {
+   "slp1": "muc",
+   "rank": 162,
+   "dcsCount": 3213,
+   "rvTokens": 87,
+   "forms": [
+    "muca +",
+    "mumoktu",
+    "múcyase"
+   ]
+  },
+  {
+   "slp1": "catur",
+   "rank": 163,
+   "dcsCount": 3181,
+   "rvTokens": 37,
+   "forms": [
+    "catúraḥ",
+    "cátasraḥ",
+    "catvā́ri"
+   ]
+  },
+  {
+   "slp1": "mUla",
+   "rank": 164,
+   "dcsCount": 3180,
+   "rvTokens": 1,
+   "forms": [
+    "mū́lam"
+   ]
+  },
+  {
+   "slp1": "vAc",
+   "rank": 166,
+   "dcsCount": 3128,
+   "rvTokens": 131,
+   "forms": [
+    "vā́k",
+    "vācí",
+    "vācáḥ"
+   ]
+  },
+  {
+   "slp1": "mA",
+   "rank": 167,
+   "dcsCount": 3119,
+   "rvTokens": 413,
+   "forms": [
+    "mā́"
+   ]
+  },
+  {
+   "slp1": "vipra",
+   "rank": 168,
+   "dcsCount": 3117,
+   "rvTokens": 245,
+   "forms": [
+    "vipra",
+    "vípraḥ",
+    "víprāḥ"
+   ]
+  },
+  {
+   "slp1": "laB",
+   "rank": 170,
+   "dcsCount": 3103,
+   "rvTokens": 3,
+   "forms": [
+    "ā́labdham",
+    "ālebhānā́t",
+    "anvā́lebhire"
+   ]
+  },
+  {
+   "slp1": "karRa",
+   "rank": 178,
+   "dcsCount": 3044,
+   "rvTokens": 16,
+   "forms": [
+    "kárṇā",
+    "kárṇe",
+    "kárṇau"
+   ]
+  },
+  {
+   "slp1": "Baya",
+   "rank": 181,
+   "dcsCount": 2983,
+   "rvTokens": 10,
+   "forms": [
+    "bhayé",
+    "bhayám",
+    "bhayā́"
+   ]
+  },
+  {
+   "slp1": "gaRa",
+   "rank": 182,
+   "dcsCount": 2980,
+   "rvTokens": 41,
+   "forms": [
+    "gaṇé",
+    "gaṇám",
+    "gaṇáḥ"
+   ]
+  },
+  {
+   "slp1": "Siva",
+   "rank": 185,
+   "dcsCount": 2958,
+   "rvTokens": 51,
+   "forms": [
+    "śivé",
+    "śiva",
+    "śiváḥ"
+   ]
+  },
+  {
+   "slp1": "varza",
+   "rank": 186,
+   "dcsCount": 2953,
+   "rvTokens": 2,
+   "forms": [
+    "varṣám"
+   ]
+  },
+  {
+   "slp1": "sadA",
+   "rank": 189,
+   "dcsCount": 2946,
+   "rvTokens": 119,
+   "forms": [
+    "sádā"
+   ]
+  },
+  {
+   "slp1": "puRya",
+   "rank": 191,
+   "dcsCount": 2922,
+   "rvTokens": 1,
+   "forms": [
+    "púṇyam"
+   ]
+  },
+  {
+   "slp1": "pada",
+   "rank": 192,
+   "dcsCount": 2913,
+   "rvTokens": 108,
+   "forms": [
+    "padé",
+    "padám",
+    "padā́"
+   ]
+  },
+  {
+   "slp1": "viSva",
+   "rank": 194,
+   "dcsCount": 2891,
+   "rvTokens": 1121,
+   "forms": [
+    "víśve",
+    "víśvā",
+    "víśvāḥ"
+   ]
+  },
+  {
+   "slp1": "anna",
+   "rank": 194,
+   "dcsCount": 2891,
+   "rvTokens": 48,
+   "forms": [
+    "ánnā",
+    "ánne",
+    "ánnam"
+   ]
+  },
+  {
+   "slp1": "BAga",
+   "rank": 196,
+   "dcsCount": 2886,
+   "rvTokens": 60,
+   "forms": [
+    "bhāgé",
+    "bhāgám",
+    "bhāgáḥ"
+   ]
+  },
+  {
+   "slp1": "mantra",
+   "rank": 199,
+   "dcsCount": 2864,
+   "rvTokens": 21,
+   "forms": [
+    "mántram",
+    "mántrān",
+    "mántraḥ"
+   ]
+  },
+  {
+   "slp1": "soma",
+   "rank": 201,
+   "dcsCount": 2841,
+   "rvTokens": 977,
+   "forms": [
+    "sóme",
+    "soma",
+    "sóma"
+   ]
+  },
+  {
+   "slp1": "vacana",
+   "rank": 202,
+   "dcsCount": 2837,
+   "rvTokens": 3,
+   "forms": [
+    "vacanásya",
+    "vacanébhiḥ"
+   ]
+  },
+  {
+   "slp1": "gfha",
+   "rank": 205,
+   "dcsCount": 2825,
+   "rvTokens": 69,
+   "forms": [
+    "gr̥hé",
+    "gr̥hám",
+    "gr̥háḥ"
+   ]
+  },
+  {
+   "slp1": "vizRu",
+   "rank": 207,
+   "dcsCount": 2819,
+   "rvTokens": 98,
+   "forms": [
+    "víṣṇo",
+    "viṣṇo",
+    "víṣṇuḥ"
+   ]
+  },
+  {
+   "slp1": "bAhu",
+   "rank": 209,
+   "dcsCount": 2781,
+   "rvTokens": 65,
+   "forms": [
+    "bāhū́",
+    "bāhúm",
+    "bāhvóḥ"
+   ]
+  },
+  {
+   "slp1": "SarIra",
+   "rank": 213,
+   "dcsCount": 2751,
+   "rvTokens": 7,
+   "forms": [
+    "śárīrā",
+    "śárīram",
+    "śárīraiḥ"
+   ]
+  },
+  {
+   "slp1": "uttara",
+   "rank": 215,
+   "dcsCount": 2732,
+   "rvTokens": 63,
+   "forms": [
+    "úttare",
+    "úttarā",
+    "uttare"
+   ]
+  },
+  {
+   "slp1": "SrezWa",
+   "rank": 216,
+   "dcsCount": 2725,
+   "rvTokens": 31,
+   "forms": [
+    "śréṣṭhā",
+    "śréṣṭhe",
+    "śréṣṭhaḥ"
+   ]
+  },
+  {
+   "slp1": "hari",
+   "rank": 217,
+   "dcsCount": 2715,
+   "rvTokens": 271,
+   "forms": [
+    "hárī",
+    "hare",
+    "háre"
+   ]
+  },
+  {
+   "slp1": "nAman",
+   "rank": 222,
+   "dcsCount": 2667,
+   "rvTokens": 117,
+   "forms": [
+    "nā́ma",
+    "nā́mnā",
+    "nā́māni"
+   ]
+  },
+  {
+   "slp1": "indriya",
+   "rank": 224,
+   "dcsCount": 2664,
+   "rvTokens": 41,
+   "forms": [
+    "indriyám",
+    "indriyáḥ",
+    "indriyaíḥ"
+   ]
+  },
+  {
+   "slp1": "Siras",
+   "rank": 225,
+   "dcsCount": 2655,
+   "rvTokens": 46,
+   "forms": [
+    "śíraḥ",
+    "śīrṣé",
+    "śīrṣā́"
+   ]
+  },
+  {
+   "slp1": "BUmi",
+   "rank": 229,
+   "dcsCount": 2592,
+   "rvTokens": 53,
+   "forms": [
+    "bhūme",
+    "bhū́mī",
+    "bhū́mim"
+   ]
+  },
+  {
+   "slp1": "ap",
+   "rank": 230,
+   "dcsCount": 2589,
+   "rvTokens": 547,
+   "forms": [
+    "apáḥ",
+    "apsú",
+    "āpaḥ"
+   ]
+  },
+  {
+   "slp1": "BArata",
+   "rank": 231,
+   "dcsCount": 2581,
+   "rvTokens": 7,
+   "forms": [
+    "bhārata",
+    "bhā́ratā",
+    "bhā́ratam"
+   ]
+  },
+  {
+   "slp1": "sma",
+   "rank": 232,
+   "dcsCount": 2566,
+   "rvTokens": 108,
+   "forms": [
+    "sma",
+    "sma +"
+   ]
+  },
+  {
+   "slp1": "Sakti",
+   "rank": 233,
+   "dcsCount": 2557,
+   "rvTokens": 14,
+   "forms": [
+    "śáktī",
+    "śaktíḥ",
+    "śaktím"
+   ]
+  },
+  {
+   "slp1": "vAyu",
+   "rank": 235,
+   "dcsCount": 2551,
+   "rvTokens": 137,
+   "forms": [
+    "vāyo",
+    "vā́yo",
+    "vāyóḥ"
+   ]
+  },
+  {
+   "slp1": "sUrya",
+   "rank": 236,
+   "dcsCount": 2547,
+   "rvTokens": 381,
+   "forms": [
+    "sūrya",
+    "sū́rye",
+    "sū́ryam"
+   ]
+  },
+  {
+   "slp1": "Buj",
+   "rank": 236,
+   "dcsCount": 2547,
+   "rvTokens": 20,
+   "forms": [
+    "bhujé",
+    "bhújam",
+    "bhújaḥ"
+   ]
+  },
+  {
+   "slp1": "div",
+   "rank": 238,
+   "dcsCount": 2546,
+   "rvTokens": 1008,
+   "forms": [
+    "diví",
+    "diváḥ",
+    "dyaúḥ"
+   ]
+  },
+  {
+   "slp1": "ganDa",
+   "rank": 238,
+   "dcsCount": 2546,
+   "rvTokens": 1,
+   "forms": [
+    "gandháḥ"
+   ]
+  },
+  {
+   "slp1": "viza",
+   "rank": 240,
+   "dcsCount": 2540,
+   "rvTokens": 17,
+   "forms": [
+    "viṣám",
+    "víṣaḥ",
+    "viṣéṇa"
+   ]
+  },
+  {
+   "slp1": "diS",
+   "rank": 244,
+   "dcsCount": 2530,
+   "rvTokens": 45,
+   "forms": [
+    "díśaḥ",
+    "diśā́",
+    "díśam"
+   ]
+  },
+  {
+   "slp1": "veda",
+   "rank": 245,
+   "dcsCount": 2516,
+   "rvTokens": 1,
+   "forms": [
+    "védena"
+   ]
+  },
+  {
+   "slp1": "svayam",
+   "rank": 247,
+   "dcsCount": 2508,
+   "rvTokens": 29,
+   "forms": [
+    "svayám"
+   ]
+  },
+  {
+   "slp1": "aSva",
+   "rank": 249,
+   "dcsCount": 2500,
+   "rvTokens": 238,
+   "forms": [
+    "áśvam",
+    "áśvaḥ",
+    "áśvān"
+   ]
+  },
+  {
+   "slp1": "rudra",
+   "rank": 250,
+   "dcsCount": 2498,
+   "rvTokens": 135,
+   "forms": [
+    "rudra",
+    "rúdrāḥ",
+    "rudráḥ"
+   ]
+  },
+  {
+   "slp1": "pfTivI",
+   "rank": 251,
+   "dcsCount": 2494,
+   "rvTokens": 320,
+   "forms": [
+    "pr̥thivi",
+    "pr̥thivī",
+    "pŕ̥thivi"
+   ]
+  },
+  {
+   "slp1": "raRa",
+   "rank": 252,
+   "dcsCount": 2491,
+   "rvTokens": 26,
+   "forms": [
+    "ráṇe",
+    "ráṇāḥ",
+    "ráṇam"
+   ]
+  },
+  {
+   "slp1": "maDu",
+   "rank": 253,
+   "dcsCount": 2490,
+   "rvTokens": 254,
+   "forms": [
+    "mádhu",
+    "mádho",
+    "madho"
+   ]
+  },
+  {
+   "slp1": "apara",
+   "rank": 254,
+   "dcsCount": 2478,
+   "rvTokens": 22,
+   "forms": [
+    "áparā",
+    "ápare",
+    "áparam"
+   ]
+  },
+  {
+   "slp1": "tIrTa",
+   "rank": 255,
+   "dcsCount": 2467,
+   "rvTokens": 8,
+   "forms": [
+    "tīrthé",
+    "tīrthám"
+   ]
+  },
+  {
+   "slp1": "gati",
+   "rank": 256,
+   "dcsCount": 2445,
+   "rvTokens": 1,
+   "forms": [
+    "gátim"
+   ]
+  },
+  {
+   "slp1": "uzRa",
+   "rank": 257,
+   "dcsCount": 2437,
+   "rvTokens": 1,
+   "forms": [
+    "uṣṇám"
+   ]
+  },
+  {
+   "slp1": "yadA",
+   "rank": 260,
+   "dcsCount": 2425,
+   "rvTokens": 40,
+   "forms": [
+    "yadā́"
+   ]
+  },
+  {
+   "slp1": "hetu",
+   "rank": 262,
+   "dcsCount": 2415,
+   "rvTokens": 1,
+   "forms": [
+    "hetóḥ"
+   ]
+  },
+  {
+   "slp1": "kzip",
+   "rank": 264,
+   "dcsCount": 2391,
+   "rvTokens": 22,
+   "forms": [
+    "kṣipa",
+    "kṣípaḥ",
+    "kṣipát"
+   ]
+  },
+  {
+   "slp1": "mf",
+   "rank": 265,
+   "dcsCount": 2384,
+   "rvTokens": 21,
+   "forms": [
+    "marai",
+    "mr̥tám",
+    "marāti"
+   ]
+  },
+  {
+   "slp1": "BIma",
+   "rank": 267,
+   "dcsCount": 2373,
+   "rvTokens": 31,
+   "forms": [
+    "bhīmáḥ",
+    "bhīmám",
+    "bhīmā́"
+   ]
+  },
+  {
+   "slp1": "Gfta",
+   "rank": 269,
+   "dcsCount": 2351,
+   "rvTokens": 123,
+   "forms": [
+    "ghr̥té",
+    "ghr̥tám",
+    "ghr̥téna"
+   ]
+  },
+  {
+   "slp1": "kzaya",
+   "rank": 270,
+   "dcsCount": 2346,
+   "rvTokens": 70,
+   "forms": [
+    "kṣáye",
+    "kṣáyam",
+    "kṣáyaḥ"
+   ]
+  },
+  {
+   "slp1": "darSana",
+   "rank": 272,
+   "dcsCount": 2334,
+   "rvTokens": 1,
+   "forms": [
+    "dárśanāya"
+   ]
+  },
+  {
+   "slp1": "aMSa",
+   "rank": 273,
+   "dcsCount": 2323,
+   "rvTokens": 11,
+   "forms": [
+    "áṁśā",
+    "áṁśam",
+    "áṁśaḥ"
+   ]
+  },
+  {
+   "slp1": "purA",
+   "rank": 275,
+   "dcsCount": 2316,
+   "rvTokens": 62,
+   "forms": [
+    "purā́"
+   ]
+  },
+  {
+   "slp1": "vrata",
+   "rank": 277,
+   "dcsCount": 2313,
+   "rvTokens": 131,
+   "forms": [
+    "vraté",
+    "vratám",
+    "vratā́"
+   ]
+  },
+  {
+   "slp1": "hasta",
+   "rank": 278,
+   "dcsCount": 2309,
+   "rvTokens": 51,
+   "forms": [
+    "háste",
+    "hástā",
+    "hástaḥ"
+   ]
+  },
+  {
+   "slp1": "tyaj",
+   "rank": 281,
+   "dcsCount": 2300,
+   "rvTokens": 1,
+   "forms": [
+    "tityā́ja"
+   ]
+  },
+  {
+   "slp1": "vft",
+   "rank": 284,
+   "dcsCount": 2265,
+   "rvTokens": 187,
+   "forms": [
+    "vartatām",
+    "vāvr̥tuḥ",
+    "nivártat"
+   ]
+  },
+  {
+   "slp1": "ahar",
+   "rank": 285,
+   "dcsCount": 2257,
+   "rvTokens": 142,
+   "forms": [
+    "áhā",
+    "áhan",
+    "áhāni"
+   ]
+  },
+  {
+   "slp1": "Dana",
+   "rank": 287,
+   "dcsCount": 2256,
+   "rvTokens": 110,
+   "forms": [
+    "dháne",
+    "dhánā",
+    "dhánam"
+   ]
+  },
+  {
+   "slp1": "fzaBa",
+   "rank": 288,
+   "dcsCount": 2255,
+   "rvTokens": 4,
+   "forms": [
+    "r̥ṣabhám",
+    "r̥ṣabhásya",
+    "r̥ṣabhā́saḥ"
+   ]
+  },
+  {
+   "slp1": "vajra",
+   "rank": 289,
+   "dcsCount": 2235,
+   "rvTokens": 138,
+   "forms": [
+    "vajra",
+    "vájram",
+    "vájraḥ"
+   ]
+  },
+  {
+   "slp1": "Gora",
+   "rank": 290,
+   "dcsCount": 2223,
+   "rvTokens": 16,
+   "forms": [
+    "ghore",
+    "ghorám",
+    "ghorā́"
+   ]
+  },
+  {
+   "slp1": "kzIra",
+   "rank": 291,
+   "dcsCount": 2222,
+   "rvTokens": 5,
+   "forms": [
+    "kṣīrám",
+    "kṣīréṇa",
+    "kṣīraíḥ"
+   ]
+  },
+  {
+   "slp1": "vas",
+   "rank": 292,
+   "dcsCount": 2220,
+   "rvTokens": 1,
+   "forms": [
+    "vasā́m"
+   ]
+  },
+  {
+   "slp1": "prajA",
+   "rank": 293,
+   "dcsCount": 2219,
+   "rvTokens": 70,
+   "forms": [
+    "prajā́",
+    "prajáyā",
+    "prajā́ḥ"
+   ]
+  },
+  {
+   "slp1": "agra",
+   "rank": 295,
+   "dcsCount": 2216,
+   "rvTokens": 71,
+   "forms": [
+    "ágre",
+    "ágrā",
+    "ágram"
+   ]
+  },
+  {
+   "slp1": "banD",
+   "rank": 296,
+   "dcsCount": 2210,
+   "rvTokens": 18,
+   "forms": [
+    "baddháḥ",
+    "baddhám",
+    "baddhā́n"
+   ]
+  },
+  {
+   "slp1": "arh",
+   "rank": 297,
+   "dcsCount": 2205,
+   "rvTokens": 25,
+   "forms": [
+    "árhan",
+    "árhāt",
+    "árhate"
+   ]
+  },
+  {
+   "slp1": "dAna",
+   "rank": 298,
+   "dcsCount": 2197,
+   "rvTokens": 23,
+   "forms": [
+    "dānám",
+    "dānáḥ",
+    "dānā́ḥ"
+   ]
+  },
+  {
+   "slp1": "vacas",
+   "rank": 300,
+   "dcsCount": 2182,
+   "rvTokens": 100,
+   "forms": [
+    "vácaḥ",
+    "vácasā",
+    "vácase"
+   ]
+  },
+  {
+   "slp1": "sTAna",
+   "rank": 302,
+   "dcsCount": 2175,
+   "rvTokens": 4,
+   "forms": [
+    "sthā́nam",
+    "sthā́nāni"
+   ]
+  },
+  {
+   "slp1": "bIja",
+   "rank": 303,
+   "dcsCount": 2169,
+   "rvTokens": 4,
+   "forms": [
+    "bī́jam"
+   ]
+  },
+  {
+   "slp1": "praBu",
+   "rank": 306,
+   "dcsCount": 2146,
+   "rvTokens": 9,
+   "forms": [
+    "prabhú",
+    "prabhúḥ",
+    "prabhúm"
+   ]
+  },
+  {
+   "slp1": "arDa",
+   "rank": 307,
+   "dcsCount": 2133,
+   "rvTokens": 14,
+   "forms": [
+    "árdhe",
+    "árdham",
+    "árdhau"
+   ]
+  },
+  {
+   "slp1": "ratna",
+   "rank": 309,
+   "dcsCount": 2126,
+   "rvTokens": 69,
+   "forms": [
+    "rátnā",
+    "rátnam",
+    "rátnāni"
+   ]
+  },
+  {
+   "slp1": "zaz",
+   "rank": 313,
+   "dcsCount": 2105,
+   "rvTokens": 13,
+   "forms": [
+    "ṣáṭ",
+    "ṣaṭ",
+    "ṣaḍbhíḥ"
+   ]
+  },
+  {
+   "slp1": "SuD",
+   "rank": 315,
+   "dcsCount": 2101,
+   "rvTokens": 20,
+   "forms": [
+    "śuddhám",
+    "śuddháḥ",
+    "śuddhā́ḥ"
+   ]
+  },
+  {
+   "slp1": "rAjya",
+   "rank": 315,
+   "dcsCount": 2101,
+   "rvTokens": 1,
+   "forms": [
+    "rājyám"
+   ]
+  },
+  {
+   "slp1": "garBa",
+   "rank": 318,
+   "dcsCount": 2072,
+   "rvTokens": 97,
+   "forms": [
+    "gárbhe",
+    "garbha",
+    "gárbhaḥ"
+   ]
+  },
+  {
+   "slp1": "Barata",
+   "rank": 318,
+   "dcsCount": 2072,
+   "rvTokens": 10,
+   "forms": [
+    "bharatám",
+    "bharatáḥ",
+    "bharatā́ḥ"
+   ]
+  },
+  {
+   "slp1": "prati",
+   "rank": 321,
+   "dcsCount": 2063,
+   "rvTokens": 247,
+   "forms": [
+    "práti"
+   ]
+  },
+  {
+   "slp1": "droRa",
+   "rank": 323,
+   "dcsCount": 2048,
+   "rvTokens": 13,
+   "forms": [
+    "dróṇe",
+    "dróṇā",
+    "dróṇam"
+   ]
+  },
+  {
+   "slp1": "yuD",
+   "rank": 326,
+   "dcsCount": 2026,
+   "rvTokens": 88,
+   "forms": [
+    "yudhí",
+    "yudhé",
+    "yutsú"
+   ]
+  },
+  {
+   "slp1": "dah",
+   "rank": 329,
+   "dcsCount": 2012,
+   "rvTokens": 41,
+   "forms": [
+    "daha",
+    "dhāk",
+    "dakṣi"
+   ]
+  },
+  {
+   "slp1": "arjuna",
+   "rank": 329,
+   "dcsCount": 2012,
+   "rvTokens": 11,
+   "forms": [
+    "arjuni",
+    "árjunā",
+    "arjuna"
+   ]
+  },
+  {
+   "slp1": "mAMsa",
+   "rank": 332,
+   "dcsCount": 2002,
+   "rvTokens": 1,
+   "forms": [
+    "māṁsám"
+   ]
+  },
+  {
+   "slp1": "viS",
+   "rank": 333,
+   "dcsCount": 1998,
+   "rvTokens": 304,
+   "forms": [
+    "víṭ",
+    "viśa",
+    "viśé"
+   ]
+  },
+  {
+   "slp1": "mAsa",
+   "rank": 335,
+   "dcsCount": 1983,
+   "rvTokens": 8,
+   "forms": [
+    "mā́sān",
+    "mā́sāḥ",
+    "mā́saḥ"
+   ]
+  },
+  {
+   "slp1": "paSu",
+   "rank": 342,
+   "dcsCount": 1936,
+   "rvTokens": 59,
+   "forms": [
+    "páśu",
+    "paśúm",
+    "páśve"
+   ]
+  },
+  {
+   "slp1": "svarga",
+   "rank": 344,
+   "dcsCount": 1917,
+   "rvTokens": 1,
+   "forms": [
+    "svargé"
+   ]
+  },
+  {
+   "slp1": "asura",
+   "rank": 346,
+   "dcsCount": 1914,
+   "rvTokens": 71,
+   "forms": [
+    "asura",
+    "asurā",
+    "ásurā"
+   ]
+  },
+  {
+   "slp1": "heman",
+   "rank": 348,
+   "dcsCount": 1911,
+   "rvTokens": 1,
+   "forms": [
+    "hemánā"
+   ]
+  },
+  {
+   "slp1": "SIta",
+   "rank": 351,
+   "dcsCount": 1890,
+   "rvTokens": 1,
+   "forms": [
+    "śītā́ḥ"
+   ]
+  },
+  {
+   "slp1": "Cid",
+   "rank": 352,
+   "dcsCount": 1889,
+   "rvTokens": 5,
+   "forms": [
+    "chedi",
+    "chedma",
+    "áchedi"
+   ]
+  },
+  {
+   "slp1": "yaj",
+   "rank": 353,
+   "dcsCount": 1887,
+   "rvTokens": 291,
+   "forms": [
+    "yaja",
+    "yákṣi",
+    "yájati"
+   ]
+  },
+  {
+   "slp1": "Bid",
+   "rank": 354,
+   "dcsCount": 1875,
+   "rvTokens": 71,
+   "forms": [
+    "bhet",
+    "abhet",
+    "bhinát"
+   ]
+  },
+  {
+   "slp1": "jIv",
+   "rank": 355,
+   "dcsCount": 1868,
+   "rvTokens": 69,
+   "forms": [
+    "jīvāt",
+    "jīváse",
+    "jīvati"
+   ]
+  },
+  {
+   "slp1": "Sakra",
+   "rank": 357,
+   "dcsCount": 1859,
+   "rvTokens": 45,
+   "forms": [
+    "śakra",
+    "śakrā",
+    "śakráḥ"
+   ]
+  },
+  {
+   "slp1": "kanyA",
+   "rank": 358,
+   "dcsCount": 1853,
+   "rvTokens": 17,
+   "forms": [
+    "kanyā̀",
+    "kanyā̀ḥ",
+    "kanī́nām"
+   ]
+  },
+  {
+   "slp1": "mftyu",
+   "rank": 359,
+   "dcsCount": 1850,
+   "rvTokens": 16,
+   "forms": [
+    "mr̥tyo",
+    "mr̥tyóḥ",
+    "mr̥tyúm"
+   ]
+  },
+  {
+   "slp1": "pac",
+   "rank": 360,
+   "dcsCount": 1844,
+   "rvTokens": 25,
+   "forms": [
+    "pece",
+    "pácāt",
+    "pácan"
+   ]
+  },
+  {
+   "slp1": "sfj",
+   "rank": 361,
+   "dcsCount": 1840,
+   "rvTokens": 222,
+   "forms": [
+    "sr̥ja",
+    "sr̥já",
+    "ásarji"
+   ]
+  },
+  {
+   "slp1": "uta",
+   "rank": 363,
+   "dcsCount": 1835,
+   "rvTokens": 752,
+   "forms": [
+    "utá"
+   ]
+  },
+  {
+   "slp1": "siD",
+   "rank": 364,
+   "dcsCount": 1815,
+   "rvTokens": 72,
+   "forms": [
+    "sādhan",
+    "siṣedha",
+    "sedhati"
+   ]
+  },
+  {
+   "slp1": "nI",
+   "rank": 365,
+   "dcsCount": 1809,
+   "rvTokens": 167,
+   "forms": [
+    "neṣi",
+    "naya",
+    "nayat"
+   ]
+  },
+  {
+   "slp1": "yatas",
+   "rank": 366,
+   "dcsCount": 1806,
+   "rvTokens": 28,
+   "forms": [
+    "yátas"
+   ]
+  },
+  {
+   "slp1": "Beda",
+   "rank": 368,
+   "dcsCount": 1796,
+   "rvTokens": 5,
+   "forms": [
+    "bhedám",
+    "bhedaú",
+    "bhedásya"
+   ]
+  },
+  {
+   "slp1": "parvata",
+   "rank": 369,
+   "dcsCount": 1793,
+   "rvTokens": 122,
+   "forms": [
+    "párvate",
+    "párvatān",
+    "párvataḥ"
+   ]
+  },
+  {
+   "slp1": "Soka",
+   "rank": 370,
+   "dcsCount": 1781,
+   "rvTokens": 5,
+   "forms": [
+    "śókāḥ",
+    "śókaḥ",
+    "śókam"
+   ]
+  },
+  {
+   "slp1": "Kalu",
+   "rank": 374,
+   "dcsCount": 1770,
+   "rvTokens": 1,
+   "forms": [
+    "khálu"
+   ]
+  },
+  {
+   "slp1": "daRqa",
+   "rank": 376,
+   "dcsCount": 1764,
+   "rvTokens": 1,
+   "forms": [
+    "daṇḍā́ḥ"
+   ]
+  },
+  {
+   "slp1": "dakziRa",
+   "rank": 378,
+   "dcsCount": 1748,
+   "rvTokens": 57,
+   "forms": [
+    "dákṣiṇā",
+    "dakṣiṇé",
+    "dákṣiṇe"
+   ]
+  },
+  {
+   "slp1": "sADu",
+   "rank": 379,
+   "dcsCount": 1745,
+   "rvTokens": 30,
+   "forms": [
+    "sādhú",
+    "sādhúḥ",
+    "sādhū́"
+   ]
+  },
+  {
+   "slp1": "SAstra",
+   "rank": 381,
+   "dcsCount": 1735,
+   "rvTokens": 1,
+   "forms": [
+    "śāstré"
+   ]
+  },
+  {
+   "slp1": "bARa",
+   "rank": 383,
+   "dcsCount": 1708,
+   "rvTokens": 1,
+   "forms": [
+    "bāṇā́ḥ"
+   ]
+  },
+  {
+   "slp1": "devatA",
+   "rank": 385,
+   "dcsCount": 1691,
+   "rvTokens": 14,
+   "forms": [
+    "devátā",
+    "devátām",
+    "devátayā"
+   ]
+  },
+  {
+   "slp1": "tIkzRa",
+   "rank": 389,
+   "dcsCount": 1667,
+   "rvTokens": 1,
+   "forms": [
+    "tīkṣṇéna"
+   ]
+  },
+  {
+   "slp1": "cakra",
+   "rank": 392,
+   "dcsCount": 1659,
+   "rvTokens": 56,
+   "forms": [
+    "cakré",
+    "cakrám",
+    "cakrā́"
+   ]
+  },
+  {
+   "slp1": "vaDa",
+   "rank": 393,
+   "dcsCount": 1658,
+   "rvTokens": 43,
+   "forms": [
+    "vadhám",
+    "vadháḥ",
+    "vadhéna"
+   ]
+  },
+  {
+   "slp1": "Satru",
+   "rank": 394,
+   "dcsCount": 1654,
+   "rvTokens": 83,
+   "forms": [
+    "śátrum",
+    "śátrūn",
+    "śátruḥ"
+   ]
+  },
+  {
+   "slp1": "hu",
+   "rank": 395,
+   "dcsCount": 1652,
+   "rvTokens": 118,
+   "forms": [
+    "juhóta",
+    "hūyate",
+    "hūyáte"
+   ]
+  },
+  {
+   "slp1": "Ayus",
+   "rank": 396,
+   "dcsCount": 1645,
+   "rvTokens": 95,
+   "forms": [
+    "ā́yuḥ",
+    "ā́yuṣā",
+    "ā́yuṣi"
+   ]
+  },
+  {
+   "slp1": "antar",
+   "rank": 398,
+   "dcsCount": 1632,
+   "rvTokens": 154,
+   "forms": [
+    "antár"
+   ]
+  },
+  {
+   "slp1": "pArTiva",
+   "rank": 399,
+   "dcsCount": 1628,
+   "rvTokens": 66,
+   "forms": [
+    "pā́rthivā",
+    "pā́rthive",
+    "pā́rthivāt"
+   ]
+  },
+  {
+   "slp1": "tap",
+   "rank": 403,
+   "dcsCount": 1623,
+   "rvTokens": 47,
+   "forms": [
+    "tapa",
+    "tápa",
+    "tapat"
+   ]
+  },
+  {
+   "slp1": "dvaya",
+   "rank": 404,
+   "dcsCount": 1621,
+   "rvTokens": 6,
+   "forms": [
+    "dvayéna",
+    "dvayā́n",
+    "dvayī́bhiḥ"
+   ]
+  },
+  {
+   "slp1": "vahni",
+   "rank": 406,
+   "dcsCount": 1610,
+   "rvTokens": 66,
+   "forms": [
+    "váhnī",
+    "vahne",
+    "váhnim"
+   ]
+  },
+  {
+   "slp1": "ced",
+   "rank": 407,
+   "dcsCount": 1608,
+   "rvTokens": 3,
+   "forms": [
+    "cét"
+   ]
+  },
+  {
+   "slp1": "pAtra",
+   "rank": 410,
+   "dcsCount": 1592,
+   "rvTokens": 19,
+   "forms": [
+    "pā́trā",
+    "pā́tre",
+    "pā́tram"
+   ]
+  },
+  {
+   "slp1": "mAyA",
+   "rank": 412,
+   "dcsCount": 1586,
+   "rvTokens": 63,
+   "forms": [
+    "māyā́",
+    "māyā́ḥ",
+    "māyáyā"
+   ]
+  },
+  {
+   "slp1": "Ap",
+   "rank": 414,
+   "dcsCount": 1582,
+   "rvTokens": 27,
+   "forms": [
+    "āpa",
+    "āpúḥ",
+    "ā́pa"
+   ]
+  },
+  {
+   "slp1": "yama",
+   "rank": 415,
+   "dcsCount": 1577,
+   "rvTokens": 66,
+   "forms": [
+    "yama",
+    "yamé",
+    "yamáḥ"
+   ]
+  },
+  {
+   "slp1": "Aditya",
+   "rank": 416,
+   "dcsCount": 1574,
+   "rvTokens": 141,
+   "forms": [
+    "āditya",
+    "ādityám",
+    "ādityáḥ"
+   ]
+  },
+  {
+   "slp1": "kruD",
+   "rank": 416,
+   "dcsCount": 1574,
+   "rvTokens": 6,
+   "forms": [
+    "kruddhám",
+    "kruddháḥ",
+    "cukrudham"
+   ]
+  },
+  {
+   "slp1": "mitra",
+   "rank": 418,
+   "dcsCount": 1570,
+   "rvTokens": 328,
+   "forms": [
+    "mitra",
+    "mítra",
+    "mitré"
+   ]
+  },
+  {
+   "slp1": "udaka",
+   "rank": 419,
+   "dcsCount": 1560,
+   "rvTokens": 10,
+   "forms": [
+    "udakám",
+    "udakā́t"
+   ]
+  },
+  {
+   "slp1": "SUra",
+   "rank": 421,
+   "dcsCount": 1558,
+   "rvTokens": 175,
+   "forms": [
+    "śūra",
+    "śūrāḥ",
+    "śū́rā"
+   ]
+  },
+  {
+   "slp1": "janman",
+   "rank": 422,
+   "dcsCount": 1556,
+   "rvTokens": 40,
+   "forms": [
+    "jánma",
+    "jánman",
+    "jánmane"
+   ]
+  },
+  {
+   "slp1": "pra",
+   "rank": 423,
+   "dcsCount": 1549,
+   "rvTokens": 1218,
+   "forms": [
+    "prá",
+    "prá-pra",
+    "prá-pra +"
+   ]
+  },
+  {
+   "slp1": "Sak",
+   "rank": 424,
+   "dcsCount": 1546,
+   "rvTokens": 106,
+   "forms": [
+    "śakat",
+    "śagdhí",
+    "śíkṣāt"
+   ]
+  },
+  {
+   "slp1": "nu",
+   "rank": 426,
+   "dcsCount": 1535,
+   "rvTokens": 434,
+   "forms": [
+    "nú",
+    "nú +",
+    "nonāva"
+   ]
+  },
+  {
+   "slp1": "vyaD",
+   "rank": 431,
+   "dcsCount": 1525,
+   "rvTokens": 29,
+   "forms": [
+    "vidhya",
+    "vídhya",
+    "vídhyat"
+   ]
+  },
+  {
+   "slp1": "stu",
+   "rank": 432,
+   "dcsCount": 1522,
+   "rvTokens": 265,
+   "forms": [
+    "stuhi",
+    "stuṣé",
+    "stutáḥ"
+   ]
+  },
+  {
+   "slp1": "vastra",
+   "rank": 437,
+   "dcsCount": 1514,
+   "rvTokens": 16,
+   "forms": [
+    "vástrā",
+    "vástrāṇi",
+    "vástreṇa"
+   ]
+  },
+  {
+   "slp1": "praTama",
+   "rank": 439,
+   "dcsCount": 1511,
+   "rvTokens": 173,
+   "forms": [
+    "prathamé",
+    "prathamáḥ",
+    "prathamám"
+   ]
+  },
+  {
+   "slp1": "traya",
+   "rank": 443,
+   "dcsCount": 1502,
+   "rvTokens": 1,
+   "forms": [
+    "trayā́ṇi"
+   ]
+  },
+  {
+   "slp1": "giri",
+   "rank": 447,
+   "dcsCount": 1493,
+   "rvTokens": 43,
+   "forms": [
+    "giríḥ",
+    "girím",
+    "giréḥ"
+   ]
+  },
+  {
+   "slp1": "Suci",
+   "rank": 448,
+   "dcsCount": 1491,
+   "rvTokens": 118,
+   "forms": [
+    "śuce",
+    "śúci",
+    "śúcī"
+   ]
+  },
+  {
+   "slp1": "arka",
+   "rank": 450,
+   "dcsCount": 1487,
+   "rvTokens": 100,
+   "forms": [
+    "arkám",
+    "arkáḥ",
+    "arkaíḥ"
+   ]
+  },
+  {
+   "slp1": "SUla",
+   "rank": 452,
+   "dcsCount": 1480,
+   "rvTokens": 1,
+   "forms": [
+    "śū́lam"
+   ]
+  },
+  {
+   "slp1": "DAtu",
+   "rank": 453,
+   "dcsCount": 1478,
+   "rvTokens": 1,
+   "forms": [
+    "dhā́tu"
+   ]
+  },
+  {
+   "slp1": "candra",
+   "rank": 454,
+   "dcsCount": 1476,
+   "rvTokens": 29,
+   "forms": [
+    "candra",
+    "cándra",
+    "candráḥ"
+   ]
+  },
+  {
+   "slp1": "akza",
+   "rank": 456,
+   "dcsCount": 1474,
+   "rvTokens": 18,
+   "forms": [
+    "ákṣa",
+    "ákṣe",
+    "ákṣam"
+   ]
+  },
+  {
+   "slp1": "nAnA",
+   "rank": 457,
+   "dcsCount": 1472,
+   "rvTokens": 13,
+   "forms": [
+    "nā́nā"
+   ]
+  },
+  {
+   "slp1": "vasu",
+   "rank": 458,
+   "dcsCount": 1471,
+   "rvTokens": 476,
+   "forms": [
+    "vaso",
+    "vásu",
+    "vásoḥ"
+   ]
+  },
+  {
+   "slp1": "citra",
+   "rank": 460,
+   "dcsCount": 1462,
+   "rvTokens": 148,
+   "forms": [
+    "citre",
+    "citrám",
+    "citráḥ"
+   ]
+  },
+  {
+   "slp1": "ganDarva",
+   "rank": 461,
+   "dcsCount": 1460,
+   "rvTokens": 20,
+   "forms": [
+    "gandharváḥ",
+    "gandharvám",
+    "gandharvā́n"
+   ]
+  },
+  {
+   "slp1": "cakzus",
+   "rank": 463,
+   "dcsCount": 1453,
+   "rvTokens": 47,
+   "forms": [
+    "cákṣuḥ",
+    "cákṣuṣā",
+    "cákṣuṣe"
+   ]
+  },
+  {
+   "slp1": "yoni",
+   "rank": 464,
+   "dcsCount": 1450,
+   "rvTokens": 124,
+   "forms": [
+    "yónā",
+    "yónau",
+    "yóniḥ"
+   ]
+  },
+  {
+   "slp1": "snA",
+   "rank": 464,
+   "dcsCount": 1450,
+   "rvTokens": 5,
+   "forms": [
+    "snātaḥ",
+    "snātī́",
+    "utsnā́ya"
+   ]
+  },
+  {
+   "slp1": "nadI",
+   "rank": 467,
+   "dcsCount": 1448,
+   "rvTokens": 66,
+   "forms": [
+    "nadī́",
+    "nadyàḥ",
+    "nadyàm"
+   ]
+  },
+  {
+   "slp1": "yuga",
+   "rank": 470,
+   "dcsCount": 1442,
+   "rvTokens": 38,
+   "forms": [
+    "yugé",
+    "yugā́",
+    "yugám"
+   ]
+  },
+  {
+   "slp1": "Basman",
+   "rank": 470,
+   "dcsCount": 1442,
+   "rvTokens": 2,
+   "forms": [
+    "bhásmanā"
+   ]
+  },
+  {
+   "slp1": "Bakti",
+   "rank": 474,
+   "dcsCount": 1438,
+   "rvTokens": 1,
+   "forms": [
+    "bhaktáye"
+   ]
+  },
+  {
+   "slp1": "tamas",
+   "rank": 476,
+   "dcsCount": 1435,
+   "rvTokens": 113,
+   "forms": [
+    "támaḥ",
+    "támasi",
+    "támasā"
+   ]
+  },
+  {
+   "slp1": "u",
+   "rank": 477,
+   "dcsCount": 1417,
+   "rvTokens": 697,
+   "forms": [
+    "u",
+    "u +"
+   ]
+  },
+  {
+   "slp1": "upama",
+   "rank": 479,
+   "dcsCount": 1412,
+   "rvTokens": 31,
+   "forms": [
+    "upamé",
+    "upamā́",
+    "upamám"
+   ]
+  },
+  {
+   "slp1": "paScAt",
+   "rank": 480,
+   "dcsCount": 1409,
+   "rvTokens": 20,
+   "forms": [
+    "paścā́t"
+   ]
+  },
+  {
+   "slp1": "uB",
+   "rank": 481,
+   "dcsCount": 1408,
+   "rvTokens": 5,
+   "forms": [
+    "unap",
+    "ubdhám",
+    "ubhnā́ḥ"
+   ]
+  },
+  {
+   "slp1": "rajas",
+   "rank": 482,
+   "dcsCount": 1401,
+   "rvTokens": 144,
+   "forms": [
+    "rájaḥ",
+    "rájasā",
+    "rájasī"
+   ]
+  },
+  {
+   "slp1": "vfkza",
+   "rank": 485,
+   "dcsCount": 1398,
+   "rvTokens": 29,
+   "forms": [
+    "vr̥kṣé",
+    "vr̥kṣám",
+    "vr̥kṣáḥ"
+   ]
+  },
+  {
+   "slp1": "payas",
+   "rank": 486,
+   "dcsCount": 1397,
+   "rvTokens": 100,
+   "forms": [
+    "páyaḥ",
+    "páyasā",
+    "páyasi"
+   ]
+  },
+  {
+   "slp1": "mfga",
+   "rank": 487,
+   "dcsCount": 1395,
+   "rvTokens": 37,
+   "forms": [
+    "mr̥gáḥ",
+    "mr̥gám",
+    "mr̥gā́"
+   ]
+  },
+  {
+   "slp1": "SaMs",
+   "rank": 488,
+   "dcsCount": 1393,
+   "rvTokens": 108,
+   "forms": [
+    "śaṁsi",
+    "śaṁsata",
+    "śaṁsaya"
+   ]
+  },
+  {
+   "slp1": "yaSas",
+   "rank": 490,
+   "dcsCount": 1387,
+   "rvTokens": 61,
+   "forms": [
+    "yáśaḥ",
+    "yaśásā",
+    "yaśáse"
+   ]
+  },
+  {
+   "slp1": "vi",
+   "rank": 491,
+   "dcsCount": 1386,
+   "rvTokens": 1030,
+   "forms": [
+    "ví",
+    "véḥ",
+    "víḥ"
+   ]
+  },
+  {
+   "slp1": "samara",
+   "rank": 491,
+   "dcsCount": 1386,
+   "rvTokens": 3,
+   "forms": [
+    "samaré"
+   ]
+  },
+  {
+   "slp1": "As",
+   "rank": 494,
+   "dcsCount": 1379,
+   "rvTokens": 89,
+   "forms": [
+    "āsā́",
+    "āsate",
+    "āsāte"
+   ]
+  },
+  {
+   "slp1": "ram",
+   "rank": 495,
+   "dcsCount": 1376,
+   "rvTokens": 35,
+   "forms": [
+    "ranta",
+    "ramate",
+    "rāmáyat"
+   ]
+  },
+  {
+   "slp1": "pARi",
+   "rank": 498,
+   "dcsCount": 1372,
+   "rvTokens": 3,
+   "forms": [
+    "pāṇī́",
+    "pāṇíbhiḥ"
+   ]
+  },
+  {
+   "slp1": "kalpa",
+   "rank": 500,
+   "dcsCount": 1369,
+   "rvTokens": 1,
+   "forms": [
+    "kálpeṣu"
+   ]
+  },
+  {
+   "slp1": "pakza",
+   "rank": 501,
+   "dcsCount": 1363,
+   "rvTokens": 10,
+   "forms": [
+    "pakṣé",
+    "pakṣā́",
+    "pakṣám"
+   ]
+  },
+  {
+   "slp1": "anu",
+   "rank": 502,
+   "dcsCount": 1359,
+   "rvTokens": 481,
+   "forms": [
+    "ánu",
+    "ánuṣu",
+    "ánavi"
+   ]
+  },
+  {
+   "slp1": "avasTA",
+   "rank": 502,
+   "dcsCount": 1359,
+   "rvTokens": 1,
+   "forms": [
+    "avasthā́ḥ"
+   ]
+  },
+  {
+   "slp1": "vah",
+   "rank": 507,
+   "dcsCount": 1346,
+   "rvTokens": 382,
+   "forms": [
+    "vaha",
+    "vahata",
+    "vaha +"
+   ]
+  },
+  {
+   "slp1": "kzatriya",
+   "rank": 511,
+   "dcsCount": 1334,
+   "rvTokens": 9,
+   "forms": [
+    "kṣatriyā",
+    "kṣatríyā",
+    "kṣatríyam"
+   ]
+  },
+  {
+   "slp1": "nitya",
+   "rank": 513,
+   "dcsCount": 1327,
+   "rvTokens": 34,
+   "forms": [
+    "nítye",
+    "nítyā",
+    "nítyaḥ"
+   ]
+  },
+  {
+   "slp1": "pU",
+   "rank": 515,
+   "dcsCount": 1326,
+   "rvTokens": 591,
+   "forms": [
+    "pūtám",
+    "pūtā́ḥ",
+    "punāmi"
+   ]
+  },
+  {
+   "slp1": "mati",
+   "rank": 515,
+   "dcsCount": 1326,
+   "rvTokens": 143,
+   "forms": [
+    "mate",
+    "matím",
+    "matī́"
+   ]
+  },
+  {
+   "slp1": "aDas",
+   "rank": 521,
+   "dcsCount": 1318,
+   "rvTokens": 5,
+   "forms": [
+    "adhás"
+   ]
+  },
+  {
+   "slp1": "rakzas",
+   "rank": 523,
+   "dcsCount": 1317,
+   "rvTokens": 80,
+   "forms": [
+    "rákṣaḥ",
+    "rákṣase",
+    "rakṣáse"
+   ]
+  },
+  {
+   "slp1": "vaSa",
+   "rank": 524,
+   "dcsCount": 1314,
+   "rvTokens": 24,
+   "forms": [
+    "váśā",
+    "váśe",
+    "váśān"
+   ]
+  },
+  {
+   "slp1": "Bf",
+   "rank": 525,
+   "dcsCount": 1312,
+   "rvTokens": 519,
+   "forms": [
+    "bhara",
+    "bíbhrat",
+    "jabhāra"
+   ]
+  },
+  {
+   "slp1": "ASu",
+   "rank": 528,
+   "dcsCount": 1305,
+   "rvTokens": 78,
+   "forms": [
+    "āśú",
+    "āśúm",
+    "āśū́"
+   ]
+  },
+  {
+   "slp1": "prayA",
+   "rank": 528,
+   "dcsCount": 1305,
+   "rvTokens": 1,
+   "forms": [
+    "prayā́ḥ"
+   ]
+  },
+  {
+   "slp1": "Sukra",
+   "rank": 530,
+   "dcsCount": 1303,
+   "rvTokens": 113,
+   "forms": [
+    "śukra",
+    "śukráḥ",
+    "śukrám"
+   ]
+  },
+  {
+   "slp1": "hfd",
+   "rank": 534,
+   "dcsCount": 1284,
+   "rvTokens": 75,
+   "forms": [
+    "hr̥dí",
+    "hr̥dé",
+    "hr̥dáḥ"
+   ]
+  },
+  {
+   "slp1": "pratizWA",
+   "rank": 535,
+   "dcsCount": 1275,
+   "rvTokens": 3,
+   "forms": [
+    "pratiṣṭhā́",
+    "pratiṣṭhā́m"
+   ]
+  },
+  {
+   "slp1": "sev",
+   "rank": 536,
+   "dcsCount": 1271,
+   "rvTokens": 2,
+   "forms": [
+    "niṣéve",
+    "sévate"
+   ]
+  },
+  {
+   "slp1": "Sam",
+   "rank": 537,
+   "dcsCount": 1269,
+   "rvTokens": 161,
+   "forms": [
+    "śám"
+   ]
+  },
+  {
+   "slp1": "vfD",
+   "rank": 538,
+   "dcsCount": 1265,
+   "rvTokens": 367,
+   "forms": [
+    "vr̥ddháḥ",
+    "vardhaya",
+    "vāvr̥dhe"
+   ]
+  },
+  {
+   "slp1": "samudra",
+   "rank": 539,
+   "dcsCount": 1263,
+   "rvTokens": 141,
+   "forms": [
+    "samudré",
+    "samudráḥ",
+    "samudrám"
+   ]
+  },
+  {
+   "slp1": "prI",
+   "rank": 540,
+   "dcsCount": 1262,
+   "rvTokens": 28,
+   "forms": [
+    "prītáḥ",
+    "préṣat",
+    "prītā́"
+   ]
+  },
+  {
+   "slp1": "dIrGa",
+   "rank": 541,
+   "dcsCount": 1259,
+   "rvTokens": 33,
+   "forms": [
+    "dīrghám",
+    "dīrghā́",
+    "dīrgháḥ"
+   ]
+  },
+  {
+   "slp1": "aS",
+   "rank": 546,
+   "dcsCount": 1249,
+   "rvTokens": 111,
+   "forms": [
+    "aśyāḥ",
+    "aśyuḥ",
+    "āśāte"
+   ]
+  },
+  {
+   "slp1": "dAnava",
+   "rank": 546,
+   "dcsCount": 1249,
+   "rvTokens": 5,
+   "forms": [
+    "dānavám",
+    "dānavásya",
+    "dānavā́ya"
+   ]
+  },
+  {
+   "slp1": "mada",
+   "rank": 550,
+   "dcsCount": 1236,
+   "rvTokens": 279,
+   "forms": [
+    "máde",
+    "mádaḥ",
+    "mádāḥ"
+   ]
+  },
+  {
+   "slp1": "dvitIya",
+   "rank": 550,
+   "dcsCount": 1236,
+   "rvTokens": 4,
+   "forms": [
+    "dvitī́yam",
+    "dvitī́yayā"
+   ]
+  },
+  {
+   "slp1": "ugra",
+   "rank": 552,
+   "dcsCount": 1235,
+   "rvTokens": 191,
+   "forms": [
+    "ugra",
+    "ugrā",
+    "ugráḥ"
+   ]
+  },
+  {
+   "slp1": "cit",
+   "rank": 554,
+   "dcsCount": 1227,
+   "rvTokens": 230,
+   "forms": [
+    "cetati",
+    "ciketa",
+    "cikite"
+   ]
+  },
+  {
+   "slp1": "mAna",
+   "rank": 557,
+   "dcsCount": 1217,
+   "rvTokens": 1,
+   "forms": [
+    "mānám"
+   ]
+  },
+  {
+   "slp1": "Badra",
+   "rank": 560,
+   "dcsCount": 1211,
+   "rvTokens": 148,
+   "forms": [
+    "bhadré",
+    "bhadrám",
+    "bhadráḥ"
+   ]
+  },
+  {
+   "slp1": "upari",
+   "rank": 570,
+   "dcsCount": 1190,
+   "rvTokens": 11,
+   "forms": [
+    "upári"
+   ]
+  },
+  {
+   "slp1": "prajApati",
+   "rank": 571,
+   "dcsCount": 1189,
+   "rvTokens": 6,
+   "forms": [
+    "prájāpate",
+    "prajā́patiḥ"
+   ]
+  },
+  {
+   "slp1": "mUrDan",
+   "rank": 574,
+   "dcsCount": 1185,
+   "rvTokens": 34,
+   "forms": [
+    "mūrdhā́",
+    "mūrdhán",
+    "mūrdháni"
+   ]
+  },
+  {
+   "slp1": "mala",
+   "rank": 578,
+   "dcsCount": 1182,
+   "rvTokens": 1,
+   "forms": [
+    "málā"
+   ]
+  },
+  {
+   "slp1": "aha",
+   "rank": 580,
+   "dcsCount": 1179,
+   "rvTokens": 50,
+   "forms": [
+    "áha"
+   ]
+  },
+  {
+   "slp1": "maRi",
+   "rank": 585,
+   "dcsCount": 1170,
+   "rvTokens": 1,
+   "forms": [
+    "maṇínā"
+   ]
+  },
+  {
+   "slp1": "saMjaya",
+   "rank": 588,
+   "dcsCount": 1165,
+   "rvTokens": 1,
+   "forms": [
+    "saṁjayā́"
+   ]
+  },
+  {
+   "slp1": "graha",
+   "rank": 590,
+   "dcsCount": 1164,
+   "rvTokens": 1,
+   "forms": [
+    "gráhān"
+   ]
+  },
+  {
+   "slp1": "BI",
+   "rank": 591,
+   "dcsCount": 1161,
+   "rvTokens": 67,
+   "forms": [
+    "bhema",
+    "bhī́ḥ",
+    "bhītáḥ"
+   ]
+  },
+  {
+   "slp1": "pf",
+   "rank": 593,
+   "dcsCount": 1160,
+   "rvTokens": 107,
+   "forms": [
+    "pāraya",
+    "parṣat",
+    "piparṣi"
+   ]
+  },
+  {
+   "slp1": "tvac",
+   "rank": 594,
+   "dcsCount": 1159,
+   "rvTokens": 25,
+   "forms": [
+    "tvák",
+    "tvací",
+    "tvácam"
+   ]
+  },
+  {
+   "slp1": "kaTA",
+   "rank": 597,
+   "dcsCount": 1156,
+   "rvTokens": 34,
+   "forms": [
+    "kathā́"
+   ]
+  },
+  {
+   "slp1": "udara",
+   "rank": 599,
+   "dcsCount": 1153,
+   "rvTokens": 9,
+   "forms": [
+    "udáre",
+    "udáram",
+    "udáreṣu"
+   ]
+  },
+  {
+   "slp1": "drava",
+   "rank": 600,
+   "dcsCount": 1152,
+   "rvTokens": 1,
+   "forms": [
+    "draváḥ"
+   ]
+  },
+  {
+   "slp1": "mAnuza",
+   "rank": 603,
+   "dcsCount": 1144,
+   "rvTokens": 116,
+   "forms": [
+    "mānuṣa",
+    "mā́nuṣe",
+    "mā́nuṣā"
+   ]
+  },
+  {
+   "slp1": "siMha",
+   "rank": 607,
+   "dcsCount": 1142,
+   "rvTokens": 15,
+   "forms": [
+    "siṁhám",
+    "siṁháḥ",
+    "siṁhā́ḥ"
+   ]
+  },
+  {
+   "slp1": "varuRa",
+   "rank": 608,
+   "dcsCount": 1134,
+   "rvTokens": 396,
+   "forms": [
+    "varuṇa",
+    "váruṇa",
+    "váruṇe"
+   ]
+  },
+  {
+   "slp1": "jIvita",
+   "rank": 611,
+   "dcsCount": 1133,
+   "rvTokens": 2,
+   "forms": [
+    "jīvitā́"
+   ]
+  },
+  {
+   "slp1": "Sveta",
+   "rank": 614,
+   "dcsCount": 1131,
+   "rvTokens": 20,
+   "forms": [
+    "śvetáḥ",
+    "śvetám",
+    "śvetaú"
+   ]
+  },
+  {
+   "slp1": "sarpis",
+   "rank": 623,
+   "dcsCount": 1124,
+   "rvTokens": 4,
+   "forms": [
+    "sarpíḥ",
+    "sarpíṣā",
+    "sarpíṣaḥ"
+   ]
+  },
+  {
+   "slp1": "sam",
+   "rank": 626,
+   "dcsCount": 1122,
+   "rvTokens": 609,
+   "forms": [
+    "sám",
+    "sáṁ-sam"
+   ]
+  },
+  {
+   "slp1": "gA",
+   "rank": 627,
+   "dcsCount": 1115,
+   "rvTokens": 135,
+   "forms": [
+    "gāt",
+    "guḥ",
+    "gāḥ"
+   ]
+  },
+  {
+   "slp1": "UrDva",
+   "rank": 630,
+   "dcsCount": 1104,
+   "rvTokens": 74,
+   "forms": [
+    "ūrdhvám",
+    "ūrdhváḥ",
+    "ūrdhvā́"
+   ]
+  },
+  {
+   "slp1": "pAna",
+   "rank": 633,
+   "dcsCount": 1099,
+   "rvTokens": 1,
+   "forms": [
+    "pānáḥ"
+   ]
+  },
+  {
+   "slp1": "haya",
+   "rank": 634,
+   "dcsCount": 1094,
+   "rvTokens": 3,
+   "forms": [
+    "háyaḥ",
+    "háyāḥ",
+    "háyebhiḥ"
+   ]
+  },
+  {
+   "slp1": "aBra",
+   "rank": 638,
+   "dcsCount": 1087,
+   "rvTokens": 16,
+   "forms": [
+    "abhré",
+    "abhrā́",
+    "abhrám"
+   ]
+  },
+  {
+   "slp1": "anyaTA",
+   "rank": 639,
+   "dcsCount": 1084,
+   "rvTokens": 2,
+   "forms": [
+    "anyáthā"
+   ]
+  },
+  {
+   "slp1": "vraj",
+   "rank": 642,
+   "dcsCount": 1080,
+   "rvTokens": 6,
+   "forms": [
+    "vrájantīḥ",
+    "abhivrájan",
+    "vavrā́ja +"
+   ]
+  },
+  {
+   "slp1": "aBi",
+   "rank": 646,
+   "dcsCount": 1072,
+   "rvTokens": 754,
+   "forms": [
+    "abhí",
+    "abhí +",
+    "abhy-àbhi"
+   ]
+  },
+  {
+   "slp1": "muhur",
+   "rank": 652,
+   "dcsCount": 1060,
+   "rvTokens": 10,
+   "forms": [
+    "múhur"
+   ]
+  },
+  {
+   "slp1": "suvarRa",
+   "rank": 652,
+   "dcsCount": 1060,
+   "rvTokens": 1,
+   "forms": [
+    "suvárṇāḥ"
+   ]
+  },
+  {
+   "slp1": "ojas",
+   "rank": 654,
+   "dcsCount": 1059,
+   "rvTokens": 169,
+   "forms": [
+    "ójaḥ",
+    "ójasā",
+    "ójase"
+   ]
+  },
+  {
+   "slp1": "cetas",
+   "rank": 656,
+   "dcsCount": 1056,
+   "rvTokens": 6,
+   "forms": [
+    "cétasā"
+   ]
+  },
+  {
+   "slp1": "hfz",
+   "rank": 657,
+   "dcsCount": 1051,
+   "rvTokens": 24,
+   "forms": [
+    "harṣate",
+    "harṣase",
+    "hr̥ṣitám"
+   ]
+  },
+  {
+   "slp1": "Bojana",
+   "rank": 658,
+   "dcsCount": 1050,
+   "rvTokens": 26,
+   "forms": [
+    "bhojana",
+    "bhójanā",
+    "bhójanam"
+   ]
+  },
+  {
+   "slp1": "karaRa",
+   "rank": 660,
+   "dcsCount": 1049,
+   "rvTokens": 7,
+   "forms": [
+    "karaṇā́",
+    "káraṇam",
+    "káraṇāni"
+   ]
+  },
+  {
+   "slp1": "kumAra",
+   "rank": 664,
+   "dcsCount": 1044,
+   "rvTokens": 13,
+   "forms": [
+    "kumāra",
+    "kumāráḥ",
+    "kumārám"
+   ]
+  },
+  {
+   "slp1": "svAhA",
+   "rank": 669,
+   "dcsCount": 1039,
+   "rvTokens": 19,
+   "forms": [
+    "svā́hā"
+   ]
+  },
+  {
+   "slp1": "akzara",
+   "rank": 669,
+   "dcsCount": 1039,
+   "rvTokens": 8,
+   "forms": [
+    "akṣárā",
+    "akṣáre",
+    "akṣáram"
+   ]
+  },
+  {
+   "slp1": "viDAna",
+   "rank": 674,
+   "dcsCount": 1031,
+   "rvTokens": 2,
+   "forms": [
+    "vidhā́nā",
+    "vidhā́nam"
+   ]
+  },
+  {
+   "slp1": "dru",
+   "rank": 676,
+   "dcsCount": 1030,
+   "rvTokens": 31,
+   "forms": [
+    "drava",
+    "ádudrot",
+    "dráva +"
+   ]
+  },
+  {
+   "slp1": "SUdra",
+   "rank": 680,
+   "dcsCount": 1023,
+   "rvTokens": 1,
+   "forms": [
+    "śūdráḥ"
+   ]
+  },
+  {
+   "slp1": "Baj",
+   "rank": 682,
+   "dcsCount": 1019,
+   "rvTokens": 99,
+   "forms": [
+    "bhaja",
+    "bhaja +",
+    "bhajate"
+   ]
+  },
+  {
+   "slp1": "pAka",
+   "rank": 682,
+   "dcsCount": 1019,
+   "rvTokens": 9,
+   "forms": [
+    "pā́kam",
+    "pā́kaḥ",
+    "pā́kāya"
+   ]
+  },
+  {
+   "slp1": "Boga",
+   "rank": 682,
+   "dcsCount": 1019,
+   "rvTokens": 7,
+   "forms": [
+    "bhógam",
+    "bhogā́n",
+    "bhogaíḥ"
+   ]
+  },
+  {
+   "slp1": "vAsas",
+   "rank": 686,
+   "dcsCount": 1018,
+   "rvTokens": 12,
+   "forms": [
+    "vā́saḥ",
+    "vā́sasā",
+    "vā́sasaḥ"
+   ]
+  },
+  {
+   "slp1": "DanaMjaya",
+   "rank": 689,
+   "dcsCount": 1017,
+   "rvTokens": 6,
+   "forms": [
+    "dhanaṁjaya",
+    "dhanaṁjayáḥ",
+    "dhanaṁjayám"
+   ]
+  },
+  {
+   "slp1": "sarvatas",
+   "rank": 692,
+   "dcsCount": 1009,
+   "rvTokens": 2,
+   "forms": [
+    "sarvátas"
+   ]
+  },
+  {
+   "slp1": "pArSva",
+   "rank": 699,
+   "dcsCount": 1003,
+   "rvTokens": 1,
+   "forms": [
+    "pārśvā́t"
+   ]
+  },
+  {
+   "slp1": "muh",
+   "rank": 699,
+   "dcsCount": 1003,
+   "rvTokens": 4,
+   "forms": [
+    "muhé",
+    "mugdháḥ",
+    "múhyantu"
+   ]
+  },
+  {
+   "slp1": "Dvaja",
+   "rank": 699,
+   "dcsCount": 1003,
+   "rvTokens": 2,
+   "forms": [
+    "dhvajéṣu"
+   ]
+  },
+  {
+   "slp1": "Ananda",
+   "rank": 699,
+   "dcsCount": 1003,
+   "rvTokens": 2,
+   "forms": [
+    "ānandám",
+    "ānandā́ḥ"
+   ]
+  },
+  {
+   "slp1": "pfzWa",
+   "rank": 706,
+   "dcsCount": 998,
+   "rvTokens": 25,
+   "forms": [
+    "pr̥ṣṭhé",
+    "pr̥ṣṭhám",
+    "pr̥ṣṭhā́"
+   ]
+  },
+  {
+   "slp1": "sItA",
+   "rank": 709,
+   "dcsCount": 995,
+   "rvTokens": 2,
+   "forms": [
+    "sī́te",
+    "sī́tām"
+   ]
+  },
+  {
+   "slp1": "piz",
+   "rank": 712,
+   "dcsCount": 992,
+   "rvTokens": 15,
+   "forms": [
+    "piṇak",
+    "pipiṣe",
+    "pipeṣa"
+   ]
+  },
+  {
+   "slp1": "DyA",
+   "rank": 713,
+   "dcsCount": 990,
+   "rvTokens": 1,
+   "forms": [
+    "dhyáyā"
+   ]
+  },
+  {
+   "slp1": "kzi",
+   "rank": 714,
+   "dcsCount": 988,
+   "rvTokens": 53,
+   "forms": [
+    "kṣeti",
+    "kṣéti",
+    "kṣáyaḥ"
+   ]
+  },
+  {
+   "slp1": "Gana",
+   "rank": 715,
+   "dcsCount": 987,
+   "rvTokens": 10,
+   "forms": [
+    "ghané",
+    "ghanáḥ",
+    "ghanā́"
+   ]
+  },
+  {
+   "slp1": "viBu",
+   "rank": 715,
+   "dcsCount": 987,
+   "rvTokens": 17,
+   "forms": [
+    "vibhú",
+    "vibhúḥ",
+    "vibhúm"
+   ]
+  },
+  {
+   "slp1": "spfS",
+   "rank": 721,
+   "dcsCount": 980,
+   "rvTokens": 16,
+   "forms": [
+    "spr̥śa",
+    "aspr̥śat",
+    "nispŕ̥śe"
+   ]
+  },
+  {
+   "slp1": "marut",
+   "rank": 724,
+   "dcsCount": 976,
+   "rvTokens": 409,
+   "forms": [
+    "márutaḥ",
+    "marútaḥ",
+    "marútām"
+   ]
+  },
+  {
+   "slp1": "id",
+   "rank": 728,
+   "dcsCount": 971,
+   "rvTokens": 802,
+   "forms": [
+    "ít"
+   ]
+  },
+  {
+   "slp1": "buD",
+   "rank": 729,
+   "dcsCount": 970,
+   "rvTokens": 88,
+   "forms": [
+    "bodhi",
+    "budhí",
+    "abodhi"
+   ]
+  },
+  {
+   "slp1": "Df",
+   "rank": 737,
+   "dcsCount": 959,
+   "rvTokens": 127,
+   "forms": [
+    "dadhré",
+    "dhāraya",
+    "dādhāra"
+   ]
+  },
+  {
+   "slp1": "gaNgA",
+   "rank": 737,
+   "dcsCount": 959,
+   "rvTokens": 1,
+   "forms": [
+    "gaṅge"
+   ]
+  },
+  {
+   "slp1": "matsya",
+   "rank": 739,
+   "dcsCount": 955,
+   "rvTokens": 2,
+   "forms": [
+    "mátsyam",
+    "mátsyāsaḥ"
+   ]
+  },
+  {
+   "slp1": "DI",
+   "rank": 740,
+   "dcsCount": 953,
+   "rvTokens": 304,
+   "forms": [
+    "dhīṣú",
+    "dhiyé",
+    "dhī́ḥ"
+   ]
+  },
+  {
+   "slp1": "vatsa",
+   "rank": 742,
+   "dcsCount": 949,
+   "rvTokens": 61,
+   "forms": [
+    "vatsé",
+    "vatsám",
+    "vatsáḥ"
+   ]
+  },
+  {
+   "slp1": "uBaya",
+   "rank": 744,
+   "dcsCount": 946,
+   "rvTokens": 45,
+   "forms": [
+    "ubháyā",
+    "ubháye",
+    "ubháyān"
+   ]
+  },
+  {
+   "slp1": "kalA",
+   "rank": 750,
+   "dcsCount": 944,
+   "rvTokens": 1,
+   "forms": [
+    "kalā́m"
+   ]
+  },
+  {
+   "slp1": "kila",
+   "rank": 752,
+   "dcsCount": 941,
+   "rvTokens": 12,
+   "forms": [
+    "kíla",
+    "kíla +"
+   ]
+  },
+  {
+   "slp1": "tftIya",
+   "rank": 755,
+   "dcsCount": 939,
+   "rvTokens": 24,
+   "forms": [
+    "tr̥tī́ye",
+    "tr̥tī́yam",
+    "tr̥tī́yaḥ"
+   ]
+  },
+  {
+   "slp1": "gAtra",
+   "rank": 761,
+   "dcsCount": 936,
+   "rvTokens": 7,
+   "forms": [
+    "gā́trā",
+    "gā́trāt",
+    "gā́trāṇi"
+   ]
+  },
+  {
+   "slp1": "sAra",
+   "rank": 764,
+   "dcsCount": 932,
+   "rvTokens": 1,
+   "forms": [
+    "sā́ram"
+   ]
+  },
+  {
+   "slp1": "patnI",
+   "rank": 768,
+   "dcsCount": 928,
+   "rvTokens": 26,
+   "forms": [
+    "pátnī",
+    "pátnīḥ",
+    "pátnyā"
+   ]
+  },
+  {
+   "slp1": "jyotis",
+   "rank": 768,
+   "dcsCount": 928,
+   "rvTokens": 148,
+   "forms": [
+    "jyótiḥ",
+    "jyótiṣā",
+    "jyótiṣi"
+   ]
+  },
+  {
+   "slp1": "vaMSa",
+   "rank": 771,
+   "dcsCount": 926,
+   "rvTokens": 1,
+   "forms": [
+    "vaṁśám"
+   ]
+  },
+  {
+   "slp1": "senA",
+   "rank": 772,
+   "dcsCount": 925,
+   "rvTokens": 16,
+   "forms": [
+    "sénā",
+    "sénām",
+    "sénāḥ"
+   ]
+  },
+  {
+   "slp1": "nArI",
+   "rank": 776,
+   "dcsCount": 921,
+   "rvTokens": 13,
+   "forms": [
+    "nāri",
+    "nā́rī",
+    "nā́rīḥ"
+   ]
+  },
+  {
+   "slp1": "vimuc",
+   "rank": 776,
+   "dcsCount": 921,
+   "rvTokens": 3,
+   "forms": [
+    "vimucaḥ",
+    "vimúcam"
+   ]
+  },
+  {
+   "slp1": "prayuj",
+   "rank": 776,
+   "dcsCount": 921,
+   "rvTokens": 5,
+   "forms": [
+    "prayújaḥ"
+   ]
+  },
+  {
+   "slp1": "manu",
+   "rank": 780,
+   "dcsCount": 917,
+   "rvTokens": 76,
+   "forms": [
+    "mánoḥ",
+    "mánuḥ",
+    "mánum"
+   ]
+  },
+  {
+   "slp1": "Ajya",
+   "rank": 785,
+   "dcsCount": 914,
+   "rvTokens": 6,
+   "forms": [
+    "ā́jyam",
+    "ā́jyena",
+    "ā́jyaiḥ"
+   ]
+  },
+  {
+   "slp1": "dviz",
+   "rank": 790,
+   "dcsCount": 909,
+   "rvTokens": 64,
+   "forms": [
+    "dvíṣam",
+    "dvíṣaḥ",
+    "dviṣáḥ"
+   ]
+  },
+  {
+   "slp1": "yakza",
+   "rank": 790,
+   "dcsCount": 909,
+   "rvTokens": 4,
+   "forms": [
+    "yakṣám",
+    "yakṣásya"
+   ]
+  },
+  {
+   "slp1": "svap",
+   "rank": 793,
+   "dcsCount": 907,
+   "rvTokens": 18,
+   "forms": [
+    "svapa",
+    "svapán",
+    "síṣvap"
+   ]
+  },
+  {
+   "slp1": "sadyas",
+   "rank": 807,
+   "dcsCount": 898,
+   "rvTokens": 78,
+   "forms": [
+    "sadyás"
+   ]
+  },
+  {
+   "slp1": "indu",
+   "rank": 808,
+   "dcsCount": 897,
+   "rvTokens": 327,
+   "forms": [
+    "indo",
+    "índo",
+    "índuḥ"
+   ]
+  },
+  {
+   "slp1": "SI",
+   "rank": 810,
+   "dcsCount": 895,
+   "rvTokens": 116,
+   "forms": [
+    "śaye",
+    "śayate",
+    "aśayat"
+   ]
+  },
+  {
+   "slp1": "piRqa",
+   "rank": 810,
+   "dcsCount": 895,
+   "rvTokens": 1,
+   "forms": [
+    "píṇḍānām"
+   ]
+  },
+  {
+   "slp1": "kzetra",
+   "rank": 815,
+   "dcsCount": 893,
+   "rvTokens": 20,
+   "forms": [
+    "kṣétre",
+    "kṣétram",
+    "kṣétrāt"
+   ]
+  },
+  {
+   "slp1": "sAman",
+   "rank": 819,
+   "dcsCount": 889,
+   "rvTokens": 29,
+   "forms": [
+    "sā́ma",
+    "sā́man",
+    "sā́mne"
+   ]
+  },
+  {
+   "slp1": "banDa",
+   "rank": 822,
+   "dcsCount": 887,
+   "rvTokens": 3,
+   "forms": [
+    "bandhā́t",
+    "bandhéṣu"
+   ]
+  },
+  {
+   "slp1": "mud",
+   "rank": 824,
+   "dcsCount": 883,
+   "rvTokens": 14,
+   "forms": [
+    "mudé",
+    "mudā́",
+    "múdaḥ"
+   ]
+  },
+  {
+   "slp1": "pUrvavat",
+   "rank": 828,
+   "dcsCount": 881,
+   "rvTokens": 2,
+   "forms": [
+    "pūrvavát"
+   ]
+  },
+  {
+   "slp1": "yantra",
+   "rank": 830,
+   "dcsCount": 880,
+   "rvTokens": 2,
+   "forms": [
+    "yantrám",
+    "yantraíḥ"
+   ]
+  },
+  {
+   "slp1": "ananta",
+   "rank": 833,
+   "dcsCount": 879,
+   "rvTokens": 9,
+   "forms": [
+    "ananté",
+    "anantáḥ",
+    "anantám"
+   ]
+  },
+  {
+   "slp1": "mAnava",
+   "rank": 840,
+   "dcsCount": 873,
+   "rvTokens": 8,
+   "forms": [
+    "mānavī",
+    "mānavám",
+    "mānavī́"
+   ]
+  },
+  {
+   "slp1": "adButa",
+   "rank": 846,
+   "dcsCount": 862,
+   "rvTokens": 26,
+   "forms": [
+    "ádbhutā",
+    "adbhuta",
+    "adbhutā"
+   ]
+  },
+  {
+   "slp1": "bali",
+   "rank": 847,
+   "dcsCount": 861,
+   "rvTokens": 4,
+   "forms": [
+    "balím"
+   ]
+  },
+  {
+   "slp1": "gir",
+   "rank": 848,
+   "dcsCount": 859,
+   "rvTokens": 343,
+   "forms": [
+    "gī́ḥ",
+    "giré",
+    "gíraḥ"
+   ]
+  },
+  {
+   "slp1": "aSvin",
+   "rank": 850,
+   "dcsCount": 857,
+   "rvTokens": 444,
+   "forms": [
+    "aśvī́",
+    "áśvinā",
+    "aśvínā"
+   ]
+  },
+  {
+   "slp1": "Arya",
+   "rank": 851,
+   "dcsCount": 856,
+   "rvTokens": 38,
+   "forms": [
+    "ā́rīḥ",
+    "ā́ryā",
+    "ā́ryān"
+   ]
+  },
+  {
+   "slp1": "Salya",
+   "rank": 854,
+   "dcsCount": 854,
+   "rvTokens": 1,
+   "forms": [
+    "śalyā́n"
+   ]
+  },
+  {
+   "slp1": "samAna",
+   "rank": 857,
+   "dcsCount": 850,
+   "rvTokens": 76,
+   "forms": [
+    "samāné",
+    "samānám",
+    "samānáḥ"
+   ]
+  },
+  {
+   "slp1": "udaya",
+   "rank": 857,
+   "dcsCount": 850,
+   "rvTokens": 1,
+   "forms": [
+    "udayé"
+   ]
+  },
+  {
+   "slp1": "saMDi",
+   "rank": 859,
+   "dcsCount": 849,
+   "rvTokens": 1,
+   "forms": [
+    "saṁdhím"
+   ]
+  },
+  {
+   "slp1": "praBfti",
+   "rank": 860,
+   "dcsCount": 847,
+   "rvTokens": 5,
+   "forms": [
+    "prábhr̥tā",
+    "prábhr̥tim",
+    "prábhr̥tau"
+   ]
+  },
+  {
+   "slp1": "kutas",
+   "rank": 861,
+   "dcsCount": 844,
+   "rvTokens": 13,
+   "forms": [
+    "kútas"
+   ]
+  },
+  {
+   "slp1": "ftu",
+   "rank": 868,
+   "dcsCount": 839,
+   "rvTokens": 38,
+   "forms": [
+    "r̥túḥ",
+    "r̥tóḥ",
+    "r̥túm"
+   ]
+  },
+  {
+   "slp1": "AyuDa",
+   "rank": 868,
+   "dcsCount": 839,
+   "rvTokens": 37,
+   "forms": [
+    "ā́yudhā",
+    "ā́yudham",
+    "ā́yudhāni"
+   ]
+  },
+  {
+   "slp1": "purARa",
+   "rank": 870,
+   "dcsCount": 838,
+   "rvTokens": 13,
+   "forms": [
+    "purāṇé",
+    "purāṇī́",
+    "purāṇám"
+   ]
+  },
+  {
+   "slp1": "SaraRa",
+   "rank": 870,
+   "dcsCount": 838,
+   "rvTokens": 15,
+   "forms": [
+    "śaraṇé",
+    "śaraṇám",
+    "śaraṇā́"
+   ]
+  },
+  {
+   "slp1": "meGa",
+   "rank": 870,
+   "dcsCount": 838,
+   "rvTokens": 1,
+   "forms": [
+    "megháḥ"
+   ]
+  },
+  {
+   "slp1": "pAvaka",
+   "rank": 875,
+   "dcsCount": 834,
+   "rvTokens": 66,
+   "forms": [
+    "pāvaka",
+    "pāvaké",
+    "pāvakā́"
+   ]
+  },
+  {
+   "slp1": "saKi",
+   "rank": 875,
+   "dcsCount": 834,
+   "rvTokens": 267,
+   "forms": [
+    "sákhā",
+    "sákhe",
+    "sákhye"
+   ]
+  },
+  {
+   "slp1": "pakva",
+   "rank": 875,
+   "dcsCount": 834,
+   "rvTokens": 25,
+   "forms": [
+    "pakvé",
+    "pakvā́",
+    "pakvám"
+   ]
+  },
+  {
+   "slp1": "arTin",
+   "rank": 878,
+   "dcsCount": 832,
+   "rvTokens": 7,
+   "forms": [
+    "arthī́",
+    "arthínaḥ"
+   ]
+  },
+  {
+   "slp1": "salila",
+   "rank": 880,
+   "dcsCount": 828,
+   "rvTokens": 5,
+   "forms": [
+    "salilé",
+    "saliláḥ",
+    "salilám"
+   ]
+  },
+  {
+   "slp1": "Suc",
+   "rank": 882,
+   "dcsCount": 823,
+   "rvTokens": 81,
+   "forms": [
+    "śuśóca",
+    "śócasva",
+    "śóśucat"
+   ]
+  },
+  {
+   "slp1": "kzatra",
+   "rank": 884,
+   "dcsCount": 818,
+   "rvTokens": 45,
+   "forms": [
+    "kṣatrám",
+    "kṣatrā́",
+    "kṣatrā́ya"
+   ]
+  },
+  {
+   "slp1": "itara",
+   "rank": 884,
+   "dcsCount": 818,
+   "rvTokens": 4,
+   "forms": [
+    "ítarāḥ",
+    "ítaraḥ",
+    "ítaram"
+   ]
+  },
+  {
+   "slp1": "grAma",
+   "rank": 887,
+   "dcsCount": 817,
+   "rvTokens": 9,
+   "forms": [
+    "grā́me",
+    "grā́māḥ",
+    "grā́maḥ"
+   ]
+  },
+  {
+   "slp1": "vapus",
+   "rank": 887,
+   "dcsCount": 817,
+   "rvTokens": 39,
+   "forms": [
+    "vápuḥ",
+    "vápuṣe",
+    "vápuṣi"
+   ]
+  },
+  {
+   "slp1": "yAma",
+   "rank": 890,
+   "dcsCount": 814,
+   "rvTokens": 31,
+   "forms": [
+    "yā́me",
+    "yā́maḥ",
+    "yā́māt"
+   ]
+  },
+  {
+   "slp1": "mAruta",
+   "rank": 892,
+   "dcsCount": 810,
+   "rvTokens": 42,
+   "forms": [
+    "mā́ruta",
+    "mā́rutam",
+    "mā́rutaḥ"
+   ]
+  },
+  {
+   "slp1": "anyatra",
+   "rank": 894,
+   "dcsCount": 809,
+   "rvTokens": 3,
+   "forms": [
+    "anyátra",
+    "anyátra +"
+   ]
+  },
+  {
+   "slp1": "jyezWa",
+   "rank": 899,
+   "dcsCount": 803,
+   "rvTokens": 41,
+   "forms": [
+    "jyéṣṭhe",
+    "jyéṣṭhā",
+    "jyéṣṭham"
+   ]
+  },
+  {
+   "slp1": "vasizWa",
+   "rank": 901,
+   "dcsCount": 801,
+   "rvTokens": 53,
+   "forms": [
+    "vásiṣṭha",
+    "vasiṣṭha",
+    "vásiṣṭham"
+   ]
+  },
+  {
+   "slp1": "saMvatsara",
+   "rank": 902,
+   "dcsCount": 799,
+   "rvTokens": 8,
+   "forms": [
+    "saṁvatsaré",
+    "saṁvatsarám",
+    "saṁvatsaráḥ"
+   ]
+  },
+  {
+   "slp1": "ari",
+   "rank": 908,
+   "dcsCount": 792,
+   "rvTokens": 103,
+   "forms": [
+    "aríḥ",
+    "arím",
+    "aryáḥ"
+   ]
+  },
+  {
+   "slp1": "kratu",
+   "rank": 911,
+   "dcsCount": 785,
+   "rvTokens": 181,
+   "forms": [
+    "krátum",
+    "krátuḥ",
+    "krátvā"
+   ]
+  },
+  {
+   "slp1": "Bizaj",
+   "rank": 915,
+   "dcsCount": 783,
+   "rvTokens": 14,
+   "forms": [
+    "bhiṣák",
+    "bhiṣájā",
+    "bhiṣájaḥ"
+   ]
+  },
+  {
+   "slp1": "apsaras",
+   "rank": 915,
+   "dcsCount": 783,
+   "rvTokens": 5,
+   "forms": [
+    "apsarā́ḥ",
+    "apsarásaḥ",
+    "apsarásām"
+   ]
+  },
+  {
+   "slp1": "tuz",
+   "rank": 918,
+   "dcsCount": 781,
+   "rvTokens": 1,
+   "forms": [
+    "tuṣáyantī"
+   ]
+  },
+  {
+   "slp1": "parvan",
+   "rank": 919,
+   "dcsCount": 780,
+   "rvTokens": 11,
+   "forms": [
+    "párva",
+    "párvāṇi",
+    "párvasu"
+   ]
+  },
+  {
+   "slp1": "anIka",
+   "rank": 919,
+   "dcsCount": 780,
+   "rvTokens": 39,
+   "forms": [
+    "ánīkā",
+    "ánīke",
+    "ánīkam"
+   ]
+  },
+  {
+   "slp1": "SanEs",
+   "rank": 921,
+   "dcsCount": 779,
+   "rvTokens": 2,
+   "forms": [
+    "śánais"
+   ]
+  },
+  {
+   "slp1": "balin",
+   "rank": 923,
+   "dcsCount": 776,
+   "rvTokens": 1,
+   "forms": [
+    "balínaḥ"
+   ]
+  },
+  {
+   "slp1": "martya",
+   "rank": 925,
+   "dcsCount": 771,
+   "rvTokens": 185,
+   "forms": [
+    "mártye",
+    "mártyam",
+    "mártyaḥ"
+   ]
+  },
+  {
+   "slp1": "dakza",
+   "rank": 927,
+   "dcsCount": 770,
+   "rvTokens": 93,
+   "forms": [
+    "dakṣa",
+    "dákṣa",
+    "dákṣam"
+   ]
+  },
+  {
+   "slp1": "muhUrta",
+   "rank": 927,
+   "dcsCount": 770,
+   "rvTokens": 2,
+   "forms": [
+    "muhūrtám"
+   ]
+  },
+  {
+   "slp1": "DUma",
+   "rank": 930,
+   "dcsCount": 769,
+   "rvTokens": 11,
+   "forms": [
+    "dhūmám",
+    "dhūmáḥ",
+    "dhūména"
+   ]
+  },
+  {
+   "slp1": "dakziRA",
+   "rank": 930,
+   "dcsCount": 769,
+   "rvTokens": 2,
+   "forms": [
+    "dakṣiṇā́"
+   ]
+  },
+  {
+   "slp1": "ambara",
+   "rank": 930,
+   "dcsCount": 769,
+   "rvTokens": 1,
+   "forms": [
+    "ámbare"
+   ]
+  },
+  {
+   "slp1": "sarpa",
+   "rank": 934,
+   "dcsCount": 768,
+   "rvTokens": 1,
+   "forms": [
+    "sarpáḥ"
+   ]
+  },
+  {
+   "slp1": "pari",
+   "rank": 935,
+   "dcsCount": 767,
+   "rvTokens": 508,
+   "forms": [
+    "pári"
+   ]
+  },
+  {
+   "slp1": "sveda",
+   "rank": 935,
+   "dcsCount": 767,
+   "rvTokens": 5,
+   "forms": [
+    "svédam",
+    "svédāḥ",
+    "svédasya"
+   ]
+  },
+  {
+   "slp1": "svapna",
+   "rank": 935,
+   "dcsCount": 767,
+   "rvTokens": 6,
+   "forms": [
+    "svápne",
+    "svápnaḥ",
+    "svápnena"
+   ]
+  },
+  {
+   "slp1": "jIva",
+   "rank": 942,
+   "dcsCount": 762,
+   "rvTokens": 26,
+   "forms": [
+    "jīváḥ",
+    "jīvám",
+    "jīvā́n"
+   ]
+  },
+  {
+   "slp1": "nfpati",
+   "rank": 946,
+   "dcsCount": 761,
+   "rvTokens": 17,
+   "forms": [
+    "nr̥pate",
+    "nr̥patī",
+    "nr̥pátī"
+   ]
+  },
+  {
+   "slp1": "itas",
+   "rank": 950,
+   "dcsCount": 759,
+   "rvTokens": 30,
+   "forms": [
+    "itás"
+   ]
+  },
+  {
+   "slp1": "prAtar",
+   "rank": 951,
+   "dcsCount": 757,
+   "rvTokens": 34,
+   "forms": [
+    "prātár"
+   ]
+  },
+  {
+   "slp1": "tIvra",
+   "rank": 956,
+   "dcsCount": 750,
+   "rvTokens": 21,
+   "forms": [
+    "tīvráḥ",
+    "tīvrám",
+    "tīvrā́ḥ"
+   ]
+  },
+  {
+   "slp1": "upa",
+   "rank": 959,
+   "dcsCount": 749,
+   "rvTokens": 508,
+   "forms": [
+    "úpa",
+    "úpopa"
+   ]
+  },
+  {
+   "slp1": "vayas",
+   "rank": 962,
+   "dcsCount": 747,
+   "rvTokens": 90,
+   "forms": [
+    "váyaḥ",
+    "váyasā",
+    "váyāṁsi"
+   ]
+  },
+  {
+   "slp1": "yojana",
+   "rank": 965,
+   "dcsCount": 745,
+   "rvTokens": 18,
+   "forms": [
+    "yójanā",
+    "yójanam",
+    "yójanena"
+   ]
+  },
+  {
+   "slp1": "SradDA",
+   "rank": 967,
+   "dcsCount": 744,
+   "rvTokens": 19,
+   "forms": [
+    "śraddhe",
+    "śráddhe",
+    "śraddhā́"
+   ]
+  },
+  {
+   "slp1": "ruj",
+   "rank": 968,
+   "dcsCount": 743,
+   "rvTokens": 42,
+   "forms": [
+    "ruja",
+    "rujan",
+    "ruján"
+   ]
+  },
+  {
+   "slp1": "sTira",
+   "rank": 970,
+   "dcsCount": 742,
+   "rvTokens": 40,
+   "forms": [
+    "sthiré",
+    "sthirám",
+    "sthirā́"
+   ]
+  },
+  {
+   "slp1": "vAsa",
+   "rank": 970,
+   "dcsCount": 742,
+   "rvTokens": 1,
+   "forms": [
+    "vāsé"
+   ]
+  },
+  {
+   "slp1": "amBas",
+   "rank": 970,
+   "dcsCount": 742,
+   "rvTokens": 1,
+   "forms": [
+    "ámbhaḥ"
+   ]
+  },
+  {
+   "slp1": "daDi",
+   "rank": 973,
+   "dcsCount": 741,
+   "rvTokens": 1,
+   "forms": [
+    "dádhiḥ"
+   ]
+  },
+  {
+   "slp1": "vAjin",
+   "rank": 976,
+   "dcsCount": 738,
+   "rvTokens": 184,
+   "forms": [
+    "vājí",
+    "vājī́",
+    "vājin"
+   ]
+  },
+  {
+   "slp1": "vAma",
+   "rank": 978,
+   "dcsCount": 737,
+   "rvTokens": 57,
+   "forms": [
+    "vāmé",
+    "vāmám",
+    "vāmā́"
+   ]
+  },
+  {
+   "slp1": "prAYc",
+   "rank": 981,
+   "dcsCount": 735,
+   "rvTokens": 36,
+   "forms": [
+    "prā́ṅ",
+    "prā́k",
+    "prā́cī"
+   ]
+  },
+  {
+   "slp1": "lip",
+   "rank": 981,
+   "dcsCount": 735,
+   "rvTokens": 3,
+   "forms": [
+    "alipsata"
+   ]
+  },
+  {
+   "slp1": "danta",
+   "rank": 981,
+   "dcsCount": 735,
+   "rvTokens": 2,
+   "forms": [
+    "dántam",
+    "dántaḥ"
+   ]
+  },
+  {
+   "slp1": "nABi",
+   "rank": 984,
+   "dcsCount": 734,
+   "rvTokens": 56,
+   "forms": [
+    "nā́bhā",
+    "nā́bhiḥ",
+    "nā́bhim"
+   ]
+  },
+  {
+   "slp1": "havis",
+   "rank": 986,
+   "dcsCount": 730,
+   "rvTokens": 168,
+   "forms": [
+    "havíḥ",
+    "havíṣā",
+    "havíṣi"
+   ]
+  },
+  {
+   "slp1": "niDA",
+   "rank": 986,
+   "dcsCount": 730,
+   "rvTokens": 2,
+   "forms": [
+    "nidháyā"
+   ]
+  },
+  {
+   "slp1": "SApa",
+   "rank": 989,
+   "dcsCount": 728,
+   "rvTokens": 2,
+   "forms": [
+    "śā́pam"
+   ]
+  },
+  {
+   "slp1": "nUnam",
+   "rank": 993,
+   "dcsCount": 727,
+   "rvTokens": 105,
+   "forms": [
+    "nūnám"
+   ]
+  },
+  {
+   "slp1": "nud",
+   "rank": 994,
+   "dcsCount": 726,
+   "rvTokens": 25,
+   "forms": [
+    "nunudé",
+    "nunude",
+    "nudata"
+   ]
+  },
+  {
+   "slp1": "kArin",
+   "rank": 1000,
+   "dcsCount": 719,
+   "rvTokens": 7,
+   "forms": [
+    "kāríṇe",
+    "kāríṇaḥ",
+    "kāríṇam"
+   ]
+  },
+  {
+   "slp1": "sahas",
+   "rank": 1002,
+   "dcsCount": 717,
+   "rvTokens": 166,
+   "forms": [
+    "sáhaḥ",
+    "sáhase",
+    "sáhasā"
+   ]
+  },
+  {
+   "slp1": "antarikza",
+   "rank": 1003,
+   "dcsCount": 716,
+   "rvTokens": 96,
+   "forms": [
+    "antárikṣe",
+    "antárikṣā",
+    "antárikṣāt"
+   ]
+  },
+  {
+   "slp1": "jihvA",
+   "rank": 1004,
+   "dcsCount": 710,
+   "rvTokens": 45,
+   "forms": [
+    "jihvā́",
+    "jihváyā",
+    "jihvā́m"
+   ]
+  },
+  {
+   "slp1": "Druva",
+   "rank": 1004,
+   "dcsCount": 710,
+   "rvTokens": 52,
+   "forms": [
+    "dhruvé",
+    "dhruvā́",
+    "dhruvám"
+   ]
+  },
+  {
+   "slp1": "prakASa",
+   "rank": 1006,
+   "dcsCount": 709,
+   "rvTokens": 1,
+   "forms": [
+    "prakāśáḥ"
+   ]
+  },
+  {
+   "slp1": "yava",
+   "rank": 1008,
+   "dcsCount": 705,
+   "rvTokens": 23,
+   "forms": [
+    "yávam",
+    "yávaḥ",
+    "yávena"
+   ]
+  },
+  {
+   "slp1": "BA",
+   "rank": 1008,
+   "dcsCount": 705,
+   "rvTokens": 74,
+   "forms": [
+    "bhāhi",
+    "bhāsi",
+    "bhāti"
+   ]
+  },
+  {
+   "slp1": "saMsTA",
+   "rank": 1010,
+   "dcsCount": 704,
+   "rvTokens": 5,
+   "forms": [
+    "saṁsthé"
+   ]
+  },
+  {
+   "slp1": "banDu",
+   "rank": 1010,
+   "dcsCount": 704,
+   "rvTokens": 8,
+   "forms": [
+    "bándhuḥ",
+    "bándhum",
+    "bándhūn"
+   ]
+  },
+  {
+   "slp1": "BaYj",
+   "rank": 1020,
+   "dcsCount": 701,
+   "rvTokens": 5,
+   "forms": [
+    "bhaṅdhi",
+    "bhanákti",
+    "babháñja"
+   ]
+  },
+  {
+   "slp1": "prayoga",
+   "rank": 1029,
+   "dcsCount": 697,
+   "rvTokens": 1,
+   "forms": [
+    "prayógam"
+   ]
+  },
+  {
+   "slp1": "caraRa",
+   "rank": 1034,
+   "dcsCount": 694,
+   "rvTokens": 4,
+   "forms": [
+    "cáraṇe",
+    "cáraṇam"
+   ]
+  },
+  {
+   "slp1": "KyA",
+   "rank": 1039,
+   "dcsCount": 691,
+   "rvTokens": 48,
+   "forms": [
+    "khyaḥ",
+    "khyáḥ",
+    "khyan"
+   ]
+  },
+  {
+   "slp1": "kevala",
+   "rank": 1046,
+   "dcsCount": 685,
+   "rvTokens": 15,
+   "forms": [
+    "kévalā",
+    "kévale",
+    "kévalaḥ"
+   ]
+  },
+  {
+   "slp1": "CAyA",
+   "rank": 1048,
+   "dcsCount": 683,
+   "rvTokens": 5,
+   "forms": [
+    "chāyā́",
+    "chāyā́m",
+    "chāyáyā"
+   ]
+  },
+  {
+   "slp1": "Candas",
+   "rank": 1048,
+   "dcsCount": 683,
+   "rvTokens": 8,
+   "forms": [
+    "chándaḥ",
+    "chándāṁsi",
+    "chándasām"
+   ]
+  },
+  {
+   "slp1": "Srama",
+   "rank": 1053,
+   "dcsCount": 682,
+   "rvTokens": 1,
+   "forms": [
+    "śrámasya"
+   ]
+  },
+  {
+   "slp1": "svara",
+   "rank": 1057,
+   "dcsCount": 677,
+   "rvTokens": 2,
+   "forms": [
+    "svaré",
+    "svaréṇa"
+   ]
+  },
+  {
+   "slp1": "pASa",
+   "rank": 1058,
+   "dcsCount": 676,
+   "rvTokens": 10,
+   "forms": [
+    "pā́śān",
+    "pā́śam",
+    "pā́śāḥ"
+   ]
+  },
+  {
+   "slp1": "Ka",
+   "rank": 1058,
+   "dcsCount": 676,
+   "rvTokens": 10,
+   "forms": [
+    "khé",
+    "khám",
+    "khā́ni"
+   ]
+  },
+  {
+   "slp1": "yam",
+   "rank": 1066,
+   "dcsCount": 669,
+   "rvTokens": 309,
+   "forms": [
+    "yántā",
+    "yaṁsi",
+    "yacha"
+   ]
+  },
+  {
+   "slp1": "avyaya",
+   "rank": 1072,
+   "dcsCount": 666,
+   "rvTokens": 29,
+   "forms": [
+    "avyáyā",
+    "avyáye",
+    "avyáyī"
+   ]
+  },
+  {
+   "slp1": "juz",
+   "rank": 1080,
+   "dcsCount": 662,
+   "rvTokens": 233,
+   "forms": [
+    "juṣata",
+    "juṣanta",
+    "juṣasva"
+   ]
+  },
+  {
+   "slp1": "jAray",
+   "rank": 1081,
+   "dcsCount": 661,
+   "rvTokens": 1,
+   "forms": [
+    "jārayā́yi"
+   ]
+  },
+  {
+   "slp1": "vESya",
+   "rank": 1082,
+   "dcsCount": 660,
+   "rvTokens": 1,
+   "forms": [
+    "vaíśyaḥ"
+   ]
+  },
+  {
+   "slp1": "jantu",
+   "rank": 1084,
+   "dcsCount": 656,
+   "rvTokens": 17,
+   "forms": [
+    "jantóḥ",
+    "jantúm",
+    "jantúḥ"
+   ]
+  },
+  {
+   "slp1": "haMsa",
+   "rank": 1084,
+   "dcsCount": 656,
+   "rvTokens": 16,
+   "forms": [
+    "haṁsáḥ",
+    "haṁsaú",
+    "haṁsám"
+   ]
+  },
+  {
+   "slp1": "saBA",
+   "rank": 1086,
+   "dcsCount": 655,
+   "rvTokens": 3,
+   "forms": [
+    "sabhā́m",
+    "sabhā́su"
+   ]
+  },
+  {
+   "slp1": "maDyama",
+   "rank": 1090,
+   "dcsCount": 653,
+   "rvTokens": 19,
+   "forms": [
+    "madhyamé",
+    "madhyamám",
+    "madhyamáḥ"
+   ]
+  },
+  {
+   "slp1": "sADana",
+   "rank": 1092,
+   "dcsCount": 652,
+   "rvTokens": 11,
+   "forms": [
+    "sā́dhanam",
+    "sā́dhanaḥ"
+   ]
+  },
+  {
+   "slp1": "sOmya",
+   "rank": 1094,
+   "dcsCount": 650,
+   "rvTokens": 1,
+   "forms": [
+    "saúmyāḥ"
+   ]
+  },
+  {
+   "slp1": "parAyaRa",
+   "rank": 1094,
+   "dcsCount": 650,
+   "rvTokens": 4,
+   "forms": [
+    "parā́yaṇe",
+    "parā́yaṇam"
+   ]
+  },
+  {
+   "slp1": "ni",
+   "rank": 1103,
+   "dcsCount": 642,
+   "rvTokens": 482,
+   "forms": [
+    "ní"
+   ]
+  },
+  {
+   "slp1": "pakzin",
+   "rank": 1103,
+   "dcsCount": 642,
+   "rvTokens": 6,
+   "forms": [
+    "pakṣíṇī",
+    "pakṣíṇaḥ",
+    "pakṣíṇam"
+   ]
+  },
+  {
+   "slp1": "Ahava",
+   "rank": 1103,
+   "dcsCount": 642,
+   "rvTokens": 4,
+   "forms": [
+    "āhavé",
+    "āhavám",
+    "āhavéṣu"
+   ]
+  },
+  {
+   "slp1": "yAna",
+   "rank": 1103,
+   "dcsCount": 642,
+   "rvTokens": 1,
+   "forms": [
+    "yā́nam"
+   ]
+  },
+  {
+   "slp1": "sarga",
+   "rank": 1109,
+   "dcsCount": 640,
+   "rvTokens": 24,
+   "forms": [
+    "sárge",
+    "sárgāḥ",
+    "sárgaḥ"
+   ]
+  },
+  {
+   "slp1": "Suzka",
+   "rank": 1110,
+   "dcsCount": 639,
+   "rvTokens": 6,
+   "forms": [
+    "śúṣkāt",
+    "śúṣkam",
+    "śúṣkāsu"
+   ]
+  },
+  {
+   "slp1": "svAdu",
+   "rank": 1110,
+   "dcsCount": 639,
+   "rvTokens": 25,
+   "forms": [
+    "svādú",
+    "svādóḥ",
+    "svā́do"
+   ]
+  },
+  {
+   "slp1": "rAzwra",
+   "rank": 1113,
+   "dcsCount": 638,
+   "rvTokens": 10,
+   "forms": [
+    "rāṣṭrám",
+    "rāṣṭrásya",
+    "rāṣṭrā́ya"
+   ]
+  },
+  {
+   "slp1": "sahasraSas",
+   "rank": 1117,
+   "dcsCount": 636,
+   "rvTokens": 1,
+   "forms": [
+    "sahasraśás"
+   ]
+  },
+  {
+   "slp1": "akzi",
+   "rank": 1122,
+   "dcsCount": 634,
+   "rvTokens": 12,
+   "forms": [
+    "ákṣi",
+    "akṣṇáḥ",
+    "akṣā́ṇi"
+   ]
+  },
+  {
+   "slp1": "nakzatra",
+   "rank": 1127,
+   "dcsCount": 631,
+   "rvTokens": 10,
+   "forms": [
+    "nákṣatrā",
+    "nákṣatraḥ",
+    "nákṣatram"
+   ]
+  },
+  {
+   "slp1": "ozaDi",
+   "rank": 1129,
+   "dcsCount": 630,
+   "rvTokens": 8,
+   "forms": [
+    "oṣadhe",
+    "óṣadhiḥ",
+    "óṣadhim"
+   ]
+  },
+  {
+   "slp1": "banDana",
+   "rank": 1134,
+   "dcsCount": 628,
+   "rvTokens": 4,
+   "forms": [
+    "bándhanāt",
+    "bándhanāni",
+    "bándhanāsaḥ"
+   ]
+  },
+  {
+   "slp1": "BAra",
+   "rank": 1139,
+   "dcsCount": 625,
+   "rvTokens": 5,
+   "forms": [
+    "bhārám",
+    "bhārā́n"
+   ]
+  },
+  {
+   "slp1": "vftra",
+   "rank": 1142,
+   "dcsCount": 624,
+   "rvTokens": 187,
+   "forms": [
+    "vr̥tré",
+    "vr̥trā́",
+    "vr̥trám"
+   ]
+  },
+  {
+   "slp1": "fta",
+   "rank": 1148,
+   "dcsCount": 621,
+   "rvTokens": 360,
+   "forms": [
+    "r̥té",
+    "r̥tám",
+    "r̥tā́"
+   ]
+  },
+  {
+   "slp1": "nAda",
+   "rank": 1148,
+   "dcsCount": 621,
+   "rvTokens": 1,
+   "forms": [
+    "nādé"
+   ]
+  },
+  {
+   "slp1": "svasti",
+   "rank": 1150,
+   "dcsCount": 620,
+   "rvTokens": 201,
+   "forms": [
+    "svastí",
+    "svastím",
+    "svastaú"
+   ]
+  },
+  {
+   "slp1": "tanaya",
+   "rank": 1150,
+   "dcsCount": 620,
+   "rvTokens": 68,
+   "forms": [
+    "tánaye",
+    "tánayā",
+    "tánayam"
+   ]
+  },
+  {
+   "slp1": "kavi",
+   "rank": 1154,
+   "dcsCount": 616,
+   "rvTokens": 240,
+   "forms": [
+    "kave",
+    "kavī",
+    "kavī́"
+   ]
+  },
+  {
+   "slp1": "dIna",
+   "rank": 1158,
+   "dcsCount": 613,
+   "rvTokens": 4,
+   "forms": [
+    "dīné",
+    "dīnā́ḥ",
+    "dīnaíḥ"
+   ]
+  },
+  {
+   "slp1": "naKa",
+   "rank": 1162,
+   "dcsCount": 610,
+   "rvTokens": 3,
+   "forms": [
+    "nakhám",
+    "nakhéṣu",
+    "nakhébhyaḥ"
+   ]
+  },
+  {
+   "slp1": "aDi",
+   "rank": 1164,
+   "dcsCount": 609,
+   "rvTokens": 311,
+   "forms": [
+    "ádhi"
+   ]
+  },
+  {
+   "slp1": "tris",
+   "rank": 1167,
+   "dcsCount": 608,
+   "rvTokens": 67,
+   "forms": [
+    "trís"
+   ]
+  },
+  {
+   "slp1": "Buvana",
+   "rank": 1167,
+   "dcsCount": 608,
+   "rvTokens": 182,
+   "forms": [
+    "bhúvane",
+    "bhúvanā",
+    "bhúvanam"
+   ]
+  },
+  {
+   "slp1": "DIra",
+   "rank": 1167,
+   "dcsCount": 608,
+   "rvTokens": 55,
+   "forms": [
+    "dhīra",
+    "dhī́rā",
+    "dhī́raḥ"
+   ]
+  },
+  {
+   "slp1": "raSmi",
+   "rank": 1170,
+   "dcsCount": 607,
+   "rvTokens": 72,
+   "forms": [
+    "raśme",
+    "raśmíḥ",
+    "raśmím"
+   ]
+  },
+  {
+   "slp1": "cyu",
+   "rank": 1170,
+   "dcsCount": 607,
+   "rvTokens": 43,
+   "forms": [
+    "cyávam",
+    "cyavanta",
+    "cyavante"
+   ]
+  },
+  {
+   "slp1": "kOSika",
+   "rank": 1175,
+   "dcsCount": 605,
+   "rvTokens": 1,
+   "forms": [
+    "kauśika"
+   ]
+  },
+  {
+   "slp1": "vijaya",
+   "rank": 1175,
+   "dcsCount": 605,
+   "rvTokens": 1,
+   "forms": [
+    "vijayā́ya"
+   ]
+  },
+  {
+   "slp1": "vfzwi",
+   "rank": 1177,
+   "dcsCount": 602,
+   "rvTokens": 57,
+   "forms": [
+    "vr̥ṣṭíḥ",
+    "vr̥ṣṭím",
+    "vr̥ṣṭī́"
+   ]
+  },
+  {
+   "slp1": "sad",
+   "rank": 1178,
+   "dcsCount": 601,
+   "rvTokens": 336,
+   "forms": [
+    "satsi",
+    "āsáde",
+    "sīdata"
+   ]
+  },
+  {
+   "slp1": "aDvan",
+   "rank": 1182,
+   "dcsCount": 600,
+   "rvTokens": 40,
+   "forms": [
+    "ádhvā",
+    "ádhvan",
+    "ádhvane"
+   ]
+  },
+  {
+   "slp1": "Akfti",
+   "rank": 1182,
+   "dcsCount": 600,
+   "rvTokens": 1,
+   "forms": [
+    "ā́kr̥tiḥ"
+   ]
+  },
+  {
+   "slp1": "kIrti",
+   "rank": 1185,
+   "dcsCount": 597,
+   "rvTokens": 1,
+   "forms": [
+    "kīrtím"
+   ]
+  },
+  {
+   "slp1": "varDana",
+   "rank": 1186,
+   "dcsCount": 596,
+   "rvTokens": 25,
+   "forms": [
+    "várdhanā",
+    "vardhanā",
+    "várdhanī"
+   ]
+  },
+  {
+   "slp1": "mAtrA",
+   "rank": 1188,
+   "dcsCount": 595,
+   "rvTokens": 7,
+   "forms": [
+    "mā́trā",
+    "mā́tre",
+    "mā́trām"
+   ]
+  },
+  {
+   "slp1": "lakzmI",
+   "rank": 1188,
+   "dcsCount": 595,
+   "rvTokens": 1,
+   "forms": [
+    "lakṣmī́ḥ"
+   ]
+  },
+  {
+   "slp1": "svid",
+   "rank": 1191,
+   "dcsCount": 594,
+   "rvTokens": 51,
+   "forms": [
+    "svit",
+    "siṣvidānáḥ",
+    "siṣvidānā́ḥ"
+   ]
+  },
+  {
+   "slp1": "hastin",
+   "rank": 1195,
+   "dcsCount": 593,
+   "rvTokens": 5,
+   "forms": [
+    "hastī́",
+    "hastínaḥ",
+    "hastíbhiḥ"
+   ]
+  },
+  {
+   "slp1": "kumBa",
+   "rank": 1201,
+   "dcsCount": 589,
+   "rvTokens": 4,
+   "forms": [
+    "kumbhé",
+    "kumbhám",
+    "kumbhā́n"
+   ]
+  },
+  {
+   "slp1": "SAsana",
+   "rank": 1201,
+   "dcsCount": 589,
+   "rvTokens": 1,
+   "forms": [
+    "śā́sane"
+   ]
+  },
+  {
+   "slp1": "nam",
+   "rank": 1208,
+   "dcsCount": 583,
+   "rvTokens": 47,
+   "forms": [
+    "neme",
+    "nama",
+    "name"
+   ]
+  },
+  {
+   "slp1": "kziti",
+   "rank": 1214,
+   "dcsCount": 580,
+   "rvTokens": 45,
+   "forms": [
+    "kṣitíḥ",
+    "kṣitíṣu",
+    "kṣitī́ḥ"
+   ]
+  },
+  {
+   "slp1": "antika",
+   "rank": 1219,
+   "dcsCount": 579,
+   "rvTokens": 2,
+   "forms": [
+    "antiké",
+    "antikám"
+   ]
+  },
+  {
+   "slp1": "anfta",
+   "rank": 1223,
+   "dcsCount": 578,
+   "rvTokens": 24,
+   "forms": [
+    "ánr̥tā",
+    "ánr̥tam",
+    "ánr̥tāni"
+   ]
+  },
+  {
+   "slp1": "pavitra",
+   "rank": 1223,
+   "dcsCount": 578,
+   "rvTokens": 101,
+   "forms": [
+    "pavítre",
+    "pavítrā",
+    "pavítram"
+   ]
+  },
+  {
+   "slp1": "atiTi",
+   "rank": 1223,
+   "dcsCount": 578,
+   "rvTokens": 45,
+   "forms": [
+    "átithe",
+    "átithim",
+    "átithiḥ"
+   ]
+  },
+  {
+   "slp1": "arRava",
+   "rank": 1226,
+   "dcsCount": 577,
+   "rvTokens": 26,
+   "forms": [
+    "arṇavé",
+    "arṇavám",
+    "arṇaváḥ"
+   ]
+  },
+  {
+   "slp1": "yoDa",
+   "rank": 1226,
+   "dcsCount": 577,
+   "rvTokens": 5,
+   "forms": [
+    "yodháḥ",
+    "yodhám",
+    "yodhā́ḥ"
+   ]
+  },
+  {
+   "slp1": "hima",
+   "rank": 1228,
+   "dcsCount": 576,
+   "rvTokens": 4,
+   "forms": [
+    "hiména"
+   ]
+  },
+  {
+   "slp1": "ripu",
+   "rank": 1232,
+   "dcsCount": 575,
+   "rvTokens": 28,
+   "forms": [
+    "ripúḥ",
+    "ripóḥ",
+    "ripúm"
+   ]
+  },
+  {
+   "slp1": "nidrA",
+   "rank": 1232,
+   "dcsCount": 575,
+   "rvTokens": 1,
+   "forms": [
+    "nidrā́"
+   ]
+  },
+  {
+   "slp1": "rud",
+   "rank": 1235,
+   "dcsCount": 574,
+   "rvTokens": 4,
+   "forms": [
+    "rudatáḥ",
+    "rudanti",
+    "árodayat"
+   ]
+  },
+  {
+   "slp1": "idAnIm",
+   "rank": 1235,
+   "dcsCount": 574,
+   "rvTokens": 5,
+   "forms": [
+    "idā́nīm"
+   ]
+  },
+  {
+   "slp1": "araRya",
+   "rank": 1242,
+   "dcsCount": 572,
+   "rvTokens": 2,
+   "forms": [
+    "áraṇye",
+    "áraṇyeṣu"
+   ]
+  },
+  {
+   "slp1": "dUta",
+   "rank": 1243,
+   "dcsCount": 571,
+   "rvTokens": 94,
+   "forms": [
+    "dūta",
+    "dūtám",
+    "dūtáḥ"
+   ]
+  },
+  {
+   "slp1": "Uru",
+   "rank": 1245,
+   "dcsCount": 568,
+   "rvTokens": 7,
+   "forms": [
+    "ūrúḥ",
+    "ūrū́",
+    "ūrvóḥ"
+   ]
+  },
+  {
+   "slp1": "amAtya",
+   "rank": 1246,
+   "dcsCount": 567,
+   "rvTokens": 1,
+   "forms": [
+    "amā́tyam"
+   ]
+  },
+  {
+   "slp1": "virAj",
+   "rank": 1252,
+   "dcsCount": 565,
+   "rvTokens": 7,
+   "forms": [
+    "virā́ṭ",
+    "virā́jam",
+    "virā́jaḥ"
+   ]
+  },
+  {
+   "slp1": "kapi",
+   "rank": 1252,
+   "dcsCount": 565,
+   "rvTokens": 1,
+   "forms": [
+    "kapíḥ"
+   ]
+  },
+  {
+   "slp1": "vastu",
+   "rank": 1258,
+   "dcsCount": 561,
+   "rvTokens": 31,
+   "forms": [
+    "vásto",
+    "vástoḥ",
+    "vástuḥ"
+   ]
+  },
+  {
+   "slp1": "saMvid",
+   "rank": 1261,
+   "dcsCount": 560,
+   "rvTokens": 2,
+   "forms": [
+    "saṁvít",
+    "saṁvídam"
+   ]
+  },
+  {
+   "slp1": "stana",
+   "rank": 1262,
+   "dcsCount": 559,
+   "rvTokens": 4,
+   "forms": [
+    "stánaḥ",
+    "stánam",
+    "stánau"
+   ]
+  },
+  {
+   "slp1": "Srotra",
+   "rank": 1262,
+   "dcsCount": 559,
+   "rvTokens": 2,
+   "forms": [
+    "śrótram",
+    "śrótrāt"
+   ]
+  },
+  {
+   "slp1": "sAyaka",
+   "rank": 1266,
+   "dcsCount": 557,
+   "rvTokens": 7,
+   "forms": [
+    "sāyaka",
+    "sā́yakam",
+    "sā́yakāni"
+   ]
+  },
+  {
+   "slp1": "kalyARa",
+   "rank": 1268,
+   "dcsCount": 556,
+   "rvTokens": 4,
+   "forms": [
+    "kalyāṇa",
+    "kalyāṇī́ḥ",
+    "kalyāṇyàḥ"
+   ]
+  },
+  {
+   "slp1": "amita",
+   "rank": 1271,
+   "dcsCount": 554,
+   "rvTokens": 9,
+   "forms": [
+    "ámitā",
+    "ámitāḥ",
+    "ámitam"
+   ]
+  },
+  {
+   "slp1": "cAru",
+   "rank": 1275,
+   "dcsCount": 552,
+   "rvTokens": 75,
+   "forms": [
+    "cā́ru",
+    "cā́rum",
+    "cā́ruḥ"
+   ]
+  },
+  {
+   "slp1": "carman",
+   "rank": 1275,
+   "dcsCount": 552,
+   "rvTokens": 13,
+   "forms": [
+    "cárma",
+    "cárman",
+    "cármaṇī"
+   ]
+  },
+  {
+   "slp1": "tfRa",
+   "rank": 1275,
+   "dcsCount": 552,
+   "rvTokens": 6,
+   "forms": [
+    "tŕ̥ṇā",
+    "tŕ̥ṇam",
+    "tŕ̥ṇeṣu"
+   ]
+  },
+  {
+   "slp1": "yAc",
+   "rank": 1280,
+   "dcsCount": 551,
+   "rvTokens": 9,
+   "forms": [
+    "yā́can",
+    "yācāmi",
+    "yāciṣat"
+   ]
+  },
+  {
+   "slp1": "izu",
+   "rank": 1281,
+   "dcsCount": 550,
+   "rvTokens": 11,
+   "forms": [
+    "íṣum",
+    "íṣuḥ",
+    "íṣūḥ"
+   ]
+  },
+  {
+   "slp1": "kali",
+   "rank": 1285,
+   "dcsCount": 548,
+   "rvTokens": 3,
+   "forms": [
+    "kalím",
+    "kaléḥ",
+    "kálayaḥ"
+   ]
+  },
+  {
+   "slp1": "acyuta",
+   "rank": 1288,
+   "dcsCount": 547,
+   "rvTokens": 18,
+   "forms": [
+    "ácyutā",
+    "ácyutaḥ",
+    "ácyutam"
+   ]
+  },
+  {
+   "slp1": "marman",
+   "rank": 1294,
+   "dcsCount": 546,
+   "rvTokens": 7,
+   "forms": [
+    "márma",
+    "márman",
+    "mármāṇi"
+   ]
+  },
+  {
+   "slp1": "Ama",
+   "rank": 1294,
+   "dcsCount": 546,
+   "rvTokens": 11,
+   "forms": [
+    "āmā́",
+    "āmáḥ",
+    "āmā́su"
+   ]
+  },
+  {
+   "slp1": "kawuka",
+   "rank": 1297,
+   "dcsCount": 544,
+   "rvTokens": 1,
+   "forms": [
+    "káṭukam"
+   ]
+  },
+  {
+   "slp1": "sah",
+   "rank": 1303,
+   "dcsCount": 541,
+   "rvTokens": 96,
+   "forms": [
+    "ṣā́ṭ",
+    "sáhaḥ",
+    "sahyāḥ"
+   ]
+  },
+  {
+   "slp1": "dUra",
+   "rank": 1303,
+   "dcsCount": 541,
+   "rvTokens": 47,
+   "forms": [
+    "dūré",
+    "dūrám",
+    "dūrā́t"
+   ]
+  },
+  {
+   "slp1": "fte",
+   "rank": 1306,
+   "dcsCount": 540,
+   "rvTokens": 11,
+   "forms": [
+    "r̥té"
+   ]
+  },
+  {
+   "slp1": "hiraRya",
+   "rank": 1309,
+   "dcsCount": 537,
+   "rvTokens": 17,
+   "forms": [
+    "híraṇyā",
+    "híraṇyam",
+    "híraṇyena"
+   ]
+  },
+  {
+   "slp1": "saras",
+   "rank": 1309,
+   "dcsCount": 537,
+   "rvTokens": 12,
+   "forms": [
+    "sáraḥ",
+    "sárasi",
+    "sárāṁsi"
+   ]
+  },
+  {
+   "slp1": "purastAt",
+   "rank": 1313,
+   "dcsCount": 534,
+   "rvTokens": 34,
+   "forms": [
+    "purástāt"
+   ]
+  },
+  {
+   "slp1": "fc",
+   "rank": 1317,
+   "dcsCount": 532,
+   "rvTokens": 142,
+   "forms": [
+    "árcan",
+    "ārcat",
+    "arcati"
+   ]
+  },
+  {
+   "slp1": "manyu",
+   "rank": 1320,
+   "dcsCount": 531,
+   "rvTokens": 65,
+   "forms": [
+    "manyo",
+    "mányo",
+    "manyúm"
+   ]
+  },
+  {
+   "slp1": "Atura",
+   "rank": 1333,
+   "dcsCount": 528,
+   "rvTokens": 3,
+   "forms": [
+    "ā́turam",
+    "ā́turasya"
+   ]
+  },
+  {
+   "slp1": "tantra",
+   "rank": 1333,
+   "dcsCount": 528,
+   "rvTokens": 1,
+   "forms": [
+    "tántram"
+   ]
+  },
+  {
+   "slp1": "Bezaja",
+   "rank": 1339,
+   "dcsCount": 527,
+   "rvTokens": 31,
+   "forms": [
+    "bheṣajám",
+    "bheṣajā́",
+    "bheṣajáḥ"
+   ]
+  },
+  {
+   "slp1": "viBAga",
+   "rank": 1339,
+   "dcsCount": 527,
+   "rvTokens": 5,
+   "forms": [
+    "vibhāgé"
+   ]
+  },
+  {
+   "slp1": "aruRa",
+   "rank": 1350,
+   "dcsCount": 523,
+   "rvTokens": 35,
+   "forms": [
+    "aruṇám",
+    "aruṇáḥ",
+    "aruṇā́"
+   ]
+  },
+  {
+   "slp1": "maGavan",
+   "rank": 1355,
+   "dcsCount": 521,
+   "rvTokens": 370,
+   "forms": [
+    "maghávā",
+    "maghónī",
+    "maghoni"
+   ]
+  },
+  {
+   "slp1": "DAman",
+   "rank": 1358,
+   "dcsCount": 520,
+   "rvTokens": 97,
+   "forms": [
+    "dhā́ma",
+    "dhā́man",
+    "dhā́mne"
+   ]
+  },
+  {
+   "slp1": "naBas",
+   "rank": 1359,
+   "dcsCount": 519,
+   "rvTokens": 15,
+   "forms": [
+    "nábhaḥ",
+    "nábhasā",
+    "nábhasaḥ"
+   ]
+  },
+  {
+   "slp1": "Suka",
+   "rank": 1364,
+   "dcsCount": 517,
+   "rvTokens": 1,
+   "forms": [
+    "śúkeṣu"
+   ]
+  },
+  {
+   "slp1": "sAraTi",
+   "rank": 1364,
+   "dcsCount": 517,
+   "rvTokens": 7,
+   "forms": [
+    "sā́rathiḥ",
+    "sā́rathaye",
+    "sā́rathayaḥ"
+   ]
+  },
+  {
+   "slp1": "vAja",
+   "rank": 1367,
+   "dcsCount": 516,
+   "rvTokens": 376,
+   "forms": [
+    "vā́je",
+    "vā́jam",
+    "vā́jaḥ"
+   ]
+  },
+  {
+   "slp1": "SamBu",
+   "rank": 1373,
+   "dcsCount": 514,
+   "rvTokens": 6,
+   "forms": [
+    "śambhū",
+    "śambhú",
+    "śambhúḥ"
+   ]
+  },
+  {
+   "slp1": "medas",
+   "rank": 1374,
+   "dcsCount": 513,
+   "rvTokens": 5,
+   "forms": [
+    "médaḥ",
+    "médasā",
+    "médasaḥ"
+   ]
+  },
+  {
+   "slp1": "uras",
+   "rank": 1379,
+   "dcsCount": 510,
+   "rvTokens": 2,
+   "forms": [
+    "úraḥ"
+   ]
+  },
+  {
+   "slp1": "sarit",
+   "rank": 1380,
+   "dcsCount": 509,
+   "rvTokens": 2,
+   "forms": [
+    "sarítaḥ"
+   ]
+  },
+  {
+   "slp1": "vidyut",
+   "rank": 1381,
+   "dcsCount": 508,
+   "rvTokens": 30,
+   "forms": [
+    "vidyút",
+    "vidyútā",
+    "vidyútaḥ"
+   ]
+  },
+  {
+   "slp1": "nizad",
+   "rank": 1381,
+   "dcsCount": 508,
+   "rvTokens": 5,
+   "forms": [
+    "niṣáde",
+    "niṣádā",
+    "niṣádi"
+   ]
+  },
+  {
+   "slp1": "SuB",
+   "rank": 1386,
+   "dcsCount": 505,
+   "rvTokens": 101,
+   "forms": [
+    "śubhé",
+    "śóbhe",
+    "śúbhaḥ"
+   ]
+  },
+  {
+   "slp1": "svana",
+   "rank": 1388,
+   "dcsCount": 504,
+   "rvTokens": 14,
+   "forms": [
+    "svané",
+    "svanáḥ",
+    "svanā́t"
+   ]
+  },
+  {
+   "slp1": "amitra",
+   "rank": 1388,
+   "dcsCount": 504,
+   "rvTokens": 35,
+   "forms": [
+    "amítrān",
+    "amítrāḥ",
+    "amítram"
+   ]
+  },
+  {
+   "slp1": "Atapa",
+   "rank": 1392,
+   "dcsCount": 503,
+   "rvTokens": 1,
+   "forms": [
+    "ātapáḥ"
+   ]
+  },
+  {
+   "slp1": "kzuD",
+   "rank": 1392,
+   "dcsCount": 503,
+   "rvTokens": 9,
+   "forms": [
+    "kṣudhé",
+    "kṣúdham",
+    "kṣudháḥ"
+   ]
+  },
+  {
+   "slp1": "SA",
+   "rank": 1394,
+   "dcsCount": 502,
+   "rvTokens": 65,
+   "forms": [
+    "śyat",
+    "śíśīte",
+    "śiśīhí"
+   ]
+  },
+  {
+   "slp1": "kup",
+   "rank": 1398,
+   "dcsCount": 500,
+   "rvTokens": 4,
+   "forms": [
+    "kopayaḥ",
+    "kopayat",
+    "kopáyatha"
+   ]
+  },
+  {
+   "slp1": "parASara",
+   "rank": 1398,
+   "dcsCount": 500,
+   "rvTokens": 2,
+   "forms": [
+    "parāśaráḥ"
+   ]
+  },
+  {
+   "slp1": "gAyatrI",
+   "rank": 1398,
+   "dcsCount": 500,
+   "rvTokens": 2,
+   "forms": [
+    "gāyatrī́"
+   ]
+  },
+  {
+   "slp1": "brahmacArin",
+   "rank": 1398,
+   "dcsCount": 500,
+   "rvTokens": 1,
+   "forms": [
+    "brahmacārī́"
+   ]
+  },
+  {
+   "slp1": "dvIpa",
+   "rank": 1409,
+   "dcsCount": 496,
+   "rvTokens": 2,
+   "forms": [
+    "dvīpám",
+    "dvīpā́ni"
+   ]
+  },
+  {
+   "slp1": "Goza",
+   "rank": 1411,
+   "dcsCount": 495,
+   "rvTokens": 20,
+   "forms": [
+    "ghóṣe",
+    "ghóṣam",
+    "ghóṣaḥ"
+   ]
+  },
+  {
+   "slp1": "rAj",
+   "rank": 1417,
+   "dcsCount": 493,
+   "rvTokens": 70,
+   "forms": [
+    "rā́ṭ",
+    "rājati",
+    "rājasi"
+   ]
+  },
+  {
+   "slp1": "tfp",
+   "rank": 1417,
+   "dcsCount": 493,
+   "rvTokens": 23,
+   "forms": [
+    "tr̥mpatu",
+    "tr̥pṇuta",
+    "tr̥pṇuhi"
+   ]
+  },
+  {
+   "slp1": "cira",
+   "rank": 1417,
+   "dcsCount": 493,
+   "rvTokens": 2,
+   "forms": [
+    "cirám"
+   ]
+  },
+  {
+   "slp1": "SAKA",
+   "rank": 1421,
+   "dcsCount": 492,
+   "rvTokens": 3,
+   "forms": [
+    "śā́khā",
+    "śā́khāḥ",
+    "śā́khām"
+   ]
+  },
+  {
+   "slp1": "pfTu",
+   "rank": 1424,
+   "dcsCount": 490,
+   "rvTokens": 46,
+   "forms": [
+    "pr̥thú",
+    "pr̥thúm",
+    "pr̥thúḥ"
+   ]
+  },
+  {
+   "slp1": "vI",
+   "rank": 1424,
+   "dcsCount": 490,
+   "rvTokens": 107,
+   "forms": [
+    "véḥ",
+    "véti",
+    "veti"
+   ]
+  },
+  {
+   "slp1": "ud",
+   "rank": 1427,
+   "dcsCount": 489,
+   "rvTokens": 307,
+   "forms": [
+    "út",
+    "udā́",
+    "undán"
+   ]
+  },
+  {
+   "slp1": "jYAti",
+   "rank": 1429,
+   "dcsCount": 488,
+   "rvTokens": 4,
+   "forms": [
+    "jñātī́",
+    "jñātáyaḥ"
+   ]
+  },
+  {
+   "slp1": "antaka",
+   "rank": 1436,
+   "dcsCount": 487,
+   "rvTokens": 1,
+   "forms": [
+    "ántakam"
+   ]
+  },
+  {
+   "slp1": "vipAka",
+   "rank": 1436,
+   "dcsCount": 487,
+   "rvTokens": 1,
+   "forms": [
+    "vípākā"
+   ]
+  },
+  {
+   "slp1": "srotas",
+   "rank": 1444,
+   "dcsCount": 485,
+   "rvTokens": 2,
+   "forms": [
+    "srótaḥ",
+    "srótasā"
+   ]
+  },
+  {
+   "slp1": "anDa",
+   "rank": 1447,
+   "dcsCount": 483,
+   "rvTokens": 19,
+   "forms": [
+    "andhé",
+    "andhám",
+    "andháḥ"
+   ]
+  },
+  {
+   "slp1": "Svan",
+   "rank": 1447,
+   "dcsCount": 483,
+   "rvTokens": 12,
+   "forms": [
+    "śvā́",
+    "śúnaḥ",
+    "śvā́nā"
+   ]
+  },
+  {
+   "slp1": "yozit",
+   "rank": 1447,
+   "dcsCount": 483,
+   "rvTokens": 1,
+   "forms": [
+    "yoṣítam"
+   ]
+  },
+  {
+   "slp1": "sinDu",
+   "rank": 1450,
+   "dcsCount": 482,
+   "rvTokens": 204,
+   "forms": [
+    "sindho",
+    "síndhum",
+    "síndhoḥ"
+   ]
+  },
+  {
+   "slp1": "gras",
+   "rank": 1452,
+   "dcsCount": 481,
+   "rvTokens": 7,
+   "forms": [
+    "grásetām",
+    "grasitā́m",
+    "jagrasīta"
+   ]
+  },
+  {
+   "slp1": "BUri",
+   "rank": 1454,
+   "dcsCount": 480,
+   "rvTokens": 101,
+   "forms": [
+    "bhū́ri",
+    "bhū́reḥ",
+    "bhū́rim"
+   ]
+  },
+  {
+   "slp1": "prasU",
+   "rank": 1454,
+   "dcsCount": 480,
+   "rvTokens": 8,
+   "forms": [
+    "prasvàḥ",
+    "prasū́ṣu"
+   ]
+  },
+  {
+   "slp1": "dama",
+   "rank": 1458,
+   "dcsCount": 479,
+   "rvTokens": 51,
+   "forms": [
+    "dáme",
+    "dámam",
+    "dámeṣu"
+   ]
+  },
+  {
+   "slp1": "rOdra",
+   "rank": 1462,
+   "dcsCount": 478,
+   "rvTokens": 3,
+   "forms": [
+    "raúdraḥ",
+    "raúdram",
+    "raúdrau"
+   ]
+  },
+  {
+   "slp1": "ruc",
+   "rank": 1463,
+   "dcsCount": 477,
+   "rvTokens": 110,
+   "forms": [
+    "roci",
+    "rócate",
+    "rocate"
+   ]
+  },
+  {
+   "slp1": "itTam",
+   "rank": 1463,
+   "dcsCount": 477,
+   "rvTokens": 1,
+   "forms": [
+    "itthám"
+   ]
+  },
+  {
+   "slp1": "aSru",
+   "rank": 1463,
+   "dcsCount": 477,
+   "rvTokens": 2,
+   "forms": [
+    "áśru"
+   ]
+  },
+  {
+   "slp1": "svar",
+   "rank": 1468,
+   "dcsCount": 476,
+   "rvTokens": 30,
+   "forms": [
+    "svara",
+    "ásvār",
+    "ásvaran"
+   ]
+  },
+  {
+   "slp1": "apatya",
+   "rank": 1470,
+   "dcsCount": 475,
+   "rvTokens": 6,
+   "forms": [
+    "ápatye",
+    "ápatyam",
+    "ápatyāya"
+   ]
+  },
+  {
+   "slp1": "SAs",
+   "rank": 1473,
+   "dcsCount": 474,
+   "rvTokens": 50,
+   "forms": [
+    "śāste",
+    "śaśāḥ",
+    "śādhi"
+   ]
+  },
+  {
+   "slp1": "koSa",
+   "rank": 1473,
+   "dcsCount": 474,
+   "rvTokens": 39,
+   "forms": [
+    "kóśe",
+    "kóśāḥ",
+    "kóśaḥ"
+   ]
+  },
+  {
+   "slp1": "kfSa",
+   "rank": 1473,
+   "dcsCount": 474,
+   "rvTokens": 8,
+   "forms": [
+    "kr̥śé",
+    "kr̥śám",
+    "kr̥śásya"
+   ]
+  },
+  {
+   "slp1": "azwama",
+   "rank": 1480,
+   "dcsCount": 471,
+   "rvTokens": 2,
+   "forms": [
+    "aṣṭamám"
+   ]
+  },
+  {
+   "slp1": "madya",
+   "rank": 1482,
+   "dcsCount": 470,
+   "rvTokens": 13,
+   "forms": [
+    "mádyam",
+    "mádyaḥ",
+    "mádyāsu"
+   ]
+  },
+  {
+   "slp1": "nanu",
+   "rank": 1482,
+   "dcsCount": 470,
+   "rvTokens": 2,
+   "forms": [
+    "nanú"
+   ]
+  },
+  {
+   "slp1": "agratas",
+   "rank": 1487,
+   "dcsCount": 468,
+   "rvTokens": 1,
+   "forms": [
+    "agratás"
+   ]
+  },
+  {
+   "slp1": "viMSati",
+   "rank": 1494,
+   "dcsCount": 466,
+   "rvTokens": 10,
+   "forms": [
+    "viṁśatíḥ",
+    "viṁśatím",
+    "viṁśatyā́"
+   ]
+  },
+  {
+   "slp1": "viSvAmitra",
+   "rank": 1494,
+   "dcsCount": 466,
+   "rvTokens": 7,
+   "forms": [
+    "viśvā́mitraḥ",
+    "viśvā́mitrāḥ",
+    "viśvā́mitreṣu"
+   ]
+  },
+  {
+   "slp1": "sirA",
+   "rank": 1498,
+   "dcsCount": 464,
+   "rvTokens": 1,
+   "forms": [
+    "sirā́su"
+   ]
+  },
+  {
+   "slp1": "AdiS",
+   "rank": 1498,
+   "dcsCount": 464,
+   "rvTokens": 9,
+   "forms": [
+    "ādíśe",
+    "ādíśām",
+    "ādíśaḥ"
+   ]
+  },
+  {
+   "slp1": "yuvan",
+   "rank": 1505,
+   "dcsCount": 463,
+   "rvTokens": 83,
+   "forms": [
+    "yúvā",
+    "yū́ne",
+    "yuvan"
+   ]
+  },
+  {
+   "slp1": "veSman",
+   "rank": 1505,
+   "dcsCount": 463,
+   "rvTokens": 2,
+   "forms": [
+    "véśma"
+   ]
+  },
+  {
+   "slp1": "stoma",
+   "rank": 1507,
+   "dcsCount": 462,
+   "rvTokens": 210,
+   "forms": [
+    "stóme",
+    "stómāḥ",
+    "stómaḥ"
+   ]
+  },
+  {
+   "slp1": "Cidra",
+   "rank": 1514,
+   "dcsCount": 460,
+   "rvTokens": 1,
+   "forms": [
+    "chidrā́"
+   ]
+  },
+  {
+   "slp1": "vfzRi",
+   "rank": 1515,
+   "dcsCount": 459,
+   "rvTokens": 5,
+   "forms": [
+    "vŕ̥ṣṇi",
+    "vr̥ṣṇíḥ",
+    "vr̥ṣṇínā"
+   ]
+  },
+  {
+   "slp1": "sru",
+   "rank": 1515,
+   "dcsCount": 459,
+   "rvTokens": 49,
+   "forms": [
+    "srava",
+    "sravet",
+    "susrot"
+   ]
+  },
+  {
+   "slp1": "vaRij",
+   "rank": 1518,
+   "dcsCount": 458,
+   "rvTokens": 2,
+   "forms": [
+    "vaṇík",
+    "vaṇíje"
+   ]
+  },
+  {
+   "slp1": "varcas",
+   "rank": 1523,
+   "dcsCount": 456,
+   "rvTokens": 13,
+   "forms": [
+    "várcaḥ",
+    "várcasā",
+    "várcase"
+   ]
+  },
+  {
+   "slp1": "retas",
+   "rank": 1525,
+   "dcsCount": 455,
+   "rvTokens": 34,
+   "forms": [
+    "rétaḥ",
+    "rétase",
+    "rétasā"
+   ]
+  },
+  {
+   "slp1": "adri",
+   "rank": 1534,
+   "dcsCount": 453,
+   "rvTokens": 130,
+   "forms": [
+    "ádrī",
+    "ádrim",
+    "ádrau"
+   ]
+  },
+  {
+   "slp1": "purIza",
+   "rank": 1534,
+   "dcsCount": 453,
+   "rvTokens": 7,
+   "forms": [
+    "púrīṣā",
+    "púrīṣāt",
+    "púrīṣam"
+   ]
+  },
+  {
+   "slp1": "gup",
+   "rank": 1534,
+   "dcsCount": 453,
+   "rvTokens": 3,
+   "forms": [
+    "jugupuḥ",
+    "gupitáḥ",
+    "gupitám"
+   ]
+  },
+  {
+   "slp1": "Sama",
+   "rank": 1539,
+   "dcsCount": 451,
+   "rvTokens": 2,
+   "forms": [
+    "śámam",
+    "śámasya"
+   ]
+  },
+  {
+   "slp1": "aNgiras",
+   "rank": 1547,
+   "dcsCount": 449,
+   "rvTokens": 69,
+   "forms": [
+    "aṅgiraḥ",
+    "áṅgirāḥ",
+    "áṅgirasaḥ"
+   ]
+  },
+  {
+   "slp1": "pOra",
+   "rank": 1547,
+   "dcsCount": 449,
+   "rvTokens": 8,
+   "forms": [
+    "pauré",
+    "pauráḥ",
+    "paurám"
+   ]
+  },
+  {
+   "slp1": "durga",
+   "rank": 1551,
+   "dcsCount": 447,
+   "rvTokens": 21,
+   "forms": [
+    "durgé",
+    "durgā́",
+    "durgám"
+   ]
+  },
+  {
+   "slp1": "Sakuni",
+   "rank": 1558,
+   "dcsCount": 445,
+   "rvTokens": 5,
+   "forms": [
+    "śakune"
+   ]
+  },
+  {
+   "slp1": "sic",
+   "rank": 1563,
+   "dcsCount": 442,
+   "rvTokens": 89,
+   "forms": [
+    "siñce",
+    "sícau",
+    "siñcán"
+   ]
+  },
+  {
+   "slp1": "guh",
+   "rank": 1565,
+   "dcsCount": 441,
+   "rvTokens": 37,
+   "forms": [
+    "guhā́",
+    "gúham",
+    "gūḷhám"
+   ]
+  },
+  {
+   "slp1": "tan",
+   "rank": 1567,
+   "dcsCount": 440,
+   "rvTokens": 168,
+   "forms": [
+    "tánā",
+    "tate",
+    "tanat"
+   ]
+  },
+  {
+   "slp1": "SAka",
+   "rank": 1571,
+   "dcsCount": 439,
+   "rvTokens": 6,
+   "forms": [
+    "śāké",
+    "śākáḥ",
+    "śākaíḥ"
+   ]
+  },
+  {
+   "slp1": "aDama",
+   "rank": 1573,
+   "dcsCount": 438,
+   "rvTokens": 5,
+   "forms": [
+    "adhamám",
+    "adhamáḥ",
+    "adhamā́n"
+   ]
+  },
+  {
+   "slp1": "nad",
+   "rank": 1576,
+   "dcsCount": 437,
+   "rvTokens": 12,
+   "forms": [
+    "nadáyan",
+    "nānadati",
+    "nā́nadat"
+   ]
+  },
+  {
+   "slp1": "krIq",
+   "rank": 1576,
+   "dcsCount": 437,
+   "rvTokens": 22,
+   "forms": [
+    "krī́ḷan",
+    "krīḷati",
+    "krī́ḷanti"
+   ]
+  },
+  {
+   "slp1": "Sloka",
+   "rank": 1582,
+   "dcsCount": 436,
+   "rvTokens": 26,
+   "forms": [
+    "ślókam",
+    "ślókaḥ",
+    "ślókena"
+   ]
+  },
+  {
+   "slp1": "himavant",
+   "rank": 1582,
+   "dcsCount": 436,
+   "rvTokens": 1,
+   "forms": [
+    "himávantaḥ"
+   ]
+  },
+  {
+   "slp1": "raTin",
+   "rank": 1585,
+   "dcsCount": 435,
+   "rvTokens": 10,
+   "forms": [
+    "rathī́",
+    "rathíne",
+    "rathínīḥ"
+   ]
+  },
+  {
+   "slp1": "Ardra",
+   "rank": 1585,
+   "dcsCount": 435,
+   "rvTokens": 2,
+   "forms": [
+    "ārdrā́t",
+    "ārdrásya"
+   ]
+  },
+  {
+   "slp1": "uzas",
+   "rank": 1594,
+   "dcsCount": 433,
+   "rvTokens": 359,
+   "forms": [
+    "uṣaḥ",
+    "úṣaḥ",
+    "uṣáḥ"
+   ]
+  },
+  {
+   "slp1": "gfhapati",
+   "rank": 1596,
+   "dcsCount": 432,
+   "rvTokens": 21,
+   "forms": [
+    "gr̥hapate",
+    "gr̥hápatiḥ",
+    "gr̥hápatim"
+   ]
+  },
+  {
+   "slp1": "nizka",
+   "rank": 1596,
+   "dcsCount": 432,
+   "rvTokens": 3,
+   "forms": [
+    "niṣkám",
+    "niṣkā́n"
+   ]
+  },
+  {
+   "slp1": "lakza",
+   "rank": 1596,
+   "dcsCount": 432,
+   "rvTokens": 1,
+   "forms": [
+    "lakṣám"
+   ]
+  },
+  {
+   "slp1": "puzkara",
+   "rank": 1596,
+   "dcsCount": 432,
+   "rvTokens": 3,
+   "forms": [
+    "púṣkare",
+    "púṣkarāt"
+   ]
+  },
+  {
+   "slp1": "triDA",
+   "rank": 1600,
+   "dcsCount": 431,
+   "rvTokens": 4,
+   "forms": [
+    "trídhā"
+   ]
+  },
+  {
+   "slp1": "praBava",
+   "rank": 1600,
+   "dcsCount": 431,
+   "rvTokens": 1,
+   "forms": [
+    "prabhaváḥ"
+   ]
+  },
+  {
+   "slp1": "vfzaBa",
+   "rank": 1604,
+   "dcsCount": 430,
+   "rvTokens": 185,
+   "forms": [
+    "vr̥ṣabha",
+    "vr̥ṣabhā",
+    "vr̥ṣabhám"
+   ]
+  },
+  {
+   "slp1": "tyAga",
+   "rank": 1604,
+   "dcsCount": 430,
+   "rvTokens": 1,
+   "forms": [
+    "tyāgám"
+   ]
+  },
+  {
+   "slp1": "ayuta",
+   "rank": 1604,
+   "dcsCount": 430,
+   "rvTokens": 6,
+   "forms": [
+    "ayútā",
+    "ayútam",
+    "ayútāya"
+   ]
+  },
+  {
+   "slp1": "aSman",
+   "rank": 1608,
+   "dcsCount": 429,
+   "rvTokens": 29,
+   "forms": [
+    "áśmā",
+    "áśnā",
+    "áśman"
+   ]
+  },
+  {
+   "slp1": "mah",
+   "rank": 1614,
+   "dcsCount": 426,
+   "rvTokens": 519,
+   "forms": [
+    "máhi",
+    "mahi",
+    "mahé"
+   ]
+  },
+  {
+   "slp1": "puzwi",
+   "rank": 1621,
+   "dcsCount": 425,
+   "rvTokens": 22,
+   "forms": [
+    "puṣṭíḥ",
+    "puṣṭím",
+    "puṣṭéḥ"
+   ]
+  },
+  {
+   "slp1": "roman",
+   "rank": 1621,
+   "dcsCount": 425,
+   "rvTokens": 5,
+   "forms": [
+    "róma",
+    "róma +",
+    "rómāṇi"
+   ]
+  },
+  {
+   "slp1": "Sap",
+   "rank": 1625,
+   "dcsCount": 424,
+   "rvTokens": 5,
+   "forms": [
+    "śepé",
+    "áśapata",
+    "śápātaḥ"
+   ]
+  },
+  {
+   "slp1": "aBiBU",
+   "rank": 1625,
+   "dcsCount": 424,
+   "rvTokens": 7,
+   "forms": [
+    "abhibhū́ḥ",
+    "abhibhúve"
+   ]
+  },
+  {
+   "slp1": "drupada",
+   "rank": 1636,
+   "dcsCount": 421,
+   "rvTokens": 2,
+   "forms": [
+    "drupadé",
+    "drupadéṣu"
+   ]
+  },
+  {
+   "slp1": "vaDU",
+   "rank": 1636,
+   "dcsCount": 421,
+   "rvTokens": 11,
+   "forms": [
+    "vadhū́ḥ",
+    "vadhvàḥ",
+    "vadhvā̀"
+   ]
+  },
+  {
+   "slp1": "ASA",
+   "rank": 1638,
+   "dcsCount": 420,
+   "rvTokens": 8,
+   "forms": [
+    "ā́śāḥ",
+    "ā́śābhyaḥ"
+   ]
+  },
+  {
+   "slp1": "aditi",
+   "rank": 1641,
+   "dcsCount": 419,
+   "rvTokens": 174,
+   "forms": [
+    "adite",
+    "ádite",
+    "áditiḥ"
+   ]
+  },
+  {
+   "slp1": "Denu",
+   "rank": 1645,
+   "dcsCount": 418,
+   "rvTokens": 122,
+   "forms": [
+    "dhenú",
+    "dhenúm",
+    "dhenúḥ"
+   ]
+  },
+  {
+   "slp1": "Baga",
+   "rank": 1649,
+   "dcsCount": 417,
+   "rvTokens": 128,
+   "forms": [
+    "bháge",
+    "bhága",
+    "bhaga"
+   ]
+  },
+  {
+   "slp1": "kzam",
+   "rank": 1649,
+   "dcsCount": 417,
+   "rvTokens": 71,
+   "forms": [
+    "gmáḥ",
+    "jmáḥ",
+    "kṣámi"
+   ]
+  },
+  {
+   "slp1": "Sarad",
+   "rank": 1655,
+   "dcsCount": 413,
+   "rvTokens": 30,
+   "forms": [
+    "śarát",
+    "śarádi",
+    "śarádaḥ"
+   ]
+  },
+  {
+   "slp1": "asi",
+   "rank": 1656,
+   "dcsCount": 412,
+   "rvTokens": 4,
+   "forms": [
+    "asíḥ",
+    "asím",
+    "asínā"
+   ]
+  },
+  {
+   "slp1": "dviDA",
+   "rank": 1656,
+   "dcsCount": 412,
+   "rvTokens": 1,
+   "forms": [
+    "dvídhā"
+   ]
+  },
+  {
+   "slp1": "puras",
+   "rank": 1664,
+   "dcsCount": 410,
+   "rvTokens": 52,
+   "forms": [
+    "purás"
+   ]
+  },
+  {
+   "slp1": "Uti",
+   "rank": 1667,
+   "dcsCount": 409,
+   "rvTokens": 350,
+   "forms": [
+    "ūtím",
+    "ūtíḥ",
+    "ūtī́"
+   ]
+  },
+  {
+   "slp1": "bahuDA",
+   "rank": 1670,
+   "dcsCount": 408,
+   "rvTokens": 9,
+   "forms": [
+    "bahudhā́"
+   ]
+  },
+  {
+   "slp1": "gamBIra",
+   "rank": 1672,
+   "dcsCount": 407,
+   "rvTokens": 6,
+   "forms": [
+    "gambhīré",
+    "gambhīráḥ",
+    "gambhīrā́n"
+   ]
+  },
+  {
+   "slp1": "aSvameDa",
+   "rank": 1677,
+   "dcsCount": 405,
+   "rvTokens": 3,
+   "forms": [
+    "áśvamedhe",
+    "áśvamedhāya",
+    "áśvamedhasya"
+   ]
+  },
+  {
+   "slp1": "bahula",
+   "rank": 1683,
+   "dcsCount": 404,
+   "rvTokens": 18,
+   "forms": [
+    "bahulé",
+    "báhule",
+    "bahulā́"
+   ]
+  },
+  {
+   "slp1": "zazwi",
+   "rank": 1685,
+   "dcsCount": 403,
+   "rvTokens": 12,
+   "forms": [
+    "ṣaṣṭím",
+    "ṣaṣṭíḥ",
+    "ṣaṣṭyā́"
+   ]
+  },
+  {
+   "slp1": "vfz",
+   "rank": 1685,
+   "dcsCount": 403,
+   "rvTokens": 25,
+   "forms": [
+    "ávarṣīḥ",
+    "ávarṣīt",
+    "vr̥ṣasva"
+   ]
+  },
+  {
+   "slp1": "saMkalpa",
+   "rank": 1691,
+   "dcsCount": 402,
+   "rvTokens": 1,
+   "forms": [
+    "saṁkalpáḥ"
+   ]
+  },
+  {
+   "slp1": "tanU",
+   "rank": 1694,
+   "dcsCount": 401,
+   "rvTokens": 209,
+   "forms": [
+    "tanu",
+    "tanvè",
+    "tanvì"
+   ]
+  },
+  {
+   "slp1": "udAra",
+   "rank": 1694,
+   "dcsCount": 401,
+   "rvTokens": 1,
+   "forms": [
+    "udāráḥ"
+   ]
+  },
+  {
+   "slp1": "asita",
+   "rank": 1698,
+   "dcsCount": 400,
+   "rvTokens": 9,
+   "forms": [
+    "ásitaḥ",
+    "ásitam",
+    "ásiknīḥ"
+   ]
+  },
+  {
+   "slp1": "sahadeva",
+   "rank": 1698,
+   "dcsCount": 400,
+   "rvTokens": 1,
+   "forms": [
+    "sahádevaḥ"
+   ]
+  },
+  {
+   "slp1": "asfj",
+   "rank": 1706,
+   "dcsCount": 398,
+   "rvTokens": 1,
+   "forms": [
+    "ásr̥k"
+   ]
+  },
+  {
+   "slp1": "saMgama",
+   "rank": 1708,
+   "dcsCount": 396,
+   "rvTokens": 5,
+   "forms": [
+    "saṁgamé",
+    "saṁgaméṣu"
+   ]
+  },
+  {
+   "slp1": "niDi",
+   "rank": 1708,
+   "dcsCount": 396,
+   "rvTokens": 16,
+   "forms": [
+    "nidhím",
+    "nidhíḥ",
+    "nidhíṣu"
+   ]
+  },
+  {
+   "slp1": "havya",
+   "rank": 1711,
+   "dcsCount": 395,
+   "rvTokens": 165,
+   "forms": [
+    "hávyā",
+    "hávyaḥ",
+    "havyā́"
+   ]
+  },
+  {
+   "slp1": "guhA",
+   "rank": 1717,
+   "dcsCount": 393,
+   "rvTokens": 54,
+   "forms": [
+    "gúhā"
+   ]
+  },
+  {
+   "slp1": "ahi",
+   "rank": 1731,
+   "dcsCount": 391,
+   "rvTokens": 73,
+   "forms": [
+    "áhim",
+    "áhiḥ",
+    "áheḥ"
+   ]
+  },
+  {
+   "slp1": "suBaga",
+   "rank": 1735,
+   "dcsCount": 390,
+   "rvTokens": 61,
+   "forms": [
+    "subháge",
+    "subhágā",
+    "subhage"
+   ]
+  },
+  {
+   "slp1": "puru",
+   "rank": 1743,
+   "dcsCount": 388,
+   "rvTokens": 193,
+   "forms": [
+    "purú",
+    "purú +",
+    "pūrvī́"
+   ]
+  },
+  {
+   "slp1": "aBaya",
+   "rank": 1747,
+   "dcsCount": 387,
+   "rvTokens": 16,
+   "forms": [
+    "ábhaye",
+    "ábhayam",
+    "ábhayāni"
+   ]
+  },
+  {
+   "slp1": "kukzi",
+   "rank": 1750,
+   "dcsCount": 385,
+   "rvTokens": 10,
+   "forms": [
+    "kukṣíḥ",
+    "kukṣī́",
+    "kukṣā́"
+   ]
+  },
+  {
+   "slp1": "jAnu",
+   "rank": 1750,
+   "dcsCount": 385,
+   "rvTokens": 1,
+   "forms": [
+    "jā́nu"
+   ]
+  },
+  {
+   "slp1": "aDvara",
+   "rank": 1755,
+   "dcsCount": 384,
+   "rvTokens": 201,
+   "forms": [
+    "adhvaré",
+    "adhvarám",
+    "adhvarā́"
+   ]
+  },
+  {
+   "slp1": "aNka",
+   "rank": 1755,
+   "dcsCount": 384,
+   "rvTokens": 1,
+   "forms": [
+    "aṅkā́ḥ"
+   ]
+  },
+  {
+   "slp1": "rASi",
+   "rank": 1760,
+   "dcsCount": 383,
+   "rvTokens": 4,
+   "forms": [
+    "rāśím",
+    "rāśíḥ",
+    "rāśáyaḥ"
+   ]
+  },
+  {
+   "slp1": "pad",
+   "rank": 1761,
+   "dcsCount": 382,
+   "rvTokens": 57,
+   "forms": [
+    "pādi",
+    "padí",
+    "pā́dā"
+   ]
+  },
+  {
+   "slp1": "jAtavedas",
+   "rank": 1769,
+   "dcsCount": 380,
+   "rvTokens": 129,
+   "forms": [
+    "jātavedaḥ",
+    "jātávedāḥ",
+    "jā́tavedaḥ"
+   ]
+  },
+  {
+   "slp1": "dAsa",
+   "rank": 1769,
+   "dcsCount": 380,
+   "rvTokens": 49,
+   "forms": [
+    "dāsé",
+    "dāsáḥ",
+    "dāsám"
+   ]
+  },
+  {
+   "slp1": "bAD",
+   "rank": 1775,
+   "dcsCount": 379,
+   "rvTokens": 4,
+   "forms": [
+    "bā́dhe",
+    "bā́dhaḥ"
+   ]
+  },
+  {
+   "slp1": "manIzin",
+   "rank": 1786,
+   "dcsCount": 377,
+   "rvTokens": 37,
+   "forms": [
+    "manīṣī́",
+    "manīṣíṇe",
+    "manīṣiṇaḥ"
+   ]
+  },
+  {
+   "slp1": "ad",
+   "rank": 1789,
+   "dcsCount": 376,
+   "rvTokens": 46,
+   "forms": [
+    "atti",
+    "átti",
+    "adán"
+   ]
+  },
+  {
+   "slp1": "miSra",
+   "rank": 1789,
+   "dcsCount": 376,
+   "rvTokens": 1,
+   "forms": [
+    "miśrā́"
+   ]
+  },
+  {
+   "slp1": "surA",
+   "rank": 1797,
+   "dcsCount": 375,
+   "rvTokens": 4,
+   "forms": [
+    "súrā",
+    "súrāyāḥ",
+    "súrāyām"
+   ]
+  },
+  {
+   "slp1": "ayas",
+   "rank": 1802,
+   "dcsCount": 372,
+   "rvTokens": 6,
+   "forms": [
+    "áyaḥ",
+    "áyasaḥ"
+   ]
+  },
+  {
+   "slp1": "uru",
+   "rank": 1806,
+   "dcsCount": 371,
+   "rvTokens": 164,
+   "forms": [
+    "urú",
+    "urúm",
+    "uróḥ"
+   ]
+  },
+  {
+   "slp1": "purohita",
+   "rank": 1812,
+   "dcsCount": 369,
+   "rvTokens": 25,
+   "forms": [
+    "puróhite",
+    "puróhitā",
+    "puróhitam"
+   ]
+  },
+  {
+   "slp1": "candramas",
+   "rank": 1812,
+   "dcsCount": 369,
+   "rvTokens": 7,
+   "forms": [
+    "candrámāḥ",
+    "candrámasā",
+    "candrámasaḥ"
+   ]
+  },
+  {
+   "slp1": "BAnu",
+   "rank": 1820,
+   "dcsCount": 368,
+   "rvTokens": 64,
+   "forms": [
+    "bhānúm",
+    "bhānúḥ",
+    "bhānúnā"
+   ]
+  },
+  {
+   "slp1": "guhya",
+   "rank": 1822,
+   "dcsCount": 367,
+   "rvTokens": 27,
+   "forms": [
+    "gúhyā",
+    "gúhyam",
+    "gúhyāḥ"
+   ]
+  },
+  {
+   "slp1": "duh",
+   "rank": 1823,
+   "dcsCount": 366,
+   "rvTokens": 148,
+   "forms": [
+    "duhe",
+    "duhre",
+    "dukṣán"
+   ]
+  },
+  {
+   "slp1": "saYj",
+   "rank": 1830,
+   "dcsCount": 364,
+   "rvTokens": 4,
+   "forms": [
+    "asakta",
+    "sajāmi",
+    "asajat"
+   ]
+  },
+  {
+   "slp1": "Svas",
+   "rank": 1830,
+   "dcsCount": 364,
+   "rvTokens": 7,
+   "forms": [
+    "śvás",
+    "śváḥ-śvaḥ"
+   ]
+  },
+  {
+   "slp1": "darBa",
+   "rank": 1830,
+   "dcsCount": 364,
+   "rvTokens": 1,
+   "forms": [
+    "darbhā́saḥ"
+   ]
+  },
+  {
+   "slp1": "apa",
+   "rank": 1850,
+   "dcsCount": 359,
+   "rvTokens": 233,
+   "forms": [
+    "ápa",
+    "ápa +",
+    "ápāpa"
+   ]
+  },
+  {
+   "slp1": "aYj",
+   "rank": 1854,
+   "dcsCount": 358,
+   "rvTokens": 112,
+   "forms": [
+    "añje",
+    "añján",
+    "ānajé"
+   ]
+  },
+  {
+   "slp1": "prAya",
+   "rank": 1854,
+   "dcsCount": 358,
+   "rvTokens": 1,
+   "forms": [
+    "prāyé-prāye"
+   ]
+  },
+  {
+   "slp1": "taru",
+   "rank": 1854,
+   "dcsCount": 358,
+   "rvTokens": 1,
+   "forms": [
+    "tárubhiḥ"
+   ]
+  },
+  {
+   "slp1": "arc",
+   "rank": 1854,
+   "dcsCount": 358,
+   "rvTokens": 1,
+   "forms": [
+    "arcā́"
+   ]
+  },
+  {
+   "slp1": "sU",
+   "rank": 1862,
+   "dcsCount": 357,
+   "rvTokens": 2,
+   "forms": [
+    "sū́ḥ"
+   ]
+  },
+  {
+   "slp1": "triMSat",
+   "rank": 1862,
+   "dcsCount": 357,
+   "rvTokens": 12,
+   "forms": [
+    "triṁśát",
+    "triṁśátā",
+    "triṁśáti"
+   ]
+  },
+  {
+   "slp1": "granTi",
+   "rank": 1862,
+   "dcsCount": 357,
+   "rvTokens": 2,
+   "forms": [
+    "granthím"
+   ]
+  },
+  {
+   "slp1": "camU",
+   "rank": 1868,
+   "dcsCount": 356,
+   "rvTokens": 38,
+   "forms": [
+    "camū́",
+    "camvì",
+    "camvòḥ"
+   ]
+  },
+  {
+   "slp1": "vartman",
+   "rank": 1868,
+   "dcsCount": 356,
+   "rvTokens": 1,
+   "forms": [
+    "vártmāni"
+   ]
+  },
+  {
+   "slp1": "utsava",
+   "rank": 1868,
+   "dcsCount": 356,
+   "rvTokens": 2,
+   "forms": [
+    "utsavé",
+    "utsavéṣu"
+   ]
+  },
+  {
+   "slp1": "rayi",
+   "rank": 1874,
+   "dcsCount": 355,
+   "rvTokens": 535,
+   "forms": [
+    "rāyé",
+    "rayím",
+    "rāyáḥ"
+   ]
+  },
+  {
+   "slp1": "suvrata",
+   "rank": 1874,
+   "dcsCount": 355,
+   "rvTokens": 5,
+   "forms": [
+    "suvratáḥ",
+    "suvratám",
+    "suvratā́saḥ"
+   ]
+  },
+  {
+   "slp1": "vAraRa",
+   "rank": 1883,
+   "dcsCount": 353,
+   "rvTokens": 7,
+   "forms": [
+    "vāraṇáḥ",
+    "vāraṇám",
+    "vāraṇā́"
+   ]
+  },
+  {
+   "slp1": "SiSu",
+   "rank": 1891,
+   "dcsCount": 352,
+   "rvTokens": 46,
+   "forms": [
+    "śíśū",
+    "śíśvā",
+    "śíśum"
+   ]
+  },
+  {
+   "slp1": "BrU",
+   "rank": 1891,
+   "dcsCount": 352,
+   "rvTokens": 1,
+   "forms": [
+    "bhruvóḥ"
+   ]
+  },
+  {
+   "slp1": "sUnu",
+   "rank": 1896,
+   "dcsCount": 350,
+   "rvTokens": 107,
+   "forms": [
+    "sūno",
+    "sūnúḥ",
+    "sūnúm"
+   ]
+  },
+  {
+   "slp1": "ketu",
+   "rank": 1896,
+   "dcsCount": 350,
+   "rvTokens": 82,
+   "forms": [
+    "ketúm",
+    "ketúḥ",
+    "ketū́"
+   ]
+  },
+  {
+   "slp1": "taruRa",
+   "rank": 1896,
+   "dcsCount": 350,
+   "rvTokens": 6,
+   "forms": [
+    "táruṇam",
+    "táruṇaḥ",
+    "táruṇīḥ"
+   ]
+  },
+  {
+   "slp1": "paruza",
+   "rank": 1902,
+   "dcsCount": 349,
+   "rvTokens": 9,
+   "forms": [
+    "paruṣé",
+    "páruṣṇi",
+    "páruṣṇīm"
+   ]
+  },
+  {
+   "slp1": "aSani",
+   "rank": 1912,
+   "dcsCount": 346,
+   "rvTokens": 14,
+   "forms": [
+    "aśánim",
+    "aśániḥ",
+    "aśányā"
+   ]
+  },
+  {
+   "slp1": "KAd",
+   "rank": 1912,
+   "dcsCount": 346,
+   "rvTokens": 3,
+   "forms": [
+    "khā́dati",
+    "ācakhā́da",
+    "khādatha +"
+   ]
+  },
+  {
+   "slp1": "Brama",
+   "rank": 1921,
+   "dcsCount": 344,
+   "rvTokens": 3,
+   "forms": [
+    "bhramáḥ",
+    "bhramā́ḥ",
+    "bhramā́saḥ"
+   ]
+  },
+  {
+   "slp1": "nizWA",
+   "rank": 1926,
+   "dcsCount": 343,
+   "rvTokens": 2,
+   "forms": [
+    "niṣṭhā́m",
+    "niṣṭhā́ḥ"
+   ]
+  },
+  {
+   "slp1": "ftvij",
+   "rank": 1930,
+   "dcsCount": 342,
+   "rvTokens": 19,
+   "forms": [
+    "r̥tvík",
+    "r̥tvíjā",
+    "r̥tvijā"
+   ]
+  },
+  {
+   "slp1": "carita",
+   "rank": 1934,
+   "dcsCount": 341,
+   "rvTokens": 1,
+   "forms": [
+    "caritásya"
+   ]
+  },
+  {
+   "slp1": "Garma",
+   "rank": 1934,
+   "dcsCount": 341,
+   "rvTokens": 27,
+   "forms": [
+    "gharmé",
+    "gharmám",
+    "gharmáḥ"
+   ]
+  },
+  {
+   "slp1": "yayAti",
+   "rank": 1934,
+   "dcsCount": 341,
+   "rvTokens": 1,
+   "forms": [
+    "yayā́teḥ"
+   ]
+  },
+  {
+   "slp1": "puz",
+   "rank": 1940,
+   "dcsCount": 340,
+   "rvTokens": 55,
+   "forms": [
+    "puṣṭé",
+    "puṣṭám",
+    "pupoṣa"
+   ]
+  },
+  {
+   "slp1": "aNgAra",
+   "rank": 1944,
+   "dcsCount": 339,
+   "rvTokens": 1,
+   "forms": [
+    "áṅgārāḥ"
+   ]
+  },
+  {
+   "slp1": "janana",
+   "rank": 1950,
+   "dcsCount": 337,
+   "rvTokens": 3,
+   "forms": [
+    "jánanā"
+   ]
+  },
+  {
+   "slp1": "Ayasa",
+   "rank": 1954,
+   "dcsCount": 335,
+   "rvTokens": 21,
+   "forms": [
+    "āyasám",
+    "āyasáḥ",
+    "ā́yasī"
+   ]
+  },
+  {
+   "slp1": "vyaT",
+   "rank": 1954,
+   "dcsCount": 335,
+   "rvTokens": 7,
+   "forms": [
+    "vyathete",
+    "vyathate",
+    "vyathante"
+   ]
+  },
+  {
+   "slp1": "viBIzaRa",
+   "rank": 1959,
+   "dcsCount": 334,
+   "rvTokens": 1,
+   "forms": [
+    "vibhī́ṣaṇaḥ"
+   ]
+  },
+  {
+   "slp1": "pAra",
+   "rank": 1962,
+   "dcsCount": 333,
+   "rvTokens": 28,
+   "forms": [
+    "pāré",
+    "pārám",
+    "pāráḥ"
+   ]
+  },
+  {
+   "slp1": "muzwi",
+   "rank": 1962,
+   "dcsCount": 333,
+   "rvTokens": 1,
+   "forms": [
+    "muṣṭíḥ"
+   ]
+  },
+  {
+   "slp1": "SuBra",
+   "rank": 1974,
+   "dcsCount": 332,
+   "rvTokens": 37,
+   "forms": [
+    "śubhre",
+    "śubhré",
+    "śubhra"
+   ]
+  },
+  {
+   "slp1": "jAtu",
+   "rank": 1978,
+   "dcsCount": 330,
+   "rvTokens": 1,
+   "forms": [
+    "jā́tu"
+   ]
+  },
+  {
+   "slp1": "nft",
+   "rank": 1985,
+   "dcsCount": 328,
+   "rvTokens": 6,
+   "forms": [
+    "nr̥tuḥ",
+    "nartáyan",
+    "nŕ̥tyatām"
+   ]
+  },
+  {
+   "slp1": "samiD",
+   "rank": 1990,
+   "dcsCount": 327,
+   "rvTokens": 45,
+   "forms": [
+    "samít",
+    "samídhā",
+    "samídhe"
+   ]
+  },
+  {
+   "slp1": "Sri",
+   "rank": 1991,
+   "dcsCount": 326,
+   "rvTokens": 80,
+   "forms": [
+    "śret",
+    "aśret",
+    "aśrāyi"
+   ]
+  },
+  {
+   "slp1": "gf",
+   "rank": 1991,
+   "dcsCount": 326,
+   "rvTokens": 63,
+   "forms": [
+    "ajīgar",
+    "ájīgar",
+    "jarethe"
+   ]
+  },
+  {
+   "slp1": "trA",
+   "rank": 1991,
+   "dcsCount": 326,
+   "rvTokens": 37,
+   "forms": [
+    "trā́m",
+    "trāsate",
+    "trāyatām"
+   ]
+  },
+  {
+   "slp1": "daMzwra",
+   "rank": 1991,
+   "dcsCount": 326,
+   "rvTokens": 2,
+   "forms": [
+    "dáṁṣṭrā",
+    "dáṁṣṭraiḥ"
+   ]
+  },
+  {
+   "slp1": "majjan",
+   "rank": 1991,
+   "dcsCount": 326,
+   "rvTokens": 1,
+   "forms": [
+    "majjā́nam"
+   ]
+  },
+  {
+   "slp1": "kzudra",
+   "rank": 1999,
+   "dcsCount": 325,
+   "rvTokens": 2,
+   "forms": [
+    "kṣudrám",
+    "kṣudrā́"
+   ]
+  },
+  {
+   "slp1": "Ikz",
+   "rank": 1999,
+   "dcsCount": 325,
+   "rvTokens": 3,
+   "forms": [
+    "ī́kṣe",
+    "īkṣáyat",
+    "aíkṣetām"
+   ]
+  }
+ ]
+}

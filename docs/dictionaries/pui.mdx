@@ -13,6 +13,11 @@ import {DictAbbreviations} from '@site/src/components/Abbreviations';
 the names** of the major Purāṇas: each name gets a brief identification and precise references
 into the texts. The terse, locational complement to the narrative [Purāṇic Encyclopedia (PE)](pe).
 
+With **17,500+ entries across two printed volumes**, it covers exactly the onomastic layer the
+Purāṇas are richest in — genealogical figures, tribes and peoples, pravara lineages, sacred
+geography, ritual objects — and **38.6 % of its headwords occur in no other digitized
+dictionary on CDSL**.
+
 ## At a glance
 
 | | |
@@ -20,7 +25,7 @@ into the texts. The terse, locational complement to the narrative [Purāṇic En
 | **Code** | `PUI` (source in [`csl-orig/v02/pui`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/pui); no separate repo) |
 | **Full title** | *The Purāṇa Index* |
 | **Author** | V. R. Ramachandra Dikshitar |
-| **Year / size** | 1951 · ~**2232** pages |
+| **Year / size** | 1951 · ~**2232** pages · ~17,500 entries · 2 volumes |
 | **Type** | Name index (Purāṇas) |
 | **Source** | [`csl-orig/v02/pui/`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/pui) |
 | **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/PUIScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/PUIScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/PUIScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/PUIScan/2020/web/mobile1/index.php) |
@@ -30,7 +35,17 @@ into the texts. The terse, locational complement to the narrative [Purāṇic En
 ## When to use it
 
 Reach for `PUI` to find **where a name occurs in the Purāṇas** with a one-line identification.
-For the fuller story use the **[Purāṇic Encyclopedia (PE)](pe)**; for word meanings use
+Concretely:
+
+1. **Pin a mythological figure** to chapter-and-verse: every entry ends in precise textual
+   references, not page numbers of one edition but book.chapter.verse loci that survive
+   translation.
+2. **Disambiguate homonyms**: same-named figures get separate entries distinguished by
+   sub-labels (see below).
+3. **Check a claim's spread**: several references under one name show whether a story belongs
+   to one Purāṇa or is told across many.
+
+For the fuller narrative use the **[Purāṇic Encyclopedia (PE)](pe)**; for word meanings use
 **[Monier-Williams (MW)](mw)**.
 
 ## Reading an entry
@@ -44,18 +59,79 @@ Each entry is a **name** (`<k1>`) with a short gloss and Purāṇa references. T
 <div n="P"/>Br. IV. 36. 76.
 ```
 
+Two more, showing how terse the identifications can be (`csl-orig/v02/pui/pui.txt`):
+
+```
+<L>501<pc>1-064<k1>antargiri<k2>antargiri
+{%Antargiri%}¦ - a tribe.
+<div n="P"/>M. 114. 44.
+```
+
+```
+<L>9003<pc>2-478<k1>bAlaqi<k2>bAlaqi
+{%Bala?i%}¦ - Pravara (A?giras).
+<div n="P"/>M. 196. 15.
+```
+
 | In the source | Meaning |
 |---|---|
 | `{%Aṃkuśā%}` | the **name** (search key `<k1>`) |
 | `— a Śakti on the Drāviṇikā mudrā` | the brief identification |
-| `Br. IV. 36. 76` | the reference — *Brahmāṇḍa Purāṇa* IV.36.76 |
+| `<div n="P"/>Br. IV. 36. 76` | the reference — *Brahmāṇḍa Purāṇa* IV.36.76 |
+| `- a tribe` / `- Pravara (Aṅgiras)` | genre labels: a people; an ancestral-seer name |
+
+The identification line is deliberately telegraphic — often a single category word ("tribe",
+"Pravara", "river", "son of X") — because the index's job is location first, story second.
 
 See [Data Formats](../developers/data-formats) for the markup reference.
+
+## The citation system
+
+References follow the pattern **sigla + book.chapter.verse**. Counted across the file,
+references beginning `Br.` (*Brahmāṇḍa Purāṇa*) dominate at ~7,100, followed by `Vi.` at
+~3,200 — with the rest of the corpus distributed over one- and two-letter sigla for the other
+texts (the digitized front matter, scanned via [csl-doc](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/prefaces/puipref.rst),
+carries Dikshitar's own key). Over **15,000 reference lines** sit under the `<div n="P"/>`
+marker, so multi-reference entries are the norm: a major figure like Kṛṣṇa or Manu carries
+dozens of loci spanning many Purāṇas.
+
+## Same name, different entries
+
+Homonyms are kept apart by **sub-labels** attached to the key — visible in the source as an
+`<h>` marker:
+
+```
+<L>9954<pc>2-601<k1>matsya<k2>matsya<h>IV
+{%Matsya%} (IV)¦ - gift of a silver one during the ceremo-
+nial relating to the digging of tanks.
+<div n="P"/>M. 58. 19.
+```
+
+```
+<L>9955<pc>2-602<k1>matsya<k2>matsya<h>V
+{%Matsya%} (V)¦ - the image of.
+<div n="P"/>M. 259. 2.
+```
+
+These Roman-numeral senses (~7,300 entries carry one) mean a search can return several distinct
+numbered entries under one form — each worth reading separately before dismissing.
+
+## Search tips
+
+1. **Expect multiple hits per name.** Homonym entries and cross-Purāṇa retellings both
+   multiply results; scan the identifications, not just the headwords.
+2. **Names appear in inflected and compound forms.** Try the stem alone.
+3. **Follow the verse loci.** Book.chapter.verse references work across editions and even
+   translations, unlike page numbers.
 
 ## What makes it distinctive
 
 - **A locational index** to the Purāṇas — name → identification → references.
-
+- **Verse-level precision**: loci cite book.chapter.verse, stable across editions.
+- **Homonym discipline**: numbered sub-labels keep distinct figures separate.
+- **Highly independent headword stock** — over a third of its names occur nowhere else on
+  CDSL (38.6 % unique share per the site's atlas measurements, see
+  [Guides Hypotheses](../about/guides-hypotheses)).
 
 ## Headword key conventions
 
@@ -66,6 +142,7 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 | Search key | SLP1 (name) | `aMkuSA` | k1 = k2 |
 | Body form | IAST italic `{%…%}` | `{%Āṃkuśā%}` | The printed name form |
 | Page reference | `<pc>vol-page` | `<pc>1-001` = vol. 1, p. 1 | Two-volume set |
+| Homonym label | `<h>N` after the key | `<h>IV`, `<h>V` | Roman-numeral sense split of same-named entries |
 | Citation | Purāṇa abbreviation + locus | `Br. IV. 36. 76` | Brahmāṇḍapurāṇa book, chapter, verse |
 
 ## Abbreviations

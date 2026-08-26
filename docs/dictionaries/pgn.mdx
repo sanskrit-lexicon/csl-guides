@@ -11,7 +11,12 @@ import {DictAbbreviations} from '@site/src/components/Abbreviations';
 
 `PGN` is Tej Ram Sharma's *Personal and Geographical Names in the Gupta Inscriptions* (1978) —
 an **onomastic study** that registers the personal and place names occurring in Gupta-period
-inscriptions, each located by its inscription and line. A specialist epigraphical name-index.
+inscriptions, each located by its inscription and line. A specialist epigraphical name-index
+paired with a book-length essay on how Indians of the Gupta age actually named themselves.
+
+It is one of the most *independent* datasets on CDSL: **54.9 % of its headwords occur in no
+other digitized dictionary here**, because royal titulature, dynastic names, and Gupta-era
+place names simply do not enter literary lexicons.
 
 ## At a glance
 
@@ -20,8 +25,8 @@ inscriptions, each located by its inscription and line. A specialist epigraphica
 | **Code** | `PGN` (source in [`csl-orig/v02/pgn`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/pgn); no separate repo) |
 | **Full title** | *Personal and Geographical Names in the Gupta Inscriptions* |
 | **Author** | Tej Ram Sharma |
-| **Year / size** | 1978 · ~**378** pages |
-| **Type** | Onomastic index (inscriptions) |
+| **Year / size** | 1978 · ~**378** pages · 485 indexed entries + full essay text |
+| **Type** | Onomastic index (inscriptions) with thematic chapters |
 | **Source** | [`csl-orig/v02/pgn/`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/pgn) |
 | **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/PGNScan/2020/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/PGNScan/2020/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/PGNScan/2020/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/PGNScan/2020/web/mobile1/index.php) |
 | **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/PGNScan/2020/web/webtc/download.html) |
@@ -29,9 +34,20 @@ inscriptions, each located by its inscription and line. A specialist epigraphica
 
 ## When to use it
 
-Reach for `PGN` to locate and study a **name from the Gupta inscriptions**. Pair it with the
-**[Indian Epigraphical Glossary (IEG)](ieg)** for the technical terms. For word meanings use
-**[Monier-Williams (MW)](mw)**.
+Reach for `PGN` to locate and study a **name from the Gupta inscriptions** — roughly the
+fourth-to-sixth-century records of the Gupta empire and its contemporaries. Three distinct
+uses:
+
+1. **Find every attestation** of a person or place: each entry lists inscription number and
+   line for every occurrence.
+2. **Read the name historically**: entries carry Sharma's prose discussion — Epic or Purāṇic
+   background, derivation, social setting.
+3. **Browse the naming culture itself**: the digitized chapters discuss Vedic, Sūtra,
+   Smṛti, and Nibandha-period naming practice, the name-giving ceremony, secret vs common
+   names, and women's names.
+
+Pair it with the **[Indian Epigraphical Glossary (IEG)](ieg)** for the technical terms of the
+same records. For word meanings use **[Monier-Williams (MW)](mw)**.
 
 ## Reading an entry
 
@@ -50,22 +66,78 @@ L. 1; No. 49, L. 1; No. 50, L. 1; No. 51, L. 2, L. 4; …):
 | `No. 1, L. 28` | an inscription number and line where the name occurs |
 | the list | every attestation, by inscription and line |
 
-See [Data Formats](../developers/data-formats) for the markup reference.
+The `No.` references resolve against the book's own **Code of Inscriptions** — a numbered list
+of all Gupta records consulted, included in the digitized front matter — not against an
+external corpus numbering.
 
-## What makes it distinctive
+Entries frequently continue into prose. Two real examples (`csl-orig/v02/pgn/pgn.txt`):
 
-- **Names from the Gupta epigraphic corpus**, with full attestations.
+```
+<L>101<pc>057<k1>BIma<k2>BIma
+ {%Bhima%}¦ (No. 43, LL. 3; 17, 19, 25):
+It is a name based on the Epic tradition. Bhima was the name
+of one of the five Pa??avas in the Mahabharata and literally
+means 'dreadful'.
+```
 
+```
+<L>240<pc>080<k1>undAna<k2>undAna
+16. {%Undana%}¦ (No. 5, L. 5):
+The root apparent in the form is {%ud - und%} meaning to wet,
+bathe from which the name can be derived. The name
+{%Undana%} may, therefore, mean 'kind or humane'.
+```
 
-## Headword key conventions
-
-`<k1>` = `<k2>` = SLP1 (personal or geographical name from the Gupta inscriptions). Entries list the inscriptions and lines where the name is attested.
+What to notice:
 
 | Convention | Marker / form | Example | Note |
 |---|---|---|---|
 | Search key | SLP1 (name) | `gupta` | k1 = k2 |
 | Body form | IAST italic `{%…%}` | `{%Gupta:%}` | The printed name |
-| Attestation | `No. N, L. N` | `No. 1, L. 28` | Inscription number + line |
+| Attestation | `No. N, L. N` | `No. 1, L. 28` | Inscription number + line, per the Code of Inscriptions |
+| Discussion | free prose under the heading | the *Bhīma* note | Etymology and Epic/Purāṇic background |
+| Footnotes | `<sup>N</sup>` markers | superscript note numbers | Scholarly apparatus preserved |
+
+## More than an index
+
+The digitized file preserves the **whole monograph**, and its section structure is searchable
+alongside the entries. After the front matter (Foreword, Preface, Coded Abbreviations, Code of
+Inscriptions, Transliteration Table), the text runs through three Parts whose chapter headings
+include the Vedic, Sūtra, Smṛti, and Nibandha periods of naming practice, the name-giving
+ceremony, "The Secret Name", "The Common Name", "The Abhivadanīya Name", and "The Names of the
+Girls" — before reaching the indexes proper, including "Names of the Gupta Kings" and thematic
+lists such as the chief scribes (*prathama-kāyasthas*). The final run of entries sits under the
+heading "THE MOUNTAINS" (*Revataka*, *Śumeru*, *Ūrjayat* …), in the geographical section.
+
+For a reader this means a full-text search in the Advanced interface can land **inside the
+essay** — useful when you want what Sharma says about, say, matronymics, not just a list of
+attestations.
+
+See [Data Formats](../developers/data-formats) for the markup reference.
+
+## Search tips
+
+1. **Names inflect.** Try stem forms without case endings first; the index normalizes to a
+   citation form but variant spellings occur between records.
+2. **Personal then geographical.** The two categories sit in different parts of the alphabet
+   run — if a place search misses, suspect a person by the same name, and vice versa.
+3. **Kings are grouped.** Royal names concentrate in the "Names of the Gupta Kings" section;
+   court officials and scribes in their own lists.
+4. **The printed page is cited.** Page-column markers (`<pc>`) follow the printed book, so a
+   hit can be checked against the scan.
+
+## What makes it distinctive
+
+- **Names from the Gupta epigraphic corpus**, with full attestations.
+- **Index + monograph in one dataset** — the naming-culture chapters make it readable as a
+  study, not merely consultable as a list.
+- **Highly independent headword stock** — over half its names occur nowhere else on CDSL
+  (54.9 % unique share per the site's atlas measurements, see
+  [Guides Hypotheses](../about/guides-hypotheses)).
+
+## Headword key conventions
+
+`<k1>` = `<k2>` = SLP1 (personal or geographical name from the Gupta inscriptions). Entries list the inscriptions and lines where the name is attested.
 
 ## Abbreviations
 

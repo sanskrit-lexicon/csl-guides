@@ -1,0 +1,27 @@
+.tableWrap {
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.caption {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  margin: 0.25rem 0 0;
+}
+
+.muted {
+  color: var(--ifm-color-emphasis-500);
+  font-size: 0.85em;
+}
+
+.forms {
+  font-size: 1.05rem;
+}
+
+.form {
+  white-space: nowrap;
+}
+
+.proseList {
+  margin-bottom: 1rem;
+}

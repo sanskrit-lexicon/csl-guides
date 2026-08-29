@@ -15,6 +15,10 @@
 .tmp_css/
 scripts/_*.mjs
 
+# Playwright verification run artifacts (evidence, not repo content)
+/verify-viz-playwright.png
+/verify-viz-playwright.result.json
+
 # Misc
 .DS_Store
 .env.local

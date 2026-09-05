@@ -1,3 +1,5 @@
+_Created: 29-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: newsletter-2016-annual
 title: "CDSL 2016 Year in Review"
@@ -25,3 +27,5 @@ By 2016 the core repositories — COLOGNE, MWS, GRA, AP90, and the dictionary-sp
 ---
 
 *To receive future editions by email, [subscribe here](/users/newsletter).*
+
+_Dr. Mārcis Gasūns_

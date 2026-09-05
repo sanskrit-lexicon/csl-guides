@@ -1,3 +1,5 @@
+_Created: 29-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: newsletter-2015-annual
 title: "CDSL 2015 Year in Review"
@@ -25,3 +27,5 @@ The majority of the data work in 2015 continued to be conducted at the Universit
 ---
 
 *To receive future editions by email, [subscribe here](/users/newsletter).*
+
+_Dr. Mārcis Gasūns_

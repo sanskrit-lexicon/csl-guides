@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: corrections-workflow
 title: Corrections Workflow
@@ -88,3 +90,5 @@ python diff_to_changes_dict.py temp_{dict}_0.txt \
 
 See **[Change Files](change-files)** for the exact line-paired format used by
 `updateByLine.py`.
+
+_Dr. Mārcis Gasūns_

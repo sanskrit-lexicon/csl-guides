@@ -1,10 +1,10 @@
 # Metadoc — PLAN_csl-guides_preface_enrichment_P0_2026-07.md
 
-_Created: 24-07-2026 · Last updated: 24-07-2026_
+_Created: 24-07-2026 · Last updated: 05-09-2026_
 
 | Field | Value |
 |-------|-------|
-| Subject | [PLAN_csl-guides_preface_enrichment_P0_2026-07.md](./PLAN_csl-guides_preface_enrichment_P0_2026-07.md) |
+| Subject | [PLAN_csl-guides_preface_enrichment_P0_2026-07.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/plans/PLAN_csl-guides_preface_enrichment_P0_2026-07.md) |
 | Purpose | Execution index for P0 preface enrichment |
 | Provenance | /ask-batch preface enrichment · Grok 4.5 (`grok-4.5`) |
 | Batch | [ASK_BATCH_STAGING_PREFACE_ENRICHMENT_2026-07.md](https://github.com/gasyoun/Uprava/blob/main/ASK_BATCH_STAGING_PREFACE_ENRICHMENT_2026-07.md) |

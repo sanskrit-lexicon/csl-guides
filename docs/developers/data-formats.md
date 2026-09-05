@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: data-formats
 title: Data Formats
@@ -113,3 +115,5 @@ that keys an entry across dictionaries and carries `forms`, `senses`, `citations
 :::
 
 See **[Downloads & Data](../users/downloads-and-data)** for the per-dictionary download links.
+
+_Dr. Mārcis Gasūns_

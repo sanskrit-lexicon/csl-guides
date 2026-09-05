@@ -1,6 +1,6 @@
 # Pref abbr × body `.txt` cross-check — MD
 
-_Created: 23-07-2026 · Last updated: 23-07-2026_
+_Created: 23-07-2026 · Last updated: 05-09-2026_
 
 **Handoffs:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) · [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)  
 **Tool:** [`scripts/pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py)
@@ -96,7 +96,7 @@ _Created: 23-07-2026 · Last updated: 23-07-2026_
 python scripts/pref_abbr_crosscheck.py --dict MD --out-dir scripts/out
 ```
 
-TSV: [`md_pref_abbr_crosscheck.tsv`](./md_pref_abbr_crosscheck.tsv)
+TSV: [`md_pref_abbr_crosscheck.tsv`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/md_pref_abbr_crosscheck.tsv)
 
 ---
 

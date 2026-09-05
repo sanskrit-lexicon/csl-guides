@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: overview
 title: Contributing Overview
@@ -55,3 +57,5 @@ repair, scan problem, or scholarly question.
   as silent edits.
 - **Display or pipeline bugs** → fixed in the relevant tooling repository, then
   regenerated into the public displays.
+
+_Dr. Mārcis Gasūns_

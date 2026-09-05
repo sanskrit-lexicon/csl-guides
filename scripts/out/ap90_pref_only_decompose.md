@@ -1,6 +1,6 @@
 # Pref-only decomposition — AP90
 
-_Created: 24-07-2026 · Last updated: 24-07-2026_
+_Created: 24-07-2026 · Last updated: 05-09-2026_
 
 **Handoff:** [H1560](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1560-Sonnet_csl-guides_pref-only-pwg-pw-decompose_24.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123) · **Prior:** [H1530](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1530-Sonnet_csl-guides_pref-abbr-body-crosscheck_23.07.26.md) · [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md)
 
@@ -83,8 +83,10 @@ python scripts/pref_abbr_crosscheck.py --dict AP90 --out-dir scripts/out --json-
 python scripts/pref_only_decompose.py --dict AP90
 ```
 
-TSV: [`ap90_pref_only_decompose.tsv`](./ap90_pref_only_decompose.tsv)
+TSV: [`ap90_pref_only_decompose.tsv`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/ap90_pref_only_decompose.tsv)
 
 ---
 
 _H1560 · Grok 4.5 (`grok-4.5`) · mechanical re-run + hand/probe classification._
+
+_Dr. Mārcis Gasūns_

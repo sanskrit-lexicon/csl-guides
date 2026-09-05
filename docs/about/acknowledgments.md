@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: acknowledgments
 title: Acknowledgments
@@ -34,3 +36,5 @@ Endowment for the Humanities programme.
 Everyone who files issues, submits corrections, and builds link targets via the
 [GitHub organization](https://github.com/sanskrit-lexicon) — see
 [Contributing](../contributing/overview).
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 29-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: newsletter-2014-annual
 title: "CDSL 2014 Year in Review"
@@ -25,3 +27,5 @@ In 2014 the bulk of data correction and markup work was still conducted at Colog
 ---
 
 *To receive future editions by email, [subscribe here](/users/newsletter).*
+
+_Dr. Mārcis Gasūns_

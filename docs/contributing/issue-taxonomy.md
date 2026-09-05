@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: issue-taxonomy
 title: GitHub Issue Taxonomy
@@ -68,3 +70,5 @@ gh api repos/sanskrit-lexicon/REPO/issues/N/labels/<old-label> -X DELETE
 The taxonomy is applied across repos by the `/cologne-issue-runbook <REPO>` and
 `/cologne-runbook-all` skills (audit → labels → milestones → projects → verification).
 Maintainer reference only.
+
+_Dr. Mārcis Gasūns_

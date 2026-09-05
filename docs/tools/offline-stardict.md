@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: offline-stardict
 title: Offline Access & StarDict
@@ -23,3 +25,4 @@ app (it downloads the CDSL dictionaries into a StarDict viewer). It presumes a S
 viewer is installed — the front page suggests searching for **EBdic**, **ColorDict**,
 **GoldenDict**, or **StarDict**.
 
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 25-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: process-one-correction
 title: Process One Correction
@@ -125,3 +127,5 @@ reason for it.
 After this sequence, the canonical text is corrected in `csl-orig`, XML validity has been
 checked, and `csl-corrections` records the before/after audit trail. The public display is
 refreshed later by the normal generation process or by an explicit maintainer rebuild.
+
+_Dr. Mārcis Gasūns_

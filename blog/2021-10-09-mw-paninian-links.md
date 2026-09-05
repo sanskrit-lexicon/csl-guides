@@ -1,3 +1,5 @@
+_Created: 14-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: mw-paninian-links
 title: "Pāṇinian links added to Monier-Williams"
@@ -16,3 +18,5 @@ references in the entries into live click-throughs — see
 
 Sources: [MWS#120](https://github.com/sanskrit-lexicon/MWS/issues/120) ·
 [csl-newsletter, October 2021](https://github.com/sanskrit-lexicon/csl-newsletter/blob/main/october2021.md).
+
+_Dr. Mārcis Gasūns_

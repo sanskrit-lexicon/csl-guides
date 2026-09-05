@@ -1,3 +1,5 @@
+_Created: 14-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: events
 title: Events & Activity
@@ -23,3 +25,5 @@ What the project keeps instead is a **running activity record**:
 
 If CDSL work is presented at a venue, or a related workshop is organized, it would be
 recorded in the newsletter and (for anything user-facing) in [News](/news).
+
+_Dr. Mārcis Gasūns_

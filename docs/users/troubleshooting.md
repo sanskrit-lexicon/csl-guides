@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: troubleshooting
 title: Troubleshooting
@@ -50,3 +52,5 @@ and **[Contributing → Overview](../contributing/overview)**.
 
 Check the **[FAQ](../faq)**, or open an issue on the dictionary's GitHub repository — see
 **[Contributing](../contributing/overview)**.
+
+_Dr. Mārcis Gasūns_

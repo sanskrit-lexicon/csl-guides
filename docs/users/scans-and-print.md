@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: scans-and-print
 title: Scans & Print
@@ -41,3 +43,5 @@ For a dictionary with scan code `{CODE}`, the scanned edition is at:
 
 (These are the **S¹** / **S²** links on the front page.) Per-dictionary availability is
 reflected live in the [catalog](../dictionaries/catalog).
+
+_Dr. Mārcis Gasūns_

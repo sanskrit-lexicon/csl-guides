@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: api
 title: API
@@ -210,3 +212,5 @@ convenience alias.
 If you only need the data in bulk, the **downloadable XML (SLP1)** per dictionary is the
 most stable path — see [Downloads & Data](../users/downloads-and-data) and
 [Data Formats](data-formats).
+
+_Dr. Mārcis Gasūns_

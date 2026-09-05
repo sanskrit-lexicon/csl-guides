@@ -1,3 +1,5 @@
+_Created: 29-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: newsletter-2026-11
 title: "CDSL Newsletter — November 2026"
@@ -11,3 +13,5 @@ date: 2026-11-30
 <!-- truncate -->
 
 *To receive future editions by email, [subscribe here](/users/newsletter).*
+
+_Dr. Mārcis Gasūns_

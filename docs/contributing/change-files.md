@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: change-files
 title: Change Files
@@ -98,3 +100,5 @@ python -c "with open('ap.txt','rb') as f: print(f.read(3).hex())"
 ```
 
 The result must not be `efbbbf`.
+
+_Dr. Mārcis Gasūns_

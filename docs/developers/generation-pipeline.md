@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: generation-pipeline
 title: Generation Pipeline
@@ -112,3 +114,5 @@ generation (`csl-pywork`, Python 3 + mako) is newer, but the **publish model is
 unchanged** — generated files live in the server's `…/{CODE}Scan/{year}/web/` tree and are
 served from there.
 :::
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 25-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: report-a-typo
 title: Report a Typo
@@ -80,3 +82,5 @@ evidence, and then choose one of two paths:
 Both paths end in the same canonical reference workflow: source correction, XML
 validation, audit-trail change file, and paired commits to `csl-orig` and
 `csl-corrections`.
+
+_Dr. Mārcis Gasūns_

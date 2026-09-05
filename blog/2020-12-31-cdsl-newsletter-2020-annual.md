@@ -1,3 +1,5 @@
+_Created: 29-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: newsletter-2020-annual
 title: "CDSL 2020 Year in Review"
@@ -29,3 +31,5 @@ The web display layer was updated to improve how scan images are served: a local
 ---
 
 *To receive future editions by email, [subscribe here](/users/newsletter).*
+
+_Dr. Mārcis Gasūns_

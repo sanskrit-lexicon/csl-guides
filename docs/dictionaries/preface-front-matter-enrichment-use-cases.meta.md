@@ -1,10 +1,10 @@
 # Metadoc — preface-front-matter-enrichment-use-cases.md
 
-_Created: 24-07-2026 · Last updated: 06-08-2026_
+_Created: 24-07-2026 · Last updated: 05-09-2026_
 
 | Field | Value |
 |-------|-------|
-| Subject | [preface-front-matter-enrichment-use-cases.md](./preface-front-matter-enrichment-use-cases.md) |
+| Subject | [preface-front-matter-enrichment-use-cases.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-front-matter-enrichment-use-cases.md) |
 | Purpose | Proposal: what OCR front matter teaches and which use cases it enriches |
 | Audience | Maintainers, DH pipeline owners, paper authors |
 | Provenance | Session proposal after H1560–H1580 · Grok 4.5 (`grok-4.5`) |
@@ -82,9 +82,9 @@ crosscheck outputs.
 
 ## Related docs
 
-- [pref-body-naming-authority.md](./pref-body-naming-authority.md)
-- [ocr-prefaces.mdx](./ocr-prefaces.mdx)
-- [abbreviations-and-citations.mdx](./abbreviations-and-citations.mdx)
+- [pref-body-naming-authority.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md)
+- [ocr-prefaces.mdx](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/ocr-prefaces.mdx)
+- [abbreviations-and-citations.mdx](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/abbreviations-and-citations.mdx)
 
 ## Revision history
 

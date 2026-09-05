@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+_Created: 17-06-2026 · Last updated: 05-09-2026_
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 > Org-wide conventions (the Cologne dictionary repos, correction workflow, issue taxonomy)
@@ -34,9 +36,9 @@ sound. To verify the way CI does: `npm ci && npm run build`.
   `/news` (a post with `slug: X` lands at `/news/X`, *not* a date path). Docs are served at
   the **site root** (`routeBasePath: '/'`), so a doc link is `/users/quick-start`, not
   `/docs/...`.
-- **Sidebars are manual** — [sidebars.js](sidebars.js) defines five audience sidebars
+- **Sidebars are manual** — [sidebars.js](https://github.com/sanskrit-lexicon/csl-guides/blob/main/sidebars.js) defines five audience sidebars
   (`usersSidebar`, `dictionariesSidebar`, `toolsSidebar`, `contributingSidebar`,
-  `developersSidebar`) wired to navbar items in [docusaurus.config.js](docusaurus.config.js).
+  `developersSidebar`) wired to navbar items in [docusaurus.config.js](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docusaurus.config.js).
   A new doc page is invisible until added to a sidebar.
 - **Custom React components** live in [src/components/](src/components/) and are imported into
   `.mdx` pages: `DictionaryCatalog`, `DictionaryComparison` (live side-by-side CDSL lookup),
@@ -71,28 +73,28 @@ sound. To verify the way CI does: `npm ci && npm run build`.
   deliberately left as-is (none of them have merged cells). The `/docx-to-md` skill emits
   `rst-table` blocks automatically for every target now (not just csl-guides) — see the skill's own
   docs for why a plain `.md`/GFM fallback for other targets turned out to silently corrupt data.
-- **The MW quiz dataset** ([src/data/mw-quiz.json](src/data/mw-quiz.json)) is rendered by
-  `Quiz` on [docs/users/reading-monier-williams.mdx](docs/users/reading-monier-williams.mdx)
+- **The MW quiz dataset** ([src/data/mw-quiz.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/mw-quiz.json)) is rendered by
+  `Quiz` on [docs/users/reading-monier-williams.mdx](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/users/reading-monier-williams.mdx)
   and is **generated/verified, not hand-authored**: each lookup's `cdsl.entryId` + page is
   taken from the digital MW source (`csl-orig/v02/mw/mw.txt` `<L>`/`<pc>` records), so don't
   hand-edit the ids — re-derive them from the source.
 - **Swizzled theme components** live in [src/theme/](src/theme/) (these override Docusaurus
   theme internals, not page-level imports). Currently
-  [DocItem/Content](src/theme/DocItem/Content/index.js) is a `--wrap` swizzle that renders the
+  [DocItem/Content](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/theme/DocItem/Content/index.js) is a `--wrap` swizzle that renders the
   page's git last-updated date top-right (see below).
 
 ## Per-page "last updated" date
 
 Each doc page shows its git last-commit date in the top-right corner. Three pieces, all
 required together:
-- `showLastUpdateTime: true` in [docusaurus.config.js](docusaurus.config.js) — this is what
+- `showLastUpdateTime: true` in [docusaurus.config.js](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docusaurus.config.js) — this is what
   populates `metadata.lastUpdatedAt` (a **millisecond** timestamp; `new Date(ms)`, no `*1000`).
-- [src/theme/DocItem/Content/index.js](src/theme/DocItem/Content/index.js) reads it via
+- [src/theme/DocItem/Content/index.js](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/theme/DocItem/Content/index.js) reads it via
   `useDoc()` and renders `.docPageLastUpdated` above the H1, formatted with a **fixed
   `en-US`/UTC locale** (don't make it locale/timezone-dependent — that causes a hydration
   mismatch). The default footer copy is hidden via `.theme-last-updated` in
-  [src/css/custom.css](src/css/custom.css).
-- **`fetch-depth: 0` in [.github/workflows/deploy.yml](.github/workflows/deploy.yml)** — the
+  [src/css/custom.css](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/css/custom.css).
+- **`fetch-depth: 0` in [.github/workflows/deploy.yml](https://github.com/sanskrit-lexicon/csl-guides/blob/main/.github/workflows/deploy.yml)** — the
   build needs full git history. A shallow clone (the Actions default) stamps *every* page with
   the same date. Verify a change by confirming pages show *different* dates, not just that one
   renders.
@@ -100,10 +102,10 @@ required together:
 ## The dictionary catalog (don't hand-edit the data)
 
 The 43-dictionary catalog table is **generated, not authored**.
-[scripts/build-catalog.mjs](scripts/build-catalog.mjs) fetches the live CDSL front page +
+[scripts/build-catalog.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-catalog.mjs) fetches the live CDSL front page +
 the GitHub org repo list + `csl-doc` + `csl-orig/v02` and writes
-[src/data/dictionaries.json](src/data/dictionaries.json), which
-[DictionaryCatalog.js](src/components/DictionaryCatalog.js) renders. To change catalog data,
+[src/data/dictionaries.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/dictionaries.json), which
+[DictionaryCatalog.js](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/components/DictionaryCatalog.js) renders. To change catalog data,
 re-run `npm run build:catalog` — never edit the JSON by hand.
 
 Non-obvious facts baked into the script:
@@ -116,11 +118,11 @@ Non-obvious facts baked into the script:
 
 ## CI / deploy
 
-- [deploy.yml](.github/workflows/deploy.yml): on push to `main`, refreshes the catalog
+- [deploy.yml](https://github.com/sanskrit-lexicon/csl-guides/blob/main/.github/workflows/deploy.yml): on push to `main`, refreshes the catalog
   (non-fatal), builds, and deploys to GitHub Pages (`gh-pages`).
-- [ci.yml](.github/workflows/ci.yml): builds on every PR (no deploy) — this is the broken-link
+- [ci.yml](https://github.com/sanskrit-lexicon/csl-guides/blob/main/.github/workflows/ci.yml): builds on every PR (no deploy) — this is the broken-link
   gate.
-- [link-check.yml](.github/workflows/link-check.yml): **external** links only (lychee), weekly
+- [link-check.yml](https://github.com/sanskrit-lexicon/csl-guides/blob/main/.github/workflows/link-check.yml): **external** links only (lychee), weekly
   + `workflow_dispatch`. Internal links are already covered by the build. It needs
   `--root-dir "${{ github.workspace }}"` so Docusaurus root-relative routes (`/news`, `/img/...`)
   don't fail extraction before filters run; verify a change by dispatching it, not assuming.
@@ -131,5 +133,7 @@ Non-obvious facts baked into the script:
   against a real source file (a record in `csl-orig`, a `csl-doc` page), not asserted. Deep
   pages quote a real, verified sample record.
 - Unresolved facts are flagged inline with a `:::note` admonition rather than guessed.
-- Session state for this repo is tracked in [.ai_state.md](.ai_state.md) — read it for current
+- Session state for this repo is tracked in [.ai_state.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/.ai_state.md) — read it for current
   WIP and hard-won gotchas (e.g. MWE markup, PW/PWK, screenshot availability) before starting.
+
+_Dr. Mārcis Gasūns_

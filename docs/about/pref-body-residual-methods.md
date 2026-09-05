@@ -7,7 +7,7 @@ sidebar_label: Pref residual methods
 
 # Pref × body residual methods — typed `pref_only` appendix
 
-_Created: 24-07-2026 · Last updated: 24-07-2026_
+_Created: 24-07-2026 · Last updated: 05-09-2026_
 
 **Use case:** [UC-13](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-front-matter-enrichment-use-cases.md) · **Tracking:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123) · **Handoff:** [H1594](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1594-Sonnet_csl-guides_pref-residual-methods-appendix_24.07.26.md) · **Policy:** [pref-body-naming-authority](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md)
 
@@ -186,7 +186,7 @@ After source pref page edits, rebuild each dictionary’s combined pref editions
 | [Legend emit](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_legend_emit.py) · [pwg/pw `_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/tree/main/scripts/out) | UC-3 machine legend store (residual class joined) |
 | [Preface OCR pipeline](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/preface-ocr-pipeline) | Operator manual |
 | [Abbreviations & citations](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/abbreviations-and-citations) | User-facing legend UX |
-| [Guides Hypotheses](./guides-hypotheses.md) (GH-4) | Legend coverage of corpus citations (related exposure bound) |
+| [Guides Hypotheses](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/guides-hypotheses.md) (GH-4) | Legend coverage of corpus citations (related exposure bound) |
 
 ## Provenance
 

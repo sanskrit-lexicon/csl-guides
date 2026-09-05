@@ -1,3 +1,5 @@
+_Created: 29-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: newsletter-2022-annual
 title: "CDSL 2022 Year in Review"
@@ -33,3 +35,5 @@ The third-party PyCDSL library (by Hrishikesh Terdalkar) matured this year, prov
 ---
 
 *To receive future editions by email, [subscribe here](/users/newsletter).*
+
+_Dr. Mārcis Gasūns_

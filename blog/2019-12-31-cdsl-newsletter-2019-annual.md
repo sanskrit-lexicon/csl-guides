@@ -1,3 +1,5 @@
+_Created: 29-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: newsletter-2019-annual
 title: "CDSL 2019 Year in Review"
@@ -25,3 +27,5 @@ The csl-corrections repository received its first commits in 2019, beginning the
 ---
 
 *To receive future editions by email, [subscribe here](/users/newsletter).*
+
+_Dr. Mārcis Gasūns_

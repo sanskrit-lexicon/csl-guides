@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: advanced-search
 title: Advanced Search
@@ -32,3 +34,5 @@ The live Advanced URL per dictionary is `/scans/{CODE}Scan/2020/web/webtc2/index
 
 See **[Search & Display](../users/search-and-display)** for how results are rendered and
 how `<ls>` cross-links work.
+
+_Dr. Mārcis Gasūns_

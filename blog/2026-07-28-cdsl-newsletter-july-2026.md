@@ -1,3 +1,5 @@
+_Created: 28-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: newsletter-2026-07
 title: "CDSL Newsletter — July 2026"
@@ -109,3 +111,5 @@ was previously duplicated across several repos.
 ---
 
 *To receive future editions by email, [subscribe here](/users/newsletter).*
+
+_Dr. Mārcis Gasūns_

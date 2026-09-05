@@ -1,3 +1,5 @@
+_Created: 14-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: csl-devanagari
 title: "csl-devanagari — output closer to the printed text"
@@ -17,3 +19,5 @@ the conversion is lossless against the [`csl-orig`](https://github.com/sanskrit-
 source.
 
 Source: [csl-newsletter, September 2021](https://github.com/sanskrit-lexicon/csl-newsletter/blob/main/september2021.md).
+
+_Dr. Mārcis Gasūns_

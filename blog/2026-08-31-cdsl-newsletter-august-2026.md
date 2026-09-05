@@ -1,3 +1,5 @@
+_Created: 29-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: newsletter-2026-08
 title: "CDSL Newsletter — August 2026"
@@ -99,3 +101,5 @@ To report an error or suggest a correction, open an issue in
 [CORRECTIONS](https://github.com/sanskrit-lexicon/CORRECTIONS/issues/new).
 
 *To receive future editions by email, [subscribe here](/users/newsletter).*
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 14-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: grassmann-revision
 title: "Grassmann dictionary: major markup revision"
@@ -25,3 +27,5 @@ digitization contributed by `@maltenth` and abbreviation interpretation help fro
 
 Sources: [GRA#32](https://github.com/sanskrit-lexicon/GRA/issues/32) ·
 [csl-newsletter, July 2023](https://github.com/sanskrit-lexicon/csl-newsletter/blob/main/july2023.md).
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: repositories
 title: Repository Map
@@ -59,3 +61,5 @@ name**. The clearest case: the *shorter* Petersburg dictionary has code **`PW`**
   files (see **[Change Files](../contributing/change-files)**).
 - **Input files** for the large German dictionaries live in sibling `*xml` repos
   (e.g. `../pwgxml/pwg.xml`, `../mwsxml/mws.xml`).
+
+_Dr. Mārcis Gasūns_

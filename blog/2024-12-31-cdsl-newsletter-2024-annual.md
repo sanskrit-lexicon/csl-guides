@@ -1,3 +1,5 @@
+_Created: 29-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: newsletter-2024-annual
 title: "CDSL 2024 Year in Review"
@@ -29,3 +31,5 @@ The csl-pywork repository received multiple rounds of revision to abbreviation a
 ---
 
 *To receive future editions by email, [subscribe here](/users/newsletter).*
+
+_Dr. Mārcis Gasūns_

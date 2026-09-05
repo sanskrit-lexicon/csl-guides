@@ -1,3 +1,5 @@
+_Created: 23-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: comparison-and-mw-quizzes
 title: "Compare dictionaries side by side, and learn to read Monier-Williams"
@@ -27,3 +29,5 @@ citations were verified against the digital MW source, so the answers double as 
 cross-check between the print and the digital edition.
 
 See the [catalog](/dictionaries/catalog) for the full list of 42 dictionaries.
+
+_Dr. Mārcis Gasūns_

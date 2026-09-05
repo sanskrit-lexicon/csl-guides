@@ -1,3 +1,5 @@
+_Created: 14-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: csl-lnum-corrections
 title: "csl-lnum: submit corrections as pull requests"
@@ -18,3 +20,5 @@ the current correction workflow.
 
 Sources: [csl-lnum readme](https://github.com/sanskrit-lexicon/csl-lnum#readme) ·
 [csl-newsletter, October 2021](https://github.com/sanskrit-lexicon/csl-newsletter/blob/main/october2021.md).
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 14-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: guides-feature-complete
 title: "Guides: auto-generated catalog, search, and display screenshots"
@@ -20,3 +22,5 @@ schemes, the source [data formats](/developers/data-formats), and the
 [contributor workflow](/contributing/overview) are all documented from the live site and
 the `sanskrit-lexicon` repositories. See the [catalog](/dictionaries/catalog) for the full
 list of 42 dictionaries.
+
+_Dr. Mārcis Gasūns_

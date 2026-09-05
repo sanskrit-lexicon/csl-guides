@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: downloads-and-data
 title: Downloads & Data
@@ -48,3 +50,5 @@ When you reuse CDSL data, cite both the **original print dictionary** and the **
 Digital Sanskrit Dictionaries** digitization. See
 **[Abbreviations & Citations](../dictionaries/abbreviations-and-citations)** for the
 recommended citation form.
+
+_Dr. Mārcis Gasūns_

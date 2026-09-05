@@ -1,3 +1,5 @@
+_Created: 28-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: newsletter-2026-06
 title: "CDSL Newsletter — June 2026"
@@ -68,3 +70,5 @@ Corrections, feedback, and contributions are always welcome through the
 [GitHub repository](https://github.com/sanskrit-lexicon/csl-guides).
 
 [Subscribe](/users/newsletter) to receive future editions by email.
+
+_Dr. Mārcis Gasūns_

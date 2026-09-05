@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: overview
 title: Tools Overview
@@ -21,3 +23,5 @@ and using the dictionaries offline.
 | **Offline / StarDict** | Use dictionaries offline, incl. Android | [Offline & StarDict](offline-stardict) |
 
 All tool URLs are documented on their respective pages, mined from the live front page.
+
+_Dr. Mārcis Gasūns_

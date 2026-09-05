@@ -1,3 +1,5 @@
+_Created: 29-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: newsletter-2025-annual
 title: "CDSL 2025 Year in Review"
@@ -33,3 +35,5 @@ A substantial backlog of corrections contributed by Scott Ryden was installed in
 ---
 
 *To receive future editions by email, [subscribe here](/users/newsletter).*
+
+_Dr. Mārcis Gasūns_

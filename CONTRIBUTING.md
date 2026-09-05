@@ -1,12 +1,14 @@
 # Contributing to csl-guides
 
+_Created: 14-06-2026 · Last updated: 05-09-2026_
+
 `csl-guides` is the **documentation site** for the Cologne Digital Sanskrit Dictionaries
 (CDSL), built with [Docusaurus](https://docusaurus.io/) and published to GitHub Pages at
 <https://sanskrit-lexicon.github.io/csl-guides/>.
 
 > **Looking to fix a dictionary entry, a headword, or a scan?** That is *not* done here.
 > Dictionary text is corrected in the per-dictionary repositories via the change-file
-> workflow — see [Contributing](docs/contributing/overview.md) in the guides themselves.
+> workflow — see [Contributing](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/contributing/overview.md) in the guides themselves.
 > This repo is only the **guides about** CDSL.
 
 ## What belongs here
@@ -74,3 +76,5 @@ browser — keep that when editing them.
 
 The entire repository is licensed under [CC BY-SA 4.0](LICENSE). By contributing, you agree
 that your contributions are licensed under the same terms.
+
+_Dr. Mārcis Gasūns_

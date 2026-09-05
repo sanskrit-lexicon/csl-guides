@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: architecture
 title: Architecture
@@ -68,3 +70,5 @@ for the user-facing tour and [API](api) for the endpoints these displays call.
 | [`csl-standards`](https://github.com/sanskrit-lexicon/csl-standards) | Shared conventions/standards |
 
 Full map: **[Repositories](repositories)**.
+
+_Dr. Mārcis Gasūns_

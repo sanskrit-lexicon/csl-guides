@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: faq
 title: Frequently Asked Questions
@@ -49,3 +51,5 @@ and round-tripping deterministic. Devanāgarī and IAST are produced for display
 Yes. CDSL exposes a **native** REST API plus a **Salt API** that is wire-compatible with
 Cologne's [C-SALT](https://api.c-salt.uni-koeln.de) services; GraphQL is available through
 the Salt `salt_graphql` endpoint. See the **[API](developers/api)** page.
+
+_Dr. Mārcis Gasūns_

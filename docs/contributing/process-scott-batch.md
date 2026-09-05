@@ -1,3 +1,5 @@
+_Created: 25-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: process-scott-batch
 title: Process a Scott Batch
@@ -215,3 +217,5 @@ For multi-dictionary batches, repeat the display refresh for each changed dictio
 - Extract `printchange.txt` lines only for confirmed print deviations.
 - Commit `csl-orig` and `csl-corrections` as a paired unit.
 - Refresh public displays for every changed dictionary.
+
+_Dr. Mārcis Gasūns_

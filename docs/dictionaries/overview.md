@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: overview
 title: Dictionaries Overview
@@ -58,3 +60,5 @@ Each dictionary is its own repository in the
 [`AP90`](https://github.com/sanskrit-lexicon/AP90),
 [`PWG`](https://github.com/sanskrit-lexicon/PWG)). See
 **[Repositories](../developers/repositories)** for the org map.
+
+_Dr. Mārcis Gasūns_

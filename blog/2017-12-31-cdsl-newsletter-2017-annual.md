@@ -1,3 +1,5 @@
+_Created: 29-06-2026 · Last updated: 05-09-2026_
+
 ---
 slug: newsletter-2017-annual
 title: "CDSL 2017 Year in Review"
@@ -25,3 +27,5 @@ The Cologne website continued to receive substantial traffic from Sanskrit schol
 ---
 
 *To receive future editions by email, [subscribe here](/users/newsletter).*
+
+_Dr. Mārcis Gasūns_

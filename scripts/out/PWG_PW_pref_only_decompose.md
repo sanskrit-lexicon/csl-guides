@@ -1,6 +1,6 @@
 # Pref-only decomposition rollup — PWG + PW
 
-_Created: 24-07-2026 · Last updated: 24-07-2026_
+_Created: 24-07-2026 · Last updated: 05-09-2026_
 
 **Handoff:** [H1560](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1560-Sonnet_csl-guides_pref-only-pwg-pw-decompose_24.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)
 
@@ -28,10 +28,10 @@ The residual is **typed**, not a pile of unused abbreviations:
 
 ## Artifacts
 
-- [`pwg_pref_only_decompose.md`](./pwg_pref_only_decompose.md) / [`.tsv`](./pwg_pref_only_decompose.tsv)
-- [`pw_pref_only_decompose.md`](./pw_pref_only_decompose.md) / [`.tsv`](./pw_pref_only_decompose.tsv)
-- Frozen census: [`pwg_pref_abbr_crosscheck.tsv`](./pwg_pref_abbr_crosscheck.tsv), [`pw_pref_abbr_crosscheck.tsv`](./pw_pref_abbr_crosscheck.tsv)
-- Tool: [`pref_only_decompose.py`](../pref_only_decompose.py) (classifier) · [`pref_abbr_crosscheck.py`](../pref_abbr_crosscheck.py) (census)
+- [`pwg_pref_only_decompose.md`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_only_decompose.md) / [`.tsv`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_only_decompose.tsv)
+- [`pw_pref_only_decompose.md`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_only_decompose.md) / [`.tsv`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_only_decompose.tsv)
+- Frozen census: [`pwg_pref_abbr_crosscheck.tsv`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_pref_abbr_crosscheck.tsv), [`pw_pref_abbr_crosscheck.tsv`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_pref_abbr_crosscheck.tsv)
+- Tool: [`pref_only_decompose.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_only_decompose.py) (classifier) · [`pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py) (census)
 
 ## Reproduce
 

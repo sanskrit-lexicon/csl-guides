@@ -1,3 +1,5 @@
+_Created: 13-06-2026 · Last updated: 05-09-2026_
+
 ---
 id: simple-search
 title: Simple-Search
@@ -29,3 +31,5 @@ designed for the common case: type a word, get its entries.
 Simple-Search is powered by the API's `listview` action, with `getsuggest` providing
 prefix autocomplete (see the [API](../developers/api) page). The same display is reachable
 per dictionary via the **L** (List) link, `/scans/{CODE}Scan/2020/web/webtc1/index.php`.
+
+_Dr. Mārcis Gasūns_

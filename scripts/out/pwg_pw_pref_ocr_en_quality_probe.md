@@ -2,7 +2,7 @@
 
 _Created: 27-07-2026 · Last updated: 27-07-2026_
 
-**Handoff:** [H1559](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1559-Sonnet_csl-guides_pref-ocr-en-sample-error-rates_24.07.26.md)
+**Handoff:** [H1559](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1559-Sonnet_csl-guides_pref-ocr-en-sample-error-rates_24.07.26.md)
 **Tracking issues:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123) · [PWG#210](https://github.com/sanskrit-lexicon/PWG/issues/210)
 **Model:** Sonnet 5 (`claude-sonnet-5`)
 **Non-goal:** full dictionary re-review or re-OCR. This is a bounded sample with the method stated below, not a claim of exhaustive verification.

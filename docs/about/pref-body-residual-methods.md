@@ -9,7 +9,7 @@ sidebar_label: Pref residual methods
 
 _Created: 24-07-2026 · Last updated: 05-09-2026_
 
-**Use case:** [UC-13](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-front-matter-enrichment-use-cases.md) · **Tracking:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123) · **Handoff:** [H1594](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1594-Sonnet_csl-guides_pref-residual-methods-appendix_24.07.26.md) · **Policy:** [pref-body-naming-authority](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md)
+**Use case:** [UC-13](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-front-matter-enrichment-use-cases.md) · **Tracking:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123) · **Handoff:** [H1594](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1594-Sonnet_csl-guides_pref-residual-methods-appendix_24.07.26.md) · **Policy:** [pref-body-naming-authority](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md)
 
 This page is the **site methods appendix** for residual analytics over OCR preface abbreviation legends joined to digitized dictionary bodies. It packages committed census and classify artifacts so a data paper, FINDINGS entry, or peer review can cite **typed residual**, not a raw “unused key” count.
 

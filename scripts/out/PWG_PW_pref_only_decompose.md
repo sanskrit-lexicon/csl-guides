@@ -2,7 +2,7 @@
 
 _Created: 24-07-2026 · Last updated: 05-09-2026_
 
-**Handoff:** [H1560](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1560-Sonnet_csl-guides_pref-only-pwg-pw-decompose_24.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)
+**Handoff:** [H1560](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1560-Sonnet_csl-guides_pref-only-pwg-pw-decompose_24.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123)
 
 ## Finding
 

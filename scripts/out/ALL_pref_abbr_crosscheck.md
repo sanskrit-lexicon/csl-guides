@@ -2,7 +2,7 @@
 
 _Created: 23-07-2026 · Last updated: 23-07-2026_
 
-**Handoff:** [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123) · **Tool:** [`pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py)
+**Handoff:** [H1543](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1543-Sonnet_csl-guides_pref-abbr-crosscheck-all_23.07.26.md) · **Issue:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123) · **Tool:** [`pref_abbr_crosscheck.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_abbr_crosscheck.py)
 
 ## Non-goals
 

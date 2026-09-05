@@ -2,7 +2,7 @@
 
 _Created: 24-07-2026 · Last updated: 24-07-2026_
 
-**Handoff:** [H1559](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1559-Sonnet_csl-guides_pref-ocr-en-sample-error-rates_24.07.26.md)  
+**Handoff:** [H1559](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1559-Sonnet_csl-guides_pref-ocr-en-sample-error-rates_24.07.26.md)  
 **Model:** Grok 4.5 (`grok-4.5`) — dual-pass script + vision locus checks + DE↔EN sense check  
 **Tracking:** [csl-guides#123](https://github.com/sanskrit-lexicon/csl-guides/issues/123) · [PWG#210](https://github.com/sanskrit-lexicon/PWG/issues/210)  
 **Goal:** measured sample error rates for scholarly-fidelity claims — **not** full re-OCR.

@@ -25,7 +25,7 @@ _Created: 24-07-2026 · Last updated: 05-09-2026_
 ## H1854 hostile-read verdict (04-08-2026)
 
 Adversarial pass over every claim and P1 row of the subject
-([H1854](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1854-Fable_csl-guides_preface-enrichment-proposal-hostile-read_29.07.26.md),
+([H1854](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1854-Fable_csl-guides_preface-enrichment-proposal-hostile-read_29.07.26.md),
 Fable 5 `claude-fable-5`). Default posture REFUTED: a row survives only if a committed
 artifact it would consume exists on disk. **Verdict: the proposal is sound; 3 Major and
 4 Minor findings; both remaining P1 rows survive narrowed, one P1 row was already shipped.**

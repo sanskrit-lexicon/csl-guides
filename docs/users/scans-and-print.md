@@ -16,16 +16,16 @@ front-page dictionary row opens that dictionary's scanned edition.
 
 - **Verification** — the digital text is a transcription; the scan is the authority.
   When the digital text and the scan disagree, the scan wins (and the digital text is
-  corrected — see **[Contributing](../contributing/overview)**).
+  corrected — see **Contributing**).
 - **Link targets** — citations inside entries (`<ls>` tags) can be linked to the exact
   scanned page they reference. This "Dictionary to Book" linking is a major editorial
-  workstream; see **[Issue Taxonomy](../contributing/issue-taxonomy)**.
+  workstream; see **Issue Taxonomy**.
 
 ## Scan quality
 
 Some pages are blurry, skewed, or missing. Replacing them is tracked as a
 `scan-quality` task in the issue taxonomy. If you spot a bad scan, that is exactly the
-kind of issue worth reporting — see **[Contributing → Overview](../contributing/overview)**.
+kind of issue worth reporting — see **Contributing → Overview**.
 
 ## Print deviations
 
@@ -42,6 +42,6 @@ For a dictionary with scan code `{CODE}`, the scanned edition is at:
 - **JPG:** `/scans/{CODE}Scan/index.php?sfx=jpg`
 
 (These are the **S¹** / **S²** links on the front page.) Per-dictionary availability is
-reflected live in the [catalog](../dictionaries/catalog).
+reflected live in the catalog.
 
 _Dr. Mārcis Gasūns_

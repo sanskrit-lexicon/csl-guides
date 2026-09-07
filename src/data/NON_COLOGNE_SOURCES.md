@@ -80,7 +80,7 @@ can join them against dictionary headwords without transcoding.
   (SHA-256 edge contract with `--check`): 845 of the top-2,000 DCS lemmas joined,
   each with RV token count + up to three udātta-marked attested forms, rendered in
   "The same words in the accented Rigveda" on
-  [Corpus attestation](../../dictionaries/corpus-attestation). The guides never hit the
+  Corpus attestation. The guides never hit the
   VedaWeb API (one-bulk-export org rule; Anubis/WAF-blocked since 27-07-2026 anyway).
   The Vedic side otherwise still leans on GRA (Cologne, already covered by the catalog/deep
   pages).

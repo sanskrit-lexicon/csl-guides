@@ -34,6 +34,6 @@ The third-party PyCDSL library (by Hrishikesh Terdalkar) matured this year, prov
 
 ---
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

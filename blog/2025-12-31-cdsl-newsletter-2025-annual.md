@@ -34,6 +34,6 @@ A substantial backlog of corrections contributed by Scott Ryden was installed in
 
 ---
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

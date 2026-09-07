@@ -26,6 +26,6 @@ The majority of the data work in 2015 continued to be conducted at the Universit
 
 ---
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

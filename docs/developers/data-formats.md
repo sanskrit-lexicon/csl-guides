@@ -18,7 +18,7 @@ each.
 
 Each dictionary's canonical source is a single UTF-8 plain-text file at
 `csl-orig/v02/{dict}/{dict}.txt`. It is a **line-oriented** format (the change-file
-workflow addresses lines by number — see **[Change Files](../contributing/change-files)**),
+workflow addresses lines by number — see **Change Files**),
 with one record per entry wrapped in markup.
 
 - **Encoding**: UTF-8, **no BOM**. Sanskrit is stored in **SLP1**.
@@ -67,7 +67,7 @@ notes for MW).
 
 ## Generated XML
 
-The build (see **[Generation Pipeline](generation-pipeline)**) wraps these records into a
+The build (see **Generation Pipeline**) wraps these records into a
 per-dictionary XML document and validates it against a generated DTD
 ([`one.dtd`](https://github.com/sanskrit-lexicon/csl-pywork/blob/main/v02/makotemplates/pywork/one.dtd)).
 The structure:
@@ -93,17 +93,17 @@ parses (the pipeline's "All records parsed by ET" signal).
 
 SLP1 is the storage encoding; conversions to IAST, Harvard-Kyoto, Devanāgarī, ITRANS, etc.
 are applied during generation and lookup by a shared transcoder. See
-**[Encoding & Transliteration](../users/encoding-transliteration)** for the user-facing
+**Encoding & Transliteration** for the user-facing
 view and the scheme table.
 
 ## Derived & downloadable formats
 
 | Format | What it is | Where to get it |
 |---|---|---|
-| **XML (SLP1)** | The structured dictionary above | per-dict `download.html`; see [Downloads & Data](../users/downloads-and-data) |
+| **XML (SLP1)** | The structured dictionary above | per-dict `download.html`; see Downloads & Data |
 | **SQLite** | The search databases the site queries (one `.sqlite` per dictionary, plus `*ab`/`*auth` side tables) | [`csl-sqlite`](https://github.com/sanskrit-lexicon/csl-sqlite) GitHub **Releases** (timestamped) |
 | **JSON** | A compact `{words, text}` shape: `words` maps a headword to its record ids, `text` maps an id to `[body, pc, lnum]` | [`csl-json`](https://github.com/sanskrit-lexicon/csl-json) |
-| **StarDict** | Offline dictionary packages, via an intermediate Babylon export | [`cologne-stardict`](https://github.com/sanskrit-lexicon/cologne-stardict); see [Offline / StarDict](../tools/offline-stardict) |
+| **StarDict** | Offline dictionary packages, via an intermediate Babylon export | [`cologne-stardict`](https://github.com/sanskrit-lexicon/cologne-stardict); see Offline / StarDict |
 | **PDF / scans** | Typeset rendering and original print pages | per-dict scan index |
 
 :::tip Interoperability model
@@ -114,6 +114,6 @@ that keys an entry across dictionaries and carries `forms`, `senses`, `citations
 `relations` — the basis for the CDSL-to-TEI and CDSL-to-OntoLex conversions.
 :::
 
-See **[Downloads & Data](../users/downloads-and-data)** for the per-dictionary download links.
+See **Downloads & Data** for the per-dictionary download links.
 
 _Dr. Mārcis Gasūns_

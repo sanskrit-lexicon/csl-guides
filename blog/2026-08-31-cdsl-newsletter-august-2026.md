@@ -61,7 +61,7 @@ OCR to structured data. Page-boundary OCR omissions were repaired for the
 Böhtlingk–Roth volumes (PWG, PW, PWK), abbreviation keys were aligned to the naming
 used in the body texts, and machine-readable "legend stores" — the abbreviation
 legends of each dictionary as data — were emitted for PWG and PW, with a schema and
-parity checks. The [Abbreviations page](/dictionaries/abbreviations-and-citations) on the guides
+parity checks. The Abbreviations page on the guides
 site now consumes these legends directly. A new repository was also created for the front
 matter of the Deccan College dictionary (PD), with its own OCR pipeline.
 
@@ -100,6 +100,6 @@ and closed.
 To report an error or suggest a correction, open an issue in
 [CORRECTIONS](https://github.com/sanskrit-lexicon/CORRECTIONS/issues/new).
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

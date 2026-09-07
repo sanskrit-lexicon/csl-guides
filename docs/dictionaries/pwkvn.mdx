@@ -10,7 +10,7 @@ sidebar_label: PW Nachträge (PWKVN)
 `PWKVN` is the digitization of the **"Nachträge und Verbesserungen"** (addenda and
 corrections) sections that Böhtlingk printed at the end of **each of the seven volumes** of his
 *Sanskrit-Wörterbuch in kürzerer Fassung* — the dictionary CDSL serves as
-**[PW](pw)**. It is the author's *own* running supplement: ~**25,000** short records adding
+**PW**. It is the author's *own* running supplement: ~**25,000** short records adding
 words, senses, and citations, and correcting earlier entries.
 
 :::note
@@ -31,21 +31,21 @@ linked at the bottom of the front page, and its full source is in `csl-orig`. Th
 | **Author** | Otto von Böhtlingk |
 | **Size** | ~**25,000** records (24,976 `<L>` records; the source metadata counts 22,000+ entries) |
 | **Language** | Sanskrit → German |
-| **Accents** | Yes (udātta `/` on the display key, as in [PW](pw)) |
+| **Accents** | Yes (udātta `/` on the display key, as in PW) |
 | **Source** | [`csl-orig/v02/pwkvn/`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/pwkvn) |
 | **Open** | [Experimental display](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-apidev/pwkvn/) |
 
 ## When to use it
 
-Reach for `PWKVN` when a [PW](pw) entry seems incomplete or wrong — Böhtlingk may have
+Reach for `PWKVN` when a PW entry seems incomplete or wrong — Böhtlingk may have
 **corrected or extended it himself** in a later volume's appendix. It complements
-**[Schmidt's *Nachträge* (SCH)](sch)** of 1928, which continues the same supplement tradition
+**Schmidt's *Nachträge* (SCH)** of 1928, which continues the same supplement tradition
 for the Petersburg lexica a generation later. For the full-size dictionary see
-**[PWG](pwg)**.
+**PWG**.
 
 ## Reading an entry
 
-Records use the familiar Petersburg markup ([PW](pw)-style). A verified record from
+Records use the familiar Petersburg markup (PW-style). A verified record from
 `csl-orig/v02/pwkvn/pwkvn.txt` — Böhtlingk's addendum on *aṃsadaghna* ("reaching to the
 shoulder"), from volume 1's appendix (printed page 282):
 
@@ -64,11 +64,11 @@ shoulder"), from volume 1's appendix (printed page 282):
 | `{%bis zur Schulter reichend%}` | the German gloss (italic) |
 | `<ls>ŚAT. BR. …</ls>` | literary source citation |
 
-See [Data Formats](../developers/data-formats) for the markup reference.
+See Data Formats for the markup reference.
 
 ## What makes it distinctive
 
-- **The author's own errata-and-addenda layer.** Unlike [SCH](sch) (Schmidt's posthumous
+- **The author's own errata-and-addenda layer.** Unlike SCH (Schmidt's posthumous
   supplement), these are Böhtlingk's own corrections, issued volume by volume as PW appeared.
 - **Seven appendixes, one alphabet each.** Each volume's *Nachträge* section restarts
   alphabetically, so the same headword can recur across volumes; volume 7's section is by far
@@ -83,7 +83,7 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 | Convention | Marker / form | Example | Note |
 |---|---|---|---|
 | Searchable key | `<k1>` (SLP1, no accent) | `aMsadaGna` | What you type in a search |
-| Display key | `<k2>` (SLP1 + accent) | `aMsadaGna/` | `/` = udātta, as in [PW](pw) |
+| Display key | `<k2>` (SLP1 + accent) | `aMsadaGna/` | `/` = udātta, as in PW |
 | Alternate headwords | `<althws>{#X, Y, …#}</althws>` | — | ~1,600 entries findable under alternate spellings |
 | Page reference | `<pc>V-PPP-c` | `1-282-a` | Volume (1–7), page, column (a–d) |
 | Homonyms | `<hom>` | `<hom>2.</hom>` | Homonym number, as in the parent dictionaries |
@@ -91,6 +91,6 @@ See [Data Formats](../developers/data-formats) for the markup reference.
 
 ## See also
 
-- **[PW](pw)** — the dictionary these appendixes belong to · **[PWG](pwg)** — the full-size Petersburg dictionary
-- **[SCH](sch)** — Schmidt's 1928 *Nachträge*, the continuation of this supplement tradition
-- The full **[catalog](catalog)**
+- **PW** — the dictionary these appendixes belong to · **PWG** — the full-size Petersburg dictionary
+- **SCH** — Schmidt's 1928 *Nachträge*, the continuation of this supplement tradition
+- The full **catalog**

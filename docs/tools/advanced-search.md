@@ -22,7 +22,7 @@ text?" or "find every entry containing this phrase."
 The API (which the Advanced display sits on top of) exposes these **match modes**:
 `term`, `fuzzy`, `match`, `match_phrase`, `prefix`, `wildcard`, `regexp`; and these
 **fields**: `headword_slp1`, `re_headwords_slp1`, `sense`, `xml`, `id`. See the
-[API](../developers/api) page for the exact parameters.
+API page for the exact parameters.
 
 The live Advanced URL per dictionary is `/scans/{CODE}Scan/2020/web/webtc2/index.php`.
 
@@ -32,7 +32,7 @@ The live Advanced URL per dictionary is `/scans/{CODE}Scan/2020/web/webtc2/index
 - Find entries by a phrase in the gloss → `field=sense`, `query_type=match_phrase`.
 - Pattern-match across the marked-up body → `field=xml`, `query_type=regexp`.
 
-See **[Search & Display](../users/search-and-display)** for how results are rendered and
+See **Search & Display** for how results are rendered and
 how `<ls>` cross-links work.
 
 _Dr. Mārcis Gasūns_

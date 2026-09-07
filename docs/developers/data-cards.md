@@ -43,7 +43,7 @@ Every dataset under `src/data/` must have, from the moment it is added:
    [`data-v*` releases](https://github.com/gasyoun/kosha/releases), restricted tier private).
    None of the feeds below has a DOI yet; they are versioned only by this repo's releases.
    For fetching and reusing datasets *from* that hub (as opposed to the feeds this site
-   ships), see [The kosha data hub](/developers/data-hub).
+   ships), see The kosha data hub.
 
 Upstream rights for the non-Cologne feeds are documented per source in
 [`src/data/NON_COLOGNE_SOURCES.md`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/NON_COLOGNE_SOURCES.md).
@@ -87,7 +87,7 @@ Upstream rights for the non-Cologne feeds are documented per source in
 
 - **What / why.** Machine-readable abbreviation legends for the dictionaries that publish
   one (18 of 44 with data), powering the
-  [abbreviations comparison](/dictionaries/abbreviations-comparison).
+  abbreviations comparison.
 - **Provenance.**
   [build-abbreviations.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-abbreviations.mjs)
   reads each dictionary repo's committed legend files.
@@ -95,7 +95,7 @@ Upstream rights for the non-Cologne feeds are documented per source in
   source dictionary's language. UTF-8.
 - **License / rights.** The legends belong to public-domain source dictionaries.
 - **Known limitations.** Presence of a legend ≠ per-token resolvability — see
-  [GH-4](/about/guides-hypotheses#gh-4--abbreviation-legend-exposure) for the exposure-vs-
+  GH-4 for the exposure-vs-
   resolution distinction.
 - **Update policy.** Re-run when a dictionary repo gains or fixes a legend.
 
@@ -103,12 +103,12 @@ Upstream rights for the non-Cologne feeds are documented per source in
 
 - **What / why.** Site feed for UC-1 abbreviations UX: pref OCR key → expansion joined to
   body `<ls>` citation counts and typed `pref_only` residual class. Powers PWG/PW sections
-  in the [Abbreviations](/dictionaries/abbreviations-and-citations) component (sorted by body
+  in the Abbreviations component (sorted by body
   frequency). Other dictionaries still use `abbreviations.json`. FAIR catalogue of the
-  underlying OCR editions: [OCR'd prefaces](/dictionaries/ocr-prefaces) (UC-11 path map) ·
+  underlying OCR editions: OCR'd prefaces (UC-11 path map) ·
   METHODS [PWG](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/METHODS.md) /
   [PW](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/METHODS.md) · naming
-  [pref-body-naming-authority](/dictionaries/pref-body-naming-authority).
+  pref-body-naming-authority.
 - **Provenance.**
   [build-pref-legends.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-pref-legends.mjs)
   vendors
@@ -141,8 +141,8 @@ Upstream rights for the non-Cologne feeds are documented per source in
 
 - **What / why.** Per-dictionary top-cited classical texts (828,505 resolved `<ls>`
   citations → 912 texts, 11 dictionaries) and the 41-leaf UPGMA headword-overlap tree —
-  the data behind [Citation sources](/dictionaries/citation-sources) and the
-  [landscape cladogram](/dictionaries/landscape).
+  the data behind Citation sources and the
+  landscape cladogram.
 - **Provenance.** `npm run build:atlas-viz`
   ([build-atlas-viz.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-atlas-viz.mjs))
   reads the sibling csl-atlas checkout's committed artifacts; committed JSON keeps CI
@@ -157,7 +157,7 @@ Upstream rights for the non-Cologne feeds are documented per source in
 
 - **What / why.** Top 2,000 DCS lemmas (of 83,277) with per-period counts, SLP1-keyed —
   the corpus-attestation signal on
-  [Corpus attestation](/dictionaries/corpus-attestation).
+  Corpus attestation.
 - **Provenance.**
   [build-corpus-frequency.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-corpus-frequency.mjs)
   reads [kosha's lemma_frequency.tsv](https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv)
@@ -175,7 +175,7 @@ Upstream rights for the non-Cologne feeds are documented per source in
 - **What / why.** For each of the 845 (of 2,000) most frequent Classical lemmas attested in
   the Rigveda slice: its RV token count and up to three distinct udātta-marked attested
   forms — the accented reading signal under
-  [Corpus attestation](/dictionaries/corpus-attestation) ("The same words in the accented
+  Corpus attestation ("The same words in the accented
   Rigveda").
 - **Provenance.**
   [build-vedic-accent.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-vedic-accent.mjs)
@@ -204,7 +204,7 @@ Upstream rights for the non-Cologne feeds are documented per source in
 
 - **What / why.** How much of MW (25,140 of 185,803 keys, 13.5%) the Sanskrit Heritage
   Platform's lexicon covers, per initial — the independent machine reading on
-  [Machine morphology](/dictionaries/machine-morphology).
+  Machine morphology.
 - **Provenance.**
   [build-heritage-coverage.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-heritage-coverage.mjs)
   aggregates the
@@ -218,10 +218,10 @@ Upstream rights for the non-Cologne feeds are documented per source in
 ### which-dictionary-gold.json — routing gold panel
 
 - **What / why.** 24 routing scenarios (18 mirroring the
-  [which-dictionary quiz](/users/which-dictionary-quiz) + 6 probes) with the dictionary a
+  which-dictionary quiz + 6 probes) with the dictionary a
   lexicographer would pick, each with rationale and defensible alternates. Grounds
-  [GH-1](/about/guides-hypotheses#gh-1--which-dictionary-routing-accuracy) and the
-  [routing shared task](/about/shared-tasks).
+  GH-1 and the
+  routing shared task.
 - **Provenance / annotation.** Single annotation pass, Fable 5 (`claude-fable-5`),
   2026-07-07, judged against dictionary front matter and atlas OBS evidence — **no second
   annotator yet**, so no inter-annotator κ can be reported (stated wherever the panel is
@@ -237,7 +237,7 @@ Upstream rights for the non-Cologne feeds are documented per source in
 ### routing-benchmark.json — the shared-task benchmark
 
 - **What / why.** The public benchmark derived from the gold panel for the
-  [which-dictionary routing shared task](/about/shared-tasks): dev (18) / test (6) splits,
+  which-dictionary routing shared task: dev (18) / test (6) splits,
   a 44-code answer space, strict + lenient metric definitions.
 - **Provenance.**
   [build-routing-benchmark.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-routing-benchmark.mjs);
@@ -250,7 +250,7 @@ Upstream rights for the non-Cologne feeds are documented per source in
 
 ### hypothesis-metrics.json — measured hypothesis results
 
-- **What / why.** Every number the [Guides Hypotheses](/about/guides-hypotheses) page
+- **What / why.** Every number the Guides Hypotheses page
   reports (GH-1..GH-4), reproducible from committed inputs only.
 - **Provenance.** `node scripts/build-hypothesis-metrics.mjs`.
 - **Known limitations.** Inherits every upstream card's caveats; the file states which

@@ -83,7 +83,7 @@ These are the parameters used across the native endpoints (the complete list is 
 
 `lnum` takes precedence over `key` when both are present. SLP1 is the lingua-franca
 scheme; `wx` (Hyderabad) also exists in the transcoder but is not exposed in the UI menus.
-See [Encoding & Transliteration](../users/encoding-transliteration) for the scheme table.
+See Encoding & Transliteration for the scheme table.
 
 ### Worked examples
 
@@ -210,7 +210,7 @@ convenience alias.
 ## Lower-effort alternative
 
 If you only need the data in bulk, the **downloadable XML (SLP1)** per dictionary is the
-most stable path — see [Downloads & Data](../users/downloads-and-data) and
-[Data Formats](data-formats).
+most stable path — see Downloads & Data and
+Data Formats.
 
 _Dr. Mārcis Gasūns_

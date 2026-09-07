@@ -12,6 +12,6 @@ date: 2026-10-31
 
 <!-- truncate -->
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

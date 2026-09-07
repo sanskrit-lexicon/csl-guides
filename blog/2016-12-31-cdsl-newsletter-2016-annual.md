@@ -26,6 +26,6 @@ By 2016 the core repositories — COLOGNE, MWS, GRA, AP90, and the dictionary-sp
 
 ---
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

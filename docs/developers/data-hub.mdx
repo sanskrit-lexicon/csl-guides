@@ -9,7 +9,7 @@ sidebar_label: Data hub (kosha)
 
 _Created: 11-07-2026 · Last updated: 11-07-2026_
 
-Beyond the dictionaries themselves ([Downloads & Data](/users/downloads-and-data)), the
+Beyond the dictionaries themselves (Downloads & Data), the
 Sanskrit Lexicon organization derives a growing set of **reusable datasets** from CDSL and
 related corpora — root inventories, cross-dictionary headword unions, DCS↔CDSL crosswalks,
 corpus-frequency tables. These are hosted by
@@ -19,7 +19,7 @@ one without cloning half a dozen source repos or re-deriving something that alre
 This page is for **external consumers**: how to find out what's available, how to fetch it,
 how to check you got the right bytes, and how to load it. (csl-guides' own build-time feeds —
 the JSON files this site computes from — have their own convention; see
-[Data cards](/developers/data-cards).)
+Data cards.)
 
 ## The manifest
 
@@ -129,7 +129,7 @@ xref.query("in_cdsl == 1").sort_values("token_count", ascending=False).head(3)
 
 83,277 rows, SLP1-keyed, joins directly onto `dcs_cdsl_xref.tsv` via `slp1`/`normkey` — this
 is what powers this site's own
-[Corpus attestation](/dictionaries/corpus-attestation) page.
+Corpus attestation page.
 
 ```sh
 curl -LO https://github.com/gasyoun/kosha/releases/download/data-v0.1.0/lemma_frequency.tsv
@@ -163,7 +163,7 @@ header. This is the point of the manifest: every dataset's known gotchas travel 
 - **Roadmap and rationale** for why the hub exists and what's still interim:
   [`DATA_HUB_ROADMAP.md`](https://github.com/gasyoun/kosha/blob/main/DATA_HUB_ROADMAP.md).
 - **This site's own generated feeds** (a different, smaller set — the JSON that powers
-  csl-guides pages): [Data cards](/developers/data-cards).
-- **The dictionaries themselves** (not derived datasets): [Downloads & Data](/users/downloads-and-data).
+  csl-guides pages): Data cards.
+- **The dictionaries themselves** (not derived datasets): Downloads & Data.
 
 _Dr. Mārcis Gasūns_

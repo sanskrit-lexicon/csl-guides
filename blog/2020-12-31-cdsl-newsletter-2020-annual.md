@@ -30,6 +30,6 @@ The web display layer was updated to improve how scan images are served: a local
 
 ---
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

@@ -29,7 +29,7 @@ Start from the live site and write down:
 
 If the display has several modes, the **Basic** view is usually the easiest place to copy
 the headword and entry text. The **S** or scan link is the evidence trail back to the
-printed book; see [Scans & Print](../users/scans-and-print).
+printed book; see Scans & Print.
 
 ## Classify the problem
 
@@ -52,7 +52,7 @@ from the scan.
 
 For a dictionary-specific issue, open an issue in that dictionary's GitHub repository.
 The repository is usually named by the dictionary code or its project code; the
-[catalog](../dictionaries/catalog) links each dictionary to its repository.
+catalog links each dictionary to its repository.
 
 Include this checklist in the issue:
 
@@ -73,11 +73,11 @@ process them as a batch instead of as unrelated one-off reports.
 
 ## What maintainers do next
 
-Maintainers classify the issue using the [Issue Taxonomy](issue-taxonomy), verify the
+Maintainers classify the issue using the Issue Taxonomy, verify the
 evidence, and then choose one of two paths:
 
-- A single fix follows [Process One Correction](process-one-correction).
-- A backlog or named contributor set follows [Process a Scott Batch](process-scott-batch).
+- A single fix follows Process One Correction.
+- A backlog or named contributor set follows Process a Scott Batch.
 
 Both paths end in the same canonical reference workflow: source correction, XML
 validation, audit-trail change file, and paired commits to `csl-orig` and

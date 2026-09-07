@@ -42,7 +42,7 @@ into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/ma
 
 ## GH-1 — Which-dictionary routing accuracy
 
-- **Claim.** The [which-dictionary quiz](/users/which-dictionary-quiz) sends a user to the
+- **Claim.** The which-dictionary quiz sends a user to the
   dictionary a working lexicographer would pick, and its 18 scenarios cover the routing
   decisions readers actually face.
 - **Data.** [which-dictionary-quiz.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/which-dictionary-quiz.json)
@@ -78,13 +78,13 @@ into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/ma
   finding does not share this circularity — it is a set-coverage fact.
 - **Next test.** A second, human gold pass over the same panel (inter-annotator agreement,
   reported as Cohen's κ); then extend the quiz toward the never-targeted golds. The panel
-  now also grounds the public [which-dictionary routing shared task](/about/shared-tasks),
+  now also grounds the public which-dictionary routing shared task,
   whose test split is exactly the probe set — external submissions there are independent
   evidence this internal check cannot provide.
 
 ## GH-2 — Deep-page depth follows size, not novelty
 
-- **Claim.** The 44 [featured dictionary pages](/dictionaries/catalog) allocate depth by
+- **Claim.** The 44 featured dictionary pages allocate depth by
   dictionary fame/size (MW, PWG), not by lexical novelty — so the most *independent*
   dictionaries get the least documentation.
 - **Data.** Word counts of `docs/dictionaries/*.mdx` vs per-dictionary unique-headword share
@@ -130,7 +130,7 @@ into [atlas-extract.json](https://github.com/sanskrit-lexicon/csl-guides/blob/ma
 - **Claim.** The six-quiz learning track concentrates on getting the learner *to* the right
   headword (script, transliteration, sandhi, compounds, dictionary choice) and under-covers
   what happens *inside* the entry (symbols, abbreviations, citations, grammatical labels) —
-  the failure modes [Reading Monier-Williams](/users/reading-monier-williams) itself
+  the failure modes Reading Monier-Williams itself
   documents.
 - **Data.** All 176 items across the six quiz JSON files, mapped to a 10-mode beginner
   failure taxonomy (mapping is encoded in
@@ -208,7 +208,7 @@ handoff [H278](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H278
 (Stream 1 of the csl-guides research programme); ACL-standard metric presentation
 (Wilson CIs, chance/majority baselines, correlation significance) added same day under
 [H281](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H281-Fable_csl-guides_guides_stream4_acl_uplift_07.07.26.md)
-(Stream 4) per the convention on the [Publications page](/about/publications). Metrics artifact:
+(Stream 4) per the convention on the Publications page. Metrics artifact:
 [hypothesis-metrics.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/hypothesis-metrics.json).
 
 _Dr. Mārcis Gasūns_

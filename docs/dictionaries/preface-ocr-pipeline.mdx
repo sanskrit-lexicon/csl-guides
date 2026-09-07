@@ -9,7 +9,7 @@ sidebar_label: Preface OCR pipeline
 
 How Cologne dictionary **front matter** (title pages, prefaces/forewords, abbreviation lists, addenda) is turned into searchable Markdown plus English and Russian editions — and which agent path produced which deliverable.
 
-**Public catalogue of finished text:** [OCR'd prefaces](ocr-prefaces).  
+**Public catalogue of finished text:** OCR'd prefaces.  
 **Cologne scan index:** [csldoc dictionaries](https://sanskrit-lexicon.uni-koeln.de/scans/csldev/csldoc/build/dictionaries/index.html).
 
 ---
@@ -47,7 +47,7 @@ Do **not** treat the PD branch as a rename of the CDSL skill. They share *layout
 | **3.5** | **Engine B audit (recommended)** — Tesseract pass; write `prefaces/AUDIT_A_VS_B.md`; re-vision only flagged bands |
 | **4** | Translations: `.en.md` if source ≠ English; always `.ru.md` |
 | **5** | Consolidated `*_all.*` via `build_combined.py` |
-| **6** | `prefaces/README.md` + root README surface + cost/run notes; refresh [ocr-prefaces](ocr-prefaces) |
+| **6** | `prefaces/README.md` + root README surface + cost/run notes; refresh ocr-prefaces |
 | **7** | Delete temp crops / `_audit_b/`; commit only if asked |
 
 ### Phase 3.5 — what B is for
@@ -85,8 +85,8 @@ Never Read a full downsampled page. Scans are 3000–6800 px; downsampling yield
   AUDIT_A_VS_B.md        # optional Phase 3.5 QA
 ```
 
-Indexed on the site: [OCR'd prefaces](ocr-prefaces) (includes the **FAIR path map**: METHODS ·
-[naming authority](pref-body-naming-authority) · [legend emit](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_legend_emit.py)).
+Indexed on the site: OCR'd prefaces (includes the **FAIR path map**: METHODS ·
+naming authority · [legend emit](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_legend_emit.py)).
 Pilot METHODS: [PWG](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/METHODS.md) ·
 [PW](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/METHODS.md).
 
@@ -129,7 +129,7 @@ All rows below are **canonical edition** pages under each repo’s `prefaces/` (
 | KRM | [KRM](https://github.com/sanskrit-lexicon/KRM) | 24 | sa/en | 2026-06-23 |
 | MCI | [MCI](https://github.com/sanskrit-lexicon/MCI) | 28 | en | 2026-06-23 |
 
-**Public index of editions:** [ocr-prefaces.mdx](ocr-prefaces) (csl-guides).  
+**Public index of editions:** ocr-prefaces.mdx (csl-guides).  
 **Count (23-07-2026 post-merge):** ~32 dictionary codes with production or staging editions on a default branch. Merged that day: AP90 #49, BEN #32, ACC #25, BUR #13.
 
 ### Claude Code — residue status (after promote + drain)
@@ -156,7 +156,7 @@ Local-only staging under the `GitHub/` meta-tree is obsolete for GST/PGN/SNP/LAN
 |---|---|---|
 | PWG A vs B bake-off | [COMPARISON_PWG_OCR_A_VS_B.md](https://github.com/sanskrit-lexicon/PD/blob/main/COMPARISON_PWG_OCR_A_VS_B.md), `PD/pwg_a_vs_b/`, [`compare_pwg_a_vs_b.py`](https://github.com/sanskrit-lexicon/PD/blob/main/compare_pwg_a_vs_b.py) | Sample pages only; confirms A remains gold for PWG |
 | Phase 3.5 audit design | skill runbook + this page | B as comparison layer after Claude Code drafts |
-| Skill + public index updates | `/cologne-preface-ocr`, [ocr-prefaces](ocr-prefaces) | Inventory refresh, dual-engine wording, partial-residue census |
+| Skill + public index updates | `/cologne-preface-ocr`, ocr-prefaces | Inventory refresh, dual-engine wording, partial-residue census |
 
 **Grok has not replaced Claude Code as author of any CDSL `prefaces/<code>prefNN.md` edition** as of this census. Future CDSL runs may still use Grok only for Phase 3.5 audit (or a human may run Tesseract locally the same way).
 
@@ -193,9 +193,9 @@ Requirements for Phase 3.5 / PD: Tesseract 5.x with appropriate traineddata (`de
 
 ## Related pages
 
-- [OCR'd prefaces](ocr-prefaces) — finished editions and queue  
-- [Catalog](catalog) — code ↔ repo mapping  
-- [Scans and print](../users/scans-and-print) — end-user scan access  
-- [Generation pipeline](../developers/generation-pipeline) — headword XML pipeline (different system)
+- OCR'd prefaces — finished editions and queue  
+- Catalog — code ↔ repo mapping  
+- Scans and print — end-user scan access  
+- Generation pipeline — headword XML pipeline (different system)
 
 _Last census: 23-07-2026 · Pipeline docs: Grok 4.5 (`grok-4.5`) with skill/run-note evidence from Claude Code `/cologne-preface-ocr` runs._

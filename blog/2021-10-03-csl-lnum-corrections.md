@@ -15,7 +15,7 @@ barrier to contributing fixes.
 
 Around the same time, the StarDict offline dictionaries gained **correction-submission
 links and links to the scanned pages**, so readers can cross-check an entry against the
-printed image and report errors. See the [Contributing](/contributing/overview) guide for
+printed image and report errors. See the Contributing guide for
 the current correction workflow.
 
 Sources: [csl-lnum readme](https://github.com/sanskrit-lexicon/csl-lnum#readme) ·

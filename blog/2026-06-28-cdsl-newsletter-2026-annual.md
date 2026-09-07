@@ -38,6 +38,6 @@ The new [sanskrit-util](https://github.com/sanskrit-lexicon/sanskrit-util) repos
 
 ---
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

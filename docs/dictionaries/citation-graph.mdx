@@ -23,7 +23,7 @@ resolved citations linking {data.stats.dictCount} dictionaries to{' '}
 {data.stats.nodeCount.toLocaleString('en-US')} canonical texts through{' '}
 {data.stats.edgeCount.toLocaleString('en-US')} dictionary→text edges. This page explains
 what that graph is, how it was built, and how to query it yourself. (For the interactive
-per-dictionary profiles, see [What Each Dictionary Quotes](/dictionaries/citation-sources).)
+per-dictionary profiles, see What Each Dictionary Quotes.)
 
 ## What the graph is — and is not
 
@@ -68,7 +68,7 @@ in brief:
 1. **Extract** every `<ls>…</ls>` tag from the [csl-orig](https://github.com/sanskrit-lexicon/csl-orig)
    digital sources (~1.5 million raw tags across the 11 covered dictionaries).
 2. **Resolve** each leading abbreviation against that dictionary's own abbreviation legend
-   (this site's [abbreviations dataset](/dictionaries/abbreviations-comparison)), by
+   (this site's abbreviations dataset), by
    longest-prefix match.
 3. **Filter non-citations.** MW reuses `<ls>` for grammatical markers (`A.` = Active,
    `ind.`) and editorial tags (`ibid.`, the `L.` = "lexicographers" convention) — 63,582
@@ -154,7 +154,7 @@ is CC BY-SA — cite csl-atlas and the Cologne Digital Sanskrit Dictionaries.
 
 ## See also
 
-- [What Each Dictionary Quotes](/dictionaries/citation-sources) — the interactive per-dictionary profiles
-- [Abbreviations & citations](/dictionaries/abbreviations-and-citations) — how `<ls>` tags work in the sources
-- [Abbreviations comparison](/dictionaries/abbreviations-comparison) — the per-dictionary legends the resolver uses
-- [The dictionary landscape](/dictionaries/landscape) — era × novelty × size for all 43
+- What Each Dictionary Quotes — the interactive per-dictionary profiles
+- Abbreviations & citations — how `<ls>` tags work in the sources
+- Abbreviations comparison — the per-dictionary legends the resolver uses
+- The dictionary landscape — era × novelty × size for all 43

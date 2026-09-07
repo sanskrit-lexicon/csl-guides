@@ -13,7 +13,7 @@ import Screenshot from '@site/src/components/Screenshot';
 
 Monier Monier-Williams' *Sanskrit–English Dictionary* (1899) is the **standard general
 reference** for classical Sanskrit and the most-used dictionary on the site. This is a
-flagship guide page — for most other dictionaries the [catalog](catalog) links straight to
+flagship guide page — for most other dictionaries the catalog links straight to
 their [csl-doc](https://github.com/sanskrit-lexicon/csl-doc) front-matter page.
 
 ## At a glance
@@ -37,16 +37,16 @@ Reach for MW when you want the **broadest classical coverage** in English: it is
 encyclopaedic, rich in **compounds**, **etymologies**, and **literary-source citations**,
 and it marks **Vedic accents**. Complements within CDSL:
 
-- Use **[Apte (AP90)](ap90)** for a cleaner, sense-numbered classical reading and idioms.
-- Use **[Böhtlingk-Roth (PWG)](pwg)** (German) for the deepest scholarly treatment and
+- Use **Apte (AP90)** for a cleaner, sense-numbered classical reading and idioms.
+- Use **Böhtlingk-Roth (PWG)** (German) for the deepest scholarly treatment and
   the fullest citations.
-- Use **[Grassmann (GRA)](gra)** for the Ṛg-Veda specifically.
+- Use **Grassmann (GRA)** for the Ṛg-Veda specifically.
 - For the **1872 first edition**, see **`MW72`** (a separate dictionary, not the same text).
 
 ## Looking up a word
 
 1. Open the **Basic** display and pick your **input** transliteration (see
-   [Encoding & Transliteration](../users/encoding-transliteration) — MW defaults to
+   Encoding & Transliteration — MW defaults to
    *Kyoto-Harvard*).
 2. Type the headword and choose an **output** script (e.g. *Roman Unicode* or
    *Devanāgarī*). Type `agni` (fire):
@@ -60,7 +60,7 @@ and it marks **Vedic accents**. Complements within CDSL:
 
 For browsing neighbours, the **List** display shows a Devanāgarī headword index beside the
 entry; the **Advanced** display searches *inside* entries. See
-[Search & Display](../users/search-and-display) for all four modes.
+Search & Display for all four modes.
 
 ## Reading an entry
 
@@ -77,7 +77,7 @@ The `agni` entry above illustrates the structure every MW entry shares:
 | **[ID=890]** | stable per-sense id (used by permalinks/API) | record `lnum` |
 | *coloured source abbreviations* | literary-source citations, click-through to scans where linked | `<ls>` |
 
-See [Data Formats](../developers/data-formats) for the full markup reference.
+See Data Formats for the full markup reference.
 
 ## What makes MW distinctive
 
@@ -87,27 +87,27 @@ See [Data Formats](../developers/data-formats) for the full markup reference.
   **Carl Cappeller**.
 - **Pāṇinian links.** References to Pāṇini's grammar in MW were linked (October 2021), so
   grammatical citations click through to their targets — part of the "Dictionary to Book"
-  effort ([Issue Taxonomy](../contributing/issue-taxonomy)).
+  effort (Issue Taxonomy).
 - **Inflected forms.** A companion **MW inflected-forms** resource maps inflected words back
   to MW headwords — handy when you meet a declined/conjugated form. See
-  [Tools → Multi-Dictionary](../tools/multi-dictionary) (`/scans/csl-inflect/web/index.php`).
+  Tools → Multi-Dictionary (`/scans/csl-inflect/web/index.php`).
 
 ## Worked examples
 
 **Find a compound** — in **Advanced**, set field *Sanskrit word* → *Text Word* won't help
 for a stem; use `query_type=wildcard` on `headword_slp1` (e.g. `agni*`) to list compounds
-beginning *agni-*. See [Advanced Search](../tools/advanced-search).
+beginning *agni-*. See Advanced Search.
 
 **Search by cited source** — to find entries citing a given text, search the entry body
 (`field=xml` or `sense`) for the source's abbreviation in **Advanced**.
 
 **Fetch an entry programmatically** — the native API serves MW entries; e.g. `getword`
-returns the entry-display for a headword. See the [API](../developers/api) page for the
+returns the entry-display for a headword. See the API page for the
 base URL, parameters, and the (C-SALT-compatible) Salt API.
 
 **Link straight to an entry** — the clean-URL permalink form is `/MW/{ref}` where `ref` is
 a headword in any input transliteration or an `lnum` — e.g. `/MW/bAQa` or `/MW/144239`
-(roadmap; see [API → Clean-URL permalinks](../developers/api)).
+(roadmap; see API → Clean-URL permalinks).
 
 ## How MW was digitized
 
@@ -115,7 +115,7 @@ The digitization is documented in **"Marking Monier"** (Jim Funderburk & Thomas 
 *Second International Sanskrit Computational Linguistics Symposium*, 2008). It describes
 four phases — initial digitization, refinement into `MONIER.ALL`, conversion to XML, and
 the current `mwtab` markup — and the choices made to preserve the print structure without
-losing information. See [Publications](../about/publications) and the live
+losing information. See Publications and the live
 ["Marking Monier" notes](https://www.sanskrit-lexicon.uni-koeln.de/talkMay2008/markingMonier.html).
 
 
@@ -138,10 +138,10 @@ losing information. See [Publications](../about/publications) and the live
 
 ## See also
 
-- **[Reading Monier-Williams (with quizzes)](../users/reading-monier-williams)** — the four
+- **Reading Monier-Williams (with quizzes)** — the four
   levels of alphabetical order, MW's symbols, tracing a word to its dhātu + 69 practice questions
-- The full **[catalog](catalog)** of all 43 dictionaries
-- **[Abbreviations & Citations](abbreviations-and-citations)** — how to cite MW
-- **[Downloads & Data](../users/downloads-and-data)** — XML (SLP1), PDF, scans
+- The full **catalog** of all 43 dictionaries
+- **Abbreviations & Citations** — how to cite MW
+- **Downloads & Data** — XML (SLP1), PDF, scans
 - **csl-doc** [mw.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/mw.rst)
   and its [preface](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/prefaces/mwpref.rst)

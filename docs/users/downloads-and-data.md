@@ -11,7 +11,7 @@ sidebar_label: Downloads & Data
 
 Every dictionary is downloadable. CDSL is open data — the per-dictionary GitHub repos
 carry a **CC BY-SA 4.0** license. See
-[Abbreviations & Citations](../dictionaries/abbreviations-and-citations) for the official
+Abbreviations & Citations for the official
 citation and acknowledgment wording.
 
 ## What you can download
@@ -31,7 +31,7 @@ its scans.
 Downloaded XML follows the Cologne markup conventions. Headwords carry a `key`/`key1`
 encoding, and entry bodies use tags such as `<ls>` (literary source), `<lex>`
 (lexical category), and `<ab>` (abbreviation). The full schema and worked examples are
-in **[Data Formats](../developers/data-formats)**.
+in **Data Formats**.
 
 ## Bulk / programmatic access
 
@@ -40,7 +40,7 @@ in **[Data Formats](../developers/data-formats)**.
   Monier-Williams is [`MWS`](https://github.com/sanskrit-lexicon/MWS), Apte 1890 is
   [`AP90`](https://github.com/sanskrit-lexicon/AP90).
 - A RESTful **web API** (native + a C-SALT-compatible "Salt API") serves lookups and
-  search — see **[API](../developers/api)**.
+  search — see **API**.
 - The per-dictionary **download page** is `/scans/{CODE}Scan/2020/web/webtc/download.html`
   (the **D** link on the front page).
 
@@ -48,7 +48,7 @@ in **[Data Formats](../developers/data-formats)**.
 
 When you reuse CDSL data, cite both the **original print dictionary** and the **Cologne
 Digital Sanskrit Dictionaries** digitization. See
-**[Abbreviations & Citations](../dictionaries/abbreviations-and-citations)** for the
+**Abbreviations & Citations** for the
 recommended citation form.
 
 _Dr. Mārcis Gasūns_

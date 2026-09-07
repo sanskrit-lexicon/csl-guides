@@ -165,7 +165,7 @@ The programme's own standard requires saying what is *not* done:
 - ~~**VedaWeb feed** — gated on the upstream VedaWeb 2.0 bulk export; the
   corpus-attestation page grows a Vedic-accent section when it lands~~
   **DONE 26-08-2026**: the H096 export landed 08-07-2026 and the consumer shipped —
-  "The same words in the accented Rigveda" on [Corpus attestation](../dictionaries/corpus-attestation).
+  "The same words in the accented Rigveda" on Corpus attestation.
 - **DOIs** — no feed has a DOI yet; the routing benchmark and gold panel are the
   first candidates for a citable data release.
 - **Venue choice** — the landscape is documented; picking a venue for a concrete

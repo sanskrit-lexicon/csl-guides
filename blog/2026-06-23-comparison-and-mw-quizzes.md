@@ -18,16 +18,16 @@ Two new things on the guides this cycle:
 
 <!-- truncate -->
 
-Try the [comparison widget](/tools/multi-dictionary) on the Multi-Dictionary page: each
+Try the comparison widget on the Multi-Dictionary page: each
 column resolves the headword per dictionary (the same lemma is keyed differently — MW stems
 *agni*, Apte keys the nominative *agniH*) and renders the real entry.
 
-The new [Reading Monier-Williams](/users/reading-monier-williams) page teaches MW's
+The new Reading Monier-Williams page teaches MW's
 etymological structure and then lets you test yourself. Every lookup and every traced dhātu
 links to its **CDSL entry id** (the digital record's `lnum`); all 47 print page+column
 citations were verified against the digital MW source, so the answers double as a
 cross-check between the print and the digital edition.
 
-See the [catalog](/dictionaries/catalog) for the full list of 42 dictionaries.
+See the catalog for the full list of 42 dictionaries.
 
 _Dr. Mārcis Gasūns_

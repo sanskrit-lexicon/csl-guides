@@ -23,7 +23,7 @@ The markup of the various dictionaries was designed and implemented by:
 - **Jim Funderburk**
 
 The API was envisioned by Malcolm Hyman and Peter Scharf (mid-2000s) and implemented by
-Jim Funderburk (see the [API](../developers/api) page).
+Jim Funderburk (see the API page).
 
 ## Funding
 
@@ -35,6 +35,6 @@ Endowment for the Humanities programme.
 
 Everyone who files issues, submits corrections, and builds link targets via the
 [GitHub organization](https://github.com/sanskrit-lexicon) — see
-[Contributing](../contributing/overview).
+Contributing.
 
 _Dr. Mārcis Gasūns_

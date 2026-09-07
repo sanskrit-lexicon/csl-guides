@@ -11,7 +11,7 @@ sidebar_label: Process One Correction
 
 This page is the maintainer path for one correction. It assumes you have the sibling
 repositories checked out and can run the validation scripts. If you only want to report a
-problem, start with [Report a Typo](report-a-typo).
+problem, start with Report a Typo.
 
 ## Example record
 

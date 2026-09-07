@@ -14,7 +14,7 @@ words in several transliteration schemes. Knowing which scheme you are typing in
 single most common source of "why didn't my word match" confusion.
 
 :::tip Test yourself
-Once you've read this page, try the **[Transliteration practice quiz](transliteration-quiz)** —
+Once you've read this page, try the **Transliteration practice quiz** —
 28 self-check questions on the schemes, SLP1, Vedic accents, and the transcoder.
 :::
 
@@ -45,13 +45,13 @@ input scheme is exactly what makes the lookup match.
 Two more transcoders exist but are **not** in the display input/output menus: **`wx`**
 (used at Hyderabad University) and **`as`** (Anglicized Sanskrit, Thomas Malten's
 letter-number scheme). `slp1` and `deva` are the values seen in the
-[API](../developers/api) `input`/`output` parameters.
+API `input`/`output` parameters.
 
 ## Why SLP1 internally
 
 SLP1 is **lossless and unambiguous**: every Sanskrit phoneme maps to exactly one ASCII
 character, so sorting, searching, and round-tripping are deterministic. The downloadable
-XML is in SLP1 for this reason (see **[Downloads & Data](downloads-and-data)**).
+XML is in SLP1 for this reason (see **Downloads & Data**).
 
 ## Vedic accents
 
@@ -62,10 +62,10 @@ Monier-Williams alone the accent mark sits on tens of thousands of headwords.
 
 | Dictionary | Accents? |
 |---|---|
-| [Monier-Williams (MW)](../dictionaries/mw) | Yes |
-| [Böhtlingk-Roth (PWG)](../dictionaries/pwg) and [shorter (PW)](../dictionaries/pw) | Yes |
-| [Grassmann (GRA)](../dictionaries/gra) | Yes — central; it is a Ṛg-Veda dictionary |
-| [Apte (AP90)](../dictionaries/ap90) | No |
+| Monier-Williams (MW) | Yes |
+| Böhtlingk-Roth (PWG) and shorter (PW) | Yes |
+| Grassmann (GRA) | Yes — central; it is a Ṛg-Veda dictionary |
+| Apte (AP90) | No |
 
 **How they are encoded.** In the SLP1 source the **udātta** (high pitch) is written `/`
 attached to its vowel — e.g. MW keys *agni* as `agni/` (accent on the final *-i*, agní). The
@@ -82,7 +82,7 @@ whether or not you know its accent. The accent is for *display*, not for matchin
 :::
 
 **Showing or hiding accents.** The displays offer an **accent** toggle, and the
-[API](../developers/api) exposes it as `accent=yes|no` (it governs whether accents appear in
+API exposes it as `accent=yes|no` (it governs whether accents appear in
 **Devanāgarī** output). Turn it off for a cleaner reading text; on to study the pitch.
 
 ## Typing a headword
@@ -102,6 +102,6 @@ and ported to PHP (`transcoder.php`) and Python
 ([funderburkjim/sanskrit-transcoding](https://github.com/funderburkjim/sanskrit-transcoding)).
 It works from per-pair XML tables named `{X}_{Y}.xml` (e.g. `slp1_deva.xml`), compiled
 into a finite-state machine at runtime. For example `transcoder_processString('rAma',
-'slp1', 'deva')` returns राम. See also **[Data Formats](../developers/data-formats)**.
+'slp1', 'deva')` returns राम. See also **Data Formats**.
 
 _Dr. Mārcis Gasūns_

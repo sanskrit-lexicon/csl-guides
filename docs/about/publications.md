@@ -11,7 +11,7 @@ _Created: 14-06-2026 · Last updated: 07-07-2026_
 
 ## How to cite CDSL
 
-See **[Abbreviations & Citations](../dictionaries/abbreviations-and-citations)** for the
+See **Abbreviations & Citations** for the
 project's official in-text and bibliographic citation form, plus the recommended wording
 for acknowledging CDSL data reuse in a website or application.
 
@@ -31,7 +31,7 @@ for acknowledging CDSL data reuse in a website or application.
 
 - **[csl-newsletter](https://github.com/sanskrit-lexicon/csl-newsletter)** — a *daywise log*
   of project activity (September 2021 onward), kept "so that an academic paper may be
-  published later, if desired or required." See also the [History](history) timeline.
+  published later, if desired or required." See also the History timeline.
 
 ## Related resources
 
@@ -77,7 +77,7 @@ DH outlet — but it presupposes an openly deposited, DOI-bearing dataset.
    limit; missing it is desk rejection.
 3. **The [Responsible NLP checklist](https://aclrollingreview.org/responsibleNLPresearch/)**,
    whose §B requires citation, license, provenance, and use-restriction disclosure for
-   **every artifact used or released** — this site's [data cards](/developers/data-cards)
+   **every artifact used or released** — this site's data cards
    page exists so that section can be filled honestly for anything built on these feeds.
 4. **Evaluation to community standard:** named metrics (P/R/F1, accuracy, MAP, Cohen's κ
    for agreement), an explicit baseline, and uncertainty on small-n results — see the
@@ -94,9 +94,9 @@ into a paper without re-derivation:
   give the sample size, compare against an explicit chance/majority baseline, put a 95%
   Wilson interval on small-n proportions and a significance level on correlations, and
   link the committed artifact + script that reproduce the number.
-- Worked examples: the [Guides Hypotheses](/about/guides-hypotheses) page (GH-1's
+- Worked examples: the Guides Hypotheses page (GH-1's
   accuracy with Wilson CI and two baselines; GH-2's ρ with n and p) and the
-  [shared-task leaderboard](/about/shared-tasks) (scorer prints the interval).
+  shared-task leaderboard (scorer prints the interval).
 - Agreement between annotation passes is reported as **Cohen's κ**, not raw percent —
   and where only a single pass exists yet (the routing gold panel), that absence is
   stated rather than papered over.

@@ -26,6 +26,6 @@ The Cologne website continued to receive substantial traffic from Sanskrit schol
 
 ---
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

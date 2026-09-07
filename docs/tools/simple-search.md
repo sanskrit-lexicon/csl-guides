@@ -15,7 +15,7 @@ designed for the common case: type a word, get its entries.
 ## How to use it
 
 1. Open Simple-Search from the front page.
-2. Choose your **input transliteration** (see **[Encoding & Transliteration](../users/encoding-transliteration)**).
+2. Choose your **input transliteration** (see **Encoding & Transliteration**).
 3. Type the headword.
 4. Review matching entries; follow into the per-dictionary Basic view for full context.
 
@@ -24,12 +24,12 @@ designed for the common case: type a word, get its entries.
 - If you get no results, re-check the **input scheme** — an IAST word typed in a
   Harvard-Kyoto box will not match.
 - Simple-Search targets **headwords**; to search *inside* entries use
-  **[Advanced Search](advanced-search)**.
+  **Advanced Search**.
 
 ## Under the hood
 
 Simple-Search is powered by the API's `listview` action, with `getsuggest` providing
-prefix autocomplete (see the [API](../developers/api) page). The same display is reachable
+prefix autocomplete (see the API page). The same display is reachable
 per dictionary via the **L** (List) link, `/scans/{CODE}Scan/2020/web/webtc1/index.php`.
 
 _Dr. Mārcis Gasūns_

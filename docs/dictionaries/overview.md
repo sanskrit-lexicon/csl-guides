@@ -11,7 +11,7 @@ sidebar_label: Overview
 
 CDSL hosts **43 dictionaries** (published 1832–1993), grouped on the front page by
 language pair. This section explains the grouping, helps you pick the right dictionary,
-and links to the full **[catalog](catalog)** and **[citation conventions](abbreviations-and-citations)**.
+and links to the full **catalog** and **citation conventions**.
 
 ## Groups
 
@@ -28,28 +28,28 @@ and links to the full **[catalog](catalog)** and **[citation conventions](abbrev
 :::note
 Counts are verified against the [front page](https://sanskrit-lexicon.uni-koeln.de). The
 front page headlines **42** fully digitized dictionaries; the table has **43** rows
-because `PD` appears as a sample only. See the **[catalog](catalog)** *Count* note for the
+because `PD` appears as a sample only. See the **catalog** *Count* note for the
 full resolution.
 :::
 
 ## Choosing a dictionary
 
-- **General Sanskrit→English** — start with **[Monier-Williams](mw)** (`MW`/`MWS`); use
-  **[Apte](ap90)** (`AP90`) for classical usage and compounds.
-- **Etymology / Vedic** — **[Grassmann](gra)** (`GRA`, Ṛg-Veda) and the large
-  **[Böhtlingk-Roth](pwg)** (`PWG`); the **[shorter Böhtlingk](pw)** (`PW`) is the compact
+- **General Sanskrit→English** — start with **Monier-Williams** (`MW`/`MWS`); use
+  **Apte** (`AP90`) for classical usage and compounds.
+- **Etymology / Vedic** — **Grassmann** (`GRA`, Ṛg-Veda) and the large
+  **Böhtlingk-Roth** (`PWG`); the **shorter Böhtlingk** (`PW`) is the compact
   German alternative.
-- **English→Sanskrit (composition)** — **[Monier-Williams E→S](mwe)** (`MWE`).
+- **English→Sanskrit (composition)** — **Monier-Williams E→S** (`MWE`).
 - **Sanskrit-internal definitions** — the Sanskrit→Sanskrit lexica
-  **[Śabdakalpadruma](skd)** (`SKD`) and **[Vācaspatyam](vcp)** (`VCP`).
+  **Śabdakalpadruma** (`SKD`) and **Vācaspatyam** (`VCP`).
 - **Domain terms** — the specialized indices (epics, Vedas, Purāṇas, Buddhist texts).
 
-See the **[full catalog](catalog)** for every code, full name, language, date, and repo —
-or explore the same corpus visually: the **[dictionary landscape](landscape)** (which
-dictionaries cover ground no other has) and **[citation sources](citation-sources)** (which
+See the **full catalog** for every code, full name, language, date, and repo —
+or explore the same corpus visually: the **dictionary landscape** (which
+dictionaries cover ground no other has) and **citation sources** (which
 classical texts each one quotes). Two further data layers put the dictionaries in
-context: **[corpus attestation](corpus-attestation)** (how often each word is actually
-used) and **[machine morphology](machine-morphology)** (how segmenters and generators
+context: **corpus attestation** (how often each word is actually
+used) and **machine morphology** (how segmenters and generators
 read Sanskrit).
 
 ## Where each dictionary lives
@@ -59,6 +59,6 @@ Each dictionary is its own repository in the
 (e.g. [`MWS`](https://github.com/sanskrit-lexicon/MWS),
 [`AP90`](https://github.com/sanskrit-lexicon/AP90),
 [`PWG`](https://github.com/sanskrit-lexicon/PWG)). See
-**[Repositories](../developers/repositories)** for the org map.
+**Repositories** for the org map.
 
 _Dr. Mārcis Gasūns_

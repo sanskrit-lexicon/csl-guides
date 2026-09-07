@@ -30,6 +30,6 @@ The csl-pywork repository received multiple rounds of revision to abbreviation a
 
 ---
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

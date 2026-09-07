@@ -17,10 +17,10 @@ The CDSL guides now ship three substantial additions:
 
 <!-- truncate -->
 
-The [API reference](/developers/api), [encoding & transliteration](/users/encoding-transliteration)
-schemes, the source [data formats](/developers/data-formats), and the
-[contributor workflow](/contributing/overview) are all documented from the live site and
-the `sanskrit-lexicon` repositories. See the [catalog](/dictionaries/catalog) for the full
+The API reference, encoding & transliteration
+schemes, the source data formats, and the
+contributor workflow are all documented from the live site and
+the `sanskrit-lexicon` repositories. See the catalog for the full
 list of 42 dictionaries.
 
 _Dr. Mārcis Gasūns_

@@ -22,13 +22,13 @@ in the Mahāvastu, absent from MW*"), predict which of the 44 catalogued CDSL di
 a working lexicographer would route the user to.
 
 This is the decision every CDSL newcomer faces before any lookup, and the one the
-[which-dictionary quiz](/users/which-dictionary-quiz) teaches. A system that routes well —
+which-dictionary quiz teaches. A system that routes well —
 a rule set, a retrieval system, an LLM prompt — is directly useful as a front-door
 recommender for the whole corpus.
 
 **Benchmark.**
 [routing-benchmark.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/routing-benchmark.json)
-(v1.0, CC-BY-SA-4.0; card on the [data cards](/developers/data-cards) page):
+(v1.0, CC-BY-SA-4.0; card on the data cards page):
 
 - **dev** — 18 scenarios (the ones the site quiz also asks; tune freely on these);
 - **test** — 6 probe scenarios the quiz does *not* ask, deliberately drawn from the
@@ -58,7 +58,7 @@ verbatim output in the PR body.
 
 | System | dev strict | dev lenient | test strict | test lenient | Date | Notes |
 |---|---|---|---|---|---|---|
-| Site quiz answer key | 18/18 = 100% [82.4, 100] | 100% | 0/6 = 0% | 0/6 = 0% | 2026-07-07 | The quiz's own key, applied as a router. Perfect on dev *by construction* (the gold panel re-judged the quiz's scenarios and agreed 18/18 — see the [GH-1 caveat](/about/guides-hypotheses#gh-1--which-dictionary-routing-accuracy)); scores 0 on test because it cannot answer scenarios it never asks — exactly the coverage gap GH-1 measured. |
+| Site quiz answer key | 18/18 = 100% [82.4, 100] | 100% | 0/6 = 0% | 0/6 = 0% | 2026-07-07 | The quiz's own key, applied as a router. Perfect on dev *by construction* (the gold panel re-judged the quiz's scenarios and agreed 18/18 — see the GH-1 caveat); scores 0 on test because it cannot answer scenarios it never asks — exactly the coverage gap GH-1 measured. |
 | Random over 44 codes | ~2.3% (expected) | ~3.4% (expected) | ~2.3% (expected) | ~4.5% (expected) | 2026-07-07 | Analytic expectation, not a run: 1/44 strict; lenient = mean accepted-set size / 44 (dev 27/18 ≈ 1.5 codes, test 12/6 = 2 codes). |
 | *your system* | | | | | | |
 
@@ -74,15 +74,15 @@ relationship exists between them (supplement-of, revision-of, built-on, distilla
 — e.g. SCH supplements PW; MW built on WIL; PW distills PWG; AP revises AP90.
 
 **Why it matters.** Lineage is the backbone of the corpus's history (see
-[Origins](/about/origins)) and of the headword-overlap
-[cladogram](/dictionaries/landscape) — but the cladogram is *similarity*, not *lineage*,
+Origins) and of the headword-overlap
+cladogram — but the cladogram is *similarity*, not *lineage*,
 and telling descent from mere overlap is a genuine research problem (the same
 copy-detection question csl-corrections studies via shared-error loci).
 
 **Status: proposed — not yet scaffolded.** An honest benchmark needs:
 
 1. a gold edge list of documented derivation relationships, extracted from the 44
-   [deep pages](/dictionaries/catalog) and dictionary front matter (agent-doable here);
+   deep pages and dictionary front matter (agent-doable here);
 2. a similarity feature layer that is *not* the gold's own source — the csl-atlas
    headword-overlap matrix and, ideally, its shared-error loci artifact
    (csl-atlas-side; consumed when committed, per this site's vendoring rule).

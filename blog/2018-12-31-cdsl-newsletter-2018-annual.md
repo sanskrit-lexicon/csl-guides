@@ -26,6 +26,6 @@ Planning for a REST API — which would allow programmatic access to the diction
 
 ---
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

@@ -41,8 +41,8 @@ compact synonym kośa in
 verse (506 synonym groups in three *prakaraṇa*s, from the 1955 Deccan College edition),
 digitized by the [sanskrit-kosha project](https://github.com/sanskrit-kosha/kosha) with all
 the usual displays (Basic, List, Advanced, Mobile) and downloads. The guides site has a
-[new deep page for NMMB](/dictionaries/nmmb) with a verified sample record and its headword
-key conventions, and the [catalog](/dictionaries/catalog) now counts 43 digitized
+new deep page for NMMB with a verified sample record and its headword
+key conventions, and the catalog now counts 43 digitized
 dictionaries.
 
 ## Böhtlingk's own Nachträge digitized (PWKVN)
@@ -53,7 +53,7 @@ each of the seven volumes of his shorter *Sanskrit-Wörterbuch* (PW) — nearly 
 records of the author's own corrections and additions. It is not yet a front-page catalog
 entry, but it is browsable through an
 [experimental display](https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-apidev/pwkvn/)
-and documented on a [new guides page](/dictionaries/pwkvn).
+and documented on a new guides page.
 
 ## Repository housekeeping: default branches renamed to `main`
 
@@ -110,6 +110,6 @@ was previously duplicated across several repos.
 
 ---
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

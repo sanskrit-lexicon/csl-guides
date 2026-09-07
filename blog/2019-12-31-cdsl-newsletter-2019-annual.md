@@ -26,6 +26,6 @@ The csl-corrections repository received its first commits in 2019, beginning the
 
 ---
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

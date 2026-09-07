@@ -34,6 +34,6 @@ Grassmann's Wörterbuch zum Rig-Veda (GRA) gained structured `<ab>` and `<ls>` a
 
 ---
 
-*To receive future editions by email, [subscribe here](/users/newsletter).*
+*To receive future editions by email, subscribe here.*
 
 _Dr. Mārcis Gasūns_

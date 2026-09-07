@@ -33,7 +33,7 @@ Supported operations:
 | `del` | Delete the numbered line |
 
 All files must be **UTF-8** (no BOM — see the BOM rule in
-**[Corrections Workflow](corrections-workflow)**).
+**Corrections Workflow**).
 
 The line number is not just a note for the reviewer. `updateByLine.py` uses it to find
 the exact line, and the `old` text should match the current source line before the
@@ -49,7 +49,7 @@ To fix a typo on line 1234 of a dictionary:
 1234 new <H1><h><key1>kfzRa</key1>...
 ```
 
-Then run the **[full workflow](corrections-workflow)**: snapshot → apply → validate XML
+Then run the **full workflow**: snapshot → apply → validate XML
 → diff to audit change file → commit `csl-orig` + `csl-corrections`.
 
 ## Replace, insert, delete

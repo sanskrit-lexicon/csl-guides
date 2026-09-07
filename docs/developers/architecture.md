@@ -35,9 +35,9 @@ the mental model; the following pages drill into each part.
 1. **Canonical source lives in `csl-orig`.** Each dictionary is a plain-text file under
    `csl-orig/v02/{dict}/{dict}.txt`.
 2. **No hand-edits without an audit trail.** Edits go through change files; the audit
-   copy is stored in `csl-corrections`. See **[Corrections Workflow](../contributing/corrections-workflow)**.
+   copy is stored in `csl-corrections`. See **Corrections Workflow**.
 3. **Generation is reproducible.** `csl-pywork` regenerates XML, indices, and displays
-   from source. See **[Generation Pipeline](generation-pipeline)**.
+   from source. See **Generation Pipeline**.
 4. **XML validity is gating.** Nothing is committed to `csl-orig` until it parses.
 
 ## The four web displays
@@ -54,8 +54,8 @@ parallel directories under `…/{CODE}Scan/{year}/web/`:
 | **Mobile** (M) | `mobile1/` | A responsive layout for small screens |
 
 All four query a per-dictionary **SQLite** database (built by the generator) and share the
-transcoder for input/output transliteration. See [Search & Display](../users/search-and-display)
-for the user-facing tour and [API](api) for the endpoints these displays call.
+transcoder for input/output transliteration. See Search & Display
+for the user-facing tour and API for the endpoints these displays call.
 
 ## Repositories at a glance
 
@@ -69,6 +69,6 @@ for the user-facing tour and [API](api) for the endpoints these displays call.
 | [`csl-apidev`](https://github.com/sanskrit-lexicon/csl-apidev) | API development |
 | [`csl-standards`](https://github.com/sanskrit-lexicon/csl-standards) | Shared conventions/standards |
 
-Full map: **[Repositories](repositories)**.
+Full map: **Repositories**.
 
 _Dr. Mārcis Gasūns_

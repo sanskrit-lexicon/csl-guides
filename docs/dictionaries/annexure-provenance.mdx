@@ -1,0 +1,87 @@
+---
+id: annexure-provenance
+title: Where MW's Supplement Came From — Measuring Dictionary Dependence
+description: "How much of Monier-Williams' 1899 supplement (the annexure) was drawn from Böhtlingk's Nachträge? An enrichment metric over the Cologne digitizations: PW Nachträge 7.8× vs Edgerton BHS 2.1×."
+sidebar_label: MW annexure provenance (7.8×)
+---
+
+# Where MW's Supplement Came From
+
+Monier-Williams' 1899 dictionary carries a **supplement** — the "annexure", entries tagged
+`<info n="sup"/>` in the Cologne digitization of [`mw`](/dictionaries/mw). Where did those
+entries come from? The obvious candidate is Böhtlingk's *Nachträge und Verbesserungen* (the
+supplement sections of the great Petersburg dictionary, **PW 1855–1875**, digitized
+separately as `pwkvn` and tagged `sup_1`…`sup_7` inside `pw.txt`).
+
+That question is **measurable** rather than rhetorical, because the sources carry dates and
+the Cologne digitizations are queryable.
+
+## The enrichment metric
+
+Take a headword set **S**. Compare its share among MW99's annexure entries with its share
+among MW99's main entries:
+
+> **enrichment(S) = [ |S ∩ annexure| / |annexure| ] ÷ [ |S ∩ main| / |main| ]**
+
+A ratio ≫ 1 means the supplement is disproportionately stocked from S.
+
+| source set S | n(S) | share in annexure | share in main | **enrichment** |
+|---|--:|--:|--:|--:|
+| PW Nachträge, `sup_7` (letzte Nachträge) | 13,094 | 29.6 % | 3.8 % | **7.79×** |
+| PW Nachträge, all layers `sup_1`…`sup_7` | 14,401 | 32.2 % | 4.1 % | **7.91×** |
+| `pwkvn` standalone Nachträge digitization | 14,995 | 32.5 % | 4.1 % | **7.84×** |
+| Edgerton, *Buddhist Hybrid Sanskrit Dictionary* (1953) | 17,777 | 6.8 % | 3.3 % | **2.09×** |
+
+Convention: `k1`-only headwords; MW99 annexure = 6,067 `k1`, main = 188,016 `k1`.
+
+**Reading.** The 1899 annexure is **~7.8× enriched for PW-Nachträge vocabulary** and only
+**~2.1× enriched for Edgerton's BHS vocabulary** — i.e. it is about **3.7× more
+"PW-flavoured" than "BHS-flavoured"**. Edgerton (1953) post-dates MW99 by 54 years, so its
+low enrichment is expected; the PW layers *pre-date* MW99 and their enrichment is high. The
+asymmetry is the quantitative form of the long-standing suggestion that MW's supplement was
+built on the Nachträge.
+
+## The dates are the argument
+
+| source | year | relation to MW99 (1899) |
+|---|---|---|
+| Böhtlingk–Roth, *Sanskrit-Wörterbuch* (PW), vols 1–7 + Nachträge | 1855–1875 | **pre-dates** — available to MW |
+| Böhtlingk, *kürzere Fassung* | 1879–1889 | **pre-dates** — available to MW |
+| Monier-Williams, MW72 | 1872 | earlier edition, **no annexure** |
+| Monier-Williams, MW99 | 1899 | the dictionary with the annexure |
+| Edgerton, BHS Dictionary | 1953 | **post-dates** — not available to MW |
+
+Because every Nachträge layer post-dates MW72 and pre-dates MW99, a Nachträge word present
+in MW99 but **absent from MW72** could only have been taken from the Nachträge. Of the
+13,094 unique `sup_7` headwords, **4,112 appear in no MW edition at all**, 27 were dropped
+between the editions, and MW99 took **6,090 (≈60 %)** of the pool MW72 lacked — 1,474 of
+them through the annexure.
+
+## A worked example
+
+`kāritra` (abstract noun "activity", = *ceṣṭita*) is **absent from `mw.txt` entirely** and
+from MW72 (1872), while it stands in the Nachträge at **PW 7-331-d** (`pw` L216013,
+`pwkvn` L16013), citing **Mahāvyutpatti 245, 844** (ed. 1849) and glossed by Edgerton's
+BHS as a Buddhist-Hybrid term. `kārāpaka`, its alphabetical neighbour, *did* enter the MW99
+annexure — the shape of a supplement that was compiled from the Nachträge and skipped some
+of its entries.
+
+## Caveats
+
+- The metric ranks **provenance likelihood**, not citation: set overlaps do not prove that a
+  given annexure entry was copied from a given Nachträge page. The reverse share — ~30 % of
+  annexure headwords are verbatim `sup_7` entries — is the direct check.
+- The candidate lists are a **worklist**, not verdicts: every proposed addition needs
+  printed-scan verification before filing.
+- Near-form string matches are review flags, not matches (`kāritra` fuzzy-hits `kārita` at
+  0.92 — a different word).
+
+## Reproduce / read more
+
+Full study (methods, tables, DCS-ranked samples, adjudication workbook):
+[MW-vs-Nachträge trial](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW_PWK_NACHTRAEGE_MISSING_ENTRIES_TRIAL_14-09-2026.md) ·
+[independent recheck](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW_PWK_NACHTRAEGE_TRIAL_INDEPENDENT_RECHECK_14-09-2026.md) ·
+[uptake & provenance details](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW_NACHTRAG_UPTAKE_AND_PROVENANCE_DETAILS_15-09-2026.md) ·
+[adjudication workbook](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-ADJUDICATION-14-09-2026.tsv) ·
+[proposal list](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/MW-NACHTRAG-PROPOSALS-15-09-2026.tsv).
+Discussion: [csl-corrections#119](https://github.com/sanskrit-lexicon/csl-corrections/issues/119).

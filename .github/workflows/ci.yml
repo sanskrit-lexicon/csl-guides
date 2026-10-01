@@ -55,6 +55,14 @@ jobs:
       # block publishing the site over a correct data change.
       - name: Install Playwright chromium
         run: npx playwright install --with-deps chromium
+      # H5542 acceptance proof: the live dictionary-comparison HTML must survive the
+      # DOMPurify sanitizer with zero hostile vectors (xlink:href javascript:,
+      # tab-obfuscated javascript:, mXSS nesting, missed containers) while legit
+      # Cologne markup is preserved. Reuses the chromium installed above —
+      # channel:'chrome' misses on runners, so the script's bundled-chromium
+      # fallback is the path taken here.
+      - name: Verify dictionary-comparison sanitizer
+        run: npm run verify:sanitizer
       - name: Verify atlas viz against the production bundle
         run: |
           # Run docusaurus serve DIRECTLY, not via `npm run serve`: npm spawns the

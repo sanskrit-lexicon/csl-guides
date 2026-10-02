@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: simple-search
 title: Simple-Search
 description: "Simple-Search, the quick CDSL lookup entry point — type a word and get its dictionary entries."
 sidebar_label: Simple-Search
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # Simple-Search
 

@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2020-annual
 title: "CDSL 2020 Year in Review"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2020-12-31
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 2020 was a productive year for the Cologne Digital Sanskrit Dictionaries: English text corrections were completed across many dictionaries, the Python toolchain advanced toward full Python 3 compatibility, and GRA verb data received significant attention.
 

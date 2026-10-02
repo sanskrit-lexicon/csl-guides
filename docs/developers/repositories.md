@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: repositories
 title: Repository Map
 description: "Map of the sanskrit-lexicon GitHub organization — which repository holds the source, generation code, displays, and corrections."
 sidebar_label: Repositories
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # Repository Map
 

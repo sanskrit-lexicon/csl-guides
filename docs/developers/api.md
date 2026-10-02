@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: api
 title: API
 description: "The CDSL REST API (csl-apidev) — how to query the Sanskrit dictionaries programmatically, with current status and history."
 sidebar_label: API
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # API
 

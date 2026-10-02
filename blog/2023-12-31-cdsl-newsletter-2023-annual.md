@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2023-annual
 title: "CDSL 2023 Year in Review"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2023-12-31
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 2023 brought a major revision of the Grassmann dictionary, the formal installation of the L.R. Vaidya dictionary, more than 1,100 user corrections applied, and the addition of a new dictionary — Hemachandra's Abhidhānachintāmaṇi — bringing the corpus to version 2.5.0.
 

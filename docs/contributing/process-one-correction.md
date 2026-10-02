@@ -1,11 +1,10 @@
-_Created: 25-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: process-one-correction
 title: Process One Correction
 description: "A maintainer tutorial for turning one reported CDSL typo into a validated source correction and audit trail."
 sidebar_label: Process One Correction
 ---
+_Created: 25-06-2026 · Last updated: 05-09-2026_
 
 # Process One Correction
 

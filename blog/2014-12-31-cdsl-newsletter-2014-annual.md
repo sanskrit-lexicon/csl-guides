@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2014-annual
 title: "CDSL 2014 Year in Review"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2014-12-31
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 2014 was the founding year of the Cologne Digital Sanskrit Dictionaries on GitHub — the organisation was created on 14 January 2014 and the first repositories were set up to begin tracking the digitization and correction work.
 

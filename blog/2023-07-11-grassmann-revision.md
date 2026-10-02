@@ -1,11 +1,10 @@
-_Created: 14-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: grassmann-revision
 title: "Grassmann dictionary: major markup revision"
 authors: []
 tags: [dictionaries, markup]
 ---
+_Created: 14-06-2026 · Last updated: 05-09-2026_
 
 The CDSL digitization of **Grassmann's *Wörterbuch zum Rig-Veda* (`GRA`)** received a major
 revision, deepening its structured markup.

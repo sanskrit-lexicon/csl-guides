@@ -1,11 +1,10 @@
-_Created: 14-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: csl-lnum-corrections
 title: "csl-lnum: submit corrections as pull requests"
 authors: []
 tags: [contributing, tools]
 ---
+_Created: 14-06-2026 · Last updated: 05-09-2026_
 
 The [`csl-lnum`](https://github.com/sanskrit-lexicon/csl-lnum) repository was started to let
 users **generate pull requests for dictionary-data corrections directly**, lowering the

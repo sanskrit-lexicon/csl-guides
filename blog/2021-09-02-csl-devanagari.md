@@ -1,11 +1,10 @@
-_Created: 14-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: csl-devanagari
 title: "csl-devanagari — output closer to the printed text"
 authors: []
 tags: [data, encoding]
 ---
+_Created: 14-06-2026 · Last updated: 05-09-2026_
 
 In response to a user request for Cologne data nearer to the printed text (Devanāgarī
 rather than the internal SLP1 encoding), a new repository

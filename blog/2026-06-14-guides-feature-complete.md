@@ -1,11 +1,10 @@
-_Created: 14-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: guides-feature-complete
 title: "Guides: auto-generated catalog, search, and display screenshots"
 authors: []
 tags: [docs, release]
 ---
+_Created: 14-06-2026 · Last updated: 05-09-2026_
 
 The CDSL guides now ship three substantial additions:
 

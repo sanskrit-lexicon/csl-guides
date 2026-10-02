@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2019-annual
 title: "CDSL 2019 Year in Review"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2019-12-31
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 2019 was a landmark year for the project: the REST API launched, corrections tracking moved fully to GitHub, and the web display received important improvements to cross-reference linking.
 

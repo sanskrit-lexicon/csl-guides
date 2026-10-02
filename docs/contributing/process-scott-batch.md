@@ -1,11 +1,10 @@
-_Created: 25-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: process-scott-batch
 title: Process a Scott Batch
 description: "How maintainers process a named correction backlog such as Scott Rhodes' AP batch from csl-corrections."
 sidebar_label: Process a Scott Batch
 ---
+_Created: 25-06-2026 · Last updated: 05-09-2026_
 
 # Process a Scott Batch
 

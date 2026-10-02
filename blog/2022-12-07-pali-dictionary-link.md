@@ -1,11 +1,10 @@
-_Created: 14-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: pali-dictionary-link
 title: "Pali dictionary link added to the home page"
 authors: []
 tags: [site]
 ---
+_Created: 14-06-2026 · Last updated: 05-09-2026_
 
 A link to the **DSAL Pali dictionary** was added to the CDSL home page, giving Sanskrit
 users a quick jump to the neighbouring Pali lexical resource.

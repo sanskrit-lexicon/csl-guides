@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2024-annual
 title: "CDSL 2024 Year in Review"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2024-12-31
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 2024 was a year of deep structural work: a major XML conversion brought the internal format of ten dictionaries into the modern Lbody standard, Monier-Williams received extensive page-link and display improvements, and the Böhtlingk-Roth link-target programme continued with new literary sources.
 

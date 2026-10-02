@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2016-annual
 title: "CDSL 2016 Year in Review"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2016-12-31
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 2016 brought visible improvements to the CDSL web interface and the first tracked data work in the Monier-Williams repository, as the project's GitHub presence began to reflect real editorial activity.
 

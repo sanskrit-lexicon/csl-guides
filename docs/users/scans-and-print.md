@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: scans-and-print
 title: Scans & Print
 description: "Every CDSL entry is backed by the original printed page. How to open a dictionary's scanned edition via the S link, and why scans matter."
 sidebar_label: Scans & Print
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # Scans & Print
 

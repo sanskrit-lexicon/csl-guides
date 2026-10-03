@@ -27,6 +27,23 @@ again. Interactive links inside an entry are inert here — open a dictionary's 
 display from the catalog for the live, clickable entry.
 :::
 
+:::note Trust block
+- **Evidence:** live browser-side fetches from the Cologne API
+  (`sanskrit-lexicon.uni-koeln.de`); the lookup path is the `dalglob.php` JSON
+  endpoint in [`csl-apidev`](https://github.com/sanskrit-lexicon/csl-apidev) (see
+  below), and the per-dictionary keying behaviour (Monier-Williams stems vs
+  Apte nominatives) is documented from the same source.
+- **Limitations:** nothing is archived in this repo — a later rerun may not
+  reproduce today's output; the API is a live service with variable latency, and
+  each column resolves your input to that dictionary's own headword form, so
+  columns are comparable in content, not byte-identical in key.
+- **Validation:** manual check — search a known headword (e.g. `agni`) and
+  confirm each selected dictionary column resolves and renders an entry.
+- **Owner repo:** `csl-guides` (widget); data served by `csl-apidev`.
+- **Next use:** for stable, clickable entries, open each dictionary's **Basic**
+  display from the [catalog](/dictionaries/catalog).
+:::
+
 ## Multi-dictionary lookup (`dalglob`)
 
 CDSL has an **experimental multi-dictionary lookup**: enter one headword and it lists

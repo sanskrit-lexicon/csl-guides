@@ -87,7 +87,7 @@ const config = {
           remarkPlugins: [remarkRstTable],
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: ['./src/css/custom.css', './src/palette.css'],
         },
       }),
     ],

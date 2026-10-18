@@ -1,4 +1,5 @@
 import React, {useCallback, useRef, useState} from 'react';
+import DOMPurify from 'dompurify';
 import styles from './DictionaryComparison.module.css';
 
 // Side-by-side lookup of one headword across several CDSL dictionaries, querying the
@@ -68,29 +69,45 @@ async function resolveKey(code, term, input) {
   return arr.includes(term) ? term : arr[0];
 }
 
-// `getword` returns a whole HTML document with a relative stylesheet link (dead off-site)
-// and is third-party markup. Keep only the entry div and strip anything executable.
+// H5542: `getword` returns a whole third-party HTML document. The hand-rolled attribute
+// blocklist this used before (strip on*, test `href`/`src` for `javascript:`) had concrete
+// bypasses: `xlink:href` escapes the exact-name check, `jav&#9;ascript:` defeats the
+// `/^\s*javascript:/i` regex (browsers strip tabs/newlines from URL schemes), and the
+// DOMParser → serialize → innerHTML round-trip is mXSS-exposed. Enforcement now goes
+// through DOMPurify (mXSS-hardened, handles namespaced and obfuscated URI vectors);
+// the blocklist tags remain forbidden for display parity with the old pass, plus
+// form/base/template containers it never covered.
+const FORBIDDEN_TAGS = [
+  'script', 'style', 'link', 'meta', 'iframe', 'object', 'embed',
+  'base', 'form', 'noscript', 'template',
+];
+// ADD_TAGS/ADD_ATTR keep the custom presentational markup observed in live CDSL payloads
+// (2026-10-01 census of MW/PWG/GRA/Apte entries: <listinfo n='..'>, <ocs>) that DOMPurify's
+// default allowlist would strip; everything else DOMPurify allows is standard HTML/SVG.
+const SANITIZE_CONFIG = {
+  FORBID_TAGS: FORBIDDEN_TAGS,
+  ADD_TAGS: ['listinfo', 'ocs'],
+  ADD_ATTR: ['n'],
+};
+
+// DOMPurify strips target= by default (tabnabbing caution), so the display's inert-link
+// contract is re-applied through the documented attribute hook — it then survives the
+// sanitized serialization. Guarded: extractEntry only ever runs client-side (inside the
+// Compare handler), and the SSR bundle's dompurify default export is the bare factory
+// with no hooks/sanitize (isSupported=false without a window).
+if (DOMPurify.isSupported) {
+  DOMPurify.addHook('afterSanitizeAttributes', (node) => {
+    if (node.tagName === 'A' && node.hasAttribute('href')) {
+      node.setAttribute('target', '_blank');
+      node.setAttribute('rel', 'noreferrer');
+    }
+  });
+}
+
 function extractEntry(html) {
   const doc = new DOMParser().parseFromString(html, 'text/html');
   const root = doc.querySelector('#CologneBasic') || doc.body;
-  root.querySelectorAll('script,style,link,meta,iframe,object,embed').forEach((n) => n.remove());
-  root.querySelectorAll('*').forEach((el) => {
-    // getAttributeNames() returns a plain string[] — unlike spreading the live NamedNodeMap
-    // `el.attributes`, which transpiles unreliably under minification.
-    el.getAttributeNames().forEach((name) => {
-      const n = name.toLowerCase();
-      const val = el.getAttribute(name) || '';
-      if (n.startsWith('on')) el.removeAttribute(name);
-      else if ((n === 'href' || n === 'src') && /^\s*javascript:/i.test(val)) el.removeAttribute(name);
-    });
-  });
-  // The display's in-entry links are JS-driven; with handlers stripped they are inert, so
-  // mark them plainly and keep them from navigating this page.
-  root.querySelectorAll('a[href]').forEach((a) => {
-    a.setAttribute('target', '_blank');
-    a.setAttribute('rel', 'noreferrer');
-  });
-  return root.innerHTML;
+  return DOMPurify.sanitize(root.innerHTML, SANITIZE_CONFIG);
 }
 
 async function lookupOne(code, term, input, output) {
@@ -231,7 +248,7 @@ function Column({dict, result}) {
       {r.state === 'ok' && (
         <>
           <p className={styles.matched}>matched: <code>{r.key}</code></p>
-          {/* Sanitized in extractEntry(): scripts/handlers/links-to-JS removed. */}
+          {/* DOMPurify-sanitized in extractEntry(): handlers/URI vectors/forbidden tags removed. */}
           <div className={styles.entry} dangerouslySetInnerHTML={{__html: r.html}} />
         </>
       )}

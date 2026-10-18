@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- **Dictionary-comparison XSS hardening** ([H5542](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5542-OxAlpha_csl-guides_dom-xss-search-render-harden_28.09.26.md)): the live-lookup widget's sanitizer is replaced with [DOMPurify](https://github.com/cure53/DOMPurify) — the hand-rolled blocklist had concrete bypasses (`xlink:href` escaped the exact-name `href` check; `jav&#9;ascript:` defeats the `^\s*javascript:` regex because browsers strip tabs/newlines from URL schemes; the DOMParser→serialize→innerHTML round-trip is mXSS-exposed; `form`/`base`/`template`/`noscript` were never covered — the negative control in `npm run verify:sanitizer` shows 7 surviving vectors). Enforcement now runs in a real DOM via [scripts/verify-dict-sanitizer.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/verify-dict-sanitizer.mjs) (Chromium): all hostile fixtures defused, legit Cologne markup preserved (`ADD_TAGS: listinfo/ocs`, `ADD_ATTR: n` — 2026-10-01 census of live MW/PWG/GRA entries), inert-link contract kept via the documented `afterSanitizeAttributes` hook. The swizzled [`SearchPage`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/theme/SearchPage/SearchPage.jsx) `dangerouslySetInnerHTML` sinks were triaged NOT data-bearing (upstream-verbatim; `highlight`/`highlightStemmed` escape every fragment, only `<mark>` passes raw) and left at upstream parity. OxAlpha (`opencode/z-ai/glm-5.3-flash`).
+
 - Added a root `AGENTS.md` agent-entrypoint stub (H4634): names itself the agent entrypoint, links [CLAUDE.md](CLAUDE.md), points at the [Uprava org standard](https://github.com/gasyoun/Uprava/blob/main/AGENTS.md).
 ## [0.14.0] - 2026-08-26
 

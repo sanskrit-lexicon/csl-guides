@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: overview
 title: Dictionaries Overview
 description: "CDSL hosts 42 Sanskrit dictionaries (1832–1993) grouped by language pair. How to pick the right one, with links to the catalog and citations."
 sidebar_label: Overview
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # Dictionaries Overview
 

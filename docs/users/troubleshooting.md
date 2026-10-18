@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: troubleshooting
 title: Troubleshooting
 description: "Fixes for the most common CDSL lookup problems, starting with input transliteration-scheme mismatches — the usual cause of no results."
 sidebar_label: Troubleshooting
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # Troubleshooting
 

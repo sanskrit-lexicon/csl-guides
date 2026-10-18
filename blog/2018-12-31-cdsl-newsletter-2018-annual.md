@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2018-annual
 title: "CDSL 2018 Year in Review"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2018-12-31
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 2018 continued the steady development and data maintenance work of the project, with the team preparing the infrastructure changes that would result in the launch of the REST API and expanded tooling in 2019.
 

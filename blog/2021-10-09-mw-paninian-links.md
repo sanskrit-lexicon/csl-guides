@@ -1,11 +1,10 @@
-_Created: 14-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: mw-paninian-links
 title: "Pāṇinian links added to Monier-Williams"
 authors: []
 tags: [dictionaries, markup]
 ---
+_Created: 14-06-2026 · Last updated: 05-09-2026_
 
 **Pāṇinian references in the Monier-Williams dictionary (`MW`) were linked**, connecting
 its citations of Pāṇini's grammar to their targets.

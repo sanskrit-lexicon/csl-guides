@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2025-annual
 title: "CDSL 2025 Year in Review"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2025-12-31
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 2025 was a year of expanded reach: the Frisch Sanskrit Reader was added as a new dictionary, the PWG link-splitting programme resolved dozens of compound literary-source references, a large-scale XML transformation was undertaken, and search transliteration handling was improved for the first time in several years.
 

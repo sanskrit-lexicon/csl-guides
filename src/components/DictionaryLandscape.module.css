@@ -1,5 +1,8 @@
 /* Palette: validated categorical slots (light + dark selected separately, not
-   auto-flipped) — see docs/dictionaries/landscape.mdx trust block. */
+   auto-flipped) — see docs/dictionaries/landscape.mdx trust block. Light-mode
+   chart chrome adopts the house dataviz tokens (src/palette.css, H5748) with
+   the prior validated values as fallbacks; the dark block keeps its own
+   validated overrides. */
 .root {
   --dl-c1: #2a78d6; /* Sanskrit-English  (blue)    */
   --dl-c2: #1baf7a; /* Specialized       (aqua)    */
@@ -8,9 +11,9 @@
   --dl-c5: #4a3aa7; /* English-Sanskrit  (violet)  */
   --dl-c6: #e34948; /* Sanskrit-French   (red)     */
   --dl-c7: #e87ba4; /* Sanskrit-Latin    (magenta) */
-  --dl-grid: #e1e0d9;
+  --dl-grid: var(--mw-chart-element-grid, #e1e0d9);
   --dl-axis: #c3c2b7;
-  --dl-muted: #898781;
+  --dl-muted: var(--mw-chart-element-muted, #898781);
   --dl-ring: #ffffff;
   margin: 1rem 0 2rem;
 }

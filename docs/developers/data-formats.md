@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: data-formats
 title: Data Formats
 description: "The three representations a CDSL dictionary moves through — csl-orig source text, generated XML, and display HTML."
 sidebar_label: Data Formats
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # Data Formats
 

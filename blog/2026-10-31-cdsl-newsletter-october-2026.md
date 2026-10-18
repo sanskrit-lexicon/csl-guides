@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2026-10
 title: "CDSL Newsletter — October 2026"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2026-10-31
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 <!-- DRAFT — fill in after running: python scripts/draft-newsletter.py --since 2026-09-01 --until 2026-09-30 --output draft.md -->
 

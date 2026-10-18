@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: faq
 title: Frequently Asked Questions
 description: "Frequently asked questions about using the Cologne Digital Sanskrit Dictionaries, from input transliteration schemes to downloads."
 sidebar_label: FAQ
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # Frequently Asked Questions
 

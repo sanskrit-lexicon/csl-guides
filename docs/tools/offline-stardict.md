@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: offline-stardict
 title: Offline Access & StarDict
 description: "Use the CDSL dictionaries offline as StarDict packages in any StarDict-compatible application."
 sidebar_label: Offline & StarDict
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # Offline Access & StarDict
 

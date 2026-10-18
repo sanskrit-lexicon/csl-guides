@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: generation-pipeline
 title: Generation Pipeline
 description: "How the CDSL generation pipeline turns csl-orig source text into the XML, search indexes, and web displays."
 sidebar_label: Generation Pipeline
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # Generation Pipeline
 

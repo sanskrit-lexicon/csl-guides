@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: corrections-workflow
 title: Corrections Workflow
 description: "The canonical step-by-step workflow for correcting a csl-orig source dictionary, from snapshot through XML validation to commit."
 sidebar_label: Corrections Workflow
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # Corrections Workflow
 

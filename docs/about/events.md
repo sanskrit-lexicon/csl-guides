@@ -1,11 +1,10 @@
-_Created: 14-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: events
 title: Events & Activity
 description: "Activity and milestones of the Cologne Digital Sanskrit Dictionaries, a long-running lexicon and open-data project."
 sidebar_label: Events
 ---
+_Created: 14-06-2026 · Last updated: 05-09-2026_
 
 # Events & Activity
 

@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2017-annual
 title: "CDSL 2017 Year in Review"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2017-12-31
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 2017 was a period of steady development on the Cologne Digital Sanskrit Dictionaries; while GitHub commits were sparse in the public repositories, the project's core data and tooling work continued at Cologne.
 

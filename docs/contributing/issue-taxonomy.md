@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: issue-taxonomy
 title: GitHub Issue Taxonomy
 description: "The shared GitHub issue taxonomy for every Sanskrit Lexicon repository: type labels, severity, milestones, and projects."
 sidebar_label: Issue Taxonomy
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # GitHub Issue Taxonomy
 

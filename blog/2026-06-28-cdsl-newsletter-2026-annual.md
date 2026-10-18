@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2026-annual
 title: "CDSL 2026 Year in Review (January–June)"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2026-06-28
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 The first half of 2026 brought the most visible changes to the CDSL project in years: a comprehensive new documentation site, preface texts for sixteen dictionaries, a new API layer, a new shared transcoding library, and sustained daily correction work — all alongside a programme of security hardening across every server-side codebase.
 

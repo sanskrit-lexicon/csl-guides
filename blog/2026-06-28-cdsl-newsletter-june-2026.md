@@ -1,5 +1,3 @@
-_Created: 28-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2026-06
 title: "CDSL Newsletter — June 2026"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2026-06-28
 ---
+_Created: 28-06-2026 · Last updated: 05-09-2026_
 
 Dear Sanskrit scholars, students, and dictionary enthusiasts,
 

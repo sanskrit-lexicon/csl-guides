@@ -1,0 +1,81 @@
+/* House dataviz palette — csl-guides adoption (H5748, viz-estate grill ruling 3).
+ *
+ * Tokens copied verbatim from the spine shared/dataviz asset
+ * (SanskritLexicographer/spine shared/dataviz/palette.css), whose pinned
+ * provenance is csl-atlas src/palette.css @ 1059973e85992a2a31af556ad35bc22f65c38378
+ * (generated from palette-tokens.json v1.0.0). Until the spine asset lands,
+ * this copy is taken directly from that pinned csl-atlas commit — same bytes.
+ *
+ * Atlas-only layout rules intentionally NOT copied:
+ *   - body font-family override (Docusaurus/Infima owns site typography),
+ *   - #observablehq-main / #observablehq-footer fixes (Observable-only ids,
+ *     meaningless in this Docusaurus stack).
+ *
+ * Usage: reference the chart-element tokens for chart chrome. Dark mode:
+ * this token set is light-surface-only; chart components here keep their own
+ * validated [data-theme='dark'] overrides (see Cladogram/DictionaryLandscape
+ * CSS modules). Categorical slots stay locally validated per figure.
+ *
+ * DO NOT EDIT the token values — they mirror the house standard; regenerate
+ * upstream via csl-atlas figures/scripts/build_palette.py.
+ */
+:root {
+  /* article-type */
+  --mw-article-type-root: #7a3d8f;
+  --mw-article-type-noun-m: #1f78b4;
+  --mw-article-type-noun-f: #e31a1c;
+  --mw-article-type-noun-n: #33a02c;
+  --mw-article-type-noun-mn: #6a3d9a;
+  --mw-article-type-adjective-mfn: #ff7f00;
+  --mw-article-type-indeclinable: #b15928;
+  --mw-article-type-compound: #a6cee3;
+  --mw-article-type-derived: #b2df8a;
+  --mw-article-type-continuation: #fb9a99;
+  --mw-article-type-lexicographer-only: #fdbf6f;
+  --mw-article-type-etymological-ie: #cab2d6;
+  --mw-article-type-botanical: #90c850;
+  --mw-article-type-biographical: #dda0dd;
+  --mw-article-type-vedic-accented: #ffd700;
+  --mw-article-type-other: #999999;
+  /* semantic-block */
+  --mw-semantic-block-identity: #264653;
+  --mw-semantic-block-form: #2a9d8f;
+  --mw-semantic-block-grammar: #e9c46a;
+  --mw-semantic-block-etymology: #f4a261;
+  --mw-semantic-block-sense: #e76f51;
+  --mw-semantic-block-evidentiary: #8d99ae;
+  --mw-semantic-block-encyclopedic: #a8dadc;
+  --mw-semantic-block-discourse: #bdb2ff;
+  --mw-semantic-block-meta: #cccccc;
+  /* fullness-tier */
+  --mw-fullness-tier-T1-vestigial: #e0e0e0;
+  --mw-fullness-tier-T2-skeletal: #bbdefb;
+  --mw-fullness-tier-T3-typical: #64b5f6;
+  --mw-fullness-tier-T4-rich: #1976d2;
+  --mw-fullness-tier-T5-elaborate: #0d47a1;
+  /* dictionary */
+  --mw-dictionary-mw: #1f78b4;
+  --mw-dictionary-pwg: #33a02c;
+  --mw-dictionary-pw: #b2df8a;
+  --mw-dictionary-ap: #ff7f00;
+  --mw-dictionary-wil: #e31a1c;
+  --mw-dictionary-skd: #6a3d9a;
+  --mw-dictionary-vcp: #cab2d6;
+  --mw-dictionary-armh: #fb9a99;
+  --mw-dictionary-abch: #a6cee3;
+  --mw-dictionary-acph: #fdbf6f;
+  --mw-dictionary-acsj: #cccccc;
+  /* chart-element */
+  --mw-chart-element-background: #fafafa;
+  --mw-chart-element-panel: #ffffff;
+  --mw-chart-element-grid: #eaeaea;
+  --mw-chart-element-axis: #333333;
+  --mw-chart-element-text: #222222;
+  --mw-chart-element-muted: #666666;
+  --mw-chart-element-accent: #d62728;
+  --mw-chart-element-highlight: #fdae61;
+  /* footer */
+  --mw-footer-text-color: #666666;
+  --mw-footer-font-size: 7pt;
+  --mw-footer-font-style: italic;
+}

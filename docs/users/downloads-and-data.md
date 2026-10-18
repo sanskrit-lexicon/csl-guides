@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: downloads-and-data
 title: Downloads & Data
 description: "How to download CDSL dictionaries as open data (CC BY-SA 4.0) from their GitHub repositories, and how to cite them."
 sidebar_label: Downloads & Data
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # Downloads & Data
 

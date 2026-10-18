@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2015-annual
 title: "CDSL 2015 Year in Review"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2015-12-31
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 2015 was a year of early infrastructure development on GitHub, with initial commits to the COLOGNE repository adding documentation and the first enhancements to the web display.
 

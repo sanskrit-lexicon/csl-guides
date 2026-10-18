@@ -1,5 +1,3 @@
-_Created: 28-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2026-07
 title: "CDSL Newsletter — July 2026"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2026-07-28
 ---
+_Created: 28-06-2026 · Last updated: 05-09-2026_
 
 Here is the July 2026 edition of the Cologne Digital Sanskrit Dictionaries newsletter,
 covering the activity of the past month. Significant work this period: a broad preface

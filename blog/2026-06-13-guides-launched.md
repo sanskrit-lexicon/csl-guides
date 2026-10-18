@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: guides-scaffolded
 title: Documentation site scaffolded
 authors: []
 tags: [docs]
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 The CDSL guides site has been scaffolded with Docusaurus, covering five sections —
 **Using the Site**, **Dictionaries**, **Tools**, **Contributing**, and **Developers** —

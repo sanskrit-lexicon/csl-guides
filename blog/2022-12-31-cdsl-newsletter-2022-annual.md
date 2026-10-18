@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2022-annual
 title: "CDSL 2022 Year in Review"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2022-12-31
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 2022 was the first year with a full run of monthly newsletters, and it reflected a project at full pace: a new dictionary was added, Monier-Williams received major manual accent corrections, Boehtlingk's Indische Sprüche proofreading was completed, and high-quality color scans replaced earlier grayscale pages.
 

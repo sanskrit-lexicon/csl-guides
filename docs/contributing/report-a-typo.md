@@ -1,11 +1,10 @@
-_Created: 25-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: report-a-typo
 title: Report a Typo
 description: "How to report one dictionary typo or scan problem without a local CDSL setup."
 sidebar_label: Report a Typo
 ---
+_Created: 25-06-2026 · Last updated: 05-09-2026_
 
 # Report a Typo
 

@@ -1,5 +1,3 @@
-_Created: 29-06-2026 · Last updated: 05-09-2026_
-
 ---
 slug: newsletter-2021-annual
 title: "CDSL 2021 Year in Review"
@@ -7,6 +5,7 @@ authors: []
 tags: [newsletter]
 date: 2021-12-31
 ---
+_Created: 29-06-2026 · Last updated: 05-09-2026_
 
 2021 was one of the most active years in the project's GitHub history: the Devanāgarī display layer launched, Boehtlingk's Indische Sprüche entered preparation, several dictionaries received extensive markup improvements, and the correction workflow was formalized with new tooling for users and contributors.
 

@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: acknowledgments
 title: Acknowledgments
 description: "Credits for the Cologne Digital Sanskrit Dictionaries — the lexicographers, digitizers, and contributors behind the project."
 sidebar_label: Acknowledgments
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # Acknowledgments
 

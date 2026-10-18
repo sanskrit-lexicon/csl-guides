@@ -1,11 +1,10 @@
-_Created: 13-06-2026 · Last updated: 05-09-2026_
-
 ---
 id: overview
 title: Contributing Overview
 description: "Two paths into CDSL contribution: report one typo without local setup, or process validated corrections as a maintainer."
 sidebar_label: Overview
 ---
+_Created: 13-06-2026 · Last updated: 05-09-2026_
 
 # Contributing Overview
 

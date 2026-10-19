@@ -16,6 +16,7 @@
     "build:word-game": "node scripts/build-word-game.mjs",
     "build:heritage-coverage": "node scripts/build-heritage-coverage.mjs",
     "build:atlas-viz": "node scripts/build-atlas-viz.mjs",
+    "build:pwg-sense-order": "node scripts/build-pwg-sense-order.mjs",
     "verify:atlas-viz": "node scripts/verify-atlas-viz.mjs",
     "normalize:quiz-positions": "node scripts/normalize-quiz-answer-positions.mjs",
     "check:quiz-positions": "node scripts/normalize-quiz-answer-positions.mjs --check",

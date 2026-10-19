@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-10-19",
+  "generatedBy": "node scripts/build-pwg-sense-order.mjs",
+  "source": {
+    "repo": "sanskrit-lexicon/csl-atlas",
+    "path": "data/pd/pd_sense_order_compare_summary.json",
+    "sha256": "27cc5a2b1700231dd234b999f32f70dca5bf0dfcfa7baf74183f5ada2dbd0e1d",
+    "report": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/reports/PD_SENSE_ORDER_COMPARE_2026.md",
+    "builder": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/pd_sense_order_compare.py",
+    "handoff": "H7116"
+  },
+  "license": "CC-BY-SA-4.0",
+  "clock": "dm",
+  "rule": {
+    "effectFloor": 0.1,
+    "alpha": 0.05,
+    "minPower": 30,
+    "reps": 5000,
+    "holm": true
+  },
+  "verdict": {
+    "status": "WITHDRAWN",
+    "text": "WITHDRAWN — the claim that PD's chronological sense ordering is distinctive is withdrawn: PWG, MW fail(s) the pre-registered floor (worst Δτ = -0.082, Holm p = 1.0000 against a floor of +0.10); the tendency is shared with non-historical dictionaries and the A68 footnote must say so."
+  },
+  "pd": {
+    "entries": 706,
+    "tau": 0.3232684268,
+    "medianDriftYears": 265,
+    "twoSenseEntries": 582,
+    "forwardRate": 0.6013745704
+  },
+  "dictionaries": [
+    {
+      "code": "PWG",
+      "name": "Böhtlingk–Roth (PWG)",
+      "entries": 3343,
+      "tau": 0.4056928396,
+      "tauDcs": 0.3953258752,
+      "medianDriftYears": 184,
+      "twoSenseEntries": 6273,
+      "forwardRate": 0.547744301,
+      "forwardCi": [
+        0.535328,
+        0.560116
+      ],
+      "senseDivisions": 140435,
+      "lsResolved": 483000,
+      "lsInstances": 720203,
+      "datedCitations": 196843,
+      "deltaTau": -0.0824244128,
+      "deltaCi": [
+        -0.12503,
+        -0.04042
+      ],
+      "pOneSided": 1,
+      "pHolm": 1,
+      "clearsFloor": false,
+      "bands": {
+        "small": {
+          "entries": 3037,
+          "tau": 0.4206167222
+        },
+        "large": {
+          "entries": 306,
+          "tau": 0.2575757432
+        }
+      }
+    },
+    {
+      "code": "PW",
+      "name": "Böhtlingk shorter (PW)",
+      "entries": 281,
+      "tau": -0.0409076242,
+      "tauDcs": 0.0886991624,
+      "medianDriftYears": 0,
+      "twoSenseEntries": 895,
+      "forwardRate": 0.3731843575,
+      "forwardCi": [
+        0.341402,
+        0.405805
+      ],
+      "senseDivisions": 75604,
+      "lsResolved": 50337,
+      "lsInstances": 97781,
+      "datedCitations": 23006,
+      "deltaTau": 0.3641760511,
+      "deltaCi": [
+        0.289974,
+        0.440131
+      ],
+      "pOneSided": 0.00019996,
+      "pHolm": 0.00079984,
+      "clearsFloor": true,
+      "bands": {
+        "small": {
+          "entries": 216,
+          "tau": -0.0571596715
+        },
+        "large": {
+          "entries": 65,
+          "tau": 0.013099179
+        }
+      }
+    },
+    {
+      "code": "MW",
+      "name": "Monier-Williams (MW)",
+      "entries": 3882,
+      "tau": 0.2268417194,
+      "tauDcs": 0.2555251029,
+      "medianDriftYears": 10,
+      "twoSenseEntries": 4367,
+      "forwardRate": 0.4971376231,
+      "forwardCi": [
+        0.4822,
+        0.512079
+      ],
+      "senseDivisions": 236519,
+      "lsResolved": 310664,
+      "lsInstances": 320828,
+      "datedCitations": 130992,
+      "deltaTau": 0.0964267074,
+      "deltaCi": [
+        0.053637,
+        0.138307
+      ],
+      "pOneSided": 0.00019996,
+      "pHolm": 0.00079984,
+      "clearsFloor": false,
+      "bands": {
+        "small": {
+          "entries": 3442,
+          "tau": 0.2268341476
+        },
+        "large": {
+          "entries": 440,
+          "tau": 0.2269009515
+        }
+      }
+    },
+    {
+      "code": "AP",
+      "name": "Apte (AP)",
+      "entries": 1622,
+      "tau": -0.0420643329,
+      "tauDcs": -0.1472288106,
+      "medianDriftYears": 0,
+      "twoSenseEntries": 2042,
+      "forwardRate": 0.3687561214,
+      "forwardCi": [
+        0.347786,
+        0.390104
+      ],
+      "senseDivisions": 41547,
+      "lsResolved": 55766,
+      "lsInstances": 66809,
+      "datedCitations": 31823,
+      "deltaTau": 0.3653327597,
+      "deltaCi": [
+        0.315724,
+        0.414135
+      ],
+      "pOneSided": 0.00019996,
+      "pHolm": 0.00079984,
+      "clearsFloor": true,
+      "bands": {
+        "small": {
+          "entries": 1525,
+          "tau": -0.0418127757
+        },
+        "large": {
+          "entries": 97,
+          "tau": -0.0460192262
+        }
+      }
+    }
+  ]
+}

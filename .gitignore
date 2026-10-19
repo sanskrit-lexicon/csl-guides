@@ -14,6 +14,16 @@
 # Scratch (throwaway screenshot fixtures + harness)
 .tmp_css/
 scripts/_*.mjs
+# ...but a real source module is not scratch. scripts/_quiz-options.mjs — the
+# canonical option-ordering helper imported by build-level-quiz.mjs and
+# normalize-quiz-answer-positions.mjs — was silently swallowed by the rule
+# above. It was written on 09-07-2026 (H313) and 20-07-2026 (H1387) but never
+# committed, so it existed only in the authoring session's working tree: every
+# clone since has had a dead repair path for the quiz banks, and the
+# `npm run normalize:quiz-positions` remedy that verify-quiz-positions prints
+# on failure died with ERR_MODULE_NOT_FOUND. Keep the scratch rule; never let
+# it hide an imported module again.
+!scripts/_quiz-options.mjs
 
 # Playwright verification run artifacts (evidence, not repo content)
 /verify-viz-playwright.png

@@ -18,6 +18,7 @@
     "build:atlas-viz": "node scripts/build-atlas-viz.mjs",
     "verify:atlas-viz": "node scripts/verify-atlas-viz.mjs",
     "normalize:quiz-positions": "node scripts/normalize-quiz-answer-positions.mjs",
+    "check:quiz-positions": "node scripts/normalize-quiz-answer-positions.mjs --check",
     "verify:quiz-positions": "node scripts/verify-quiz-answer-positions.mjs",
     "verify:sanitizer": "node scripts/verify-dict-sanitizer.mjs",
     "check:pref-legend": "python scripts/pref_legend_parity.py --check",

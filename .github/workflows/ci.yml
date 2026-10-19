@@ -31,6 +31,16 @@ jobs:
       # scored 100% on six public quizzes.
       - name: Verify quiz answer positions
         run: npm run verify:quiz-positions
+      # The remedy itself must stay alive. verify-quiz-positions tells a
+      # maintainer to run `npm run normalize:quiz-positions` when a bank is
+      # gameable — but that command imported scripts/_quiz-options.mjs, which
+      # .gitignore swallowed (the `scripts/_*.mjs` scratch rule), so the
+      # advertised fix died with ERR_MODULE_NOT_FOUND on every clone from
+      # 25-06-2026 until 19-10-2026 (bug hunt 19.10.2026, F1). This step is
+      # the guard: the helper is back, and a bank that drifts out of canonical
+      # order now fails CI with a remedy that works.
+      - name: Check quiz banks are in canonical option order
+        run: npm run check:quiz-positions
       # SHARED_CODE §24 edge contract (H3340): the vendored SanskritSpellCheck
       # reform maps must match the SHA-256 pins inside the committed expansion
       # feed and the sibling upstream checkout. Cheap and independent of the

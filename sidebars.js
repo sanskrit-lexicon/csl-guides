@@ -44,6 +44,7 @@ const sidebars = {
         'dictionaries/citation-sources',
         'dictionaries/citation-graph',
         'dictionaries/annexure-provenance',
+        'dictionaries/pwg-sense-order',
         'dictionaries/corpus-attestation',
         'dictionaries/machine-morphology',
         'dictionaries/abbreviations-and-citations',

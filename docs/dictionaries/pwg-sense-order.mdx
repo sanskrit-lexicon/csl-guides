@@ -1,0 +1,167 @@
+---
+id: pwg-sense-order
+title: "Does PWG order its senses chronologically?"
+description: "A measurement of sense order in the Petersburg dictionary: PWG's numbered senses rise in date more strongly than the Poona Dictionary's, which withdraws the reading that PD's sense order is historically distinctive."
+sidebar_label: PWG sense order (measurement)
+---
+
+import data from '@site/src/data/pwg-sense-order.json';
+
+# Does PWG order its senses chronologically?
+
+The *Poona Dictionary* (PD) is built on the OED model and claims *historical principles* — that
+its senses run from older to newer. In October 2026 that claim was finally measured
+([csl-atlas PD sense-order report](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/reports/PD_SENSE_ORDER_2026.md)):
+PD's senses do tend to rise in date, but only as a tendency (τ = +0.32 on the Dharmamitra clock,
+a median drift of +265 years from first to last sense, and 40 % of two-sense entries not forward —
+26 % run backwards, 14 % tie).
+
+A tendency means nothing without a control. **Böhtlingk–Roth (PWG) is that control** — a
+dictionary of the same century with no OED remit — and the answer it gives is the reason this
+page exists: **PWG orders its senses *more* chronologically than PD does.** So PD's sense order
+is not distinctive, and "historical principles" is not evidenced by the arrangement of senses.
+
+:::note The measured object
+This page is about the order of **senses inside an entry**, not the order of quotations inside a
+sense. The latter is a different measurement, on a different unit — see the
+[PD citation-order report](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/reports/PD_CITATION_ORDER_FULL_2026.md).
+:::
+
+## What was measured
+
+For PWG, PW, MW and AP: each numbered sense division contributes the **earliest datable citation
+filed under it**; the sequence of those dates in sense order is then tested for a rising
+tendency. Two date instruments are used, and both were already the ones behind the PD figure, so
+the comparison is like-for-like:
+
+- **DCS** — the Digital Corpus of Sanskrit chronology, matched at Dice ≥ 0.90 to the work a
+  citation abbreviation names.
+- **Dharmamitra** — its post-median date for the work, earliest stratum of a base title, matched
+  at Dice ≥ 0.82.
+
+Citation abbreviations are resolved from each dictionary's own key
+([csl-guides abbreviations](abbreviations-and-citations.mdx)), longest-prefix; AP
+borrows the documented Apte (AP90) key, and MW resolves through the vendored
+`mw-source-abbreviations.tsv`. Thresholds are fixed and were never relaxed per dictionary.
+
+The statistic is the one PD's own report uses, imported rather than re-implemented: the
+two-sense **forward rate** (later sense, later date) with an exact Clopper–Pearson 95 % interval,
+**Kendall τ** between sense position and earliest date for entries with at least three datable
+senses, a 5,000-replicate within-entry **permutation null**, and the median first→last drift.
+
+## The numbers
+
+τ is on the Dharmamitra clock (the clock the PD figure quotes); the DCS column replicates.
+"Resolved" is the share of the dictionary's `<ls>` citations that reached a dated work at all —
+the honest ceiling on what this instrument can see.
+
+| Dictionary | Entries ≥3 | τ (dm) | τ (dcs) | Two-sense forward rate (95 % CI) | Two-sense entries | Median drift | `<ls>` resolved |
+|---|---|---|---|---|---|---|---|
+| **PD** (Poona) | {data.pd.entries.toLocaleString('en-US')} | **{data.pd.tau.toFixed(3)}** | — | {(data.pd.forwardRate * 100).toFixed(1)} % * | {data.pd.twoSenseEntries.toLocaleString('en-US')} | {data.pd.medianDriftYears} y | — |
+| **PWG** (Böhtlingk–Roth) | {data.dictionaries[0].entries.toLocaleString('en-US')} | **{data.dictionaries[0].tau.toFixed(3)}** | {data.dictionaries[0].tauDcs.toFixed(3)} | {(data.dictionaries[0].forwardRate * 100).toFixed(1)} % ({(data.dictionaries[0].forwardCi[0] * 100).toFixed(1)}–{(data.dictionaries[0].forwardCi[1] * 100).toFixed(1)}) | {data.dictionaries[0].twoSenseEntries.toLocaleString('en-US')} | {data.dictionaries[0].medianDriftYears} y | {(100 * data.dictionaries[0].lsResolved / data.dictionaries[0].lsInstances).toFixed(1)} % |
+| MW (Monier-Williams) | {data.dictionaries[2].entries.toLocaleString('en-US')} | {data.dictionaries[2].tau.toFixed(3)} | {data.dictionaries[2].tauDcs.toFixed(3)} | {(data.dictionaries[2].forwardRate * 100).toFixed(1)} % ({(data.dictionaries[2].forwardCi[0] * 100).toFixed(1)}–{(data.dictionaries[2].forwardCi[1] * 100).toFixed(1)}) | {data.dictionaries[2].twoSenseEntries.toLocaleString('en-US')} | {data.dictionaries[2].medianDriftYears} y | {(100 * data.dictionaries[2].lsResolved / data.dictionaries[2].lsInstances).toFixed(1)} % |
+| PW (Böhtlingk shorter) | {data.dictionaries[1].entries.toLocaleString('en-US')} | {data.dictionaries[1].tau.toFixed(3)} | {data.dictionaries[1].tauDcs.toFixed(3)} | {(data.dictionaries[1].forwardRate * 100).toFixed(1)} % ({(data.dictionaries[1].forwardCi[0] * 100).toFixed(1)}–{(data.dictionaries[1].forwardCi[1] * 100).toFixed(1)}) | {data.dictionaries[1].twoSenseEntries.toLocaleString('en-US')} | {data.dictionaries[1].medianDriftYears} y | {(100 * data.dictionaries[1].lsResolved / data.dictionaries[1].lsInstances).toFixed(1)} % |
+| AP (Apte) | {data.dictionaries[3].entries.toLocaleString('en-US')} | {data.dictionaries[3].tau.toFixed(3)} | {data.dictionaries[3].tauDcs.toFixed(3)} | {(data.dictionaries[3].forwardRate * 100).toFixed(1)} % ({(data.dictionaries[3].forwardCi[0] * 100).toFixed(1)}–{(data.dictionaries[3].forwardCi[1] * 100).toFixed(1)}) | {data.dictionaries[3].twoSenseEntries.toLocaleString('en-US')} | {data.dictionaries[3].medianDriftYears} y | {(100 * data.dictionaries[3].lsResolved / data.dictionaries[3].lsInstances).toFixed(1)} % |
+
+* PD's rate is quoted from the published PD summary, which reports it without an interval; every control row carries its exact 95 % CI.
+
+PWG's tendency is the strongest of the five, and it holds in both size bands — τ =
+{data.dictionaries[0].bands.small.tau.toFixed(3)} on the
+{data.dictionaries[0].bands.small.entries.toLocaleString('en-US')} entries with 3–7 senses and
+{data.dictionaries[0].bands.large.tau.toFixed(3)} on the
+{data.dictionaries[0].bands.large.entries} with eight or more — so the giant root entries
+(*gam* carries 221 numbered Bedeutungen) are not carrying the result.
+
+## The verdict
+
+The comparison rule was fixed before the control numbers were computed, and the vocabulary is
+its own: the claim **stands** only if PD beats *every* scored dictionary by τ ≥
+{data.rule.effectFloor.toFixed(2)} with a Holm-adjusted one-sided permutation p ≤
+{data.rule.alpha.toFixed(2)}; otherwise it is **withdrawn**.
+
+| Dictionary | τ | Δτ = τ<sub>PD</sub> − τ | 95 % CI | one-sided p | Holm p | clears the floor |
+|---|---|---|---|---|---|---|
+| PWG | {data.dictionaries[0].tau.toFixed(3)} | **{data.dictionaries[0].deltaTau.toFixed(3)}** | {data.dictionaries[0].deltaCi[0].toFixed(3)} … {data.dictionaries[0].deltaCi[1].toFixed(3)} | {data.dictionaries[0].pOneSided.toFixed(4)} | {data.dictionaries[0].pHolm.toFixed(4)} | no |
+| MW | {data.dictionaries[2].tau.toFixed(3)} | {data.dictionaries[2].deltaTau.toFixed(3)} | {data.dictionaries[2].deltaCi[0].toFixed(3)} … {data.dictionaries[2].deltaCi[1].toFixed(3)} | {data.dictionaries[2].pOneSided.toFixed(4)} | {data.dictionaries[2].pHolm.toFixed(4)} | no |
+| PW | {data.dictionaries[1].tau.toFixed(3)} | {data.dictionaries[1].deltaTau.toFixed(3)} | {data.dictionaries[1].deltaCi[0].toFixed(3)} … {data.dictionaries[1].deltaCi[1].toFixed(3)} | {data.dictionaries[1].pOneSided.toFixed(4)} | {data.dictionaries[1].pHolm.toFixed(4)} | yes |
+| AP | {data.dictionaries[3].tau.toFixed(3)} | {data.dictionaries[3].deltaTau.toFixed(3)} | {data.dictionaries[3].deltaCi[0].toFixed(3)} … {data.dictionaries[3].deltaCi[1].toFixed(3)} | {data.dictionaries[3].pOneSided.toFixed(4)} | {data.dictionaries[3].pHolm.toFixed(4)} | yes |
+
+**Outcome: {data.verdict.status}.** PWG's τ of {data.dictionaries[0].tau.toFixed(2)} sits
+*above* PD's {data.pd.tau.toFixed(2)} — a reversal, not a tie, and its bootstrap interval
+excludes zero. MW, at {data.dictionaries[2].tau.toFixed(2)}, is the close call: it falls
+{(data.rule.effectFloor - data.dictionaries[2].deltaTau).toFixed(3)} short of the floor and would
+not decide the verdict on its own. PW and AP show no chronological order at all. The reading that
+PD's sense arrangement is historically distinctive is therefore withdrawn; the tendency is shared
+with dictionaries that do not carry the OED's programme.
+
+## A worked entry: <i>guru</i>
+
+PWG numbers a sense (`1〉`) and then subdivides it with lettered sub-senses (`a〉`, `— b〉`). The
+measurement takes the **numbered** sense as the unit — a lettered sub-sense folds into its
+parent, so the parent's date is the earliest among all its sub-senses, exactly as a nested
+division behaves in PD. Trimmed from `csl-orig/v02/pwg/pwg.txt`, record **L 22685** (vol. 2,
+p. 767):
+
+```
+<L>22685<pc>2-0767<k1>guru<k2>guru/
+<div n="1"> 1〉 adj. f. {#gurvI#}; compar. {#ga/rIyaMs#}
+  <ls>P. 6,4,157</ls>. <ls>VOP. 7,56</ls>. …
+<div n="2"> a〉 {%schwer%} (<ab>Gegens.</ab> {#laGu#}) …
+  <ls>ṚV. 1,39,3</ls>. <ls>AV. 9,3,24</ls>. …
+<div n="2">— b〉 {%gross, ausgedehnt%}
+  (dem äussern Umfange nach), = {#mahant#} … <ls>PAÑCAT. II, 199</ls>. …
+```
+
+*(Trimmed and wrapped for display; the record's own line breaks are different.)*
+
+| Sense | What it holds | Earliest dated citation (Dharmamitra) |
+|---|---|---|
+| `1〉` adj. — *heavy*, *great*, *long* (with sub-senses a–e) | Ṛgvedic, with the classical grammarians alongside | **−1125** (Ṛg-Veda) |
+| `2〉` m. — *a venerable person; father, mother, elder relative* | classical | **−369** |
+| `3〉` f. — *pregnant woman; a teacher's wife* | lexicographers only, no datable work | — (skipped) |
+
+The entry rises as the tendency predicts, and it also shows the two honest limits: the third
+sense has no dated citation and is **skipped, not imputed**, and the earliest citation is the
+earliest *quotation filed under the sense*, not a date Böhtlingk recorded. (Both figures are from
+the 19-10-2026 run; the sense-level dates are not stored as data on this site.)
+
+## What this lets you say — and not say
+
+- PWG's arrangement is **meaning-driven first and historical second**: 54.8 % of two-sense
+  entries run forward, so almost half do not. Treat sense position as a weak prior on age, never
+  as a date.
+- The forced canonical order (literal → figurative → technical) is shared by every dictionary
+  and is exactly what the control measures; it is reported, never corrected away.
+- The resolution ceiling is the binding constraint: {(100 * data.dictionaries[0].lsResolved / data.dictionaries[0].lsInstances).toFixed(1)} %
+  of PWG's {data.dictionaries[0].lsInstances.toLocaleString('en-US')} `<ls>` citations reached a
+  dated work, because PWG quotes lexicographers, grammarians and medieval compendia that the two
+  chronologies do not date.
+- DCS and Dharmamitra are **one lineage, not two instruments** (ρ = 0.94 on 56 shared works), so
+  the two clocks replicate a chronology rather than doubling the evidence.
+
+## Reproduce
+
+The measurement lives in csl-atlas, not here:
+
+- [`scripts/pd_sense_order_compare.py`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/pd_sense_order_compare.py)
+  (`--build`, `--check`, `--render`) and its package
+  [`scripts/pd_compare/`](https://github.com/sanskrit-lexicon/csl-atlas/tree/main/scripts/pd_compare) —
+  the PD row is recomputed from the committed TSV and must reproduce the PD summary exactly
+  before any control is read.
+- [`data/pd/pd_sense_order_compare_summary.json`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/pd_sense_order_compare_summary.json) —
+  every number on this page, with its denominators.
+- [Report](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/reports/PD_SENSE_ORDER_COMPARE_2026.md) ·
+  [nine pinned forensic tests](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/tests/forensic/test_pd_sense_order_compare.py)
+  that fail if the verdict flips silently.
+
+This page renders `src/data/pwg-sense-order.json`, a projection of that summary generated by
+[`scripts/build-pwg-sense-order.mjs`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-pwg-sense-order.mjs)
+(`npm run build:pwg-sense-order`, `--check` to verify). The source SHA-256 is recorded in the JSON,
+so a re-run against a drifted artefact fails instead of re-vendoring silently.
+
+## See also
+
+- **[Böhtlingk–Roth (PWG)](pwg.mdx)** — the dictionary's own page
+- **[How to read PWG](../users/reading-pwg.mdx)** — the dictionary-literacy pack
+- **[The citation graph](citation-graph.mdx)** — what PWG quotes, and how often
+- **[Corpus attestation](corpus-attestation.mdx)** — the same works in the dated corpus

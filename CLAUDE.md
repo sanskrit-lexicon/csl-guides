@@ -23,12 +23,31 @@ npm start            # dev server + hot reload at /csl-guides/
 npm run build        # production build into build/ (runs onBrokenLinks:'throw')
 npm run serve        # preview the production build
 npm run build:catalog # regenerate src/data/dictionaries.json from live sources
+npm run check:contracts # run every "committed == reproducible" gate in one pass (needs sibling clones)
 node scripts/screenshots.mjs   # recapture display screenshots (needs: npx playwright install chromium)
 ```
 
 There is no test suite. **`npm run build` is the verification gate** — it fails on any broken
 internal link (`onBrokenLinks: 'throw'`), so a green build is the proof a content change is
 sound. To verify the way CI does: `npm ci && npm run build`.
+
+### Contract gates (committed == reproducible)
+
+Every vendored feed pins the SHA-256 (or a field-by-field projection) of the upstream artifact
+it was built from, and each has a `--check` mode. Two wiring rules decide where a gate runs:
+
+- **Sibling-free gates run in CI** — `check:ortho-edge`, `check:quiz-positions`,
+  `check:pref-legend`, plus the bundle-level `verify:*` checks.
+- **Sibling-dependent gates cannot**: GitHub Actions checks out this repo only, so
+  `check:atlas-viz`, `check:heritage-coverage`, `check:corpus-frequency` and
+  `check:vedic-accent` exit 1 there. They run through `npm run check:contracts`, which resolves
+  `ATLAS_ROOT` / `SANSKRITLEX_ROOT` / `KOSHA_ROOT` / `VISUALDCS_ROOT` (default `../<sibling>` —
+  absent in a worktree) and writes a receipt to `scripts/out/contracts/`.
+
+The weekly lane (`scripts/launchd/`, armed with `bash scripts/launchd/install.sh --kickstart`)
+runs `check:contracts` against a throwaway detached worktree of `origin/main`, so it proves the
+committed state rather than whatever a human's clone happens to hold. Exit codes: 0 green,
+1 a contract is RED, 2 nothing red but a gate could not run (a SKIP proves nothing).
 
 ## Architecture
 
@@ -121,7 +140,9 @@ Non-obvious facts baked into the script:
 - [deploy.yml](https://github.com/sanskrit-lexicon/csl-guides/blob/main/.github/workflows/deploy.yml): on push to `main`, refreshes the catalog
   (non-fatal), builds, and deploys to GitHub Pages (`gh-pages`).
 - [ci.yml](https://github.com/sanskrit-lexicon/csl-guides/blob/main/.github/workflows/ci.yml): builds on every PR (no deploy) — this is the broken-link
-  gate.
+  gate. It also runs the sibling-free contract gates (`check:ortho-edge`,
+  `check:quiz-positions`, `check:pref-legend`) before the build. The sibling-dependent ones live
+  in the weekly local lane — see *Contract gates* under Commands.
 - [link-check.yml](https://github.com/sanskrit-lexicon/csl-guides/blob/main/.github/workflows/link-check.yml): **external** links only (lychee), weekly
   + `workflow_dispatch`. Internal links are already covered by the build. It needs
   `--root-dir "${{ github.workspace }}"` so Docusaurus root-relative routes (`/news`, `/img/...`)

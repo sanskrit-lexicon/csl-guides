@@ -47,6 +47,15 @@ jobs:
       # build, so it fails in seconds.
       - name: Check ortho-drift edge contract
         run: npm run check:ortho-edge
+      # Same edge-contract family, and the only one of the sibling-free gates that
+      # was left wired to nothing (bug hunt 19.10.2026, A4): the PWG/PW preference
+      # legend store must still match its schema and the upstream crosscheck key
+      # inventory. Pure Python stdlib + committed files, so it is CI-safe — unlike
+      # check:atlas-viz / check:heritage-coverage / check:corpus-frequency /
+      # check:vedic-accent, which need sibling checkouts and therefore live in
+      # scripts/check-contracts.mjs + the weekly lane instead.
+      - name: Check preference-legend parity
+        run: npm run check:pref-legend
       - name: Build site
         run: npm run build
       # H3340 acceptance proof: Thier->Tier through the real lunr + the

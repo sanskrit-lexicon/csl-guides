@@ -24,6 +24,8 @@
 // Usage: node scripts/build-vedic-accent.mjs          (npm run build:vedic-accent)
 //        node scripts/build-vedic-accent.mjs --check [--gz <path>]
 // Requires the sibling VisualDCS checkout for BUILD and for --check.
+// VISUALDCS_ROOT overrides the sibling location (a worktree of this repo has
+// no ../VisualDCS, so the nightly contract lane pins the canonical clone).
 //
 // EDGE CONTRACT (SHARED_CODE §24, same pattern as build-corpus-frequency.mjs):
 // the committed JSON pins sourceSha256 of the exact upstream .gz bytes it was
@@ -45,7 +47,12 @@ import {to_slp1} from '../src/vendor/sanskrit-util.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
-const DEFAULT_SOURCE = join(ROOT, '..', 'VisualDCS', 'non-derived', 'vedaweb', 'casaretto_accented_wordsplit.json.gz');
+const DEFAULT_SOURCE = join(
+  process.env.VISUALDCS_ROOT || join(ROOT, '..', 'VisualDCS'),
+  'non-derived',
+  'vedaweb',
+  'casaretto_accented_wordsplit.json.gz',
+);
 const FREQ_FEED = join(ROOT, 'src', 'data', 'corpus-frequency.json');
 const OUT = join(ROOT, 'src', 'data', 'vedic-accent.json');
 
@@ -53,7 +60,20 @@ const checkOnly = process.argv.includes('--check');
 const gzArgIdx = process.argv.indexOf('--gz');
 const SOURCE = gzArgIdx !== -1 ? process.argv[gzArgIdx + 1] : DEFAULT_SOURCE;
 
-const raw = await readFile(SOURCE);
+let raw;
+try {
+  raw = await readFile(SOURCE);
+} catch {
+  console.error(
+    `Cannot read ${SOURCE}.\n` +
+      'This script needs the sibling VisualDCS checkout ' +
+      '(https://github.com/gasyoun/VisualDCS, non-derived/vedaweb/casaretto_accented_wordsplit.json.gz); ' +
+      'set VISUALDCS_ROOT to point at a clone elsewhere. ' +
+      'The committed src/data/vedic-accent.json remains valid without it' +
+      (checkOnly ? ', but --check cannot prove reproducibility without the sibling.' : '.'),
+  );
+  process.exit(1);
+}
 const sourceSha256 = createHash('sha256').update(raw).digest('hex');
 
 if (checkOnly) {

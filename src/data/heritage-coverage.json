@@ -1,7 +1,9 @@
 {
- "generatedAt": "2026-07-07",
+ "generatedAt": "2026-10-20",
  "generator": "scripts/build-heritage-coverage.mjs (csl-guides, H282 Stream 5)",
  "source": "https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv (H099 MW↔Heritage entry-level crosswalk, 03-07-2026)",
+ "sourceSha256": "182fd19a24f89d32df9740738d5956b7656b3f959baefedbb671c00477c0bf4e",
+ "edgeContract": "verify: node scripts/build-heritage-coverage.mjs --check (SHA-256 pin + reaggregate-and-compare)",
  "upstream": "Sanskrit Heritage Platform (Gérard Huet, INRIA) via the darkone23/Heritage_Resources GitHub mirror (03-2025, LGPLLR); live site is bot-walled — never fetched here",
  "license": "Aggregate statistics over our own derived crosswalk; LGPLLR redistribution of the mirror raw data itself is a pending @DECIDE and NOT exercised by this feed",
  "keying": "SLP1 MW key1 (initial = first SLP1 character)",

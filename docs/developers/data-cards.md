@@ -139,19 +139,20 @@ Upstream rights for the non-Cologne feeds are documented per source in
 
 ### citation-sources.json + cladogram.json — atlas visualization feeds
 
-- **What / why.** Per-dictionary top-cited classical texts (828,505 resolved `<ls>`
-  citations → 912 texts, 11 dictionaries) and the 41-leaf UPGMA headword-overlap tree —
+- **What / why.** Per-dictionary top-cited classical texts (826,752 resolved `<ls>`
+  citations → 874 texts, 11 dictionaries) and the 41-leaf UPGMA headword-overlap tree —
   the data behind Citation sources and the
   landscape cladogram.
 - **Provenance.** `npm run build:atlas-viz`
   ([build-atlas-viz.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-atlas-viz.mjs))
   reads the sibling csl-atlas checkout's committed artifacts; committed JSON keeps CI
-  sibling-free.
+  sibling-free. The feed pins the SHA-256 of both citation TSVs and the Newick file, and
+  `npm run check:atlas-viz` re-derives the projection and fails on drift.
 - **License / rights.** csl-atlas data, CC BY 4.0.
 - **Known limitations.** Citation graph covers 11 of 44 dictionaries; MW resolves to only
   5 coarse nodes and MD to 4 (placeholders, not profiles); MD's "Rigveda" is not yet folded
   into "Ṛgveda" upstream. All stated in the pages' chart-trust blocks.
-- **Update policy.** Re-run the builder on atlas artifact change.
+- **Update policy.** Re-run the builder on atlas artifact change; `--check` flags the drift.
 
 ### corpus-frequency.json — DCS lemma frequencies
 
@@ -209,12 +210,14 @@ Upstream rights for the non-Cologne feeds are documented per source in
 - **Provenance.**
   [build-heritage-coverage.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-heritage-coverage.mjs)
   aggregates the
-  [H099 MW↔Heritage crosswalk](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv).
+  [H099 MW↔Heritage crosswalk](https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv);
+  the feed pins the crosswalk's SHA-256 and `npm run check:heritage-coverage` re-derives
+  the aggregates and fails on drift.
 - **License / rights.** **Aggregates only, deliberately**: the Heritage lexicon is LGPLLR
   and its raw data is not redistributed here (an org-level `@DECIDE` not exercised).
 - **Known limitations.** Coverage ≠ correctness; the crosswalk's own matching caveats
   apply (see its provenance docs).
-- **Update policy.** Re-run on crosswalk change.
+- **Update policy.** Re-run on crosswalk change; `--check` flags the drift.
 
 ### which-dictionary-gold.json — routing gold panel
 

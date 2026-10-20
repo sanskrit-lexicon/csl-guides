@@ -29,6 +29,11 @@ scripts/_*.mjs
 /verify-viz-playwright.png
 /verify-viz-playwright.result.json
 
+# Contract-gate receipts (evidence, not repo content) — scripts/check-contracts.mjs
+# writes last.json + a timestamped copy here on every manual run. The weekly lane
+# keeps its own copy under ~/.local/state/csl-guides/contracts/.
+/scripts/out/contracts/
+
 # Misc
 .DS_Store
 .env.local

@@ -17,6 +17,8 @@
 // Usage: node scripts/build-corpus-frequency.mjs   (npm run build:corpus-frequency)
 //        node scripts/build-corpus-frequency.mjs --check [--tsv <path>]
 // Requires the sibling checkout ../kosha for BUILD; --check needs it too.
+// KOSHA_ROOT overrides the sibling location (a worktree of this repo has no
+// ../kosha, so the nightly contract lane pins the canonical clone instead).
 //
 // EDGE CONTRACT (SHARED_CODE §24, Interlink Graph v2 W4 reference impl):
 // the committed JSON pins sourceSha256 of the upstream TSV bytes it was built
@@ -33,7 +35,8 @@ import {dirname, join} from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
-const DEFAULT_SOURCE = join(ROOT, '..', 'kosha', 'data', 'frequency', 'lemma_frequency.tsv');
+const KOSHA = process.env.KOSHA_ROOT || join(ROOT, '..', 'kosha');
+const DEFAULT_SOURCE = join(KOSHA, 'data', 'frequency', 'lemma_frequency.tsv');
 const OUT = join(ROOT, 'src', 'data', 'corpus-frequency.json');
 const TOP_N = 2000;
 
@@ -48,7 +51,8 @@ try {
   console.error(
     `Cannot read ${SOURCE}.\n` +
       'This script needs the sibling kosha checkout ' +
-      '(https://github.com/gasyoun/kosha, data/frequency/lemma_frequency.tsv). ' +
+      '(https://github.com/gasyoun/kosha, data/frequency/lemma_frequency.tsv); ' +
+      'set KOSHA_ROOT to point at a clone elsewhere. ' +
       'The committed src/data/corpus-frequency.json remains valid without it.',
   );
   process.exit(1);

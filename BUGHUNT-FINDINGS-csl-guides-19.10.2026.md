@@ -278,6 +278,8 @@ Two things follow, and the second corrects PR #221's own fix sketch for F2.
 
    `build-pwg-sense-order.mjs --check` fails the same way (`ENOENT … /csl-atlas/data/pd/pd_sense_order_compare_summary.json`, exit 1). GitHub Actions checks out *this* repo only. So these contracts **cannot** run in GitHub CI as written — they belong to the estate's local/nightly lane, where the siblings exist, and the right wiring there is an npm script plus a scheduled/local gate runner, not a `ci.yml` step. `check:ortho-edge` works in CI precisely because it needs no sibling.
 
+   **Resolved 20-10-2026 (PR #225).** `check:pref-legend` joined `ci.yml`. The five sibling-dependent gates now have the runner this finding asked for: `scripts/check-contracts.mjs` (`npm run check:contracts`) runs every gate, resolves siblings through `ATLAS_ROOT` / `SANSKRITLEX_ROOT` / `KOSHA_ROOT` / `VISUALDCS_ROOT`, and `scripts/launchd/` arms a weekly lane that runs it against a throwaway detached worktree of `origin/main`. SKIP is its own exit code (2) and never counts as green — a gate that cannot run proves nothing.
+
 ### A5 — F1 is FIXED — and the root cause was the `.gitignore` scratch rule, not a forgotten `git add`
 
 PR #221 reported that `scripts/_quiz-options.mjs` *"exists nowhere in git history"*, and recommended restoring it *"from H313 rather than re-inventing the ordering rule"*. Both halves of that were harder than they looked, and both are now settled.

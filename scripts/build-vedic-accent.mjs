@@ -29,6 +29,12 @@
 // the committed JSON pins sourceSha256 of the exact upstream .gz bytes it was
 // built from. `--check` re-hashes the sibling file and exits 1 on drift
 // ("upstream moved — rebuild and re-commit"); it never writes in check mode.
+//
+// NOT line-ending normalised, unlike the TSV contract: this source is a gzip byte
+// stream (.gz), which git treats as binary — `* text=auto eol=lf` never touches
+// it, so there is no CRLF-vs-LF divergence to absorb. Keeping the raw hash is the
+// point: it pins the compressed bytes as shipped. Do not "make it consistent"
+// with sha256Lf — see edge-hash.mjs for why the text contracts need it.
 
 import {createHash} from 'node:crypto';
 import {readFile, writeFile} from 'node:fs/promises';

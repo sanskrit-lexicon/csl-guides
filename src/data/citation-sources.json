@@ -1,38 +1,52 @@
 {
- "generatedAt": "2026-07-11",
+ "generatedAt": "2026-10-20",
  "generatedBy": "scripts/build-atlas-viz.mjs",
  "source": {
   "edges": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_edges.tsv",
   "nodes": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_nodes.tsv",
-  "method": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/README.md"
+  "method": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/README.md",
+  "sha256": {
+   "edges": "41bee9315b730009874b163ce266e81a998360602788edb4552ebcc703203bd0",
+   "nodes": "6039af4d75669230f74b1b39e8578221a474bd2942cda4139b0c1698fad3e474"
+  }
  },
  "license": "CC-BY-SA-4.0",
  "stats": {
-  "edgeCount": 1701,
-  "nodeCount": 912,
+  "edgeCount": 1699,
+  "nodeCount": 874,
   "dictCount": 11,
-  "totalResolvedCites": 828505
+  "totalResolvedCites": 826752
  },
  "overall": [
   {
    "text": "Mahābhārata",
-   "totalCites": 56818,
+   "totalCites": 56822,
    "nDicts": 8
   },
   {
    "text": "Ṛgveda",
-   "totalCites": 38187,
-   "nDicts": 7
+   "totalCites": 39025,
+   "nDicts": 11
   },
   {
    "text": "Rāmāyaṇa",
-   "totalCites": 38155,
+   "totalCites": 38154,
    "nDicts": 9
   },
   {
    "text": "Manusmṛti",
-   "totalCites": 26365,
-   "nDicts": 7
+   "totalCites": 28140,
+   "nDicts": 8
+  },
+  {
+   "text": "Bhāgavata-Purāṇa",
+   "totalCites": 24300,
+   "nDicts": 8
+  },
+  {
+   "text": "Raghuvaṃśa",
+   "totalCites": 24025,
+   "nDicts": 8
   },
   {
    "text": "Aṣṭādhyāyī (Pāṇini)",
@@ -40,18 +54,8 @@
    "nDicts": 3
   },
   {
-   "text": "Bhāgavata-Purāṇa",
-   "totalCites": 21330,
-   "nDicts": 5
-  },
-  {
    "text": "Śabdakalpadruma",
    "totalCites": 20232,
-   "nDicts": 7
-  },
-  {
-   "text": "Raghuvaṃśa",
-   "totalCites": 19922,
    "nDicts": 7
   },
   {
@@ -76,8 +80,8 @@
   },
   {
    "text": "Pañcatantra",
-   "totalCites": 14743,
-   "nDicts": 6
+   "totalCites": 14853,
+   "nDicts": 7
   },
   {
    "text": "Harivaṃśa",
@@ -93,45 +97,49 @@
  "spread": [
   {
    "nDicts": 1,
-   "texts": 608
+   "texts": 567
   },
   {
    "nDicts": 2,
-   "texts": 97
+   "texts": 103
   },
   {
    "nDicts": 3,
-   "texts": 102
+   "texts": 97
   },
   {
    "nDicts": 4,
-   "texts": 31
+   "texts": 30
   },
   {
    "nDicts": 5,
-   "texts": 25
+   "texts": 16
   },
   {
    "nDicts": 6,
-   "texts": 20
+   "texts": 23
   },
   {
    "nDicts": 7,
-   "texts": 12
+   "texts": 14
   },
   {
    "nDicts": 8,
-   "texts": 13
+   "texts": 19
   },
   {
    "nDicts": 9,
    "texts": 4
+  },
+  {
+   "nDicts": 11,
+   "texts": 1
   }
  ],
  "dictTotals": {
-  "ap": 57113,
+  "ap": 57112,
   "ap90": 37993,
-  "ben": 49003,
+  "ben": 47251,
   "bhs": 40875,
   "lrv": 16469,
   "md": 47,
@@ -144,7 +152,7 @@
  "dictTextCounts": {
   "ap": 155,
   "ap90": 149,
-  "ben": 96,
+  "ben": 94,
   "bhs": 136,
   "lrv": 106,
   "md": 4,
@@ -169,7 +177,7 @@
     "count": 4042
    },
    {
-    "text": "Bhāgavata",
+    "text": "Bhāgavata-Purāṇa",
     "count": 2914
    },
    {
@@ -258,35 +266,35 @@
   "ben": [
    {
     "text": "Mahābhārata",
-    "count": 7384
+    "count": 7388
    },
    {
     "text": "Manusmṛti",
-    "count": 6058
+    "count": 6071
    },
    {
     "text": "Rāmāyaṇa",
-    "count": 5162
+    "count": 5161
    },
    {
     "text": "Pañcatantra",
-    "count": 4825
-   },
-   {
-    "text": "my Sanskrit Chrestomathy",
-    "count": 3017
+    "count": 4827
    },
    {
     "text": "Bhāgavata-Purāṇa",
-    "count": 1896
+    "count": 1898
    },
    {
     "text": "Hitopadeśa",
     "count": 1831
    },
    {
+    "text": "my Sanskrit Chrestomathy",
+    "count": 1599
+   },
+   {
     "text": "Rājataraṅgiṇī",
-    "count": 1326
+    "count": 1327
    },
    {
     "text": "Vikramorvaśī",
@@ -302,7 +310,7 @@
    },
    {
     "text": "Raghuvaṃśa",
-    "count": 936
+    "count": 938
    }
   ],
   "bhs": [
@@ -357,11 +365,11 @@
   ],
   "lrv": [
    {
-    "text": "Raghuvanśa",
+    "text": "Raghuvaṃśa",
     "count": 4101
    },
    {
-    "text": "Manusmṛiti",
+    "text": "Manusmṛti",
     "count": 1762
    },
    {
@@ -407,7 +415,7 @@
   ],
   "md": [
    {
-    "text": "Rigveda",
+    "text": "Ṛgveda",
     "count": 42
    },
    {

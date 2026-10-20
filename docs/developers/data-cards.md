@@ -186,8 +186,9 @@ Upstream rights for the non-Cologne feeds are documented per source in
   since 27-07-2026). Keys: `lemma_vedaweb` values normalised (root sign / variant
   alternates / hyphens / accent marks stripped, syllabic liquids folded to SLP1
   *f*/*x*) → matched against corpus-frequency.json SLP1 keys. The committed feed pins the
-  upstream file's SHA-256 (`--check` mode exits 1 on drift), mirroring the
-  corpus-frequency edge contract.
+  upstream file's SHA-256 (`--check` mode exits 1 on drift). Unlike the corpus-frequency
+  edge contract, this pin is over the raw bytes: the source is a `.gz`, which git treats
+  as binary, so there is no line-ending form to normalise.
 - **Language & encoding.** SLP1 lemma keys; display forms verbatim Vedic-accented IAST;
   UTF-8.
 - **License / rights.** CC BY 4.0 — attribute "VedaWeb 2.0, Universität zu Köln" plus the

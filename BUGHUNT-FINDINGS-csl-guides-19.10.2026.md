@@ -310,3 +310,8 @@ Landed as [PR #222](https://github.com/sanskrit-lexicon/csl-guides/pull/222) —
 - **No other `scripts/_*.mjs` is imported by tracked code** — the ignore-rule hazard (A5) is currently confined to the one helper. An estate-wide scan of every `.gitignore` under `~/Documents/GitHub/` found no other repo with the same glob: the near neighbours are narrower (`claude-config` negates `!/scripts/_msk.py`; `CommentaryStrategies` ignores the single path `scripts/_rebuild_summary.json`), and the rest match only `scripts/__pycache__/`.
 
 _Elapsed: ~34 min for the second pass (independent hunt, verification, the F1 recovery and fix, and this addendum)._
+
+## Status — A1 landed 20.10.2026
+
+A1 is fixed in this PR. The pin is now the **LF-normalised** upstream hash (`c07f6a02…`, replacing the CRLF `3d54e4db…` that no upstream commit ever carried), via a shared [`scripts/edge-hash.mjs`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/edge-hash.mjs); the committed payload does not move (rebuild diff: `lemmas` and `stats` identical, only `generatedAt` would change). Verified: green on both the LF upstream and a CRLF copy of the same file, red on a one-byte tamper. `build-vedic-accent.mjs` deliberately keeps its raw-byte pin — its source is a `.gz`, so there is no line-ending form to normalise; that exception is now documented in the script and the data card. `build-pwg-sense-order.mjs` is not on `origin/main` yet (it rides the unpushed H7116 commits); when it lands it should call `sha256Lf` too.
+

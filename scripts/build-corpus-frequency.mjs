@@ -19,12 +19,15 @@
 // Requires the sibling checkout ../kosha for BUILD; --check needs it too.
 //
 // EDGE CONTRACT (SHARED_CODE §24, Interlink Graph v2 W4 reference impl):
-// the committed JSON pins sourceSha256 of the exact upstream TSV bytes it was
-// built from. `--check` re-hashes the sibling TSV and exits 1 on drift
-// ("upstream moved — rebuild and re-commit"); it never writes in check mode.
+// the committed JSON pins sourceSha256 of the upstream TSV bytes it was built
+// from, with line endings normalised to LF (see edge-hash.mjs: hashing the raw
+// working-tree bytes once pinned a CRLF copy upstream never committed, which made
+// this contract red on every correct checkout). `--check` re-hashes the sibling
+// TSV and exits 1 on drift ("upstream moved — rebuild and re-commit"); it never
+// writes in check mode.
 
-import {createHash} from 'node:crypto';
 import {readFile, writeFile} from 'node:fs/promises';
+import {sha256Lf} from './edge-hash.mjs';
 import {fileURLToPath} from 'node:url';
 import {dirname, join} from 'node:path';
 
@@ -50,7 +53,7 @@ try {
   );
   process.exit(1);
 }
-const sourceSha256 = createHash('sha256').update(raw).digest('hex');
+const sourceSha256 = sha256Lf(raw);
 const tsv = raw.toString('utf8');
 
 if (checkOnly) {

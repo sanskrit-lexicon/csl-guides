@@ -112,32 +112,118 @@ shots.push({
 // Optional name filter so a single shot can be refreshed without re-hitting every page:
 //   node scripts/screenshots.mjs frontpage
 const filter = process.argv[2];
-const selected = filter ? shots.filter((s) => s.name.includes(filter)) : shots;
 
-const browser = await chromium.launch();
-await mkdir(OUT, {recursive: true});
+// ---- Own-site captures (mode: `tools`) -------------------------------------
+// Headless egress to the live CDSL host is blocked in some environments (and
+// the host itself has outage windows — HTTP 000 on 31-10-2026), so the Tools
+// pages capture from THIS site served locally instead:
+//   npm run build && npm run serve          # terminal 1 (serves build/ at /csl-guides/)
+//   node scripts/screenshots.mjs tools      # terminal 2  [base URL overrides: --base <url>]
+// These interact with the embedded widgets (typed input, submitted search) so
+// the capture shows real rendered output — nothing is mocked up. The
+// live-site captures that still need an egress-capable box (advanced field
+// view, the Simple-Search page) stay in the live config below, names
+// `mw-advanced-form` and `simple-search-page`.
+const TOOLS_BASE_DEFAULT = 'http://localhost:3000/csl-guides/';
+const toolShots = [
+  {
+    name: 'tools-name-in-devanagari',
+    path: 'tools/name-in-devanagari',
+    action: async (page) => {
+      const box = page.locator('#translit-input');
+      await box.click();
+      await box.pressSequentially('satyam', {delay: 80});
+      await page.waitForTimeout(800);
+    },
+  },
+  {name: 'tools-level-quiz', path: 'tools/sanskrit-level-quiz'},
+  {name: 'tools-word-game', path: 'tools/word-game'},
+  {
+    name: 'tools-comparison',
+    path: 'tools/multi-dictionary',
+    action: async (page) => {
+      const box = page.locator('input[placeholder="e.g. agni"]');
+      await box.scrollIntoViewIfNeeded();
+      await box.fill('agni');
+      await page.waitForTimeout(500);
+    },
+  },
+];
 
-for (const s of selected) {
-  const ctx = await browser.newContext(
-    s.mobile
-      ? {...COMMON, viewport: {width: 390, height: 844}, deviceScaleFactor: 2, isMobile: true}
-      : {...COMMON, viewport: s.viewport || {width: 1200, height: 900}, deviceScaleFactor: 1.5},
-  );
-  const page = await ctx.newPage();
-  console.log(`→ ${s.name}: ${s.url}`);
-  try {
-    await page.goto(s.url, {waitUntil: 'domcontentloaded', timeout: 30000});
-    await settle(page);
-    await tryQuery(page, s.query);
-    const path = join(OUT, `${s.name}.png`);
-    await page.screenshot({path, fullPage: false});
-    console.log(`  saved ${path}`);
-  } catch (e) {
-    console.error(`  FAILED ${s.name}: ${e.message}`);
-  } finally {
-    await ctx.close();
+if (filter === 'tools') {
+  const baseIdx = process.argv.indexOf('--base');
+  const base = baseIdx !== -1 ? process.argv[baseIdx + 1] : TOOLS_BASE_DEFAULT;
+  const browser = await chromium.launch();
+  await mkdir(OUT, {recursive: true});
+  for (const s of toolShots) {
+    const ctx = await browser.newContext({...COMMON, viewport: {width: 1280, height: 900}, deviceScaleFactor: 1.5});
+    const page = await ctx.newPage();
+    console.log(`→ ${s.name}: ${base}${s.path}`);
+    try {
+      await page.goto(`${base}${s.path}`, {waitUntil: 'networkidle', timeout: 30000});
+      await page.waitForTimeout(1500);
+      if (s.action) await s.action(page);
+      const path = join(OUT, `${s.name}.png`);
+      await page.screenshot({path, fullPage: false});
+      console.log(`  saved ${path}`);
+    } catch (e) {
+      console.error(`  FAILED ${s.name}: ${e.message}`);
+    } finally {
+      await ctx.close();
+    }
   }
+  await browser.close();
+  console.log('done (tools mode)');
+} else {
+  await main(filter);
 }
 
-await browser.close();
-console.log('done');
+async function main(filter) {
+  const selected = filter ? shots.filter((s) => s.name.includes(filter)) : shots;
+
+  // Live-site captures that the Tools pages still lack, for the first
+  // environment that can reach the host (the guides box cannot — see the
+  // tools mode comment above). Run as e.g. `node scripts/screenshots.mjs advanced-form`.
+  shots.push({
+    name: 'mw-advanced-form',
+    url: `${SITE}/scans/MWScan/2020/web/webtc2/index.php`,
+    mobile: false,
+    query: null,
+  });
+  shots.push({
+    name: 'simple-search-page',
+    url: `${SITE}/scans/awork/apidev/simple-search/v1.0/list-0.2s.html`,
+    mobile: false,
+    query: null,
+  });
+  const selectedAll = filter ? shots.filter((s) => s.name.includes(filter)) : selected;
+
+  const browser = await chromium.launch();
+  await mkdir(OUT, {recursive: true});
+
+  for (const s of selectedAll) {
+    const ctx = await browser.newContext(
+      s.mobile
+        ? {...COMMON, viewport: {width: 390, height: 844}, deviceScaleFactor: 2, isMobile: true}
+        : {...COMMON, viewport: s.viewport || {width: 1200, height: 900}, deviceScaleFactor: 1.5},
+    );
+    const page = await ctx.newPage();
+    console.log(`→ ${s.name}: ${s.url}`);
+    try {
+      await page.goto(s.url, {waitUntil: 'domcontentloaded', timeout: 30000});
+      await settle(page);
+      await tryQuery(page, s.query);
+      const path = join(OUT, `${s.name}.png`);
+      await page.screenshot({path, fullPage: false});
+      console.log(`  saved ${path}`);
+    } catch (e) {
+      console.error(`  FAILED ${s.name}: ${e.message}`);
+    } finally {
+      await ctx.close();
+    }
+  }
+
+  await browser.close();
+  console.log('done');
+}
+

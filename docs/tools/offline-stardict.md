@@ -1,19 +1,30 @@
 ---
 id: offline-stardict
 title: Offline Access & StarDict
-description: "Use the CDSL dictionaries offline as StarDict packages in any StarDict-compatible application."
+description: "Use the CDSL dictionaries offline: per-dictionary download links (PDF scans, XML in SLP1) and StarDict packages for desktop and Android readers."
 sidebar_label: Offline & StarDict
 ---
-_Created: 13-06-2026 · Last updated: 05-09-2026_
+_Created: 13-06-2026 · Last updated: 31-10-2026_
 
 # Offline Access & StarDict
 
-You can use the CDSL dictionaries **without an internet connection**.
+You can use the CDSL dictionaries **without an internet connection** — either
+by downloading the source files per dictionary, or through ready-made
+StarDict packages.
+
+## Downloads per dictionary (the D link)
+
+Every front-page row has a **D** (download) link with files for offline use —
+the digitized **XML (in SLP1 encoding)** and, for scanned dictionaries, the
+**PDF scan**. That is the canonical source data; see
+[Downloads & Data](/users/downloads-and-data) for what each format is good
+for.
 
 ## StarDict packages
 
-The dictionaries are available as **StarDict** files, usable in any StarDict-compatible
-reader on desktop or mobile. StarDict packaging is maintained in
+The dictionaries are also packaged as **StarDict** files, usable in any
+StarDict-compatible reader on desktop or mobile. The packaging pipeline
+(converts the Cologne XMLs into Babylon/StarDict format) is maintained in
 [`cologne-stardict`](https://github.com/sanskrit-lexicon/cologne-stardict).
 
 ## Android

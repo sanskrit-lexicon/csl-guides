@@ -57,16 +57,14 @@ right; type a word in the box to populate both.
 
 ## Advanced search (A)
 
-Search *within* entry bodies, not just headwords. Typical capabilities:
-
-- full-text search across the entry body,
-- pattern/wildcard matching,
-- filtering by markup (e.g. entries citing a particular source).
-
-The API exposes these match modes (`query_type`), which mirror what Advanced search can
-do: `term`, `fuzzy`, `match`, `match_phrase`, `prefix`, `wildcard`, `regexp` — and these
-searchable fields: `headword_slp1`, `sense`, `re_headwords_slp1`, `xml`, `id`. See the
-API page. The live Advanced URL is
+Search *within* entry bodies, not just headwords — the tool for questions like
+"which entries cite this text?". The form has two mutually exclusive term boxes
+(a Sanskrit word in your chosen input scheme, or a Latin-script Text Word from
+the entry text), per-box match placement (exact / prefix / suffix / infix /
+substring), a results maximum, and the output scheme. The full field-by-field
+reference — including the scope option, wildcard characters, and the
+programmatic [Salt API](/developers/api) — lives on the
+[Advanced Search](/tools/advanced-search) page. The live Advanced URL is
 `/scans/{CODE}Scan/2020/web/webtc2/index.php`.
 
 <Shot src="/img/displays/mw-advanced.png" alt="MW Advanced search form: Sanskrit word / Text Word fields, exact/match modes, output scheme, maximum results" />

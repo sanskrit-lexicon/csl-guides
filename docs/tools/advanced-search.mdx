@@ -1,0 +1,127 @@
+---
+id: advanced-search
+title: Advanced Search
+description: "The Advanced display searches within CDSL entry bodies, not just headwords — a field-by-field reference to the form, its match modes, and the programmatic Salt API."
+sidebar_label: Advanced Search
+---
+
+import Screenshot from '@site/src/components/Screenshot';
+
+# Advanced Search
+
+The **Advanced** display — the **A** link in every dictionary row on the
+[front page](https://sanskrit-lexicon.uni-koeln.de/) — searches *within* entry
+bodies, not just headwords. It is the tool for research questions like "which
+entries cite this text?", "find every compound beginning with this stem", or
+"where does this English gloss word occur?". This page is a field-by-field
+reference to the form; how entries render once found is covered in
+[Search & Display](/users/search-and-display).
+
+The live form per dictionary is served at
+`/scans/{CODE}Scan/2020/web/webtc2/index.php` — for Monier-Williams,
+[/scans/MWScan/2020/web/webtc2/index.php](https://sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/webtc2/index.php).
+
+<Screenshot
+  src="/img/displays/mw-advanced.png"
+  alt="MW Advanced search form: Sanskrit word / Text Word fields, exact/match modes, output scheme, maximum results"
+  width={1800}
+  height={1350}
+/>
+
+## The form, field by field
+
+The reference below follows the form top to bottom (source:
+[`webtc2/index.php` in csl-websanlexicon](https://github.com/sanskrit-lexicon/csl-websanlexicon/blob/main/v02/makotemplates/web/webtc2/index.php)).
+Defaults are **bold**.
+
+**First row — "Sanskrit word"** (the label varies: "Sanskrit text word:" on the
+English-Sanskrit dictionaries AE/MWE/BOR, "Sanskrit Headword:" on Grassmann):
+
+| Control | Options | What it does |
+|---|---|---|
+| Search scope | **Headword Only** · Headword or Text · Text Only | Whether the term is matched against headwords, or also/only against the Sanskrit text of the entries. Offered on most dictionaries (MW, both Apte editions, PWG, PW, …), absent on a few (AE, GRA, MWE, WIL, ACC, BOR). |
+| Term box | free text (30 chars) | The Sanskrit word to find, typed in the selected input scheme. |
+| Match placement | **exact** · prefix · suffix · infix · substring | Where within a possibly longer word the match occurs. `exact` treats the input literally; the other four modes also accept the wildcard characters `*` `?` `.` `+` `\|` in the term. |
+| Input scheme | **Kyoto-Harvard** · SLP1 · ITRANS · Roman · Devanagari | The transliteration you typed the term in (see [Encoding & Transliteration](/users/encoding-transliteration)). It is converted to SLP1 for the search. |
+
+**Second row — "Text Word"** (labelled "English text word/Headword:" on
+AE/MWE/BOR; the row is not shown at all on the kośas SKD, VCP and KRM):
+
+| Control | Options | What it does |
+|---|---|---|
+| Term box | free text (30 chars) | A word from the entry *text* — the Latin-script words that are not Devanagari Sanskrit: English or German gloss words, and citation abbreviations. |
+| Match placement | **exact** · prefix · suffix · infix · substring | Same placement logic as above, inside entry text. |
+
+The two boxes are mutually exclusive — fill exactly one; the form refuses to
+search with both filled ("Please specify a Sanskrit or an English word, not
+both."). The text-word search is not case-sensitive, and hyphens are ignored on
+both sides so words hyphenated across line breaks in the digitized text still
+match.
+
+**Third row — Maximum and output:**
+
+| Control | Options | What it does |
+|---|---|---|
+| Maximum | 5 · **20** · 50 · 100 · 200 · 500 · 1000 | Upper bound on matches per search pass. Bigger numbers take longer. |
+| Output | **Devanagari** · Roman · HK · SLP1 · ITRANS | How Sanskrit words are shown in *both* result panes. |
+| Accents | **Ignore Accents** · Show Accents | Whether Vedic accents are displayed. Shown only for the accent-carrying dictionaries (MW, PWG, PW, CCS, CAE, PD, PWKVN). |
+| Highlight | **Highlight On** · Highlight Off | Whether matches of your term are highlighted in the entries (the preference is kept in a cookie). |
+
+## How a search behaves
+
+1. **Search** (or Enter in either box) runs the query. The left pane fills with
+   a **numbered list of matching Sanskrit words**; for a Text Word search the
+   matched form appears in parentheses next to each headword.
+2. Click a headword and the **full entry opens in the right pane**, in the
+   chosen output scheme, with your term highlighted when Highlight is On
+   (stepping through highlights: the `<` `=` `>` buttons below the entry).
+3. If the search hit the **Maximum** before exhausting the dictionary, a
+   **Next** button continues from where the pass stopped.
+4. Zero matches reports **"No matches found"**.
+
+Your input and output scheme choices are remembered across visits (a
+`mwiobasic` cookie, kept for a year). If the display ever sticks on
+"working…", the built-in [Help page](https://sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/webtc2/help.html)
+suggests pressing Search again, or reloading and re-entering the parameters.
+Each Advanced form also links a **Corrections** form for reporting entry
+errors.
+
+## Example research patterns
+
+- **Compounds beginning with a stem** — Sanskrit word `agni`, match placement
+  *prefix*, scope *Headword Only*.
+- **Any occurrence inside a headword** — Sanskrit word `agni`, *substring*
+  (or a wildcard like `agni*` under a non-exact placement).
+- **Which entries use an English gloss word** — Text Word `fire`, *exact*,
+  on Monier-Williams: every MW entry whose text contains the word "fire",
+  with the matched form shown next to each headword.
+- **Which entries cite a given text** — Text Word with the citation
+  abbreviation, *substring* (abbreviation lists:
+  [Abbreviations & Citations](/dictionaries/abbreviations-and-citations)).
+
+## Programmatic access: the Salt API
+
+The same lookups are available as a REST API that is wire-compatible with the
+Cologne [C-SALT](https://api.c-salt.uni-koeln.de) APIs — useful for the
+"which entries cite this text?" questions at scale:
+
+```
+https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/api1/salt_entries.php?dict=mw&field=headword_slp1&query=agni&query_type=term&size=10
+```
+
+| Parameter | Values (default **bold**) | Notes |
+|---|---|---|
+| `dict` | dictionary code, **`mw`** | Phase 1 pilot: `mw` only. |
+| `field` | `id` · **`headword_slp1`** · `sense` · `re_headwords_slp1` · `created` · `xml` | Phase 1 implements `headword_slp1`. |
+| `query` | search string | In the `input` transliteration. |
+| `query_type` | **`term`** · `fuzzy` · `match` · `match_phrase` · `prefix` · `wildcard` · `regexp` | |
+| `size` | **25** | Max records. |
+| `input` / `output` | `s`/`d`/`h`/`r`/`i` = SLP1/Devanagari/HK/Roman/ITRANS (**`slp1`** / **`deva`**) | CSL extensions. |
+| `accent` | **`no`** · `yes` | |
+
+A permalink form also exists: `/MW/agni` (headword) or `/MW/144239` (entry
+id). The parameter tables above follow
+[`doc/salt_entries.md` in csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/doc/salt_entries.md);
+the full endpoint inventory is on the [API page](/developers/api).
+
+_Dr. Mārcis Gasūns_

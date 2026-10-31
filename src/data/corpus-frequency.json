@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-08-22",
+ "generatedAt": "2026-10-31",
  "generator": "scripts/build-corpus-frequency.mjs (csl-guides, H282 Stream 5)",
  "source": "https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv (SLP1-keyed join of VisualDCS M9 archive.sqlite period_freq + core_vocab)",
  "sourceSha256": "c07f6a0229067267d2bf18ba79f43f5081f05fef8875a352cc18f5e157ceccef",
@@ -23,7 +23,9 @@
   "lemmasInSource": 83277,
   "lemmasWithCount": 59282,
   "tokensCounted": 4550704,
-  "topN": 2000
+  "topN": 2000,
+  "lemmasSelected": 2002,
+  "topCoveragePct": 77
  },
  "lemmas": [
   {

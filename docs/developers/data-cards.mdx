@@ -5,6 +5,8 @@ description: "A data-statement/data-card convention for the machine-readable dat
 sidebar_label: Data cards
 ---
 
+import citeData from '@site/src/data/citation-sources.json';
+
 # Data cards — every dataset this site ships
 
 _Created: 07-07-2026 · Last updated: 07-07-2026_
@@ -139,8 +141,8 @@ Upstream rights for the non-Cologne feeds are documented per source in
 
 ### citation-sources.json + cladogram.json — atlas visualization feeds
 
-- **What / why.** Per-dictionary top-cited classical texts (826,752 resolved `<ls>`
-  citations → 874 texts, 11 dictionaries) and the 41-leaf UPGMA headword-overlap tree —
+- **What / why.** Per-dictionary top-cited classical texts ({citeData.stats.totalResolvedCites.toLocaleString('en-US')} resolved `<ls>`
+  citations → {citeData.stats.nodeCount} texts, {citeData.stats.dictCount} dictionaries) and the 41-leaf UPGMA headword-overlap tree —
   the data behind Citation sources and the
   landscape cladogram.
 - **Provenance.** `npm run build:atlas-viz`

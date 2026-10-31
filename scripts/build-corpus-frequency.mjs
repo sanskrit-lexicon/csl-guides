@@ -163,6 +163,13 @@ const feed = {
     lemmasWithCount: rowsWithCount,
     tokensCounted: totalTokens,
     topN: TOP_N,
+    // The selected slice is a rank threshold over a TIED upstream rank, so its
+    // true size is data-dependent (2,002 rows for TOP_N = 2000) — derive it,
+    // never assert it. Consumers print these instead of hand-typed figures.
+    lemmasSelected: top.length,
+    topCoveragePct: Number(
+      ((top.reduce((s, l) => s + l.count, 0) / totalTokens) * 100).toFixed(2),
+    ),
   },
   lemmas: top,
 };

@@ -1,11 +1,12 @@
 ---
 id: catalog
 title: Dictionary Catalog
-description: "Browse all 42 Cologne Digital Sanskrit Dictionaries with display modes, downloads, scans, and source links — auto-generated from the live CDSL front page."
+description: "Browse every Cologne Digital Sanskrit Dictionary with display modes, downloads, scans, and source links — auto-generated from the live CDSL front page."
 sidebar_label: Catalog
 ---
 
 import DictionaryCatalog from '@site/src/components/DictionaryCatalog';
+import catalog from '@site/src/data/dictionaries.json';
 
 # Dictionary Catalog
 
@@ -29,19 +30,23 @@ site, with its text in [`csl-orig`](https://github.com/sanskrit-lexicon/csl-orig
 
 :::tip Reading the table
 - **Click a code** to open that dictionary's **`csl-orig` source** directory (the
-  canonical plain-text source). **42 of the 43** have one — every dictionary except the
+  canonical plain-text source). **{catalog.withCslOrigSource} of the {catalog.totalRows}** have one — every dictionary except the
   `PD` sample.
 - **Hover a dictionary name** to see its full author/editor and descriptive title (and the
   *Pp.* column gives the print page count) — all from the front-page metadata.
 :::
 
 :::note Count — resolved
-The front page states "The **42** dictionaries…", yet the table has **43 rows**. The extra
-row is **`PD`**, shown as a **sample only** (marked `*`, "funded by the DFG-NEH Project
-2010-2013"): it links to a `pd-sample.php` page and has **no `…Scan` code and no B/L/A/M
-display**. The HTML confirms exactly **42 distinct `…Scan` dictionary codes** — the fully
-digitized dictionaries the headline counts — plus the PD sample = 43 rows. csl-doc
-documents 38 (no PD page, since there is no full dictionary to document).
+The front page headline and the table row count differ by design. The table has
+**{catalog.totalRows} rows**: **{catalog.fullyDigitized}** fully digitized dictionaries —
+each with its own `…Scan` code and B/L/A/M display, and the count the headline figures
+use — plus the **`PD`** sample, shown as a **sample only** (marked `*`, "funded by the
+DFG-NEH Project 2010-2013"): it links to a `pd-sample.php` page and has **no `…Scan`
+code and no B/L/A/M display**. csl-doc documents {catalog.documentedInCslDoc} (no PD
+page, since there is no full dictionary to document). Every catalogued dictionary also
+has a featured deep page, plus the uncatalogued **PWKVN**. When any other page quotes a
+count of dictionaries, these generated numbers are the canonical ones — they refresh
+with `npm run build:catalog`.
 :::
 
 <DictionaryCatalog />

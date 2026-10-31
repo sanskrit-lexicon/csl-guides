@@ -1,18 +1,19 @@
 ---
 id: intro
 title: Cologne Digital Sanskrit Dictionaries
-description: "User, contributor, and developer guides for the Cologne Digital Sanskrit Dictionaries (CDSL) — 42 searchable Sanskrit dictionaries at sanskrit-lexicon.uni-koeln.de."
+description: "User, contributor, and developer guides for the Cologne Digital Sanskrit Dictionaries (CDSL) — searchable Sanskrit dictionaries at sanskrit-lexicon.uni-koeln.de."
 slug: /
 sidebar_label: Home
 ---
 
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import SiteVersion from '@site/src/components/SiteVersion';
+import catalog from '@site/src/data/dictionaries.json';
 
 # Cologne Digital Sanskrit Dictionaries
 
 The **Cologne Digital Sanskrit Dictionaries (CDSL)** is a freely available collection
-of **42 Sanskrit dictionaries** published between 1832 and 1993, digitized and served
+of **{catalog.fullyDigitized} Sanskrit dictionaries** published between 1832 and 1993, digitized and served
 at **[sanskrit-lexicon.uni-koeln.de](https://sanskrit-lexicon.uni-koeln.de)** (version
 <SiteVersion />). Each dictionary is fully searchable, cross-linked, downloadable, and available
 alongside the original scanned pages.
@@ -21,7 +22,7 @@ alongside the original scanned pages.
 
 ## What CDSL provides
 
-- **43 dictionaries** across Sanskrit→English, English→Sanskrit, Sanskrit→French,
+- **{catalog.totalRows} catalogued dictionaries** across Sanskrit→English, English→Sanskrit, Sanskrit→French,
   Sanskrit→German, Sanskrit→Latin, Sanskrit→Sanskrit, and specialized indices
   (Mahābhārata, Vedas, Purāṇas, Buddhist texts). See the **catalog**.
 - **Four display modes per dictionary** — *Basic*, *List*, *Advanced*, *Mobile*

@@ -5,6 +5,10 @@ description: "Synthesis of the July 2026 five-stream digital-humanities uplift: 
 sidebar_label: DH programme synthesis
 ---
 
+import citeData from '@site/src/data/citation-sources.json';
+import cf from '@site/src/data/corpus-frequency.json';
+import catalog from '@site/src/data/dictionaries.json';
+
 # The DH uplift programme — how this site became measurable
 
 _Created: 07-07-2026 · Last updated: 05-09-2026_
@@ -78,8 +82,8 @@ page that documents the measurement in full.
 | Difficulty-label calibration (GH-5) | instrumented — opt-in, client-only quiz telemetry shipped; no error-rate data yet | [GH-5](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/guides-hypotheses.md) |
 | Dictionary landscape | 43 dictionaries on year × unique-headword-% × size; BHS 57.6% unique, ACC 43.3%, SKD 37.1%; corpus-wide 1,496,157 entries → 410,259 distinct lemmas | [landscape](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/landscape.mdx) |
 | Headword-overlap cladogram | 41 dictionaries, UPGMA; recovers the known families (PW–PWG, AP–AP90, CAE–CCS, SHS–WIL–YAT, PWKVN–SCH) | [landscape](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/landscape.mdx) |
-| Citation sources | 826,752 resolved `<ls>` citations → 874 canonical texts across 11 dictionaries (PWG alone: 536,172) | [citation sources](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/citation-sources.mdx) |
-| Corpus attestation | top 2,000 of 83,277 DCS lemmas (≈1% of MW's 185,803 entries) account for 77.0% of 4,550,704 corpus tokens | [corpus attestation](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/corpus-attestation.mdx) |
+| Citation sources | {citeData.stats.totalResolvedCites.toLocaleString('en-US')} resolved `<ls>` citations → {citeData.stats.nodeCount} canonical texts across {citeData.stats.dictCount} dictionaries (PWG alone: {citeData.dictTotals.pwg.toLocaleString('en-US')}) | [citation sources](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/citation-sources.mdx) |
+| Corpus attestation | top {cf.stats.lemmasSelected.toLocaleString('en-US')} of {cf.stats.lemmasInSource.toLocaleString('en-US')} DCS lemmas (≈1% of MW's 185,803 entries) account for {cf.stats.topCoveragePct.toFixed(1)}% of {cf.stats.tokensCounted.toLocaleString('en-US')} corpus tokens | [corpus attestation](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/corpus-attestation.mdx) |
 | Machine-morphology coverage | 25,140 of 185,803 MW entries (13.5%, a lower bound) have a Heritage article; ā- initial leads at 20.7% | [machine morphology](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/machine-morphology.mdx) |
 | Shared task: which-dictionary routing | dev 18 / test 6 scenarios over all 44 codes; site quiz router scores 100% dev / 0% test (strict) — the coverage gap made into a benchmark | [shared tasks](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/shared-tasks.md) |
 | Data documentation | data cards for all 9 feeds + 6 quiz datasets (176 items), per the Bender & Friedman data-statement convention | [data cards](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/developers/data-cards.md) |
@@ -92,7 +96,7 @@ page that documents the measurement in full.
 Two feeds, each with a builder script reading a sibling checkout so CI stays
 sibling-free:
 [corpus-frequency.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/corpus-frequency.json)
-(top 2,000 DCS lemmas with per-period counts, from the kosha
+(top-{cf.stats.lemmasSelected.toLocaleString('en-US')} DCS lemmas with per-period counts, from the kosha
 [lemma_frequency.tsv](https://github.com/gasyoun/kosha/blob/main/data/frequency/lemma_frequency.tsv);
 DCS is CC BY) and
 [heritage-coverage.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/heritage-coverage.json)
@@ -130,7 +134,7 @@ per-dictionary most-quoted-texts explorer on
 vendored by
 [build-atlas-viz.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-atlas-viz.mjs)
 and consumed, never recomputed. Stated caveats stay attached to the charts: the
-citation graph covers 11 of 43 dictionaries, and MW's 312k `<ls>` tags currently
+citation graph covers {citeData.stats.dictCount} of {catalog.totalRows} dictionaries, and MW's 312k `<ls>` tags currently
 resolve to only 5 coarse nodes (a placeholder, not a profile).
 
 ### S3 — data-layer sections (the corpus reading)

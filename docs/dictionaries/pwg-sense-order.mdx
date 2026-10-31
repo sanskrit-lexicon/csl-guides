@@ -6,6 +6,7 @@ sidebar_label: PWG sense order (measurement)
 ---
 
 import data from '@site/src/data/pwg-sense-order.json';
+import SenseOrderChart from '@site/src/components/SenseOrderChart';
 
 # Does PWG order its senses chronologically?
 
@@ -64,6 +65,10 @@ the honest ceiling on what this instrument can see.
 | AP (Apte) | {data.dictionaries[3].entries.toLocaleString('en-US')} | {data.dictionaries[3].tau.toFixed(3)} | {data.dictionaries[3].tauDcs.toFixed(3)} | {(data.dictionaries[3].forwardRate * 100).toFixed(1)} % ({(data.dictionaries[3].forwardCi[0] * 100).toFixed(1)}–{(data.dictionaries[3].forwardCi[1] * 100).toFixed(1)}) | {data.dictionaries[3].twoSenseEntries.toLocaleString('en-US')} | {data.dictionaries[3].medianDriftYears} y | {(100 * data.dictionaries[3].lsResolved / data.dictionaries[3].lsInstances).toFixed(1)} % |
 
 * PD's rate is quoted from the published PD summary, which reports it without an interval; every control row carries its exact 95 % CI.
+
+The same comparison as a picture — Δτ per control against the pre-registered floor:
+
+<SenseOrderChart />
 
 PWG's tendency is the strongest of the five, and it holds in both size bands — τ =
 {data.dictionaries[0].bands.small.tau.toFixed(3)} on the

@@ -23,6 +23,20 @@ How Cologne dictionary **front matter** (title pages, prefaces/forewords, abbrev
 
 Do **not** treat the PD branch as a rename of the CDSL skill. They share *layout ideas* (crop-then-OCR, column modes); they do not share the same authoring engine for Cologne scans.
 
+```mermaid
+flowchart LR
+    subgraph CDSL["CDSL front matter — /cologne-preface-ocr"]
+        A["csldoc PNG scans"] --> B["Engine A<br/>vision band OCR<br/>(canonical pages)"]
+        B --> C["Engine B audit — optional<br/>Tesseract; never auto-promoted"]
+        C --> D["Translations<br/>.en.md + .ru.md"]
+        D --> E["Consolidated *_all.*<br/>+ README"]
+    end
+    subgraph PD2["PD (Deccan College) — separate corpus"]
+        P["local PDF front matter"] --> R["Tesseract<br/>crop-then-OCR"]
+        R --> S["GA / AUB / RG /<br/>SWC / AOB .md"]
+    end
+```
+
 ---
 
 ## Engines inside the CDSL skill

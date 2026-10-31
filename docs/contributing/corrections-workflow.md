@@ -17,6 +17,19 @@ first. If you are handling a named backlog such as Scott Rhodes' AP corrections,
 Process a Scott Batch first and use this page as the reference
 checklist.
 
+The whole sequence, at a glance — a parse failure at step 4 sends you back to step 2,
+never straight to commit:
+
+```mermaid
+flowchart TD
+    A["1 · Snapshot the current source"] --> B["2 · Apply the corrections<br/>(updateByLine.py + change file)"]
+    B --> C["3 · Copy the result back into csl-orig"]
+    C --> D{"4 · XML validation<br/>(REQUIRED before commit)"}
+    D -- "All records parsed by ET" --> E["5 · Generate the audit-trail change file<br/>(diff_to_changes_dict.py → csl-corrections)"]
+    D -- "parse error" --> B
+    E --> F["6 · Commit both repos:<br/>csl-orig (source) + csl-corrections (audit trail)"]
+```
+
 ## The sequence
 
 ```sh

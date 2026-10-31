@@ -1,0 +1,102 @@
+/* Diverging Δτ bars for SenseOrderChart — same single-hue slot (blue,
+   H279-validated palette) and ink tokens as CitationSources.module.css. */
+.root {
+  --so-neg: #2a78d6; /* control beats PD — the reversal is the story */
+  --so-pos: #97b8dd; /* PD beats control — lighter slot, same hue family */
+  margin: 1rem 0 2rem;
+}
+
+:global([data-theme='dark']) .root {
+  --so-neg: #3987e5;
+  --so-pos: #5d7ba6;
+}
+
+.caption {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0.75rem;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: minmax(150px, 240px) 1fr;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 26px;
+}
+
+.barLabel {
+  font-size: 0.82rem;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.barTrack {
+  position: relative;
+  display: block;
+  height: 18px;
+}
+
+.zeroLine,
+.floorLine {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 1px;
+}
+
+.zeroLine {
+  left: 50%;
+  background: var(--ifm-color-emphasis-500);
+}
+
+.floorLine {
+  border-left: 1px dashed var(--ifm-color-emphasis-600);
+}
+
+.barPos,
+.barNeg {
+  position: absolute;
+  top: 1px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.barPos {
+  background: var(--so-pos);
+  border-radius: 0 4px 4px 0; /* flat at the zero baseline, rounded data end */
+}
+
+.barNeg {
+  background: var(--so-neg);
+  border-radius: 4px 0 0 4px;
+}
+
+.barValue {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--ifm-font-color-base);
+  white-space: nowrap;
+  padding: 0 0.4rem;
+}
+
+.barSecondary {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.axisNote {
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.45rem;
+}

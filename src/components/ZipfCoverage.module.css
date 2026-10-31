@@ -1,0 +1,69 @@
+/* Cumulative-coverage SVG for ZipfCoverage — ink tokens only, so the curve
+   follows light/dark automatically; one soft fill using the H279 blue. */
+.root {
+  --zc-fill: rgba(42, 120, 214, 0.12);
+  margin: 1rem 0 2rem;
+}
+
+:global([data-theme='dark']) .root {
+  --zc-fill: rgba(57, 135, 229, 0.16);
+}
+
+.caption {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 0.75rem;
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid {
+  stroke: var(--ifm-color-emphasis-200);
+  stroke-width: 1;
+}
+
+:global([data-theme='dark']) .grid {
+  stroke: var(--ifm-color-emphasis-300);
+}
+
+.tick {
+  font-size: 11px;
+  fill: var(--ifm-color-emphasis-600);
+  font-variant-numeric: tabular-nums;
+}
+
+.area {
+  fill: var(--zc-fill);
+  stroke: none;
+}
+
+.line {
+  fill: none;
+  stroke: #2a78d6;
+  stroke-width: 2;
+}
+
+:global([data-theme='dark']) .line {
+  stroke: #3987e5;
+}
+
+.dot {
+  fill: #2a78d6;
+  stroke: var(--ifm-background-surface-color);
+  stroke-width: 1.5;
+}
+
+:global([data-theme='dark']) .dot {
+  fill: #3987e5;
+}
+
+.dotLabel {
+  font-size: 11.5px;
+  font-weight: 600;
+  fill: var(--ifm-font-color-base);
+  font-variant-numeric: tabular-nums;
+}

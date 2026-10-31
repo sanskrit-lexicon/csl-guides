@@ -6,6 +6,8 @@ sidebar_label: Encoding & Transliteration
 ---
 _Created: 13-06-2026 · Last updated: 05-09-2026_
 
+import Transliterator from '@site/src/components/Transliterator';
+
 # Encoding & Transliteration
 
 CDSL stores Sanskrit text internally in **SLP1**, and lets you *input* and *display*
@@ -93,6 +95,12 @@ API exposes it as `accent=yes|no` (it governs whether accents appear in
 
 If a lookup fails, the most likely cause is an input-scheme mismatch (e.g. typing `roman`
 while the box expects `hk`). Re-check the selected scheme first.
+
+**Try it now.** Type any word below (IAST, diacritics optional) and watch the
+vendored transcoder produce its Devanāgarī, IAST and SLP1 forms live — the same
+conversion the site's own displays run:
+
+<Transliterator />
 
 ## Transcoding tooling
 

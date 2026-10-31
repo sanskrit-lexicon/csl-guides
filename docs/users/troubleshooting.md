@@ -10,6 +10,26 @@ _Created: 13-06-2026 · Last updated: 05-09-2026_
 
 Most lookup problems have the same handful of causes. Work down this list in order.
 
+```mermaid
+flowchart TD
+    Q["Lookup returns no results"] --> S{"Input scheme matches the<br/>scheme selected in the box?"}
+    S -- "no — the most common cause by far" --> F1["Re-select the input scheme and<br/>retype the word"]
+    S -- yes --> I{"An inflected or sandhi'd form<br/>instead of a stem?"}
+    I -- yes --> F2["Look up the stem:<br/>gaccha-, not gacchati"]
+    I -- no --> L{"Unsure of the spelling,<br/>a homonym number, or<br/>long vs short vowels?"}
+    L -- yes --> F3["Browse the L (List) display<br/>for the neighbouring headwords"]
+    L -- no --> D{"Could the word be absent<br/>from this dictionary?"}
+    D -- "yes (Vedic vs classical)" --> F4["Try a dictionary that covers<br/>the word's period"]
+    D -- no --> AC{"Accented Vedic search<br/>failing?"}
+    AC -- yes --> F5["Retry without the accent —<br/>lookup uses the plain key"]
+    AC -- no --> ST["Still stuck? Check the FAQ,<br/>or open an issue on the<br/>dictionary's GitHub repository"]
+    F1 -. retry .-> Q
+    F2 -. retry .-> Q
+    F3 -. retry .-> Q
+    F4 -. retry .-> Q
+    F5 -. retry .-> Q
+```
+
 ## "My word returns no results"
 
 1. **Wrong input scheme — by far the most common cause.** The search box matches against a

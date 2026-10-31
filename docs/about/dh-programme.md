@@ -54,6 +54,16 @@ answers, S4 made the reporting citable.** A negative or partial result (GH-1's p
 failure, GH-2's depth-follows-size finding) was kept visible rather than smoothed
 over — the shared task's test split *is* GH-1's failure mode, promoted to a benchmark.
 
+```mermaid
+flowchart LR
+    S5["S5 · non-Cologne data feeds<br/>(DCS frequency, Heritage coverage, VedaWeb accents)"] --> S1["S1 · Guides Hypotheses<br/>(GH-1 … GH-5)"]
+    S1 --> S2["S2 · visualizations<br/>(landscape, citation sources)"]
+    S1 --> S3["S3 · data-layer pages<br/>(corpus attestation, machine morphology)"]
+    S2 --> S4["S4 · ACL uplift<br/>(metric convention, data cards, shared task, venues)"]
+    S3 --> S4
+    S4 --> CAP["capstone · this page"]
+```
+
 ## Results at a glance
 
 All figures below are reproducible from committed artifacts; each row links to the

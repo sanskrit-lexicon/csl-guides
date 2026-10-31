@@ -30,6 +30,23 @@ outdir/
   downloads/  ← zip-archive generation scripts
 ```
 
+The four stages and their artifacts, at a glance:
+
+```mermaid
+flowchart TD
+    SRC["csl-orig/v02/ - the canonical source text"] --> S1["Stage 1 · generate_orig.sh<br/>copies source + header + meta into outdir/orig/"]
+    S1 --> S2["Stage 2 · generate_pywork.sh<br/>renders the Mako templates into outdir/pywork/"]
+    S2 --> S3["Stage 3 · generate_web.sh<br/>assembles the four displays + SQLite build scripts into outdir/web/"]
+    S3 --> S4["Stage 4 · execute the assembled scripts"]
+    S4 --> HW["redo_hw.sh → the headword list"]
+    S4 --> XML["redo_xml.sh → full XML,<br/>validated against the DTD"]
+    S4 --> SQL["redo_postxml.sh → SQLite +<br/>abbreviation / tooltip / bibliography DBs"]
+    S4 --> ZIP["downloads/redo_all.sh →<br/>txt / xml / web zip archives"]
+    XML --> SRV["Cologne host — regeneration IS the deploy<br/>(manual cadence, not CI)"]
+    SQL --> SRV
+    ZIP --> SRV
+```
+
 ### What the four stages do
 
 | Stage | Script | Role |

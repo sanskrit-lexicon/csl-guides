@@ -97,17 +97,55 @@ const GATES = [
 ];
 
 function sh(cmd, args, opts = {}) {
-  const r = spawnSync(cmd, args, {
+  // shell mode takes one command-line string (spawnSync with an args array
+  // under shell:true is deprecated — DEP0190); the args here are fixed
+  // tokens from this file, so plain joining is safe.
+  const [command, argv] = opts.shell
+    ? [[cmd, ...(args || [])].join(' '), []]
+    : [cmd, args];
+  const r = spawnSync(command, argv, {
     cwd: ROOT,
     encoding: 'utf8',
     env: {...process.env, ...opts.env},
     maxBuffer: 16 * 1024 * 1024,
+    shell: opts.shell,
   });
   return {
     code: r.status === null ? 127 : r.status,
     out: (r.stdout || '').trim(),
     err: (r.stderr || '').trim(),
   };
+}
+
+// npm is a .cmd shim on Windows: bare `npm` is ENOENT for spawnSync, and
+// since the Node CVE-2024-27980 fix even `npm.cmd` is rejected (EINVAL) unless
+// it runs through a shell — so the npm wrapper spawn enables `shell` there.
+// Gate names are fixed tokens from this file (no spaces/metacharacters), so
+// shell-joining the args is safe. `git` needs none of this (a real .exe).
+const NPM = 'npm';
+const NPM_SHELL = process.platform === 'win32';
+
+// Stock Windows ships no real `python3` — only the Store alias stub, which
+// prints "Python was not found" and exits non-zero, turning an interpreter
+// gap into a spurious RED gate. Probe the interpreter named by the npm
+// script; for python3 fall back to `python` running the same committed
+// command line, and SKIP (prove nothing) when neither exists.
+function interpreterAvailable(exe) {
+  const r = spawnSync(exe, ['--version'], {encoding: 'utf8'});
+  const text = `${r.stdout || ''} ${r.stderr || ''}`;
+  return r.status === 0 && !/not found/i.test(text);
+}
+
+function resolveInterpreter(cmdline) {
+  const tokens = cmdline.trim().split(/\s+/);
+  const exe = tokens[0];
+  if (exe === 'node' || interpreterAvailable(exe)) {
+    return {exe, args: tokens.slice(1)};
+  }
+  if (exe === 'python3' && interpreterAvailable('python')) {
+    return {exe: 'python', args: tokens.slice(1), fallback: true};
+  }
+  return {exe, missing: true};
 }
 
 async function exists(p) {
@@ -170,12 +208,27 @@ for (const gate of GATES) {
   for (const [key, spec] of Object.entries(ROOTS)) {
     if (rootState[key].present) env[spec.env] = rootState[key].path;
   }
-  const r = sh('npm', ['run', '--silent', gate.script], {env});
+  const interp = resolveInterpreter(scripts[gate.script]);
+  if (interp.missing) {
+    result.detail =
+      `interpreter ${interp.exe} not available on ${process.platform} ` +
+      `(npm script: ${scripts[gate.script]})`;
+    results.push(result);
+    continue;
+  }
+  // Interpreter fallback bypasses the npm wrapper but still runs the exact
+  // committed script line, with the sibling roots exported either way.
+  const r = interp.fallback
+    ? sh(interp.exe, interp.args, {env})
+    : sh(NPM, ['run', '--silent', gate.script], {env, shell: NPM_SHELL});
   result.seconds = Number(((Date.now() - t0) / 1000).toFixed(2));
   result.exitCode = r.code;
   // Prefer the gate's own sentence on stdout; Node warnings land on stderr and
   // would otherwise become the "detail" of a green run.
   result.detail = lastLine(r.out) || lastLine(r.err);
+  if (interp.fallback) {
+    result.detail = `python3→python fallback — ${result.detail}`;
+  }
   result.status = r.code === 0 ? 'GREEN' : 'RED';
   results.push(result);
 }

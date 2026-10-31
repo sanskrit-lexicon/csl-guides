@@ -132,7 +132,7 @@ Each use case names: **actor**, **pref input**, **join** (if any), **output**, *
 - **Join:** body `<ls>` census; optional external corpus attestation.
 - **Output:** “legend coverage of corpus citations”; missing-legend vs unused-legend rates (cf. guides hypotheses GH-4).
 - **Home:** csl-atlas / csl-observatory; [corpus attestation](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/corpus-attestation); data paper methods.
-- **Status (H1854 hostile read):** survives narrowed — the corpus-wide "legend coverage" number already shipped as GH-4 (Tested, 95.3 %, [guides-hypotheses](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/guides-hypotheses.md)); what remains is only the **per-dictionary missing-legend vs unused-legend split**, consuming [`ALL_pref_abbr_crosscheck.summary.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/ALL_pref_abbr_crosscheck.summary.json).
+- **Status (H1854 hostile read):** survives narrowed — the corpus-wide "legend coverage" number already shipped as GH-4 (Tested, 95.3 %, [guides-hypotheses](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/guides-hypotheses.md)); what remains is only the **per-dictionary missing-legend vs unused-legend split**, consuming [`ALL_pref_abbr_crosscheck.summary.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/ALL_pref_abbr_crosscheck.summary.json).
 
 ### UC-7 — Scan deep-links and edition genealogy
 
@@ -179,7 +179,7 @@ Each use case names: **actor**, **pref input**, **join** (if any), **output**, *
   - METHODS pilot: [PWG](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/METHODS.md) · [PW](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/METHODS.md)
   - Naming: [pref-body-naming-authority](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md)
   - Legend emit: [`pref_legend_emit.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_legend_emit.py) · [`scripts/out/*_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/tree/main/scripts/out) · [`src/data/pref-legends.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/pref-legends.json)
-  - Residual appendix: [UC-13 methods](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/pref-body-residual-methods.md)
+  - Residual appendix: [UC-13 methods](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/pref-body-residual-methods.md)
 
 ### UC-12 — Publish-safety split surface
 
@@ -195,7 +195,7 @@ Each use case names: **actor**, **pref input**, **join** (if any), **output**, *
 - **Pref input:** typed residual tables (`ALL_pref_only_decompose`, align change logs).
 - **Join:** hit rates by wave; before/after align census.
 - **Output:** appendix tables (“pref_only is typed, not unused”); honest limitations.
-- **Home:** [Pref residual methods appendix](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/pref-body-residual-methods.md) (site); data paper; Uprava FINDINGS; csl-guides CHANGELOG.
+- **Home:** [Pref residual methods appendix](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/pref-body-residual-methods.md) (site); data paper; Uprava FINDINGS; csl-guides CHANGELOG.
 
 ### UC-14 — RU/EN student-facing copy from Vorwort
 

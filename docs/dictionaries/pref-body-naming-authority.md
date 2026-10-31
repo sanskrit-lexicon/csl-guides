@@ -37,7 +37,7 @@ This **supersedes** the H1530–H1560 non-goal “no bulk pref overwrite / scan 
 | [`scripts/pref_fold_table.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_fold_table.json) | **UC-8** documented orthography / OCR folds (examples + rules) |
 | [`scripts/build_pref_fold_table.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build_pref_fold_table.py) | Rebuild fold table from PWG/PW align change logs |
 
-**Paper / FINDINGS residual tables:** [Pref residual methods appendix (UC-13)](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/pref-body-residual-methods.md).
+**Paper / FINDINGS residual tables:** [Pref residual methods appendix (UC-13)](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/pref-body-residual-methods.md).
 
 ## FAIR / related surfaces (UC-11)
 
@@ -50,7 +50,7 @@ edition index, per-dict methods notes, this policy, and the machine legend store
 | METHODS (how to cite OCR) | [PWG](https://github.com/sanskrit-lexicon/PWG/blob/main/prefaces/METHODS.md) · [PW](https://github.com/sanskrit-lexicon/PWK/blob/main/prefaces/METHODS.md) |
 | Legend emit + schema | [`pref_legend_emit.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_legend_emit.py) · [`legend.schema.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/legend.schema.json) · pilot [`pwg_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_legend.json) · [`pw_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_legend.json) |
 | Site feed / Abbreviations | [`src/data/pref-legends.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/pref-legends.json) · [Abbreviations & citations](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/abbreviations-and-citations) |
-| Residual methods appendix | [UC-13](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/pref-body-residual-methods.md) |
+| Residual methods appendix | [UC-13](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/pref-body-residual-methods.md) |
 | Artifact index | [`scripts/out/README.md`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/README.md) |
 
 ## UC-8 fold table (no silent invent-a-fold)

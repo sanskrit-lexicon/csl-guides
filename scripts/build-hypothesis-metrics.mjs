@@ -1,4 +1,4 @@
-// Compute the GH-1..GH-4 hypothesis metrics for docs/about/guides-hypotheses.md (H278).
+// Compute the GH-1..GH-4 hypothesis metrics for docs/internal/guides-hypotheses.md (H278).
 // Reads only committed inputs: src/data/*.json + docs/dictionaries/*.mdx.
 // The csl-atlas evidence is consumed via the vendored src/data/atlas-extract.json,
 // never recomputed here (csl-atlas owns the analysis engine).
@@ -210,7 +210,7 @@ const gh4 = {
 const out = {
   generatedAt: new Date().toISOString().slice(0, 10),
   generatedBy: 'scripts/build-hypothesis-metrics.mjs (H278; ACL-standard CI/baseline/significance fields added in H281)',
-  documentedIn: 'docs/about/guides-hypotheses.md',
+  documentedIn: 'docs/internal/guides-hypotheses.md',
   gh1_routing: gh1,
   gh2_depth_vs_novelty: gh2,
   gh3_failure_mode_coverage: gh3,

@@ -13,9 +13,9 @@ and using the dictionaries offline.
 
 | Tool | What it does | Page |
 |---|---|---|
-| **Your Name in Devanagari** | Type any word and see it live in Devanagari, IAST, and SLP1 — free, no login | Your Name in Devanagari |
-| **What's Your Sanskrit Level?** | 6-question quiz from akṣara sounds to a sandhi concept check — get a level badge + next step | What's Your Sanskrit Level? |
-| **Simple-Search** | Fast headword lookup across the dictionaries | Simple-Search |
+| [Your Name in Devanagari](/tools/name-in-devanagari) | Type any word and see it live in Devanagari, IAST, and SLP1 — free, no login | Your Name in Devanagari |
+| [What's Your Sanskrit Level?](/tools/sanskrit-level-quiz) | 6-question quiz from akṣara sounds to a sandhi concept check — get a level badge + next step | What's Your Sanskrit Level? |
+| [Simple-Search](/tools/simple-search) | Fast headword lookup across the dictionaries | Simple-Search |
 | **Advanced search** | Search within entry bodies, patterns, filters | Advanced Search |
 | **Multi-dictionary display** | One headword across many dictionaries at once (experimental `dalglob`) | Multi-Dictionary |
 | **MW Inflected forms** | Monier-Williams inflected/conjugated form resource | Multi-Dictionary |

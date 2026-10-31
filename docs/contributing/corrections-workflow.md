@@ -87,7 +87,7 @@ python diff_to_changes_dict.py temp_{dict}_0.txt \
 
 ## Change-file format
 
-See **Change Files** for the exact line-paired format used by
+See [Change Files](/contributing/change-files) for the exact line-paired format used by
 `updateByLine.py`.
 
 _Dr. Mārcis Gasūns_

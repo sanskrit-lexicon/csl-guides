@@ -2,6 +2,7 @@
 id: guides-hypotheses
 title: "Guides Hypotheses — a testable QA agenda for this site"
 description: "Falsifiable hypotheses about this documentation site and its learners — each with claim, data, metric, baseline, and the committed artifact that tests it."
+unlisted: true
 sidebar_label: Guides Hypotheses
 ---
 

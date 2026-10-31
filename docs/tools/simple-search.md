@@ -14,7 +14,7 @@ designed for the common case: type a word, get its entries.
 ## How to use it
 
 1. Open Simple-Search from the front page.
-2. Choose your **input transliteration** (see **Encoding & Transliteration**).
+2. Choose your **input transliteration** (see [Encoding & Transliteration](/users/encoding-transliteration)).
 3. Type the headword.
 4. Review matching entries; follow into the per-dictionary Basic view for full context.
 
@@ -23,7 +23,7 @@ designed for the common case: type a word, get its entries.
 - If you get no results, re-check the **input scheme** — an IAST word typed in a
   Harvard-Kyoto box will not match.
 - Simple-Search targets **headwords**; to search *inside* entries use
-  **Advanced Search**.
+  [Advanced Search](/tools/advanced-search).
 
 ## Under the hood
 

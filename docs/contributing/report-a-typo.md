@@ -28,7 +28,7 @@ Start from the live site and write down:
 
 If the display has several modes, the **Basic** view is usually the easiest place to copy
 the headword and entry text. The **S** or scan link is the evidence trail back to the
-printed book; see Scans & Print.
+printed book; see [Scans & Print](/users/scans-and-print).
 
 ## Classify the problem
 

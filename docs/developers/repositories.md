@@ -42,7 +42,7 @@ Each dictionary has its own repo, **named by its code**. Examples (see the full
 | [`csl-doc`](https://github.com/sanskrit-lexicon/csl-doc) | Sphinx per-dictionary front-matter / prefaces documentation |
 
 Other infrastructure repos (`csl-atlas`, `csl-observatory`, …) support tooling and
-observability. See Data Formats for how the SQLite, JSON, and
+observability. See [Data Formats](/developers/data-formats) for how the SQLite, JSON, and
 StarDict artifacts are produced.
 
 :::note Dictionary code vs. repository name
@@ -57,7 +57,7 @@ catalog lists each dictionary's actual repo.
 
 - **Session state**: each repo keeps a tracked `.ai_state.md` journal.
 - **Correction pattern**: most repos apply corrections via `updateByLine.py` change
-  files (see **Change Files**).
+  files (see [Change Files](/contributing/change-files)).
 - **Input files** for the large German dictionaries live in sibling `*xml` repos
   (e.g. `../pwgxml/pwg.xml`, `../mwsxml/mws.xml`).
 

@@ -34,9 +34,9 @@ the mental model; the following pages drill into each part.
 1. **Canonical source lives in `csl-orig`.** Each dictionary is a plain-text file under
    `csl-orig/v02/{dict}/{dict}.txt`.
 2. **No hand-edits without an audit trail.** Edits go through change files; the audit
-   copy is stored in `csl-corrections`. See **Corrections Workflow**.
+   copy is stored in `csl-corrections`. See [Corrections Workflow](/contributing/corrections-workflow).
 3. **Generation is reproducible.** `csl-pywork` regenerates XML, indices, and displays
-   from source. See **Generation Pipeline**.
+   from source. See [Generation Pipeline](/developers/generation-pipeline).
 4. **XML validity is gating.** Nothing is committed to `csl-orig` until it parses.
 
 ## The four web displays

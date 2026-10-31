@@ -48,7 +48,7 @@ The stage-4 scripts produce the actual artifacts:
 | `redo_postxml.sh` | `web/sqlite/{dict}.sqlite` + abbreviation / tooltip / bibliography databases |
 | `downloads/redo_all.sh` | the `txt` / `xml` / `web` zip archives |
 
-See Data Formats for the shape of the generated XML and the derived
+See [Data Formats](/developers/data-formats) for the shape of the generated XML and the derived
 SQLite/JSON/StarDict formats.
 
 ## Validate the XML
@@ -84,8 +84,8 @@ treat **"All records parsed by ET"** from `make_xml.py` as a passing signal.
 
 ## Where this fits
 
-This step sits between **Corrections Workflow**
-(producing corrected source) and the published site. See **Architecture**
+This step sits between [Corrections Workflow](/contributing/corrections-workflow)
+(producing corrected source) and the published site. See [Architecture](/developers/architecture)
 for the end-to-end diagram.
 
 ## Deploying to the live server

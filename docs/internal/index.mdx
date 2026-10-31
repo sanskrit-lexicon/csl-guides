@@ -1,0 +1,25 @@
+---
+id: internal
+title: "Internal — agent-facing and planning docs"
+description: "QA hypotheses, planning records and metadocs that serve the maintainers and AI agents working on this repo. Not part of the public documentation; reachable only by direct link."
+sidebar_label: Internal
+unlisted: true
+---
+
+# Internal — agent-facing and planning docs
+
+These pages serve the **maintainers and AI agents** working on the csl-guides repo, not
+site readers. They are deliberately kept out of every public sidebar; each one is
+`unlisted`, so it renders only for someone who follows a direct link.
+
+| Document | What it is |
+|----------|------------|
+| [Guides Hypotheses](/internal/guides-hypotheses) | The site's falsifiable QA agenda (GH-1…GH-5): claim, data, metric, baseline, testing artifact |
+| [Pref × body residual methods](/internal/pref-body-residual-methods) | Typed `pref_only` methods appendix (UC-13) for paper authors and FINDINGS |
+| [Pref legend naming authority](/internal/pref-body-naming-authority.meta) | Metadoc: standing policy that body `.txt` wins for pref legend *naming* |
+| [Preface front-matter enrichment use cases](/internal/preface-front-matter-enrichment-use-cases.meta) | Metadoc: UC registry status with milestone verdicts |
+| [Preface enrichment plan (P0, 2026-07)](/internal/plans/PLAN_csl-guides_preface_enrichment_P0_2026-07) | Plan record with its [roadmap](/internal/plans/ROADMAP_csl-guides_preface_enrichment_2026-07), [architecture](/internal/plans/ARCHITECTURE_csl-guides_preface_legend_store), [implementation](/internal/plans/IMPLEMENTATION_csl-guides_preface_enrichment_P0) and [verification](/internal/plans/VERIFICATION_csl-guides_preface_enrichment_P0) companions |
+
+Agents: read [Guides Hypotheses](/internal/guides-hypotheses) before proposing content
+changes — an open hypothesis may already cover the idea, and a settled one names the
+committed artifact that tests it.

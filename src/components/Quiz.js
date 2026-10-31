@@ -20,7 +20,7 @@ import styles from './Quiz.module.css';
 //             ('concept' | 'multiple-choice' | 'lookup' | 'trace-to-dhatu' | 'convert').
 //   title   — optional heading rendered above the cards.
 //
-// Opt-in telemetry (GH-5, docs/about/guides-hypotheses.md): client-side only, off by
+// Opt-in telemetry (GH-5, docs/internal/guides-hypotheses.md): client-side only, off by
 // default. When a reader flips the toggle, multiple-choice questions switch from the
 // no-JS <details> reveal to a click-an-option interactive mode that records
 // {itemId, correct, attempts} counters in localStorage — never sent anywhere. All

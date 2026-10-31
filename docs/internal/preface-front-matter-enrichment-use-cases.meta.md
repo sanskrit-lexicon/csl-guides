@@ -36,7 +36,7 @@ artifact it would consume exists on disk. **Verdict: the proposal is sound; 3 Ma
 |---|---|---|
 | M1 | [use-cases §UC-2, line 92](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/preface-front-matter-enrichment-use-cases.md) + backlog item 4 below | UC-2's named input "per-dict legend tables (PWG, PW, **MW**, AP90)" has **no committed MW artifact**: `scripts/out/` contains no `mw_*` file at all (no legend, no crosscheck, no decompose). MW prefaces are OCR'd ([MWS/prefaces/](https://github.com/sanskrit-lexicon/MWS/tree/main/prefaces)) but the legend was never parsed. **MW struck from the UC-2 pilot** until an MW legend emit exists; the pilot that can run today is PWG↔PW (from [`scripts/out/pwg_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pwg_legend.json) + [`pw_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/pw_legend.json)) extended by AP90 via [`ap90_pref_abbr_crosscheck.tsv`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/ap90_pref_abbr_crosscheck.tsv). |
 | M2 | use-cases § Priority map, line 208 | The P1 row still lists **UC-4**, which shipped 28-07-2026 (H1760 status line at UC-4 itself, line 112). Stale: the real P1 build decision is **UC-2 + UC-6 only**. Fixed in the subject in this same pass. |
-| M3 | use-cases §UC-6, lines 122–128 | UC-6's headline output "legend coverage of corpus citations" **already exists**: GH-4 is Tested — 95.3 % of corpus `<ls>` citations fall in legend-documented dictionaries (1,187,169 / 1,245,644; [guides-hypotheses.md line 40](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/guides-hypotheses.md)). The row survives only for what is genuinely missing: the **per-dictionary missing-legend vs unused-legend split**, which no committed artifact yet computes. |
+| M3 | use-cases §UC-6, lines 122–128 | UC-6's headline output "legend coverage of corpus citations" **already exists**: GH-4 is Tested — 95.3 % of corpus `<ls>` citations fall in legend-documented dictionaries (1,187,169 / 1,245,644; [guides-hypotheses.md line 40](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/guides-hypotheses.md)). The row survives only for what is genuinely missing: the **per-dictionary missing-legend vs unused-legend split**, which no committed artifact yet computes. |
 
 ### Minor findings
 
@@ -53,7 +53,7 @@ artifact it would consume exists on disk. **Verdict: the proposal is sound; 3 Ma
 |---|---|---|
 | UC-2 | **SURVIVES, narrowed** (MW struck — M1) | `scripts/out/pwg_legend.json` · `scripts/out/pw_legend.json` · `scripts/out/ap90_pref_abbr_crosscheck.tsv` |
 | UC-4 | **Already shipped** (H1760) — removed from P1 | [reading-pwg](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/users/reading-pwg.mdx) · [reading-pw](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/users/reading-pw.mdx) (+ net-new [reading-monier-williams](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/users/reading-monier-williams.mdx), not yet named by the proposal) |
-| UC-6 | **SURVIVES, narrowed** (per-dict split only — M3) | [`scripts/out/ALL_pref_abbr_crosscheck.summary.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/ALL_pref_abbr_crosscheck.summary.json) · GH-4 in [guides-hypotheses.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/guides-hypotheses.md) |
+| UC-6 | **SURVIVES, narrowed** (per-dict split only — M3) | [`scripts/out/ALL_pref_abbr_crosscheck.summary.json`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/ALL_pref_abbr_crosscheck.summary.json) · GH-4 in [guides-hypotheses.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/guides-hypotheses.md) |
 
 ### Claims confirmed against disk (spot record)
 
@@ -67,7 +67,7 @@ UC-11 chain complete ([PWG METHODS](https://github.com/sanskrit-lexicon/PWG/blob
 [`pref_legend_emit.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_legend_emit.py) ·
 [ocr-prefaces](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/ocr-prefaces.mdx) ·
 [naming authority](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/dictionaries/pref-body-naming-authority.md));
-UC-13 homes exist ([residual methods appendix](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/pref-body-residual-methods.md) ·
+UC-13 homes exist ([residual methods appendix](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/pref-body-residual-methods.md) ·
 [`ALL_pref_only_decompose.md`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/ALL_pref_only_decompose.md));
 UC-14 tri-lingual inputs exist for PWG (27 pp DE/EN/RU), PW, MW (`*pref_all.{en,ru}.md`);
 all named site consumers exist (abbreviations-comparison, citation-graph, corpus-attestation,

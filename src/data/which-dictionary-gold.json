@@ -1,6 +1,6 @@
 {
   "title": "Which-dictionary routing — gold panel",
-  "purpose": "Independent expected-answer panel for the GH-1 routing-accuracy hypothesis (see /about/guides-hypotheses). Each scenario carries the dictionary a lexicographer would route the user to, judged against the dictionaries' own front matter and the csl-atlas OBS evidence — not copied from the quiz key.",
+  "purpose": "Independent expected-answer panel for the GH-1 routing-accuracy hypothesis (see /internal/guides-hypotheses). Each scenario carries the dictionary a lexicographer would route the user to, judged against the dictionaries' own front matter and the csl-atlas OBS evidence — not copied from the quiz key.",
   "annotator": "Fable 5 (claude-fable-5), single pass, 2026-07-07; no second annotator yet (known limitation, recorded in the hypothesis note).",
   "grounding": "Dictionary identities and years from src/data/dictionaries.json (generated from live CDSL sources); novelty context from the vendored csl-atlas extract src/data/atlas-extract.json.",
   "license": "CC-BY-SA-4.0",

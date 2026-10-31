@@ -50,7 +50,7 @@ API `input`/`output` parameters.
 
 SLP1 is **lossless and unambiguous**: every Sanskrit phoneme maps to exactly one ASCII
 character, so sorting, searching, and round-tripping are deterministic. The downloadable
-XML is in SLP1 for this reason (see **Downloads & Data**).
+XML is in SLP1 for this reason (see [Downloads & Data](/users/downloads-and-data)).
 
 ## Vedic accents
 
@@ -101,6 +101,6 @@ and ported to PHP (`transcoder.php`) and Python
 ([funderburkjim/sanskrit-transcoding](https://github.com/funderburkjim/sanskrit-transcoding)).
 It works from per-pair XML tables named `{X}_{Y}.xml` (e.g. `slp1_deva.xml`), compiled
 into a finite-state machine at runtime. For example `transcoder_processString('rAma',
-'slp1', 'deva')` returns राम. See also **Data Formats**.
+'slp1', 'deva')` returns राम. See also [Data Formats](/developers/data-formats).
 
 _Dr. Mārcis Gasūns_

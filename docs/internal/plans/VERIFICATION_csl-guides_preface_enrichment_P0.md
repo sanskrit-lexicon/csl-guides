@@ -2,7 +2,7 @@
 
 _Created: 24-07-2026 · Last updated: 24-07-2026_
 
-**Index:** [PLAN_csl-guides_preface_enrichment_P0_2026-07.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/plans/PLAN_csl-guides_preface_enrichment_P0_2026-07.md)
+**Index:** [PLAN_csl-guides_preface_enrichment_P0_2026-07.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/plans/PLAN_csl-guides_preface_enrichment_P0_2026-07.md)
 
 ## Acceptance criteria
 

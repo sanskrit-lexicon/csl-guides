@@ -4,7 +4,7 @@
  "source": {
   "headwords": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/obs/headword_multiplicity.csv",
   "citations": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/obs/citation_registers.json",
-  "note": "Per-dictionary rows copied verbatim from the committed csl-atlas OBS artifacts (OBS-R headword collapse + OBS-C citation registers, 2026-07 regeneration). Consumed, not recomputed — see docs/contributing/guides-hypotheses.md."
+  "note": "Per-dictionary rows copied verbatim from the committed csl-atlas OBS artifacts (OBS-R headword collapse + OBS-C citation registers, 2026-07 regeneration). Consumed, not recomputed — see docs/internal/guides-hypotheses.md."
  },
  "license": "CC-BY-SA-4.0",
  "dicts": {

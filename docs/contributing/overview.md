@@ -26,7 +26,7 @@ a complete audit trail.
 **Source files are never edited by hand in an ad-hoc way.** Corrections are expressed as
 **change files** applied by scripts, validated as XML, and committed with an audit
 trail. This keeps every edit reviewable and reversible. See
-**Corrections Workflow** and **Change Files**.
+[Corrections Workflow](/contributing/corrections-workflow) and [Change Files](/contributing/change-files).
 
 ## Ways to help
 

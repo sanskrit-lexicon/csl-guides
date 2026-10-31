@@ -40,10 +40,10 @@ Ship P0 use cases **UC-1, UC-3, UC-8, UC-11, UC-13** so prefaces become a machin
 
 | Layer | Path |
 |-------|------|
-| Roadmap | [ROADMAP_csl-guides_preface_enrichment_2026-07.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/plans/ROADMAP_csl-guides_preface_enrichment_2026-07.md) |
-| Architecture | [ARCHITECTURE_csl-guides_preface_legend_store.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/plans/ARCHITECTURE_csl-guides_preface_legend_store.md) |
-| Implementation | [IMPLEMENTATION_csl-guides_preface_enrichment_P0.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/plans/IMPLEMENTATION_csl-guides_preface_enrichment_P0.md) |
-| Verification | [VERIFICATION_csl-guides_preface_enrichment_P0.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/plans/VERIFICATION_csl-guides_preface_enrichment_P0.md) |
+| Roadmap | [ROADMAP_csl-guides_preface_enrichment_2026-07.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/plans/ROADMAP_csl-guides_preface_enrichment_2026-07.md) |
+| Architecture | [ARCHITECTURE_csl-guides_preface_legend_store.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/plans/ARCHITECTURE_csl-guides_preface_legend_store.md) |
+| Implementation | [IMPLEMENTATION_csl-guides_preface_enrichment_P0.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/plans/IMPLEMENTATION_csl-guides_preface_enrichment_P0.md) |
+| Verification | [VERIFICATION_csl-guides_preface_enrichment_P0.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/plans/VERIFICATION_csl-guides_preface_enrichment_P0.md) |
 
 ## Wave-1 deliverables (handoff-shaped)
 

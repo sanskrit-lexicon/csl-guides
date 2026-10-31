@@ -11,7 +11,7 @@ _Created: 14-06-2026 · Last updated: 07-07-2026_
 
 ## How to cite CDSL
 
-See **Abbreviations & Citations** for the
+See [Abbreviations & Citations](/dictionaries/abbreviations-and-citations) for the
 project's official in-text and bibliographic citation form, plus the recommended wording
 for acknowledging CDSL data reuse in a website or application.
 

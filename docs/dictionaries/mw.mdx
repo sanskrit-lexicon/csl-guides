@@ -37,10 +37,10 @@ Reach for MW when you want the **broadest classical coverage** in English: it is
 encyclopaedic, rich in **compounds**, **etymologies**, and **literary-source citations**,
 and it marks **Vedic accents**. Complements within CDSL:
 
-- Use **Apte (AP90)** for a cleaner, sense-numbered classical reading and idioms.
-- Use **Böhtlingk-Roth (PWG)** (German) for the deepest scholarly treatment and
+- Use [Apte (AP90)](/dictionaries/ap90) for a cleaner, sense-numbered classical reading and idioms.
+- Use [Böhtlingk-Roth (PWG)](/dictionaries/pwg) (German) for the deepest scholarly treatment and
   the fullest citations.
-- Use **Grassmann (GRA)** for the Ṛg-Veda specifically.
+- Use [Grassmann (GRA)](/dictionaries/gra) for the Ṛg-Veda specifically.
 - For the **1872 first edition**, see **`MW72`** (a separate dictionary, not the same text).
 
 ## Looking up a word
@@ -77,7 +77,7 @@ The `agni` entry above illustrates the structure every MW entry shares:
 | **[ID=890]** | stable per-sense id (used by permalinks/API) | record `lnum` |
 | *coloured source abbreviations* | literary-source citations, click-through to scans where linked | `<ls>` |
 
-See Data Formats for the full markup reference.
+See [Data Formats](/developers/data-formats) for the full markup reference.
 
 ## What makes MW distinctive
 
@@ -96,7 +96,7 @@ See Data Formats for the full markup reference.
 
 **Find a compound** — in **Advanced**, set field *Sanskrit word* → *Text Word* won't help
 for a stem; use `query_type=wildcard` on `headword_slp1` (e.g. `agni*`) to list compounds
-beginning *agni-*. See Advanced Search.
+beginning *agni-*. See [Advanced Search](/tools/advanced-search).
 
 **Search by cited source** — to find entries citing a given text, search the entry body
 (`field=xml` or `sense`) for the source's abbreviation in **Advanced**.
@@ -107,7 +107,7 @@ base URL, parameters, and the (C-SALT-compatible) Salt API.
 
 **Link straight to an entry** — the clean-URL permalink form is `/MW/{ref}` where `ref` is
 a headword in any input transliteration or an `lnum` — e.g. `/MW/bAQa` or `/MW/144239`
-(roadmap; see API → Clean-URL permalinks).
+(roadmap; see [API](/developers/api) → Clean-URL permalinks).
 
 ## How MW was digitized
 
@@ -138,10 +138,10 @@ losing information. See Publications and the live
 
 ## See also
 
-- **Reading Monier-Williams (with quizzes)** — the four
+- [Reading Monier-Williams (with quizzes)](/users/reading-monier-williams) — the four
   levels of alphabetical order, MW's symbols, tracing a word to its dhātu + 69 practice questions
 - The full **catalog** of all 43 dictionaries
-- **Abbreviations & Citations** — how to cite MW
-- **Downloads & Data** — XML (SLP1), PDF, scans
+- [Abbreviations & Citations](/dictionaries/abbreviations-and-citations) — how to cite MW
+- [Downloads & Data](/users/downloads-and-data) — XML (SLP1), PDF, scans
 - **csl-doc** [mw.rst](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/mw.rst)
   and its [preface](https://github.com/sanskrit-lexicon/csl-doc/blob/master/source/dictionaries/prefaces/mwpref.rst)

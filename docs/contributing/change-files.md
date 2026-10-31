@@ -32,7 +32,7 @@ Supported operations:
 | `del` | Delete the numbered line |
 
 All files must be **UTF-8** (no BOM — see the BOM rule in
-**Corrections Workflow**).
+[Corrections Workflow](/contributing/corrections-workflow)).
 
 The line number is not just a note for the reviewer. `updateByLine.py` uses it to find
 the exact line, and the `old` text should match the current source line before the

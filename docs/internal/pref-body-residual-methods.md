@@ -2,6 +2,7 @@
 id: pref-body-residual-methods
 title: "Pref × body residual methods — typed pref_only appendix"
 description: "Methods appendix for paper authors and FINDINGS: pref_only residual after case/diacritic fold is typed (ortho/rare/ocr_key/spacing/true_unused/ambiguous), not unused abbreviations; pipeline, tables, limitations, reproduce."
+unlisted: true
 sidebar_label: Pref residual methods
 ---
 
@@ -186,7 +187,7 @@ After source pref page edits, rebuild each dictionary’s combined pref editions
 | [Legend emit](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_legend_emit.py) · [pwg/pw `_legend.json`](https://github.com/sanskrit-lexicon/csl-guides/tree/main/scripts/out) | UC-3 machine legend store (residual class joined) |
 | [Preface OCR pipeline](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/preface-ocr-pipeline) | Operator manual |
 | [Abbreviations & citations](https://sanskrit-lexicon.github.io/csl-guides/dictionaries/abbreviations-and-citations) | User-facing legend UX |
-| [Guides Hypotheses](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/about/guides-hypotheses.md) (GH-4) | Legend coverage of corpus citations (related exposure bound) |
+| [Guides Hypotheses](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/internal/guides-hypotheses.md) (GH-4) | Legend coverage of corpus citations (related exposure bound) |
 
 ## Provenance
 

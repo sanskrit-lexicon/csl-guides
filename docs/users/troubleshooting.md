@@ -15,7 +15,7 @@ Most lookup problems have the same handful of causes. Work down this list in ord
 1. **Wrong input scheme — by far the most common cause.** The search box matches against a
    specific transliteration. An IAST word (`rāma`) typed while the box expects Harvard-Kyoto
    will not match. Re-check the selected **input** scheme and retype. See
-   **Encoding & Transliteration** for the scheme table and a
+   [Encoding & Transliteration](/users/encoding-transliteration) for the scheme table and a
    worked *śiva* / *kṛṣṇa* example.
 2. **You typed an inflected or sandhi'd form.** Dictionaries are keyed by **stem/headword**,
    not by inflected forms. Look up the stem (e.g. *gaccha-*, not *gacchati*). For
@@ -33,18 +33,18 @@ Most lookup problems have the same handful of causes. Work down this list in ord
 
 That is the **output** scheme, set independently of input. Switch the output menu to
 `deva` (Devanāgarī), `roman` (IAST), or whichever you want to read. Storage is always SLP1;
-display is converted on the fly — see **Encoding & Transliteration**.
+display is converted on the fly — see [Encoding & Transliteration](/users/encoding-transliteration).
 
 ## "A citation link doesn't open a scanned page"
 
 Not every literary-source citation (`<ls>`) has been linked to its scan yet — that linking
 ("Dictionary to Book") is ongoing editorial work. An unlinked citation is expected, not a
-bug. See **Scans & Print** and the
+bug. See [Scans & Print](/users/scans-and-print) and the
 **Issue Taxonomy**.
 
 ## "A scan page is blurry, skewed, or missing"
 
-That is worth reporting as a `scan-quality` issue. See **Scans & Print**
+That is worth reporting as a `scan-quality` issue. See [Scans & Print](/users/scans-and-print)
 and **Contributing → Overview**.
 
 ## Still stuck?

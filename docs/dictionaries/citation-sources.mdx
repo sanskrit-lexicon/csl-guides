@@ -1,11 +1,13 @@
 ---
 id: citation-sources
 title: What Each Dictionary Quotes
-description: "Which classical Sanskrit texts each Cologne dictionary cites most, from the csl-atlas <ls> citation-frequency graph — 826,752 resolved citations across 874 texts."
+description: "Which classical Sanskrit texts each Cologne dictionary cites most, from the csl-atlas <ls> citation-frequency graph."
 sidebar_label: Citation sources (visual)
 ---
 
 import CitationSources from '@site/src/components/CitationSources';
+import citeData from '@site/src/data/citation-sources.json';
+import catalog from '@site/src/data/dictionaries.json';
 
 # What Each Dictionary Quotes
 
@@ -21,7 +23,7 @@ corpus-wide view.
 
 <CitationSources />
 
-**How to read it.** PWG dominates the graph (536,172 resolved citations — Böhtlingk & Roth
+**How to read it.** PWG dominates the graph ({citeData.dictTotals.pwg.toLocaleString('en-US')} resolved citations — Böhtlingk & Roth
 cited on an industrial scale); its profile is epic-heavy (Mahābhārata, Rāmāyaṇa) with
 Pāṇini's *Aṣṭādhyāyī* third — a grammarians' dictionary. AP's top text is the *Raghuvaṃśa*:
 Apte built for readers of kāvya. BHS's citations are almost entirely Buddhist texts no other
@@ -36,15 +38,15 @@ Grassmann's Rigveda references are verse numbers rather than resolvable text abb
   ([`ls_citation_edges.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_edges.tsv) +
   [`ls_citation_nodes.tsv`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/ls_citation_nodes.tsv),
   method in its [README](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/README.md)):
-  **826,752 resolved `<ls>` citations → 874 canonical texts across 11 dictionaries**
-  (1,699 edges).
+  **{citeData.stats.totalResolvedCites.toLocaleString('en-US')} resolved `<ls>` citations → {citeData.stats.nodeCount} canonical texts across {citeData.stats.dictCount} dictionaries**
+  ({citeData.stats.edgeCount} edges).
 - **Limitations:** coverage is the 11 dictionaries whose abbreviation keys resolve —
-  **not** all 43. Resolution quality varies: MW's 312k `<ls>` tags currently resolve to
+  **not** all {catalog.totalRows}. Resolution quality varies: MW's 312k `<ls>` tags currently resolve to
   only 5 coarse nodes (its grammatical markers are filtered, most literary abbreviations
   are still unresolved), and MD to 4 — read those two as placeholders, not profiles.
   Canonicalization is imperfect across dictionaries (MD's "Rigveda" is not yet folded into
   "Ṛgveda"). Counts are citation *frequency*, not importance.
-- **Validation:** vendored totals match the csl-atlas edge list exactly (826,752); both
+- **Validation:** vendored totals match the csl-atlas edge list exactly ({citeData.stats.totalResolvedCites.toLocaleString('en-US')}); both
   TSVs' SHA-256 are pinned in the feed, and `npm run check:atlas-viz` re-derives the
   projection from the sibling checkout and fails on any drift. The per-dictionary top
   texts were spot-checked against the TSV.

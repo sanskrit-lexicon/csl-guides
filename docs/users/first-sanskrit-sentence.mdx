@@ -6,6 +6,7 @@ sidebar_label: Your First Sentence
 ---
 
 import ZipfCoverage from '@site/src/components/ZipfCoverage';
+import cf from '@site/src/data/corpus-frequency.json';
 
 # How Long Until You Read Your First Sanskrit Sentence?
 
@@ -143,5 +144,6 @@ Word counts on this page are computed from the committed
 feed — 4,550,704 counted tokens across 59,282 lemmas, derived from the
 [Digital Corpus of Sanskrit](http://www.sanskrit-linguistics.org/dcs/)
 (Oliver Hellwig, CC BY) via the VisualDCS pipeline. Coverage figures: top 25
-lemmas = 22.5%, top 100 = 35.3%, top 2,000 = 77.0% of all counted tokens.
+lemmas = 22.5%, top 100 = 35.3%, and the whole committed
+top-{cf.stats.lemmasSelected.toLocaleString('en-US')} slice = {cf.stats.topCoveragePct.toFixed(1)}% — of all counted tokens.
 :::

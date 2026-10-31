@@ -1,12 +1,13 @@
 ---
 id: citation-graph
 title: "The Citation Graph: How We Know What the Dictionaries Quote"
-description: "An explainer for the csl-atlas <ls> citation graph — 826,752 resolved citations across 874 classical texts and 11 Cologne dictionaries: what it is, how it was built, and how to reuse it."
+description: "An explainer for the csl-atlas <ls> citation graph — which classical texts the Cologne dictionaries cite, and how often: what it is, how it was built, and how to reuse it."
 sidebar_label: The citation graph (explainer)
 ---
 
 import CitationGraphShare, {CitationSpread} from '@site/src/components/CitationGraphShare';
 import data from '@site/src/data/citation-sources.json';
+import catalog from '@site/src/data/dictionaries.json';
 
 # The Citation Graph: How We Know What the Dictionaries Quote
 
@@ -144,10 +145,10 @@ is CC BY-SA — cite csl-atlas and the Cologne Digital Sanskrit Dictionaries.
   [`scripts/build-atlas-viz.mjs`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-atlas-viz.mjs)
   from the csl-atlas citation graph (edges + nodes TSVs above; method in its
   [README](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/citations/README.md)):
-  **826,752 resolved `<ls>` citations → 874 canonical texts × 11 dictionaries, 1,699
+  **{data.stats.totalResolvedCites.toLocaleString('en-US')} resolved `<ls>` citations → {data.stats.nodeCount} canonical texts × {data.stats.dictCount} dictionaries, {data.stats.edgeCount}
   edges** (graph v3, re-frozen 24-09-2026; feed re-vendored 20-10-2026, with the TSV
   SHA-256 pinned and checked by `npm run check:atlas-viz`).
-- **Limitations:** as listed above — 11 of 43 dictionaries; MW and MD are placeholders;
+- **Limitations:** as listed above — {data.stats.dictCount} of {catalog.totalRows} dictionaries; MW and MD are placeholders;
   resolution rate 57.7% of text-bearing tags; frequency ≠ importance.
 - **Owner repo:** [csl-atlas](https://github.com/sanskrit-lexicon/csl-atlas) (data) /
   this repo (rendering).

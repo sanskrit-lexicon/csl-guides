@@ -34,6 +34,12 @@ jobs:
           # --accept tolerates HTTP 429 (rate-limited but alive — common from github.com
           # when many blob links are checked at once); a genuinely removed page returns 404,
           # which still fails the job.
+          # The glob scopes the scan to SITE content: a whole-repo glob also swept
+          # the agent journal (.ai_state.md), frozen findings reports (BUGHUNT-*,
+          # scripts/out/H*.md) and the CHANGELOG, whose historical links
+          # (private-hub blobs, dead PD branch files) are records, not rot
+          # candidates — they produced permanent false reds
+          # (runs 40318446316, 41255995639).
           # --timeout/--retry-wait-time/--max-retries: widened from lychee 20s defaults for
           # slow hosts. openhumanitiesdata.metajnl.com still TIMED OUT under 30s×2 retries
           # on the 28-07-2026 weekly run (run 30335396092) — excluded below as flaky, not
@@ -78,12 +84,6 @@ jobs:
             --exclude "hss\.iitb\.ac\.in"
             --exclude "dch\.phil-fak\.uni-koeln\.de"
             --exclude "openhumanitiesdata\.metajnl\.com"
-            # Scope to SITE content: the whole-repo glob also swept the agent
-            # journal (.ai_state.md), frozen findings reports (BUGHUNT-*,
-            # scripts/out/H*.md) and the CHANGELOG, whose historical links
-            # (private-hub blobs, dead PD branch files) are records, not
-            # rot candidates — they produced permanent false reds
-            # (runs 40318446316, 41255995639).
             "./docs/**/*.md"
             "./docs/**/*.mdx"
             "./blog/**/*.md"

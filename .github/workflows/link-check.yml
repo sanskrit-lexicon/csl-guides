@@ -78,8 +78,17 @@ jobs:
             --exclude "hss\.iitb\.ac\.in"
             --exclude "dch\.phil-fak\.uni-koeln\.de"
             --exclude "openhumanitiesdata\.metajnl\.com"
-            "./**/*.md"
-            "./**/*.mdx"
+            # Scope to SITE content: the whole-repo glob also swept the agent
+            # journal (.ai_state.md), frozen findings reports (BUGHUNT-*,
+            # scripts/out/H*.md) and the CHANGELOG, whose historical links
+            # (private-hub blobs, dead PD branch files) are records, not
+            # rot candidates — they produced permanent false reds
+            # (runs 40318446316, 41255995639).
+            "./docs/**/*.md"
+            "./docs/**/*.mdx"
+            "./blog/**/*.md"
+            "./src/**/*.mdx"
+            "./README.md"
           fail: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

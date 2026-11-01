@@ -19,7 +19,7 @@ How Cologne dictionary **front matter** (title pages, prefaces/forewords, abbrev
 | Pipeline | Skill / code | Input | Output | Role |
 |---|---|---|---|---|
 | **CDSL front matter** | `/cologne-preface-ocr` (Claude Code command + Codex twin) | csldoc **PNG** scans | per-dict `prefaces/` (source + EN/RU + `*_all.*`) | **Production** path for Cologne dicts |
-| **PD (Deccan College)** | [`PD/run_ocr.py`](https://github.com/sanskrit-lexicon/PD/blob/main/run_ocr.py) on branch `feat/ocr-v2-pipeline` | local **PDF** front matter | `GA.md`, `AUB.md`, `RG.md`, `SWC.md`, `AOB.md` in [PD](https://github.com/sanskrit-lexicon/PD) | Separate corpus; Tesseract crop-then-OCR |
+| **PD (Deccan College)** | `PD/run_ocr.py` (PD working file, branch no longer published) on branch `feat/ocr-v2-pipeline` | local **PDF** front matter | `GA.md`, `AUB.md`, `RG.md`, `SWC.md`, `AOB.md` in [PD](https://github.com/sanskrit-lexicon/PD) | Separate corpus; Tesseract crop-then-OCR |
 
 Do **not** treat the PD branch as a rename of the CDSL skill. They share *layout ideas* (crop-then-OCR, column modes); they do not share the same authoring engine for Cologne scans.
 
@@ -74,7 +74,7 @@ flowchart LR
 | Diacritic-only key mismatch | Expected B weakness — do not “fix” A toward B |
 | B-only “Institute of Indology…” | Digitizer stamp — ignore (A correctly omits) |
 
-Reference tooling: [`PD/compare_pwg_a_vs_b.py`](https://github.com/sanskrit-lexicon/PD/blob/main/compare_pwg_a_vs_b.py). Full phase text lives in the skill runbook (Claude: `~/.claude/commands/cologne-preface-ocr.md`; Codex: `~/.codex/skills/cologne-preface-ocr/`).
+Reference tooling: `PD/compare_pwg_a_vs_b.py` (PD working file, branch no longer published). Full phase text lives in the skill runbook (Claude: `~/.claude/commands/cologne-preface-ocr.md`; Codex: `~/.codex/skills/cologne-preface-ocr/`).
 
 **Bounded sample quality probe (PWG + PW, 24-07-2026):** pre-registered 15-page stratified sample + scan-locus table + DE↔EN sense check — [H1559 report](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/out/H1559_pref_ocr_en_sample_error_rates_24.07.2026.md) (runner: [`scripts/pref_ocr_en_quality_probe.py`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/pref_ocr_en_quality_probe.py)). Dual-pass is A-vs-B only; scan-locus is the honest gold-vs-print probe.
 
@@ -168,7 +168,7 @@ Local-only staging under the `GitHub/` meta-tree is obsolete for GST/PGN/SNP/LAN
 
 | Work | Location | Notes |
 |---|---|---|
-| PWG A vs B bake-off | [COMPARISON_PWG_OCR_A_VS_B.md](https://github.com/sanskrit-lexicon/PD/blob/main/COMPARISON_PWG_OCR_A_VS_B.md), `PD/pwg_a_vs_b/`, [`compare_pwg_a_vs_b.py`](https://github.com/sanskrit-lexicon/PD/blob/main/compare_pwg_a_vs_b.py) | Sample pages only; confirms A remains gold for PWG |
+| PWG A vs B bake-off | [COMPARISON_PWG_OCR_A_VS_B.md](https://github.com/sanskrit-lexicon/PD/blob/main/COMPARISON_PWG_OCR_A_VS_B.md), `PD/pwg_a_vs_b/`, `compare_pwg_a_vs_b.py` (PD working file, branch no longer published) | Sample pages only; confirms A remains gold for PWG |
 | Phase 3.5 audit design | skill runbook + this page | B as comparison layer after Claude Code drafts |
 | Skill + public index updates | `/cologne-preface-ocr`, ocr-prefaces | Inventory refresh, dual-engine wording, partial-residue census |
 

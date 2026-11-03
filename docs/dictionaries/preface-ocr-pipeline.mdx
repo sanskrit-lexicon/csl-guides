@@ -46,7 +46,7 @@ flowchart LR
 | **A** | Vision band OCR | **Yes** | Native-resolution crops (≤ ~1900 px/side) → vision model → faithful transcription |
 | **B** | Tesseract crop-then-OCR (Grok/PD family) | **No** (audit only on CDSL) | Tesseract `deu|eng|san` on column bands; metrics vs A |
 
-**Hard rule:** never auto-promote B text into `<code>prefNN.md`. B may disagree and still be wrong (especially title names and diacritic-heavy abbreviation keys). Evidence: [PWG A vs B comparison](https://github.com/sanskrit-lexicon/PD/blob/main/COMPARISON_PWG_OCR_A_VS_B.md) (mean Jaccard ~0.51 vs A as gold; prose best, abbrev/title worst).
+**Hard rule:** never auto-promote B text into `<code>prefNN.md`. B may disagree and still be wrong (especially title names and diacritic-heavy abbreviation keys). Evidence: PWG A vs B comparison (the comparison file lived on the since-deleted PD branch `feat/ocr-v2-pipe` and is no longer published) (mean Jaccard ~0.51 vs A as gold; prose best, abbrev/title worst).
 
 ---
 

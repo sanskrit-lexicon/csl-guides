@@ -5,7 +5,7 @@
   "source": {
     "repo": "sanskrit-lexicon/csl-atlas",
     "path": "data/pd/pd_sense_order_compare_summary.json",
-    "sha256": "27cc5a2b1700231dd234b999f32f70dca5bf0dfcfa7baf74183f5ada2dbd0e1d",
+    "sha256": "ac5fa914c62e0b6fa2dc96e712021d4c560eff65ba21e4899d62b0d1b9030f6e",
     "report": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/reports/PD_SENSE_ORDER_COMPARE_2026.md",
     "builder": "https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/pd_sense_order_compare.py",
     "handoff": "H7116"

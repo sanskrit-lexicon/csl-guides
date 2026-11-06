@@ -7,7 +7,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.15.0] - 2026-11-06
 
 ### Added
 - **Docs best-practices gate + print stylesheet** (2026-11-06): `npm run check:best-practices` ([scripts/check-best-practices.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/check-best-practices.mjs)) — a stdlib-node guard in the repo's `check:` idiom auditing the 110 public docs pages for: the `_Created · Last updated` date line (repo convention, see [docs/faq.md](https://github.com/sanskrit-lexicon/csl-guides/blob/main/docs/faq.md)), sidebar reachability (frontmatter `id:` OR path-based id — the dual resolution the build already relies on), empty-alt images, and citations of the private `gasyoun/Uprava` / `gasyoun/prefaces_ieg` repos (H1738 policy: public pages don't cite private repos). Wired into CI as a cheap deterministic step after `npm ci`. Plus an `@media print` path in [src/css/custom.css](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/css/custom.css): chrome hidden, tables/code kept off page breaks, external link targets printed after the anchor text — mobile is already covered by Docusaurus's responsive layout. Audit at intro: 81 pages missing date lines, 8 private-repo citations; both zero now. GLM-5.3-Flash (ZCode interactive session).

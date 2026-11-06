@@ -1,3 +1,5 @@
+_Created: 24-07-2026 · Last updated: 06-11-2026_
+
 # Prefaces as enrichment: proposal and use cases
 
 _Created: 24-07-2026 · Last updated: 06-08-2026 (H2279: MW-struck reason investigated and documented)_

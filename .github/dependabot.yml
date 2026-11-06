@@ -17,3 +17,9 @@ updates:
       time: "08:00"
       timezone: Europe/Moscow
     open-pull-requests-limit: 5
+    ignore:
+      # @docusaurus/theme-mermaid@3.10.2 peers on @mermaid-js/layout-elk
+      # ^0.1.x — the 1.x line fails `npm ci` with ERESOLVE (PR #214). Revisit
+      # when the Docusaurus theme ships 1.x-compatible peers.
+      - dependency-name: "@mermaid-js/layout-elk"
+        versions: [">=1.0"]

@@ -7,7 +7,7 @@ sidebar_label: Shared tasks
 
 # Shared tasks & leaderboard
 
-_Created: 07-07-2026 · Last updated: 07-07-2026_
+_Created: 07-07-2026 · Last updated: 06-11-2026_
 
 Computational lexicography moves fastest where there is a **shared task**: a fixed public
 benchmark, a fixed metric, and a leaderboard anyone can join (the model here is the ACL
@@ -94,7 +94,7 @@ leaderboard with one degenerate submission. Interest / discussion → the
 ---
 
 **Provenance.** Tasks designed 07-07-2026 by Fable 5 (`claude-fable-5`) under handoff
-[H281](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H281-Fable_csl-guides_guides_stream4_acl_uplift_07.07.26.md)
+H281
 (Stream 4, ACL-standards uplift). Task-1 numbers are reproducible from
 [routing-benchmark.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/routing-benchmark.json)
 and the committed scorer.

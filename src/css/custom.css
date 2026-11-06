@@ -103,3 +103,35 @@
   --ifm-color-primary-lightest: #f3dcc6;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Print path for the guides: any page prints cleanly without chrome (navbar,
+   sidebar, TOC, pagination, footer). Tables and code avoid mid-block breaks;
+   external link targets print after the anchor text. Mobile stays covered by
+   Docusaurus's built-in responsive layout. */
+@media print {
+  .navbar,
+  .footer,
+  .theme-doc-sidebar-container,
+  .table-of-contents,
+  .pagination-nav {
+    display: none;
+  }
+  .main-wrapper main {
+    max-width: 100%;
+  }
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  a {
+    text-decoration: none;
+  }
+  .markdown a[href^='http']::after {
+    content: ' (' attr(href) ')';
+    font-size: 0.75em;
+  }
+}

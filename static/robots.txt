@@ -1,0 +1,9 @@
+# robots.txt for https://sanskrit-lexicon.github.io/csl-guides/
+# The host-root robots.txt (sanskrit-lexicon.github.io/robots.txt) is the authoritative
+# robots file for every crawler on this host (RFC 9309: robots are fetched at the host
+# root only). This copy exists for per-path probes and self-documentation; it repeats
+# the allow-all policy and advertises this site's Docusaurus-generated sitemap.
+User-agent: *
+Allow: /
+
+Sitemap: https://sanskrit-lexicon.github.io/csl-guides/sitemap.xml

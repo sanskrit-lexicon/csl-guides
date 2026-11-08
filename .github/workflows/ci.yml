@@ -64,6 +64,16 @@ jobs:
         run: npm run check:pref-legend
       - name: Build site
         run: npm run build
+      # H7903 acceptance gate: every built page - including the ones Docusaurus
+      # generates from plugin data (blog tag pages, search) plus 404 and the
+      # static newsletter redirect - must carry one non-empty og:description and
+      # one non-empty name="description". plugin-content-blog has no option that
+      # reaches those routes (blogDescription feeds only the paginated blog
+      # list; a tags file would need hand-written prose per tag), so
+      # plugins/og-cards derives one from each page's own <h1> + the site
+      # title/tagline. The census is the gate that catches a regression.
+      - name: Check every built page carries an og:description
+        run: npm run check:og-description
       # H3340 acceptance proof: Thier->Tier through the real lunr + the
       # normalized query path is what actually shipped in the bundle.
       - name: Verify ortho-drift search normalization

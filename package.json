@@ -24,6 +24,7 @@
     "check:vedic-accent": "node scripts/build-vedic-accent.mjs --check",
     "check:contracts": "node scripts/check-contracts.mjs",
     "check:best-practices": "node scripts/check-best-practices.mjs",
+    "check:og-description": "node scripts/og-description-census.mjs",
     "verify:atlas-viz": "node scripts/verify-atlas-viz.mjs",
     "normalize:quiz-positions": "node scripts/normalize-quiz-answer-positions.mjs",
     "check:quiz-positions": "node scripts/normalize-quiz-answer-positions.mjs --check",

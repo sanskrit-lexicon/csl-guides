@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 17-06-2026 · Last updated: 05-09-2026_
+_Created: 17-06-2026 · Last updated: 08-11-2026_
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
@@ -37,7 +37,8 @@ Every vendored feed pins the SHA-256 (or a field-by-field projection) of the ups
 it was built from, and each has a `--check` mode. Two wiring rules decide where a gate runs:
 
 - **Sibling-free gates run in CI** — `check:ortho-edge`, `check:quiz-positions`,
-  `check:pref-legend`, plus the bundle-level `verify:*` checks.
+  `check:pref-legend`, `check:og-description` (built pages, after the build), plus the
+  bundle-level `verify:*` checks.
 - **Sibling-dependent gates cannot**: GitHub Actions checks out this repo only, so
   `check:atlas-viz`, `check:heritage-coverage`, `check:corpus-frequency` and
   `check:vedic-accent` exit 1 there. They run through `npm run check:contracts`, which resolves

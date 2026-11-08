@@ -12,6 +12,14 @@
 // label, and every page gains the social tags Docusaurus does not emit -
 // og:site_name, og:type, og:image:alt, og:image:width/height, twitter:site,
 // twitter:title, twitter:description.
+//
+// v0.3 (H7903): every page that carries NO description at all - the routes
+// Docusaurus generates from plugin data (blog tag list + tag post pages, the
+// ejected search page), 404, and the static newsletter redirect - gets one
+// derived here from its own <h1> plus the configured site title/tagline.
+// No blog-plugin option reaches those routes (blogDescription feeds only the
+// paginated blog list, the tags file needs hand-written prose per tag), so the
+// postBuild pass owns it. Guarded by scripts/og-description-census.mjs.
 
 const fs = require('fs');
 const path = require('path');
@@ -78,6 +86,36 @@ function pageTitle(html, siteTitle) {
   const suffix = ' | ' + siteTitle;
   if (text.endsWith(suffix)) text = text.slice(0, -suffix.length);
   return text.trim() || siteTitle;
+}
+
+// Visible page heading, entity-decoded and tag-stripped. The plugin-generated
+// routes have no frontmatter description, but their own <h1> is a page-specific
+// string that comes from page data rather than from prose typed for SEO.
+function pageHeading(html) {
+  const m = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
+  if (!m) return '';
+  return decodeEntities(m[1].replace(/<[^>]*>/g, ' '))
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// Site-level half of a derived description: configured title + configured
+// tagline, joined so the pair reads as one sentence. Both come from
+// docusaurus.config.js, so the suffix cannot drift from the site it describes.
+function siteDescriptionSuffix(siteConfig) {
+  const tagline = String(siteConfig.tagline || '').trim();
+  if (!tagline) return siteConfig.title;
+  return siteConfig.title + ', ' + tagline.charAt(0).toLowerCase() + tagline.slice(1);
+}
+
+// Description for a page that carries none: "<h1> — <site title>, <tagline>",
+// falling back to the page title when there is no <h1>, and to the site line
+// alone when there is neither. Deterministic from page data - no per-route
+// hand-authored prose, so a new tag page needs no edit here.
+function derivedDescription(html, siteConfig) {
+  const suffix = siteDescriptionSuffix(siteConfig);
+  const heading = pageHeading(html) || pageTitle(html, siteConfig.title);
+  return heading && heading !== siteConfig.title ? heading + ' — ' + suffix : suffix;
 }
 
 // Card slug: deterministic, filesystem-safe, collision-proof (page path plus a
@@ -149,6 +187,7 @@ async function postBuild({ siteConfig, outDir }) {
   const files = [];
   collectHtmlFiles(outDir, files);
   let cards = 0;
+  let derived = 0;
   for (const file of files) {
     const pagePath = pagePathOf(outDir, file);
     const is404 = pagePath === '404';
@@ -180,10 +219,19 @@ async function postBuild({ siteConfig, outDir }) {
       cards = cards + 1;
     }
 
+    // H7903: routes Docusaurus generates from plugin data (blog tag pages, the
+    // ejected search page), 404 and the static newsletter redirect carry no
+    // description at all. Derive one from the page's own heading; ensureMeta is
+    // idempotent, so a page that already has either tag keeps its own text.
+    const pageDescription = description || derivedDescription(html, siteConfig);
+    if (!description) derived = derived + 1;
+    out = ensureMeta(out, 'description', 'name', pageDescription);
+    out = ensureMeta(out, 'og:description', 'property', pageDescription);
+
     // Social tags Docusaurus 3.10 does not emit (GitHub does; a missing alt
     // costs accessibility, missing dimensions cost a fetch per unfurl).
     const fullTitle = siteConfig.title;
-    const altText = description ? titleText + ' — ' + fullTitle : titleText;
+    const altText = pageDescription ? titleText + ' — ' + fullTitle : titleText;
     out = ensureMeta(out, 'og:site_name', 'property', fullTitle);
     out = ensureMeta(out, 'og:type', 'property', 'website');
     out = ensureMeta(out, 'og:image:alt', 'property', altText);
@@ -191,7 +239,7 @@ async function postBuild({ siteConfig, outDir }) {
     out = ensureMeta(out, 'og:image:height', 'property', '630');
     out = ensureMeta(out, 'twitter:site', 'name', TWITTER_SITE);
     out = ensureMeta(out, 'twitter:title', 'name', titleText);
-    if (description) out = ensureMeta(out, 'twitter:description', 'name', description);
+    out = ensureMeta(out, 'twitter:description', 'name', pageDescription);
 
     fs.writeFileSync(file, out);
   }
@@ -202,6 +250,9 @@ async function postBuild({ siteConfig, outDir }) {
     throw new Error('og-cards: no pages rendered - collector or title extraction is broken');
   }
   console.log('og-cards: rendered ' + cards + ' per-page OG cards');
+  console.log(
+    'og-cards: derived a description for ' + derived + ' page(s) that carried none',
+  );
 }
 
 module.exports = function ogCardsPlugin() {

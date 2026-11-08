@@ -7,18 +7,30 @@
 // card (404) keep the sitewide themeConfig.image fallback. docs/internal is
 // excluded from the build upstream (docusaurus.config.js), so no internal
 // page ever gets a card.
+//
+// v0.2 (H7886 follow-up): the card gains the page description and a section
+// label, and every page gains the social tags Docusaurus does not emit -
+// og:site_name, og:type, og:image:alt, og:image:width/height, twitter:site,
+// twitter:title, twitter:description.
 
 const fs = require('fs');
 const path = require('path');
 const { renderCard } = require('./renderCard');
 
+const TWITTER_SITE = '@sanskritlexicon';
+
+// Numeric character references (&#39;, &#x2014;, ...) plus the five named
+// entities. Docusaurus emits numeric ones for apostrophes and dashes, so the
+// old five-entity decoder left "&#x27;" inside card text.
 function decodeEntities(s) {
   return s
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, dec) => String.fromCodePoint(parseInt(dec, 10)))
     .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
     .replace(/&quot;/g, '"')
-    .replace(/&#x27;/g, "'");
+    .replace(/&apos;/g, "'");
 }
 
 function escapeHtml(s) {
@@ -47,24 +59,6 @@ function pagePathOf(outDir, file) {
   return rel.replace(/\.html$/, '');
 }
 
-// Deterministic, filesystem-safe slug for a page path: the readable path with
-// separators collapsed, plus a short content hash of the path so that
-// 'a/b' and 'a-b' can never collide. Deterministic means an unchanged page
-// keeps the same card URL across rebuilds.
-function cardSlug(pagePath) {
-  const readable =
-    pagePath
-      .split('/')
-      .filter(Boolean)
-      .join('-')
-      .toLowerCase()
-      .replace(/[^a-z0-9-]+/g, '-')
-      .replace(/-+/g, '-')
-      .replace(/^-|-$/g, '') || 'home';
-  const hash = require('crypto').createHash('sha1').update(pagePath).digest('hex').slice(0, 6);
-  return readable + '-' + hash;
-}
-
 // Read one <meta> content by key. Docusaurus emits `data-rh="true"` first and
 // may order content before property, so the tag is matched whole and the
 // content attribute extracted from it rather than assumed adjacent.
@@ -86,6 +80,40 @@ function pageTitle(html, siteTitle) {
   return text.trim() || siteTitle;
 }
 
+// Card slug: deterministic, filesystem-safe, collision-proof (page path plus a
+// short hash of the path, so 'a/b' and 'a-b' cannot collide).
+function cardSlug(pagePath) {
+  const readable =
+    pagePath
+      .split('/')
+      .filter(Boolean)
+      .join('-')
+      .toLowerCase()
+      .replace(/[^a-z0-9-]+/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-|-$/g, '') || 'home';
+  const hash = require('crypto').createHash('sha1').update(pagePath).digest('hex').slice(0, 6);
+  return readable + '-' + hash;
+}
+
+const SECTION_LABELS = {
+  '': 'HOME',
+  news: 'NEWS',
+  newsletter: 'NEWSLETTER',
+  dictionaries: 'DICTIONARIES',
+  tools: 'TOOLS',
+  users: 'USER GUIDES',
+  developers: 'DEVELOPERS',
+  about: 'ABOUT',
+  contributing: 'CONTRIBUTING',
+  search: 'SEARCH',
+};
+
+function sectionLabel(pagePath) {
+  const first = pagePath.split('/').filter(Boolean)[0] || '';
+  return SECTION_LABELS[first] || first.replace(/-/g, ' ').toUpperCase();
+}
+
 // Rewrite the content of the first matching <meta> in place, keeping the tag's
 // own attributes (data-rh included) so the page never carries two og:image
 // tags - crawlers use the first one, so a duplicate would silently win over
@@ -104,6 +132,14 @@ function setMetaContent(html, key, attr, value) {
   return html.replace(tag, replaced);
 }
 
+// Insert a tag only when the page does not carry it yet.
+function ensureMeta(html, key, attr, value) {
+  const tagRe = new RegExp('<meta[^>]*' + attr + '="' + key + '"[^>]*>', 'i');
+  if (tagRe.test(html)) return html;
+  const fresh = '<meta ' + attr + '="' + key + '" content="' + escapeHtml(value) + '" />';
+  return html.replace('</head>', fresh + '\n    </head>');
+}
+
 async function postBuild({ siteConfig, outDir }) {
   const url = String(siteConfig.url).replace(/\/+$/, '');
   const baseUrl = siteConfig.baseUrl;
@@ -115,25 +151,49 @@ async function postBuild({ siteConfig, outDir }) {
   let cards = 0;
   for (const file of files) {
     const pagePath = pagePathOf(outDir, file);
-    if (pagePath === '404') continue; // sitewide fallback card stays
+    const is404 = pagePath === '404';
     if (pagePath.split('/').includes('internal')) continue; // belt+braces
     const html = fs.readFileSync(file, 'utf8');
     const titleText = pageTitle(html, siteConfig.title);
-    const slug = cardSlug(pagePath);
-    const imageUrl = url + baseUrl + 'og-cards/' + slug + '.png';
-    const png = await renderCard(titleText);
-    fs.writeFileSync(path.join(cardsDir, slug + '.png'), png);
+    const description = metaContent(html, 'og:description') || metaContent(html, 'description') || '';
     let out = html;
-    out = setMetaContent(out, 'og:image', 'property', imageUrl);
-    out = setMetaContent(out, 'twitter:image', 'name', imageUrl);
-    if (!/<meta[^>]*name="twitter:card"[^>]*>/i.test(out)) {
-      out = out.replace(
-        '</head>',
-        '<meta name="twitter:card" content="summary_large_image" />\n    </head>',
-      );
+
+    if (!is404) {
+      const slug = cardSlug(pagePath);
+      const imageUrl = url + baseUrl + 'og-cards/' + slug + '.png';
+      // The home page title IS the site name, which the brand row already
+      // carries; a description there would repeat the brand a third time.
+      const cardDescription = pagePath === '' ? '' : description;
+      const png = await renderCard(titleText, {
+        description: cardDescription,
+        section: sectionLabel(pagePath),
+      });
+      fs.writeFileSync(path.join(cardsDir, slug + '.png'), png);
+      out = setMetaContent(out, 'og:image', 'property', imageUrl);
+      out = setMetaContent(out, 'twitter:image', 'name', imageUrl);
+      if (!/<meta[^>]*name="twitter:card"[^>]*>/i.test(out)) {
+        out = out.replace(
+          '</head>',
+          '<meta name="twitter:card" content="summary_large_image" />\n    </head>',
+        );
+      }
+      cards = cards + 1;
     }
+
+    // Social tags Docusaurus 3.10 does not emit (GitHub does; a missing alt
+    // costs accessibility, missing dimensions cost a fetch per unfurl).
+    const fullTitle = siteConfig.title;
+    const altText = description ? titleText + ' — ' + fullTitle : titleText;
+    out = ensureMeta(out, 'og:site_name', 'property', fullTitle);
+    out = ensureMeta(out, 'og:type', 'property', 'website');
+    out = ensureMeta(out, 'og:image:alt', 'property', altText);
+    out = ensureMeta(out, 'og:image:width', 'property', '1200');
+    out = ensureMeta(out, 'og:image:height', 'property', '630');
+    out = ensureMeta(out, 'twitter:site', 'name', TWITTER_SITE);
+    out = ensureMeta(out, 'twitter:title', 'name', titleText);
+    if (description) out = ensureMeta(out, 'twitter:description', 'name', description);
+
     fs.writeFileSync(file, out);
-    cards = cards + 1;
   }
   // Fail loudly rather than silently shipping pages whose OG card is still the
   // sitewide fallback: a render pass that produced nothing means the page

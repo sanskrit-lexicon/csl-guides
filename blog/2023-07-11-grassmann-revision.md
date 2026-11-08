@@ -1,6 +1,7 @@
 ---
 slug: grassmann-revision
 title: "Grassmann dictionary: major markup revision"
+description: "A major markup revision of the CDSL digitization of Grassmann Worterbuch zum Rig-Veda (GRA)."
 authors: []
 tags: [dictionaries, markup]
 ---

@@ -1,6 +1,7 @@
 ---
 slug: mw-paninian-links
 title: "Pāṇinian links added to Monier-Williams"
+description: "Paninian references in the Monier-Williams dictionary (MW) are now linked, connecting entries to the grammar rules they cite."
 authors: []
 tags: [dictionaries, markup]
 ---

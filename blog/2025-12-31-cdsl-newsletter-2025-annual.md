@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2025-annual
 title: "CDSL 2025 Year in Review"
+description: "CDSL 2025: the Frisch Sanskrit Reader joins the collection and the PWG link-splitting programme resolves dozens of compound references."
 authors: []
 tags: [newsletter]
 date: 2025-12-31

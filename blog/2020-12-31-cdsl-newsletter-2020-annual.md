@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2020-annual
 title: "CDSL 2020 Year in Review"
+description: "CDSL 2020: English text corrections completed across many dictionaries, a growing Python toolchain, and the first public data releases."
 authors: []
 tags: [newsletter]
 date: 2020-12-31

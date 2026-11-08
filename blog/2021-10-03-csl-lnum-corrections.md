@@ -1,6 +1,7 @@
 ---
 slug: csl-lnum-corrections
 title: "csl-lnum: submit corrections as pull requests"
+description: "csl-lnum: submit corrections to Monier-Williams line numbers as pull requests and track their acceptance."
 authors: []
 tags: [contributing, tools]
 ---

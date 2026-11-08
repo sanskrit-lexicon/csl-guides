@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2015-annual
 title: "CDSL 2015 Year in Review"
+description: "CDSL 2015: early GitHub infrastructure - initial COLOGNE documentation and the first tooling enhancements in the project public repositories."
 authors: []
 tags: [newsletter]
 date: 2015-12-31

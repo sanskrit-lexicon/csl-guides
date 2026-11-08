@@ -64,6 +64,9 @@ const config = {
         docs: {
           routeBasePath: '/', // serve docs at the site root
           sidebarPath: './sidebars.js',
+          // H7886 (MG verdict Q6): internal working docs never build publicly.
+          // Replaces the per-page `unlisted: true` belt of docs/internal/*.
+          exclude: ['internal/**'],
           // Surface each page's git "last updated" date. Needs full git history at build
           // time (fetch-depth: 0 in deploy.yml) or every page shows the same commit date.
           // The date is moved to the top-right of the page by src/theme/DocItem/Content;
@@ -91,6 +94,11 @@ const config = {
         },
       }),
     ],
+  ],
+
+  plugins: [
+    // H7886 — per-page OG social cards (build-time, 1200x630, Charis SIL).
+    './plugins/og-cards',
   ],
 
   themeConfig:

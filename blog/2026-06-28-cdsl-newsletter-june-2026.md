@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2026-06
 title: "CDSL Newsletter — June 2026"
+description: "The June 2026 edition of the Cologne Digital Sanskrit Dictionaries newsletter - for scholars, students, and dictionary enthusiasts."
 authors: []
 tags: [newsletter]
 date: 2026-06-28

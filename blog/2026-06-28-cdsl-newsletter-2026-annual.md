@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2026-annual
 title: "CDSL 2026 Year in Review (January–June)"
+description: "First half of 2026: a comprehensive new documentation site, preface texts for sixteen dictionaries, and a heavy corrections programme."
 authors: []
 tags: [newsletter]
 date: 2026-06-28

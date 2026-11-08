@@ -1,6 +1,7 @@
 ---
 slug: csl-devanagari
 title: "csl-devanagari — output closer to the printed text"
+description: "csl-devanagari: Cologne output closer to the printed Devanagari text - a new display layer made in response to a user request."
 authors: []
 tags: [data, encoding]
 ---

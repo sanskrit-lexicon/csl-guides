@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2016-annual
 title: "CDSL 2016 Year in Review"
+description: "CDSL 2016: visible improvements to the CDSL web interface and the first tracked data work in the Monier-Williams repository."
 authors: []
 tags: [newsletter]
 date: 2016-12-31

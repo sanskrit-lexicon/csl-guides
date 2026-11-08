@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2017-annual
 title: "CDSL 2017 Year in Review"
+description: "CDSL 2017: steady development on the Cologne Digital Sanskrit Dictionaries while GitHub commit activity was sparse."
 authors: []
 tags: [newsletter]
 date: 2017-12-31

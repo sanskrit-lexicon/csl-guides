@@ -1,3 +1,8 @@
+---
+title: "Pref keys and body .txt naming authority"
+description: "Ruling on naming authority between dictionary pref keys and body .txt files: the one-name rule, how it is applied, and documented exceptions."
+---
+
 # Pref keys ↔ body `.txt` naming authority
 
 _Created: 24-07-2026 · Last updated: 06-11-2026_

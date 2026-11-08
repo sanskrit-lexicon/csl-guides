@@ -1,6 +1,7 @@
 ---
 slug: pali-dictionary-link
 title: "Pali dictionary link added to the home page"
+description: "A link to the DSAL Pali dictionary now sits on the CDSL home page, complementing the Sanskrit dictionaries."
 authors: []
 tags: [site]
 ---

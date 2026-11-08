@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2019-annual
 title: "CDSL 2019 Year in Review"
+description: "CDSL 2019: the REST API launched, corrections tracking moved fully to GitHub, and the web display received important improvements."
 authors: []
 tags: [newsletter]
 date: 2019-12-31

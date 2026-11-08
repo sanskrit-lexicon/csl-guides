@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2022-annual
 title: "CDSL 2022 Year in Review"
+description: "CDSL 2022: a full run of monthly newsletters, a new dictionary added, major Monier-Williams markup work, and more."
 authors: []
 tags: [newsletter]
 date: 2022-12-31

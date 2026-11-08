@@ -1,3 +1,8 @@
+---
+title: "Prefaces as enrichment: proposal and use cases"
+description: "Proposal and use cases for enriching dictionary preface front matter with structured metadata - status, related pipeline docs, and issue #123."
+---
+
 _Created: 24-07-2026 · Last updated: 06-11-2026_
 
 # Prefaces as enrichment: proposal and use cases

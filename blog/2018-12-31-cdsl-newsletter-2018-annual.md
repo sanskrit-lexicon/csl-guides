@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2018-annual
 title: "CDSL 2018 Year in Review"
+description: "CDSL 2018: continued development and data maintenance, preparing the infrastructure that led to the launch of the modern Cologne web display."
 authors: []
 tags: [newsletter]
 date: 2018-12-31

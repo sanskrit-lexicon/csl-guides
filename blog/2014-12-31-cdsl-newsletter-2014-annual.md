@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2014-annual
 title: "CDSL 2014 Year in Review"
+description: "How CDSL began: the GitHub organisation founded in January 2014 and the first repositories for the Monier-Williams and Cologne data work."
 authors: []
 tags: [newsletter]
 date: 2014-12-31

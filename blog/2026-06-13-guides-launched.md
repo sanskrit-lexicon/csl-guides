@@ -1,6 +1,7 @@
 ---
 slug: guides-scaffolded
 title: Documentation site scaffolded
+description: "The CDSL guides site is scaffolded with Docusaurus, covering five sections for users, contributors, and developers."
 authors: []
 tags: [docs]
 ---

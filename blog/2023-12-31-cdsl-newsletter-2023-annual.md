@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2023-annual
 title: "CDSL 2023 Year in Review"
+description: "CDSL 2023: Grassmann revision, the L.R. Vaidya dictionary formally installed, and over 1,100 user corrections applied."
 authors: []
 tags: [newsletter]
 date: 2023-12-31

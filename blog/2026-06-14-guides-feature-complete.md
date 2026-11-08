@@ -1,6 +1,7 @@
 ---
 slug: guides-feature-complete
 title: "Guides: auto-generated catalog, search, and display screenshots"
+description: "The CDSL guides now ship an auto-generated dictionary catalog, site-wide search, and display screenshots."
 authors: []
 tags: [docs, release]
 ---

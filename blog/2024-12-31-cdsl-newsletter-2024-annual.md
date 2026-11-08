@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2024-annual
 title: "CDSL 2024 Year in Review"
+description: "CDSL 2024: XML conversion of ten dictionaries to the modern Lbody standard, Monier-Williams work, and continued structural progress."
 authors: []
 tags: [newsletter]
 date: 2024-12-31

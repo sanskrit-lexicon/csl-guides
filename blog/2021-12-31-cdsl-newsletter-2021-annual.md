@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2021-annual
 title: "CDSL 2021 Year in Review"
+description: "CDSL 2021: the Devanagari display layer launched, Boehtlingk Indische Spruche entered preparation, and GitHub activity peaked."
 authors: []
 tags: [newsletter]
 date: 2021-12-31

@@ -1,6 +1,7 @@
 ---
 slug: comparison-and-mw-quizzes
 title: "Compare dictionaries side by side, and learn to read Monier-Williams"
+description: "Two new guides features this cycle: a dictionary comparison page and new Monier-Williams quizzes."
 authors: []
 tags: [docs, release]
 ---

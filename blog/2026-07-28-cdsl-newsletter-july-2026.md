@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2026-07
 title: "CDSL Newsletter — July 2026"
+description: "The July 2026 edition of the Cologne monthly newsletter - corrections, data updates, and project news from the CDSL team."
 authors: []
 tags: [newsletter]
 date: 2026-07-28

@@ -1,6 +1,7 @@
 ---
 slug: newsletter-2026-11
 title: "CDSL Newsletter — November 2026"
+description: "The November 2026 edition of the CDSL newsletter (draft in preparation)."
 authors: []
 tags: [newsletter]
 date: 2026-11-30

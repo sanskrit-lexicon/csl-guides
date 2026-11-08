@@ -7,6 +7,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- **Per-page Open Graph cards, generated at build time** (2026-11-08, H7886): each of the 157 built pages now carries its own 1200×630 PNG `og:image` + `twitter:image` instead of the single sitewide card, rendered during Docusaurus `postBuild` by a local plugin ([plugins/og-cards](https://github.com/sanskrit-lexicon/csl-guides/blob/main/plugins/og-cards/index.js)) — ivory ground, Charis SIL title, saffron rule, small-caps brand line, via `satori` → `@resvg/resvg-js`; Charis SIL regular+bold and their SIL OFL 1.1 licence are vendored under [static/fonts](https://github.com/sanskrit-lexicon/csl-guides/tree/main/static/fonts). The meta tag is rewritten **in place**, so no page carries two `og:image` tags (crawlers take the first, which would have silently kept the sitewide card); `404.html` keeps that sitewide fallback; card slugs are deterministic (page path + short path hash), so an unchanged page keeps its card URL across rebuilds. IAST diacritics verified on real cards (`Abhidhānacintāmaṇi-pariśiṣṭa`, `Pāṇinian`, `Ṛgveda`). Proof cards committed under [docs/internal/evidence/H7886](https://github.com/sanskrit-lexicon/csl-guides/tree/main/docs/internal/evidence/H7886).
+- **Real `description:` frontmatter across the public site** (H7886): all 29 blog posts — which previously leaked the `_Created_` provenance line into `og:description` — and every public docs page; the only files still without one are under `docs/internal/**`, which no longer builds.
+- **`docs/internal/**` excluded from the public build** (H7886, MG verdict Q6): `presets.classic.docs.exclude: ['internal/**']` replaces the per-page `unlisted: true` belt; no `/internal/` route appears in `build/`.
+
 ## [0.15.0] - 2026-11-06
 
 ### Added

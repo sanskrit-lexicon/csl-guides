@@ -13,9 +13,8 @@ const GUIDE_PAGES = {
   MW: 'mw', MW72: 'mw72', AP90: 'ap90', AP: 'ap', WIL: 'wil', CAE: 'cae', MD: 'md',
   BEN: 'ben', YAT: 'yat', SHS: 'shs', GST: 'gst', LRV: 'lrv', AE: 'ae', BOR: 'bor',
   BOP: 'bop', BUR: 'bur', FRI: 'fri', LAN: 'lan', PWG: 'pwg', PW: 'pw', SCH: 'sch',
-  CCS: 'ccs', GRA: 'gra', BHS: 'bhs', STC: 'stc', MWE: 'mwe', SKD: 'skd', VCP: 'vcp',
-  ABCH: 'abch', ACPH: 'acph', ACSJ: 'acsj', ARMH: 'armh', NMMB: 'nmmb', KRM: 'krm',
-  PWKVN: 'pwkvn',
+  PWKVN: 'pwkvn', CCS: 'ccs', GRA: 'gra', BHS: 'bhs', STC: 'stc', MWE: 'mwe', SKD: 'skd', VCP: 'vcp',
+  NYBJ: 'nybj', ABCH: 'abch', ACPH: 'acph', ACSJ: 'acsj', ARMH: 'armh', NMMB: 'nmmb', KRM: 'krm',
   ACC: 'acc', IEG: 'ieg', INM: 'inm', MCI: 'mci', PE: 'pe', PGN: 'pgn', PUI: 'pui',
   SNP: 'snp', VEI: 'vei', PD: 'pd',
 };

@@ -1,10 +1,10 @@
 {
   "source": "per-dictionary abbreviation files in the sanskrit-lexicon org (see each dict sourceUrl)",
   "counts": {
-    "total": 44,
+    "total": 45,
     "withData": 18,
     "tokensOnly": 1,
-    "none": 25
+    "none": 26
   },
   "comparison": {
     "grammatical": [
@@ -22948,6 +22948,16 @@
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
     },
     {
+      "code": "NYBJ",
+      "title": "Nyāyakośa or",
+      "fullTitle": "Nyāyakośa or Dictionary of Technical Terms of Indian Philosophy",
+      "year": "1928",
+      "repoUrl": "",
+      "frontMatterUrl": "",
+      "status": "none",
+      "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."
+    },
+    {
       "code": "NMMB",
       "title": "Nāmamālikā of Bhoja",
       "fullTitle": "Nāmamālikā of Bhoja",
@@ -23315,7 +23325,7 @@
       "title": "The Purana Index",
       "fullTitle": "The Purana Index",
       "year": "1951",
-      "repoUrl": "",
+      "repoUrl": "https://github.com/sanskrit-lexicon/PUI",
       "frontMatterUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/pui.rst",
       "status": "none",
       "note": "No machine-readable abbreviation list yet; the legend lives in the scanned front matter."

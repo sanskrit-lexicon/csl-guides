@@ -58,7 +58,7 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^19.2.7",
     "react-dom": "^19.3.1",
-    "satori": "^0.13.1",
+    "satori": "^0.63.2",
     "unist-util-visit": "^5.2.0"
   },
   "devDependencies": {

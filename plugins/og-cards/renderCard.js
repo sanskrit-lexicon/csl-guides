@@ -35,14 +35,16 @@ function loadFonts() {
   return fontCache;
 }
 
-// The site's own logo, rasterized once at 2x and inlined as a data URI. satori
-// renders images, not SVG documents, so the SVG is pre-rendered with resvg.
+// The site mark, committed as a rasterised PNG (static/img/logo-mark.png,
+// generated from logo.svg) rather than rendered from the SVG at build time:
+// that SVG draws सं with a <text> element, and resvg can only rasterise text
+// when the host has a Devanagari font. macOS does; the GitHub Actions Ubuntu
+// runner does not, so the v3 build shipped tofu boxes on every card. A
+// committed PNG has no font dependency at all.
 function loadLogo() {
   if (logoCache) return logoCache;
-  const svg = fs.readFileSync(path.join(__dirname, '..', '..', 'static', 'img', 'logo.svg'), 'utf8');
-  const { Resvg } = require('@resvg/resvg-js');
-  const png = new Resvg(svg, { fitTo: { mode: 'width', value: 200 } }).render().asPng();
-  logoCache = 'data:image/png;base64,' + Buffer.from(png).toString('base64');
+  const png = fs.readFileSync(path.join(__dirname, '..', '..', 'static', 'img', 'logo-mark.png'));
+  logoCache = 'data:image/png;base64,' + png.toString('base64');
   return logoCache;
 }
 

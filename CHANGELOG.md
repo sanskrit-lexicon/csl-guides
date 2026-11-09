@@ -1,6 +1,6 @@
 # Changelog
 
-_Created: 30-06-2026 · Last updated: 08-11-2026_
+_Created: 30-06-2026 · Last updated: 09-11-2026_
 
 All notable changes to this project will be documented in this file.
 
@@ -8,7 +8,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+<!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
+## [0.16.0] - 2026-11-09
 ### Changed
 - **The deploy refuses to publish an uncommitted catalogue** (2026-11-09, H7906): `deploy.yml` refreshed `src/data/dictionaries.json` from the live CDSL site into the runner's working tree and built from it, so the deployed card said **45 dictionaries** while `main` said 44. The first attempt was a write-back — commit the refresh, push, build the commit — and it exposed why that cannot work here: main requires the `Build Docusaurus (no deploy)` check, and a `GITHUB_TOKEN` push cannot satisfy it (`GH006: Protected branch update failed … Required status check is expected`), so the commit was refused and the deploy published the uncommitted number anyway. The deploy now restores the committed feed whenever the refresh differs from it and builds that, so the site and the commit agree **by construction**; freshness becomes a deliberate `npm run build:catalog` plus a checked PR (the 45-row refresh shipped as its own PR), not a side effect of deploying. The step emits an Actions `::warning` naming the drift, so the next deploy tells you the feed is stale.
 

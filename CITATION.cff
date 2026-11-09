@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+type: software
+title: "csl-guides — Cologne Digital Sanskrit Dictionaries: user, contributor, and developer guides"
+message: >
+  If you use these guides as documentation, cite this repository. If you use
+  the dictionary data the guides describe, cite the CDSL corpus umbrella DOI
+  10.5281/zenodo.21319331 (concept DOI of the csl-sqlite release corpus); an
+  individual dictionary is cited by its own Zenodo concept DOI, listed at
+  https://sanskrit-lexicon.github.io/cite.html.
+license: CC-BY-SA-4.0
+repository-code: https://github.com/sanskrit-lexicon/csl-guides
+url: https://sanskrit-lexicon.github.io/csl-guides/
+version: 0.15.0
+date-released: 2026-11-06
+abstract: >
+  Documentation site for the Cologne Digital Sanskrit Dictionaries (CDSL):
+  end-user guides, the 43-dictionary catalog with deep pages, tools
+  (transliteration, quizzes, multi-dictionary comparison), the correction
+  workflow, and the developer guide. Content: CC-BY-SA-4.0. The CDSL
+  dictionary data itself is a separate, independently DOI'd artefact.
+authors:
+  - family-names: "Gasūns"
+    given-names: "Mārcis"
+    orcid: "https://orcid.org/0000-0003-4513-884X"
+    affiliation: "Independent scholar"
+    email: "gasyoun@ya.ru"
+  - name: "Cologne Digital Sanskrit Lexicon project contributors"
+keywords:
+  - sanskrit
+  - lexicography
+  - cdsl
+  - digital humanities
+  - documentation
+identifiers:
+  - identifier: "10.5281/zenodo.21319331"
+    type: "doi"
+    description: "CDSL corpus umbrella DOI (csl-sqlite release corpus; cite this for the dictionary data, not for these guides)"

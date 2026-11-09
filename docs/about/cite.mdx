@@ -1,0 +1,70 @@
+---
+id: cite
+title: Cite & DOI
+description: "How to cite the Cologne Digital Sanskrit Dictionaries (CDSL): the corpus umbrella DOI, per-dictionary Zenodo DOIs, and how to cite this guides site."
+sidebar_label: Cite & DOI
+---
+_Created: 09-11-2026 · Last updated: 09-11-2026_
+
+# Cite & DOI
+
+Every CDSL citation answer starts with one question: **are you citing the corpus,
+one dictionary, or these guides?** They have different DOIs, and mixing them is the
+usual source of a broken citation.
+
+## Cite the whole corpus
+
+The umbrella DOI for the entire dictionary corpus — the weekly `csl-sqlite` bundle
+that carries all 43 dictionaries — is the concept DOI:
+
+> Cologne Digital Sanskrit Dictionaries. Zenodo.
+> [10.5281/zenodo.21319331](https://doi.org/10.5281/zenodo.21319331)
+
+Quote the corpus version and access date alongside it; the corpus is re-released
+and the concept DOI always resolves to the latest archived version:
+
+```
+Cologne Digital Sanskrit Dictionaries, version 2.11.0,
+Cologne University, accessed on <date>,
+DOI 10.5281/zenodo.21319331 (https://doi.org/10.5281/zenodo.21319331)
+https://www.sanskrit-lexicon.uni-koeln.de
+```
+
+## Cite one dictionary
+
+A single dictionary is a citable dataset in its own right and has its own Zenodo
+concept DOI — cite that when your claim rests on one dictionary rather than the
+corpus. The complete, machine-checked list (one row per dictionary, with each
+concept DOI and its resolving link) lives in one place:
+
+- **[Cite & DOI hub — sanskrit-lexicon.github.io/cite.html](https://sanskrit-lexicon.github.io/cite.html)**
+- mirror on the Cologne homepage: [sanskrit-lexicon.uni-koeln.de/cite.html](https://www.sanskrit-lexicon.uni-koeln.de/cite.html)
+
+Each dictionary repository also carries its own `CITATION.cff` and a README DOI
+badge, so the DOI travels with the repository that produces the data.
+
+## Cite these guides
+
+The guides are documentation, not data; they are a separate work. If you cite the
+guides themselves:
+
+> Gasūns, M. et al. Cologne Digital Sanskrit Dictionaries: user, contributor, and
+> developer guides. https://sanskrit-lexicon.github.io/csl-guides/
+
+The repository's [`CITATION.cff`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/CITATION.cff)
+is the authoritative machine-readable form and names the corpus umbrella DOI as the
+data citation, not as the citation for the documentation.
+
+## Which DOI goes where — one-line rule
+
+| You are citing | Cite |
+|---|---|
+| The corpus as a whole | umbrella concept DOI `10.5281/zenodo.21319331` |
+| One dictionary's data | that dictionary's own Zenodo concept DOI (hub table) |
+| These guides / this site | the csl-guides repository (no separate DOI) |
+| An analysis built on CDSL data | the corpus or dictionary DOI **plus** the snapshot/version you used |
+
+:::note
+Per-version DOIs stay inside each deposit's `CITATION.cff` / Zenodo record; the
+concept DOI is the stable citation target and is what the surfaces above publish.
+:::

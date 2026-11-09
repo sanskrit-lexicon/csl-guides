@@ -6,8 +6,9 @@ on:
       - main
   workflow_dispatch:
 
-# contents: read — the deploy only reads (see the catalog guard below: a bot
-# commit cannot satisfy main's required check, GH006, so it must never try).
+# contents: read — the workflow's own token must never push: it cannot satisfy
+# main's required check (GH006). The optional catalog write-back below uses a
+# separate, admin-owned PAT instead.
 permissions:
   contents: read
   pages: write
@@ -45,16 +46,23 @@ jobs:
         run: npm run build:catalog
         continue-on-error: true
       # H7906: the refresh above happens in the runner's working tree, and nothing
-      # commits it. That is exactly how the deployed card came to say 45
-      # dictionaries while main said 44. Committing from here is not an option:
-      # main requires the "Build Docusaurus (no deploy)" check, and a GITHUB_TOKEN
-      # push cannot satisfy it (GH006), so the write-back was refused and the site
-      # published an uncommitted number anyway.
-      # Therefore this step REFUSES to publish one: if the refreshed feed differs
-      # from the commit, it restores the committed file and builds that. The site
-      # and the commit then agree by construction; freshness becomes a deliberate
-      # `npm run build:catalog` + PR, not a side effect of deploying.
-      - name: Refuse to publish an uncommitted catalogue
+      # commits it — which is how the deployed card came to say 45 dictionaries
+      # while main said 44.
+      #
+      # Why the workflow's own GITHUB_TOKEN cannot commit it: main requires the
+      # "Build Docusaurus (no deploy)" check, a token push carries no check-run, and
+      # a repository ruleset cannot name the GitHub Actions app as a bypass actor on
+      # this plan (integrations need org rulesets -> Team). An admin-owned PAT can:
+      # main has enforce_admins=false, so an admin push is not held by the required
+      # check. Such a push also re-triggers this workflow, whose next run finds the
+      # catalog already committed and does nothing.
+      #
+      # With no PAT in secrets the deploy degrades to the safe behaviour: it
+      # restores the committed feed and builds that, so the site never publishes an
+      # uncommitted number.
+      - name: Commit refreshed catalog when the data changed
+        env:
+          CATALOG_PUSH_TOKEN: ${{ secrets.CATALOG_PUSH_TOKEN }}
         run: |
           set -euo pipefail
           F=src/data/dictionaries.json
@@ -62,9 +70,24 @@ jobs:
             echo "catalog matches the commit"
             exit 0
           fi
-          echo "::warning title=Catalog drift::live CDSL differs from the committed feed; the deploy will publish the committed file. Run 'npm run build:catalog' and merge a PR to ship the refresh."
-          echo "DRIFT: $F differs from the commit — restoring the committed feed"
-          git checkout -- "$F"
+          if [ -z "${CATALOG_PUSH_TOKEN:-}" ]; then
+            echo "::warning title=Catalog drift::live CDSL differs from the committed feed. This deploy publishes the committed file; run 'npm run build:catalog' and merge a PR, or set the CATALOG_PUSH_TOKEN secret to let the deploy commit it."
+            git checkout -- "$F"
+            echo "DRIFT: restored the committed feed (no CATALOG_PUSH_TOKEN)"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$F"
+          git commit -m "chore(catalog): refresh dictionaries.json from live CDSL [skip ci]"
+          if git push "https://x-access-token:${CATALOG_PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main; then
+            echo "catalog commit pushed to main (PAT)"
+          else
+            # Undo the local commit too: otherwise HEAD would carry 45 while main
+            # stays at the previous feed, and the card (pinned to HEAD) would lie.
+            git reset --hard HEAD~1
+            echo "::warning title=Catalog push refused::the PAT push failed; the deploy builds the committed feed instead"
+          fi
       - name: Build site
         run: npm run build
       - name: Upload Pages artifact

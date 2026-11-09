@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-03",
+  "generatedAt": "2026-11-09",
   "source": "https://www.sanskrit-lexicon.uni-koeln.de/",
-  "siteVersion": "2.10.72",
-  "totalRows": 44,
-  "fullyDigitized": 43,
+  "siteVersion": "2.11.0",
+  "totalRows": 45,
+  "fullyDigitized": 44,
   "documentedInCslDoc": 38,
-  "withCslOrigSource": 43,
+  "withCslOrigSource": 44,
   "groups": [
     {
       "name": "Sanskrit-English",
@@ -1081,6 +1081,40 @@
           }
         },
         {
+          "code": "NYBJ",
+          "year": "1928",
+          "title": "Nyāyakośa or Dictionary of Technical Terms of Indian Philosophy",
+          "titleAttr": "Bhīmācārya Jhaḷakīkara,Nyāyakośa or Dictionary of Technical Terms of Indian Philosophy,1154 pages",
+          "pages": "1154",
+          "scanCode": "NYBJ",
+          "sampleOnly": false,
+          "href": "/scans/NYBJScan/2026/web/index.php",
+          "actions": {
+            "basic": true,
+            "list": true,
+            "advanced": true,
+            "mobile": true,
+            "download": true,
+            "scanPdf": false,
+            "scanJpg": false
+          },
+          "repo": null,
+          "repoUrl": null,
+          "cslDocPage": null,
+          "cslDocUrl": null,
+          "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/nybj",
+          "urls": {
+            "overview": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NYBJScan/2026/web/index.php",
+            "basic": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NYBJScan/2026/web/webtc/indexcaller.php",
+            "list": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NYBJScan/2026/web/webtc1/index.php",
+            "advanced": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NYBJScan/2026/web/webtc2/index.php",
+            "mobile": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NYBJScan/2026/web/mobile1/index.php",
+            "download": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NYBJScan/2026/web/webtc/download.html",
+            "scanPdf": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NYBJScan/index.php?sfx=pdf",
+            "scanJpg": "https://www.sanskrit-lexicon.uni-koeln.de/scans/NYBJScan/index.php?sfx=jpg"
+          }
+        },
+        {
           "code": "NMMB",
           "year": "1955",
           "title": "Nāmamālikā of Bhoja",
@@ -1205,8 +1239,8 @@
             "scanPdf": false,
             "scanJpg": false
           },
-          "repo": null,
-          "repoUrl": null,
+          "repo": "PUI",
+          "repoUrl": "https://github.com/sanskrit-lexicon/PUI",
           "cslDocPage": "pui",
           "cslDocUrl": "https://github.com/sanskrit-lexicon/csl-doc/blob/main/source/dictionaries/pui.rst",
           "cslOrigUrl": "https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/pui",

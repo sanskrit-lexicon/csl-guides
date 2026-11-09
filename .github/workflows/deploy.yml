@@ -6,10 +6,10 @@ on:
       - main
   workflow_dispatch:
 
-# contents: write — the catalog write-back below commits the refreshed feed to
-# main when the data actually changed (H7906). pages/id-token for the deploy.
+# contents: read — the deploy only reads (see the catalog guard below: a bot
+# commit cannot satisfy main's required check, GH006, so it must never try).
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -44,34 +44,27 @@ jobs:
       - name: Refresh dictionary catalog from live site (non-fatal)
         run: npm run build:catalog
         continue-on-error: true
-      # H7906: this refresh used to live only in the runner's working tree, so the
-      # deployed card said 45 dictionaries while main said 44 — the site and the
-      # commit could disagree on every deploy. Commit the refreshed feed before the
-      # build instead: the build then renders the commit it came from, and
-      # plugins/og-cards pins the card's count row to HEAD, so the two cannot drift.
-      # A push made with GITHUB_TOKEN does not re-trigger this workflow, so there is
-      # no loop. The daily `generatedAt` date is ignored when deciding whether
-      # anything real changed — otherwise every deploy would commit date-only churn.
-      - name: Commit refreshed catalog when the data changed
+      # H7906: the refresh above happens in the runner's working tree, and nothing
+      # commits it. That is exactly how the deployed card came to say 45
+      # dictionaries while main said 44. Committing from here is not an option:
+      # main requires the "Build Docusaurus (no deploy)" check, and a GITHUB_TOKEN
+      # push cannot satisfy it (GH006), so the write-back was refused and the site
+      # published an uncommitted number anyway.
+      # Therefore this step REFUSES to publish one: if the refreshed feed differs
+      # from the commit, it restores the committed file and builds that. The site
+      # and the commit then agree by construction; freshness becomes a deliberate
+      # `npm run build:catalog` + PR, not a side effect of deploying.
+      - name: Refuse to publish an uncommitted catalogue
         run: |
           set -euo pipefail
           F=src/data/dictionaries.json
           if git diff -I '"generatedAt"' --quiet -- "$F"; then
-            echo "catalog data unchanged — nothing to commit"
+            echo "catalog matches the commit"
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$F"
-          git commit -m "chore(catalog): refresh dictionaries.json from live CDSL [skip ci]"
-          if git push origin HEAD:main; then
-            echo "catalog commit pushed to main"
-          else
-            # A concurrent human push won the race. The build below still uses the
-            # refreshed file, and the card still states the committed feed (HEAD),
-            # so this degrades to the old behaviour for one run, never to a lie.
-            echo "WARN: catalog commit could not be pushed; the card will state the previous commit"
-          fi
+          echo "::warning title=Catalog drift::live CDSL differs from the committed feed; the deploy will publish the committed file. Run 'npm run build:catalog' and merge a PR to ship the refresh."
+          echo "DRIFT: $F differs from the commit — restoring the committed feed"
+          git checkout -- "$F"
       - name: Build site
         run: npm run build
       - name: Upload Pages artifact

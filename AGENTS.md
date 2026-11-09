@@ -10,6 +10,6 @@ This file is the agent entrypoint for this repository. Agent harnesses
   handoff contract and RED INVARIANTS (bind always: `stenogrammy/` paths carry
   152-FZ personal data — never read, export or model-open; never bless work as
   advisory; @DECIDE rows are human-only).
-- Landing route: PR only (foreign owner `sanskrit-lexicon`) — a human merges.
+- Landing route: PR only (foreign owner `sanskrit-lexicon`); auto-merge sanctioned (MG 09-11-2026, same for `csl-atlas` + `csl-observatory`) — agents merge green PRs without asking, never wait for a human.
 
 _Dr. Mārcis Gasūns_

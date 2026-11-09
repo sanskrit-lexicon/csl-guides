@@ -62,7 +62,7 @@ jobs:
       # uncommitted number.
       - name: Commit refreshed catalog when the data changed
         env:
-          CATALOG_PUSH_TOKEN: ${{ secrets.CATALOG_PUSH_TOKEN }}
+          GH_TOKEN: ${{ secrets.CATALOG_PUSH_TOKEN }}
         run: |
           set -euo pipefail
           F=src/data/dictionaries.json
@@ -70,29 +70,29 @@ jobs:
             echo "catalog matches the commit"
             exit 0
           fi
-          if [ -z "${CATALOG_PUSH_TOKEN:-}" ]; then
+          if [ -z "${GH_TOKEN:-}" ]; then
             echo "::warning title=Catalog drift::live CDSL differs from the committed feed. This deploy publishes the committed file; run 'npm run build:catalog' and merge a PR, or set the CATALOG_PUSH_TOKEN secret to let the deploy commit it."
             git checkout -- "$F"
             echo "DRIFT: restored the committed feed (no CATALOG_PUSH_TOKEN)"
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$F"
-          git commit -m "chore(catalog): refresh dictionaries.json from live CDSL [skip ci]"
-          # actions/checkout persists its own token as an http extraheader, which
-          # overrides the URL credential: the first attempt authenticated as
-          # github-actions[bot] and got "Permission ... denied" (403). Drop the
-          # header and strip stray whitespace from the secret before pushing.
-          git config --local --unset-all http.https://github.com/.extraheader || true
-          TOKEN="$(printf '%s' "${CATALOG_PUSH_TOKEN}" | tr -d '[:space:]')"
-          if git push "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main; then
-            echo "catalog commit pushed to main (PAT)"
+          # Commit through the Contents API, not git: actions/checkout persists its
+          # own token as an http extraheader that beats the URL credential, so a
+          # `git push` with the PAT authenticated as github-actions[bot] and got 403
+          # twice. The API call carries the PAT directly and cannot be shadowed.
+          B64=$(base64 < "$F" | tr -d '\n')
+          SHA=$(gh api "repos/${GITHUB_REPOSITORY}/contents/${F}" --jq .sha)
+          if gh api --method PUT "repos/${GITHUB_REPOSITORY}/contents/${F}" \
+               -f message="chore(catalog): refresh dictionaries.json from live CDSL [skip ci]" \
+               -f content="$B64" -f sha="$SHA" -f branch=main > /tmp/api-commit.json 2>/tmp/api-commit.err; then
+            echo "catalog commit created on main via the Contents API (PAT)"
+            git fetch -q origin main
+            git reset --hard origin/main
+            echo "HEAD now $(git rev-parse --short HEAD)"
           else
-            # Undo the local commit too: otherwise HEAD would carry 45 while main
-            # stays at the previous feed, and the card (pinned to HEAD) would lie.
-            git reset --hard HEAD~1
-            echo "::warning title=Catalog push refused::the PAT push failed; the deploy builds the committed feed instead"
+            echo "::warning title=Catalog API commit refused::$(cat /tmp/api-commit.err | head -3 | tr '\n' ' ')"
+            git checkout -- "$F"
+            echo "DRIFT: restored the committed feed (API commit failed)"
           fi
       - name: Build site
         run: npm run build

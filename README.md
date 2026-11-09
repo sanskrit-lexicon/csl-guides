@@ -96,7 +96,10 @@ npm run serve      # preview the production build locally
 ```
 
 `npm run build` is the verification gate: it runs `onBrokenLinks: 'throw'`, so a green build
-proves every internal link resolves. Every push to `main` auto-builds and deploys to GitHub
+proves every internal link resolves. CI also compares the rendered OG card **per pixel**
+against a committed golden (`npm run check:og-cards`) — if you change the card design or the
+renderer, regenerate the golden with `node scripts/check-og-cards.mjs --write-golden` and show
+the pixel diff in the PR. Every push to `main` auto-builds and deploys to GitHub
 Pages at [sanskrit-lexicon.github.io/csl-guides](https://sanskrit-lexicon.github.io/csl-guides/)
 via [.github/workflows/deploy.yml](https://github.com/sanskrit-lexicon/csl-guides/blob/main/.github/workflows/deploy.yml)
 — no manual `npm run deploy` step. See

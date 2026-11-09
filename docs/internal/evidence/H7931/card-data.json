@@ -1,0 +1,115 @@
+{
+  "code": "MW",
+  "generatedAt": "2026-11-09T17:11:32.389Z",
+  "data": {
+    "generatedFrom": {
+      "feed": "src/data/dictionaries.json",
+      "feedGeneratedAt": "2026-11-09",
+      "feedTotalRows": 45,
+      "atlas": "src/data/atlas-extract.json",
+      "atlasGeneratedAt": "2026-07-07",
+      "atlasLicense": "CC-BY-SA-4.0"
+    },
+    "site": {
+      "dictionaries": 45,
+      "yearsPresent": 45,
+      "yearMin": 1832,
+      "yearMax": 1993,
+      "pagesPresent": 43,
+      "pagesTotal": 45603,
+      "groups": 7,
+      "fullyDigitized": 44,
+      "documentedInCslDoc": 38,
+      "withCslOrigSource": 44,
+      "atlasDictionaries": 44,
+      "atlasEntriesTotal": 1496157
+    },
+    "dictionary": {
+      "code": "MW",
+      "title": "Monier-Williams Sanskrit-English Dictionary",
+      "year": 1899,
+      "pages": 1333,
+      "entries": 286525,
+      "distinctLemmas": 194084,
+      "group": "Sanskrit-English",
+      "groupCount": 7,
+      "groupItems": 14,
+      "fullyDigitized": true,
+      "documentedInCslDoc": true,
+      "withCslOrigSource": true,
+      "sampleOnly": false,
+      "shareOfAtlasEntriesPct": 19.2
+    },
+    "description": "Guide to the Monier-Williams Sanskrit–English Dictionary (1899) on CDSL — the standard general reference: how to read and search an entry."
+  },
+  "rows": {
+    "A": "1899 · 1,333 pages · 286,525 entries",
+    "B": {
+      "hero": "286,525",
+      "denominator": "of 1,496,157 entries across 44 dictionaries",
+      "sharePct": 19.2
+    },
+    "C": {
+      "year": 1899,
+      "span": "1832–1993",
+      "secondary": "1,333 pages · 286,525 entries"
+    },
+    "D": {
+      "group": "Sanskrit-English",
+      "badges": [
+        "44/45 fully digitised",
+        "38/45 documented in csl-doc",
+        "44/45 with csl-orig source"
+      ]
+    }
+  },
+  "renders": [
+    {
+      "layout": "A",
+      "name": "library-label",
+      "file": "layout-A-library-label.png",
+      "bytes": 55750,
+      "sha256": "ee87342941291aae5c732bdeb97a3e8718e542bac258fd02f861432ed8969ec4",
+      "dataRow": "1899 · 1,333 pages · 286,525 entries"
+    },
+    {
+      "layout": "B",
+      "name": "scale",
+      "file": "layout-B-scale.png",
+      "bytes": 55647,
+      "sha256": "dbce709c081e0a2e4c20bed8f156061e53d035ee2506462523ba2392325f3399",
+      "dataRow": {
+        "hero": "286,525",
+        "denominator": "of 1,496,157 entries across 44 dictionaries",
+        "sharePct": 19.2
+      }
+    },
+    {
+      "layout": "C",
+      "name": "timeline",
+      "file": "layout-C-timeline.png",
+      "bytes": 42947,
+      "sha256": "6cb7e9f931b55580a6822a738e9fcd4db3ba9398436055e29cd2cec7dff99591",
+      "dataRow": {
+        "year": 1899,
+        "span": "1832–1993",
+        "secondary": "1,333 pages · 286,525 entries"
+      }
+    },
+    {
+      "layout": "D",
+      "name": "atlas",
+      "file": "layout-D-atlas.png",
+      "bytes": 56258,
+      "sha256": "e538bf4a427303b7222f11a9500df93fdd761d354ef73ff9c6f1627fb404452c",
+      "dataRow": {
+        "group": "Sanskrit-English",
+        "badges": [
+          "44/45 fully digitised",
+          "38/45 documented in csl-doc",
+          "44/45 with csl-orig source"
+        ]
+      }
+    }
+  ]
+}

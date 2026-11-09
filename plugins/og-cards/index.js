@@ -118,6 +118,48 @@ function derivedDescription(html, siteConfig) {
   return heading && heading !== siteConfig.title ? heading + ' — ' + suffix : suffix;
 }
 
+// Counts for the card's footer, derived from committed sources at build time -
+// never typed: the catalog feed knows how many dictionaries it carries, the
+// docs tree knows how many public guide pages it has, blog/ knows the posts.
+// A count that cannot be read is omitted rather than guessed.
+function countGuidePages(docsDir) {
+  let n = 0;
+  for (const e of fs.readdirSync(docsDir, { withFileTypes: true })) {
+    const p = path.join(docsDir, e.name);
+    if (e.isDirectory()) {
+      if (e.name === 'internal') continue; // build-excluded, never a public page
+      n += countGuidePages(p);
+    } else if (/\.mdx?$/.test(e.name) && !e.name.endsWith('.meta.md')) {
+      n = n + 1;
+    }
+  }
+  return n;
+}
+
+let statsCache = null;
+
+function siteStats() {
+  if (statsCache) return statsCache;
+  const root = path.join(__dirname, '..', '..');
+  const stats = [];
+  try {
+    const catalog = JSON.parse(fs.readFileSync(path.join(root, 'src', 'data', 'dictionaries.json'), 'utf8'));
+    if (catalog.totalRows) stats.push([catalog.totalRows, 'dictionaries']);
+  } catch (e) {
+    // feed absent: drop the count, never invent one
+  }
+  try {
+    const guides = countGuidePages(path.join(root, 'docs'));
+    if (guides) stats.push([guides, 'guides']);
+  } catch (e) {}
+  try {
+    const posts = fs.readdirSync(path.join(root, 'blog')).filter((f) => /\.mdx?$/.test(f)).length;
+    if (posts) stats.push([posts, 'posts']);
+  } catch (e) {}
+  statsCache = stats;
+  return stats;
+}
+
 // Card slug: deterministic, filesystem-safe, collision-proof (page path plus a
 // short hash of the path, so 'a/b' and 'a-b' cannot collide).
 function cardSlug(pagePath) {
@@ -195,17 +237,22 @@ async function postBuild({ siteConfig, outDir }) {
     const html = fs.readFileSync(file, 'utf8');
     const titleText = pageTitle(html, siteConfig.title);
     const description = metaContent(html, 'og:description') || metaContent(html, 'description') || '';
+    const pageDescription = description || derivedDescription(html, siteConfig);
+    if (!description) derived = derived + 1;
     let out = html;
 
     if (!is404) {
       const slug = cardSlug(pagePath);
       const imageUrl = url + baseUrl + 'og-cards/' + slug + '.png';
-      // The home page title IS the site name, which the brand row already
-      // carries; a description there would repeat the brand a third time.
-      const cardDescription = pagePath === '' ? '' : description;
+      // A derived description starts with the page heading, i.e. the title, so
+      // it is dropped from the card rather than printed twice in a row. The
+      // home page keeps its own description: it names the guides, not the brand.
+      let cardDescription = pageDescription;
+      if (cardDescription.startsWith(titleText)) cardDescription = '';
       const png = await renderCard(titleText, {
         description: cardDescription,
         section: sectionLabel(pagePath),
+        stats: siteStats(),
       });
       fs.writeFileSync(path.join(cardsDir, slug + '.png'), png);
       out = setMetaContent(out, 'og:image', 'property', imageUrl);
@@ -221,10 +268,8 @@ async function postBuild({ siteConfig, outDir }) {
 
     // H7903: routes Docusaurus generates from plugin data (blog tag pages, the
     // ejected search page), 404 and the static newsletter redirect carry no
-    // description at all. Derive one from the page's own heading; ensureMeta is
+    // description at all - pageDescription above derives one; ensureMeta is
     // idempotent, so a page that already has either tag keeps its own text.
-    const pageDescription = description || derivedDescription(html, siteConfig);
-    if (!description) derived = derived + 1;
     out = ensureMeta(out, 'description', 'name', pageDescription);
     out = ensureMeta(out, 'og:description', 'property', pageDescription);
 

@@ -4,8 +4,10 @@ title: PW Nachträge und Verbesserungen (PWKVN)
 description: "Guide to PWKVN on CDSL — the digitized 'Nachträge und Verbesserungen' (addenda and corrections) appendixes from all seven volumes of Böhtlingk's shorter Sanskrit-Wörterbuch."
 sidebar_label: PW Nachträge (PWKVN)
 ---
-_Created: 03-07-2026 · Last updated: 06-11-2026_
+_Created: 03-07-2026 · Last updated: 09-11-2026_
 
+
+import catalog from '@site/src/data/dictionaries.json';
 
 # Böhtlingk, *Nachträge und Verbesserungen* to PW (`PWKVN`)
 
@@ -91,8 +93,16 @@ See [Data Formats](/developers/data-formats) for the markup reference.
 | Homonyms | `<hom>` | `<hom>2.</hom>` | Homonym number, as in the parent dictionaries |
 | Recurring headwords | one per volume appendix | — | Each volume's *Nachträge* restarts the alphabet |
 
+## Abbreviations
+
+No separate abbreviation list for PWKVN is transcribed yet — the supplement uses
+the same Petersburg literary-source abbreviations as **PW**, whose full list is
+under its own Abbreviations section. Records here cite their sources in
+`<ls>…</ls>` (see the Reading an entry example above) and the markup reference
+in [Data Formats](/developers/data-formats).
+
 ## See also
 
 - **PW** — the dictionary these appendixes belong to · **PWG** — the full-size Petersburg dictionary
 - **SCH** — Schmidt's 1928 *Nachträge*, the continuation of this supplement tradition
-- The full **catalog**
+- The full **catalog** of all {catalog.totalRows} catalogued dictionaries

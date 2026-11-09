@@ -17,11 +17,14 @@ const SITE = 'https://www.sanskrit-lexicon.uni-koeln.de';
 
 // MW gets the full B/L/A/M walkthrough; the others show the Basic display so readers
 // can see how entries differ across dictionaries and languages.
+// `year` is the scan directory year (most scans live under 2020; the 2026
+// arrivals — NMMB, NYBJ — under 2026), matching build-catalog's live paths.
 const DICTS = [
   {code: 'MW', query: 'agni', modes: ['basic', 'list', 'advanced', 'mobile']},
   {code: 'AP90', query: 'agniH', modes: ['basic']}, // Apte lists the nominative अग्निः, not the stem
   {code: 'PWG', query: 'agni', modes: ['basic']}, // Böhtlingk-Roth, Sanskrit–German
   {code: 'GRA', query: 'agni', modes: ['basic']}, // Grassmann, Rig-Veda, Sanskrit–German
+  {code: 'NYBJ', query: 'akarmakaH', modes: ['basic'], year: '2026'}, // Nyāyakośa lists the nominative with visarga
 ];
 
 const MODES = {
@@ -84,7 +87,7 @@ for (const d of DICTS) {
     const cfg = MODES[m];
     shots.push({
       name: `${d.code.toLowerCase()}-${m}`,
-      url: `${SITE}/scans/${d.code}Scan/2020/web/${cfg.path}`,
+      url: `${SITE}/scans/${d.code}Scan/${d.year || '2020'}/web/${cfg.path}`,
       mobile: cfg.mobile,
       query: cfg.query ? d.query : null,
     });

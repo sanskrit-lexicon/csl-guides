@@ -88,6 +88,7 @@ const sidebars = {
             'dictionaries/mwe',
             'dictionaries/skd',
             'dictionaries/vcp',
+            'dictionaries/nybj',
             'dictionaries/abch',
             'dictionaries/acph',
             'dictionaries/acsj',

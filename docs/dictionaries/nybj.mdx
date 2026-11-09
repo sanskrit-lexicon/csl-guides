@@ -1,0 +1,136 @@
+---
+id: nybj
+title: Nyāyakośa (NYBJ)
+description: "Guide to the Nyāyakośa (NYBJ) on CDSL — the technical-terms dictionary of Indian philosophy with definitions given in Sanskrit."
+sidebar_label: Nyāyakośa (NYBJ)
+---
+_Created: 09-11-2026 · Last updated: 09-11-2026_
+
+
+import {DictAbbreviations} from '@site/src/components/Abbreviations';
+import catalog from '@site/src/data/dictionaries.json';
+import Screenshot from '@site/src/components/Screenshot';
+
+# *Nyāyakośa* (`NYBJ`)
+
+`NYBJ` is the *Nyāyakośa* — "dictionary of technical terms of Indian philosophy" —
+the **principal reference for Nyāya-school vocabulary**, composed by
+**Mahāmahopādhyāya Bhīmācārya Jhalakīkara** (third edition, **1928**; revised and
+re-edited by Mahāmahopādhyāya Vāsudev Shāstrī Abhyāṅkar). It defines
+**2,479 technical terms** from the *Nyāya-sūtras* of Gautama and the later logical
+literature — *in Sanskrit*, with the definitions attributed to the schools that
+use the terms.
+
+## At a glance
+
+| | |
+|---|---|
+| **Code** | `NYBJ` (source in [`csl-orig/v02/nybj`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/nybj); no separate repo) |
+| **Full title** | *Nyāyakośa or Dictionary of Technical Terms of Indian Philosophy* |
+| **Author** | Mahāmahopādhyāya Bhīmācārya Jhalakīkara; re-edited by Mahāmahopādhyāya Vāsudev Shāstrī Abhyāṅkar |
+| **Year / size** | 1928 (third edition, Bhandarkar Oriental Research Institute, Poona) · ~**1,154** pages · **2,479** records |
+| **Direction / language** | Technical terms of Indian philosophy; **definitions in Sanskrit** |
+| **Accents** | No |
+| **Source** | [`csl-orig/v02/nybj/`](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/nybj) · [scan (Internet Archive)](https://archive.org/details/EnlB_nyaya-kosha-or-dictionary-of-technical-terms-of-indian-philosophy-mm-bhimacharya-jhalkikar-1928) |
+| **Open** | [Basic](https://www.sanskrit-lexicon.uni-koeln.de/scans/NYBJScan/2026/web/webtc/indexcaller.php) · [List](https://www.sanskrit-lexicon.uni-koeln.de/scans/NYBJScan/2026/web/webtc1/index.php) · [Advanced](https://www.sanskrit-lexicon.uni-koeln.de/scans/NYBJScan/2026/web/webtc2/index.php) · [Mobile](https://www.sanskrit-lexicon.uni-koeln.de/scans/NYBJScan/2026/web/mobile1/index.php) |
+| **Data** | [Downloads](https://www.sanskrit-lexicon.uni-koeln.de/scans/NYBJScan/2026/web/webtc/download.html) |
+| **Digital edition** | Ed. Dr. Dhaval Patel (University of Cologne, 2026) |
+
+:::note
+
+Unlike most CDSL dictionaries, NYBJ's web application lives under a **2026** path
+(`/scans/NYBJScan/2026/web/…`), not the usual `2020`. There is no `csl-doc` page for it yet.
+
+:::
+
+## When to use it
+
+Reach for `NYBJ` when a **philosophical term** — *akarmaka*, *anumāna*, *akṣara* —
+is used in a *darśana* text and you need its **definition as the tradition gives it**,
+not a translator's gloss. Its definitions name the schools (Nyāya, Vedānta, Mādhyamika,
+Vallabha…) whose usage they follow. It complements **Vācaspatyam (VCP)** — the
+encyclopedic kośa — with a tighter, Sanskrit-only treatment of philosophical
+vocabulary. For ordinary Sanskrit words use [Monier-Williams (MW)](/dictionaries/mw).
+
+## Looking up a word
+
+1. Open the **Basic** display and pick your **input** transliteration (see
+   Encoding & Transliteration). Type the headword — e.g. `akarmakaH`
+   (*akarmaka*, "intransitive"):
+
+<Screenshot
+  src="/img/displays/nybj-basic.png"
+  alt="NYBJ Basic display showing the entry for akarmakaH: Sanskrit definition with bracketed school attributions and source citations"
+  width={1800}
+  height={1350}
+/>
+
+The **List** display browses neighbouring headwords; the **Advanced** display searches
+*inside* definitions. See Search & Display.
+
+## Reading an entry
+
+The first record — *aṃhaspati* ("the month in which the sun does not cross"),
+from `csl-orig/v02/nybj/nybj.txt`:
+
+```
+<L>0001<pc>0001<k1>aMhaspatiH<k2>aMhaspatiH
+;p{0001}
+aMhaspatiH — kzayamAsaH. yasminmAse na saMkrAntiH saMkrAntidvayameva vA. saMsapahaspatI mAsAvaDimAsaSca ninditAH.. (pu0 ci0 pf0 16)
+<LEND>
+```
+
+| In the source | Meaning |
+|---|---|
+| `<L>0001<pc>0001` | Cologne record id 1, on printed page 1 |
+| `<k1>` = `<k2>` | search key vs display key, both SLP1 (*aMhaspatiH*) — headwords carry no accent marks |
+| `;p{0001}` | print page marker |
+| `aMhaspatiH — kzayamAsaH…` | the **Sanskrit definition**, introduced by the headword and an em-dash |
+| `(pu0 ci0 pf0 16)` | **source citations** in sigla: the works and passages the definition draws on |
+
+Longer definitions — *akarmaka* (intransitive) carries five footnotes —
+attribute competing definitions to schools in square brackets (`[ka]`, `[kha]`,
+`[ga]`, `[gha]`, `[ña]`) and unfold them in `<f id="…">` notes (see [Data Formats](/developers/data-formats)
+for the markup reference).
+
+## What makes it distinctive
+
+- **Definitions in Sanskrit.** NYBJ glosses a term by stating it in the
+  tradition's own language, then citing the works it follows — not by translating
+  into English. You do not look it up to *read* Sanskrit but to *reason* in it.
+- **Schools named inside the entry.** A single headword can carry several
+  definitions, each tagged `[ka]`, `[ga]`, `[na]` for the school whose usage it
+  records — the entry *akṣara* collects six senses, from the Māyāvādins to the
+  Vallabhiyas — so the disagreement between traditions is itself the entry.
+- **A modern critical edition.** The digitized 1928 text is the Bhandarkar
+  Oriental Research Institute's third edition (No. XLIX), revised by Vāsudev
+  Shāstrī Abhyāṅkar — the working reference for Nyāya studies since.
+- **The newest arrival on CDSL (2026).** Scans under a 2026 path, digital edition
+  by Dr. Dhaval Patel, full B/L/A/M displays.
+
+## Headword key conventions
+
+NYBJ is an **alphabetical headword dictionary** — search keys are plain SLP1, and
+the nominative is spelled out with a final visarga (`-H`), matching the printed
+`akarmakaH`. Definitions are given in Sanskrit.
+
+| Convention | Marker / form | Example | Note |
+|---|---|---|---|
+| Search key | `<k1>` (SLP1, no accent) | `akarmakaH` | With final visarga for nominals |
+| Display key | `<k2>` (same SLP1 form) | `akarmakaH` | k1 = k2; no accents to choose |
+| Definition | `headword — Sanskrit definition` | `aMhaspatiH — kzayamAsaH…` | Definitions are Sanskrit, not English |
+| School tags | `[ka]`, `[ga]`, `[na]` | `[ka] vyApAravyaDikaraRa…` | The school whose definition follows |
+| Footnotes | `[^n]` → `<f id="n">…</f>` | `[^1]` | The note unfolds the school debate |
+| Source sigla | `(xx0 yy0 pf0 16)` | `(vAtsyA0 2. 1. 46)` | Abbreviated works the definition rests on |
+| Page markers | `<pc>PPPP`, `;p{…}` | `<pc>0001` | Four-digit printed page |
+
+## Abbreviations
+
+<DictAbbreviations code="NYBJ" headless />
+
+## See also
+
+- **Vācaspatyam (VCP)** — the encyclopedic Sanskrit kośa · **Mahābhārata Cultural Index (MCI)** — the cultural companion
+- [Monier-Williams (MW)](/dictionaries/mw) — for English glosses of ordinary vocabulary
+- The full **catalog** of all {catalog.totalRows} catalogued dictionaries
+- [Abbreviations & Citations](/dictionaries/abbreviations-and-citations) — how to cite a dictionary

@@ -37,7 +37,14 @@ Every vendored feed pins the SHA-256 (or a field-by-field projection) of the ups
 it was built from, and each has a `--check` mode. Two wiring rules decide where a gate runs:
 
 - **Sibling-free gates run in CI** — `check:ortho-edge`, `check:quiz-positions`,
-  `check:pref-legend`, `check:og-description` (built pages, after the build), plus the
+  `check:pref-legend`, `check:og-description` (built pages, after the build),
+  `check:og-cards` (pixel gate: one frozen card rendered through
+  `plugins/og-cards/renderCard.js` must match
+  [`scripts/fixtures/og-cards/golden-card.png`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/fixtures/og-cards/golden-card.png)
+  per pixel, tolerance 0 — a card-design or renderer change REQUIRES
+  `node scripts/check-og-cards.mjs --write-golden` plus the pixel diff in the PR,
+  and the tolerance is never widened silently; `npm run selftest:og-cards` is the
+  gate's own negative-control battery and also runs in CI), plus the
   bundle-level `verify:*` checks.
 - **Sibling-dependent gates cannot**: GitHub Actions checks out this repo only, so
   `check:atlas-viz`, `check:heritage-coverage`, `check:corpus-frequency` and

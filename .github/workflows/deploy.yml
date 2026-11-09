@@ -80,7 +80,13 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$F"
           git commit -m "chore(catalog): refresh dictionaries.json from live CDSL [skip ci]"
-          if git push "https://x-access-token:${CATALOG_PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main; then
+          # actions/checkout persists its own token as an http extraheader, which
+          # overrides the URL credential: the first attempt authenticated as
+          # github-actions[bot] and got "Permission ... denied" (403). Drop the
+          # header and strip stray whitespace from the secret before pushing.
+          git config --local --unset-all http.https://github.com/.extraheader || true
+          TOKEN="$(printf '%s' "${CATALOG_PUSH_TOKEN}" | tr -d '[:space:]')"
+          if git push "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:main; then
             echo "catalog commit pushed to main (PAT)"
           else
             # Undo the local commit too: otherwise HEAD would carry 45 while main

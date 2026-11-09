@@ -136,6 +136,25 @@ function countGuidePages(docsDir) {
   return n;
 }
 
+// Read a file as committed, not as it happens to sit in the working tree.
+// deploy.yml runs `npm run build:catalog` before the build, so on the deployed
+// run src/data/dictionaries.json is regenerated from live sources and does not
+// match the commit - the card said 45 dictionaries while main said 44. The card
+// states the committed catalogue: the number a reader of the repo can check.
+// Falls back to the working file when git is unavailable (tarball builds).
+function readCommitted(relPath, root) {
+  try {
+    return require('child_process').execFileSync('git', ['show', 'HEAD:' + relPath], {
+      cwd: root,
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'ignore'],
+      maxBuffer: 32 * 1024 * 1024,
+    });
+  } catch (e) {
+    return fs.readFileSync(path.join(root, relPath), 'utf8');
+  }
+}
+
 let statsCache = null;
 
 function siteStats() {
@@ -143,7 +162,7 @@ function siteStats() {
   const root = path.join(__dirname, '..', '..');
   const stats = [];
   try {
-    const catalog = JSON.parse(fs.readFileSync(path.join(root, 'src', 'data', 'dictionaries.json'), 'utf8'));
+    const catalog = JSON.parse(readCommitted('src/data/dictionaries.json', root));
     if (catalog.totalRows) stats.push([catalog.totalRows, 'dictionaries']);
   } catch (e) {
     // feed absent: drop the count, never invent one
@@ -157,6 +176,9 @@ function siteStats() {
     if (posts) stats.push([posts, 'posts']);
   } catch (e) {}
   statsCache = stats;
+  // One line in every build log: what the cards claim, so a drift between the
+  // committed feed and the deploy-time refresh is visible without an image diff.
+  if (stats.length) console.log('og-cards: footer counts ' + stats.map(([n, l]) => n + ' ' + l).join(' · '));
   return stats;
 }
 

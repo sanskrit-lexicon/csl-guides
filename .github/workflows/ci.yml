@@ -74,6 +74,23 @@ jobs:
       # title/tagline. The census is the gate that catches a regression.
       - name: Check every built page carries an og:description
         run: npm run check:og-description
+      # H7908 (H7906 residual, SPLIT) pixel gate. The v3 tofu regression shipped
+      # with a green build and every text gate passing — the सं mark was two tofu
+      # boxes on all 157 cards, visible only by looking at the deployed pixels.
+      # This renders ONE fixed card through plugins/og-cards/renderCard.js and
+      # compares it per pixel to the committed golden
+      # (scripts/fixtures/og-cards/golden-card.png): dimension mismatch, any
+      # channel delta above the documented tolerance (0 — the render pipeline is
+      # path-based and deterministic), or a missing golden all FAIL, never
+      # SKIP-as-pass. Sibling-free (vendored Charis fonts + committed raster
+      # mark), so it runs here like check:og-description. The selftest keeps the
+      # gate honest: it re-runs the gate as a child process against injected
+      # regressions (a 1-pixel golden tamper, the v3 tofu mark) and fails if the
+      # gate ever stops firing on them.
+      - name: Check OG card pixels against the committed golden
+        run: npm run check:og-cards
+      - name: Selftest the OG-card pixel gate (negative controls must fire)
+        run: npm run selftest:og-cards
       # H3340 acceptance proof: Thier->Tier through the real lunr + the
       # normalized query path is what actually shipped in the bundle.
       - name: Verify ortho-drift search normalization

@@ -1,5 +1,7 @@
 # csl-guides
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21319331.svg)](https://doi.org/10.5281/zenodo.21319331)
+
 _Created: 13-06-2026 · Last updated: 11-07-2026_
 
 [![Deploy to GitHub Pages](https://github.com/sanskrit-lexicon/csl-guides/actions/workflows/deploy.yml/badge.svg)](https://github.com/sanskrit-lexicon/csl-guides/actions/workflows/deploy.yml)

@@ -170,6 +170,7 @@ const sidebars = {
         'about/history',
         'about/events',
         'about/publications',
+        'about/cite',
         'about/shared-tasks',
         'about/dh-programme',
         'about/acknowledgments',

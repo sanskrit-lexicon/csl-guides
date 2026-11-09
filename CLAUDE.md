@@ -57,6 +57,26 @@ runs `check:contracts` against a throwaway detached worktree of `origin/main`, s
 committed state rather than whatever a human's clone happens to hold. Exit codes: 0 green,
 1 a contract is RED, 2 nothing red but a gate could not run (a SKIP proves nothing).
 
+### Catalogue write-back (deploy-only)
+
+[deploy.yml](https://github.com/sanskrit-lexicon/csl-guides/blob/main/.github/workflows/deploy.yml)
+refreshes `src/data/dictionaries.json` from the live CDSL site and, when the data actually
+changed, **commits it** so the site and `main` cannot disagree about the number of
+dictionaries (the card's count row reads `HEAD`, so it always states the committed feed).
+
+- The commit goes through the **Contents API**, never `git push` with the PAT: `actions/checkout`
+  persists its own token as an `http.https://github.com/.extraheader` that beats the URL
+  credential, so two PAT pushes authenticated as `github-actions[bot]` and got 403. The workflow
+  token itself cannot push at all — `main` requires the `Build Docusaurus (no deploy)` check and
+  a token push carries no check-run (`GH006`).
+- It works only because `CATALOG_PUSH_TOKEN` is an **admin-owned** fine-grained PAT
+  (`contents: read and write`, this repo only) and `main` has `enforce_admins=false`. If that
+  flag is ever turned on, the write-back silently falls back — by design.
+- No secret, or a refused API call ⇒ restore the committed feed, build that, emit an
+  `::warning` naming the drift. A number never ships without a commit behind it.
+- **Sync rule:** rotating the secret, changing this mechanism, or toggling `enforce_admins`
+  requires updating this section and the README paragraph in the same PR.
+
 ## Architecture
 
 - **Content** is [docs/](docs/) (`.md`/`.mdx`) plus the [blog/](blog/) which is mounted at

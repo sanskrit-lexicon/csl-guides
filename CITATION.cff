@@ -10,8 +10,8 @@ message: >
 license: CC-BY-SA-4.0
 repository-code: https://github.com/sanskrit-lexicon/csl-guides
 url: https://sanskrit-lexicon.github.io/csl-guides/
-version: 0.16.1
-date-released: 2026-11-09
+version: 0.16.2
+date-released: 2026-11-10
 abstract: >
   Documentation site for the Cologne Digital Sanskrit Dictionaries (CDSL):
   end-user guides, the 43-dictionary catalog with deep pages, tools

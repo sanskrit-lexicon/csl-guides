@@ -1,6 +1,6 @@
 # Changelog
 
-_Created: 30-06-2026 · Last updated: 09-11-2026_
+_Created: 30-06-2026 · Last updated: 10-11-2026_
 
 All notable changes to this project will be documented in this file.
 
@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
+## [0.16.2] - 2026-11-10
+
+- **Simple-Search gains its live-page screenshot, and its documented defaults corrected to the page's real fresh-visit defaults** (2026-11-10, H7951, Crouton Alpha Free (crouton-alpha-free)): the last deferred live-site capture from the wave-4 backlog landed now that `sanskrit-lexicon.uni-koeln.de` answers HTTP 200 from this box again — `static/img/displays/simple-search-page.png` (1800×1350 live capture of `list-0.2s.html`) embedded via the `Screenshot` component after converting `docs/tools/simple-search.md` → `.mdx` (route unchanged). The capture exposed a docs-vs-reality drift the old prose had wrong: `cookieUpdate.js` runs `cookieUpdate(false)` on load with `cookieDefaultValues = ['hk','deva','no','mw']`, so a cookie-less visit opens on **HK / Devanagari**, not the HTML `selected` attrs' `simple` / `IAST` the table claimed — table defaults, the inline `**(the default)**` claim and the fresh-visit cookie note now match the probed source. The second backlog capture `mw-advanced-form` was run, proved byte-different-but-content-identical to the already-embedded `mw-advanced.png` (mode `advanced` runs `query:false`; both are the pristine empty form), and discarded — no second identical image ships.
 ## [0.16.1] - 2026-11-09
 
 - **Dictionary-block surgery (H7927): a deep page for the 1928 Nyāyakośa (NYBJ) plus the deferred sync repairs** (2026-11-09, Crouton Alpha Free (crouton-alpha-free)): new docs/dictionaries/nybj.mdx (verified sample record from csl-orig/v02/nybj, 2,479 records; live-captured Basic display via a new 2026 year mode in scripts/screenshots.mjs — the host answered HTTP 200 this session, no HTTP 000 fallback was needed); sidebars.js + GUIDE_PAGES moved PWKVN to match and added NYBJ (46=46, order identical — previously 45=45 with the order diverged at PWKVN and the catalog's new NYBJ row guideless); 12 deep-page footers normalized to the single-sourced {catalog.totalRows} (abch, acph, acsj, armh, nmmb, ieg, inm, mci, pe, pgn, pui, pwkvn); PWKVN gains the missing Abbreviations section (pointer to PW's, since PWKVN is uncatalogued and cannot be generated) and ACPH/ACSJ gain the missing 'What makes it distinctive' sections; src/data/abbreviations.json regenerated (NYBJ 'none' row + PUI repoUrl); npm run build green (112 guides, onBrokenLinks throw), check:contracts 3 green, best-practices + og-cards green.

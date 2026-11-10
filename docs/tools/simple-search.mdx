@@ -4,7 +4,10 @@ title: Simple-Search
 description: "Simple-Search, the quick CDSL lookup entry point — pick a dictionary, type a word the way it sounds, and get its entries."
 sidebar_label: Simple-Search
 ---
-_Created: 13-06-2026 · Last updated: 31-10-2026_
+_Created: 13-06-2026 · Last updated: 10-11-2026_
+
+
+import Screenshot from '@site/src/components/Screenshot';
 
 # Simple-Search
 
@@ -16,6 +19,13 @@ row first. The live page is
 (source:
 [`simple-search/v1.0` in csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev/tree/main/simple-search/v1.0)).
 
+<Screenshot
+  src="/img/displays/simple-search-page.png"
+  alt="Simple-Search live page: dictionary / input / output / accent selects above the citation box, with Corrections and Abbreviations links"
+  width={1800}
+  height={1350}
+/>
+
 ## The controls
 
 Four controls sit above one word box (the labels on the page are lowercase):
@@ -23,15 +33,20 @@ Four controls sit above one word box (the labels on the page are lowercase):
 | Control | Options | Default | What it does |
 |---|---|---|---|
 | dictionary | any dictionary code, with autocomplete as you type | — | Which dictionary to search (codes as in the [catalog](/dictionaries/catalog); the [abbreviation lists](/dictionaries/abbreviations-and-citations) are linked right on the page). |
-| input | HK · SLP1 · ITRANS · Devanagari · IAST · **simple** | simple | The scheme you type the word in. **simple** means "as it sounds in plain ASCII letters" — no diacritics needed. |
-| output | Devanagari · HK · SLP1 · ITRANS · **IAST** | IAST | How headwords are shown in the results. |
+| input | **HK** · SLP1 · ITRANS · Devanagari · IAST · simple | HK | The scheme you type the word in. **simple** means "as it sounds in plain ASCII letters" — no diacritics needed. |
+| output | **Devanagari** · HK · SLP1 · ITRANS · IAST | Devanagari | How headwords are shown in the results. |
 | accent? | Show · **Hide** | Hide | Whether Vedic accents are displayed. |
+
+A fresh visit (no cookies yet) opens on **mw / HK / Devanagari / Hide** — the page's
+own `cookieUpdate.js` writes those cookie defaults over the form's `selected`
+attributes on load — and from then on each select remembers your last choice for
+a year.
 
 Type the word into the **citation** box and press Enter.
 
 ## What happens on search
 
-- With **simple** input (the default), the page first offers **alternate
+- With **simple** input (choose it in the input select), the page first offers **alternate
   headwords**: a numbered list of dictionary spellings your input could
   correspond to (your own input is the bold entry). The first is loaded
   automatically; click another to switch. This is what makes the page

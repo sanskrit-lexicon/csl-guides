@@ -1,0 +1,58 @@
+{
+  "generatedBy": "scripts/build-changelog-feed.mjs",
+  "source": "CHANGELOG.md",
+  "sourceUrl": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/CHANGELOG.md",
+  "sourceSha256": "ca8f5d5aff6585e3a7f9c20707752932ea2ed32af5910fb44a4e6adef1c736be",
+  "license": "CC BY-SA 4.0",
+  "entryCount": 8,
+  "entries": [
+    {
+      "version": "0.16.2",
+      "date": "2026-11-10",
+      "title": "Simple-Search gains its live-page screenshot, and its documented defaults corrected to the page's real fresh-visit defaults",
+      "anchor": "0162---2026-11-10"
+    },
+    {
+      "version": "0.16.1",
+      "date": "2026-11-09",
+      "title": "Dictionary-block surgery (H7927): a deep page for the 1928 Nyāyakośa (NYBJ) plus the deferred sync repairs",
+      "anchor": "0161---2026-11-09"
+    },
+    {
+      "version": "0.16.0",
+      "date": "2026-11-09",
+      "title": "The deploy commits the refreshed catalogue through the Contents API, with the PAT",
+      "anchor": "0160---2026-11-09"
+    },
+    {
+      "version": "0.16.0",
+      "date": "2026-11-09",
+      "title": "OG card pixel gate — npm run check:og-cards compares a rendered fixed card against a committed golden, per pixel",
+      "anchor": "0160---2026-11-09"
+    },
+    {
+      "version": "0.16.0",
+      "date": "2026-11-09",
+      "title": "Citation surfaces: a CITATION.cff, a README DOI badge, and a Cite & DOI page",
+      "anchor": "0160---2026-11-09"
+    },
+    {
+      "version": "0.16.0",
+      "date": "2026-11-09",
+      "title": "Real description: frontmatter across the public site",
+      "anchor": "0160---2026-11-09"
+    },
+    {
+      "version": "0.16.0",
+      "date": "2026-11-09",
+      "title": "docs/internal/ excluded from the public build",
+      "anchor": "0160---2026-11-09"
+    },
+    {
+      "version": "0.16.0",
+      "date": "2026-11-08",
+      "title": "Every built page now carries a description — including the 15 routes that had none",
+      "anchor": "0160---2026-11-09"
+    }
+  ]
+}

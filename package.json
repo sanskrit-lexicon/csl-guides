@@ -24,6 +24,8 @@
     "check:vedic-accent": "node scripts/build-vedic-accent.mjs --check",
     "check:contracts": "node scripts/check-contracts.mjs",
     "check:best-practices": "node scripts/check-best-practices.mjs",
+    "build:changelog-feed": "node scripts/build-changelog-feed.mjs",
+    "check:changelog-feed": "node scripts/build-changelog-feed.mjs --check",
     "check:og-description": "node scripts/og-description-census.mjs",
     "check:og-cards": "node scripts/check-og-cards.mjs",
     "selftest:og-cards": "node scripts/check-og-cards.mjs --selftest",

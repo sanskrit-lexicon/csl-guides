@@ -9,7 +9,7 @@ import citeData from '@site/src/data/citation-sources.json';
 
 # Data cards — every dataset this site ships
 
-_Created: 07-07-2026 · Last updated: 06-11-2026_
+_Created: 07-07-2026 · Last updated: 12-11-2026_
 
 This site is not only prose: it commits a set of **machine-readable datasets** under
 [`src/data/`](https://github.com/sanskrit-lexicon/csl-guides/tree/main/src/data) that its
@@ -64,6 +64,7 @@ Upstream rights for the non-Cologne feeds are documented per source in
 | [which-dictionary-gold.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/which-dictionary-gold.json) | annotated | single pass, Fable 5 (`claude-fable-5`), 2026-07-07 | dictionary front matter + atlas OBS | CC-BY-SA-4.0 |
 | [routing-benchmark.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/routing-benchmark.json) | generated | [build-routing-benchmark.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-routing-benchmark.mjs) | derived from the gold panel | CC-BY-SA-4.0 |
 | [hypothesis-metrics.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/hypothesis-metrics.json) | generated | [build-hypothesis-metrics.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-hypothesis-metrics.mjs) | the other feeds + `docs/` word counts | derived metrics |
+| [changelog-feed.json](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/changelog-feed.json) | generated | [build-changelog-feed.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-changelog-feed.mjs) (`--check`) | this repo's `CHANGELOG.md` | CC BY-SA 4.0 |
 | quiz datasets (6 files) | authored / part-generated | see card | Wikner course + `csl-orig/v02/mw/mw.txt` | site content |
 
 ## Cards
@@ -263,6 +264,35 @@ Upstream rights for the non-Cologne feeds are documented per source in
   handoff added which fields.
 - **Update policy.** Re-run after any change to the inputs it reads (quiz files, gold
   panel, atlas extract, deep pages).
+
+### changelog-feed.json — homepage changelog widget feed
+
+- **What / why.** The four most recent `CHANGELOG.md` entries (version, date,
+  title, GitHub heading anchor) behind the home page's
+  [ChangelogFeed](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/components/ChangelogFeed.js)
+  card ("Latest from our changelog") — a GitHub-homepage-style widget with
+  dot-timeline and client-side relative timestamps. Exists so the widget reads
+  a committed feed in the house idiom instead of parsing markdown in the
+  component.
+- **Provenance.** `npm run build:changelog-feed`
+  ([build-changelog-feed.mjs](https://github.com/sanskrit-lexicon/csl-guides/blob/main/scripts/build-changelog-feed.mjs))
+  parses this repo's own `CHANGELOG.md`: top-level bullets under `## [x.y.z]`
+  release headings, date = first date-shaped token in the bullet (ISO, then
+  European `DD.MM.YYYY`) else the heading date, titles flattened from the bold
+  lead-in and truncated at 160 chars. `## [Unreleased]` is skipped (queue
+  fragments live in `changelog_queue/` and are folded in at release-cut, H3355).
+  The feed is a pure function of the changelog — no timestamps in the output —
+  so `npm run check:changelog-feed` is a byte-exact diff wired into CI.
+- **Language & encoding.** Titles in English as written in the changelog;
+  dates ISO `YYYY-MM-DD`; UTF-8.
+- **License / rights.** CC BY-SA 4.0 (repository content).
+- **Known limitations.** Newest 8 entries stored, 4 rendered; a bullet with no
+  date token anywhere falls back to its release date, and a bullet whose title
+  has no bold lead-in is truncated at the first clause. Relative timestamps
+  ("2 days ago") are computed in the browser after mount — the feed itself
+  stores absolute dates only, so nothing goes stale between builds.
+- **Update policy.** Re-run `npm run build:changelog-feed` whenever
+  `CHANGELOG.md` changes; `check:changelog-feed` in CI fails on drift.
 
 ### Quiz datasets — mw-quiz, translit, sandhi, samāsa, devanāgarī, which-dictionary
 

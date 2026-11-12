@@ -31,6 +31,13 @@ jobs:
       # checks for one consistent ordering.
       - name: Check docs best practices
         run: npm run check:best-practices
+      # The home page's "Latest from our changelog" widget reads
+      # src/data/changelog-feed.json, a pure parse of this repo's own
+      # CHANGELOG.md — sibling-free and deterministic, so it joins the cheap
+      # gates before the build. A changelog edit without a regenerated feed
+      # fails here instead of shipping a stale widget.
+      - name: Check changelog feed is in sync
+        run: npm run check:changelog-feed
       # Cheap, deterministic, and independent of the build — so it runs first and
       # fails in seconds rather than after a ~40s compile. Guards the H1387 defect:
       # every quiz bank was once authored with its answer first, so "always pick A"

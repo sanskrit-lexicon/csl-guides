@@ -1,0 +1,95 @@
+/* GitHub-homepage-style changelog card (ChangelogFeed.js). Theme vars only,
+   so light + dark both work without a second rule set. */
+
+.card {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-card-border-radius, 8px);
+  background: var(--ifm-background-surface-color);
+  padding: 1.25rem 1.5rem 1.1rem;
+  margin: 1.5rem 0;
+}
+
+.heading {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.4rem;
+}
+
+.item {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.item:last-child {
+  padding-bottom: 0;
+}
+
+/* Dot on the timeline: left edge of the list, centred at 5px. z-index
+   keeps it above the rail segment drawn by ::after. */
+.item::before {
+  content: '';
+  position: absolute;
+  left: -1.4rem;
+  top: 0.45rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ifm-color-emphasis-400);
+  z-index: 1;
+}
+
+/* Rail segment below the dot, reaching the next item's dot (bottom
+   overshoots by 0.5rem so the next dot covers the seam). Last item has
+   nothing below it. */
+.item::after {
+  content: '';
+  position: absolute;
+  left: calc(-1.4rem + 4px);
+  top: 16px;
+  bottom: -0.5rem;
+  width: 2px;
+  background: var(--ifm-color-emphasis-200);
+}
+
+.item:last-child::after {
+  display: none;
+}
+
+.time {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 0.2rem;
+}
+
+/* Titles read as text with a link affordance on hover — GitHub styles its
+   changelog item titles the same near-neutral way. */
+.title {
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: var(--ifm-color-content);
+  text-decoration: none;
+}
+
+.title:hover {
+  color: var(--ifm-link-color);
+  text-decoration: underline;
+}
+
+.footer {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+  color: var(--ifm-link-color);
+  text-decoration: none;
+}
+
+.footer:hover {
+  text-decoration: underline;
+}

@@ -5,6 +5,8 @@ description: "The August 2026 edition of the Cologne monthly newsletter - correc
 authors: []
 tags: [newsletter]
 date: 2026-08-31
+homepage: true
+work_status: Published
 ---
 _Created: 29-06-2026 · Last updated: 05-09-2026_
 

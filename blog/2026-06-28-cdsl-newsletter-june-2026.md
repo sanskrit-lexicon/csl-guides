@@ -5,6 +5,8 @@ description: "The June 2026 edition of the Cologne Digital Sanskrit Dictionaries
 authors: []
 tags: [newsletter]
 date: 2026-06-28
+homepage: true
+work_status: Published
 ---
 _Created: 28-06-2026 · Last updated: 05-09-2026_
 

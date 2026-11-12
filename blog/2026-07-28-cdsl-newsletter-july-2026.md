@@ -5,6 +5,8 @@ description: "The July 2026 edition of the Cologne monthly newsletter - correcti
 authors: []
 tags: [newsletter]
 date: 2026-07-28
+homepage: true
+work_status: Published
 ---
 _Created: 28-06-2026 · Last updated: 05-09-2026_
 

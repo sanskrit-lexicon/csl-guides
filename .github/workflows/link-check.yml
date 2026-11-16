@@ -63,6 +63,13 @@ jobs:
           # conference page) were confirmed live-broken on the far end across two independent
           # checks (a manual fetch and two separate workflow runs) on 28-07-2026 — excluded as
           # externally-owned outages, not links we can fix here. Revisit if they come back.
+          # doi.org and zenodo.org are the umbrella-DOI surface (10.5281/zenodo.21319331,
+          # README badge + cite.mdx): the DOI itself resolves (302 verified 15-11-2026), but
+          # Zenodo/doi.org infrastructure 403s automated clients — datacenter CI IPs and
+          # residential bots alike, badge/records endpoints even with a browser UA — which
+          # failed the 09-11-2026 weekly run (run 42637411803). Same bot-blocking class as
+          # dch.phil-fak/CDSL/Play/dl.acm above: excluded, not because the link is gone.
+          # DOI validity is not what this job measures; the handle redirects correctly.
           args: >-
             --no-progress
             --root-dir "${{ github.workspace }}"
@@ -84,6 +91,8 @@ jobs:
             --exclude "hss\.iitb\.ac\.in"
             --exclude "dch\.phil-fak\.uni-koeln\.de"
             --exclude "openhumanitiesdata\.metajnl\.com"
+            --exclude "doi\.org"
+            --exclude "zenodo\.org"
             "./docs/**/*.md"
             "./docs/**/*.mdx"
             "./blog/**/*.md"

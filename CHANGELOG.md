@@ -1,6 +1,6 @@
 # Changelog
 
-_Created: 30-06-2026 · Last updated: 10-11-2026_
+_Created: 30-06-2026 · Last updated: 16-11-2026_
 
 All notable changes to this project will be documented in this file.
 
@@ -10,6 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
+## [0.16.3] - 2026-11-16
+
+- **Homepage "Latest from our changelog" widget** (2026-11-12): a GitHub-style changelog card on the home page (`docs/intro.mdx`) — the four most recent `CHANGELOG.md` entries on a dot timeline with client-side relative timestamps ("2 days ago") and a "View changelog →" link. SSR-safe by construction: the server HTML and the first client render both carry the absolute date (a pure function of the entry) and a mount-only effect swaps in the relative label, so no new hydration mismatch is introduced next to the known React #418. Fed by `scripts/build-changelog-feed.mjs` → `src/data/changelog-feed.json` (a pure parse of `CHANGELOG.md` — first date-shaped token in the bullet, else the release-heading date; `## [Unreleased]` skipped since queue fragments are folded in only at release-cut) with a byte-exact `npm run check:changelog-feed` wired into `ci.yml`; component `src/components/ChangelogFeed.js` + CSS module; data card added to the data-cards page. MiMo V2.6 Flash (OpenCode).
+- **Homepage eligibility markers for the university landing-page news widget** (2026-11-12, H8170): frontmatter `homepage: true` + `work_status: Published` on the three latest published newsletters (June/July/August 2026) in `blog/` — the explicit editorial marker the [csl-homepage](https://github.com/sanskrit-lexicon/csl-homepage) landing page's **Latest news** widget selects on (eligibility is never inferred from a commit, release, filename or file existence; drafts stay unmarked and the consumer also refuses `draft: true` / `<!-- DRAFT` bodies). Consumed by `csl-homepage/scripts/build_newsfeed.py` into the committed `homepage_news.json` feed — no runtime API. Widget PR: [csl-homepage#33](https://github.com/sanskrit-lexicon/csl-homepage/pull/33) (+[#34](https://github.com/sanskrit-lexicon/csl-homepage/pull/34)); marker PR: [#273](https://github.com/sanskrit-lexicon/csl-guides/pull/273). MiMo-V2.6-Flash (OpenCode).
 ## [0.16.2] - 2026-11-10
 
 - **Simple-Search gains its live-page screenshot, and its documented defaults corrected to the page's real fresh-visit defaults** (2026-11-10, H7951, Crouton Alpha Free (crouton-alpha-free)): the last deferred live-site capture from the wave-4 backlog landed now that `sanskrit-lexicon.uni-koeln.de` answers HTTP 200 from this box again — `static/img/displays/simple-search-page.png` (1800×1350 live capture of `list-0.2s.html`) embedded via the `Screenshot` component after converting `docs/tools/simple-search.md` → `.mdx` (route unchanged). The capture exposed a docs-vs-reality drift the old prose had wrong: `cookieUpdate.js` runs `cookieUpdate(false)` on load with `cookieDefaultValues = ['hk','deva','no','mw']`, so a cookie-less visit opens on **HK / Devanagari**, not the HTML `selected` attrs' `simple` / `IAST` the table claimed — table defaults, the inline `**(the default)**` claim and the fresh-visit cookie note now match the probed source. The second backlog capture `mw-advanced-form` was run, proved byte-different-but-content-identical to the already-embedded `mw-advanced.png` (mode `advanced` runs `query:false`; both are the pristine empty form), and discarded — no second identical image ships.

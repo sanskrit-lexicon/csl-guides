@@ -2,10 +2,22 @@
   "generatedBy": "scripts/build-changelog-feed.mjs",
   "source": "CHANGELOG.md",
   "sourceUrl": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/CHANGELOG.md",
-  "sourceSha256": "ca8f5d5aff6585e3a7f9c20707752932ea2ed32af5910fb44a4e6adef1c736be",
+  "sourceSha256": "57633978aa57c005cb5d22dc2cb1fcb113cbfaf2b44c675f9efb63961594a220",
   "license": "CC BY-SA 4.0",
   "entryCount": 8,
   "entries": [
+    {
+      "version": "0.16.3",
+      "date": "2026-11-12",
+      "title": "Homepage \"Latest from our changelog\" widget",
+      "anchor": "0163---2026-11-16"
+    },
+    {
+      "version": "0.16.3",
+      "date": "2026-11-12",
+      "title": "Homepage eligibility markers for the university landing-page news widget",
+      "anchor": "0163---2026-11-16"
+    },
     {
       "version": "0.16.2",
       "date": "2026-11-10",
@@ -40,18 +52,6 @@
       "version": "0.16.0",
       "date": "2026-11-09",
       "title": "Real description: frontmatter across the public site",
-      "anchor": "0160---2026-11-09"
-    },
-    {
-      "version": "0.16.0",
-      "date": "2026-11-09",
-      "title": "docs/internal/ excluded from the public build",
-      "anchor": "0160---2026-11-09"
-    },
-    {
-      "version": "0.16.0",
-      "date": "2026-11-08",
-      "title": "Every built page now carries a description — including the 15 routes that had none",
       "anchor": "0160---2026-11-09"
     }
   ]

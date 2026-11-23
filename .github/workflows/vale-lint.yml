@@ -16,7 +16,7 @@ jobs:
     name: Vale EN docs (advisory)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Install Vale (pinned)
         run: |
           curl -sSL "https://github.com/errata-ai/vale/releases/download/v3.27.0/vale_3.27.0_Linux_64-bit.tar.gz" -o /tmp/vale.tgz

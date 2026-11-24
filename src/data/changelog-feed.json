@@ -2,7 +2,7 @@
   "generatedBy": "scripts/build-changelog-feed.mjs",
   "source": "CHANGELOG.md",
   "sourceUrl": "https://github.com/sanskrit-lexicon/csl-guides/blob/main/CHANGELOG.md",
-  "sourceSha256": "57633978aa57c005cb5d22dc2cb1fcb113cbfaf2b44c675f9efb63961594a220",
+  "sourceSha256": "7638b8e2bf83a039071e7e269e6985861ad2a606bab47b0ab0d8438759f1d1e1",
   "license": "CC BY-SA 4.0",
   "entryCount": 8,
   "entries": [

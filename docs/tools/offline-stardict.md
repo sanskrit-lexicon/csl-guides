@@ -17,7 +17,7 @@ StarDict packages.
 Every front-page row has a **D** (download) link with files for offline use —
 the digitized **XML (in SLP1 encoding)** and, for scanned dictionaries, the
 **PDF scan**. That is the canonical source data; see
-[Downloads & Data](/users/downloads-and-data) for what each format is good
+Downloads & Data for what each format is good
 for.
 
 ## StarDict packages

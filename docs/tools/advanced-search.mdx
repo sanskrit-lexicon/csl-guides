@@ -17,7 +17,7 @@ bodies, not just headwords. It is the tool for research questions like "which
 entries cite this text?", "find every compound beginning with this stem", or
 "where does this English gloss word occur?". This page is a field-by-field
 reference to the form; how entries render once found is covered in
-[Search & Display](/users/search-and-display).
+Search & Display.
 
 The live form per dictionary is served at
 `/scans/{CODE}Scan/2020/web/webtc2/index.php` — for Monier-Williams,
@@ -44,7 +44,7 @@ English-Sanskrit dictionaries AE/MWE/BOR, "Sanskrit Headword:" on Grassmann):
 | Search scope | **Headword Only** · Headword or Text · Text Only | Whether the term is matched against headwords, or also/only against the Sanskrit text of the entries. Offered on most dictionaries (MW, both Apte editions, PWG, PW, …), absent on a few (AE, GRA, MWE, WIL, ACC, BOR). |
 | Term box | free text (30 chars) | The Sanskrit word to find, typed in the selected input scheme. |
 | Match placement | **exact** · prefix · suffix · infix · substring | Where within a possibly longer word the match occurs. `exact` treats the input literally; the other four modes also accept the wildcard characters `*` `?` `.` `+` `\|` in the term. |
-| Input scheme | **Kyoto-Harvard** · SLP1 · ITRANS · Roman · Devanagari | The transliteration you typed the term in (see [Encoding & Transliteration](/users/encoding-transliteration)). It is converted to SLP1 for the search. |
+| Input scheme | **Kyoto-Harvard** · SLP1 · ITRANS · Roman · Devanagari | The transliteration you typed the term in (see Encoding & Transliteration). It is converted to SLP1 for the search. |
 
 **Second row — "Text Word"** (labelled "English text word/Headword:" on
 AE/MWE/BOR; the row is not shown at all on the kośas SKD, VCP and KRM):
@@ -99,7 +99,7 @@ errors.
   with the matched form shown next to each headword.
 - **Which entries cite a given text** — Text Word with the citation
   abbreviation, *substring* (abbreviation lists:
-  [Abbreviations & Citations](/dictionaries/abbreviations-and-citations)).
+  Abbreviations & Citations).
 
 ## Programmatic access: the Salt API
 
@@ -124,6 +124,6 @@ https://www.sanskrit-lexicon.uni-koeln.de/scans/awork/apidev/api1/salt_entries.p
 A permalink form also exists: `/MW/agni` (headword) or `/MW/144239` (entry
 id). The parameter tables above follow
 [`doc/salt_entries.md` in csl-apidev](https://github.com/sanskrit-lexicon/csl-apidev/blob/main/doc/salt_entries.md);
-the full endpoint inventory is on the [API page](/developers/api).
+the full endpoint inventory is on the API page.
 
 _Dr. Mārcis Gasūns_

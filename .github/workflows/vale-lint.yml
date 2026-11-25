@@ -16,7 +16,7 @@ jobs:
     name: Vale EN docs (advisory)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       - name: Install Vale (pinned)
         run: |
           curl -sSL "https://github.com/errata-ai/vale/releases/download/v3.27.0/vale_3.27.0_Linux_64-bit.tar.gz" -o /tmp/vale.tgz
@@ -34,7 +34,7 @@ jobs:
           python3 scripts/vale_flag_report.py vale-report.json
       - name: Upload flag report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: vale-flag-report
           path: vale-report.json
